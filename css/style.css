@@ -1,0 +1,441 @@
+/* @group import */
+/* @group Colors */
+/* @end */
+/* @group Fonts */
+@font-face {
+  font-family: 'TextaAlt-Thin';
+  src: url('../fonts/2F77AE_0_0.eot');
+  src: url('../fonts/2F77AE_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_0_0.woff2') format('woff2'), url('../fonts/2F77AE_0_0.woff') format('woff'), url('../fonts/2F77AE_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-BlackIt';
+  src: url('../fonts/2F77AE_1_0.eot');
+  src: url('../fonts/2F77AE_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1_0.woff2') format('woff2'), url('../fonts/2F77AE_1_0.woff') format('woff'), url('../fonts/2F77AE_1_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-BoldIt';
+  src: url('../fonts/2F77AE_2_0.eot');
+  src: url('../fonts/2F77AE_2_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_2_0.woff2') format('woff2'), url('../fonts/2F77AE_2_0.woff') format('woff'), url('../fonts/2F77AE_2_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Bold';
+  src: url('../fonts/2F77AE_3_0.eot');
+  src: url('../fonts/2F77AE_3_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_3_0.woff2') format('woff2'), url('../fonts/2F77AE_3_0.woff') format('woff'), url('../fonts/2F77AE_3_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Black';
+  src: url('../fonts/2F77AE_4_0.eot');
+  src: url('../fonts/2F77AE_4_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_4_0.woff2') format('woff2'), url('../fonts/2F77AE_4_0.woff') format('woff'), url('../fonts/2F77AE_4_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Book';
+  src: url('../fonts/2F77AE_5_0.eot');
+  src: url('../fonts/2F77AE_5_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_5_0.woff2') format('woff2'), url('../fonts/2F77AE_5_0.woff') format('woff'), url('../fonts/2F77AE_5_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-BookIt';
+  src: url('../fonts/2F77AE_6_0.eot');
+  src: url('../fonts/2F77AE_6_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_6_0.woff2') format('woff2'), url('../fonts/2F77AE_6_0.woff') format('woff'), url('../fonts/2F77AE_6_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-HeavyIt';
+  src: url('../fonts/2F77AE_7_0.eot');
+  src: url('../fonts/2F77AE_7_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_7_0.woff2') format('woff2'), url('../fonts/2F77AE_7_0.woff') format('woff'), url('../fonts/2F77AE_7_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Heavy';
+  src: url('../fonts/2F77AE_8_0.eot');
+  src: url('../fonts/2F77AE_8_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_8_0.woff2') format('woff2'), url('../fonts/2F77AE_8_0.woff') format('woff'), url('../fonts/2F77AE_8_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-It';
+  src: url('../fonts/2F77AE_9_0.eot');
+  src: url('../fonts/2F77AE_9_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_9_0.woff2') format('woff2'), url('../fonts/2F77AE_9_0.woff') format('woff'), url('../fonts/2F77AE_9_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-LightIt';
+  src: url('../fonts/2F77AE_A_0.eot');
+  src: url('../fonts/2F77AE_A_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_A_0.woff2') format('woff2'), url('../fonts/2F77AE_A_0.woff') format('woff'), url('../fonts/2F77AE_A_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Light';
+  src: url('../fonts/2F77AE_B_0.eot');
+  src: url('../fonts/2F77AE_B_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_B_0.woff2') format('woff2'), url('../fonts/2F77AE_B_0.woff') format('woff'), url('../fonts/2F77AE_B_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-MediumIt';
+  src: url('../fonts/2F77AE_C_0.eot');
+  src: url('../fonts/2F77AE_C_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_C_0.woff2') format('woff2'), url('../fonts/2F77AE_C_0.woff') format('woff'), url('../fonts/2F77AE_C_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Medium';
+  src: url('../fonts/2F77AE_D_0.eot');
+  src: url('../fonts/2F77AE_D_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_D_0.woff2') format('woff2'), url('../fonts/2F77AE_D_0.woff') format('woff'), url('../fonts/2F77AE_D_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Regular';
+  src: url('../fonts/2F77AE_E_0.eot');
+  src: url('../fonts/2F77AE_E_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_E_0.woff2') format('woff2'), url('../fonts/2F77AE_E_0.woff') format('woff'), url('../fonts/2F77AE_E_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-ThintIt';
+  src: url('../fonts/2F77AE_F_0.eot');
+  src: url('../fonts/2F77AE_F_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_F_0.woff2') format('woff2'), url('../fonts/2F77AE_F_0.woff') format('woff'), url('../fonts/2F77AE_F_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Texta-Thin';
+  src: url('../fonts/2F77AE_10_0.eot');
+  src: url('../fonts/2F77AE_10_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_10_0.woff2') format('woff2'), url('../fonts/2F77AE_10_0.woff') format('woff'), url('../fonts/2F77AE_10_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-BlackIt';
+  src: url('../fonts/2F77AE_11_0.eot');
+  src: url('../fonts/2F77AE_11_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_11_0.woff2') format('woff2'), url('../fonts/2F77AE_11_0.woff') format('woff'), url('../fonts/2F77AE_11_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-Black';
+  src: url('../fonts/2F77AE_12_0.eot');
+  src: url('../fonts/2F77AE_12_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_12_0.woff2') format('woff2'), url('../fonts/2F77AE_12_0.woff') format('woff'), url('../fonts/2F77AE_12_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-BoldIt';
+  src: url('../fonts/2F77AE_13_0.eot');
+  src: url('../fonts/2F77AE_13_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_13_0.woff2') format('woff2'), url('../fonts/2F77AE_13_0.woff') format('woff'), url('../fonts/2F77AE_13_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-Bold';
+  src: url('../fonts/2F77AE_14_0.eot');
+  src: url('../fonts/2F77AE_14_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_14_0.woff2') format('woff2'), url('../fonts/2F77AE_14_0.woff') format('woff'), url('../fonts/2F77AE_14_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-BookIt';
+  src: url('../fonts/2F77AE_15_0.eot');
+  src: url('../fonts/2F77AE_15_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_15_0.woff2') format('woff2'), url('../fonts/2F77AE_15_0.woff') format('woff'), url('../fonts/2F77AE_15_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-Book';
+  src: url('../fonts/2F77AE_16_0.eot');
+  src: url('../fonts/2F77AE_16_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_16_0.woff2') format('woff2'), url('../fonts/2F77AE_16_0.woff') format('woff'), url('../fonts/2F77AE_16_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-HeavyIt';
+  src: url('../fonts/2F77AE_17_0.eot');
+  src: url('../fonts/2F77AE_17_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_17_0.woff2') format('woff2'), url('../fonts/2F77AE_17_0.woff') format('woff'), url('../fonts/2F77AE_17_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-Heavy';
+  src: url('../fonts/2F77AE_18_0.eot');
+  src: url('../fonts/2F77AE_18_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_18_0.woff2') format('woff2'), url('../fonts/2F77AE_18_0.woff') format('woff'), url('../fonts/2F77AE_18_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-It';
+  src: url('../fonts/2F77AE_19_0.eot');
+  src: url('../fonts/2F77AE_19_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_19_0.woff2') format('woff2'), url('../fonts/2F77AE_19_0.woff') format('woff'), url('../fonts/2F77AE_19_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-LightIt';
+  src: url('../fonts/2F77AE_1A_0.eot');
+  src: url('../fonts/2F77AE_1A_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1A_0.woff2') format('woff2'), url('../fonts/2F77AE_1A_0.woff') format('woff'), url('../fonts/2F77AE_1A_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-Light';
+  src: url('../fonts/2F77AE_1B_0.eot');
+  src: url('../fonts/2F77AE_1B_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1B_0.woff2') format('woff2'), url('../fonts/2F77AE_1B_0.woff') format('woff'), url('../fonts/2F77AE_1B_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-MediumIt';
+  src: url('../fonts/2F77AE_1C_0.eot');
+  src: url('../fonts/2F77AE_1C_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1C_0.woff2') format('woff2'), url('../fonts/2F77AE_1C_0.woff') format('woff'), url('../fonts/2F77AE_1C_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-Medium';
+  src: url('../fonts/2F77AE_1D_0.eot');
+  src: url('../fonts/2F77AE_1D_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1D_0.woff2') format('woff2'), url('../fonts/2F77AE_1D_0.woff') format('woff'), url('../fonts/2F77AE_1D_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-Regular';
+  src: url('../fonts/2F77AE_1E_0.eot');
+  src: url('../fonts/2F77AE_1E_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1E_0.woff2') format('woff2'), url('../fonts/2F77AE_1E_0.woff') format('woff'), url('../fonts/2F77AE_1E_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TextaAlt-ThintIt';
+  src: url('../fonts/2F77AE_1F_0.eot');
+  src: url('../fonts/2F77AE_1F_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1F_0.woff2') format('woff2'), url('../fonts/2F77AE_1F_0.woff') format('woff'), url('../fonts/2F77AE_1F_0.ttf') format('truetype');
+}
+/* @end */
+/* @group Mes styles */
+/* @group General */
+html,
+button,
+input,
+select,
+textarea {
+  color: #000;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+/* selection */
+::-moz-selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none;
+}
+/* @end */
+/* @group Global */
+body {
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 1em;
+  color: #333333;
+}
+a {
+  text-decoration: none;
+}
+a.logo-facilicar {
+  display: block;
+  width: 281px;
+  height: 49px;
+  background: url("../layoutImg/logo-facilicar.png") no-repeat 0 0;
+  -webkit-transition: opacity 0.1s ease-in-out;
+          transition: opacity 0.1s ease-in-out;
+}
+a.logo-facilicar:hover {
+  opacity: 0.8;
+}
+.container {
+  display: block;
+  width: 1140px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+.color-primary {
+  color: #009cc4;
+}
+.color-secondary {
+  color: #e38c00;
+}
+.color-grey {
+  color: #b0b0a8;
+}
+.bg-gradient {
+  background: -webkit-linear-gradient(top, #ffffff 0%, #e7e6e2 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e7e6e2 100%);
+}
+/* @end */
+/* @group Non semantic Boilerplate */
+/* remplacement image */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+/* masqué */
+.hidden {
+  display: none !important;
+}
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/* @end */
+/* @group Header */
+#header {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 20px 0;
+}
+#header a.logo-facilicar {
+  float: left;
+  margin: 14px 0 0 27px;
+}
+#zone-right-header {
+  float: right;
+}
+#menu-top-header {
+  margin: 0 0 22px 0;
+}
+#menu-top-header > li {
+  margin: 0 0 0 12px;
+}
+#menu-top-header > li:first-of-type {
+  margin: 0;
+}
+#menu-top-header > li a {
+  font-family: 'Texta-Medium', sans-serif;
+  font-size: 1em;
+}
+#menu-bottom-header > li {
+  padding: 0;
+  margin: 0 0 0 50px;
+}
+#menu-bottom-header > li:first-of-type {
+  margin: 0;
+}
+#menu-bottom-header > li a {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  color: #333333;
+}
+/* @end */
+/* @group Wrapper top */
+#wrapper-top {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+/* @end */
+/* @group Buttons */
+a.btn-txt {
+  text-decoration: underline;
+}
+/* @end */
+/* @group List */
+.list-inline {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-inline > li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 16px;
+  position: relative;
+}
+.list-inline > li a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* @end */
+/* @group States */
+.hide-text {
+  text-indent: -9999px;
+}
+/* @end */
+/* ==|== print styles =======================================================
+   ========================================================================== */
+@media print {
+  * {
+    color: #000;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: .7em;
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after,
+  #logo-institut-avignon:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  #mask,
+  #bloc-top,
+  nav,
+  #menu-footer,
+  .second-menu,
+  .arianne,
+  #motif,
+  #hamburger-menu {
+    display: none !important;
+  }
+  header {
+    position: relative;
+  }
+  header .container.big {
+    width: 940px;
+  }
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  h6,
+  .main form {
+    padding-left: 0 !important;
+  }
+  #logo-institut-avignon {
+    margin-left: 1cm;
+  }
+}
+/* @end */
