@@ -1,0 +1,43 @@
+@media (max-width: 1150px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 979px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+
+/* ==|== print styles =======================================================
+   ========================================================================== */
+
+@media print {
+    * { color: #000; }
+    a, a:visited { text-decoration: underline; }
+    a[href]:after { content: " (" attr(href) ")"; font-size: .7em; }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after, #logo-institut-avignon:after { content: ""; }
+    pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+    thead { display: table-header-group; }
+    tr, img { page-break-inside: avoid; }
+    img { max-width: 100% !important; }
+    @page { margin: 0.5cm; }
+    p, h2, h3 { orphans: 3; widows: 3; }
+    h2, h3 { page-break-after: avoid; }
+    
+    #mask, #bloc-top, nav, #menu-footer, .second-menu, .arianne, #motif, #hamburger-menu{ display: none !important; }
+    header{position: relative;}
+    header .container.big{ width: 940px; }
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, h6, .main form{ padding-left: 0 !important; }
+    #logo-institut-avignon{ margin-left:1cm; }
+}   
