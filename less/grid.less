@@ -56,7 +56,60 @@
 	display: block;
 	width: 100%;
 	margin: 0;
-	padding: 60px 0 280px 0;
+	padding: 0;
+	background-color: @theme-noir;
+}
+
+/* @group Newsletter */
+#block-newsletter{
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 20px 0;
+	margin: 0;
+	background-color: #D9CAAE;
+	.content-align-middle{
+		h3{
+			margin: 0;
+		}
+		p{
+			margin: 0;
+			.texta-light(1.125em);
+		}
+	}
+}
+#email-newsletter{
+	margin: 0 6px 0 0;
+}
+#zone-left-newsletter{
+	box-sizing: border-box;
+	padding: 0 0 0 82px;
+	.mail-icon{
+		display: block;
+		width: 52px;
+		height: 40px;
+		position: relative;
+	}
+	.icon-mail-shadow{
+		font-size: 32px;
+		color: #fff;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	.icon-mail{
+		font-size: 36px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+/* @end */
+
+#footer-bottom{
+	display: block;
+	margin: 0;
+	padding: 40px 0 280px 0;
 	background-color: @theme-noir;
 	color: #ffffff;
 	text-transform: uppercase;
@@ -85,6 +138,4 @@
 		margin: 16px 0 0 0;
 	}
 }
-
-
 /* @end */

@@ -1,0 +1,69 @@
+/* @group Form */
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"]{
+	padding: 8px 12px;
+	border: 1px solid @theme-gris;
+	box-sizing: border-box;
+	border-radius: 5px;
+	.texta-light(1.125em);
+	max-width: 100%;
+	&:focus{
+		outline: none;
+	}
+}
+
+::-webkit-input-placeholder {
+ 	.texta-light-italic(1em);
+ 	color: #B0B0A8;
+}
+
+:-moz-placeholder {
+	.texta-light-italic(1em);
+	color: #B0B0A8;
+}
+
+::-moz-placeholder {
+	.texta-light-italic(1em);
+	color: #B0B0A8;
+}
+
+:-ms-input-placeholder {  
+	.texta-light-italic(1em);
+	color: #B0B0A8;
+}
+
+button{
+	-webkit-appearance: none;
+    appearance: none;
+    color: #ffffff;
+    border: none;
+    box-sizing: border-box;
+    padding: 9px 12px;
+    .texta-black(1.063em);
+    text-transform: uppercase;
+    &.button-primary{
+    	background-color: @theme-primary;
+    }
+    &.button-secondary{
+    	background-color: @theme-secondary;
+    }
+    &.button-arrow{
+    	position: relative;
+    	padding: 9px 12px 9px 24px;
+    	&:before{
+    		content: "›";
+    		display: inline-block;
+    		vertical-align: top;
+    		height: 24px;
+    		line-height: 24px;
+    		position: absolute;
+    		left: 12px;
+    		top: 50%;
+    		margin: -13px 0 0 0;
+    	}
+    }
+    &:focus{
+    	outline: none;
+    }
+}
+
+/* @end */

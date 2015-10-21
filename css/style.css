@@ -262,6 +262,11 @@ body {
   font-size: 1em;
   color: #333333;
 }
+h3 {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.813em;
+  margin: 15px 0;
+}
 h4 {
   font-family: 'Texta-Black', sans-serif;
   font-size: 1em;
@@ -270,8 +275,20 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
   margin: 15px 0;
 }
+p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.25em;
+}
+i {
+  font-style: normal;
+  font-family: 'Texta-LightIt', sans-serif;
+  font-size: 1em;
+}
 a {
   text-decoration: none;
+}
+.size1 {
+  width: 300px;
 }
 a.logo-facilicar {
   display: block;
@@ -309,6 +326,16 @@ a.logo-facilicar:hover {
 .bg-gradient {
   background: -webkit-linear-gradient(top, #ffffff 0%, #e7e6e2 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #e7e6e2 100%);
+}
+.wrapper-align-middle {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.content-align-middle {
+  display: table-cell;
+  vertical-align: middle;
 }
 /* @end */
 /* @group Non semantic Boilerplate */
@@ -401,34 +428,84 @@ a.logo-facilicar:hover {
   display: block;
   width: 100%;
   margin: 0;
-  padding: 60px 0 280px 0;
+  padding: 0;
+  background-color: #333333;
+}
+/* @group Newsletter */
+#block-newsletter {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  margin: 0;
+  background-color: #D9CAAE;
+}
+#block-newsletter .content-align-middle h3 {
+  margin: 0;
+}
+#block-newsletter .content-align-middle p {
+  margin: 0;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+}
+#email-newsletter {
+  margin: 0 6px 0 0;
+}
+#zone-left-newsletter {
+  box-sizing: border-box;
+  padding: 0 0 0 82px;
+}
+#zone-left-newsletter .mail-icon {
+  display: block;
+  width: 52px;
+  height: 40px;
+  position: relative;
+}
+#zone-left-newsletter .icon-mail-shadow {
+  font-size: 32px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#zone-left-newsletter .icon-mail {
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* @end */
+#footer-bottom {
+  display: block;
+  margin: 0;
+  padding: 40px 0 280px 0;
   background-color: #333333;
   color: #ffffff;
   text-transform: uppercase;
 }
-#footer .list-inline {
+#footer-bottom .list-inline {
   width: 100%;
   display: block;
 }
-#footer .list-inline > li {
+#footer-bottom .list-inline > li {
   width: 20%;
   margin: 0;
   box-sizing: border-box;
 }
-#footer .list-inline > li:last-of-type {
+#footer-bottom .list-inline > li:last-of-type {
   width: 40%;
 }
-#footer .list-block {
+#footer-bottom .list-block {
   margin: 25px 0 0 0;
 }
-#footer .list-block > li {
+#footer-bottom .list-block > li {
   margin: 0;
 }
-#footer .list-block > li a {
+#footer-bottom .list-block > li a {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
 }
-#footer .list-social {
+#footer-bottom .list-social {
   margin: 16px 0 0 0;
 }
 /* @end */
@@ -557,6 +634,84 @@ a.btn-heart .heart-number {
 }
 .list-social > li a.icon-twitter {
   font-size: 24px;
+}
+/* @end */
+/* @group Form */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+  padding: 8px 12px;
+  border: 1px solid #b0b0a8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+  max-width: 100%;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+::-webkit-input-placeholder {
+  font-family: 'Texta-LightIt', sans-serif;
+  font-size: 1em;
+  color: #B0B0A8;
+}
+:-moz-placeholder {
+  font-family: 'Texta-LightIt', sans-serif;
+  font-size: 1em;
+  color: #B0B0A8;
+}
+::-moz-placeholder {
+  font-family: 'Texta-LightIt', sans-serif;
+  font-size: 1em;
+  color: #B0B0A8;
+}
+:-ms-input-placeholder {
+  font-family: 'Texta-LightIt', sans-serif;
+  font-size: 1em;
+  color: #B0B0A8;
+}
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  color: #ffffff;
+  border: none;
+  box-sizing: border-box;
+  padding: 9px 12px;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.063em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+}
+button.button-primary {
+  background-color: #009cc4;
+}
+button.button-secondary {
+  background-color: #e38c00;
+}
+button.button-arrow {
+  position: relative;
+  padding: 9px 12px 9px 24px;
+}
+button.button-arrow:before {
+  content: "›";
+  display: inline-block;
+  vertical-align: top;
+  height: 24px;
+  line-height: 24px;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  margin: -13px 0 0 0;
+}
+button:focus {
+  outline: none;
 }
 /* @end */
 /* @group States */
