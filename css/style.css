@@ -3,6 +3,59 @@
 /* @end */
 /* @group Fonts */
 @font-face {
+  font-family: 'facilicar';
+  src: url('../fonts/facilicar.eot?kdgjrb');
+  src: url('../fonts/facilicar.eot?kdgjrb#iefix') format('embedded-opentype'), url('../fonts/facilicar.woff2?kdgjrb') format('woff2'), url('../fonts/facilicar.ttf?kdgjrb') format('truetype'), url('../fonts/facilicar.woff?kdgjrb') format('woff'), url('../fonts/facilicar.svg?kdgjrb#facilicar') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-facebook-f:before {
+  content: "\f09a";
+}
+.icon-youtube:before {
+  content: "\f167";
+}
+.icon-heart:before {
+  content: "\e800";
+}
+.icon-mail-shadow:before {
+  content: "\e801";
+}
+.icon-mail:before {
+  content: "\e802";
+}
+.icon-pin:before {
+  content: "\e803";
+}
+.icon-tel:before {
+  content: "\e804";
+}
+.icon-thumb-up-shadow:before {
+  content: "\e805";
+}
+.icon-thumb-up:before {
+  content: "\e806";
+}
+@font-face {
   font-family: 'TextaAlt-Thin';
   src: url('../fonts/2F77AE_0_0.eot');
   src: url('../fonts/2F77AE_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_0_0.woff2') format('woff2'), url('../fonts/2F77AE_0_0.woff') format('woff'), url('../fonts/2F77AE_0_0.ttf') format('truetype');
@@ -326,9 +379,84 @@ a.logo-facilicar:hover {
   padding: 0;
 }
 /* @end */
+/* @group Footer */
+#footer {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 60px 0 280px 0;
+  background-color: #333333;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* @end */
 /* @group Buttons */
 a.btn-txt {
   text-decoration: underline;
+}
+a.btn-txt.arrow {
+  position: relative;
+  padding-left: 8px;
+}
+a.btn-txt.arrow:before {
+  content: "›";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+a.btn-pin .icon-pin {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 20px;
+  margin: 0 8px 0 0;
+  padding: 2px 0 0 0;
+}
+a.btn-tel .icon-tel {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 17px;
+  margin: 0 6px 0 0;
+  padding: 4px 0 0 0;
+}
+a.btn-tel .tel-number {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #F3F3EE;
+  border-radius: 18px;
+  padding: 0 6px;
+}
+a.btn-heart {
+  position: relative;
+}
+a.btn-heart .zone-heart {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 4px;
+  padding: 0;
+  position: relative;
+}
+a.btn-heart .icon-heart {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 17px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  color: #FF7E7E;
+}
+a.btn-heart .heart-number {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.611em;
+  line-height: 11px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  position: absolute;
+  left: 13px;
+  top: 8px;
+  background-color: #ffffff;
+  padding: 0 3px;
+  border-radius: 3px;
+  border: 1px solid #b0b0a8;
 }
 /* @end */
 /* @group List */
@@ -347,6 +475,23 @@ a.btn-txt {
   position: relative;
 }
 .list-inline > li a {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.list-block {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-block > li {
+  display: block;
+  padding: 0;
+  margin: 4px 0;
+  position: relative;
+}
+.list-block > li a {
   display: block;
   margin: 0;
   padding: 0;

@@ -3,7 +3,71 @@ a{
 	&.btn-txt{
 		text-decoration: underline;
 		&.arrow{
-		
+			position: relative;
+			padding-left: 8px;
+			&:before{
+				content: "›";
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+	&.btn-pin{
+		.icon-pin{
+			display: inline-block;
+			vertical-align: top;
+			font-size: 20px;
+			margin: 0 8px 0 0;
+			padding: 2px 0 0 0;
+		}
+	}
+	&.btn-tel{
+		.icon-tel{
+			display: inline-block;
+			vertical-align: top;
+			font-size: 17px;
+			margin: 0 6px 0 0;
+			padding: 4px 0 0 0;
+		}
+		.tel-number{
+			display: inline-block;
+			vertical-align: top;
+			background-color: #F3F3EE;
+			border-radius: 18px;
+			padding: 0 6px;
+		}
+	}
+	&.btn-heart{
+		position: relative;
+		.zone-heart{
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 0 0 4px;
+			padding: 0;
+			position: relative;
+		}
+		.icon-heart{
+			display: inline-block;
+			vertical-align: top;
+			font-size: 17px;
+			margin: 5px 0 0 0;
+			padding: 0;
+			color: #FF7E7E;
+		}
+		.heart-number{
+			.texta-bold(0.611em);
+			line-height: 11px;
+			display: inline-block;
+			vertical-align: top;
+			box-sizing: border-box;
+			position: absolute;
+			left: 13px;
+			top: 8px;
+			background-color: #ffffff;
+			padding: 0 3px;
+			border-radius: 3px;
+			border: 1px solid @theme-gris;
 		}
 	}
 }
