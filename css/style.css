@@ -262,6 +262,14 @@ body {
   font-size: 1em;
   color: #333333;
 }
+h4 {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 15px 0;
+}
 a {
   text-decoration: none;
 }
@@ -291,6 +299,12 @@ a.logo-facilicar:hover {
 }
 .color-grey {
   color: #b0b0a8;
+}
+.color-white {
+  color: #ffffff;
+}
+.color-theme-black {
+  color: #333333;
 }
 .bg-gradient {
   background: -webkit-linear-gradient(top, #ffffff 0%, #e7e6e2 100%);
@@ -366,6 +380,9 @@ a.logo-facilicar:hover {
 #menu-bottom-header > li a {
   font-family: 'Texta-Black', sans-serif;
   font-size: 1.125em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
   color: #333333;
 }
@@ -389,16 +406,41 @@ a.logo-facilicar:hover {
   color: #ffffff;
   text-transform: uppercase;
 }
+#footer .list-inline {
+  width: 100%;
+  display: block;
+}
+#footer .list-inline > li {
+  width: 20%;
+  margin: 0;
+  box-sizing: border-box;
+}
+#footer .list-inline > li:last-of-type {
+  width: 40%;
+}
+#footer .list-block {
+  margin: 25px 0 0 0;
+}
+#footer .list-block > li {
+  margin: 0;
+}
+#footer .list-block > li a {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.813em;
+}
+#footer .list-social {
+  margin: 16px 0 0 0;
+}
 /* @end */
 /* @group Buttons */
-a.btn-txt {
+a.btn-underline {
   text-decoration: underline;
 }
-a.btn-txt.arrow {
+a.btn-arrow {
   position: relative;
   padding-left: 8px;
 }
-a.btn-txt.arrow:before {
+a.btn-arrow:before {
   content: "›";
   position: absolute;
   top: 0;
@@ -474,11 +516,6 @@ a.btn-heart .heart-number {
   margin: 0 16px;
   position: relative;
 }
-.list-inline > li a {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
 .list-block {
   display: block;
   margin: 0;
@@ -488,18 +525,44 @@ a.btn-heart .heart-number {
 .list-block > li {
   display: block;
   padding: 0;
-  margin: 4px 0;
+  margin: 2px 0;
   position: relative;
 }
-.list-block > li a {
-  display: block;
+.list-social {
+  display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+.list-social > li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  margin: 0 40px 0 0;
+  position: relative;
+}
+.list-social > li a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  line-height: 42px;
+  text-align: center;
+  font-size: 26px;
+}
+.list-social > li a.icon-twitter {
+  font-size: 24px;
 }
 /* @end */
 /* @group States */
 .hide-text {
   text-indent: -9999px;
+  display: block;
 }
 /* @end */
 /* ==|== print styles =======================================================

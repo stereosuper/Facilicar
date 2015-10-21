@@ -60,5 +60,31 @@
 	background-color: @theme-noir;
 	color: #ffffff;
 	text-transform: uppercase;
+	.list-inline{
+		width: 100%;
+		display: block;
+		>li{
+			width: 20%;
+			margin: 0;
+			box-sizing: border-box;
+			&:last-of-type{
+				width: 40%;
+			}
+		}
+	}
+	.list-block{
+		margin: 25px 0 0 0;
+		>li{
+			margin: 0;
+			a{
+				.texta-light(0.813em);
+			}
+		}
+	}
+	.list-social{
+		margin: 16px 0 0 0;
+	}
 }
+
+
 /* @end */
