@@ -262,6 +262,27 @@ body {
   font-size: 1em;
   color: #333333;
 }
+h1 {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 5.313em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1.small-title {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 3.75em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 0.6em;
+  margin: 0 0 46px 0;
+}
+h1 .small-txt {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.417em;
+  line-height: 0.8em;
+}
 h3 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.813em;
@@ -326,6 +347,25 @@ a.logo-facilicar:hover {
 .bg-gradient {
   background: -webkit-linear-gradient(top, #ffffff 0%, #e7e6e2 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #e7e6e2 100%);
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.encadre {
+  display: inline-block;
+  vertical-align: top;
+  color: #b0b0a8;
+  border: 1px solid #b0b0a8;
+  line-height: 1em;
+  padding: 2px 4px;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+}
+.txt-centered {
+  text-align: center;
+}
+.line-through {
+  text-decoration: line-through;
 }
 .wrapper-align-middle {
   display: table;
@@ -423,6 +463,15 @@ a.logo-facilicar:hover {
   padding: 0;
 }
 /* @end */
+/* @group Vehicules home */
+#wrapper-vehicules-home {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 60px 0;
+}
+/* @end */
 /* @group Footer */
 #footer {
   display: block;
@@ -442,6 +491,7 @@ a.logo-facilicar:hover {
 }
 #block-newsletter .content-align-middle h3 {
   margin: 0;
+  line-height: 0.9em;
 }
 #block-newsletter .content-align-middle p {
   margin: 0;
@@ -635,6 +685,21 @@ a.btn-heart .heart-number {
 .list-social > li a.icon-twitter {
   font-size: 24px;
 }
+.list-cars {
+  display: block;
+  margin: 0;
+  padding: 22px 0;
+  list-style-type: none;
+}
+.list-cars > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  height: 360px;
+  box-sizing: border-box;
+  padding: 0 9px;
+  margin: 11px 0;
+}
 /* @end */
 /* @group Form */
 input[type="text"],
@@ -718,6 +783,111 @@ button:focus {
 .hide-text {
   text-indent: -9999px;
   display: block;
+}
+/* @end */
+/* @group Cars */
+.wrapper-car {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #b0b0a8;
+  position: relative;
+}
+.bandeau-image-car {
+  display: block;
+  width: 100%;
+  height: 176px;
+  position: absolute;
+  left: 0;
+  top: 87px;
+}
+.bandeau-car {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px;
+}
+.bandeau-car.bandeau-top {
+  top: 0;
+  min-height: 87px;
+}
+.bandeau-car.bandeau-bottom {
+  bottom: 0;
+  min-height: 95px;
+}
+.car-block {
+  display: block;
+}
+.car-name {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.375em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.car-name strong {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.car-desc {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.car-km {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  color: #b0b0a8;
+}
+.car-old-price {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+  color: #b0b0a8;
+}
+.car-price {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 2.5em;
+  color: #e38c00;
+}
+.car-price-saving {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  color: #333333;
+}
+.car-price-saving strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
+.saving-percentage {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #AEACA1;
+  border-radius: 16px;
+  color: #ffffff;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.929em;
+  line-height: 1em;
+  padding: 2px 4px;
+  margin: 2px 0 0 0;
+}
+.car-btn-essai {
+  background-color: #009cc4;
+  color: #ffffff;
+  padding: 9px 0;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
 }
 /* @end */
 /* ==|== print styles =======================================================

@@ -50,6 +50,19 @@ body{
 	color: @theme-noir;
 }
 
+h1{
+    .texta-black(5.313em);
+    &.small-title{
+        .texta-black(3.75em);
+        line-height: 0.6em;
+        margin: 0 0 46px 0;
+    }
+    .small-txt{
+        .texta-light(0.417em);
+        line-height: 0.8em;
+    }
+}
+
 h3{
 	.texta-bold(1.813em);
 	margin: 15px 0;
@@ -118,6 +131,28 @@ a.logo-facilicar{
 
 .bg-gradient{
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(231,230,226,1) 100%);
+}
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+.encadre{
+    display: inline-block;
+    vertical-align: top;
+    color: @theme-gris;
+    border: 1px solid @theme-gris;
+    line-height: 1em;
+    padding: 2px 4px;
+    .texta-light(0.875em);
+}
+
+.txt-centered{
+    text-align: center;
+}
+
+.line-through{
+    text-decoration: line-through;
 }
 
 .wrapper-align-middle{
