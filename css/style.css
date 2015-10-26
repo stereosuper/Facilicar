@@ -351,6 +351,12 @@ a.logo-facilicar:hover {
 .bg-white {
   background-color: #ffffff;
 }
+.bg-primary {
+  background-color: #009cc4;
+}
+.bg-secondary {
+  background-color: #e38c00;
+}
 .encadre {
   display: inline-block;
   vertical-align: top;
@@ -470,6 +476,7 @@ a.logo-facilicar:hover {
   height: auto;
   margin: 0;
   padding: 60px 0;
+  text-align: center;
 }
 /* @end */
 /* @group Footer */
@@ -626,6 +633,33 @@ a.btn-heart .heart-number {
   padding: 0 3px;
   border-radius: 3px;
   border: 1px solid #b0b0a8;
+}
+a.btn-block {
+  display: inline-block;
+  vertical-align: top;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.094em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 17px 20px;
+  position: relative;
+}
+a.btn-block.big {
+  padding: 26px 58px;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.625em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a.btn-block.btn-block-arrow:before {
+  content: "›";
+  position: absolute;
+  top: 0;
+  left: 24px;
 }
 /* @end */
 /* @group List */
@@ -784,6 +818,12 @@ button:focus {
   text-indent: -9999px;
   display: block;
 }
+.is-hidden {
+  /*display: none;
+	&.car-block{
+		display: none;
+	}*/
+}
 /* @end */
 /* @group Cars */
 .wrapper-car {
@@ -793,6 +833,74 @@ button:focus {
   box-sizing: border-box;
   border: 1px solid #b0b0a8;
   position: relative;
+  overflow: hidden;
+}
+.wrapper-car:hover .fond-bandeau-car.bandeau-top {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.wrapper-car:hover .car-year {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.wrapper-car:hover .car-name {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.wrapper-car:hover .car-desc {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.wrapper-car:hover .car-km {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.wrapper-car:hover .car-old-price {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.wrapper-car:hover .car-price {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.wrapper-car:hover .car-price-saving {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.wrapper-car:hover .car-btn-essai {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 .bandeau-image-car {
   display: block;
@@ -802,6 +910,38 @@ button:focus {
   left: 0;
   top: 87px;
 }
+.fond-bandeau-car {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+}
+.fond-bandeau-car.bandeau-top {
+  top: 0;
+  height: 127px;
+  -webkit-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+.fond-bandeau-car.bandeau-bottom {
+  bottom: 0;
+  height: 135px;
+  -webkit-transform: translateY(40px);
+      -ms-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
 .bandeau-car {
   display: block;
   width: 100%;
@@ -810,24 +950,49 @@ button:focus {
   left: 0;
   text-align: center;
   box-sizing: border-box;
-  padding: 8px;
+  padding: 0;
+  overflow: hidden;
 }
 .bandeau-car.bandeau-top {
   top: 0;
-  min-height: 87px;
+  height: 127px;
 }
 .bandeau-car.bandeau-bottom {
   bottom: 0;
-  min-height: 95px;
+  height: 135px;
 }
 .car-block {
   display: block;
+  position: absolute;
+  left: 8px;
+  right: 8px;
+}
+.car-year {
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  top: 8px;
+  text-align: center;
 }
 .car-name {
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  top: 30px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.375em;
   text-transform: uppercase;
   color: #333333;
+  line-height: 1em;
+  padding: 2px 0;
 }
 .car-name strong {
   font-family: 'Texta-Black', sans-serif;
@@ -837,30 +1002,75 @@ button:focus {
   -moz-osx-font-smoothing: grayscale;
 }
 .car-desc {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  top: 58px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  line-height: 1.4em;
   text-transform: uppercase;
   color: #333333;
 }
 .car-km {
+  -webkit-transform: translateY(-32px);
+      -ms-transform: translateY(-32px);
+          transform: translateY(-32px);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  top: 96px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  line-height: 1em;
   color: #b0b0a8;
+  padding: 2px 0;
 }
 .car-old-price {
+  -webkit-transform: translateY(-45px);
+      -ms-transform: translateY(-45px);
+          transform: translateY(-45px);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  top: 6px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  line-height: 1em;
   color: #b0b0a8;
 }
 .car-price {
+  -webkit-transform: translateY(45px);
+      -ms-transform: translateY(45px);
+          transform: translateY(45px);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  top: 25px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.5em;
+  line-height: 0.8em;
   color: #e38c00;
 }
 .car-price-saving {
+  opacity: 0;
+  -webkit-transform: translateY(45px);
+      -ms-transform: translateY(45px);
+          transform: translateY(45px);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+  top: 63px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
   color: #333333;
+  line-height: 1em;
 }
 .car-price-saving strong {
   font-family: 'Texta-Bold', sans-serif;
@@ -876,9 +1086,15 @@ button:focus {
   font-size: 0.929em;
   line-height: 1em;
   padding: 2px 4px;
-  margin: 2px 0 0 0;
+  margin: 0;
 }
 .car-btn-essai {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  top: 86px;
   background-color: #009cc4;
   color: #ffffff;
   padding: 9px 0;
@@ -888,6 +1104,20 @@ button:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
+}
+.zone-arrow-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 4px;
+  height: 100%;
+  position: relative;
+  margin: 0 6px 0 0;
+}
+.zone-arrow-btn:before {
+  content: "›";
+  position: absolute;
+  top: -1px;
+  left: 0;
 }
 /* @end */
 /* ==|== print styles =======================================================

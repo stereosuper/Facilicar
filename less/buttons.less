@@ -70,5 +70,26 @@ a{
 			border: 1px solid @theme-gris;
 		}
 	}
+	&.btn-block{
+		display: inline-block;
+		vertical-align: top;
+		text-transform: uppercase;
+		color: #ffffff;
+		.texta-black(1.094em);
+		padding: 17px 20px;
+		position: relative;
+		&.big{
+			padding: 26px 58px;
+			.texta-black(1.625em);
+		}
+		&.btn-block-arrow{
+			&:before{
+				content: "›";
+				position: absolute;
+				top: 0;
+				left: 24px;
+			}
+		}
+	}
 }
 /* @end */
