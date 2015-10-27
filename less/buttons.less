@@ -82,12 +82,23 @@ a{
 			padding: 26px 58px;
 			.texta-black(1.625em);
 		}
+		&.btn-block-border{
+			box-sizing: border-box;
+			border: 4px solid #ffffff;
+			padding: 15px 20px;
+			&.btn-block-arrow{
+				padding: 15px 37px;
+			}
+		}
 		&.btn-block-arrow{
 			&:before{
 				content: "›";
 				position: absolute;
-				top: 0;
+				top: 50%;
+				margin: -19px 0 0 0;
 				left: 24px;
+				height: 36px;
+				line-height: 36px;
 			}
 		}
 	}

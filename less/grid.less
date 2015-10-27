@@ -64,6 +64,113 @@
 
 /* @end */
 
+/* @group Choisir / temoignage */
+
+#wrapper-choisir-temoignage{
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 20px 0 76px 0;
+	background-color: #F0EFEA;
+}
+
+#zone-left-choisir-temoignage{
+	width: 36%;
+}
+
+#zone-right-choisir-temoignage{
+	width: 64%;
+}
+
+.bloc-survol{
+	color: #ffffff;
+	box-sizing: border-box;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	&:hover{
+		.zone-picto-bloc-survol{
+			opacity: 0;
+			transform: translateY(-130px);
+		}
+		h2{
+			transform: translateY(0px);
+		}
+		p{
+			opacity: 1;
+			transform: translateY(0px);
+		}
+		a{
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+	.zone-picto-bloc-survol{
+		opacity: 1;
+		transform: translateY(0px);
+		transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		display: block;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 30px;
+		left: 50%;
+		margin: 0 0 0 -50px;
+		box-sizing: border-box;
+		line-height: 100px;
+		.icon-thumb-up{
+			font-size: 92px;
+		}
+		.icon-thumb-up-shadow{
+			font-size: 94px;
+			position: absolute;
+			top: 10px;
+			right: -16px;
+			z-index: -1;
+			color: #D0B36B;
+		}
+		.border-zone-picto-bloc-survol{
+			display: block;
+			width: 100%;
+			height: 100%;
+			box-sizing: border-box;
+			border: 4px solid #ffffff;
+			position: absolute;
+			top: -4px;
+			left: 0;
+			border-radius: 50%;
+		}
+	}
+	.title-bloc-survol{
+		display: inline-block;
+		text-align: left;
+	}
+	h2{
+		transform: translateY(130px);
+		transition: transform 0.2s ease-in-out;
+		.texta-black(3.125em);
+		margin: 0 0 20px 0;
+		line-height: 0.9em;
+	}
+	p{
+		opacity: 0;
+		transform: translateY(130px);
+		transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		.texta-light(1em);
+		margin: 0 0 20px 0;
+		line-height: 1.2em;
+	}
+	a{
+		opacity: 0;
+		transform: translateY(130px);
+		transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+	}
+}
+
+/* @end */
+
 /* @group Footer */
 #footer{
 	display: block;
