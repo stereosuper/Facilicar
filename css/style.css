@@ -373,6 +373,9 @@ a.logo-facilicar:hover {
 .txt-centered {
   text-align: center;
 }
+.txt-left-aligned {
+  text-align: left;
+}
 .line-through {
   text-decoration: line-through;
 }
@@ -385,6 +388,20 @@ a.logo-facilicar:hover {
 .content-align-middle {
   display: table-cell;
   vertical-align: middle;
+}
+.e-trustedshops {
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 42px;
+  background: url("../layoutImg/e-trustedshops.png") no-repeat 0 0;
+}
+.trustedshops-avis {
+  display: inline-block;
+  vertical-align: top;
+  width: 91px;
+  height: 88px;
+  background: url("../layoutImg/trustedshop.png") no-repeat 0 0;
 }
 /* @end */
 /* @group Non semantic Boilerplate */
@@ -493,9 +510,13 @@ a.logo-facilicar:hover {
 }
 #zone-left-choisir-temoignage {
   width: 36%;
+  padding: 0 11px 0 0;
+  box-sizing: border-box;
 }
 #zone-right-choisir-temoignage {
   width: 64%;
+  padding: 0 0 0 11px;
+  box-sizing: border-box;
 }
 .bloc-survol {
   color: #ffffff;
@@ -604,6 +625,46 @@ a.logo-facilicar:hover {
           transform: translateY(130px);
   -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+#trusted-shops {
+  padding: 20px 0 0 0;
+}
+#trusted-shops h4 {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.375em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+#wrapper-title-e-trustedshops {
+  margin: 0 0 20px 0;
+}
+#content-e-trustedshops {
+  width: 100px;
+}
+#content-title-trusted-shops {
+  width: auto;
+  box-sizing: border-box;
+  padding: 0 0 0 63px;
+}
+#content-txt-trustedshops-avis {
+  width: auto;
+  box-sizing: border-box;
+  padding: 0 20px 0 0;
+}
+#content-txt-trustedshops-avis p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+#content-txt-trustedshops-avis p strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
+#content-trustedshops-avis {
+  width: 91px;
 }
 /* @end */
 /* @group Footer */
@@ -963,6 +1024,8 @@ button:focus {
 	}*/
 }
 /* @end */
+/* @group Slider temoignage */
+/* @end */
 /* @group Cars */
 .wrapper-car {
   display: block;
@@ -1258,6 +1321,25 @@ button:focus {
   left: 0;
 }
 /* @end */
+/* retina */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .e-trustedshops {
+    background-image: url("../layoutImg/e-trustedshops@2x.png");
+    background-size: 100px 42px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  .e-trustedshops {
+    background-image: url("../layoutImg/e-trustedshops@2x.png");
+    background-size: 100px 42px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi) {
+  .e-trustedshops {
+    background-image: url("../layoutImg/e-trustedshops@3x.png");
+    background-size: 100px 42px;
+  }
+}
 /* ==|== print styles =======================================================
    ========================================================================== */
 @media print {
