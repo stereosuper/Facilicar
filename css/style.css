@@ -517,6 +517,7 @@ a.logo-facilicar:hover {
   width: 64%;
   padding: 0 0 0 11px;
   box-sizing: border-box;
+  position: relative;
 }
 .bloc-survol {
   color: #ffffff;
@@ -665,6 +666,13 @@ a.logo-facilicar:hover {
 }
 #content-trustedshops-avis {
   width: 91px;
+}
+#wrapper-slider-temoignage {
+  position: absolute;
+  top: 0;
+  left: 11px;
+  right: 0;
+  bottom: 0;
 }
 /* @end */
 /* @group Footer */
@@ -1024,7 +1032,108 @@ button:focus {
 	}*/
 }
 /* @end */
-/* @group Slider temoignage */
+/* @group Slider citation */
+.wrapper-slider-citation {
+  display: block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.wrapper-slider-citation ul {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.wrapper-slider-citation ul li {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.wrapper-slider-citation ul li:hover .img-slider-citation {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+}
+.wrapper-slider-citation ul li:hover .zone-txt-slider-citation {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.img-slider-citation {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.zone-txt-slider-citation {
+  display: table;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0;
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.bloc-txt-slider-citation {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  vertical-align: middle;
+  background-color: #333333;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #ffffff;
+  padding: 20px 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.bloc-txt-slider-citation p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.875em;
+}
+.bloc-txt-slider-citation p strong {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 2em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  letter-spacing: 1px;
+  line-height: 0.9em;
+}
+.bloc-txt-slider-citation a {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.125em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* @end */
 /* @group Cars */
 .wrapper-car {
