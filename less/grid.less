@@ -95,6 +95,7 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	display: block;
 	&:hover{
 		.zone-picto-bloc-survol{
 			opacity: 0;
@@ -107,7 +108,7 @@
 			opacity: 1;
 			transform: translateY(0px);
 		}
-		a{
+		.btn-block{
 			opacity: 1;
 			transform: translateY(0px);
 		}
@@ -167,7 +168,7 @@
 		margin: 0 0 20px 0;
 		line-height: 1.2em;
 	}
-	a{
+	.btn-block{
 		opacity: 0;
 		transform: translateY(130px);
 		transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
