@@ -291,7 +291,8 @@ h1.small-title {
   margin: 0 0 35px 0;
 }
 h1 a {
-  display: block;
+  display: inline-block;
+  vertical-align: top;
 }
 h1 .small-txt {
   font-family: 'Texta-Light', sans-serif;
@@ -353,14 +354,42 @@ a.logo-facilicar:hover {
 .color-secondary {
   color: #e38c00;
 }
+a.color-secondary {
+  -webkit-transition: color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out;
+}
+a.color-secondary:hover {
+  color: #009cc4;
+}
 .color-grey {
   color: #b0b0a8;
+}
+a.color-grey {
+  -webkit-transition: color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out;
+}
+a.color-grey:hover {
+  color: #009cc4;
 }
 .color-white {
   color: #ffffff;
 }
+a.color-white {
+  -webkit-transition: color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out;
+}
+a.color-white:hover {
+  color: #b0b0a8;
+}
 .color-theme-black {
   color: #333333;
+}
+a.color-theme-black {
+  -webkit-transition: color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out;
+}
+a.color-theme-black:hover {
+  color: #009cc4;
 }
 .bg-gradient {
   background: -webkit-linear-gradient(top, #ffffff 0%, #e7e6e2 100%);
@@ -371,6 +400,13 @@ a.logo-facilicar:hover {
 }
 .bg-primary {
   background-color: #009cc4;
+}
+a.bg-primary {
+  -webkit-transition: background-color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out;
+}
+a.bg-primary:hover {
+  background-color: #e38c00;
 }
 .bg-secondary {
   background-color: #e38c00;
@@ -495,7 +531,6 @@ a.logo-facilicar:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
-  color: #333333;
 }
 /* @end */
 /* @group Wrapper top */
@@ -974,9 +1009,15 @@ a:focus {
   line-height: 42px;
   text-align: center;
   font-size: 26px;
+  -webkit-transition: background-color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out;
 }
 .list-social > li a.icon-twitter {
   font-size: 24px;
+}
+.list-social > li a:hover {
+  color: #333333;
+  background-color: #b0b0a8;
 }
 .list-cars {
   display: block;
@@ -1006,12 +1047,15 @@ input[type="password"] {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
   max-width: 100%;
+  -webkit-transition: border-color 0.2s ease-in-out;
+          transition: border-color 0.2s ease-in-out;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
 input[type="password"]:focus {
   outline: none;
+  border-color: #009cc4;
 }
 ::-webkit-input-placeholder {
   font-family: 'Texta-LightIt', sans-serif;
@@ -1049,6 +1093,11 @@ button {
 }
 button.button-primary {
   background-color: #009cc4;
+  -webkit-transition: background-color 0.2s ease-in-out;
+          transition: background-color 0.2s ease-in-out;
+}
+button.button-primary:hover {
+  background-color: #e38c00;
 }
 button.button-secondary {
   background-color: #e38c00;
@@ -1075,7 +1124,7 @@ button:focus {
 /* @group States */
 .hide-text {
   text-indent: -9999px;
-  display: block;
+  display: none;
 }
 .is-hidden {
   /*display: none;

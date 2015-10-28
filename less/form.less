@@ -6,8 +6,10 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
 	border-radius: 5px;
 	.texta-light(1.125em);
 	max-width: 100%;
+    transition: border-color 0.2s ease-in-out;
 	&:focus{
 		outline: none;
+        border-color: @theme-primary;
 	}
 }
 
@@ -42,6 +44,10 @@ button{
     text-transform: uppercase;
     &.button-primary{
     	background-color: @theme-primary;
+        transition: background-color 0.2s ease-in-out;
+        &:hover{
+            background-color: @theme-secondary;
+        }
     }
     &.button-secondary{
     	background-color: @theme-secondary;

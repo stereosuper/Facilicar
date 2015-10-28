@@ -58,7 +58,8 @@ h1{
         margin: 0 0 35px 0;
     }
     a{
-        display: block;
+        display: inline-block;
+        vertical-align: top;
     }
     .small-txt{
         .texta-light(0.417em);
@@ -121,18 +122,42 @@ a.logo-facilicar{
 
 .color-secondary{
 	color: @theme-secondary;
+    a&{
+        transition: color 0.2s ease-in-out;
+        &:hover{
+            color: @theme-primary;
+        }
+    }
 }
 
 .color-grey{
 	color: @theme-gris;
+    a&{
+        transition: color 0.2s ease-in-out;
+        &:hover{
+            color: @theme-primary;
+        }
+    }
 }
 
 .color-white{
 	color: #ffffff;
+    a&{
+        transition: color 0.2s ease-in-out;
+        &:hover{
+            color: @theme-gris;
+        }
+    }
 }
 
 .color-theme-black{
 	color: @theme-noir;
+    a&{
+        transition: color 0.2s ease-in-out;
+        &:hover{
+            color: @theme-primary;
+        }
+    }
 }
 
 .bg-gradient{
@@ -145,6 +170,12 @@ a.logo-facilicar{
 
 &.bg-primary{
     background-color: @theme-primary;
+    a&{
+        transition: background-color 0.2s ease-in-out;
+        &:hover{
+            background-color: @theme-secondary;
+        }
+    }
 }
 
 &.bg-secondary{
