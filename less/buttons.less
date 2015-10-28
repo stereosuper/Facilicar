@@ -76,11 +76,18 @@ a, div, span{
 		text-transform: uppercase;
 		color: #ffffff;
 		.texta-black(1.094em);
-		padding: 17px 20px;
 		position: relative;
+		overflow: hidden;
 		&.big{
-			padding: 26px 58px;
 			.texta-black(1.625em);
+			&.btn-block-arrow{
+				.txt-btn-block-arrow{
+					padding: 26px 58px;
+				}
+				.txt-hover-btn-block-arrow{
+					padding: 26px 58px;
+				}
+			}
 		}
 		&.btn-block-border{
 			box-sizing: border-box;
@@ -90,15 +97,90 @@ a, div, span{
 				padding: 15px 37px;
 			}
 		}
-		&.btn-block-arrow{
+		.txt-btn-block-arrow{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			transition: transform 0.2s ease-in-out;
+			padding: 17px 20px;
+		}
+		.txt-hover-btn-block-arrow{
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 17px 20px;
+			transform: translateY(-100%);
+			transition: transform 0.2s ease-in-out;
 			&:before{
-				content: "›";
+				content: attr(data-hover);
+			}
+		}
+		&.btn-block-arrow{
+			transition: color 0.2s ease-in-out;
+			.arrow-btn-block-arrow{
 				position: absolute;
 				top: 50%;
 				margin: -19px 0 0 0;
 				left: 24px;
 				height: 36px;
 				line-height: 36px;
+			}
+			&.bg-primary{
+				background: none;
+				&:before{
+					background-color: @theme-primary;
+				}
+				&:after{
+					border-color: @theme-primary;
+				}
+			}
+			&.bg-secondary{
+				background: none;
+				&:before{
+					background-color: @theme-secondary;
+				}
+				&:after{
+					border-color: @theme-secondary;
+				}
+			}
+			&:before{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				transition: opacity 0.2s ease-in-out;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-width: 3px;
+				border-style: solid;
+				box-sizing: border-box;
+			}
+			&:hover{
+				&:before{
+					opacity: 0;
+				}
+				.txt-btn-block-arrow{
+					transform: translateY(100%);
+				}
+				.txt-hover-btn-block-arrow{
+					transform: translateY(0%);
+				}
+				&.bg-primary{
+					color: @theme-primary;
+				}
+				&.bg-secondary{
+					color: @theme-secondary;
+				}
 			}
 		}
 	}

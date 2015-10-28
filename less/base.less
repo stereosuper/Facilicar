@@ -118,14 +118,20 @@ a.logo-facilicar{
 
 .color-primary{
 	color: @theme-primary;
+    a&{
+        transition: opacity 0.1s ease-in-out;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
 }
 
 .color-secondary{
 	color: @theme-secondary;
     a&{
-        transition: color 0.2s ease-in-out;
+        transition: opacity 0.1s ease-in-out;
         &:hover{
-            color: @theme-primary;
+            opacity: 0.8;
         }
     }
 }
@@ -133,9 +139,9 @@ a.logo-facilicar{
 .color-grey{
 	color: @theme-gris;
     a&{
-        transition: color 0.2s ease-in-out;
+        transition: opacity 0.1s ease-in-out;
         &:hover{
-            color: @theme-primary;
+            opacity: 0.8;
         }
     }
 }
@@ -143,7 +149,7 @@ a.logo-facilicar{
 .color-white{
 	color: #ffffff;
     a&{
-        transition: color 0.2s ease-in-out;
+        transition: color 0.1s ease-in-out;
         &:hover{
             color: @theme-gris;
         }
@@ -153,9 +159,9 @@ a.logo-facilicar{
 .color-theme-black{
 	color: @theme-noir;
     a&{
-        transition: color 0.2s ease-in-out;
+        transition: opacity 0.1s ease-in-out;
         &:hover{
-            color: @theme-primary;
+            opacity: 0.8;
         }
     }
 }
@@ -170,12 +176,12 @@ a.logo-facilicar{
 
 &.bg-primary{
     background-color: @theme-primary;
-    a&{
-        transition: background-color 0.2s ease-in-out;
+    /*a&{
+        transition: background-color 0.1s ease-in-out;
         &:hover{
             background-color: @theme-secondary;
         }
-    }
+    }*/
 }
 
 &.bg-secondary{
