@@ -1307,30 +1307,26 @@ a.btn-slider-citation:hover.btn-right span {
   overflow: hidden;
 }
 .wrapper-car:hover .fond-bandeau-car.bandeau-top {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 .wrapper-car:hover .car-year {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 .wrapper-car:hover .car-name {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
@@ -1340,31 +1336,27 @@ a.btn-slider-citation:hover.btn-right span {
           transition-delay: 0.1s;
 }
 .wrapper-car:hover .car-km {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 .wrapper-car:hover .car-old-price {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
 .wrapper-car:hover .car-price {
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
 .wrapper-car:hover .car-price-saving {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0px) translateZ(1px);
+          transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
@@ -1398,18 +1390,16 @@ a.btn-slider-citation:hover.btn-right span {
 .fond-bandeau-car.bandeau-top {
   top: 0;
   height: 127px;
-  -webkit-transform: translateY(-40px);
-      -ms-transform: translateY(-40px);
-          transform: translateY(-40px);
+  -webkit-transform: translateY(-40px) translateZ(1px);
+          transform: translateY(-40px) translateZ(1px);
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
 .fond-bandeau-car.bandeau-bottom {
   bottom: 0;
   height: 135px;
-  -webkit-transform: translateY(40px);
-      -ms-transform: translateY(40px);
-          transform: translateY(40px);
+  -webkit-transform: translateY(40px) translateZ(1px);
+          transform: translateY(40px) translateZ(1px);
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
@@ -1439,9 +1429,8 @@ a.btn-slider-citation:hover.btn-right span {
   right: 8px;
 }
 .car-year {
-  -webkit-transform: translateY(10px);
-      -ms-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translateY(10px) translateZ(1px);
+          transform: translateY(10px) translateZ(1px);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
   -webkit-transition-delay: 0.1s;
@@ -1450,9 +1439,8 @@ a.btn-slider-citation:hover.btn-right span {
   text-align: center;
 }
 .car-name {
-  -webkit-transform: translateY(10px);
-      -ms-transform: translateY(10px);
-          transform: translateY(10px);
+  -webkit-transform: translateY(10px) translateZ(1px);
+          transform: translateY(10px) translateZ(1px);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
   -webkit-transition-delay: 0.1s;
@@ -1486,9 +1474,8 @@ a.btn-slider-citation:hover.btn-right span {
   color: #333333;
 }
 .car-km {
-  -webkit-transform: translateY(-32px);
-      -ms-transform: translateY(-32px);
-          transform: translateY(-32px);
+  -webkit-transform: translateY(-32px) translateZ(1px);
+          transform: translateY(-32px) translateZ(1px);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
   -webkit-transition-delay: 0.1s;
@@ -1501,9 +1488,8 @@ a.btn-slider-citation:hover.btn-right span {
   padding: 2px 0;
 }
 .car-old-price {
-  -webkit-transform: translateY(-45px);
-      -ms-transform: translateY(-45px);
-          transform: translateY(-45px);
+  -webkit-transform: translateY(-45px) translateZ(1px);
+          transform: translateY(-45px) translateZ(1px);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
   -webkit-transition-delay: 0s;
@@ -1515,9 +1501,8 @@ a.btn-slider-citation:hover.btn-right span {
   color: #b0b0a8;
 }
 .car-price {
-  -webkit-transform: translateY(45px);
-      -ms-transform: translateY(45px);
-          transform: translateY(45px);
+  -webkit-transform: translateY(45px) translateZ(1px);
+          transform: translateY(45px) translateZ(1px);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
   -webkit-transition-delay: 0.1s;
@@ -1530,9 +1515,8 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .car-price-saving {
   opacity: 0;
-  -webkit-transform: translateY(45px);
-      -ms-transform: translateY(45px);
-          transform: translateY(45px);
+  -webkit-transform: translateY(45px) translateZ(1px);
+          transform: translateY(45px) translateZ(1px);
   -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   -webkit-transition-delay: 0.1s;
