@@ -17,14 +17,28 @@
 			height: 100%;
 			margin: 0;
 			padding: 0;
-			&:hover{
-				.img-slider-citation{
-					transform: scale(1.2);
-					filter: blur(4px);
-				}
-				.zone-txt-slider-citation{
-					opacity: 1;
-					transform: translateY(0px);
+			transform: translateX(100%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			&.active{
+				transform: translateX(0%);
+			}
+			a{
+				display: block;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				&:hover{
+					.img-slider-citation{
+						transform: scale(1.2);
+						filter: blur(4px);
+					}
+					.zone-txt-slider-citation{
+						opacity: 1;
+						transform: translateY(0px);
+					}
 				}
 			}
 		}
@@ -79,6 +93,49 @@
 	}
 	a{
 		.texta-black(1.125em);
+	}
+}
+a.btn-slider-citation{
+	display: block;
+	width: 44px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	color: #ffffff;
+	text-align: center;
+	span{
+		font-size: 18px;
+		height: 18px;
+		width: 10px;
+		position: absolute;
+		top: 50%;
+		margin: -18px 0 0 0;
+		transition: transform 0.2s ease-out;
+	}
+	&.btn-left{
+		left: 0;
+		span{
+			right: 0;
+		}
+	}
+	&.btn-right{
+		right: 0;
+		span{
+			left: 0;
+		}
+	}
+	&:hover{
+		&.btn-left{
+			span{
+				transform: translateX(-15px);
+			}
+		}
+		&.btn-right{
+			span{
+				transform: translateX(15px);
+			}
+		}
 	}
 }
 /* @end */

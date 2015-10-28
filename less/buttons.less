@@ -1,5 +1,5 @@
 /* @group Buttons */
-a{
+a, div, span{
 	&.btn-underline{
 		text-decoration: underline;
 	}
@@ -101,6 +101,11 @@ a{
 				line-height: 36px;
 			}
 		}
+	}
+}
+a{
+	&:focus{
+		outline: none;
 	}
 }
 /* @end */
