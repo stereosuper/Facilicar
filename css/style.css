@@ -577,6 +577,9 @@ a.color-theme-black:hover {
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
 }
+#menu-bottom-header ul > li a .txt-hover-btn-anim {
+  color: #009cc4;
+}
 /* @end */
 /* @group Wrapper top */
 #wrapper-top {
