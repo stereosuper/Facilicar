@@ -1064,6 +1064,7 @@ div.btn-block.btn-block-arrow,
 span.btn-block.btn-block-arrow {
   -webkit-transition: color 0.2s ease-in-out;
           transition: color 0.2s ease-in-out;
+  background-color: #ffffff;
 }
 .bloc-survol a.btn-block.btn-block-arrow,
 .bloc-survol div.btn-block.btn-block-arrow,
@@ -1081,11 +1082,6 @@ span.btn-block.btn-block-arrow .arrow-btn-block-arrow {
   height: 36px;
   line-height: 36px;
 }
-a.btn-block.btn-block-arrow.bg-primary,
-div.btn-block.btn-block-arrow.bg-primary,
-span.btn-block.btn-block-arrow.bg-primary {
-  background: none;
-}
 a.btn-block.btn-block-arrow.bg-primary:before,
 div.btn-block.btn-block-arrow.bg-primary:before,
 span.btn-block.btn-block-arrow.bg-primary:before {
@@ -1095,11 +1091,6 @@ a.btn-block.btn-block-arrow.bg-primary:after,
 div.btn-block.btn-block-arrow.bg-primary:after,
 span.btn-block.btn-block-arrow.bg-primary:after {
   border-color: #009cc4;
-}
-a.btn-block.btn-block-arrow.bg-secondary,
-div.btn-block.btn-block-arrow.bg-secondary,
-span.btn-block.btn-block-arrow.bg-secondary {
-  background: none;
 }
 a.btn-block.btn-block-arrow.bg-secondary:before,
 div.btn-block.btn-block-arrow.bg-secondary:before,
@@ -1153,6 +1144,16 @@ span.btn-block.btn-block-arrow:after {
   border-width: 3px;
   border-style: solid;
   box-sizing: border-box;
+}
+a.btn-block.btn-block-arrow:hover,
+div.btn-block.btn-block-arrow:hover,
+span.btn-block.btn-block-arrow:hover {
+  background-color: #ffffff;
+}
+a.btn-block.btn-block-arrow:hover.border-white,
+div.btn-block.btn-block-arrow:hover.border-white,
+span.btn-block.btn-block-arrow:hover.border-white {
+  background: none;
 }
 a.btn-block.btn-block-arrow:hover:before,
 div.btn-block.btn-block-arrow:hover:before,
@@ -1344,11 +1345,16 @@ button.button-secondary {
   background-color: #e38c00;
 }
 button.button-arrow {
+  -webkit-transition: color 0.2s ease-in-out;
+          transition: color 0.2s ease-in-out;
+  overflow: hidden;
   position: relative;
-  padding: 9px 12px 9px 24px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  background-color: #ffffff;
 }
-button.button-arrow:before {
-  content: "›";
+button.button-arrow .arrow-button {
   display: inline-block;
   vertical-align: top;
   height: 24px;
@@ -1357,6 +1363,85 @@ button.button-arrow:before {
   left: 12px;
   top: 50%;
   margin: -13px 0 0 0;
+}
+button.button-arrow .txt-button {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  padding: 9px 12px 9px 24px;
+}
+button.button-arrow .txt-hover-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  padding: 9px 12px 9px 24px;
+}
+button.button-arrow .txt-hover-button:before {
+  content: attr(data-hover);
+}
+button.button-arrow.bg-primary:before {
+  background-color: #009cc4;
+}
+button.button-arrow.bg-primary:after {
+  border-color: #009cc4;
+}
+button.button-arrow.bg-secondary:before {
+  background-color: #e38c00;
+}
+button.button-arrow.bg-secondary:after {
+  border-color: #e38c00;
+}
+button.button-arrow:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+}
+button.button-arrow:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 2px;
+  border-style: solid;
+  box-sizing: border-box;
+}
+button.button-arrow:hover {
+  background-color: #ffffff;
+}
+button.button-arrow:hover:before {
+  opacity: 0;
+}
+button.button-arrow:hover .txt-button {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+button.button-arrow:hover .txt-hover-button {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
+button.button-arrow:hover.bg-primary {
+  color: #009cc4;
+}
+button.button-arrow:hover.bg-secondary {
+  color: #e38c00;
 }
 button:focus {
   outline: none;
@@ -1420,12 +1505,16 @@ button:focus {
           transform: scale(1.2);
   -webkit-filter: blur(4px);
           filter: blur(4px);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .wrapper-slider-citation ul li a:hover .zone-txt-slider-citation {
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 .img-slider-citation {
   display: block;
@@ -1437,6 +1526,8 @@ button:focus {
           transition: all 0.2s ease-in-out;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 .zone-txt-slider-citation {
   display: table;
@@ -1454,6 +1545,8 @@ button:focus {
           transform: translateY(50px);
   -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
           transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
 }
 .bloc-txt-slider-citation {
   display: inline-block;

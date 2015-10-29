@@ -34,10 +34,12 @@
 					.img-slider-citation{
 						transform: scale(1.2);
 						filter: blur(4px);
+						transition-delay: 0s;
 					}
 					.zone-txt-slider-citation{
 						opacity: 1;
 						transform: translateY(0px);
+						transition-delay: 0.1s;
 					}
 				}
 			}
@@ -52,6 +54,7 @@
 	padding: 0;
 	transition: all 0.2s ease-in-out;
 	backface-visibility: hidden;
+	transition-delay: 0.1s;
 }
 .zone-txt-slider-citation{
 	display: table;
@@ -66,6 +69,7 @@
 	opacity: 0;
 	transform: translateY(50px);
 	transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+	transition-delay: 0s;
 }
 .bloc-txt-slider-citation{
 	display: inline-block;

@@ -158,6 +158,7 @@ a, div, span{
 		}
 		&.btn-block-arrow{
 			transition: color 0.2s ease-in-out;
+			background-color: #ffffff;
 			.bloc-survol &{
 				transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, color 0.2s ease-in-out;
 			}
@@ -170,7 +171,6 @@ a, div, span{
 				line-height: 36px;
 			}
 			&.bg-primary{
-				background: none;
 				&:before{
 					background-color: @theme-primary;
 				}
@@ -179,7 +179,6 @@ a, div, span{
 				}
 			}
 			&.bg-secondary{
-				background: none;
 				&:before{
 					background-color: @theme-secondary;
 				}
@@ -220,6 +219,10 @@ a, div, span{
 				box-sizing: border-box;
 			}
 			&:hover{
+				background-color: #ffffff;
+				&.border-white{
+					background: none;
+				}
 				&:before{
 					opacity: 0;
 				}
