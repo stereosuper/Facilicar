@@ -441,6 +441,9 @@ a.color-theme-black:hover {
 .txt-left-aligned {
   text-align: left;
 }
+.txt-right-aligned {
+  text-align: left;
+}
 .line-through {
   text-decoration: line-through;
 }
@@ -1670,6 +1673,79 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform: translateX(15px);
       -ms-transform: translateX(15px);
           transform: translateX(15px);
+}
+/* @end */
+/* @group Choose */
+.wrapper-choose {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 530px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 10%;
+}
+.content-choose {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.wrapper-zone-choose {
+  display: block;
+  width: 33.33333333%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.wrapper-zone-choose.wrapper-zone-left-choose {
+  left: 0;
+}
+.wrapper-zone-choose.wrapper-zone-center-choose {
+  left: 33.33333333%;
+}
+.wrapper-zone-choose.wrapper-zone-right-choose {
+  right: 0;
+}
+.wrapper-zone-choose p {
+  margin: 0;
+}
+.title-choose {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 3.125em;
+  color: #333333;
+  line-height: 1em;
+  margin: 0 0 10px 0;
+}
+.title-action-choose {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 3.875em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #009cc4;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.list-choose {
+  display: block;
+  padding: 30px 0 0 20px;
+}
+.list-choose > li {
+  color: #e38c00;
+  margin: 0 0 20px 0;
+}
+.list-choose > li p {
+  color: #333333;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+}
+.list-choose > li p strong {
+  display: block;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.875em;
 }
 /* @end */
 /* @group Cars */
