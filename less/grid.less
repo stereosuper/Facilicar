@@ -5,40 +5,76 @@
     height: auto;
     margin: 0;
     padding: 20px 0;
+    background-color: #ffffff;
+    z-index: 10;
     a.logo-facilicar{
     	float: left;
     	margin: 14px 0 0 27px;
+    }
+    position: relative;
+    .header-on &{
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	border-bottom: 1px solid @theme-gris;
+    	a.logo-facilicar{
+    		margin: 0 0 0 27px;
+    	}
     }
 }
 #zone-right-header{
 	float: right;
 	text-align: right;
+	.header-on &{
+		margin: 4px 0 0 0;
+	}
 }
 #menu-top-header{
-	margin: 0 0 22px 0;
-	>li{
-		margin: 0 0 0 22px;
-		&:first-of-type{
-			margin: 0;
+	.header-on &{
+		display: inline-block;
+		vertical-align: top;
+		margin: 1px 0 0 0;
+		ul{
+			margin: 0 130px 0 0;
+			>li{
+				&:first-of-type{
+					display: none;
+				}
+			}
 		}
-		a{
-			.texta-medium(1em);
+	}
+	ul{
+		margin: 0 0 22px 0;
+		>li{
+			margin: 0 0 0 22px;
+			&:first-of-type{
+				margin: 0;
+			}
+			a{
+				.texta-medium(1em);
+			}
 		}
 	}
 }
 #menu-bottom-header{
-	>li{
-		padding: 0;
-		margin: 0 0 0 50px;
-		&:first-of-type{
-			margin: 0;
-		}
-		&.no-margin{
-			margin: 0;
-		}
-		a{
-			.texta-black(1.125em);
-			text-transform: uppercase;
+	.header-on &{
+		display: inline-block;
+		vertical-align: top;
+	}
+	ul{
+		>li{
+			padding: 0;
+			margin: 0 0 0 50px;
+			&:first-of-type{
+				margin: 0;
+			}
+			&.no-margin{
+				margin: 0;
+			}
+			a{
+				.texta-black(1.125em);
+				text-transform: uppercase;
+			}
 		}
 	}
 }
@@ -49,8 +85,12 @@
 	display: block;
 	width: 100%;
 	height: auto;
+	min-height: 565px;
 	margin: 0;
 	padding: 0;
+	.header-on &{
+		padding: 110px 0 0 0;
+	}
 }
 /* @end */
 

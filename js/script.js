@@ -1,5 +1,27 @@
 var nbCurrentSlideTemoignage = 1;
 
+window.requestAnimFrame = (function(){
+	return  window.requestAnimationFrame   || 
+			window.webkitRequestAnimationFrame || 
+			window.mozRequestAnimationFrame    || 
+			window.oRequestAnimationFrame      || 
+			window.msRequestAnimationFrame     || 
+			function(callback){ window.setTimeout(callback, 1000/60); };
+})();
+
+// Request anim frame
+function scrollPage(){
+	myScroll = $(document).scrollTop();
+
+	if (myScroll>100){
+		TweenMax.set($("body"), {className:"+=header-on"});
+	}else{
+		TweenMax.set($("body"), {className:"-=header-on"});
+	}
+
+	requestAnimFrame(scrollPage);
+}
+
 // Animation des slides de citations
 function animatePrevCitation(nbSlide, idWrapperSliderCitation){
 	var currentSlideCitationActive = $("ul > li.active", idWrapperSliderCitation);
@@ -24,6 +46,9 @@ function completeClickService(currentSlideCitationActive, nextSlideCitation){
 }
 
 $(function(){
+	// Request anim frame
+	scrollPage();
+
 	// Adapter la taille des images à la taille du container parent
 	$(".imgLiquidFill").imgLiquid();
 

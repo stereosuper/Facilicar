@@ -341,6 +341,11 @@ a.logo-facilicar {
 a.logo-facilicar:hover {
   opacity: 0.8;
 }
+.header-on a.logo-facilicar {
+  width: 179px;
+  height: 31px;
+  background-size: 179px 31px;
+}
 .container {
   display: block;
   width: 1140px;
@@ -502,39 +507,69 @@ a.color-theme-black:hover {
   height: auto;
   margin: 0;
   padding: 20px 0;
+  background-color: #ffffff;
+  z-index: 10;
+  position: relative;
 }
 #header a.logo-facilicar {
   float: left;
   margin: 14px 0 0 27px;
 }
+.header-on #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #b0b0a8;
+}
+.header-on #header a.logo-facilicar {
+  margin: 0 0 0 27px;
+}
 #zone-right-header {
   float: right;
   text-align: right;
 }
-#menu-top-header {
+.header-on #zone-right-header {
+  margin: 4px 0 0 0;
+}
+.header-on #menu-top-header {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1px 0 0 0;
+}
+.header-on #menu-top-header ul {
+  margin: 0 130px 0 0;
+}
+.header-on #menu-top-header ul > li:first-of-type {
+  display: none;
+}
+#menu-top-header ul {
   margin: 0 0 22px 0;
 }
-#menu-top-header > li {
+#menu-top-header ul > li {
   margin: 0 0 0 22px;
 }
-#menu-top-header > li:first-of-type {
+#menu-top-header ul > li:first-of-type {
   margin: 0;
 }
-#menu-top-header > li a {
+#menu-top-header ul > li a {
   font-family: 'Texta-Medium', sans-serif;
   font-size: 1em;
 }
-#menu-bottom-header > li {
+.header-on #menu-bottom-header {
+  display: inline-block;
+  vertical-align: top;
+}
+#menu-bottom-header ul > li {
   padding: 0;
   margin: 0 0 0 50px;
 }
-#menu-bottom-header > li:first-of-type {
+#menu-bottom-header ul > li:first-of-type {
   margin: 0;
 }
-#menu-bottom-header > li.no-margin {
+#menu-bottom-header ul > li.no-margin {
   margin: 0;
 }
-#menu-bottom-header > li a {
+#menu-bottom-header ul > li a {
   font-family: 'Texta-Black', sans-serif;
   font-size: 1.125em;
   /* Better Font Rendering =========== */
@@ -548,8 +583,12 @@ a.color-theme-black:hover {
   display: block;
   width: 100%;
   height: auto;
+  min-height: 565px;
   margin: 0;
   padding: 0;
+}
+.header-on #wrapper-top {
+  padding: 110px 0 0 0;
 }
 /* @end */
 /* @group Vehicules home */
