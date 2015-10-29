@@ -1,5 +1,35 @@
 /* @group Buttons */
 a, div, span{
+	&.btn-anim{
+		overflow: hidden;
+		position: relative;
+		display: block;
+		.txt-btn-anim{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			transition: transform 0.2s ease-in-out;
+		}
+		.txt-hover-btn-anim{
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translateY(-100%);
+			transition: transform 0.2s ease-in-out;
+			&:before{
+				content: attr(data-hover);
+			}
+		}
+		&:hover{
+			opacity: 1;
+			.txt-btn-anim{
+				transform: translateY(100%);
+			}
+			.txt-hover-btn-anim{
+				transform: translateY(0%);
+			}
+		}
+	}
 	&.btn-underline{
 		text-decoration: underline;
 	}
@@ -27,7 +57,7 @@ a, div, span{
 			display: inline-block;
 			vertical-align: top;
 			font-size: 17px;
-			margin: 0 6px 0 0;
+			margin: 0 4px 0 0;
 			padding: 4px 0 0 0;
 		}
 		.tel-number{
@@ -54,6 +84,7 @@ a, div, span{
 			margin: 5px 0 0 0;
 			padding: 0;
 			color: #FF7E7E;
+			transition: color 0.1s ease-in-out;
 		}
 		.heart-number{
 			.texta-bold(0.611em);
@@ -68,6 +99,16 @@ a, div, span{
 			padding: 0 3px;
 			border-radius: 3px;
 			border: 1px solid @theme-gris;
+			transition: color 0.1s ease-in-out;
+		}
+		&:hover{
+			opacity: 1;
+			.icon-heart{
+				color: #F45858;
+			}
+			.heart-number{
+				color: @theme-primary;
+			}
 		}
 	}
 	&.btn-block{
@@ -102,13 +143,13 @@ a, div, span{
 			vertical-align: top;
 			position: relative;
 			transition: transform 0.2s ease-in-out;
-			padding: 17px 20px;
+			padding: 17px 28px 17px 45px;
 		}
 		.txt-hover-btn-block-arrow{
 			position: absolute;
 			top: 0;
 			left: 0;
-			padding: 17px 20px;
+			padding: 17px 28px 17px 45px;
 			transform: translateY(-100%);
 			transition: transform 0.2s ease-in-out;
 			&:before{
@@ -117,6 +158,9 @@ a, div, span{
 		}
 		&.btn-block-arrow{
 			transition: color 0.2s ease-in-out;
+			.bloc-survol &{
+				transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+			}
 			.arrow-btn-block-arrow{
 				position: absolute;
 				top: 50%;
@@ -141,6 +185,16 @@ a, div, span{
 				}
 				&:after{
 					border-color: @theme-secondary;
+				}
+			}
+			&.border-white{
+				background: none;
+				&:before{
+					background-color: #ffffff;
+					opacity: 0;
+				}
+				&:after{
+					border-color: #ffffff;
 				}
 			}
 			&:before{
@@ -180,6 +234,12 @@ a, div, span{
 				}
 				&.bg-secondary{
 					color: @theme-secondary;
+				}
+				&.border-white{
+					color: @theme-secondary;
+					&:before{
+						opacity: 1;
+					}
 				}
 			}
 		}
