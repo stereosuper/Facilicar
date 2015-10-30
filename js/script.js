@@ -13,7 +13,7 @@ window.requestAnimFrame = (function(){
 function scrollPage(){
 	myScroll = $(document).scrollTop();
 
-	if (myScroll>100){
+	if (myScroll>40){
 		TweenMax.set($("body"), {className:"+=header-on"});
 	}else{
 		TweenMax.set($("body"), {className:"-=header-on"});
