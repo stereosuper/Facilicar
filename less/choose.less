@@ -6,7 +6,8 @@
 	height: 530px;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0 10%;
+	padding: 60px 0 0 0;
+	//padding: 0 10%;
 }
 
 .content-choose{
@@ -42,10 +43,11 @@
 }
 
 .title-choose{
-	.texta-light(3.125em);
+	.texta-light(2.8em);
 	color: @theme-noir;
 	line-height: 1em;
 	margin: 0 0 10px 0;
+	padding: 10px 0 0 0;
 }
 
 .title-action-choose{
@@ -53,11 +55,43 @@
 	color: @theme-primary;
 	line-height: 1em;
 	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	&.left-arrow{
+		padding: 0 0 0 40px;
+		&:before{
+			display: inline-block;
+			vertical-align: top;
+			content: "‹";
+			position: absolute;
+			top: 50%;
+			left: 0;
+			height: 50px;
+			line-height: 40px;
+			margin: -25px 0 0 0;
+		}
+	}
+	&.right-arrow{
+		padding: 0 40px 0 0;
+		&:before{
+			display: inline-block;
+			vertical-align: top;
+			content: "›";
+			position: absolute;
+			top: 50%;
+			right: 0;
+			height: 50px;
+			line-height: 40px;
+			margin: -25px 0 0 0;
+		}
+	}
 }
 
 .list-choose{
 	display: block;
 	padding: 30px 0 0 20px;
+	opacity: 0;
 	>li{
 		color: @theme-secondary;
 		margin: 0 0 20px 0;
@@ -70,5 +104,24 @@
 			}
 		}
 	}
+}
+
+.container-car-choose{
+	display: block;
+	width: 535px;
+	height: 223px;
+	position: absolute;
+	bottom: 87px;
+	left: 50%;
+	margin: 0 0 0 -267px;
+}
+
+.car-choose{
+	display: block;
+	width: 535px;
+	height: 223px;
+	margin: 0;
+	padding: 0;
+	background: url("../layoutImg/car-choose.png") no-repeat 0 0;
 }
 /* @end */
