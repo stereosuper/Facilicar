@@ -512,6 +512,8 @@ a.color-theme-black:hover {
   padding: 20px 0;
   background-color: #ffffff;
   z-index: 10;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   position: relative;
 }
 #header a.logo-facilicar {
@@ -634,6 +636,8 @@ a.color-theme-black:hover {
   z-index: 1;
   overflow: hidden;
   display: block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .bloc-survol:hover .zone-picto-bloc-survol {
   opacity: 0;
@@ -1525,6 +1529,8 @@ button:focus {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .wrapper-slider-citation ul {
   display: block;
