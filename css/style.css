@@ -1075,6 +1075,16 @@ div.btn-block.btn-block-border.btn-block-arrow,
 span.btn-block.btn-block-border.btn-block-arrow {
   padding: 15px 37px;
 }
+a.btn-block.btn-block-arrow-left .txt-btn-block-arrow,
+div.btn-block.btn-block-arrow-left .txt-btn-block-arrow,
+span.btn-block.btn-block-arrow-left .txt-btn-block-arrow {
+  padding: 17px 45px 17px 28px;
+}
+a.btn-block.btn-block-arrow-left .txt-hover-btn-block-arrow,
+div.btn-block.btn-block-arrow-left .txt-hover-btn-block-arrow,
+span.btn-block.btn-block-arrow-left .txt-hover-btn-block-arrow {
+  padding: 17px 45px 17px 28px;
+}
 a.btn-block .txt-btn-block-arrow,
 div.btn-block .txt-btn-block-arrow,
 span.btn-block .txt-btn-block-arrow {
@@ -1125,6 +1135,12 @@ span.btn-block.btn-block-arrow .arrow-btn-block-arrow {
   left: 24px;
   height: 36px;
   line-height: 36px;
+}
+a.btn-block.btn-block-arrow.btn-block-arrow-left .arrow-btn-block-arrow,
+div.btn-block.btn-block-arrow.btn-block-arrow-left .arrow-btn-block-arrow,
+span.btn-block.btn-block-arrow.btn-block-arrow-left .arrow-btn-block-arrow {
+  left: auto;
+  right: 24px;
 }
 a.btn-block.btn-block-arrow.bg-primary:before,
 div.btn-block.btn-block-arrow.bg-primary:before,
@@ -1910,21 +1926,21 @@ a.btn-slider-citation:hover.btn-right span {
   bottom: 87px;
   left: 50%;
   margin: 0 0 0 -267px;
-  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.39, 0.12, 0.055, 0.995);
-          transition: transform 0.8s cubic-bezier(0.39, 0.12, 0.055, 0.995);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.495, 0.055, 0.995);
+          transition: transform 0.8s cubic-bezier(0.25, 0.495, 0.055, 0.995);
   -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
           transform: translateX(0%);
 }
 .survol-left .container-car-choose {
-  -webkit-transform: translateX(-20%);
-      -ms-transform: translateX(-20%);
-          transform: translateX(-20%);
+  -webkit-transform: translateX(-15%);
+      -ms-transform: translateX(-15%);
+          transform: translateX(-15%);
 }
 .survol-right .container-car-choose {
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
+  -webkit-transform: translateX(15%);
+      -ms-transform: translateX(15%);
+          transform: translateX(15%);
 }
 .car-choose {
   display: block;
