@@ -27,6 +27,7 @@
 	top: 0;
 	&.wrapper-zone-left-choose{
 		left: 0;
+		z-index: 2;
 		//background-color: blue;
 	}
 	&.wrapper-zone-center-choose{
@@ -35,6 +36,7 @@
 	}
 	&.wrapper-zone-right-choose{
 		right: 0;
+		z-index: 2;
 		//background-color: red;
 	}
 	p{
@@ -57,9 +59,13 @@
 	text-transform: uppercase;
 	display: inline-block;
 	vertical-align: top;
-	position: relative;
+	position: absolute;
+	top: 0;
+	transform: translateX(0%);
+	transition: transform 0.4s ease-in-out;
 	&.left-arrow{
 		padding: 0 0 0 40px;
+		left: 0;
 		&:before{
 			display: inline-block;
 			vertical-align: top;
@@ -71,9 +77,13 @@
 			line-height: 40px;
 			margin: -25px 0 0 0;
 		}
+		.survol-left &{
+			transform: translateX(140%);
+		}
 	}
 	&.right-arrow{
 		padding: 0 40px 0 0;
+		right: 0;
 		&:before{
 			display: inline-block;
 			vertical-align: top;
@@ -85,22 +95,75 @@
 			line-height: 40px;
 			margin: -25px 0 0 0;
 		}
+		.survol-right &{
+			transform: translateX(-140%);
+		}
 	}
 }
 
 .list-choose{
 	display: block;
-	padding: 30px 0 0 20px;
+	padding: 13px 0 0 0;
 	opacity: 0;
+	list-style-type: none;
+	transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+	transition-delay: 0.2s;
 	>li{
-		color: @theme-secondary;
-		margin: 0 0 20px 0;
+		margin: 0 0 10px 0;
+		position: relative;
 		p{
-			color: @theme-noir;
 			.texta-light(1em);
 			strong{
 				display: block;
-				.texta-bold(1.875em);
+				.texta-bold(1.3em);
+			}
+		}
+	}
+	.wrapper-zone-left-choose &{
+		text-align: right;
+		transform: translateX(-50%);
+		.survol-left &{
+			opacity: 1;
+			transform: translateX(0%);
+		}
+		>li{
+			padding: 0 15px 0 0;
+			&:before{
+				content: "●";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				color: @theme-secondary;
+				font-size: 10px;
+				display: block;
+				width: 10px;
+				height: 10px;
+				line-height: 10px;
+				margin: -3px 0 0 0;
+			}
+		}
+	}
+	.wrapper-zone-right-choose &{
+		text-align: left;
+		transform: translateX(50%);
+		.survol-right &{
+			opacity: 1;
+			transform: translateX(0%);
+		}
+		>li{
+			padding: 0 0 0 15px;
+			&:before{
+				content: "●";
+				position: absolute;
+				top: 50%;
+				left: 0;
+				color: @theme-secondary;
+				font-size: 10px;
+				display: block;
+				width: 10px;
+				height: 10px;
+				line-height: 10px;
+				margin: -3px 0 0 0;
 			}
 		}
 	}
@@ -114,6 +177,14 @@
 	bottom: 87px;
 	left: 50%;
 	margin: 0 0 0 -267px;
+	transition: transform 0.8s ease-out;
+	transform: translateX(0%);
+	.survol-left &{
+		transform: translateX(-20%);
+	}
+	.survol-right &{
+		transform: translateX(20%);
+	}
 }
 
 .car-choose{
