@@ -79,7 +79,9 @@ $(function(){
 	$(".wrapper-zone-left-choose").hover(
 		function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			wrapperChooseParent.addClass("survol-left");
+			if(!wrapperChooseParent.hasClass("survol-left")){
+				wrapperChooseParent.addClass("survol-left");
+			}
 		}, function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			wrapperChooseParent.removeClass("survol-left");
@@ -89,7 +91,9 @@ $(function(){
 	$(".wrapper-zone-right-choose").hover(
 		function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			wrapperChooseParent.addClass("survol-right");
+			if(!wrapperChooseParent.hasClass("survol-right")){
+				wrapperChooseParent.addClass("survol-right");
+			}
 		}, function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			wrapperChooseParent.removeClass("survol-right");

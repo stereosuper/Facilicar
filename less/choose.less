@@ -1,4 +1,29 @@
 /* @group Choose */
+.wrapper-survol-out{
+	display: block;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 60px;
+	bottom: 0;
+	left: 10%;
+	right: 10%;
+	padding: 0;
+}
+
+.zone-survol-out{
+	display: block;
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	&.wrapper-zone-left-choose{
+		left: 0;
+	}
+	&.wrapper-zone-right-choose{
+		right: 0;
+	}
+}
+
 .wrapper-choose{
 	display: block;
 	position: relative;
@@ -7,7 +32,12 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 60px 0 0 0;
-	//padding: 0 10%;
+	text-align: center;
+	.container{
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 .content-choose{

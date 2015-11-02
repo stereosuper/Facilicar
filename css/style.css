@@ -447,6 +447,9 @@ a.color-theme-black:hover {
 .line-through {
   text-decoration: line-through;
 }
+.full-height {
+  height: 100%;
+}
 .wrapper-align-middle {
   display: table;
   width: 100%;
@@ -591,9 +594,11 @@ a.color-theme-black:hover {
   display: block;
   width: 100%;
   height: auto;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  position: relative;
 }
 .header-on #wrapper-top {
   padding: 110px 0 0 0;
@@ -1698,6 +1703,29 @@ a.btn-slider-citation:hover.btn-right span {
 }
 /* @end */
 /* @group Choose */
+.wrapper-survol-out {
+  display: block;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  padding: 0;
+}
+.zone-survol-out {
+  display: block;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+.zone-survol-out.wrapper-zone-left-choose {
+  left: 0;
+}
+.zone-survol-out.wrapper-zone-right-choose {
+  right: 0;
+}
 .wrapper-choose {
   display: block;
   position: relative;
@@ -1706,6 +1734,12 @@ a.btn-slider-citation:hover.btn-right span {
   box-sizing: border-box;
   margin: 0;
   padding: 60px 0 0 0;
+  text-align: center;
+}
+.wrapper-choose .container {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
 }
 .content-choose {
   display: block;
