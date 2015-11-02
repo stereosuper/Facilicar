@@ -76,10 +76,34 @@ $(function(){
 	});
 
 	// Hover | Animation de la partie choisir
+	$(".zone-left-survol-out").hover(
+		function() {
+			var wrapperChooseParent = $(this).parents(".wrapper-choose");
+			if(!$(this).parents(".wrapper-choose").hasClass("survol-out-left")){
+				wrapperChooseParent.addClass("survol-out-left");
+			}
+		}, function() {
+			var wrapperChooseParent = $(this).parents(".wrapper-choose");
+			wrapperChooseParent.removeClass("survol-out-left");
+		}
+	);
+
+	$(".zone-right-survol-out").hover(
+		function() {
+			var wrapperChooseParent = $(this).parents(".wrapper-choose");
+			if(!wrapperChooseParent.hasClass("survol-out-right")){
+				wrapperChooseParent.addClass("survol-out-right");
+			}
+		}, function() {
+			var wrapperChooseParent = $(this).parents(".wrapper-choose");
+			wrapperChooseParent.removeClass("survol-out-right");
+		}
+	);
+
 	$(".wrapper-zone-left-choose").hover(
 		function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			if(!wrapperChooseParent.hasClass("survol-left")){
+			if(!$(this).parents(".wrapper-choose").hasClass("survol-left")){
 				wrapperChooseParent.addClass("survol-left");
 			}
 		}, function() {

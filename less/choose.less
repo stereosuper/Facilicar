@@ -16,10 +16,10 @@
 	width: 50%;
 	height: 100%;
 	position: absolute;
-	&.wrapper-zone-left-choose{
+	&.zone-left-survol-out{
 		left: 0;
 	}
-	&.wrapper-zone-right-choose{
+	&.zone-right-survol-out{
 		right: 0;
 	}
 }
@@ -82,11 +82,11 @@
 			opacity: 1;
 			transform: translateX(0%);
 			transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-			.survol-left &{
+			.survol-left &, .survol-out-left &{
 				opacity: 0;
 				transform: translateX(20%);
 			}
-			.survol-right &{
+			.survol-right &, .survol-out-right &{
 				opacity: 0;
 				transform: translateX(-20%);
 			}
@@ -138,13 +138,13 @@
 			content: "‹";
 			left: 0;
 		}
-		.survol-left &{
+		.survol-left &, .survol-out-left &{
 			transform: translateX(140%);
 			&:before{
 				opacity: 0;
 			}
 		}
-		.survol-right &{
+		.survol-right &, .survol-out-right &{
 			transform: scale(0.5);
 		}
 	}
@@ -156,10 +156,10 @@
 			content: "›";
 			right: 0;
 		}
-		.survol-left &{
+		.survol-left &, .survol-out-left &{
 			transform: scale(0.5);
 		}
-		.survol-right &{
+		.survol-right &, .survol-out-right &{
 			transform: translateX(-140%);
 			&:before{
 				opacity: 0;
@@ -173,14 +173,14 @@
 	opacity: 0;
 	.wrapper-zone-left-choose &{
 		transform: translateX(-50%);
-		.survol-left &{
+		.survol-left &, .survol-out-left &{
 			transform: translateX(0%);
 			opacity: 1;
 		}
 	}
 	.wrapper-zone-right-choose &{
 		transform: translateX(50%);
-		.survol-right &{
+		.survol-right &, .survol-out-right &{
 			transform: translateX(0%);
 			opacity: 1;
 		}
@@ -207,7 +207,7 @@
 	}
 	.wrapper-zone-left-choose &{
 		text-align: right;
-		.survol-left &{
+		.survol-left &, .survol-out-left &{
 			opacity: 1;
 			transition-delay: 0.2s;
 		}
@@ -230,7 +230,7 @@
 	}
 	.wrapper-zone-right-choose &{
 		text-align: left;
-		.survol-right &{
+		.survol-right &, .survol-out-right &{
 			opacity: 1;
 			transition-delay: 0.2s;
 		}
@@ -263,10 +263,10 @@
 	margin: 0 0 0 -267px;
 	transition: transform 0.8s cubic-bezier(0.250, 0.495, 0.055, 0.995);
 	transform: translateX(0%);
-	.survol-left &{
+	.survol-left &, .survol-out-left &{
 		transform: translateX(15%);
 	}
-	.survol-right &{
+	.survol-right &, .survol-out-right &{
 		transform: translateX(-15%);
 	}
 }
