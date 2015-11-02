@@ -103,6 +103,7 @@
 	&.left-arrow{
 		padding: 0 0 0 40px;
 		left: 0;
+		transform-origin: 0 100%;
 		&:before{
 			content: "‹";
 			left: 0;
@@ -113,13 +114,20 @@
 				opacity: 0;
 			}
 		}
+		.survol-right &{
+			transform: scale(0.5);
+		}
 	}
 	&.right-arrow{
 		padding: 0 40px 0 0;
 		right: 0;
+		transform-origin: 100% 100%;
 		&:before{
 			content: "›";
 			right: 0;
+		}
+		.survol-left &{
+			transform: scale(0.5);
 		}
 		.survol-right &{
 			transform: translateX(-140%);
@@ -226,10 +234,10 @@
 	transition: transform 0.8s cubic-bezier(0.250, 0.495, 0.055, 0.995);
 	transform: translateX(0%);
 	.survol-left &{
-		transform: translateX(-15%);
+		transform: translateX(15%);
 	}
 	.survol-right &{
-		transform: translateX(15%);
+		transform: translateX(-15%);
 	}
 }
 
