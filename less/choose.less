@@ -19,6 +19,23 @@
 	padding: 0;
 }
 
+.cover-hover{
+	display: block;
+	width: 33.33333333%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	&.cover-hover-left{
+		left: 0;
+		transform: translateX(-100%);
+	}
+	&.cover-hover-right{
+		right: 0;
+		transform: translateX(100%);
+	}
+}
+
 .wrapper-zone-choose{
 	display: block;
 	width: 33.33333333%;
