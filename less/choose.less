@@ -4,7 +4,7 @@
 	width: auto;
 	height: auto;
 	position: absolute;
-	top: 60px;
+	top: 0;
 	bottom: 0;
 	/*left: 10%;
 	right: 10%;*/
@@ -35,7 +35,8 @@
 	height: 530px;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 60px 0 0 0;
+	//padding: 60px 0 0 0;
+	padding: 0;
 	text-align: center;
 	.container{
 		margin: 0;
@@ -76,6 +77,8 @@
 	height: 100%;
 	position: absolute;
 	bottom: 0;
+	box-sizing: border-box;
+	padding: 60px 0 0 0;
 	&.wrapper-zone-left-choose{
 		left: 0;
 		cursor: pointer;
@@ -123,7 +126,7 @@
 	display: inline-block;
 	vertical-align: top;
 	position: absolute;
-	top: 0;
+	top: 60px;
 	transform: translateX(0%);
 	transition: transform 0.3s ease-in-out;
 	&:before{
@@ -280,10 +283,36 @@
 
 .car-choose{
 	display: block;
+	position: relative;
 	width: 535px;
 	height: 223px;
 	margin: 0;
 	padding: 0;
-	background: url("../layoutImg/car-choose.png") no-repeat 0 0;
+	background: url("../layoutImg/car-choose-01.png") no-repeat 0 0;
+}
+
+.car-wheel{
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 141px;
+	margin: 0;
+	padding: 0;
+	background: url("../layoutImg/roue-01.png") no-repeat 0 0;
+	transform-origin: 50% 50%;
+	transition: transform 0.8s cubic-bezier(0.250, 0.495, 0.055, 0.995);
+	&.rear-wheel{
+		left: 69px;
+	}
+	&.front-wheel{
+		left: 405px;
+	}
+	.survol-left &, .survol-out-left &{
+		transform: rotate(100deg);
+	}
+	.survol-right &, .survol-out-right &{
+		transform: rotate(-100deg);
+	}
 }
 /* @end */
