@@ -1566,18 +1566,6 @@ button:focus {
   outline: none;
 }
 /* @end */
-/* @group States */
-.hide-text {
-  text-indent: -9999px;
-  display: none;
-}
-.is-hidden {
-  /*display: none;
-	&.car-block{
-		display: none;
-	}*/
-}
-/* @end */
 /* @group Slider citation */
 .wrapper-slider-citation {
   display: block;
@@ -2085,17 +2073,18 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .container-car-choose {
   display: block;
-  width: 535px;
+  width: 645px;
   height: 223px;
   position: absolute;
   bottom: 87px;
   left: 50%;
-  margin: 0 0 0 -267px;
+  margin: 0 0 0 -322px;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.495, 0.055, 0.995);
           transition: transform 0.8s cubic-bezier(0.25, 0.495, 0.055, 0.995);
   -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
           transform: translateX(0%);
+  padding: 0;
 }
 .survol-left .container-car-choose,
 .survol-out-left .container-car-choose {
@@ -2111,33 +2100,100 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .car-choose {
   display: block;
-  position: relative;
-  width: 535px;
-  height: 223px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
   margin: 0;
   padding: 0;
-  background: url("../layoutImg/car-choose-01.png") no-repeat 0 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0;
+}
+.car-choose:first-of-type {
+  opacity: 1;
+}
+.car-choose.car-1 {
+  width: 535px;
+  height: 223px;
+  margin-left: -267px;
+}
+.car-choose.car-2 {
+  width: 608px;
+  height: 218px;
+  margin-left: -304px;
+}
+.car-choose.car-3 {
+  width: 645px;
+  height: 208px;
+  margin-left: -322px;
+}
+.car-choose.car-4 {
+  width: 592px;
+  height: 207px;
+  margin-left: -296px;
 }
 .car-wheel {
   display: block;
-  width: 60px;
-  height: 60px;
   position: absolute;
-  top: 141px;
   margin: 0;
   padding: 0;
-  background: url("../layoutImg/roue-01.png") no-repeat 0 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.25, 0.495, 0.055, 0.995);
           transition: transform 0.8s cubic-bezier(0.25, 0.495, 0.055, 0.995);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-.car-wheel.rear-wheel {
+.car-1 .car-wheel {
+  width: 60px;
+  height: 60px;
+  top: 141px;
+  background-image: url("../layoutImg/roue-01.png");
+}
+.car-1 .car-wheel.rear-wheel {
   left: 69px;
 }
-.car-wheel.front-wheel {
+.car-1 .car-wheel.front-wheel {
   left: 405px;
+}
+.car-2 .car-wheel {
+  width: 60px;
+  height: 60px;
+  top: 120px;
+  background-image: url("../layoutImg/roue-02.png");
+}
+.car-2 .car-wheel.rear-wheel {
+  left: 102px;
+}
+.car-2 .car-wheel.front-wheel {
+  left: 439px;
+}
+.car-3 .car-wheel {
+  width: 63px;
+  height: 63px;
+  top: 102px;
+  background-image: url("../layoutImg/roue-03.png");
+}
+.car-3 .car-wheel.rear-wheel {
+  left: 138px;
+}
+.car-3 .car-wheel.front-wheel {
+  left: 471px;
+}
+.car-4 .car-wheel {
+  width: 65px;
+  height: 65px;
+  top: 122px;
+  background-image: url("../layoutImg/roue-04.png");
+}
+.car-4 .car-wheel.rear-wheel {
+  left: 106px;
+}
+.car-4 .car-wheel.front-wheel {
+  left: 456px;
 }
 .survol-left .car-wheel,
 .survol-out-left .car-wheel {
@@ -2469,6 +2525,21 @@ a.btn-slider-citation:hover.btn-right span {
           transition: transform 0.2s ease-in-out;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+}
+/* @end */
+/* @group States */
+.hide-text {
+  text-indent: -9999px;
+  display: none;
+}
+.is-hidden {
+  /*display: none;
+	&.car-block{
+		display: none;
+	}*/
+}
+.is-visible {
+  opacity: 1;
 }
 /* @end */
 /* retina */

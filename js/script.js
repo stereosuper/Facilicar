@@ -45,9 +45,47 @@ function completeClickService(currentSlideCitationActive, nextSlideCitation){
   TweenMax.set(nextSlideCitation, {className:"+=active"});
 }
 
+// Fondu entre les voiture | Choose
+function changeCar(){
+	var nbCars = $(".car-choose").length;
+	var currentCarActive = $(".car-choose.is-active");
+	var indexCurrentCarActive = currentCarActive.index();
+	if(indexCurrentCarActive<(nbCars-1)){
+		var nextCarActive = currentCarActive.next(".car-choose");
+	}else{
+		var nextCarActive = $(".car-choose").first();
+	}
+	var tlAnimCar = new TimelineMax({onComplete: changeCarComplete});
+	tlAnimCar.to(currentCarActive, 1, {opacity: "0", ease:Cubic.easeInOut});
+	tlAnimCar.to(nextCarActive, 1, {opacity: "1", ease:Cubic.easeInOut}, 0);
+	tlAnimCar.set(currentCarActive, {className:"-=is-active"});
+	tlAnimCar.set(nextCarActive, {className:"+=is-active"});
+}
+
+function changeCarComplete(){
+	setTimeout(changeCar, 5000);
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
+
+	if($("body").hasClass("has-choose")){
+		var count = 1;
+		for(var i = 1; i<$(".car-choose").length; i++){
+			img = new Image();
+			img.onload = function(){
+				$("[data-src='"+this.src+"']").css({"background-image": 'url('+this.src+')'});
+				count ++;
+				console.log(this.src);
+				if(count === $(".car-choose").length){
+					// Lancer l'anim entre les voitures
+					setTimeout(changeCar, 5000);
+				}
+			}
+			img.src = $(".car-choose").eq(i).data('src');
+		}
+	}
 
 	// Adapter la taille des images à la taille du container parent
 	$(".imgLiquidFill").imgLiquid();

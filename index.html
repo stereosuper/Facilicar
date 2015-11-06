@@ -41,7 +41,7 @@
 		<script src="js/libs/modernizr.js" type="text/javascript"></script>
 	</head>
 
-	<body>
+	<body class="has-choose">
 		<header id="header">
 			<div class="container clearfix">
 				<a href="#" class="logo-facilicar hide-text">Facilicar</a>
@@ -89,9 +89,20 @@
 				</div>
 				<div class="container full-height">
 					<div class="content-choose">
-						<div class="container-car-choose">
-							<div class="car-choose"><div class="car-wheel rear-wheel"></div><div class="car-wheel front-wheel"></div></div>
-						</div>
+						<ul class="container-car-choose">
+							<li class="car-choose car-1 is-active" style="background-image: url('../layoutImg/car-choose-01.png')">
+								<span class="car-wheel rear-wheel"></span><span class="car-wheel front-wheel"></span>
+							</li>
+							<li class="car-choose car-2" data-src="http://ourson.local:5757/layoutImg/car-choose-02.png">
+								<span class="car-wheel rear-wheel"></span><span class="car-wheel front-wheel"></span>
+							</li>
+							<li class="car-choose car-3" data-src="http://ourson.local:5757/layoutImg/car-choose-03.png">
+								<span class="car-wheel rear-wheel"></span><span class="car-wheel front-wheel"></span>
+							</li>
+							<li class="car-choose car-4" data-src="http://ourson.local:5757/layoutImg/car-choose-04.png">
+								<span class="car-wheel rear-wheel"></span><span class="car-wheel front-wheel"></span>
+							</li>
+						</ul>
 						<div class="wrapper-zone-choose wrapper-zone-left-choose txt-right-aligned">
 							<div class="title-action-choose left-arrow">Achetez</div>
 							<div class="content-txt-choose">

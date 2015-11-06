@@ -265,14 +265,15 @@
 
 .container-car-choose{
 	display: block;
-	width: 535px;
+	width: 645px;
 	height: 223px;
 	position: absolute;
 	bottom: 87px;
 	left: 50%;
-	margin: 0 0 0 -267px;
+	margin: 0 0 0 -322px;
 	transition: transform 0.8s cubic-bezier(0.250, 0.495, 0.055, 0.995);
 	transform: translateX(0%);
+	padding: 0;
 	.survol-left &, .survol-out-left &{
 		transform: translateX(15%);
 	}
@@ -283,30 +284,102 @@
 
 .car-choose{
 	display: block;
-	position: relative;
-	width: 535px;
-	height: 223px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
 	margin: 0;
 	padding: 0;
-	background: url("../layoutImg/car-choose-01.png") no-repeat 0 0;
+	opacity: 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	//transition: opacity 1s ease-in-out;
+	opacity: 0;
+	&:first-of-type{
+		opacity: 1;
+	}
+	&.car-1{
+		//background-image: url("../layoutImg/car-choose-01.png");
+		width: 535px;
+		height: 223px;
+		margin-left: -267px;
+	}
+	&.car-2{
+		//background-image: url("../layoutImg/car-choose-02.png");
+		width: 608px;
+		height: 218px;
+		margin-left: -304px;
+	}
+	&.car-3{
+		//background-image: url("../layoutImg/car-choose-03.png");
+		width: 645px;
+		height: 208px;
+		margin-left: -322px;
+	}
+	&.car-4{
+		//background-image: url("../layoutImg/car-choose-04.png");
+		width: 592px;
+		height: 207px;
+		margin-left: -296px;
+	}
 }
 
 .car-wheel{
 	display: block;
-	width: 60px;
-	height: 60px;
 	position: absolute;
-	top: 141px;
 	margin: 0;
 	padding: 0;
-	background: url("../layoutImg/roue-01.png") no-repeat 0 0;
+	background-repeat: no-repeat;
+	background-position: 0 0;
 	transform-origin: 50% 50%;
 	transition: transform 0.8s cubic-bezier(0.250, 0.495, 0.055, 0.995);
-	&.rear-wheel{
-		left: 69px;
+	backface-visibility: hidden;
+	.car-1 &{
+		width: 60px;
+		height: 60px;
+		top: 141px;
+		background-image: url("../layoutImg/roue-01.png");
+		&.rear-wheel{
+			left: 69px;
+		}
+		&.front-wheel{
+			left: 405px;
+		}
 	}
-	&.front-wheel{
-		left: 405px;
+	.car-2 &{
+		width: 60px;
+		height: 60px;
+		top: 120px;
+		background-image: url("../layoutImg/roue-02.png");
+		&.rear-wheel{
+			left: 102px;
+		}
+		&.front-wheel{
+			left: 439px;
+		}
+	}
+	.car-3 &{
+		width: 63px;
+		height: 63px;
+		top: 102px;
+		background-image: url("../layoutImg/roue-03.png");
+		&.rear-wheel{
+			left: 138px;
+		}
+		&.front-wheel{
+			left: 471px;
+		}
+	}
+	.car-4 &{
+		width: 65px;
+		height: 65px;
+		top: 122px;
+		background-image: url("../layoutImg/roue-04.png");
+		&.rear-wheel{
+			left: 106px;
+		}
+		&.front-wheel{
+			left: 456px;
+		}
 	}
 	.survol-left &, .survol-out-left &{
 		transform: rotate(100deg);
