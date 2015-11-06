@@ -302,6 +302,34 @@ h1 .small-txt {
   vertical-align: top;
   padding: 4px 0 0 0;
 }
+h2 {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 2.625em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h2.big-title {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 3.75em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.1em;
+  margin: 0 0 35px 0;
+}
+h2 a {
+  display: inline-block;
+  vertical-align: top;
+}
+h2 .small-txt {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.417em;
+  line-height: 1em;
+  display: inline-block;
+  vertical-align: top;
+  padding: 4px 0 0 0;
+}
 h3 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.813em;
@@ -473,6 +501,11 @@ a.color-theme-black:hover {
   width: 91px;
   height: 88px;
   background: url("../layoutImg/trustedshop.png") no-repeat 0 0;
+}
+.out-container {
+  position: absolute;
+  top: -2000px;
+  left: 0;
 }
 /* @end */
 /* @group Non semantic Boilerplate */
