@@ -56,8 +56,8 @@ function changeCar(){
 		var nextCarActive = $(".car-choose").first();
 	}
 	var tlAnimCar = new TimelineMax({onComplete: changeCarComplete});
-	tlAnimCar.to(currentCarActive, 1, {opacity: "0", ease:Cubic.easeInOut});
-	tlAnimCar.to(nextCarActive, 1, {opacity: "1", ease:Cubic.easeInOut}, 0);
+	tlAnimCar.to(currentCarActive, 0.3, {opacity: "0", ease:Cubic.easeInOut});
+	tlAnimCar.to(nextCarActive, 0.3, {opacity: "1", ease:Cubic.easeInOut}, 0);
 	tlAnimCar.set(currentCarActive, {className:"-=is-active"});
 	tlAnimCar.set(nextCarActive, {className:"+=is-active"});
 }
