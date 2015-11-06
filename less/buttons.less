@@ -192,6 +192,14 @@ a, div, span{
 					border-color: @theme-primary;
 				}
 			}
+			&.bg-primary-transp{
+				&:before{
+					background-color: @theme-primary;
+				}
+				&:after{
+					border-color: @theme-primary;
+				}
+			}
 			&.bg-secondary{
 				&:before{
 					background-color: @theme-secondary;
@@ -247,6 +255,10 @@ a, div, span{
 					transform: translateY(0%);
 				}
 				&.bg-primary{
+					color: @theme-primary;
+				}
+				&.bg-primary-transp{
+					background: none;
 					color: @theme-primary;
 				}
 				&.bg-secondary{

@@ -1162,6 +1162,16 @@ div.btn-block.btn-block-arrow.bg-primary:after,
 span.btn-block.btn-block-arrow.bg-primary:after {
   border-color: #009cc4;
 }
+a.btn-block.btn-block-arrow.bg-primary-transp:before,
+div.btn-block.btn-block-arrow.bg-primary-transp:before,
+span.btn-block.btn-block-arrow.bg-primary-transp:before {
+  background-color: #009cc4;
+}
+a.btn-block.btn-block-arrow.bg-primary-transp:after,
+div.btn-block.btn-block-arrow.bg-primary-transp:after,
+span.btn-block.btn-block-arrow.bg-primary-transp:after {
+  border-color: #009cc4;
+}
 a.btn-block.btn-block-arrow.bg-secondary:before,
 div.btn-block.btn-block-arrow.bg-secondary:before,
 span.btn-block.btn-block-arrow.bg-secondary:before {
@@ -1247,6 +1257,12 @@ span.btn-block.btn-block-arrow:hover .txt-hover-btn-block-arrow {
 a.btn-block.btn-block-arrow:hover.bg-primary,
 div.btn-block.btn-block-arrow:hover.bg-primary,
 span.btn-block.btn-block-arrow:hover.bg-primary {
+  color: #009cc4;
+}
+a.btn-block.btn-block-arrow:hover.bg-primary-transp,
+div.btn-block.btn-block-arrow:hover.bg-primary-transp,
+span.btn-block.btn-block-arrow:hover.bg-primary-transp {
+  background: none;
   color: #009cc4;
 }
 a.btn-block.btn-block-arrow:hover.bg-secondary,
