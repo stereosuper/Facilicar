@@ -2121,16 +2121,19 @@ a.btn-slider-citation:hover.btn-right span {
   width: 608px;
   height: 218px;
   margin-left: -304px;
+  bottom: -17px;
 }
 .car-choose.car-3 {
   width: 645px;
   height: 208px;
   margin-left: -322px;
+  bottom: -22px;
 }
 .car-choose.car-4 {
   width: 592px;
   height: 207px;
   margin-left: -296px;
+  bottom: 1px;
 }
 .car-wheel {
   display: block;
