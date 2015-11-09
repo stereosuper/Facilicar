@@ -304,10 +304,12 @@ h1 .small-txt {
 }
 h2 {
   font-family: 'Texta-Black', sans-serif;
-  font-size: 2.625em;
+  font-size: 2.25em;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 72px 0 40px 0;
+  line-height: 1.1em;
 }
 h2.big-title {
   font-family: 'Texta-Black', sans-serif;
@@ -317,6 +319,13 @@ h2.big-title {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.1em;
   margin: 0 0 35px 0;
+}
+h2.medium-title {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 2.625em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 h2 a {
   display: inline-block;
@@ -343,6 +352,77 @@ h4 {
 p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+}
+p.big-txt {
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 1.625em;
+}
+#main ul {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0 60px;
+}
+#main ul > li {
+  color: #333333;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: relative;
+}
+#main ul > li:before {
+  content: "●";
+  color: #e38c00;
+  font-size: 10px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+#main ul > li p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+}
+#main ul > li p strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
+#main ol {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  box-sizing: border-box;
+  padding: 0 60px;
+  counter-reset: my-awesome-counter;
+}
+#main ol > li {
+  color: #333333;
+  box-sizing: border-box;
+  padding: 0 20px;
+  position: relative;
+  counter-increment: my-awesome-counter;
+}
+#main ol > li:before {
+  content: counter(my-awesome-counter) '.';
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  display: inline-block;
+}
+#main ol > li p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+}
+#main ol > li p strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
+img.alignleft {
+  margin-left: -82px;
+}
+img.alignright {
+  margin-right: -82px;
 }
 i {
   font-style: normal;
@@ -377,6 +457,10 @@ a.logo-facilicar:hover {
   height: auto;
   margin: 0 auto;
   padding: 0;
+}
+.container.small {
+  box-sizing: border-box;
+  padding: 0 82px;
 }
 .color-primary {
   color: #009cc4;
@@ -469,6 +553,16 @@ a.color-theme-black:hover {
 .txt-right-aligned {
   text-align: right;
 }
+.alignleft {
+  float: left;
+  margin: 0 24px 24px 0;
+  padding: 0;
+}
+.alignright {
+  float: right;
+  margin: 0 0 24px 24px;
+  padding: 0;
+}
 .line-through {
   text-decoration: line-through;
 }
@@ -534,6 +628,54 @@ a.color-theme-black:hover {
   left: 0;
   right: 0;
 }
+/* @group Wrapper top */
+.wrapper-top {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.header-on .wrapper-top {
+  padding: 110px 0 0 0;
+}
+/* @end */
+/* @group Wrapper img */
+.wrapper-img {
+  height: 340px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: content-box;
+}
+.wrapper-img .container-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+.header-on .wrapper-img .container-img {
+  top: 110px;
+}
+.wrapper-img .container-img .content-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.wrapper-img .container {
+  position: relative;
+  height: 340px;
+}
+/* @end */
 /* @end */
 /* @group Non semantic Boilerplate */
 /* remplacement image */
@@ -647,21 +789,6 @@ a.color-theme-black:hover {
 }
 #menu-bottom-header ul > li a .txt-hover-btn-anim {
   color: #009cc4;
-}
-/* @end */
-/* @group Wrapper top */
-#wrapper-top {
-  display: block;
-  width: 100%;
-  height: auto;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-}
-.header-on #wrapper-top {
-  padding: 110px 0 0 0;
 }
 /* @end */
 /* @group Vehicules home */
@@ -851,6 +978,11 @@ a.color-theme-black:hover {
   left: 11px;
   right: 0;
   bottom: 0;
+}
+/* @end */
+/* @group Main */
+#main {
+  padding: 40px 0 170px 0;
 }
 /* @end */
 /* @group Footer */

@@ -1,4 +1,5 @@
-var nbCurrentSlideTemoignage = 1;
+var nbCurrentSlideTemoignage = 1,
+	tpsChangeCar = 8000;
 
 function whichTransitionEvent(){
   var t,
@@ -66,7 +67,7 @@ function completeClickService(currentSlideCitationActive, nextSlideCitation){
 // Fondu entre les voiture | Choose
 function changeCar(){
 	if($(".wrapper-choose").hasClass("survol-left")||$(".wrapper-choose").hasClass("survol-out-left")||$(".wrapper-choose").hasClass("survol-right")||$(".wrapper-choose").hasClass("survol-out-right")){
-		setTimeout(changeCar, 5000);
+		setTimeout(changeCar, tpsChangeCar);
 	}else{
 		var nbCars = $(".car-choose").length;
 		var currentCarActive = $(".car-choose.is-active");
@@ -85,7 +86,7 @@ function changeCar(){
 }
 
 function changeCarComplete(){
-	setTimeout(changeCar, 5000);
+	setTimeout(changeCar, tpsChangeCar);
 }
 
 $(function(){
@@ -104,7 +105,7 @@ $(function(){
 				console.log(this.src);
 				if(count === $(".car-choose").length){
 					// Lancer l'anim entre les voitures
-					setTimeout(changeCar, 5000);
+					setTimeout(changeCar, tpsChangeCar);
 				}
 			}
 			img.src = $(".car-choose").eq(i).data('src');
