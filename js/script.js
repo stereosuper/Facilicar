@@ -1,5 +1,23 @@
 var nbCurrentSlideTemoignage = 1;
 
+function whichTransitionEvent(){
+  var t,
+      el = document.createElement("fakeelement");
+
+  var transitions = {
+    "transition"      : "transitionend",
+    "OTransition"     : "oTransitionEnd",
+    "MozTransition"   : "transitionend",
+    "WebkitTransition": "webkitTransitionEnd"
+  }
+
+  for (t in transitions){
+    if (el.style[t] !== undefined){
+      return transitions[t];
+    }
+  }
+}
+
 window.requestAnimFrame = (function(){
 	return  window.requestAnimationFrame   || 
 			window.webkitRequestAnimationFrame || 
@@ -47,19 +65,23 @@ function completeClickService(currentSlideCitationActive, nextSlideCitation){
 
 // Fondu entre les voiture | Choose
 function changeCar(){
-	var nbCars = $(".car-choose").length;
-	var currentCarActive = $(".car-choose.is-active");
-	var indexCurrentCarActive = currentCarActive.index();
-	if(indexCurrentCarActive<(nbCars-1)){
-		var nextCarActive = currentCarActive.next(".car-choose");
+	if($(".wrapper-choose").hasClass("survol-left")||$(".wrapper-choose").hasClass("survol-out-left")||$(".wrapper-choose").hasClass("survol-right")||$(".wrapper-choose").hasClass("survol-out-right")){
+		setTimeout(changeCar, 5000);
 	}else{
-		var nextCarActive = $(".car-choose").first();
+		var nbCars = $(".car-choose").length;
+		var currentCarActive = $(".car-choose.is-active");
+		var indexCurrentCarActive = currentCarActive.index();
+		if(indexCurrentCarActive<(nbCars-1)){
+			var nextCarActive = currentCarActive.next(".car-choose");
+		}else{
+			var nextCarActive = $(".car-choose").first();
+		}
+		var tlAnimCar = new TimelineMax({onComplete: changeCarComplete});
+		tlAnimCar.to(currentCarActive, 0.3, {opacity: "0", ease:Cubic.easeInOut});
+		tlAnimCar.to(nextCarActive, 0.3, {opacity: "1", ease:Cubic.easeInOut}, 0);
+		tlAnimCar.set(currentCarActive, {className:"-=is-active"});
+		tlAnimCar.set(nextCarActive, {className:"+=is-active"});
 	}
-	var tlAnimCar = new TimelineMax({onComplete: changeCarComplete});
-	tlAnimCar.to(currentCarActive, 0.3, {opacity: "0", ease:Cubic.easeInOut});
-	tlAnimCar.to(nextCarActive, 0.3, {opacity: "1", ease:Cubic.easeInOut}, 0);
-	tlAnimCar.set(currentCarActive, {className:"-=is-active"});
-	tlAnimCar.set(nextCarActive, {className:"+=is-active"});
 }
 
 function changeCarComplete(){
@@ -69,6 +91,8 @@ function changeCarComplete(){
 $(function(){
 	// Request anim frame
 	scrollPage();
+
+	var transitionEvent = whichTransitionEvent();
 
 	if($("body").hasClass("has-choose")){
 		var count = 1;
@@ -119,10 +143,18 @@ $(function(){
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			if(!$(this).parents(".wrapper-choose").hasClass("survol-out-left")){
 				wrapperChooseParent.addClass("survol-out-left");
+				wrapperChooseParent.addClass("animated");
+				$(".car-choose").one(transitionEvent, function(event){
+					wrapperChooseParent.removeClass("animated");
+				});
 			}
 		}, function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			wrapperChooseParent.removeClass("survol-out-left");
+			wrapperChooseParent.addClass("animated");
+			$(".car-choose").one(transitionEvent, function(event){
+				wrapperChooseParent.removeClass("animated");
+			});
 		}
 	);
 
@@ -131,10 +163,18 @@ $(function(){
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			if(!wrapperChooseParent.hasClass("survol-out-right")){
 				wrapperChooseParent.addClass("survol-out-right");
+				wrapperChooseParent.addClass("animated");
+				$(".car-choose").one(transitionEvent, function(event){
+					wrapperChooseParent.removeClass("animated");
+				});
 			}
 		}, function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			wrapperChooseParent.removeClass("survol-out-right");
+			wrapperChooseParent.addClass("animated");
+			$(".car-choose").one(transitionEvent, function(event){
+				wrapperChooseParent.removeClass("animated");
+			});
 		}
 	);
 
@@ -143,10 +183,18 @@ $(function(){
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			if(!$(this).parents(".wrapper-choose").hasClass("survol-left")){
 				wrapperChooseParent.addClass("survol-left");
+				wrapperChooseParent.addClass("animated");
+				$(".car-choose").one(transitionEvent, function(event){
+					wrapperChooseParent.removeClass("animated");
+				});
 			}
 		}, function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			wrapperChooseParent.removeClass("survol-left");
+			wrapperChooseParent.addClass("animated");
+			$(".car-choose").one(transitionEvent, function(event){
+				wrapperChooseParent.removeClass("animated");
+			});
 		}
 	);
 
@@ -155,10 +203,18 @@ $(function(){
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			if(!wrapperChooseParent.hasClass("survol-right")){
 				wrapperChooseParent.addClass("survol-right");
+				wrapperChooseParent.addClass("animated");
+				$(".car-choose").one(transitionEvent, function(event){
+					wrapperChooseParent.removeClass("animated");
+				});
 			}
 		}, function() {
 			var wrapperChooseParent = $(this).parents(".wrapper-choose");
 			wrapperChooseParent.removeClass("survol-right");
+			wrapperChooseParent.addClass("animated");
+			$(".car-choose").one(transitionEvent, function(event){
+				wrapperChooseParent.removeClass("animated");
+			});
 		}
 	);
 });
