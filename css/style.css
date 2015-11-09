@@ -336,11 +336,8 @@ h3 {
   margin: 15px 0;
 }
 h4 {
-  font-family: 'Texta-Black', sans-serif;
-  font-size: 1em;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.25em;
   margin: 15px 0;
 }
 p {
@@ -506,6 +503,36 @@ a.color-theme-black:hover {
   position: absolute;
   top: -2000px;
   left: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.relative-position {
+  position: relative;
+}
+#filtres {
+  display: block;
+  width: 1118px;
+  height: 246px;
+  background: url("../layoutImg/filtres.jpg") no-repeat 0 0;
+  margin: 50px 0 50px 0;
+  padding: 0;
+}
+#list-cars {
+  display: block;
+  width: 1119px;
+  height: 1674px;
+  background: url("../layoutImg/liste-cars.jpg") no-repeat 0 0;
+  margin: 0;
+  padding: 0 0 150px;
+}
+.description-recherche {
+  line-height: 1.5em;
+  position: absolute;
+  z-index: 2;
+  bottom: 50px;
+  left: 0;
+  right: 0;
 }
 /* @end */
 /* @group Non semantic Boilerplate */

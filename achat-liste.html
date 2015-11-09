@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]> <html class='no-js lt-ie9 lt-ie10'> <![endif]-->
+<!--[if IE 9]> <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class='no-js'> <!--<![endif]-->
+
+	<head>
+	  	<meta charset="utf-8">
+	  	<title>Achat et vente de voitures d'occasion - Facilicar</title>
+	  	
+	  	<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <![endif]-->
+	  	<meta name="viewport" content="width=device-width,initial-scale=1">
+	  	<meta name="description" content="Vous souhaitez vendre ou acheter une voiture d'occasion ? Découvrez les annonces de voitures de toutes marques du site Facilicar qui rachète aussi votre véhicule.">
+		
+		<link rel="stylesheet" href="css/libs/normalize.css">
+	  	<link rel="stylesheet" href="css/style.css">
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+		
+		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+
+		<link rel="icon" type="image/png" href="android-chrome-36x36.png" sizes="36x36">	
+		<link rel="icon" type="image/png" href="android-chrome-48x48.png" sizes="48x48">
+		<link rel="icon" type="image/png" href="android-chrome-72x72.png" sizes="72x72">
+		<link rel="icon" type="image/png" href="android-chrome-96x96.png" sizes="96x96">
+		
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<script src="js/libs/modernizr.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header id="header">
+			<div class="container clearfix">
+				<a href="#" class="logo-facilicar hide-text">Facilicar</a>
+				<div id="zone-right-header">
+					<nav id="menu-top-header">
+						<ul class="list-inline">
+							<li>
+								<a class="btn-pin color-grey" href="#"><span class="icon-pin"></span>Nos agences</a>
+							</li><!--
+							--><li>
+								<a class="btn-tel color-grey" href="#"><span class="icon-tel"></span><span class="tel-number">0800 00 00 00</span></a>
+							</li><!--
+							--><li>
+								<a class="btn-underline btn-arrow color-secondary" href="#">Se faire rappeler ?</a>
+							</li>
+						</ul>
+					</nav>
+					<nav id="menu-bottom-header">
+						<ul class="list-inline">
+							<li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Voir les véhicules</span><span data-hover="Voir les véhicules" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Achat</span><span data-hover="Achat" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li class="no-margin">
+								<a class="btn-heart color-theme-black" href="#"><span class="zone-heart"><span class="icon-heart"></span><span class="heart-number">12</span></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Vente</span><span data-hover="Vente" class="txt-hover-btn-anim"></span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section id="wrapper-top">
+			<div class="container relative-position">
+				<div id="filtres"></div>
+				<div class="description-recherche">
+					<h4 class="no-margin">RENAULT D’OCCASION (150 modèles actuellement disponibles)</h4>
+					<p class="no-margin">À la recherche d'une Renault d'occasion à Paris, Lille, Nantes ou Paris ? Sur Facilicar, vous trouverez un grand nombre de voitures de la marque Renault (Clio, Megane, Twingo...) à vendre. Chaque véhicule a été rénové et réparé par nos équipes. <a href="#">› En savoir plus</a></p>
+				</div>
+				<div id="list-cars"></div>
+			</div>
+		</section>
+		<footer id="footer">
+			<div id="block-newsletter">
+				<div class="container">
+					<div class="wrapper-align-middle">
+						<div id="zone-left-newsletter" class="content-align-middle">
+							<div class="mail-icon">
+								<div class="icon-mail-shadow"></div>
+								<div class="icon-mail color-primary"></div>
+							</div>
+						</div>
+						<div class="content-align-middle">
+							<h3>Ne ratez pas la voiture de vos rêves !</h3>
+							<p>Inscrivez-vous pour recevoir nos offres <i>(environ 1 envoi par mois)</i></p>
+						</div>
+						<div class="content-align-middle">
+							<input id="email-newsletter" class="size1" name="email-news;etter" type="text" placeholder="Votre adresse email"><!--
+							--><button class="button-arrow button-primary bg-primary"><span class="arrow-button">›</span><span class="txt-button">Valider</span><span class="txt-hover-button" data-hover="Valider"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer-bottom">
+				<div class="container">
+					<ul class="list-inline">
+						<li>
+							<h4>Société</h4>
+							<ul class="list-block">
+								<li>
+									<a class="btn-arrow color-white" href="#">Qui sommes-nous?</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Pourquoi Facilicar?</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">FAQ?</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Mentions légales?</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Conditions générales?</a>
+								</li>
+							</ul>
+						</li><!--
+						--><li>
+							<h4>Communication</h4>
+							<ul class="list-block">
+								<li>
+									<a class="btn-arrow color-white" href="#">Blog</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Presse</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Partenaires</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Plan du site</a>
+								</li>
+							</ul>
+						</li><!--
+						--><li>
+							<h4>Vous &amp; nous</h4>
+							<ul class="list-block">
+								<li>
+									<a class="btn-arrow color-white" href="#">Contact</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Recrutement</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Vente &amp; achats aux pros</a>
+								</li><!--
+								--><li>
+									<a class="btn-arrow color-white" href="#">Avis client</a>
+								</li>
+							</ul>
+						</li><!--
+						--><li>
+							<h4>Sur la toile</h4>
+							<ul class="list-social">
+								<li>
+									<a class="icon-youtube color-theme-black" href="#">
+										<span class="hide-text">Youtube</span>
+									</a>
+								</li><!--
+								--><li>
+									<a class="icon-facebook color-theme-black" href="#">
+										<span class="hide-text">Facebook</span>
+									</a>
+								</li><!--
+								--><li>
+									<a class="icon-twitter color-theme-black" href="#">
+										<span class="hide-text">Twitter</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- jQuery -->
+		<script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<!-- Tweens -->
+		<script src="js/libs/greensock/TweenMax.min.js" type="text/javascript"></script>
+		<script src="js/libs/greensock/TimelineMax.min.js" type="text/javascript"></script>
+		<script src="js/libs/greensock/plugins/BezierPlugin.min.js" type="text/javascript"></script>
+		<script src="js/libs/greensock/plugins/CSSRulePlugin.min.js" type="text/javascript"></script>
+		<script src="js/libs/greensock/plugins/ScrollToPlugin.min.js" type="text/javascript"></script>
+		<!-- imgLiquid -->
+		<script src="js/libs/imgLiquid-min.js" type="text/javascript"></script>
+		<!-- Scripts custom -->
+		<script src="js/script.js" type="text/javascript"></script>
+	</body>
+</html>
