@@ -676,6 +676,75 @@ a.color-theme-black:hover {
   height: 340px;
 }
 /* @end */
+/* @group Responsive */
+a.btn-menu-responsive {
+  display: block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+a.btn-menu-responsive.open .rect:nth-child(1) {
+  -webkit-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+          transform: translateY(8px);
+}
+a.btn-menu-responsive.open .rect:nth-child(1):before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+a.btn-menu-responsive.open .rect:nth-child(2):before {
+  opacity: 0;
+}
+a.btn-menu-responsive.open .rect:nth-child(3) {
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+a.btn-menu-responsive.open .rect:nth-child(3):before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+a.btn-menu-responsive .rect {
+  display: block;
+  width: 21px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+}
+a.btn-menu-responsive .rect:nth-child(1) {
+  top: 0;
+}
+a.btn-menu-responsive .rect:nth-child(2) {
+  top: 8px;
+  opacity: 1;
+}
+a.btn-menu-responsive .rect:nth-child(3) {
+  top: 16px;
+}
+a.btn-menu-responsive .rect:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #009cc4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0s ease-in-out;
+          transition: transform 0.2s ease-in-out, opacity 0s ease-in-out;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+/* @end */
 /* @end */
 /* @group Non semantic Boilerplate */
 /* remplacement image */
@@ -723,7 +792,7 @@ a.color-theme-black:hover {
 }
 #header a.logo-facilicar {
   float: left;
-  margin: 14px 0 0 27px;
+  margin: 11px 0 0 27px;
 }
 .header-on #header {
   position: fixed;
@@ -2724,10 +2793,24 @@ a.btn-slider-citation:hover.btn-right span {
   .container.small {
     padding: 0 22px;
   }
+  #header a.logo-facilicar {
+    margin: 14px 0 0 0;
+    width: 240px;
+    height: 42px;
+    background-size: 240px 42px;
+  }
 }
 @media (max-width: 767px) {
   .container.small {
     padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  #header a.logo-facilicar {
+    margin: 14px 0 0 0;
+    width: 145px;
+    height: 26px;
+    background-size: 145px 26px;
   }
 }
 /* retina */
