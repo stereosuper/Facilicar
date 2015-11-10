@@ -384,6 +384,11 @@ a.logo-facilicar{
     position: relative;
 }
 
+.show-mobile{
+    display: none;
+    display: none!important;
+}
+
 #filtres{
     display: block;
     width: 1118px;
@@ -464,13 +469,13 @@ a.logo-facilicar{
 /* @group Responsive */
 
 a.btn-menu-responsive{
-    display: block;
+    display: none;
     width: 21px;
     height: 21px;
     position: absolute;
     top: 2px;
     right: 0;
-    &.open{
+    .menu-mobile-open &{
         .rect{
             &:nth-child(1){
                 transform: translateY(8px);

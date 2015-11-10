@@ -33,6 +33,27 @@ a, div, span{
 	&.btn-underline{
 		text-decoration: underline;
 	}
+	&.btn-toggle{
+		.texta-black(1em);
+		text-transform: uppercase;
+		padding: 10px 50px 10px 0;
+		color: @theme-noir;
+		position: relative;
+		width: 100%;
+		height: auto;
+		display: block;
+		box-sizing: border-box;
+		border-top: 1px solid #AEACA1;
+		.icon-arrow-down{
+			position: absolute;
+			font-size: 6px;
+			right: 19px;
+			width: 12px;
+			height: 6px;
+			top: 50%;
+			margin: -3px 0 0 0;
+		}
+	}
 	&.btn-arrow{
 		position: relative;
 		padding-left: 8px;

@@ -115,6 +115,12 @@ $(function(){
 	// Adapter la taille des images à la taille du container parent
 	$(".imgLiquidFill").imgLiquid();
 
+	// Ouverture du menu responsive
+	$("a.btn-menu-responsive").click(function(){
+		$("body").toggleClass("menu-mobile-open");
+		return false;
+	});
+
 	// Clic sur les fleches du slider de citations
 	$(".btn-slider-citation").click(function(){
 		var idWrapperSliderCitation = $(this).parents(".wrapper-slider-citation");

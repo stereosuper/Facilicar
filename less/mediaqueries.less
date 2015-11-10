@@ -48,12 +48,81 @@
 }
 
 @media (max-width: 480px) {
+    .hide-mobile{
+        display: none !important;
+    }
+    .show-mobile{
+        display: block !important;
+    }
     #header{
         a.logo-facilicar{
-            margin: 14px 0 0 0;
+            float: none;
+            margin: 0;
             width: 145px;
             height: 26px;
             background-size: 145px 26px;
+        }
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #vendre-header{
+        margin: 0;
+    }
+    a.btn-menu-responsive{
+        display: block;
+    }
+    #zone-right-header{
+        float: none;
+        text-align: left;
+        padding: 34px 0 0 0;
+        display: none;
+        .menu-mobile-open &{
+            display: block;
+        }
+    }
+    #menu-top-header, #menu-bottom-header{
+        ul{
+            display: block;
+            > li{
+                display: block;
+                margin: 10px 0;
+                a{
+                    &.btn-pin{
+                        color: @theme-primary;
+                        .icon-pin{
+                            color: @theme-gris;
+                            margin: 0 10px 0 -2px;
+                        }
+                    }
+                    &.btn-tel{
+                        font-size: 1.5em;
+                        line-height: 1em;
+                        .icon-tel{
+                            margin: 0 10px 0 4px;
+                            padding: 5px 0 0 0;
+                        }
+                        .tel-number{
+                            padding: 2px 6px;
+                        }
+                    }
+                    &#btn-rappel{
+                        margin: 0 0 0 25px;
+                    }
+                }
+            }
+        }
+    }
+    #menu-bottom-header{
+        ul.list-inline{
+            box-sizing: border-box;
+            padding: 0 0 25px 25px;
+            > li{
+                a{
+                    text-transform: none;
+                    .texta-light(1.125em);
+                }
+            }
         }
     }
 }
