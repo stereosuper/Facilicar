@@ -483,7 +483,7 @@ a.color-secondary:hover {
   opacity: 0.8;
 }
 .color-grey {
-  color: #b0b0a8;
+  color: #797973;
 }
 a.color-grey {
   -webkit-transition: opacity 0.1s ease-in-out;
@@ -500,7 +500,7 @@ a.color-white {
           transition: color 0.1s ease-in-out;
 }
 a.color-white:hover {
-  color: #b0b0a8;
+  color: #797973;
 }
 .color-theme-black {
   color: #333333;
@@ -537,8 +537,8 @@ a.color-theme-black:hover {
 .encadre {
   display: inline-block;
   vertical-align: top;
-  color: #b0b0a8;
-  border: 1px solid #b0b0a8;
+  color: #797973;
+  border: 1px solid #797973;
   line-height: 1em;
   padding: 2px 4px;
   font-family: 'Texta-Light', sans-serif;
@@ -721,8 +721,6 @@ a.btn-menu-responsive .rect {
   height: 5px;
   position: absolute;
   left: 0;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out;
-          transition: transform 0.2s ease-in-out;
 }
 a.btn-menu-responsive .rect:nth-child(1) {
   top: 0;
@@ -743,10 +741,6 @@ a.btn-menu-responsive .rect:before {
   position: absolute;
   top: 0;
   left: 0;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-  -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0s ease-in-out;
-          transition: transform 0.2s ease-in-out, opacity 0s ease-in-out;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
@@ -815,7 +809,7 @@ a.btn-menu-responsive .rect:before {
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: 1px solid #b0b0a8;
+  border-bottom: 1px solid #797973;
 }
 .header-on #header a.logo-facilicar {
   margin: 0 0 0 27px;
@@ -1348,7 +1342,7 @@ span.btn-heart .heart-number {
   background-color: #ffffff;
   padding: 0 3px;
   border-radius: 3px;
-  border: 1px solid #b0b0a8;
+  border: 1px solid #797973;
   -webkit-transition: color 0.1s ease-in-out;
           transition: color 0.1s ease-in-out;
 }
@@ -1673,7 +1667,7 @@ a:focus {
 }
 .list-social > li a:hover {
   color: #333333;
-  background-color: #b0b0a8;
+  background-color: #797973;
 }
 .list-cars {
   display: block;
@@ -1697,7 +1691,7 @@ input[type="email"],
 input[type="tel"],
 input[type="password"] {
   padding: 8px 12px;
-  border: 1px solid #b0b0a8;
+  border: 1px solid #797973;
   box-sizing: border-box;
   border-radius: 5px;
   font-family: 'Texta-Light', sans-serif;
@@ -2407,6 +2401,12 @@ a.btn-slider-citation:hover.btn-right span {
 .car-choose:first-of-type {
   opacity: 1;
 }
+.car-choose img {
+  display: none;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
 .car-choose.car-1 {
   width: 535px;
   height: 223px;
@@ -2512,7 +2512,7 @@ a.btn-slider-citation:hover.btn-right span {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: 1px solid #b0b0a8;
+  border: 1px solid #797973;
   position: relative;
   overflow: hidden;
 }
@@ -2717,7 +2717,7 @@ a.btn-slider-citation:hover.btn-right span {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
   line-height: 1em;
-  color: #b0b0a8;
+  color: #797973;
 }
 .car-price {
   -webkit-transform: translateY(45px) translateZ(1px);
@@ -2848,6 +2848,18 @@ a.btn-slider-citation:hover.btn-right span {
     padding: 0 42px;
   }
 }
+@media (max-width: 1150px) {
+  .title-action-choose {
+    font-size: 3em;
+  }
+  .wrapper-zone-choose {
+    width: 30%;
+  }
+  .wrapper-zone-choose.wrapper-zone-center-choose {
+    width: 40%;
+    left: 30%;
+  }
+}
 @media (max-width: 1024px) {
   img.alignleft {
     margin-left: 0;
@@ -2871,8 +2883,6 @@ a.btn-slider-citation:hover.btn-right span {
   .container.small {
     padding: 0;
   }
-}
-@media (max-width: 480px) {
   .menu-mobile-open .bg-header-responsive {
     display: block;
   }
@@ -2881,6 +2891,9 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .show-mobile {
     display: block !important;
+  }
+  .wrapper-top {
+    padding: 66px 0 0 0;
   }
   #header {
     position: absolute;
@@ -2940,13 +2953,18 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
     margin: 10px 0;
   }
+  #menu-top-header ul > li a,
+  #menu-bottom-header ul > li a {
+    display: inline-block;
+    vertical-align: top;
+  }
   #menu-top-header ul > li a.btn-pin,
   #menu-bottom-header ul > li a.btn-pin {
     color: #009cc4;
   }
   #menu-top-header ul > li a.btn-pin .icon-pin,
   #menu-bottom-header ul > li a.btn-pin .icon-pin {
-    color: #b0b0a8;
+    color: #797973;
     margin: 0 10px 0 -2px;
   }
   #menu-top-header ul > li a.btn-tel,
@@ -2976,6 +2994,105 @@ a.btn-slider-citation:hover.btn-right span {
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
   }
+  /* @group Choose */
+  .wrapper-survol-out {
+    display: none;
+  }
+  .title-choose {
+    display: none;
+  }
+  #btn-choose {
+    display: none;
+  }
+  .container-car-choose {
+    position: relative;
+    bottom: inherit;
+    left: inherit;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 150px;
+    height: 70px;
+  }
+  .car-choose {
+    background: none!important;
+  }
+  .car-choose img {
+    display: block;
+  }
+  .car-choose.car-1,
+  .car-choose.car-2,
+  .car-choose.car-3,
+  .car-choose.car-4 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .car-wheel {
+    display: none;
+  }
+  .wrapper-choose {
+    height: auto;
+    padding: 0 0 24px 0;
+  }
+  .wrapper-choose .list-choose > li p {
+    font-size: 1.125em;
+  }
+  .wrapper-choose .list-choose > li p strong {
+    font-family: 'Texta-Light', sans-serif;
+    font-size: 1em;
+  }
+  .title-action-choose {
+    display: none;
+  }
+  .list-choose {
+    opacity: 1;
+  }
+  .content-txt-choose {
+    opacity: 1;
+  }
+  .wrapper-zone-choose {
+    position: relative;
+    bottom: inherit;
+    left: inherit;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .wrapper-zone-choose p {
+    font-size: 1.25em;
+  }
+  .wrapper-zone-choose.wrapper-zone-center-choose {
+    position: relative;
+    bottom: inherit;
+    left: inherit;
+    width: 100%;
+    height: auto;
+  }
+  .wrapper-zone-choose.wrapper-zone-center-choose .content-txt-choose {
+    opacity: 1;
+  }
+  .wrapper-zone-choose.wrapper-zone-left-choose {
+    position: relative;
+    bottom: inherit;
+    left: inherit;
+    width: 100%;
+    height: auto;
+  }
+  .wrapper-zone-choose.wrapper-zone-right-choose {
+    position: relative;
+    bottom: inherit;
+    left: inherit;
+    width: 100%;
+    height: auto;
+  }
+  .wrapper-zone-choose.wrapper-zone-right-choose .content-txt-choose {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  /* @end */
 }
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {

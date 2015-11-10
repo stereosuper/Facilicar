@@ -1,5 +1,6 @@
 var nbCurrentSlideTemoignage = 1,
-	tpsChangeCar = 8000;
+	tpsChangeCar = 8000,
+	mobileBreakpoint = 767;
 
 function whichTransitionEvent(){
   var t,
@@ -154,81 +155,101 @@ $(function(){
 	// Hover | Animation de la partie choisir
 	$(".zone-left-survol-out").hover(
 		function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			if(!$(this).parents(".wrapper-choose").hasClass("survol-out-left")){
-				wrapperChooseParent.addClass("survol-out-left");
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				if(!$(this).parents(".wrapper-choose").hasClass("survol-out-left")){
+					wrapperChooseParent.addClass("survol-out-left");
+					wrapperChooseParent.addClass("animated");
+					$(".car-choose").one(transitionEvent, function(event){
+						wrapperChooseParent.removeClass("animated");
+					});
+				}
+			}
+		}, function() {
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				wrapperChooseParent.removeClass("survol-out-left");
 				wrapperChooseParent.addClass("animated");
 				$(".car-choose").one(transitionEvent, function(event){
 					wrapperChooseParent.removeClass("animated");
 				});
 			}
-		}, function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			wrapperChooseParent.removeClass("survol-out-left");
-			wrapperChooseParent.addClass("animated");
-			$(".car-choose").one(transitionEvent, function(event){
-				wrapperChooseParent.removeClass("animated");
-			});
 		}
 	);
 
 	$(".zone-right-survol-out").hover(
 		function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			if(!wrapperChooseParent.hasClass("survol-out-right")){
-				wrapperChooseParent.addClass("survol-out-right");
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				if(!wrapperChooseParent.hasClass("survol-out-right")){
+					wrapperChooseParent.addClass("survol-out-right");
+					wrapperChooseParent.addClass("animated");
+					$(".car-choose").one(transitionEvent, function(event){
+						wrapperChooseParent.removeClass("animated");
+					});
+				}
+			}
+		}, function() {
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				wrapperChooseParent.removeClass("survol-out-right");
 				wrapperChooseParent.addClass("animated");
 				$(".car-choose").one(transitionEvent, function(event){
 					wrapperChooseParent.removeClass("animated");
 				});
 			}
-		}, function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			wrapperChooseParent.removeClass("survol-out-right");
-			wrapperChooseParent.addClass("animated");
-			$(".car-choose").one(transitionEvent, function(event){
-				wrapperChooseParent.removeClass("animated");
-			});
 		}
 	);
 
 	$(".wrapper-zone-left-choose").hover(
 		function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			if(!$(this).parents(".wrapper-choose").hasClass("survol-left")){
-				wrapperChooseParent.addClass("survol-left");
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				if(!$(this).parents(".wrapper-choose").hasClass("survol-left")){
+					wrapperChooseParent.addClass("survol-left");
+					wrapperChooseParent.addClass("animated");
+					$(".car-choose").one(transitionEvent, function(event){
+						wrapperChooseParent.removeClass("animated");
+					});
+				}
+			}
+		}, function() {
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				wrapperChooseParent.removeClass("survol-left");
 				wrapperChooseParent.addClass("animated");
 				$(".car-choose").one(transitionEvent, function(event){
 					wrapperChooseParent.removeClass("animated");
 				});
 			}
-		}, function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			wrapperChooseParent.removeClass("survol-left");
-			wrapperChooseParent.addClass("animated");
-			$(".car-choose").one(transitionEvent, function(event){
-				wrapperChooseParent.removeClass("animated");
-			});
 		}
 	);
 
 	$(".wrapper-zone-right-choose").hover(
 		function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			if(!wrapperChooseParent.hasClass("survol-right")){
-				wrapperChooseParent.addClass("survol-right");
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				if(!wrapperChooseParent.hasClass("survol-right")){
+					wrapperChooseParent.addClass("survol-right");
+					wrapperChooseParent.addClass("animated");
+					$(".car-choose").one(transitionEvent, function(event){
+						wrapperChooseParent.removeClass("animated");
+					});
+				}
+			}
+		}, function() {
+			if($(window).width()>mobileBreakpoint){
+				var wrapperChooseParent = $(this).parents(".wrapper-choose");
+				wrapperChooseParent.removeClass("survol-right");
 				wrapperChooseParent.addClass("animated");
 				$(".car-choose").one(transitionEvent, function(event){
 					wrapperChooseParent.removeClass("animated");
 				});
 			}
-		}, function() {
-			var wrapperChooseParent = $(this).parents(".wrapper-choose");
-			wrapperChooseParent.removeClass("survol-right");
-			wrapperChooseParent.addClass("animated");
-			$(".car-choose").one(transitionEvent, function(event){
-				wrapperChooseParent.removeClass("animated");
-			});
 		}
 	);
+});
+
+$(window).resize(function(){
+	
 });
