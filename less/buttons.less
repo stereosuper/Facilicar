@@ -52,6 +52,13 @@ a, div, span{
 			height: 6px;
 			top: 50%;
 			margin: -3px 0 0 0;
+			transform-origin: 50% 50%;
+			transition: transform 0.2s ease-in-out;
+		}
+		&.open{
+			.icon-arrow-down{
+				transform: rotate(-180deg);
+			}
 		}
 	}
 	&.btn-arrow{
@@ -91,6 +98,10 @@ a, div, span{
 	}
 	&.btn-heart{
 		position: relative;
+		.txt-heart{
+			display: inline-block;
+			vertical-align: top;
+		}
 		.zone-heart{
 			display: inline-block;
 			vertical-align: top;

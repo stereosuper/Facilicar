@@ -632,6 +632,9 @@ a.color-theme-black:hover {
   left: 0;
   right: 0;
 }
+.content-toggle {
+  display: none;
+}
 /* @group Wrapper top */
 .wrapper-top {
   display: block;
@@ -791,9 +794,6 @@ a.btn-menu-responsive .rect:before {
   bottom: 0;
   background-color: #fff;
   z-index: 8;
-}
-.menu-mobile-open .bg-header-responsive {
-  display: block;
 }
 #header {
   display: block;
@@ -1247,6 +1247,18 @@ span.btn-toggle .icon-arrow-down {
   height: 6px;
   top: 50%;
   margin: -3px 0 0 0;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+}
+a.btn-toggle.open .icon-arrow-down,
+div.btn-toggle.open .icon-arrow-down,
+span.btn-toggle.open .icon-arrow-down {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 a.btn-arrow,
 div.btn-arrow,
@@ -1293,6 +1305,12 @@ a.btn-heart,
 div.btn-heart,
 span.btn-heart {
   position: relative;
+}
+a.btn-heart .txt-heart,
+div.btn-heart .txt-heart,
+span.btn-heart .txt-heart {
+  display: inline-block;
+  vertical-align: top;
 }
 a.btn-heart .zone-heart,
 div.btn-heart .zone-heart,
@@ -2855,6 +2873,9 @@ a.btn-slider-citation:hover.btn-right span {
   }
 }
 @media (max-width: 480px) {
+  .menu-mobile-open .bg-header-responsive {
+    display: block;
+  }
   .hide-mobile {
     display: none !important;
   }
@@ -2872,6 +2893,24 @@ a.btn-slider-citation:hover.btn-right span {
     width: 145px;
     height: 26px;
     background-size: 145px 26px;
+  }
+  #header a.btn-heart .txt-heart {
+    display: inline-block !important;
+  }
+  #header a.btn-heart .icon-heart {
+    position: absolute;
+    top: 0;
+    left: -27px;
+  }
+  #header a.btn-heart .heart-number {
+    position: relative;
+    left: inherit;
+    top: inherit;
+    font-size: 1.1em;
+    font-family: 'Texta-Light', sans-serif;
+    font-size: 1em;
+    padding: 3px 5px;
+    margin: 3px 0 0 5px;
   }
   #vendre-header {
     margin: 0;
@@ -2891,6 +2930,10 @@ a.btn-slider-citation:hover.btn-right span {
   #menu-top-header ul,
   #menu-bottom-header ul {
     display: block;
+  }
+  #menu-top-header ul.content-toggle,
+  #menu-bottom-header ul.content-toggle {
+    display: none;
   }
   #menu-top-header ul > li,
   #menu-bottom-header ul > li {

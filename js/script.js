@@ -121,6 +121,13 @@ $(function(){
 		return false;
 	});
 
+	// Clic sur les boutons toggle
+	$(".btn-toggle").click(function(){
+		$(this).toggleClass("open");
+		$(this).next(".content-toggle").slideToggle(200);
+		return false;
+	});
+
 	// Clic sur les fleches du slider de citations
 	$(".btn-slider-citation").click(function(){
 		var idWrapperSliderCitation = $(this).parents(".wrapper-slider-citation");

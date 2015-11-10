@@ -48,6 +48,11 @@
 }
 
 @media (max-width: 480px) {
+    .bg-header-responsive{
+        .menu-mobile-open &{
+            display: block;
+        }
+    }
     .hide-mobile{
         display: none !important;
     }
@@ -55,6 +60,9 @@
         display: block !important;
     }
     #header{
+        position: absolute;
+        top: 0;
+        left: 0;
         a.logo-facilicar{
             float: none;
             margin: 0;
@@ -62,9 +70,25 @@
             height: 26px;
             background-size: 145px 26px;
         }
-        position: absolute;
-        top: 0;
-        left: 0;
+        a.btn-heart{
+            .txt-heart{
+                display: inline-block!important;
+            }
+            .icon-heart{
+                position: absolute;
+                top: 0;
+                left: -27px;
+            }
+            .heart-number{
+                position: relative;
+                left: inherit;
+                top: inherit;
+                font-size: 1.1em;
+                .texta-light(1em);
+                padding: 3px 5px;
+                margin: 3px 0 0 5px;
+            }
+        }
     }
     #vendre-header{
         margin: 0;
@@ -84,6 +108,9 @@
     #menu-top-header, #menu-bottom-header{
         ul{
             display: block;
+            &.content-toggle{
+                display: none;
+            }
             > li{
                 display: block;
                 margin: 10px 0;
