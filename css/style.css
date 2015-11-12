@@ -1254,6 +1254,16 @@ span.btn-toggle.open .icon-arrow-down {
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
+a.btn-toggle.big,
+div.btn-toggle.big,
+span.btn-toggle.big {
+  border-top: none;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.375em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 a.btn-arrow,
 div.btn-arrow,
 span.btn-arrow {
@@ -1620,6 +1630,20 @@ a:focus {
   padding: 0;
   margin: 0 16px;
   position: relative;
+}
+.list-inline.list-half {
+  width: 100%;
+}
+.list-inline.list-half > li {
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.list-inline.list-half > li:first-of-type {
+  padding: 0 3px 0 0;
+}
+.list-inline.list-half > li:last-of-type {
+  padding: 0 0 0 3px;
 }
 .list-block {
   display: block;
@@ -3063,6 +3087,29 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-zone-choose p {
     font-size: 1.25em;
   }
+  .wrapper-zone-choose a.btn-block.btn-block-arrow.btn-block-arrow-left .arrow-btn-block-arrow,
+  .wrapper-zone-choose div.btn-block.btn-block-arrow.btn-block-arrow-left .arrow-btn-block-arrow,
+  .wrapper-zone-choose span.btn-block.btn-block-arrow.btn-block-arrow-left .arrow-btn-block-arrow {
+    left: 24px;
+    right: auto;
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    margin: -15px 0 0 0;
+  }
+  .wrapper-zone-choose a.btn-block.btn-block-arrow.btn-block-arrow-left .txt-btn-block-arrow,
+  .wrapper-zone-choose div.btn-block.btn-block-arrow.btn-block-arrow-left .txt-btn-block-arrow,
+  .wrapper-zone-choose span.btn-block.btn-block-arrow.btn-block-arrow-left .txt-btn-block-arrow {
+    padding: 17px 28px 17px 45px;
+  }
+  .wrapper-zone-choose a.btn-block.btn-block-arrow.btn-block-arrow-left .txt-hover-btn-block-arrow,
+  .wrapper-zone-choose div.btn-block.btn-block-arrow.btn-block-arrow-left .txt-hover-btn-block-arrow,
+  .wrapper-zone-choose span.btn-block.btn-block-arrow.btn-block-arrow-left .txt-hover-btn-block-arrow {
+    padding: 17px 28px 17px 45px;
+  }
   .wrapper-zone-choose.wrapper-zone-center-choose {
     position: relative;
     bottom: inherit;
@@ -3080,6 +3127,25 @@ a.btn-slider-citation:hover.btn-right span {
     width: 100%;
     height: auto;
   }
+  .wrapper-zone-choose.wrapper-zone-left-choose.txt-right-aligned {
+    text-align: left;
+  }
+  .wrapper-zone-choose.wrapper-zone-left-choose .content-txt-choose {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .wrapper-zone-choose.wrapper-zone-left-choose .list-choose {
+    text-align: left;
+  }
+  .wrapper-zone-choose.wrapper-zone-left-choose .list-choose > li {
+    padding: 0 0 0 15px;
+  }
+  .wrapper-zone-choose.wrapper-zone-left-choose .list-choose > li:before {
+    right: inherit;
+    left: 0;
+    color: #009cc4;
+  }
   .wrapper-zone-choose.wrapper-zone-right-choose {
     position: relative;
     bottom: inherit;
@@ -3091,6 +3157,9 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+  .wrapper-zone-choose.wrapper-zone-right-choose .list-choose > li:before {
+    color: #009cc4;
   }
   /* @end */
 }
