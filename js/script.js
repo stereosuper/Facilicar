@@ -129,6 +129,23 @@ $(function(){
 		return false;
 	});
 
+	// Clic sur les boutons toggle one
+	$(".btn-toggle-one").click(function(){
+		if(!$(this).hasClass("open")){
+			var indexClique = $(".btn-toggle-one").index(this);
+			var parentToggleOne = $(this).parents(".container-toggle-one");
+			$(".btn-toggle-one", parentToggleOne).toggleClass("open");
+
+			$(".content-toggle-one.open").slideToggle(100, function() {
+				$(this).toggleClass("open");
+				$(".content-toggle-one").eq(indexClique).slideToggle(200, function() {
+					$(this).toggleClass("open");
+				});
+			});
+		}
+		return false;
+	});
+
 	// Clic sur les fleches du slider de citations
 	$(".btn-slider-citation").click(function(){
 		var idWrapperSliderCitation = $(this).parents(".wrapper-slider-citation");
@@ -251,5 +268,31 @@ $(function(){
 });
 
 $(window).resize(function(){
-	
+	// Remettre les toggle btn
+	$(".container-toggle-one").each(function(){
+		// clearer le js en style inline
+		$(".content-toggle-one", this).attr("style", "");
+
+		$(".btn-toggle-one.open", this).removeClass("open");
+		$(".btn-toggle-one", this).first().addClass("open");
+
+		$(".content-toggle-one.open", this).removeClass("open");
+		$(".content-toggle-one", this).first().addClass("open");
+	});
+
+	/*$(".btn-toggle-one").click(function(){
+		if(!$(this).hasClass("open")){
+			var indexClique = $(".btn-toggle-one").index(this);
+			var parentToggleOne = $(this).parents(".container-toggle-one");
+			$(".btn-toggle-one", parentToggleOne).toggleClass("open");
+
+			$(".content-toggle-one.open").slideToggle(100, function() {
+				$(this).toggleClass("open");
+				$(".content-toggle-one").eq(indexClique).slideToggle(200, function() {
+					$(this).toggleClass("open");
+				});
+			});
+		}
+		return false;
+	});*/
 });
