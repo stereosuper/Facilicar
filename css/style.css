@@ -1263,6 +1263,100 @@ span.btn-toggle.big {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 4px 0;
+}
+a.btn-toggle.big span,
+div.btn-toggle.big span,
+span.btn-toggle.big span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+a.btn-toggle.big span:before,
+div.btn-toggle.big span:before,
+span.btn-toggle.big span:before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1px;
+  background-color: #D8D8D4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+a.btn-toggle.big.open,
+div.btn-toggle.big.open,
+span.btn-toggle.big.open {
+  border-bottom: none;
+}
+a.btn-toggle.big.open span:before,
+div.btn-toggle.big.open span:before,
+span.btn-toggle.big.open span:before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  height: 1px;
+  background-color: #009cc4;
+  position: absolute;
+  bottom: 0;
+  left: -6px;
+}
+a.btn-toggle.big.open span:after,
+div.btn-toggle.big.open span:after,
+span.btn-toggle.big.open span:after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  height: 1px;
+  background-color: #009cc4;
+  position: absolute;
+  bottom: 0;
+  right: -6px;
+}
+a.btn-toggle.big.open:before,
+div.btn-toggle.big.open:before,
+span.btn-toggle.big.open:before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin: 0 0 0 -6px;
+  background-color: #009cc4;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+a.btn-toggle.big.open:after,
+div.btn-toggle.big.open:after,
+span.btn-toggle.big.open:after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 1px;
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  margin: 0 -6px 0 0;
+  background-color: #009cc4;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 100% 0;
+      -ms-transform-origin: 100% 0;
+          transform-origin: 100% 0;
 }
 a.btn-arrow,
 div.btn-arrow,
