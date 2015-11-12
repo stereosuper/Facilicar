@@ -145,6 +145,10 @@
 	color: @theme-noir;
 	line-height: 1em;
 	padding: 2px 0;
+	width: auto;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 	strong{
 		.texta-black(1em);
 	}
@@ -159,6 +163,15 @@
 	line-height: 1.4em;
 	text-transform: uppercase;
 	color: @theme-noir;
+	.details{
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.motor-color{
+		display: block;
+	}
 }
 
 .car-km{

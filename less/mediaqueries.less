@@ -48,6 +48,18 @@
 }
 
 @media (max-width: 767px) {
+    h2{
+        &.big-title{
+            font-size: 1.875em;
+            margin: 0 0 15px 0;
+            #wrapper-vehicules-home &{
+                margin: 0;
+            }
+        }
+        .small-txt{
+            font-size: 0.533em;
+        }
+    }
     .container{
         &.small{
             padding: 0;
@@ -179,8 +191,10 @@
         left: inherit;
         margin: 0 auto;
         width: 100%;
-        max-width: 150px;
-        height: 70px;
+        /*max-width: 150px;
+        height: 70px;*/
+        max-width: 200px;
+        height: 80px;
     }
     .car-choose{
         background: none!important;
@@ -302,6 +316,37 @@
                 display: none;
             }
         }
+    }
+    /* @end */
+
+    #wrapper-vehicules-home{
+        padding: 40px 0;
+    }
+
+    /* @group Cars */
+    .list-cars{
+        padding: 10px 0 22px 0;
+        >li{
+            width: 50%;
+            padding: 0 2px;
+            margin: 2px 0;
+        }
+    }
+    .wrapper-car{
+        &:hover{
+        }
+    }
+    .car-year{
+        display: none;
+    }
+    .car-name{
+        transform: none;
+        top: 6px;
+        font-size: 0.9em;
+    }
+    .car-desc{
+        opacity: 1;
+        transform: none;
     }
     /* @end */
 }

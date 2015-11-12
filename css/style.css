@@ -2911,6 +2911,10 @@ a.btn-slider-citation:hover.btn-right span {
   color: #333333;
   line-height: 1em;
   padding: 2px 0;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .car-name strong {
   font-family: 'Texta-Black', sans-serif;
@@ -2931,6 +2935,15 @@ a.btn-slider-citation:hover.btn-right span {
   line-height: 1.4em;
   text-transform: uppercase;
   color: #333333;
+}
+.car-desc .details {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.car-desc .motor-color {
+  display: block;
 }
 .car-km {
   -webkit-transform: translateY(-32px) translateZ(1px);
@@ -3114,6 +3127,16 @@ a.btn-slider-citation:hover.btn-right span {
   }
 }
 @media (max-width: 767px) {
+  h2.big-title {
+    font-size: 1.875em;
+    margin: 0 0 15px 0;
+  }
+  #wrapper-vehicules-home h2.big-title {
+    margin: 0;
+  }
+  h2 .small-txt {
+    font-size: 0.533em;
+  }
   .container.small {
     padding: 0;
   }
@@ -3244,8 +3267,10 @@ a.btn-slider-citation:hover.btn-right span {
     left: inherit;
     margin: 0 auto;
     width: 100%;
-    max-width: 150px;
-    height: 70px;
+    /*max-width: 150px;
+        height: 70px;*/
+    max-width: 200px;
+    height: 80px;
   }
   .car-choose {
     background: none!important;
@@ -3373,6 +3398,35 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-zone-choose.wrapper-zone-right-choose.content-toggle-one {
     display: none;
+  }
+  /* @end */
+  #wrapper-vehicules-home {
+    padding: 40px 0;
+  }
+  /* @group Cars */
+  .list-cars {
+    padding: 10px 0 22px 0;
+  }
+  .list-cars > li {
+    width: 50%;
+    padding: 0 2px;
+    margin: 2px 0;
+  }
+  .car-year {
+    display: none;
+  }
+  .car-name {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    top: 6px;
+    font-size: 0.9em;
+  }
+  .car-desc {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
   /* @end */
 }
