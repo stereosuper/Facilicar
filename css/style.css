@@ -352,6 +352,7 @@ h4 {
 p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  line-height: 1em;
 }
 p.big-txt {
   font-family: 'Texta-Regular', sans-serif;
@@ -3140,6 +3141,16 @@ a.btn-slider-citation:hover.btn-right span {
   .container.small {
     padding: 0;
   }
+  a.btn-block.big,
+  div.btn-block.big,
+  span.btn-block.big {
+    font-size: 1.188em;
+  }
+  a.btn-block.big.btn-block-arrow .txt-btn-block-arrow,
+  div.btn-block.big.btn-block-arrow .txt-btn-block-arrow,
+  span.btn-block.big.btn-block-arrow .txt-btn-block-arrow {
+    padding: 19px 36px 19px 48px;
+  }
   .menu-mobile-open .bg-header-responsive {
     display: block;
   }
@@ -3409,8 +3420,28 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .list-cars > li {
     width: 50%;
+    height: 190px;
     padding: 0 2px;
     margin: 2px 0;
+  }
+  .bandeau-image-car {
+    height: 96px;
+    top: 40px;
+  }
+  .bandeau-car.bandeau-top {
+    height: 40px;
+  }
+  .fond-bandeau-car.bandeau-top {
+    height: 40px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .fond-bandeau-car.bandeau-bottom {
+    height: 52px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
   .car-year {
     display: none;
@@ -3423,6 +3454,136 @@ a.btn-slider-citation:hover.btn-right span {
     font-size: 0.9em;
   }
   .car-desc {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    padding-right: 50%;
+    font-size: 0.688em;
+    top: 23px;
+  }
+  .car-desc .details {
+    display: none;
+  }
+  .car-desc .motor-color {
+    display: block;
+  }
+  .car-km {
+    padding-left: 50%;
+    font-size: 0.688em;
+    top: 23px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .car-old-price {
+    font-size: 0.688em;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    bottom: 32px;
+    left: 54px;
+    text-align: left;
+  }
+  .car-price {
+    font-size: 1.250em;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    bottom: 12px;
+    color: #333333;
+    left: 54px;
+    text-align: left;
+  }
+  .car-btn-essai {
+    display: none;
+  }
+  .car-price-saving {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+    bottom: 18px;
+    right: inherit;
+    left: 12px;
+  }
+  .car-price-saving .saving-txt {
+    display: none;
+  }
+  .car-labels {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    bottom: 45px;
+  }
+  .car-label {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+    font-size: 0.625em;
+    padding: 0px 5px;
+  }
+  /* @end */
+  /* @group Newsletter */
+  #block-newsletter {
+    display: none;
+  }
+  /* @end */
+  /* @group Choisir / Témoignage */
+  #wrapper-choisir-temoignage .wrapper-align-middle {
+    display: block;
+  }
+  #wrapper-choisir-temoignage .wrapper-align-middle .content-align-middle {
+    display: block;
+  }
+  #zone-left-choisir-temoignage {
+    width: 100%;
+    padding: 0;
+  }
+  #zone-right-choisir-temoignage {
+    width: 100%;
+    padding: 0;
+  }
+  .bloc-survol .zone-picto-bloc-survol {
+    width: 42px;
+    height: 42px;
+    line-height: 40px;
+    margin: 0;
+    left: 20px;
+    top: 25px;
+  }
+  .bloc-survol .zone-picto-bloc-survol .icon-thumb-up {
+    font-size: 38px;
+  }
+  .bloc-survol .zone-picto-bloc-survol .icon-thumb-up-shadow {
+    font-size: 42px;
+    top: -1px;
+    right: -5px;
+  }
+  .bloc-survol h2 {
+    font-size: 1.625em;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    text-align: left;
+    padding: 12px 0 0 45px;
+  }
+  .bloc-survol h2 br {
+    display: none;
+  }
+  .bloc-survol p {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+  .bloc-survol p br {
+    display: none;
+  }
+  .bloc-survol .btn-block {
     opacity: 1;
     -webkit-transform: none;
         -ms-transform: none;
