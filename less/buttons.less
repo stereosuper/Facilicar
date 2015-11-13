@@ -45,7 +45,14 @@ a, div, span{
 		box-sizing: border-box;
 		.texta-black(1.375em);
 		padding: 4px 0;
-		span{
+		color: @theme-primary;
+		&.left{
+			padding-right: 6px;
+		}
+		&.right{
+			padding-left: 6px;
+		}
+		.border{
 			display: block;
 			position: absolute;
 			width: 100%;
@@ -65,9 +72,24 @@ a, div, span{
 				left: 0;
 			}
 		}
+		.arrow-toggle-one{
+			display: inline-block;
+			vertical-align: top;
+			margin: -2px 0 0 0;
+			&.left{
+				margin: -2px 2px 0 0;
+			}
+			&.right{
+				margin: -2px 0 0 2px;
+			}
+		}
 		&.open{
 			border-bottom: none;
-			span{
+			color: @theme-noir;
+			.arrow-toggle-one{
+				opacity: 0;
+			}
+			.border{
 				&:before{
 					content: "";
 					display: block;
