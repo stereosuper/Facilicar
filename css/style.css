@@ -2656,9 +2656,9 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .car-choose.car-3 {
   width: 645px;
-  height: 208px;
+  height: 195px;
   margin-left: -322px;
-  bottom: -22px;
+  bottom: -20px;
 }
 .car-choose.car-4 {
   width: 592px;
@@ -2706,16 +2706,16 @@ a.btn-slider-citation:hover.btn-right span {
   left: 439px;
 }
 .car-3 .car-wheel {
-  width: 63px;
-  height: 63px;
-  top: 102px;
+  width: 65px;
+  height: 65px;
+  top: 88px;
   background-image: url("../layoutImg/roue-03.png");
 }
 .car-3 .car-wheel.rear-wheel {
-  left: 138px;
+  left: 136px;
 }
 .car-3 .car-wheel.front-wheel {
-  left: 471px;
+  left: 470px;
 }
 .car-4 .car-wheel {
   width: 65px;
