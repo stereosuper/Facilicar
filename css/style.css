@@ -2098,6 +2098,8 @@ button:focus {
   overflow: hidden;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 .wrapper-slider-citation ul {
   display: block;
@@ -2161,8 +2163,6 @@ button:focus {
           transition: all 0.2s ease-in-out;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transform: translateZ(1px);
-          transform: translateZ(1px);
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition-delay: 0.1s;
@@ -2199,6 +2199,7 @@ button:focus {
           transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+  z-index: 10;
 }
 .bloc-txt-slider-citation {
   display: inline-block;
@@ -3533,19 +3534,24 @@ a.btn-slider-citation:hover.btn-right span {
   }
   /* @end */
   /* @group Choisir / Témoignage */
-  #wrapper-choisir-temoignage .wrapper-align-middle {
+  #wrapper-choisir-temoignage {
+    padding: 20px 0 20px 0;
+  }
+  #wrapper-choisir-temoignage #wrapper-content-choisir-temoignage {
     display: block;
   }
-  #wrapper-choisir-temoignage .wrapper-align-middle .content-align-middle {
-    display: block;
+  #wrapper-title-e-trustedshops {
+    display: none;
   }
   #zone-left-choisir-temoignage {
     width: 100%;
     padding: 0;
+    display: block;
   }
   #zone-right-choisir-temoignage {
     width: 100%;
     padding: 0;
+    display: block;
   }
   .bloc-survol .zone-picto-bloc-survol {
     width: 42px;
@@ -3588,6 +3594,67 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+  #wrapper-slider-temoignage {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    bottom: inherit;
+    margin: 20px 0 0 0;
+  }
+  #wrapper-slider-temoignage ul {
+    width: 100%;
+    height: 220px;
+  }
+  .zone-txt-slider-citation {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+    display: block;
+    height: auto;
+    position: absolute;
+    top: inherit;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 6px;
+  }
+  .zone-txt-slider-citation p {
+    font-size: 1em;
+  }
+  .zone-txt-slider-citation p strong {
+    font-size: 1.625em;
+  }
+  .wrapper-img-slider-citation {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .bloc-txt-slider-citation {
+    padding: 15px 10px;
+    position: relative;
+    top: inherit;
+    left: inherit;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+  a.btn-slider-citation {
+    width: 20px;
+  }
+  .wrapper-slider-citation ul li.active a:hover .wrapper-img-slider-citation {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-filter: none;
+            filter: none;
   }
   /* @end */
 }
