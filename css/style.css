@@ -1895,6 +1895,9 @@ a:focus {
 .list-inline.list-half > li:last-of-type {
   padding: 0 0 0 3px;
 }
+.list-inline.content-toggle-none {
+  display: none;
+}
 .list-block {
   display: block;
   margin: 0;
