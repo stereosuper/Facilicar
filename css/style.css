@@ -3152,17 +3152,18 @@ a.btn-slider-citation:hover.btn-right span {
   span.btn-block.big.btn-block-arrow .txt-btn-block-arrow {
     padding: 19px 36px 19px 48px;
   }
+  /* @group Header */
   .menu-mobile-open .bg-header-responsive {
     display: block;
   }
-  .hide-mobile {
-    display: none !important;
+  .header-on #header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: none;
   }
-  .show-mobile {
-    display: block !important;
-  }
-  .wrapper-top {
-    padding: 66px 0 0 0;
+  .header-on #header a.logo-facilicar {
+    margin: 0;
   }
   #header {
     position: absolute;
@@ -3209,6 +3210,9 @@ a.btn-slider-citation:hover.btn-right span {
   .menu-mobile-open #zone-right-header {
     display: block;
   }
+  .header-on #zone-right-header {
+    margin: 0;
+  }
   #menu-top-header ul,
   #menu-bottom-header ul {
     display: block;
@@ -3254,6 +3258,16 @@ a.btn-slider-citation:hover.btn-right span {
   #menu-bottom-header ul > li a#btn-rappel {
     margin: 0 0 0 25px;
   }
+  .header-on #menu-top-header {
+    display: block;
+    margin: 0;
+  }
+  .header-on #menu-top-header ul {
+    margin: 0 0 22px 0;
+  }
+  .header-on #menu-top-header ul > li:first-of-type {
+    display: block;
+  }
   #menu-bottom-header ul.list-inline {
     box-sizing: border-box;
     padding: 0 0 25px 25px;
@@ -3262,6 +3276,22 @@ a.btn-slider-citation:hover.btn-right span {
     text-transform: none;
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
+  }
+  .header-on #menu-bottom-header {
+    display: block;
+  }
+  /* @end */
+  .hide-mobile {
+    display: none !important;
+  }
+  .show-mobile {
+    display: block !important;
+  }
+  .wrapper-top {
+    margin: 66px 0 0 0;
+  }
+  .header-on .wrapper-top {
+    padding: 0;
   }
   /* @group Choose */
   .wrapper-survol-out {
@@ -3444,6 +3474,14 @@ a.btn-slider-citation:hover.btn-right span {
         -ms-transform: none;
             transform: none;
   }
+  .wrapper-car:hover .car-labels {
+    opacity: 1;
+  }
+  .wrapper-car:hover .car-label {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
   .car-year {
     display: none;
   }
@@ -3518,6 +3556,7 @@ a.btn-slider-citation:hover.btn-right span {
         -ms-transform: none;
             transform: none;
     bottom: 45px;
+    opacity: 1;
   }
   .car-label {
     -webkit-transform: none;
@@ -3595,6 +3634,12 @@ a.btn-slider-citation:hover.btn-right span {
         -ms-transform: none;
             transform: none;
   }
+  .bloc-survol:hover .zone-picto-bloc-survol {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+  }
   #wrapper-slider-temoignage {
     position: relative;
     top: inherit;
@@ -3649,14 +3694,47 @@ a.btn-slider-citation:hover.btn-right span {
   a.btn-slider-citation {
     width: 20px;
   }
+  a.btn-slider-citation:hover.btn-right span {
+    -webkit-transform: translateX(5px);
+        -ms-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  a.btn-slider-citation:hover.btn-left span {
+    -webkit-transform: translateX(-5px);
+        -ms-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  .wrapper-slider-citation ul li.active a .img-slider-citation {
+    -webkit-filter: none;
+            filter: none;
+  }
   .wrapper-slider-citation ul li.active a:hover .wrapper-img-slider-citation {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
-    -webkit-filter: none;
-            filter: none;
   }
   /* @end */
+  /* @group Footer */
+  /* @end */
+}
+@media (max-width: 480px) {
+  #footer-bottom {
+    padding: 20px 0 40px 0;
+  }
+  #footer-bottom .list-inline > li {
+    display: block;
+    width: 100%;
+  }
+  #footer-bottom .list-inline > li:last-of-type {
+    display: block;
+    width: 100%;
+  }
+  #footer-bottom .list-social {
+    margin: 0;
+  }
+  #footer-bottom .list-social > li {
+    margin: 0 32px 0 0;
+  }
 }
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {

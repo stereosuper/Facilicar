@@ -77,19 +77,22 @@
             }
         }
     }
+    /* @group Header */
     .bg-header-responsive{
         .menu-mobile-open &{
             display: block;
         }
     }
-    .hide-mobile{
-        display: none !important;
-    }
-    .show-mobile{
-        display: block !important;
-    }
-    .wrapper-top{
-        padding: 66px 0 0 0;
+    #header{
+        .header-on &{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: none;
+            a.logo-facilicar{
+                margin: 0;
+            }
+        }
     }
     #header{
         position: absolute;
@@ -136,6 +139,9 @@
         .menu-mobile-open &{
             display: block;
         }
+        .header-on &{
+            margin: 0;
+        }
     }
     #menu-top-header, #menu-bottom-header{
         ul{
@@ -174,6 +180,20 @@
             }
         }
     }
+    #menu-top-header{
+        .header-on &{
+            display: block;
+            margin: 0;
+            ul{
+                margin: 0 0 22px 0;
+                >li{
+                    &:first-of-type{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
     #menu-bottom-header{
         ul.list-inline{
             box-sizing: border-box;
@@ -185,7 +205,24 @@
                 }
             }
         }
+        .header-on &{
+            display: block;
+        }
     }
+    /* @end */
+    .hide-mobile{
+        display: none !important;
+    }
+    .show-mobile{
+        display: block !important;
+    }
+    .wrapper-top{
+        margin: 66px 0 0 0;
+        .header-on &{
+            padding: 0;
+        }
+    }
+    
 
     /* @group Choose */
     .wrapper-survol-out{
@@ -366,6 +403,12 @@
     }
     .wrapper-car{
         &:hover{
+            .car-labels{
+                opacity: 1;
+            }
+            .car-label{
+                transform: none;
+            }
         }
     }
     .car-year{
@@ -428,6 +471,7 @@
     .car-labels{
         transform: none;
         bottom: 45px;
+        opacity: 1;
     }
     .car-label{
         transform: none;
@@ -500,6 +544,12 @@
             opacity: 1;
             transform: none;
         }
+        &:hover{
+            .zone-picto-bloc-survol{
+                transform: none;
+                opacity: 1;
+            }
+        }
     }
     #wrapper-slider-temoignage{
         position: relative;
@@ -547,16 +597,30 @@
     }
     a.btn-slider-citation{
         width: 20px;
+        &:hover{
+            &.btn-right{
+                span{
+                    transform: translateX(5px);
+                }
+            }
+            &.btn-left{
+                span{
+                    transform: translateX(-5px);
+                }
+            }
+        }
     }
     .wrapper-slider-citation{
         ul{
             li{
                 &.active{
                     a{
+                        .img-slider-citation{
+                            filter: none;
+                        }
                         &:hover{
                             .wrapper-img-slider-citation{
                                 transform: none;
-                                filter: none;
                             }
                         }
                     }
@@ -565,10 +629,32 @@
         }
     }
     /* @end */
+
+    /* @group Footer */
+    
+    /* @end */
 }
 
 @media (max-width: 480px) {
-
+    #footer-bottom{
+        padding: 20px 0 40px 0;
+        .list-inline{
+            > li{
+                display: block;
+                width: 100%;
+                &:last-of-type{
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        .list-social{
+            margin: 0;
+            > li{
+                margin: 0 32px 0 0;
+            }
+        }
+    }
 }
 
 
