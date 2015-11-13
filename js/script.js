@@ -265,6 +265,12 @@ $(function(){
 			}
 		}
 	);
+
+	// Clic sur le bouton close des cookies
+	$("#btn-close-cookies").click(function(){
+		$(this).parents(".cookies").addClass("hidden");
+		return false;
+	});
 });
 
 $(window).resize(function(){

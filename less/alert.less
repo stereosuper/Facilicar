@@ -1,0 +1,30 @@
+/* @group Alert */
+.alert{
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 14px 0;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	backface-visibility: hidden;
+	&.cookies{
+		background-color: @theme-noir;
+		color: #fff;
+	}
+	.content-txt-alert{
+		box-sizing: border-box;
+		padding: 0 20px 0 0;
+	}
+	&.hidden{
+		display: none;
+	}
+	p{
+		font-size: 1em;
+	}
+	a{
+		font-size: 1em;
+	}
+}
+/* @end */
