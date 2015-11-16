@@ -25,6 +25,28 @@
            }
         }
     }
+    /* @group Newsletter */
+    #block-newsletter{
+        text-align: center;
+        .wrapper-align-middle{
+            display: inline-block;
+            vertical-align: top;
+            width: auto;
+        }
+        .content-align-middle{
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+    }
+    #zone-left-newsletter{
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+    #zone-right-newsletter{
+        padding: 0 0 0 20px;
+    }
+    /* @end */
 }
 
 @media (max-width: 1024px) {
@@ -36,6 +58,16 @@
             margin-right: 0;
         }
     }
+    /* @group Footer */
+    #footer-bottom{
+        .list-inline{
+            > li{
+                width: 33.3333%;
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 979px) {
@@ -332,18 +364,11 @@
         box-sizing: border-box;
     }
     a.btn-slider-citation{
-        width: 20px;
-        &:hover{
-            &.btn-right{
-                span{
-                    transform: translateX(5px);
-                }
-            }
-            &.btn-left{
-                span{
-                    transform: translateX(-5px);
-                }
-            }
+        span{
+            height: 44px;
+            width: 20px;
+            font-size: 44px;
+            margin: -22px 0 0 0;
         }
     }
     .wrapper-slider-citation{
@@ -765,6 +790,11 @@
             max-width: 400px;
         }
     }
+    #wrapper-slider-temoignage{
+        ul{
+            height: 200px;
+        }
+    }
     #trusted-shops{
         .content-align-middle{
             &#content-e-trustedshops{
@@ -825,6 +855,12 @@
     }
     a.btn-slider-citation{
         width: 50px;
+        span{
+            font-size: 18px;
+            height: 18px;
+            width: 10px;
+            margin: -18px 0 0 0;
+        }
         &:hover{
             &.btn-right{
                 span{
