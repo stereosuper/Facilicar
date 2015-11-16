@@ -1951,6 +1951,7 @@ a:focus {
   margin: 0;
   padding: 22px 0;
   list-style-type: none;
+  text-align: left;
 }
 .list-cars > li {
   display: inline-block;
@@ -2824,6 +2825,7 @@ a.btn-slider-citation:hover.btn-right span {
   border: 1px solid #797973;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: translateY(0px) translateZ(1px);
@@ -3194,20 +3196,150 @@ a.btn-slider-citation:hover.btn-right span {
   .container.small {
     padding: 0 22px;
   }
+  h2.big-title {
+    font-size: 2.813em;
+  }
+  #wrapper-vehicules-home h2.big-title {
+    margin: 0;
+  }
   #header a.logo-facilicar {
     margin: 14px 0 0 0;
     width: 240px;
     height: 42px;
     background-size: 240px 42px;
   }
+  /* @group Cars */
+  .list-cars {
+    padding: 10px 0 22px 0;
+    max-width: 810px;
+    margin: 0 auto;
+  }
+  .list-cars > li {
+    width: 33.33333%;
+    height: 313px;
+    padding: 0 4px;
+    margin: 4px 0;
+  }
+  .bandeau-image-car {
+    height: 158px;
+    top: 70px;
+  }
+  .bandeau-car.bandeau-top {
+    height: 70px;
+  }
+  .fond-bandeau-car.bandeau-top {
+    height: 70px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .fond-bandeau-car.bandeau-bottom {
+    height: 86px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .wrapper-car:hover .car-labels {
+    opacity: 1;
+  }
+  .wrapper-car:hover .car-label {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .car-year {
+    display: none;
+  }
+  .car-name {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    top: 14px;
+    font-size: 1.25em;
+  }
+  .car-desc {
+    opacity: 1;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    padding-right: 50%;
+    font-size: 0.875em;
+    top: 40px;
+  }
+  .car-desc .details {
+    display: none;
+  }
+  .car-desc .motor-color {
+    display: block;
+  }
+  .car-km {
+    padding-left: 50%;
+    font-size: 0.875em;
+    top: 40px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .car-old-price {
+    font-size: 1.125em;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    bottom: 46px;
+    left: 90px;
+    text-align: left;
+  }
+  .car-price {
+    font-size: 2.063em;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    bottom: 12px;
+    color: #333333;
+    left: 90px;
+    text-align: left;
+  }
+  .car-btn-essai {
+    display: none;
+  }
+  .car-price-saving {
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+    bottom: 28px;
+    right: inherit;
+    left: 20px;
+  }
+  .car-price-saving .saving-txt {
+    display: none;
+  }
+  .car-labels {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    bottom: 78px;
+    opacity: 1;
+  }
+  .car-label {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    opacity: 1;
+    font-size: 0.8em;
+    padding: 0px 5px;
+  }
+  .saving-percentage {
+    font-size: 1.375em;
+  }
+  /* @end */
 }
 @media (max-width: 767px) {
   h2.big-title {
     font-size: 1.875em;
     margin: 0 0 15px 0;
-  }
-  #wrapper-vehicules-home h2.big-title {
-    margin: 0;
   }
   h2 .small-txt {
     font-size: 0.533em;
@@ -3520,7 +3652,7 @@ a.btn-slider-citation:hover.btn-right span {
   }
   /* @group Cars */
   .list-cars {
-    padding: 10px 0 22px 0;
+    max-width: 370px;
   }
   .list-cars > li {
     width: 50%;
@@ -3537,107 +3669,44 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .fond-bandeau-car.bandeau-top {
     height: 40px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
   }
   .fond-bandeau-car.bandeau-bottom {
     height: 52px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-  .wrapper-car:hover .car-labels {
-    opacity: 1;
-  }
-  .wrapper-car:hover .car-label {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
-  .car-year {
-    display: none;
   }
   .car-name {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
     top: 6px;
     font-size: 0.9em;
   }
   .car-desc {
-    opacity: 1;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-    padding-right: 50%;
     font-size: 0.688em;
     top: 23px;
-  }
-  .car-desc .details {
-    display: none;
-  }
-  .car-desc .motor-color {
-    display: block;
   }
   .car-km {
-    padding-left: 50%;
     font-size: 0.688em;
     top: 23px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
   }
   .car-old-price {
     font-size: 0.688em;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
     bottom: 32px;
     left: 54px;
-    text-align: left;
   }
   .car-price {
     font-size: 1.250em;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
     bottom: 12px;
-    color: #333333;
     left: 54px;
-    text-align: left;
-  }
-  .car-btn-essai {
-    display: none;
   }
   .car-price-saving {
-    display: inline-block;
-    vertical-align: top;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-    opacity: 1;
     bottom: 18px;
-    right: inherit;
     left: 12px;
   }
-  .car-price-saving .saving-txt {
-    display: none;
-  }
   .car-labels {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
     bottom: 45px;
-    opacity: 1;
   }
   .car-label {
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-    opacity: 1;
     font-size: 0.625em;
-    padding: 0px 5px;
+  }
+  .saving-percentage {
+    font-size: 0.813em;
   }
   /* @end */
   /* @group Newsletter */
