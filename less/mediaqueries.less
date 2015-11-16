@@ -18,6 +18,13 @@
             left: 30%;
         }
     }
+    .bloc-survol{
+        p{
+           br{
+            display: none;
+           }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -164,6 +171,198 @@
     }
     .saving-percentage{
         font-size: 1.375em;
+    }
+    /* @end */
+
+    /* @group Choisir / Témoignage */
+    #wrapper-choisir-temoignage{
+        padding: 34px 0 34px 0;
+        #wrapper-content-choisir-temoignage{
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    #wrapper-title-e-trustedshops{
+        display: none;
+    }
+    #zone-left-choisir-temoignage{
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+    #content-zone-left-choisir-temoignage{
+        display: table;
+        width: 100%;
+        height: auto;
+    }
+    #zone-right-choisir-temoignage{
+        width: 100%;
+        padding: 0;
+        display: block;
+    }
+    .bloc-survol{
+        display: table-cell;
+        vertical-align: top;
+        box-sizing: border-box;
+        .zone-picto-bloc-survol{
+            width: 42px;
+            height: 42px;
+            line-height: 40px;
+            margin: 0;
+            left: 20px;
+            top: 25px;
+            .icon-thumb-up{
+                font-size: 38px;
+            }
+            .icon-thumb-up-shadow{
+                font-size: 42px;
+                top: -1px;
+                right: -5px;
+            }
+        }
+        .title-bloc-survol{
+            width: 100%;
+        }
+        h2{
+            font-size: 2.5em;
+            transform: none;
+            text-align: left;
+            padding: 4px 0 0 60px;
+            br{
+                display: none;
+            }
+        }
+        p{
+            transform: none;
+            opacity: 1;
+        }
+        .btn-block{
+            opacity: 1;
+            transform: none;
+        }
+        &:hover{
+            .zone-picto-bloc-survol{
+                transform: none;
+                opacity: 1;
+            }
+        }
+    }
+    #trusted-shops{
+        display: table-cell;
+        vertical-align: top;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px 0 0 18px;
+        width: 240px;
+        .wrapper-align-middle{
+            display: block;
+            width: 100%;
+        }
+        .content-align-middle{
+            display: block;
+            width: 100%;
+            &#content-title-trusted-shops{
+                display: none;
+            }
+            &#content-e-trustedshops{
+                text-align: center;
+            }
+        }
+    }
+    #content-txt-trustedshops-avis{
+        padding: 0;
+        p{
+            font-size: 0.875em;
+        }
+    }
+    #content-trustedshops-avis{
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .trustedshops-avis{
+        width: 72px;
+        height: 70px;
+        background-size: 100% 100%;
+    }
+    #wrapper-slider-temoignage{
+        position: relative;
+        top: inherit;
+        left: inherit;
+        right: inherit;
+        bottom: inherit;
+        margin: 20px 0 0 0;
+        ul{
+            width: 100%;
+            height: 492px;
+        }
+    }
+    .zone-txt-slider-citation{
+        transform: none;
+        opacity: 1;
+        display: block;
+        height: auto;
+        position: absolute;
+        top: inherit;
+        bottom: 0;
+        box-sizing: border-box;
+        padding: 6px;
+        p{
+            font-size: 2.5em;
+            strong{
+                font-size: 1.6em;
+            }
+        }
+        .btn-underline{
+            font-size: 1.688em;
+        }
+    }
+    .wrapper-img-slider-citation{
+        transform: none;
+        filter: none;
+    }
+    .bloc-txt-slider-citation{
+        padding: 15px 10px;
+        position: relative;
+        top: inherit;
+        left: inherit;
+        transform: none;
+        display: block;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    a.btn-slider-citation{
+        width: 20px;
+        &:hover{
+            &.btn-right{
+                span{
+                    transform: translateX(5px);
+                }
+            }
+            &.btn-left{
+                span{
+                    transform: translateX(-5px);
+                }
+            }
+        }
+    }
+    .wrapper-slider-citation{
+        ul{
+            li{
+                &.active{
+                    a{
+                        .img-slider-citation{
+                            filter: none;
+                        }
+                        &:hover{
+                            .wrapper-img-slider-citation{
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     /* @end */
 }
@@ -340,7 +539,6 @@
             padding: 0;
         }
     }
-    
 
     /* @group Choose */
     .wrapper-survol-out{
@@ -492,7 +690,7 @@
 
     /* @group Cars */
     .list-cars{
-        max-width: 370px;
+        max-width: 400px;
         >li{
             width: 50%;
             height: 190px;
@@ -565,8 +763,17 @@
         padding: 20px 0 20px 0;
         #wrapper-content-choisir-temoignage{
             display: block;
+            max-width: 400px;
         }
     }
+    #trusted-shops{
+        .content-align-middle{
+            &#content-e-trustedshops{
+                display: none;
+            }
+        }
+    }
+    
     #wrapper-title-e-trustedshops{
         display: none;
     }
@@ -580,7 +787,19 @@
         padding: 0;
         display: block;
     }
+    #content-zone-left-choisir-temoignage{
+        display: block;
+    }
+    #trusted-shops{
+        display: block;
+        padding: 10px 0 0 0;
+        width: 100%;
+    }
+    #trusted-shops .wrapper-align-middle{
+
+    }
     .bloc-survol{
+        display: block;
         .zone-picto-bloc-survol{
             width: 42px;
             height: 42px;
@@ -601,7 +820,7 @@
             font-size: 1.625em;
             transform: none;
             text-align: left;
-            padding: 12px 0 0 45px;
+            padding: 12px 0 0 60px;
             br{
                 display: none;
             }
@@ -609,9 +828,6 @@
         p{
             transform: none;
             opacity: 1;
-            br{
-                display: none;
-            }
         }
         .btn-block{
             opacity: 1;
@@ -657,6 +873,9 @@
         transform: none;
         filter: none;
     }
+    #wrapper-title-e-trustedshops{
+        margin: 0;
+    }
     .bloc-txt-slider-citation{
         padding: 15px 10px;
         position: relative;
@@ -667,6 +886,25 @@
         width: 100%;
         height: auto;
         box-sizing: border-box;
+        .btn-underline{
+            font-size: 0.688em;
+        }
+    }
+    #content-txt-trustedshops-avis{
+        padding: 0 20px 0 0;
+    }
+    .trustedshops-avis{
+        width: 91px;
+        height: 88px;
+    }
+    #trusted-shops{
+        .wrapper-align-middle{
+            display: table;
+        }
+        .content-align-middle{
+            display: table-cell;
+            vertical-align: middle;
+        }
     }
     a.btn-slider-citation{
         width: 20px;
