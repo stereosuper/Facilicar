@@ -305,7 +305,7 @@
         top: inherit;
         bottom: 0;
         box-sizing: border-box;
-        padding: 6px;
+        padding: 12px;
         p{
             font-size: 2.5em;
             strong{
@@ -762,7 +762,6 @@
     #wrapper-choisir-temoignage{
         padding: 20px 0 20px 0;
         #wrapper-content-choisir-temoignage{
-            display: block;
             max-width: 400px;
         }
     }
@@ -772,20 +771,6 @@
                 display: none;
             }
         }
-    }
-    
-    #wrapper-title-e-trustedshops{
-        display: none;
-    }
-    #zone-left-choisir-temoignage{
-        width: 100%;
-        padding: 0;
-        display: block;
-    }
-    #zone-right-choisir-temoignage{
-        width: 100%;
-        padding: 0;
-        display: block;
     }
     #content-zone-left-choisir-temoignage{
         display: block;
@@ -800,67 +785,12 @@
     }
     .bloc-survol{
         display: block;
-        .zone-picto-bloc-survol{
-            width: 42px;
-            height: 42px;
-            line-height: 40px;
-            margin: 0;
-            left: 20px;
-            top: 25px;
-            .icon-thumb-up{
-                font-size: 38px;
-            }
-            .icon-thumb-up-shadow{
-                font-size: 42px;
-                top: -1px;
-                right: -5px;
-            }
-        }
         h2{
             font-size: 1.625em;
-            transform: none;
-            text-align: left;
             padding: 12px 0 0 60px;
-            br{
-                display: none;
-            }
-        }
-        p{
-            transform: none;
-            opacity: 1;
-        }
-        .btn-block{
-            opacity: 1;
-            transform: none;
-        }
-        &:hover{
-            .zone-picto-bloc-survol{
-                transform: none;
-                opacity: 1;
-            }
-        }
-    }
-    #wrapper-slider-temoignage{
-        position: relative;
-        top: inherit;
-        left: inherit;
-        right: inherit;
-        bottom: inherit;
-        margin: 20px 0 0 0;
-        ul{
-            width: 100%;
-            height: 220px;
         }
     }
     .zone-txt-slider-citation{
-        transform: none;
-        opacity: 1;
-        display: block;
-        height: auto;
-        position: absolute;
-        top: inherit;
-        bottom: 0;
-        box-sizing: border-box;
         padding: 6px;
         p{
             font-size: 1em;
@@ -869,23 +799,10 @@
             }
         }
     }
-    .wrapper-img-slider-citation{
-        transform: none;
-        filter: none;
-    }
     #wrapper-title-e-trustedshops{
         margin: 0;
     }
     .bloc-txt-slider-citation{
-        padding: 15px 10px;
-        position: relative;
-        top: inherit;
-        left: inherit;
-        transform: none;
-        display: block;
-        width: 100%;
-        height: auto;
-        box-sizing: border-box;
         .btn-underline{
             font-size: 0.688em;
         }
@@ -907,34 +824,16 @@
         }
     }
     a.btn-slider-citation{
-        width: 20px;
+        width: 50px;
         &:hover{
             &.btn-right{
                 span{
-                    transform: translateX(5px);
+                    transform: translateX(10px);
                 }
             }
             &.btn-left{
                 span{
-                    transform: translateX(-5px);
-                }
-            }
-        }
-    }
-    .wrapper-slider-citation{
-        ul{
-            li{
-                &.active{
-                    a{
-                        .img-slider-citation{
-                            filter: none;
-                        }
-                        &:hover{
-                            .wrapper-img-slider-citation{
-                                transform: none;
-                            }
-                        }
-                    }
+                    transform: translateX(-10px);
                 }
             }
         }
