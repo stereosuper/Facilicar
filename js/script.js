@@ -1,6 +1,7 @@
 var nbCurrentSlideTemoignage = 1,
 	tpsChangeCar = 8000,
-	mobileBreakpoint = 767;
+	mobileBreakpoint = 767,
+	tabletBreakpoint = 979;
 
 function whichTransitionEvent(){
   var t,
@@ -172,7 +173,7 @@ $(function(){
 	// Hover | Animation de la partie choisir
 	$(".zone-left-survol-out").hover(
 		function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				if(!$(this).parents(".wrapper-choose").hasClass("survol-out-left")){
 					wrapperChooseParent.addClass("survol-out-left");
@@ -183,7 +184,7 @@ $(function(){
 				}
 			}
 		}, function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				wrapperChooseParent.removeClass("survol-out-left");
 				wrapperChooseParent.addClass("animated");
@@ -196,7 +197,7 @@ $(function(){
 
 	$(".zone-right-survol-out").hover(
 		function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				if(!wrapperChooseParent.hasClass("survol-out-right")){
 					wrapperChooseParent.addClass("survol-out-right");
@@ -207,7 +208,7 @@ $(function(){
 				}
 			}
 		}, function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				wrapperChooseParent.removeClass("survol-out-right");
 				wrapperChooseParent.addClass("animated");
@@ -220,7 +221,7 @@ $(function(){
 
 	$(".wrapper-zone-left-choose").hover(
 		function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				if(!$(this).parents(".wrapper-choose").hasClass("survol-left")){
 					wrapperChooseParent.addClass("survol-left");
@@ -231,7 +232,7 @@ $(function(){
 				}
 			}
 		}, function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				wrapperChooseParent.removeClass("survol-left");
 				wrapperChooseParent.addClass("animated");
@@ -244,7 +245,7 @@ $(function(){
 
 	$(".wrapper-zone-right-choose").hover(
 		function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				if(!wrapperChooseParent.hasClass("survol-right")){
 					wrapperChooseParent.addClass("survol-right");
@@ -255,7 +256,7 @@ $(function(){
 				}
 			}
 		}, function() {
-			if($(window).width()>mobileBreakpoint){
+			if($(window).width()>tabletBreakpoint){
 				var wrapperChooseParent = $(this).parents(".wrapper-choose");
 				wrapperChooseParent.removeClass("survol-right");
 				wrapperChooseParent.addClass("animated");

@@ -84,14 +84,260 @@
             }
         }
     }
+    /* @group Header */
     #header{
         a.logo-facilicar{
             margin: 14px 0 0 0;
             width: 240px;
             height: 42px;
             background-size: 240px 42px;
+            .header-on &{
+                margin: 14px 0 0 0;
+            }
+        }
+        .header-on &{
+            position: relative;
+            top: inherit;
+            left: inherit;
+            border: none;
         }
     }
+    #zone-right-header{
+        .header-on &{
+            margin: 0;
+        }
+    }
+    #menu-top-header{
+        .header-on &{
+            display: block;
+            margin: 0;
+            ul{
+                margin: 0 0 22px 0;
+            }
+        }
+    }
+    #menu-bottom-header{
+        .header-on &{
+            display: block;
+        }
+    }
+    .wrapper-top{
+        .header-on &{
+            padding: 0;
+        }
+    }
+    /* @end */
+
+    /* @group Choose */
+    .wrapper-survol-out{
+        display: none;
+    }
+    .title-choose{
+        display: none;
+    }
+    #btn-choose{
+        display: none;
+    }
+    .container-car-choose{
+        position: relative;
+        bottom: inherit;
+        left: inherit;
+        margin: 0 auto 5px auto;
+        width: 402px;
+        height: 160px;
+    }
+    .car-choose{
+        &.car-1{
+            width: 369px;
+            height: 154px;
+            margin-left: -184px;
+            background-size: 100% 100%;
+        }
+        &.car-2{
+            width: 360px;
+            height: 129px;
+            margin-left: -180px;
+            background-size: 100% 100%;
+            bottom: -5px;
+        }
+        &.car-3{
+            width: 373px;
+            height: 113px;
+            margin-left: -186px;
+            background-size: 100% 100%;
+            bottom: -5px;
+        }
+        &.car-4{
+            width: 380px;
+            height: 133px;
+            margin-left: -190px;
+            background-size: 100% 100%;
+            bottom: 2px;
+        }
+    }
+    .car-wheel{
+        .car-1 &{
+            background-size: 100% 100%;
+            width: 41px;
+            height: 41px;
+            top: 98px;
+            &.rear-wheel{
+                left: 48px;
+            }
+            &.front-wheel{
+                left: 279px;
+            }
+        }
+        .car-2 &{
+            background-size: 100% 100%;
+            width: 36px;
+            height: 36px;
+            top: 71px;
+            &.rear-wheel{
+                left: 60px;
+            }
+            &.front-wheel{
+                left: 260px;
+            }
+        }
+        .car-3 &{
+            background-size: 100% 100%;
+            width: 38px;
+            height: 38px;
+            top: 53px;
+            &.rear-wheel{
+                left: 79px;
+            }
+            &.front-wheel{
+                left: 272px;
+            }
+        }
+        .car-4 &{
+            background-size: 100% 100%;
+            width: 42px;
+            height: 42px;
+            top: 78px;
+            &.rear-wheel{
+                left: 68px;
+            }
+            &.front-wheel{
+                left: 294px;
+            }
+        }
+    }
+    .wrapper-choose{
+        //height: auto;
+        height: 490px;
+        padding: 0 0 24px 0;
+        .list-choose{
+            > li{
+                p{
+                    font-size: 1.125em;
+                    strong{
+                        .texta-light(1em);
+                    }
+                }
+            }
+        }
+    }
+    .title-action-choose{
+        display: none;
+    }
+    .list-choose{
+        opacity: 1;
+    }
+    .content-txt-choose{
+        opacity: 1;
+    }
+    .wrapper-zone-choose{
+        /*position: relative;
+        bottom: inherit;
+        left: inherit;
+        width: 100%;
+        height: auto;
+        padding: 0;*/
+        height: 250px;
+        padding: 0;
+        &.wrapper-zone-center-choose{
+            display: none;
+        }
+        p{
+            font-size: 1.25em;
+            br{
+                display: block;
+            }
+        }
+        a, div, span{
+            &.btn-block.btn-block-arrow.btn-block-arrow-left{
+                .arrow-btn-block-arrow{
+                    left: 24px;
+                    right: auto;
+                    transform-origin: 50% 50%;
+                    transform: rotate(-180deg);
+                    margin: -15px 0 0 0;
+                }
+                .txt-btn-block-arrow{
+                    padding: 17px 28px 17px 45px;
+                }
+                .txt-hover-btn-block-arrow{
+                    padding: 17px 28px 17px 45px;
+                }
+            }
+        }
+        &.wrapper-zone-center-choose{
+            position: relative;
+            bottom: inherit;
+            left: inherit;
+            width: 100%;
+            height: auto;
+            .content-txt-choose{
+                opacity: 1;
+            }
+        }
+        &.wrapper-zone-left-choose{
+            /*position: relative;
+            bottom: inherit;
+            left: inherit;
+            width: 100%;
+            height: auto;*/
+            &.txt-right-aligned{
+                text-align: left;
+            }
+            .content-txt-choose{
+                transform: none;
+            }
+            .list-choose{
+                text-align: left;
+                >li{
+                    padding: 0 0 0 15px;
+                    &:before{
+                        right: inherit;
+                        left: 0;
+                        color: @theme-primary;
+                    }
+                }
+            }
+        }
+        &.wrapper-zone-right-choose{
+            /*position: relative;
+            bottom: inherit;
+            left: inherit;
+            width: 100%;
+            height: auto;*/
+            .content-txt-choose{
+                transform: none;
+            }
+            .list-choose{
+                >li{
+                    &:before{
+                        color: @theme-primary;
+                    }
+                }
+            }
+        }
+    }
+    /* @end */
+
     /* @group Cars */
     .list-cars{
         padding: 10px 0 22px 0;
@@ -102,6 +348,9 @@
             height: 313px;
             padding: 0 4px;
             margin: 4px 0;
+            &:nth-child(7), &:nth-child(8){
+               display: none; 
+            }
         }
     }
     .bandeau-image-car{
@@ -634,6 +883,9 @@
         padding: 0;
         p{
             font-size: 1.25em;
+            br{
+                display: none;
+            }
         }
         a, div, span{
             &.btn-block.btn-block-arrow.btn-block-arrow-left{
