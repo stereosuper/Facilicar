@@ -280,6 +280,16 @@ $(function(){
 		}
 	);
 
+	$(".wrapper-zone-choose").click(function(){
+		if($(window).width()>tabletBreakpoint){
+			if($(this).hasClass("wrapper-zone-left-choose")){
+				window.location.href = "/#acheter";
+			}else if($(this).hasClass("wrapper-zone-right-choose")){
+				window.location.href = "/#vendre";
+			}
+		}
+	});
+
 	// Clic sur les boutons de la partie choose pour tablette
 	$(".title-action-choose").click(function(){
 		if(($(window).width()<=tabletBreakpoint)&&($(window).width()>mobileBreakpoint)){

@@ -2396,6 +2396,11 @@ a.btn-slider-citation:hover.btn-right span {
   right: 0;
   cursor: pointer;
 }
+.zone-survol-out a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .wrapper-choose {
   display: block;
   position: relative;
