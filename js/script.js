@@ -97,6 +97,19 @@ $(function(){
 
 	var transitionEvent = whichTransitionEvent();
 
+	// Test si il y a un cookie "acceptCookie"
+	if(!Cookies.get('acceptCookie')=='not'){
+		$(".cookies").addClass("show");
+	}
+
+	// Clic sur le bouton close des cookies
+	$("#btn-close-cookies").click(function(){
+		$(".cookies").removeClass("show");
+		// Création du cookie
+		Cookies.set('acceptCookie', 'not');
+		return false;
+	});
+
 	if($("body").hasClass("has-choose")){
 		var count = 1;
 		for(var i = 1; i<$(".car-choose").length; i++){
@@ -281,12 +294,6 @@ $(function(){
 			}
 			return false;
 		}
-	});
-
-	// Clic sur le bouton close des cookies
-	$("#btn-close-cookies").click(function(){
-		$(this).parents(".cookies").addClass("hidden");
-		return false;
 	});
 });
 

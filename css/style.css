@@ -2349,6 +2349,10 @@ a.btn-slider-citation:hover.btn-right span {
 .alert.cookies {
   background-color: #333333;
   color: #fff;
+  display: none;
+}
+.alert.cookies.show {
+  display: block;
 }
 .alert .content-txt-alert {
   box-sizing: border-box;
