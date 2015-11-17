@@ -43,7 +43,7 @@
 
 	<body class="has-choose">
 		<header id="header">
-			<div class="container clearfix">
+			<div class="container clearfix relative-position">
 				<a href="#" class="logo-facilicar hide-text">Facilicar</a>
 				<div id="zone-right-header">
 					<nav id="menu-top-header">
@@ -55,27 +55,96 @@
 								<a class="btn-tel color-grey" href="#"><span class="icon-tel"></span><span class="tel-number">0800 00 00 00</span></a>
 							</li><!--
 							--><li>
-								<a class="btn-underline btn-arrow color-secondary" href="#">Se faire rappeler ?</a>
+								<a class="btn-underline btn-arrow color-secondary" id="btn-rappel" href="#">Se faire rappeler ?</a>
 							</li>
 						</ul>
 					</nav>
 					<nav id="menu-bottom-header">
-						<ul class="list-inline">
+						<a href="#" class="btn-toggle show-mobile">Acheter votre voiture<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle">
 							<li>
 								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Voir les véhicules</span><span data-hover="Voir les véhicules" class="txt-hover-btn-anim"></span></a>
 							</li><!--
 							--><li>
-								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Achat</span><span data-hover="Achat" class="txt-hover-btn-anim"></span></a>
+								<a class="btn-anim color-theme-black hide-mobile" href="#"><span class="txt-btn-anim">Achat</span><span data-hover="Achat" class="txt-hover-btn-anim"></span></a>
 							</li><!--
 							--><li class="no-margin">
-								<a class="btn-heart color-theme-black" href="#"><span class="zone-heart"><span class="icon-heart"></span><span class="heart-number">12</span></span></a>
+								<a class="btn-heart color-theme-black" href="#"><span class="zone-heart"><span class="txt-heart show-mobile">Mes favoris</span><span class="icon-heart"></span><span class="heart-number">12</span></span></a>
+							</li><!--
+							--><li class="show-mobile">
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Financement</span><span data-hover="Financement" class="txt-hover-btn-anim"></span></a>
+							</li>
+						</ul>
+						<a href="#" class="btn-toggle show-mobile">Vendre votre voiture<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle" id="vendre-header">
+							<li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Vente</span><span data-hover="Vente" class="txt-hover-btn-anim"></span></a>
+							</li>
+						</ul>
+						<a href="#" class="btn-toggle show-mobile">Société<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle content-toggle-none" id="vendre-header">
+							<li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Qui sommes-nous?</span><span data-hover="Qui sommes-nous?" class="txt-hover-btn-anim"></span></a>
 							</li><!--
 							--><li>
-								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Vente</span><span data-hover="Vente" class="txt-hover-btn-anim"></span></a>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Pourquoi Facilicar?</span><span data-hover="Pourquoi Facilicar?" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">FAQ</span><span data-hover="FAQ" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Mentions légales</span><span data-hover="Mentions légales" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Conditions générales</span><span data-hover="Conditions générales" class="txt-hover-btn-anim"></span></a>
+							</li>
+						</ul>
+						<a href="#" class="btn-toggle show-mobile">Communication<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle content-toggle-none" id="vendre-header">
+							<li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Blog</span><span data-hover="Blog" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Presse</span><span data-hover="Presse" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Partenaires</span><span data-hover="Partenaires" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Plan du site</span><span data-hover="Plan du site" class="txt-hover-btn-anim"></span></a>
+							</li>
+						</ul>
+						<a href="#" class="btn-toggle show-mobile">Vous &amp;
+						nous<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle content-toggle-none" id="vendre-header">
+							<li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Contact</span><span data-hover="Contact" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Recrutement</span><span data-hover="Recrutement" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Vente &amp; achats aux pros</span><span data-hover="Vente &amp; achats aux pros" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Avis client</span><span data-hover="Avis client" class="txt-hover-btn-anim"></span></a>
+							</li>
+						</ul>
+						<a href="#" class="btn-toggle show-mobile">Sur la toile<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle content-toggle-none" id="vendre-header">
+							<li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Youtube</span><span data-hover="Youtube" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Facebook</span><span data-hover="Facebook" class="txt-hover-btn-anim"></span></a>
+							</li><!--
+							--><li>
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Twitter</span><span data-hover="Twitter" class="txt-hover-btn-anim"></span></a>
 							</li>
 						</ul>
 					</nav>
 				</div>
+				<a href="#" class="btn-menu-responsive"><span class="rect"></span><span class="rect"></span><span class="rect"></span></a>
 			</div>
 		</header>
 		<section class="wrapper-top wrapper-img">
@@ -95,7 +164,7 @@
 			<div class="container small">
 				<p class="big-txt txt-centered"><i>AutoPink est le premier distributeur low-cost de voitures d’occasion en France. Nous vous proposons une solution plus simple et beaucoup plus économique pour acheter votre véhicule. Nous vous offrons un accès direct à une sélection de véhicules issus de flottes de grandes entreprises (véhicules de fonction) ou de reprises auprès de particuliers avec une approche innovante, inspirée de la grande distribution.</i></p>
 				<h2>16% moins cher qu’en concession</h2>
-				<img style="margin-top: -30px;" class="alignright" src="img/img1.png">
+				<img style="margin-top: -35px;" class="alignright" src="img/img1.png">
 				<p>Offrez-vous un service digne d’une concession au prix d’un achat auprès d’un particulier. En achetant chez AutoPink, vous contournez les nombreux intermédiaires qui s’interposent inutilement entre leur ancien propriétaire (flottes d’entreprise, particuliers) et vous. De plus, vous ne trouverez chez nous ni vendeur payé à la commission ni show-room luxueux. Ces économies importantes sur nos coûts sont directement répercutées sur nos prix et permettent à nos clients d’économiser en moyenne 16% par rapport à un achat en concession. Enfin, ces prix nous permettant d’écouler des volumes importants, nous pouvons être rentables même en abaissant significativement notre marge commerciale. </p>
 				<h2 style="text-align: right;">50 photos par véhicule - Réservation<br /> en ligne 24 h/24</h2>
 				<p>AutoPink.com vous donne accès à l’information la plus riche et la plus transparente possible sur la qualité et le prix de ses véhicules (50 photos, descriptif des défauts, historique d’entretien, valeur de marché, etc…). De quoi comparer et réfléchir sereinement à votre achat ainsi qu’à nos offres de garantie et de financement. AutoPink.com vous permet également de réserver sans engagement votre véhicule afin de pouvoir en faire un essai en agence.</p>
