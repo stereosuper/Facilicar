@@ -130,6 +130,14 @@ $(function(){
 	// Adapter la taille des images à la taille du container parent
 	$(".imgLiquidFill").imgLiquid();
 
+	// Charger le contenu du footer dans le menu responsive
+	$("#footer-bottom .list-inline > li").each(function(index){
+			// récupérer le contenu du li du footer
+			var contentLiFooter = $("ul", this).html();
+			// le mettre dans le header
+			$(".zone-same-footer ul").eq(index).append(contentLiFooter);
+	});
+
 	// Ouverture du menu responsive
 	$("a.btn-menu-responsive").click(function(){
 		$("body").toggleClass("menu-mobile-open");

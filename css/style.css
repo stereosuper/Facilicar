@@ -4235,6 +4235,29 @@ a.btn-slider-citation:hover.btn-right span {
     text-transform: none;
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
+    color: #333333;
+    padding: 0;
+  }
+  #menu-bottom-header ul.list-inline > li a:before {
+    display: none;
+  }
+  #menu-bottom-header ul.list-inline > li a .txt-hover-btn-anim {
+    display: none;
+  }
+  #menu-bottom-header ul.list-inline > li a .hide-text {
+    display: block;
+    text-indent: inherit;
+  }
+  #menu-bottom-header ul.list-inline > li a:hover {
+    color: #009cc4;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  #menu-bottom-header ul.list-inline > li a:hover .txt-btn-anim {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
   .header-on #menu-bottom-header {
     display: block;

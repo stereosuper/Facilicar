@@ -1026,6 +1026,25 @@
                 a{
                     text-transform: none;
                     .texta-light(1.125em);
+                    color: @theme-noir;
+                    padding: 0;
+                    &:before{
+                        display: none;
+                    }
+                    .txt-hover-btn-anim{
+                        display: none;
+                    }
+                    .hide-text{
+                        display: block;
+                        text-indent: inherit;
+                    }
+                    &:hover{
+                        color: @theme-primary;
+                        transform: none;
+                        .txt-btn-anim{
+                            transform: none;
+                        }
+                    }
                 }
             }
         }
