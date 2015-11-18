@@ -42,8 +42,9 @@
 	</head>
 
 	<body>
+		<div class="bg-header-responsive"></div>
 		<header id="header">
-			<div class="container clearfix">
+			<div class="container clearfix relative-position">
 				<a href="#" class="logo-facilicar hide-text">Facilicar</a>
 				<div id="zone-right-header">
 					<nav id="menu-top-header">
@@ -55,27 +56,54 @@
 								<a class="btn-tel color-grey" href="#"><span class="icon-tel"></span><span class="tel-number">0800 00 00 00</span></a>
 							</li><!--
 							--><li>
-								<a class="btn-underline btn-arrow color-secondary" href="#">Se faire rappeler ?</a>
+								<a class="btn-underline btn-arrow color-secondary" id="btn-rappel" href="#">Se faire rappeler ?</a>
 							</li>
 						</ul>
 					</nav>
 					<nav id="menu-bottom-header">
-						<ul class="list-inline">
+						<a href="#" class="btn-toggle show-mobile">Acheter votre voiture<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle">
 							<li>
 								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Voir les véhicules</span><span data-hover="Voir les véhicules" class="txt-hover-btn-anim"></span></a>
 							</li><!--
 							--><li>
-								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Achat</span><span data-hover="Achat" class="txt-hover-btn-anim"></span></a>
+								<a class="btn-anim color-theme-black hide-mobile" href="#"><span class="txt-btn-anim">Achat</span><span data-hover="Achat" class="txt-hover-btn-anim"></span></a>
 							</li><!--
 							--><li class="no-margin">
-								<a class="btn-heart color-theme-black" href="#"><span class="zone-heart"><span class="icon-heart"></span><span class="heart-number">12</span></span></a>
+								<a class="btn-heart color-theme-black" href="#"><span class="zone-heart"><span class="txt-heart show-mobile">Mes favoris</span><span class="icon-heart"></span><span class="heart-number">12</span></span></a>
 							</li><!--
-							--><li>
+							--><li class="show-mobile">
+								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Financement</span><span data-hover="Financement" class="txt-hover-btn-anim"></span></a>
+							</li>
+						</ul>
+						<a href="#" class="btn-toggle show-mobile">Vendre votre voiture<span class="icon-arrow-down"></span></a>
+						<ul class="list-inline content-toggle" id="vendre-header">
+							<li>
 								<a class="btn-anim color-theme-black" href="#"><span class="txt-btn-anim">Vente</span><span data-hover="Vente" class="txt-hover-btn-anim"></span></a>
 							</li>
 						</ul>
+						<div class="zone-same-footer show-mobile">
+							<a href="#" class="btn-toggle show-mobile">Société<span class="icon-arrow-down"></span></a>
+							<ul class="list-inline content-toggle content-toggle-none">
+								
+							</ul>
+							<a href="#" class="btn-toggle show-mobile">Communication<span class="icon-arrow-down"></span></a>
+							<ul class="list-inline content-toggle content-toggle-none">
+								
+							</ul>
+							<a href="#" class="btn-toggle show-mobile">Vous &amp;
+							nous<span class="icon-arrow-down"></span></a>
+							<ul class="list-inline content-toggle content-toggle-none">
+								
+							</ul>
+							<a href="#" class="btn-toggle show-mobile">Sur la toile<span class="icon-arrow-down"></span></a>
+							<ul class="list-inline content-toggle content-toggle-none">
+							
+							</ul>
+						</div>
 					</nav>
 				</div>
+				<a href="#" class="btn-menu-responsive"><span class="rect"></span><span class="rect"></span><span class="rect"></span></a>
 			</div>
 		</header>
 
