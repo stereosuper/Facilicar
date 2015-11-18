@@ -2283,7 +2283,6 @@ button:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
-  letter-spacing: 1px;
   line-height: 0.9em;
 }
 .bloc-txt-slider-citation a {
@@ -3470,32 +3469,32 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
     box-sizing: border-box;
     font-family: 'Texta-Black', sans-serif;
-    font-size: 1.375em;
+    font-size: 1.6em;
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding: 4px 0;
     color: #009cc4;
     line-height: 1.1em;
-    height: 32px;
+    height: 40px;
     cursor: pointer;
   }
   .title-action-choose .txt-title-action-choose {
     position: absolute;
     top: 4px;
-    left: 0;
-    right: 0;
     -webkit-transition: -webkit-transform 0.2s ease-in-out;
             transition: transform 0.2s ease-in-out;
   }
   .title-action-choose.left-arrow {
     left: inherit;
-    padding: 4px 6px 4px 0;
+    padding: 4px 0 4px 0;
   }
   .title-action-choose.left-arrow .txt-title-action-choose {
-    -webkit-transform: translateX(27%);
-        -ms-transform: translateX(27%);
-            transform: translateX(27%);
+    -webkit-transform: translateX(29.5%);
+        -ms-transform: translateX(29.5%);
+            transform: translateX(29.5%);
+    left: 0;
+    right: 12px;
   }
   .open-tablet .title-action-choose.left-arrow .txt-title-action-choose {
     -webkit-transform: none;
@@ -3510,9 +3509,11 @@ a.btn-slider-citation:hover.btn-right span {
     padding: 4px 0 4px 6px;
   }
   .title-action-choose.right-arrow .txt-title-action-choose {
-    -webkit-transform: translateX(-27%);
-        -ms-transform: translateX(-27%);
-            transform: translateX(-27%);
+    -webkit-transform: translateX(-29.5%);
+        -ms-transform: translateX(-29.5%);
+            transform: translateX(-29.5%);
+    left: 12px;
+    right: 0;
   }
   .open-tablet .title-action-choose.right-arrow .txt-title-action-choose {
     -webkit-transform: none;
@@ -3670,7 +3671,7 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-zone-choose.wrapper-zone-left-choose {
     width: 70%;
     box-sizing: border-box;
-    padding: 0 10px 0 0;
+    padding: 10px 10px 0 0;
     -webkit-transform: translateX(-57%);
         -ms-transform: translateX(-57%);
             transform: translateX(-57%);
@@ -3710,7 +3711,7 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-zone-choose.wrapper-zone-right-choose {
     box-sizing: border-box;
-    padding: 0 0 0 10px;
+    padding: 10px 0 0 10px;
     width: 70%;
     -webkit-transform: translateX(57%);
         -ms-transform: translateX(57%);

@@ -309,24 +309,25 @@
         transform-origin: 0 0;
         display: block;
         box-sizing: border-box;
-        .texta-black(1.375em);
+        .texta-black(1.6em);
         padding: 4px 0;
         color: @theme-primary;
         line-height: 1.1em;
-        height: 32px;
+        //height: 32px;
+        height: 40px;
         cursor: pointer;
         .txt-title-action-choose{
             position: absolute;
             top: 4px;
-            left: 0;
-            right: 0;
             transition: transform 0.2s ease-in-out;
         }
         &.left-arrow{
             left: inherit;
-            padding: 4px 6px 4px 0;
+            padding: 4px 0 4px 0;
             .txt-title-action-choose{
-                transform: translateX(27%);
+                transform: translateX(29.5%);
+                left: 0;
+                right: 12px;
                 .open-tablet &{
                     transform: none;
                 }
@@ -339,7 +340,9 @@
             right: inherit;
             padding: 4px 0 4px 6px;
             .txt-title-action-choose{
-                transform: translateX(-27%);
+                transform: translateX(-29.5%);
+                left: 12px;
+                right: 0;
                 .open-tablet &{
                     transform: none;
                 }
@@ -484,7 +487,7 @@
         &.wrapper-zone-left-choose{
             width: 70%;
             box-sizing: border-box;
-            padding: 0 10px 0 0;
+            padding: 10px 10px 0 0;
             transform: translateX(-57%);
             transition: transform 0.2s ease-in-out;
             cursor: auto;
@@ -516,7 +519,7 @@
         }
         &.wrapper-zone-right-choose{
             box-sizing: border-box;
-            padding: 0 0 0 10px;
+            padding: 10px 0 0 10px;
             width: 70%;
             transform: translateX(57%);
             transition: transform 0.2s ease-in-out;
