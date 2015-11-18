@@ -327,6 +327,8 @@ $(window).resize(function(){
 		$(".content-toggle-one.open", this).removeClass("open");
 		$(".content-toggle-one", this).first().addClass("open");
 	});
+	$("#menu-bottom-header a.open").removeClass("open");
+	$("#menu-bottom-header .list-inline").attr("style", "");
 
 	if($("body").hasClass("has-choose")){
 		$(".wrapper-choose").removeClass("survol-left").removeClass("survol-out-left").removeClass("survol-right").removeClass("survol-out-right");
