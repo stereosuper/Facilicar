@@ -1,16 +1,22 @@
 /* @group Form */
-input[type="text"], input[type="email"], input[type="tel"], input[type="password"]{
-	padding: 8px 12px;
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"]{
+	padding: 2px 12px;
 	border: 1px solid @theme-gris;
 	box-sizing: border-box;
-	border-radius: 5px;
-	.texta-light(1.125em);
+    .texta-light(1.25em);
 	max-width: 100%;
     transition: border-color 0.2s ease-in-out;
+    #block-newsletter &{
+        .texta-light(1.125em);
+    }
 	&:focus{
 		outline: none;
         border-color: @theme-primary;
 	}
+    &.input-round{
+        border-radius: 5px;
+        padding: 8px 12px;
+    }
 }
 
 ::-webkit-input-placeholder {
@@ -31,6 +37,13 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
 :-ms-input-placeholder {  
 	.texta-light-italic(1em);
 	color: #B0B0A8;
+}
+
+label{
+    .texta-light(1.25em);
+    strong{
+        .texta-bold(1em);
+    }
 }
 
 button{

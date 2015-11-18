@@ -1,0 +1,56 @@
+/* @group Popup */
+.wrapper-popup{
+	display: block;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-left: 0;
+	padding: 0;
+	background-color: fade(@theme-gris2, 50%);
+	text-align: center;
+	.container{
+		height: 100%;
+		position: relative;
+	}
+	.wrapper-align-middle{
+		height: 100%;
+	}
+}
+.popup{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+	padding: 60px 70px 70px 70px;
+	background-color: #fff;
+	box-sizing: border-box;
+	max-width: 650px;
+	a.btn-close-popup{
+		color: @theme-noir;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 14px;
+	}
+	h2{
+		margin-top: 0;
+	}
+	.list-block{
+		> li{
+			margin: 12px 0;
+		}
+	}
+	.list-inline{
+		> li{
+			vertical-align: middle;
+			margin: 0 8px;
+		}
+	}
+}
+/* @end */

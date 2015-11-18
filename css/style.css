@@ -22,6 +22,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-cross:before {
+  content: "\e904";
+}
 .icon-arrow-down:before {
   content: "\e900";
 }
@@ -1977,23 +1980,40 @@ a:focus {
 input[type="text"],
 input[type="email"],
 input[type="tel"],
-input[type="password"] {
-  padding: 8px 12px;
+input[type="password"],
+input[type="date"] {
+  padding: 2px 12px;
   border: 1px solid #797973;
   box-sizing: border-box;
-  border-radius: 5px;
   font-family: 'Texta-Light', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.25em;
   max-width: 100%;
   -webkit-transition: border-color 0.2s ease-in-out;
           transition: border-color 0.2s ease-in-out;
 }
+#block-newsletter input[type="text"],
+#block-newsletter input[type="email"],
+#block-newsletter input[type="tel"],
+#block-newsletter input[type="password"],
+#block-newsletter input[type="date"] {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+}
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="tel"]:focus,
-input[type="password"]:focus {
+input[type="password"]:focus,
+input[type="date"]:focus {
   outline: none;
   border-color: #009cc4;
+}
+input[type="text"].input-round,
+input[type="email"].input-round,
+input[type="tel"].input-round,
+input[type="password"].input-round,
+input[type="date"].input-round {
+  border-radius: 5px;
+  padding: 8px 12px;
 }
 ::-webkit-input-placeholder {
   font-family: 'Texta-LightIt', sans-serif;
@@ -2014,6 +2034,14 @@ input[type="password"]:focus {
   font-family: 'Texta-LightIt', sans-serif;
   font-size: 1em;
   color: #B0B0A8;
+}
+label {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.25em;
+}
+label strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
 }
 button {
   -webkit-appearance: none;
@@ -2368,6 +2396,58 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .alert a {
   font-size: 1em;
+}
+/* @end */
+/* @group Popup */
+.wrapper-popup {
+  display: block;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-left: 0;
+  padding: 0;
+  background-color: rgba(176, 176, 168, 0.5);
+  text-align: center;
+}
+.wrapper-popup .container {
+  height: 100%;
+  position: relative;
+}
+.wrapper-popup .wrapper-align-middle {
+  height: 100%;
+}
+.popup {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 60px 70px 70px 70px;
+  background-color: #fff;
+  box-sizing: border-box;
+  max-width: 650px;
+}
+.popup a.btn-close-popup {
+  color: #333333;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+}
+.popup h2 {
+  margin-top: 0;
+}
+.popup .list-block > li {
+  margin: 12px 0;
+}
+.popup .list-inline > li {
+  vertical-align: middle;
+  margin: 0 8px;
 }
 /* @end */
 /* @group Choose */
