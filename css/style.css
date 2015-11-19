@@ -329,6 +329,7 @@ h2.medium-title {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 0.9em;
 }
 h2 a {
   display: inline-block;
@@ -4724,6 +4725,11 @@ a.btn-slider-citation:hover.btn-right span {
   /* @end */
 }
 @media (max-width: 480px) {
+  /* @group Popup */
+  .popup {
+    width: 100%;
+  }
+  /* @end */
   .wrapper-img .container {
     height: 150px;
   }
