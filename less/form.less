@@ -19,6 +19,24 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     }
 }
 
+input[type="date"]{
+    max-width: 150px;
+}
+
+/* Masquer le datepicker de Chrome */
+input::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+input{
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-clear-button{
+        display: none;
+        -webkit-appearance: none;
+    }
+}
+
 ::-webkit-input-placeholder {
  	.texta-light-italic(1em);
  	color: #B0B0A8;

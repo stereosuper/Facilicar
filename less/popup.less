@@ -1,6 +1,6 @@
 /* @group Popup */
 .wrapper-popup{
-	display: block;
+	display: none;
 	z-index: 10;
 	position: fixed;
 	top: 0;
@@ -18,11 +18,18 @@
 	.wrapper-align-middle{
 		height: 100%;
 	}
+	&.open{
+		display: block;
+	}
 }
+
 .popup{
 	display: inline-block;
 	vertical-align: top;
-	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: auto;
 	max-width: 100%;
 	height: auto;
@@ -31,6 +38,8 @@
 	background-color: #fff;
 	box-sizing: border-box;
 	max-width: 650px;
+	max-height: 90%;
+	overflow: auto;
 	a.btn-close-popup{
 		color: @theme-noir;
 		position: absolute;
@@ -49,7 +58,7 @@
 	.list-inline{
 		> li{
 			vertical-align: middle;
-			margin: 0 8px;
+			margin: 0 4px;
 		}
 	}
 }

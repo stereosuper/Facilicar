@@ -99,14 +99,14 @@ $(function(){
 
 	// Test si il y a un cookie "acceptCookie"
 	if(!Cookies.get('acceptCookie')=='not'){
-		$(".cookies").addClass("show");
+		//$(".cookies").addClass("show");
 	}
 
 	// Clic sur le bouton close des cookies
 	$("#btn-close-cookies").click(function(){
 		$(".cookies").removeClass("show");
 		// Création du cookie
-		Cookies.set('acceptCookie', 'not');
+		//Cookies.set('acceptCookie', 'not');
 		return false;
 	});
 
@@ -141,6 +141,12 @@ $(function(){
 	// Ouverture du menu responsive
 	$("a.btn-menu-responsive").click(function(){
 		$("body").toggleClass("menu-mobile-open");
+		return false;
+	});
+
+	// Clic sur le bouton pour fermer le popup
+	$("a.btn-close-popup").click(function(){
+		$(this).parents(".wrapper-popup").removeClass("open");
 		return false;
 	});
 
