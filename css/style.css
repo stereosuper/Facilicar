@@ -2476,6 +2476,9 @@ a.btn-slider-citation:hover.btn-right span {
   vertical-align: middle;
   margin: 0 4px;
 }
+#list-date-popup {
+  min-width: 420px;
+}
 /* @end */
 /* @group Choose */
 .wrapper-survol-out {
@@ -4717,6 +4720,9 @@ a.btn-slider-citation:hover.btn-right span {
   .popup a.btn-close-popup {
     top: 15px;
     right: 15px;
+  }
+  #list-date-popup {
+    min-width: auto;
   }
   #list-date-popup > li {
     display: block;
