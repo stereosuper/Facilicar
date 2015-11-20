@@ -1443,13 +1443,32 @@
     /* @end */
 
     /* @group Footer */
-    #footer-bottom .list-inline{
-        > li{
-            &:last-of-type{
-                width: 100%;
+    #footer-bottom{
+        text-align: center;
+        .list-inline{
+            > li{
+                &:last-of-type{
+                    width: 100%;
+                }
             }
         }
-    }
+        .list-social{
+            > li{
+                margin: 0 20px;
+            }
+        }
+        .bloc-partenaires{
+            margin: 20px 0 0 0;
+            .list-inline{
+                > li{
+                    margin: 0 20px 20px 20px;
+                    &:last-of-type{
+                        width: auto;
+                    }
+                }
+            }
+        }
+    } 
     /* @end */
 
     /* @group Popup */
@@ -1509,6 +1528,14 @@
             margin: 0;
             > li{
                 margin: 0 32px 0 0;
+            }
+        }
+        .bloc-partenaires{
+            .list-inline{
+                > li{
+                    display: block;
+                    margin: 0 0 20px 0;
+                }
             }
         }
     }
