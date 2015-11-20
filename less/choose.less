@@ -59,6 +59,18 @@
 	padding: 0;
 }
 
+.txt-404{
+	display: block;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: -12px;
+	.texta-black(18.750em);
+	text-align: center;
+	color: #E2E0E0;
+}
+
 .cover-hover{
 	display: block;
 	width: 33.33333333%;
@@ -114,6 +126,12 @@
 		margin: 0;
 		br{
 			display: none;
+		}
+		.page-404 &{
+			line-height: 1.1em;
+			br{
+				display: block;
+			}
 		}
 	}
 }
@@ -292,6 +310,9 @@
 	.survol-right &, .survol-out-right &{
 		transform: translateX(-15%);
 	}
+	.page-404 &{
+		bottom: 63px;
+	}
 }
 
 .car-choose{
@@ -314,6 +335,9 @@
 		height: auto;
 		max-width: 100%;
 		margin: 0 auto;
+		.page-404 &{
+			display: block;
+		}
 	}
 	&.car-1{
 		//background-image: url("../layoutImg/car-choose-01.png");

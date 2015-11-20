@@ -178,6 +178,12 @@
     }
     .title-choose{
         display: none;
+        .page-404 &{
+            display: block;
+            padding: 0;
+            margin: -22px 0 0 0;
+            font-size: 2.5em;
+        }
     }
     #btn-choose{
         display: none;
@@ -188,6 +194,10 @@
             margin: 8px 0;
         }
     }
+    .txt-404{
+        font-size: 15em;
+        top: -30px;
+    }
     .container-car-choose{
         position: relative;
         bottom: inherit;
@@ -195,11 +205,21 @@
         margin: 0 auto 5px auto;
         width: 402px;
         height: 160px;
+        .page-404 &{
+            bottom: inherit;
+            height: 160px;
+        }
         .right-tablet &{
             transform: translateX(15%);
+            .page-404 &{
+                transform: none;
+            }
         }
         .left-tablet &{
             transform: translateX(-15%);
+            .page-404 &{
+                transform: none;
+            }
         }
     }
     .car-choose{
@@ -290,6 +310,9 @@
     .wrapper-choose{
         height: 490px;
         padding: 0 0 24px 0;
+        .page-404 &{
+            height: 550px;
+        }
         .list-choose{
             > li{
                 p{
@@ -1083,9 +1106,17 @@
     }
     .title-choose{
         display: none;
+        .page-404 &{
+            margin: -5px 0 0 0;
+            font-size: 2em;
+        }
     }
     #btn-choose{
         display: none;
+    }
+    .txt-404{
+        font-size: 8em;
+        top: -29px;
     }
     .container-car-choose{
         position: relative;
@@ -1099,6 +1130,9 @@
         height: 80px;
         .left-tablet &, .right-tablet &{
             transform: none;
+        }
+        .page-404 &{
+            height: 80px;
         }
     }
     .car-choose{
@@ -1150,6 +1184,12 @@
         padding: 0;
         p{
             font-size: 1.25em;
+            .page-404 &{
+                font-size: 1em;
+                br{
+                    display: none;
+                }
+            }
             br{
                 display: none;
             }
