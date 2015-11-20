@@ -1193,6 +1193,49 @@ a.btn-menu-responsive .rect:before {
   vertical-align: middle;
   margin: 0 32px 10px 32px;
 }
+#footer-bottom .bloc-partenaires .list-inline > li a {
+  position: relative;
+  display: block;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+#footer-bottom .bloc-partenaires .list-inline > li a img {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+}
+#footer-bottom .bloc-partenaires .list-inline > li a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+}
+#footer-bottom .bloc-partenaires .list-inline > li a.vp-auto:before {
+  background-image: url("../img/partenaires/vp-auto.png");
+}
+#footer-bottom .bloc-partenaires .list-inline > li a.stva:before {
+  background-image: url("../img/partenaires/stva.png");
+}
+#footer-bottom .bloc-partenaires .list-inline > li a.societe-generale:before {
+  background-image: url("../img/partenaires/sg.png");
+}
+#footer-bottom .bloc-partenaires .list-inline > li a.cetelem:before {
+  background-image: url("../img/partenaires/cetelem.png");
+}
+#footer-bottom .bloc-partenaires .list-inline > li a:hover img {
+  opacity: 0;
+}
+#footer-bottom .bloc-partenaires .list-inline > li a:hover:before {
+  opacity: 1;
+}
 /* @end */
 /* @group Buttons */
 a.btn-anim,

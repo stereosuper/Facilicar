@@ -390,6 +390,56 @@
 				width: auto;
 				vertical-align: middle;
 				margin: 0 32px 10px 32px;
+				a{
+					position: relative;
+					display: block;
+					backface-visibility: hidden;
+					img{
+						opacity: 1;
+						transition: opacity 0.2s ease-in-out;
+					}
+					&:before{
+						content: "";
+						display: block;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top: 0;
+						left: 0;
+						background-repeat: no-repeat;
+						background-position: 0 0;
+						opacity: 0;
+						transition: opacity 0.2s ease-in-out;
+					}
+					&.vp-auto{
+						&:before{
+							background-image: url("../img/partenaires/vp-auto.png");
+						}
+					}
+					&.stva{
+						&:before{
+							background-image: url("../img/partenaires/stva.png");
+						}
+					}
+					&.societe-generale{
+						&:before{
+							background-image: url("../img/partenaires/sg.png");
+						}
+					}
+					&.cetelem{
+						&:before{
+							background-image: url("../img/partenaires/cetelem.png");
+						}
+					}
+					&:hover{
+						img{
+							opacity: 0;
+						}
+						&:before{
+							opacity: 1;
+						}
+					}
+				}
 			}
 		}
 	}
