@@ -40,6 +40,16 @@ function scrollPage(){
 		TweenMax.set($("body"), {className:"-=header-on"});
 	}
 
+	if($("body").hasClass("has-sidebar")){
+		if((myScroll>=$(".navbar").offset().top) && (myScroll<$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight())){
+			TweenMax.set($(".navbar ul"), {position: "fixed", top: "0px"});
+		}else if(myScroll>=$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()){
+			TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+"px"});
+		}else{
+			TweenMax.set($(".navbar ul"), {position: "relative", top: "inherit"});
+		}
+	}
+
 	requestAnimFrame(scrollPage);
 }
 
