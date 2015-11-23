@@ -68,6 +68,10 @@ h1{
         vertical-align: top;
         padding: 4px 0 0 0;
     }
+    .small-wrapper-top &{
+        display: inline-block;
+        vertical-align: top;
+    }
 }
 
 h2{
@@ -333,6 +337,24 @@ a.logo-facilicar{
     text-align: right;
 }
 
+.text-shadow-title{
+    //text-shadow: 0px 0px 200px fade(@theme-primary, 100%);
+    //text-shadow: 0px 0px 150px rgba(2, 158, 200, 100);
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: -70px;
+        left: -130px;
+        bottom: -70px;
+        right: -130px;
+        background: radial-gradient(ellipse at center, rgba(2,157,200,0.85) 10%, rgba(2,157,200,0) 70%);
+    }
+    span{
+        position: relative;
+    }
+}
+
 .alignleft {
     float: left;
     margin: 0 24px 24px 0;
@@ -458,6 +480,13 @@ a.logo-facilicar{
     padding: 0;
     position: relative;
     box-sizing: content-box;
+    .small-wrapper-top &{
+        height: 287px;
+        text-align: center;
+        .container{
+            height: 287px;
+        }
+    }
     .container-img{
         display: block;
         width: 100%;
@@ -544,6 +573,101 @@ a.btn-menu-responsive{
             //transition-delay: 0.2s;
             //transition: transform 0.2s ease-in-out, opacity 0s ease-in-out;
             transform-origin: 50% 50%;
+        }
+    }
+}
+
+/* @end */
+
+/* @group Breadcrumb */
+
+.breadcrumb, #main .breadcrumb{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 15px 0 0 0;
+    > li{
+        display: inline-block;
+        vertical-align: top;
+        .texta-italic(0.875em);
+        padding: 0;
+        margin: 0 4px 0 0;
+        color: #BEBDB7;
+        &:before{
+            content: "›";
+            .texta-light(1em);
+            color: @theme-gris3;
+            position: relative;
+            top: inherit;
+            left: inherit;
+        }
+        &:first-of-type{
+            &:before{
+                display: none;
+            }
+        }
+        a{
+            .texta-light(1em);
+            color: @theme-gris3;
+            text-decoration: underline;
+        }
+    }
+}
+
+/* @end */
+
+/* @group Navbar */
+
+.navbar, #main .navbar{
+    width: 220px;
+    height: 100%;
+    vertical-align: top;
+    .list-block{
+        margin: 0;
+        padding: 0;
+        >li{
+            margin: 0 0 11px 0;
+            padding: 11px 0;
+            border-bottom: 1px solid @theme-gris2;
+            box-sizing: border-box;
+            text-transform: uppercase;
+            .texta-light(1em);
+            &:before{
+                display: none;
+            }
+            a{
+                color: @theme-noir;
+            }
+            &.active{
+                a{
+                    .texta-bold(1em);
+                }
+                border-bottom-color: @theme-primary;
+            }
+        }
+    }
+}
+
+.content-with-navbar{
+    width: auto;
+    padding: 13px 0 0 100px;
+    box-sizing: border-box;
+    h2{
+        &:first-of-type{
+            margin-top: 0;
+        }
+        position: relative;
+        &:before{
+            content: "";
+            display: block;
+            width: 58px;
+            height: 1px;
+            position: absolute;
+            left: -79px;
+            bottom: 7px;
+            background-color: @theme-primary;
         }
     }
 }
