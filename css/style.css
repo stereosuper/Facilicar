@@ -1381,6 +1381,40 @@ a.btn-menu-responsive .rect:before {
   opacity: 1;
 }
 /* @end */
+/* @group Landing */
+.landing {
+  min-height: 100%;
+  text-align: center;
+}
+.landing h1 {
+  margin: 0 0 50px 0;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 3.75em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1em;
+}
+.landing h1 span {
+  display: block;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 0.667em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.landing .logo-big {
+  display: block;
+  width: 172px;
+  height: 115px;
+  background: url('../layoutImg/logo-big.png') no-repeat 0 0;
+  margin: 0 auto 70px auto;
+}
+.landing p {
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 1.25em;
+}
+/* @end */
 /* @group Buttons */
 a.btn-anim,
 div.btn-anim,
