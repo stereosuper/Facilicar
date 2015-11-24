@@ -1640,6 +1640,27 @@
     }
     /* @end */
 
+    /* @group Navbar | Team */
+    .list-team, #main .list-team{
+        > li{
+            padding: 5px;
+            .name-team{
+                font-size: 1.1em;
+                padding: 10px;
+            }
+            .function-team{
+                font-size: 0.9em;
+                padding: 10px;
+            }
+            .name-team, .function-team{
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+    /* @end */
+
     /* @group Landing */
     .landing{
         #content-landing{

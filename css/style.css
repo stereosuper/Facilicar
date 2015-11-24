@@ -5365,6 +5365,28 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 0 0 20px 0;
   }
   /* @end */
+  /* @group Navbar | Team */
+  .list-team > li,
+  #main .list-team > li {
+    padding: 5px;
+  }
+  .list-team > li .name-team,
+  #main .list-team > li .name-team {
+    font-size: 1.1em;
+    padding: 10px;
+  }
+  .list-team > li .function-team,
+  #main .list-team > li .function-team {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+  .list-team > li .name-team:before,
+  #main .list-team > li .name-team:before,
+  .list-team > li .function-team:before,
+  #main .list-team > li .function-team:before {
+    display: none;
+  }
+  /* @end */
   /* @group Landing */
   .landing #content-landing {
     position: relative;
