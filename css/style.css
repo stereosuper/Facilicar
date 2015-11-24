@@ -1420,7 +1420,7 @@ a.btn-menu-responsive .rect:before {
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1.25em;
 }
-.landing #email-mel {
+.landing #email {
   padding: 6px 12px;
   width: 225px;
 }
@@ -5311,7 +5311,7 @@ a.btn-slider-citation:hover.btn-right span {
   .landing .logo-big {
     margin: 0 auto 30px auto;
   }
-  .landing #email-mel {
+  .landing #email {
     display: block;
     width: 100%;
     max-width: 225px;

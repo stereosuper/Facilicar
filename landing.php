@@ -1,3 +1,43 @@
+<?php
+
+$erreurMail = '';
+
+$mail = isset($_POST['email']) ? strip_tags(stripslashes($_POST['email'])) : '';
+
+$mailto = 'adrien@stereosuper.fr';
+
+if(isset($_POST['submit'])){
+
+ 	if(empty($mail)){
+ 		$erreurMail = 'Le champ Email est obligatoire';
+ 		$status = "erreur"; 
+ 	}else{
+ 		if(!preg_match('/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i', $mail)){
+ 			$erreurMail = "L'adresse email est invalide";
+ 			$status = "erreur";
+ 		}
+ 	}
+
+ 	if($status == ''){
+
+ 		$subject = "Demande newsletter Facilicar";
+ 		$headers = 'From: <' . $mail . '>' . "\r\n" .
+ 				   'Reply-To: ' . $mail . "\r\n";
+ 		$content = 'Adresse e-mail: ' . $mail . "\r\n";
+
+        $sent = mail($mailto, $subject, $content, $headers);
+
+ 		if($sent){
+ 			$status = 'succes';
+ 		}else{ 
+ 			$status = 'erreur'; 	
+ 			$erreurEnvoi = "Nous sommes désolés, une erreur est survenue. Veuillez réessayer!";
+ 		}
+ 	}
+}
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 9]> <html class='landing no-js lt-ie9 lt-ie10'> <![endif]-->
 <!--[if IE 9]> <html class="landing no-js lt-ie10"> <![endif]-->
@@ -47,10 +87,26 @@
 				<div class="logo-big"></div>
 				<h1><span>Ici, prochainement,</span> achetez ou vendez votre belle voiture&nbsp;!</h1>
 				<p>Inscrivez-vous pour être prévenu de la mise en ligne de facilicar.com :</p>
-				<form action="" method="post">
-					<input id="email-mel" name="email-mel" type="text" placeholder="Votre adresse email"><!--
-					--><button class="button-arrow button-primary bg-primary"><span class="arrow-button">›</span><span class="txt-button">Envoyer</span><span class="txt-hover-button" data-hover="Envoyer"></span></button>
-				</form>
+				
+				<?php if($status == 'succes'){ ?>
+
+					<p>Merci, votre demande a bien été envoyée.</p>
+
+				<?php }else{ ?>
+
+					<?php if($status == 'erreur'){
+						echo "<p><b>Oups! Nous n'avons pas pu envoyer votre demande:/b><br/>";
+						if($erreurMail != '') echo $erreurMail .'<br/>';
+						if($erreurEnvoi != '') echo $erreurEnvoi;
+						echo '</p>';
+					} ?>
+					
+					<form id='formContact' action="#" method="POST">
+						<input id="email" name="email" type="text" placeholder="Votre adresse email"><!--
+						--><button type='submit' name='submit' id='submit' form='formContact' class="button-arrow button-primary bg-primary"><span class="arrow-button">›</span><span class="txt-button">Envoyer</span><span class="txt-hover-button" data-hover="Envoyer"></span></button>
+					</form>
+
+				<?php } ?>
 			</div>
 		</section>
 
