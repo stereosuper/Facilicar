@@ -1383,8 +1383,14 @@ a.btn-menu-responsive .rect:before {
 /* @end */
 /* @group Landing */
 .landing {
+  height: 100%;
   min-height: 100%;
   text-align: center;
+}
+.landing body {
+  display: block;
+  min-height: 100%;
+  position: relative;
 }
 .landing h1 {
   margin: 0 0 50px 0;
@@ -1413,6 +1419,19 @@ a.btn-menu-responsive .rect:before {
 .landing p {
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1.25em;
+}
+.landing #email-mel {
+  padding: 6px 12px;
+  width: 225px;
+}
+.landing #content-landing {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  -webkit-transform: translate3d(0px, -50%, 1px);
+          transform: translate3d(0px, -50%, 1px);
+  padding: 20px 0;
 }
 /* @end */
 /* @group Buttons */
@@ -4654,6 +4673,11 @@ a.btn-slider-citation:hover.btn-right span {
     left: -60px;
   }
   /* @end */
+  /* @group Landing */
+  .landing h1 {
+    font-size: 2.5em;
+  }
+  /* @end */
 }
 @media (max-width: 767px) {
   .container.small {
@@ -5283,6 +5307,21 @@ a.btn-slider-citation:hover.btn-right span {
     display: none;
   }
   /* @end */
+  /* @group Landing */
+  .landing .logo-big {
+    margin: 0 auto 30px auto;
+  }
+  .landing #email-mel {
+    display: block;
+    width: 100%;
+    max-width: 225px;
+    margin: 0 auto 10px auto;
+  }
+  .landing h1 {
+    font-size: 1.8em;
+    margin: 0 0 30px 0;
+  }
+  /* @end */
 }
 @media (max-width: 480px) {
   /* @group Popup */
@@ -5326,6 +5365,16 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 0 0 20px 0;
   }
   /* @end */
+  /* @group Landing */
+  .landing #content-landing {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  /* @end */
 }
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
@@ -5333,17 +5382,29 @@ a.btn-slider-citation:hover.btn-right span {
     background-image: url("../layoutImg/e-trustedshops@2x.png");
     background-size: 100px 42px;
   }
+  .landing .logo-big {
+    background-image: url('../layoutImg/logo-big@2x.png');
+    background-size: 172px 115px;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   .e-trustedshops {
     background-image: url("../layoutImg/e-trustedshops@2x.png");
     background-size: 100px 42px;
   }
+  .landing .logo-big {
+    background-image: url('../layoutImg/logo-big@2x.png');
+    background-size: 172px 115px;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi) {
   .e-trustedshops {
     background-image: url("../layoutImg/e-trustedshops@3x.png");
     background-size: 100px 42px;
+  }
+  .landing .logo-big {
+    background-image: url('../layoutImg/logo-big@3x.png');
+    background-size: 172px 115px;
   }
 }
 /* ==|== print styles =======================================================

@@ -909,6 +909,14 @@
         }
     }
     /* @end */
+
+    /* @group Landing */
+    .landing{
+        h1{
+            font-size: 2.5em;
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 767px) {
@@ -1560,6 +1568,24 @@
         }
     }
     /* @end */
+
+    /* @group Landing */
+    .landing{
+        .logo-big{
+            margin: 0 auto 30px auto;
+        }
+        #email-mel{
+            display: block;
+            width: 100%;
+            max-width: 225px;
+            margin: 0 auto 10px auto;
+        }
+        h1{
+            font-size: 1.8em;
+            margin: 0 0 30px 0;
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 480px) {
@@ -1613,6 +1639,17 @@
         }
     }
     /* @end */
+
+    /* @group Landing */
+    .landing{
+        #content-landing{
+            position: relative;
+            top: inherit;
+            left: inherit;
+            transform: none;
+        }
+    }
+    /* @end */
 }
 
 
@@ -1624,6 +1661,12 @@
         background-image: url("../layoutImg/e-trustedshops@2x.png");
         background-size: 100px 42px;
     }
+    .landing{
+        .logo-big{
+            background-image: url('../layoutImg/logo-big@2x.png');
+            background-size: 172px 115px;
+        }
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
@@ -1631,12 +1674,24 @@
         background-image: url("../layoutImg/e-trustedshops@2x.png");
         background-size: 100px 42px;
     }
+    .landing{
+        .logo-big{
+            background-image: url('../layoutImg/logo-big@2x.png');
+            background-size: 172px 115px;
+        }
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi) {
     .e-trustedshops{
         background-image: url("../layoutImg/e-trustedshops@3x.png");
         background-size: 100px 42px;
+    }
+    .landing{
+        .logo-big{
+            background-image: url('../layoutImg/logo-big@3x.png');
+            background-size: 172px 115px;
+        }
     }
 }
 
