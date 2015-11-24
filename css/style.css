@@ -3749,6 +3749,30 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 0 0 20px 0;
   }
   /* @end */
+  /* @group Navbar | Team */
+  .list-team > li,
+  #main .list-team > li {
+    width: 50%;
+  }
+  .list-team > li:nth-child(3n+1),
+  #main .list-team > li:nth-child(3n+1) {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-team > li:nth-child(3n+2),
+  #main .list-team > li:nth-child(3n+2) {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-team > li:nth-child(even),
+  #main .list-team > li:nth-child(even) {
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  /* @end */
 }
 @media (max-width: 979px) {
   .container.small {
@@ -4579,6 +4603,23 @@ a.btn-slider-citation:hover.btn-right span {
             transform: none;
   }
   /* @end */
+  /* @group Navbar | Team */
+  .navbar,
+  #main .navbar {
+    width: 180px;
+  }
+  .navbar .list-block,
+  #main .navbar .list-block {
+    width: 180px;
+  }
+  .content-with-navbar {
+    padding: 18px 0 0 76px;
+  }
+  .content-with-navbar h2:before {
+    width: 40px;
+    left: -60px;
+  }
+  /* @end */
 }
 @media (max-width: 767px) {
   .container.small {
@@ -4588,6 +4629,12 @@ a.btn-slider-citation:hover.btn-right span {
     height: 200px;
   }
   .wrapper-img {
+    height: 200px;
+  }
+  .small-wrapper-top .wrapper-img {
+    height: 200px;
+  }
+  .small-wrapper-top .wrapper-img .container {
     height: 200px;
   }
   h1 {
@@ -5167,6 +5214,39 @@ a.btn-slider-citation:hover.btn-right span {
   #list-date-popup > li {
     display: block;
     margin: 10px 0;
+  }
+  /* @end */
+  /* @group Navbar | Team */
+  .wrapper-navbar {
+    display: block;
+  }
+  .navbar,
+  #main .navbar {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .navbar .list-block,
+  #main .navbar .list-block {
+    width: 100%;
+    text-align: left;
+  }
+  .navbar .list-block > li,
+  #main .navbar .list-block > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    padding: 5px 0;
+  }
+  .navbar .list-block > li:first-of-type,
+  #main .navbar .list-block > li:first-of-type {
+    margin: 0 10px 0 0;
+  }
+  .content-with-navbar {
+    padding: 18px 0 0 0;
+  }
+  .content-with-navbar h2:before {
+    display: none;
   }
   /* @end */
 }
