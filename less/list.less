@@ -212,4 +212,36 @@
 		}
 	}
 }
+
+.list-visu-txt, #main .list-visu-txt{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	> li{
+	    display: block;
+	    padding: 0;
+	    margin: 40px 0;
+	    position: relative;
+	    &:before{
+	    	display: none;
+	    }
+	    .visu{
+	    	width: 300px;
+	    	img{
+	    		width: 80%;
+	    	}
+	    }
+	    .txt{
+	    	width: auto;
+	    	box-sizing: border-box;
+	    	padding: 0 0 0 22px;
+	    }
+	    h4{
+	    	color: @theme-secondary;
+	    }
+	}
+}
+
+
 /* @end */

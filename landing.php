@@ -4,7 +4,7 @@ $erreurMail = '';
 
 $mail = isset($_POST['email']) ? strip_tags(stripslashes($_POST['email'])) : '';
 
-$mailto = 'adrien@stereosuper.fr';
+$mailto = 'audrey@autopink.com';
 
 if(isset($_POST['submit'])){
 

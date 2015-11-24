@@ -366,6 +366,10 @@ p.big-txt {
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1.625em;
 }
+strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
 #main ul {
   display: block;
   width: 100%;
@@ -860,7 +864,7 @@ a.btn-menu-responsive .rect:before {
 }
 .navbar .list-block > li,
 #main .navbar .list-block > li {
-  margin: 0 0 11px 0;
+  margin: 0;
   padding: 11px 0;
   border-bottom: 1px solid #b0b0a8;
   box-sizing: border-box;
@@ -2386,6 +2390,42 @@ a:focus {
       -ms-transform: translateY(0%);
           transform: translateY(0%);
 }
+.list-visu-txt,
+#main .list-visu-txt {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list-visu-txt > li,
+#main .list-visu-txt > li {
+  display: block;
+  padding: 0;
+  margin: 40px 0;
+  position: relative;
+}
+.list-visu-txt > li:before,
+#main .list-visu-txt > li:before {
+  display: none;
+}
+.list-visu-txt > li .visu,
+#main .list-visu-txt > li .visu {
+  width: 300px;
+}
+.list-visu-txt > li .visu img,
+#main .list-visu-txt > li .visu img {
+  width: 80%;
+}
+.list-visu-txt > li .txt,
+#main .list-visu-txt > li .txt {
+  width: auto;
+  box-sizing: border-box;
+  padding: 0 0 0 22px;
+}
+.list-visu-txt > li h4,
+#main .list-visu-txt > li h4 {
+  color: #e38c00;
+}
 /* @end */
 /* @group Form */
 input[type="text"],
@@ -3824,6 +3864,10 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-transform: translateY(30px);
         -ms-transform: translateY(30px);
             transform: translateY(30px);
+  }
+  .list-team > li.team-join,
+  #main .list-team > li.team-join {
+    width: 100%;
   }
   /* @end */
 }
