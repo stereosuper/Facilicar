@@ -4022,12 +4022,24 @@ a.btn-slider-citation:hover.btn-right span {
   h2.medium-title {
     font-size: 2.4em;
   }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
   p.big-txt {
     font-size: 1.2em;
   }
   #main ul,
   #main ol {
     padding: 0 40px;
+  }
+  .content-toggle.small {
+    padding: 20px 40px;
+  }
+  .content-toggle.small .content-toggle.small {
+    padding: 10px 10px;
   }
   /* @group Header */
   #header a.logo-facilicar {
@@ -4911,6 +4923,12 @@ a.btn-slider-citation:hover.btn-right span {
   h2 .small-txt {
     font-size: 0.533em;
   }
+  h3 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1em;
+  }
   p {
     font-size: 1em;
   }
@@ -4941,6 +4959,12 @@ a.btn-slider-citation:hover.btn-right span {
   div.btn-block.big.btn-block-arrow .txt-btn-block-arrow,
   span.btn-block.big.btn-block-arrow .txt-btn-block-arrow {
     padding: 19px 36px 19px 48px;
+  }
+  .content-toggle.small {
+    padding: 10px 10px;
+  }
+  .content-toggle.small .content-toggle.small {
+    padding: 0px;
   }
   /* @group Header */
   .menu-mobile-open .bg-header-responsive {
