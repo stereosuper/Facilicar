@@ -273,6 +273,7 @@ textarea {
 /* @end */
 /* @group Global */
 body {
+  width: 100%;
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1em;
   color: #333333;
@@ -865,8 +866,7 @@ a.btn-menu-responsive .rect:before {
 .navbar .list-block > li,
 #main .navbar .list-block > li {
   margin: 0;
-  padding: 11px 0;
-  border-bottom: 1px solid #b0b0a8;
+  padding: 0;
   box-sizing: border-box;
   text-transform: uppercase;
   font-family: 'Texta-Light', sans-serif;
@@ -878,16 +878,21 @@ a.btn-menu-responsive .rect:before {
 }
 .navbar .list-block > li a,
 #main .navbar .list-block > li a {
+  display: block;
   color: #333333;
+  padding: 11px 0;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b0b0a8;
 }
-.navbar .list-block > li.active,
-#main .navbar .list-block > li.active {
+.navbar .list-block > li a:hover,
+#main .navbar .list-block > li a:hover {
   border-bottom-color: #009cc4;
 }
 .navbar .list-block > li.active a,
 #main .navbar .list-block > li.active a {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  border-bottom-color: #009cc4;
 }
 .content-with-navbar {
   width: auto;
@@ -2393,7 +2398,7 @@ a:focus {
 .list-visu-txt,
 #main .list-visu-txt {
   display: block;
-  margin: 0;
+  margin: 40px 0;
   padding: 0;
   list-style-type: none;
 }

@@ -46,6 +46,7 @@ textarea {
 /* @group Global */
 
 body{
+    width: 100%;
 	.texta(1em);
 	color: @theme-noir;
 }
@@ -649,8 +650,7 @@ a.btn-menu-responsive{
         width: 220px;
         >li{
             margin: 0;
-            padding: 11px 0;
-            border-bottom: 1px solid @theme-gris2;
+            padding: 0;
             box-sizing: border-box;
             text-transform: uppercase;
             .texta-light(1em);
@@ -658,13 +658,20 @@ a.btn-menu-responsive{
                 display: none;
             }
             a{
+                display: block;
                 color: @theme-noir;
+                padding: 11px 0;
+                box-sizing: border-box;
+                border-bottom: 1px solid @theme-gris2;
+                &:hover{
+                    border-bottom-color: @theme-primary;
+                }
             }
             &.active{
                 a{
                     .texta-bold(1em);
+                    border-bottom-color: @theme-primary;
                 }
-                border-bottom-color: @theme-primary;
             }
         }
     }
