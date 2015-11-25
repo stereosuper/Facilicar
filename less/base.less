@@ -116,6 +116,7 @@ p{
     line-height: 1.3em;
     &.big-txt{
         .texta(1.625em);
+        margin: 26px 0 70px 0;
     }
 }
 
@@ -226,6 +227,10 @@ a.logo-facilicar{
         height: 31px;
         background-size: 179px 31px;
     }
+}
+
+.no-txt-transform{
+    text-transform: none;
 }
 
 .container{
@@ -456,6 +461,15 @@ a.logo-facilicar{
 
 .content-toggle{
     display: none;
+    box-sizing: border-box;
+    &.small{
+        padding: 20px 80px;
+        .content-toggle{
+            &.small{
+                padding: 20px 20px;
+            }
+        }
+    }
 }
 
 .content-toggle-one{
