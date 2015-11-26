@@ -202,7 +202,10 @@ i{
 }
 
 a{
-	text-decoration: none;
+    color: @theme-secondary;
+    &.no-underline{
+        text-decoration: none;
+    }
 }
 
 .size1{
@@ -486,8 +489,15 @@ a.logo-facilicar{
     padding: 0;
     overflow: hidden;
     position: relative;
+    text-align: center;
     .header-on &{
         padding: 110px 0 0 0;
+    }
+    &.bg-primary, &.bg-secondary, &.bg-white{
+        height: 160px;
+        .container{
+            height: 160px;
+        }
     }
 }
 /* @end */
@@ -515,6 +525,12 @@ a.logo-facilicar{
         bottom: 0;
         left: 0;
         box-sizing: border-box;
+        #faq &{
+            background-position: 50% 76%!important;
+        }
+        #team &, #qui-est-facilicar &{
+            background-position: 50% 19%!important;
+        }
         .header-on &{
             top: 110px;
         }
@@ -677,6 +693,7 @@ a.btn-menu-responsive{
                 padding: 11px 0;
                 box-sizing: border-box;
                 border-bottom: 1px solid @theme-gris2;
+                text-decoration: none;
                 &:hover{
                     border-bottom-color: @theme-primary;
                 }

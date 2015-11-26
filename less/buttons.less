@@ -4,6 +4,7 @@ a, div, span{
 		overflow: hidden;
 		position: relative;
 		display: block;
+		text-decoration: none;
 		.txt-btn-anim{
 			display: inline-block;
 			vertical-align: top;
@@ -30,10 +31,8 @@ a, div, span{
 			}
 		}
 	}
-	&.btn-underline{
-		text-decoration: underline;
-	}
 	&.btn-toggle-one{
+		text-decoration: none;
 		.texta-black(1em);
 		text-transform: uppercase;
 		padding: 10px 50px 10px 0;
@@ -152,6 +151,7 @@ a, div, span{
 		display: block;
 		box-sizing: border-box;
 		border-top: 1px solid #AEACA1;
+		text-decoration: none;
 		h1, h2, h3, h4{
 			margin: 0;
 			padding: 0;
@@ -282,6 +282,7 @@ a, div, span{
 	&.btn-arrow{
 		position: relative;
 		padding-left: 8px;
+		text-decoration: none;
 		&:before{
 			content: "›";
 			position: absolute;
@@ -369,6 +370,7 @@ a, div, span{
 		.texta-black(1.094em);
 		position: relative;
 		overflow: hidden;
+		text-decoration: none;
 		&.big{
 			.texta-black(1.625em);
 			&.btn-block-arrow{
@@ -525,6 +527,9 @@ a, div, span{
 				}
 			}
 		}
+	}
+	&.btn-underline{
+		text-decoration: underline;
 	}
 }
 a{

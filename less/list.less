@@ -69,6 +69,7 @@
 			text-align: center;
 			font-size: 26px;
 			transition: background-color 0.2s ease-in-out;
+			text-decoration: none;
 			&.icon-twitter{
 				font-size: 24px;
 			}
@@ -270,5 +271,64 @@
 	}
 }
 
+.list-contact{
+	> li{
+		margin: 2px 0;
+		&.contact-name{
+			margin: 2px 0 8px 0;
+		}
+	}
+}
+
+.list-blocks-inline, #main .list-blocks-inline{
+	display: table;
+	width: 100%;
+	height: auto;
+	list-style-type: none;
+	margin: 0 0 30px 0;
+	padding: 0 0 40px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid @theme-gris3;
+	> li{
+		display: table-cell;
+		vertical-align: top;
+		box-sizing: border-box;
+		padding: 60px 80px;
+		&:before{
+			display: none;
+		}
+		&:nth-child(even){
+			background: #F0EFEA;
+		}
+	}
+	&.half{
+		> li{
+			width: 50%;
+		}
+	}
+	.list-contact, .list-block.list-contact{
+		margin: 0;
+		padding: 0;
+		> li{
+			padding: 0;
+			&:before{
+				display: none;
+			}
+		}
+	}
+	.list-block{
+		margin: 0;
+		padding: 0;
+		> li{
+			padding: 0 10px;
+			&:before{
+				color: @theme-noir;
+				font-size: 8px;
+				top: 7px;
+				left: 0;
+			}
+		}
+	}
+}
 
 /* @end */
