@@ -710,6 +710,7 @@ a.color-theme-black:hover {
 .wrapper-top.bg-secondary,
 .wrapper-top.bg-white {
   height: 160px;
+  box-sizing: content-box;
 }
 .wrapper-top.bg-primary .container,
 .wrapper-top.bg-secondary .container,
@@ -4128,6 +4129,33 @@ a.btn-slider-citation:hover.btn-right span {
   .container.small {
     padding: 0 42px;
   }
+  /* @group Blog */
+  .list-blocks-inline > li,
+  #main .list-blocks-inline > li {
+    padding: 60px 60px;
+  }
+  .list-blocks-inline > li h2:before,
+  #main .list-blocks-inline > li h2:before {
+    width: 40px;
+    left: -60px;
+  }
+  .articles-presse > li .txt-article .wrapper-has-media,
+  #main .articles-presse > li .txt-article .wrapper-has-media {
+    display: block;
+    width: 100%;
+  }
+  .articles-presse > li .txt-article .wrapper-has-media .content-media,
+  #main .articles-presse > li .txt-article .wrapper-has-media .content-media {
+    display: block;
+    width: 100%;
+  }
+  .articles-presse > li .txt-article .wrapper-has-media .content-txt-media,
+  #main .articles-presse > li .txt-article .wrapper-has-media .content-txt-media {
+    display: block;
+    width: 100%;
+    padding: 10px 0 0 0;
+  }
+  /* @end */
 }
 @media (max-width: 1150px) {
   .wrapper-img .container {
@@ -4183,6 +4211,21 @@ a.btn-slider-citation:hover.btn-right span {
   .list-visu-txt > li:nth-child(even) .txt,
   #main .list-visu-txt > li:nth-child(even) .txt {
     padding: 0 272px 0 0;
+  }
+  /* @end */
+  /* @group Blog */
+  .list-blocks-inline > li,
+  #main .list-blocks-inline > li {
+    padding: 40px 40px;
+  }
+  .list-blocks-inline > li h2,
+  #main .list-blocks-inline > li h2 {
+    font-size: 1.9em;
+  }
+  .list-blocks-inline > li h2:before,
+  #main .list-blocks-inline > li h2:before {
+    width: 20px;
+    left: -40px;
   }
   /* @end */
 }
@@ -5127,6 +5170,20 @@ a.btn-slider-citation:hover.btn-right span {
   .list-visu-txt > li:nth-child(even) .txt,
   #main .list-visu-txt > li:nth-child(even) .txt {
     padding: 0;
+  }
+  /* @end */
+  /* @group Blog */
+  .list-blocks-inline,
+  #main .list-blocks-inline {
+    display: block;
+  }
+  .list-blocks-inline > li,
+  #main .list-blocks-inline > li {
+    display: block;
+  }
+  .list-blocks-inline.half > li,
+  #main .list-blocks-inline.half > li {
+    width: 100%;
   }
   /* @end */
 }
