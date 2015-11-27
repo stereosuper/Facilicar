@@ -285,6 +285,8 @@
 	width: 200px;
 	box-sizing: border-box;
 	padding: 0 8px 0 0;
+	position: relative;
+	overflow: hidden;
 	p{
 		line-height: 1em;
 	}
@@ -297,5 +299,137 @@
 			line-height: 0.9em;
 		}
 	}
+	&:before{
+		content: "";
+		display: block;
+		width: 1px;
+		height: 50%;
+		background-color: #979797;
+		position: absolute;
+		top: -8px;
+		right: 8px;
+		box-sizing: border-box;
+	}
+	&:after{
+		content: "";
+		display: block;
+		width: 1px;
+		height: 50%;
+		background-color: #979797;
+		position: absolute;
+		bottom: -8px;
+		right: 8px;
+		box-sizing: border-box;
+	}
+	.arrow{
+		display: block;
+		width: 0px;
+		height: 0px;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 10px 0 10px 9px;
+		border-left-color: #979797;
+		border-top-color: fade(#979797, 0);
+		border-bottom-color: fade(#979797, 0);
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin: -10px 0 0 0;
+		&:before{
+			content: "";
+			display: block;
+			width: 0px;
+			height: 0px;
+			border-color: transparent;
+			border-style: solid;
+			border-width: 9px 0 9px 9px;
+			border-left-color: #fff;
+			border-top-color: fade(#fff, 0);
+			border-bottom-color: fade(#fff, 0);
+			position: absolute;
+			right: 1px;
+			top: -9px;
+		}
+	}
 }
+
+.cars-filters{
+	width: auto;
+	box-sizing: border-box;
+	padding: 0 0 0 45px;
+}
+
+.lines-filters, .list-block.lines-filters{
+	> li{
+		margin: 8px 0;
+	}
+}
+
+.filter-title{
+	display: inline-block;
+	vertical-align: middle;
+	.texta-light(1em);
+	text-transform: uppercase;
+	margin: 0 25px 0 0;
+}
+
+.select-type-car{
+	display: inline-block;
+	vertical-align: middle;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	> li{
+		display: inline-block;
+		vertical-align: top;
+		width: 95px;
+		height: 95px;
+		margin: 0 5px;
+		text-align: center;
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			box-sizing: border-box;
+			padding: 19px 0 14px 0;
+			color: #6C6B6C;
+			.texta-light(0.875em);
+			border-radius: 8px;
+			&:hover{
+				background-color: @theme-secondary;
+				color: #fff;
+				.zone-txt{
+					.texta-bold(1em);
+				}
+			}
+		}
+		&.is-selected{
+			a{
+				background-color: @theme-secondary;
+				color: #fff;
+				.zone-txt{
+					.texta-bold(1em);
+				}
+			}
+		}
+	}
+	.zone-picto{
+		display: block;
+		width: 100%;
+		height: 25px;
+		font-size: 25px;
+	}
+	.zone-txt{
+		display: block;
+		width: 100%;
+		height: 32px;
+		line-height: 1em;
+		padding: 5px 0 0 0;
+		.wrapper-align-middle{
+			height: 100%;
+		}
+	}
+}
+
 /* @end */
