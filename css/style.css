@@ -2898,6 +2898,10 @@ button:focus {
 #main .articles-presse > li .txt-article p + audio {
   margin-top: 10px;
 }
+.articles-presse > li .txt-article audio,
+#main .articles-presse > li .txt-article audio {
+  max-width: 100%;
+}
 .articles-presse > li .txt-article .wrapper-has-media,
 #main .articles-presse > li .txt-article .wrapper-has-media {
   display: table;
@@ -4147,7 +4151,7 @@ a.btn-slider-citation:hover.btn-right span {
   .articles-presse > li .txt-article .wrapper-has-media .content-media,
   #main .articles-presse > li .txt-article .wrapper-has-media .content-media {
     display: block;
-    width: 100%;
+    max-width: 80%;
   }
   .articles-presse > li .txt-article .wrapper-has-media .content-txt-media,
   #main .articles-presse > li .txt-article .wrapper-has-media .content-txt-media {
@@ -4273,6 +4277,12 @@ a.btn-slider-citation:hover.btn-right span {
   .list-team > li.team-join,
   #main .list-team > li.team-join {
     width: 100%;
+  }
+  /* @end */
+  /* @group Blog */
+  .articles-presse > li,
+  #main .articles-presse > li {
+    padding: 0;
   }
   /* @end */
 }
@@ -5185,6 +5195,10 @@ a.btn-slider-citation:hover.btn-right span {
   #main .list-blocks-inline.half > li {
     width: 100%;
   }
+  .articles-presse > li .visu-article,
+  #main .articles-presse > li .visu-article {
+    width: 100px;
+  }
   /* @end */
 }
 @media (max-width: 767px) {
@@ -5821,6 +5835,8 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 0 10px 0 0;
   }
   .content-with-navbar {
+    display: block;
+    width: 100%;
     padding: 18px 0 0 0;
   }
   .content-with-navbar h2:before {
@@ -5915,6 +5931,35 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+  /* @end */
+  /* @group Blog */
+  .articles-presse > li,
+  #main .articles-presse > li {
+    display: block;
+  }
+  .articles-presse > li .visu-article,
+  #main .articles-presse > li .visu-article {
+    display: block;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+  .articles-presse > li .txt-article,
+  #main .articles-presse > li .txt-article {
+    display: block;
+    width: 100%;
+  }
+  .articles-presse > li .txt-article .wrapper-has-media .content-media,
+  #main .articles-presse > li .txt-article .wrapper-has-media .content-media {
+    margin: 0 auto;
+  }
+  .pagination > li,
+  #main .pagination > li {
+    margin: 0 4px;
+  }
+  .list-blocks-inline > li,
+  #main .list-blocks-inline > li {
+    padding: 20px;
   }
   /* @end */
 }
