@@ -4110,6 +4110,27 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
+.result-cars-number {
+  width: 200px;
+  box-sizing: border-box;
+  padding: 0 8px 0 0;
+}
+.result-cars-number p {
+  line-height: 1em;
+}
+.result-cars-number .cars-number {
+  display: block;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.3em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.result-cars-number .cars-number strong {
+  display: block;
+  font-size: 2.692em;
+  line-height: 0.9em;
+}
 /* @end */
 /* @group States */
 .hide-text {
