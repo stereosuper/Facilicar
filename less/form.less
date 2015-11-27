@@ -181,4 +181,55 @@ button{
     }
 }
 
+.select-custom{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    .select-placeholder{
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid @theme-gris2;
+        .texta-bold(0.875em);
+        text-transform: uppercase;
+        color: @theme-noir;
+        text-decoration: none;
+        padding: 5px 12px;
+        border-radius: 69px;
+        position: relative;
+    }
+    .select-options{
+        display: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 37px;
+        left: 0;
+        background-color: #fff;
+        box-sizing: border-box;
+        border: 1px solid @theme-gris2;
+        color: #363636;
+        padding: 20px 15px;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            > li{
+                .texta-bold(0.875em);
+                text-transform: uppercase;
+                color: @theme-noir;
+            }
+        }
+    }
+    .select-skinned{
+        .js &{
+            //display: none;
+        }
+    }
+}
+
 /* @end */

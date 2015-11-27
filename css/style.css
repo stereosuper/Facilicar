@@ -2881,6 +2881,53 @@ button.button-arrow:hover.bg-secondary {
 button:focus {
   outline: none;
 }
+.select-custom {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+.select-custom .select-placeholder {
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #b0b0a8;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+  padding: 5px 12px;
+  border-radius: 69px;
+  position: relative;
+}
+.select-custom .select-options {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #b0b0a8;
+  color: #363636;
+  padding: 20px 15px;
+}
+.select-custom .select-options ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.select-custom .select-options ul > li {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #333333;
+}
 /* @end */
 /* @group Blog */
 .articles-presse,
@@ -4263,32 +4310,39 @@ a.btn-slider-citation:hover.btn-right span {
   text-decoration: none;
   box-sizing: border-box;
   padding: 19px 0 14px 0;
-  color: #6C6B6C;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
   border-radius: 8px;
 }
 .select-type-car > li a:hover {
   background-color: #e38c00;
+}
+.select-type-car > li a:hover .zone-picto {
   color: #fff;
 }
 .select-type-car > li a:hover .zone-txt {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  color: #fff;
 }
 .select-type-car > li.is-selected a {
   background-color: #e38c00;
   color: #fff;
 }
+.select-type-car > li.is-selected a .zone-picto {
+  color: #fff;
+}
 .select-type-car > li.is-selected a .zone-txt {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  color: #fff;
 }
 .select-type-car .zone-picto {
   display: block;
   width: 100%;
   height: 25px;
   font-size: 25px;
+  color: #b0b0a8;
 }
 .select-type-car .zone-txt {
   display: block;
@@ -4296,6 +4350,7 @@ a.btn-slider-citation:hover.btn-right span {
   height: 32px;
   line-height: 1em;
   padding: 5px 0 0 0;
+  color: #6C6B6C;
 }
 .select-type-car .zone-txt .wrapper-align-middle {
   height: 100%;
