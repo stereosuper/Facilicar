@@ -437,6 +437,17 @@ $(function(){
 			}
 		}
 	}
+
+	// Clic sur un select custom
+	$(".select-placeholder").click(function(){
+		if(!$(this).parents(".select-custom").hasClass("is-active")){
+			$(".select-custom.is-active").removeClass("is-active");
+			$(this).parents(".select-custom").addClass("is-active");
+		}else{
+			$(".select-custom.is-active").removeClass("is-active");
+		}
+		return false;
+	});
 });
 
 $(window).resize(function(){

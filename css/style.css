@@ -2323,6 +2323,9 @@ a:focus {
 .list-inline.content-toggle-none {
   display: none;
 }
+.list-inline.small-margin > li {
+  margin: 0 10px 0 0;
+}
 .list-block {
   display: block;
   margin: 0;
@@ -2898,13 +2901,31 @@ button:focus {
   text-transform: uppercase;
   color: #333333;
   text-decoration: none;
-  padding: 5px 12px;
+  padding: 5px 30px 5px 14px;
   border-radius: 69px;
   position: relative;
 }
+.select-custom .select-placeholder.medium-padding-right {
+  padding-right: 55px;
+}
+.select-custom .select-placeholder.big-padding-right {
+  padding-right: 104px;
+}
+.select-custom .icon-arrow-down {
+  display: block;
+  width: 6px;
+  height: 3px;
+  font-size: 3px;
+  text-align: center;
+  color: #e38c00;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin: -2px 0 0 0;
+}
 .select-custom .select-options {
   display: none;
-  width: 100%;
+  width: auto;
   height: auto;
   margin: 0;
   padding: 0;
@@ -2921,12 +2942,18 @@ button:focus {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  -webkit-columns: 3;
+     -moz-columns: 3;
+          columns: 3;
 }
 .select-custom .select-options ul > li {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
   text-transform: uppercase;
   color: #333333;
+}
+.select-custom.is-active .select-options {
+  display: block;
 }
 /* @end */
 /* @group Blog */

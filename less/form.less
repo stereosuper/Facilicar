@@ -196,13 +196,31 @@ button{
         text-transform: uppercase;
         color: @theme-noir;
         text-decoration: none;
-        padding: 5px 12px;
+        padding: 5px 30px 5px 14px;
         border-radius: 69px;
         position: relative;
+        &.medium-padding-right{
+            padding-right: 55px;
+        }
+        &.big-padding-right{
+            padding-right: 104px;
+        }
+    }
+    .icon-arrow-down{
+        display: block;
+        width: 6px;
+        height: 3px;
+        font-size: 3px;
+        text-align: center;
+        color: @theme-secondary;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        margin: -2px 0 0 0;
     }
     .select-options{
         display: none;
-        width: 100%;
+        width: auto;
         height: auto;
         margin: 0;
         padding: 0;
@@ -218,6 +236,7 @@ button{
             list-style-type: none;
             margin: 0;
             padding: 0;
+            columns: 3;
             > li{
                 .texta-bold(0.875em);
                 text-transform: uppercase;
@@ -228,6 +247,11 @@ button{
     .select-skinned{
         .js &{
             //display: none;
+        }
+    }
+    &.is-active{
+        .select-options{
+            display: block;
         }
     }
 }
