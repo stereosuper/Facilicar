@@ -438,6 +438,29 @@ $(function(){
 		}
 	}
 
+	// Clics sur les filters
+	$(".select-type-car > li a").click(function(){
+		$(this).parents("li").toggleClass("is-selected");
+		return false;
+	});
+
+	$(".select-option-car > li a").click(function(){
+		$(this).parents("li").toggleClass("is-selected");
+		return false;
+	});
+
+	$(".switch").click(function(){
+		$(this).toggleClass("off").toggleClass("on");
+		return false;
+	});
+
+	// Clic sur le btn "Plus de critères de recherche"
+	$("#btn-more-criteres").click(function(){
+		$(this).toggleClass("open");
+		$("#content-more-criteres").slideToggle(200);
+		return false;
+	});
+
 	// Clic sur un select custom
 	$(".select-placeholder").click(function(){
 		if(!$(this).parents(".select-custom").hasClass("is-active")){

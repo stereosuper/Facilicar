@@ -38,7 +38,7 @@
 		<script src="js/libs/modernizr.js" type="text/javascript"></script>
 	</head>
 
-	<body class="resultat-recherche">
+	<body class="resultat-recherche no-wrapper-top">
 		<div class="bg-header-responsive"></div>
 		<header id="header">
 			<div class="container clearfix relative-position">
@@ -104,7 +104,7 @@
 			</div>
 		</header>
 
-		<section class="bg-white">
+		<section class="bg-white first-block">
 			<div class="container">
 				<ul class="breadcrumb">
 					<li>
@@ -120,7 +120,7 @@
 			</div>
 		</section>
 
-		<section class="bg-white">
+		<section id="content-search-results" class="bg-white">
 			<div class="container">
 				<div class="wrapper-align-middle">
 					<div class="content-align-middle result-cars-number txt-centered">
@@ -205,121 +205,125 @@
 								</ul>
 							</li><!--
 							--><li>
-								<ul class="list-inline small-margin">
-									<li>
-										<div class="select-custom">
-											<a class="select-placeholder medium-padding-right" href="#">Toutes marques <span class="icon-arrow-down"></span></a>
-											<div class="select-options">
-												<ul>
-													<li data-option data-value="toutes-marques">
-														Toutes marques
-													</li>
-													<li data-option data-value="alfa-romeo">
-														Alfa Romeo
-													</li>
-													<li data-option data-value="bmw">
-														BMW
-													</li>
-													<li data-option data-value="dacia">
-														Dacia
-													</li>
-													<li data-option data-value="ford">
-														Ford
-													</li>
-													<li data-option data-value="hyundai">
-														Hyundai
-													</li>
-													<li data-option data-value="kya">
-														Kya
-													</li>
-													<li data-option data-value="mini">
-														Mini
-													</li>
-													<li data-option data-value="nissan">
-														Nissan
-													</li>
-													<li data-option data-value="opel">
-														Opel
-													</li>
-													<li data-option data-value="peugeot">
-														Peugeot
-													</li>
-													<li data-option data-value="renault">
-														Renault
-													</li>
-													<li data-option data-value="seat">
-														Seat
-													</li>
-													<li data-option data-value="skoda">
-														Skoda
-													</li>
-													<li data-option data-value="suzuki">
-														Suzuki
-													</li>
-													<li data-option data-value="toyota">
-														Toyota
-													</li>
-													<li data-option data-value="volkswagen">
-														Volkswagen
-													</li>
-													<li data-option data-value="volvo">
-														Volvo
-													</li>
-												</ul>
-											</div>
-											<!--<select class="select-skinned" name="select-marque">
-												<option value="toutes-marques" selected="">Toutes marques</option>
-												<option value="alfa-romeo">Alfa Romeo</option>
-												<option value="bmw">BMW</option>
-												<option value="dacia">Dacia</option>
-												<option value="ford">Ford</option>
-												<option value="hyundai">Hyundai</option>
-												<option value="kya">Kya</option>
-												<option value="mini">Mini</option>
-												<option value="nissan">Nissan</option>
-												<option value="opel">Opel</option>
-												<option value="peugeot">Peugeot</option>
-												<option value="renault">Renault</option>
-												<option value="seat">Seat</option>
-												<option value="skoda">Skoda</option>
-												<option value="suzuki">Suzuki</option>
-												<option value="toyota">Toyota</option>
-												<option value="volkswagen">Volkswagen</option>
-												<option value="volvo">Volvo</option>
-											</select>-->
-										</div>
-									</li><!--
-									--><li>
-										<div class="select-custom">
-											<a class="select-placeholder" href="#">Tous modèles <span class="icon-arrow-down"></span></a>
-											<div class="select-options">
-												<ul>
-													<li data-option data-value="tous-modeles">
-														Tous modèles
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li><!--
-									--><li>
-										<div class="select-custom">
-											<a class="select-placeholder big-padding-right" href="#">KM <span class="icon-arrow-down"></span></a>
-											<div class="select-options">
-												<ul>
-													<li data-option data-value="km">
-														KM
-													</li>
-												</ul>
-											</div>
-										</div>
-									</li><!--
-									--><li>
+								<div class="wrapper-align-middle">
+									<div class="content-align-middle">
+										<ul class="list-inline small-margin">
+											<li>
+												<div class="select-custom">
+													<a class="select-placeholder medium-padding-right" href="#">Toutes marques <span class="icon-arrow-down"></span></a>
+													<div class="select-options">
+														<ul>
+															<li data-option data-value="toutes-marques">
+																Toutes marques
+															</li>
+															<li data-option data-value="alfa-romeo">
+																Alfa Romeo
+															</li>
+															<li data-option data-value="bmw">
+																BMW
+															</li>
+															<li data-option data-value="dacia">
+																Dacia
+															</li>
+															<li data-option data-value="ford">
+																Ford
+															</li>
+															<li data-option data-value="hyundai">
+																Hyundai
+															</li>
+															<li data-option data-value="kya">
+																Kya
+															</li>
+															<li data-option data-value="mini">
+																Mini
+															</li>
+															<li data-option data-value="nissan">
+																Nissan
+															</li>
+															<li data-option data-value="opel">
+																Opel
+															</li>
+															<li data-option data-value="peugeot">
+																Peugeot
+															</li>
+															<li data-option data-value="renault">
+																Renault
+															</li>
+															<li data-option data-value="seat">
+																Seat
+															</li>
+															<li data-option data-value="skoda">
+																Skoda
+															</li>
+															<li data-option data-value="suzuki">
+																Suzuki
+															</li>
+															<li data-option data-value="toyota">
+																Toyota
+															</li>
+															<li data-option data-value="volkswagen">
+																Volkswagen
+															</li>
+															<li data-option data-value="volvo">
+																Volvo
+															</li>
+														</ul>
+													</div>
+													<!--<select class="select-skinned" name="select-marque">
+														<option value="toutes-marques" selected="">Toutes marques</option>
+														<option value="alfa-romeo">Alfa Romeo</option>
+														<option value="bmw">BMW</option>
+														<option value="dacia">Dacia</option>
+														<option value="ford">Ford</option>
+														<option value="hyundai">Hyundai</option>
+														<option value="kya">Kya</option>
+														<option value="mini">Mini</option>
+														<option value="nissan">Nissan</option>
+														<option value="opel">Opel</option>
+														<option value="peugeot">Peugeot</option>
+														<option value="renault">Renault</option>
+														<option value="seat">Seat</option>
+														<option value="skoda">Skoda</option>
+														<option value="suzuki">Suzuki</option>
+														<option value="toyota">Toyota</option>
+														<option value="volkswagen">Volkswagen</option>
+														<option value="volvo">Volvo</option>
+													</select>-->
+												</div>
+											</li><!--
+											--><li>
+												<div class="select-custom">
+													<a class="select-placeholder" href="#">Tous modèles <span class="icon-arrow-down"></span></a>
+													<div class="select-options">
+														<ul>
+															<li data-option data-value="tous-modeles">
+																Tous modèles
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li><!--
+											--><li>
+												<div class="select-custom">
+													<a class="select-placeholder big-padding-right" href="#">KM <span class="icon-arrow-down"></span></a>
+													<div class="select-options">
+														<ul>
+															<li data-option data-value="km">
+																KM
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div><!--
+									--><div class="content-align-middle">
 										<div class="filter-title">Prix</div>
 										<div id="filter-prix" class="slider-range-inline"></div>
-									</li>
-								</ul>
+									</div>
+								</div>
 							</li><!--
-							--><li>
+							--><li id="content-more-criteres">
 								<ul class="list-inline small-margin">
 									<li>
 										<div class="select-custom">
@@ -421,7 +425,15 @@
 								</ul>
 							</li>
 							<li>
-								<a href="#">Effacer tous les critères</a>
+								<div class="wrapper-align-middle">
+									<div class="content-align-middle">
+										<a class="btn-cross btn-underline color-theme-black" id="btn-rappel" href="#">effacer tous les critères</a>
+									</div><!--
+									--><div class="content-align-middle txt-right-aligned">
+										<a id="btn-more-criteres" class="btn-arrow-down btn-underline color-theme-secondary" href="#"><span class="txt-btn">Plus de critères de recherche</span><span class="txt-open-btn">Moins de critères de recherche</span></a>
+										<a id="btn-voir-vehicules" href="#" class="btn-block btn-block-refresh bg-primary"><span class="icon-refresh"></span><span class="txt-btn-block-arrow">Voir les véhicules</span><span class="txt-hover-btn-block-arrow" data-hover="Voir les véhicules"></span></a>
+									</div>
+								</div>
 							</li>
 						</ul>
 					</div>
