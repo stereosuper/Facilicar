@@ -45,11 +45,11 @@ if(isset($_POST['submit'])){
 
 	<head>
 	  	<meta charset="utf-8">
-	  	<title>Achat et vente de voitures d'occasion - Facilicar</title>
+	  	<title>Achat et vente de véhicule sur internet - Facilicar</title>
 	  	
 	  	<!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <![endif]-->
 	  	<meta name="viewport" content="width=device-width,initial-scale=1">
-	  	<meta name="description" content="Vous souhaitez vendre ou acheter une voiture d'occasion ? Découvrez les annonces de voitures de toutes marques du site Facilicar qui rachète aussi votre véhicule.">
+	  	<meta name="description" content="Achetez ou vendez votre voiture de façon plus simple, plus sûr et plus rapide avec Facilicar.com">
 		
 		<link rel="stylesheet" href="css/libs/normalize.css">
 	  	<link rel="stylesheet" href="css/style.css">
@@ -63,17 +63,13 @@ if(isset($_POST['submit'])){
 		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
 		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-		
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-
-		<link rel="icon" type="image/png" href="android-chrome-36x36.png" sizes="36x36">	
-		<link rel="icon" type="image/png" href="android-chrome-48x48.png" sizes="48x48">
-		<link rel="icon" type="image/png" href="android-chrome-72x72.png" sizes="72x72">
-		<link rel="icon" type="image/png" href="android-chrome-96x96.png" sizes="96x96">
-		
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
 		<meta name="theme-color" content="#ffffff">

@@ -448,6 +448,13 @@ $(function(){
 		}
 		return false;
 	});
+
+	// Slider | Range
+	if($("body").hasClass("resultat-recherche")){
+		$("#filter-prix").slider({
+			range: true
+		});
+	}
 });
 
 $(window).resize(function(){
