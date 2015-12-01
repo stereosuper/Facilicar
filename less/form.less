@@ -205,18 +205,20 @@ button{
         &.big-padding-right{
             padding-right: 104px;
         }
-    }
-    .icon-arrow-down{
-        display: block;
-        width: 6px;
-        height: 3px;
-        font-size: 3px;
-        text-align: center;
-        color: @theme-secondary;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        margin: -2px 0 0 0;
+        &:before{
+            .icon-font;
+            content: "\e901";
+            display: block;
+            width: 6px;
+            height: 3px;
+            font-size: 3px;
+            text-align: center;
+            color: @theme-secondary;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            margin: -2px 0 0 0;
+        }
     }
     .select-options{
         display: none;
@@ -241,6 +243,8 @@ button{
                 .texta-bold(0.875em);
                 text-transform: uppercase;
                 color: @theme-noir;
+                white-space: nowrap;
+                cursor: pointer;
             }
         }
     }

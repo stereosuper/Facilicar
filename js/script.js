@@ -155,6 +155,18 @@ function changeCarComplete(){
 	setTimeout(changeCar, tpsChangeCar);
 }
 
+// Fonction pour mettre à jour le contenu du placeholder du select custom
+function majPlaceholder(containerSkinSelect){
+	if(containerSkinSelect.hasClass("is-active")){
+		$(".select-placeholder", containerSkinSelect).html("<span class='is-disabled'>"+$("select option", containerSkinSelect).eq(0).html()+"</span>");
+	}else{
+		if($(".select-options ul li", containerSkinSelect).hasClass("is-selected")){
+			$(".select-placeholder", containerSkinSelect).html($(".select-options ul li.is-selected", containerSkinSelect).html());
+		}
+	}
+	
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -470,6 +482,40 @@ $(function(){
 			$(".select-custom.is-active").removeClass("is-active");
 		}
 		return false;
+	});
+
+	// Clic sur un choix du select custom
+	$(".select-options ul li").click(function(){
+		var sOptionsParent = $(this).parents(".select-options");
+		$("li.is-selected", sOptionsParent).removeClass("is-selected");
+		$(this).addClass("is-selected");
+		// maj du réel select
+		/*var sSkinParent = $(this).parents(".select-skin");
+		var indexSelectCustom = $(this).index();
+		$("select.select-skinned option:enabled", sSkinParent).eq(indexSelectCustom).prop('selected', true);*/
+
+		var sSkinActive = $(".select-custom.is-active");
+		sSkinActive.removeClass("is-active");
+		majPlaceholder(sSkinActive);
+		return false;
+	});
+
+	$(document).mouseup(function (e)
+	{
+	    var placeholder = $("a.select-placeholder");
+	    var optionSelect = $(".select-options ul li");
+
+	    if (!placeholder.is(e.target) // if the target of the click isn't the container...
+	        && placeholder.has(e.target).length === 0) // ... nor a descendant of the container
+	    {
+	    	if(!optionSelect.is(e.target) && optionSelect.has(e.target).length === 0){
+	    		if($(".select-custom").hasClass("is-active")){
+	    			var sSkinActive = $(".select-custom.is-active");
+	    			sSkinActive.removeClass("is-active");
+	    			majPlaceholder(sSkinActive);
+	    		}
+	    	}
+	    }
 	});
 
 	// Slider | Range

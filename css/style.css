@@ -3165,7 +3165,18 @@ button:focus {
 .select-custom .select-placeholder.big-padding-right {
   padding-right: 104px;
 }
-.select-custom .icon-arrow-down {
+.select-custom .select-placeholder:before {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e901";
   display: block;
   width: 6px;
   height: 3px;
@@ -3205,6 +3216,8 @@ button:focus {
   font-size: 0.875em;
   text-transform: uppercase;
   color: #333333;
+  white-space: nowrap;
+  cursor: pointer;
 }
 .select-custom.is-active {
   z-index: 3;
@@ -4890,6 +4903,9 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .no-js #content-more-criteres {
   display: block;
+}
+#content-more-criteres .list-inline > li:last-of-type {
+  margin-left: 70px;
 }
 #content-search-results {
   margin-top: 15px;
