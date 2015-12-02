@@ -90,12 +90,20 @@
 	text-align: center;
 	margin: 20px 0 0 0;
 	padding: 0;
+	&.no-margin{
+		margin: 0;
+	}
+	&.big{
+		> li{
+			.texta-medium(1.875em);
+		}
+	}
 	> li{
 		display: inline-block;
 		vertical-align: top;
 		.texta-medium(1.275em);
 		color: @theme-gris2;
-		margin: 0 10px;
+		margin: 0 4px;
 		padding: 0;
 		box-sizing: border-box;
 		&:before{

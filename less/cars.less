@@ -399,13 +399,11 @@
 			.texta-light(0.875em);
 			border-radius: 8px;
 			&:hover{
-				background-color: @theme-secondary;
 				.zone-picto{
-					color: #fff;
+					color: @theme-secondary;
 				}
 				.zone-txt{
-					.texta-bold(1em);
-					color: #fff;
+					color: @theme-secondary;
 				}
 			}
 		}
@@ -467,13 +465,12 @@
 			border-radius: 6px;
 			position: relative;
 			&:hover{
-				background-color: @theme-secondary;
 				.zone-picto{
-					color: #fff;
+					color: @theme-secondary;
 					&.nb-places{
 						.places{
-							background-color: #fff;
-							color: @theme-secondary;
+							background-color: @theme-secondary;
+							color: #fff;
 						}
 					}
 				}
@@ -555,35 +552,18 @@
 		.wrapper-align-middle{
 			height: 100%;
 		}
-		.arrow{
-			width: 0px;
-			height: 0px;
-			border-color: transparent;
-			border-style: solid;
-			border-width: 0 3px 4px 3px;
-			border-bottom-color: @theme-secondary;
-			border-left-color: fade(@theme-secondary, 0);
-			border-right-color: fade(@theme-secondary, 0);
+		.triangle{
+			display: block;
+			width: 8px;
+			height: 4px;
+			line-height: 4px;
+			text-align: center;
+			font-size: 4px;
 			position: absolute;
-			top: -7px;
+			top: -8px;
 			left: 50%;
-			margin: 0 0 0 -3px;
-			&:before{
-				content: "";
-				display: block;
-				width: 0px;
-				height: 0px;
-				border-color: transparent;
-				border-style: solid;
-				border-width: 0 2px 4px 2px;
-				border-bottom-color: #fff;
-				border-left-color: fade(#fff, 0);
-				border-right-color: fade(#fff, 0);
-				position: absolute;
-				top: 0px;
-				left: 50%;
-				margin: 0 0 0 -2px;
-			}
+			margin: 0 0 0 -4px;
+			background: url("../layoutImg/triangle.png") no-repeat 0 0;
 		}
 		&:before{
 			content: "";
@@ -640,6 +620,61 @@
 
 #content-search-results{
 	margin-top: 15px;
+}
+
+.zone-sort-by{
+	margin: 40px 0 0 0;
+	.list-inline{
+		> li{
+			margin: 0 23px;
+			&:first-of-type{
+				margin-left: 10px;
+			}
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.sort-by{
+	.texta-light(1em);
+	color: @theme-gris2;
+	text-transform: uppercase;
+	.txt-sort-by{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 5px 0 0;
+	}
+	a{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 14px;
+		text-decoration: none;
+		color: @theme-gris2;
+		&.icon-triangle-down{
+			padding: 9px 2px 0 0;
+		}
+		&.icon-triangle-up{
+			padding: 5px 0 0 0;
+		}
+		&.is-selected{
+			color: @theme-primary;
+		}
+	}
+	&.is-active{
+		color: @theme-primary;
+	}
+}
+
+.description-recherche{
+    line-height: 1.5em;
+    z-index: 2;
+    padding: 40px 0;
+    /*position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;*/
 }
 
 /* @end */

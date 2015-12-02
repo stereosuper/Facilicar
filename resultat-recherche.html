@@ -121,13 +121,13 @@
 		</section>
 
 		<section id="content-search-results" class="bg-white">
-			<div class="container">
+			<div class="container relative-position">
 				<div class="wrapper-align-middle">
 					<div class="content-align-middle result-cars-number txt-centered">
 						<p><span class="cars-number color-secondary"><strong>112</strong> véhicules</span> Correspondent<br /> à votre recherche</p>
 						<span class="arrow"></span>
 					</div><!--
-					--><div class="conent-align-middle cars-filters">
+					--><div class="content-align-middle cars-filters">
 						<ul class="list-block lines-filters">
 							<li>
 								<div class="filter-title">Type</div><!--
@@ -213,7 +213,7 @@
 													<a class="select-placeholder medium-padding-right" href="#">Toutes marques</a>
 													<div class="select-options">
 														<ul>
-															<li data-option data-value="toutes-marques">
+															<li data-option data-value="toutes-marques" class="is-selected">
 																Toutes marques
 															</li>
 															<li data-option data-value="alfa-romeo">
@@ -296,7 +296,7 @@
 													<a class="select-placeholder" href="#">Tous modèles</a>
 													<div class="select-options">
 														<ul>
-															<li data-option data-value="tous-modeles">
+															<li data-option data-value="tous-modeles"  class="is-selected">
 																Tous modèles
 															</li>
 														</ul>
@@ -308,7 +308,7 @@
 													<a class="select-placeholder big-padding-right" href="#">KM</a>
 													<div class="select-options">
 														<ul>
-															<li data-option data-value="km">
+															<li data-option data-value="km"  class="is-selected">
 																KM
 															</li>
 														</ul>
@@ -330,7 +330,7 @@
 											<a class="select-placeholder" href="#">Toutes énergies</a>
 											<div class="select-options">
 												<ul>
-													<li data-option data-value="toutes-energies">
+													<li data-option data-value="toutes-energies" class="is-selected">
 														Toutes énergies
 													</li>
 													<li data-option data-value="Essence">
@@ -356,7 +356,7 @@
 												<a href="#">
 													<span class="zone-picto icon-gps"></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														GPS
 													</span>
 												</a>
@@ -365,7 +365,7 @@
 												<a href="#">
 													<span class="zone-picto icon-clim"></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														Aide au parking<br /> AV et/ou AR
 													</span>
 												</a>
@@ -374,7 +374,7 @@
 												<a href="#">
 													<span class="zone-picto icon-toit-ouvrant"></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														Toit ouvrant
 													</span>
 												</a>
@@ -383,7 +383,7 @@
 												<a href="#">
 													<span class="zone-picto icon-control-recul"></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														Contrôle de recul
 													</span>
 												</a>
@@ -392,7 +392,7 @@
 												<a href="#">
 													<span class="zone-picto nb-places"><span class="places">7pl</span></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														7 places
 													</span>
 												</a>
@@ -401,7 +401,7 @@
 												<a href="#">
 													<span class="zone-picto icon-phares"></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														Phares
 													</span>
 												</a>
@@ -410,7 +410,7 @@
 												<a href="#">
 													<span class="zone-picto icon-cuir"></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														Cuir
 													</span>
 												</a>
@@ -419,7 +419,7 @@
 												<a href="#">
 													<span class="zone-picto icon-quatre-quatre"></span>
 													<span class="zone-txt">
-														<span class="arrow"></span>
+														<span class="triangle"></span>
 														4*4
 													</span>
 												</a>
@@ -439,7 +439,7 @@
 							<li>
 								<div class="wrapper-align-middle">
 									<div class="content-align-middle">
-										<a class="btn-cross btn-underline color-theme-black" id="btn-rappel" href="#">effacer tous les critères</a>
+										<a class="btn-cross btn-underline color-theme-black" id="btn-remove-criteria" href="#">effacer tous les critères</a>
 									</div><!--
 									--><div class="content-align-middle txt-right-aligned">
 										<a id="btn-more-criteres" class="btn-arrow-down btn-underline color-theme-secondary" href="#"><span class="txt-btn">Plus de critères de recherche</span><span class="txt-open-btn">Moins de critères de recherche</span></a>
@@ -450,7 +450,46 @@
 						</ul>
 					</div>
 				</div>
-				<ul class="list-cars">
+				<div class="description-recherche">
+					<h4 class="no-margin">RENAULT D’OCCASION (150 modèles actuellement disponibles)</h4>
+					<p class="no-margin">À la recherche d'une Renault d'occasion à Paris, Lille, Nantes ou Paris ? Sur Facilicar, vous trouverez un grand nombre de voitures de la marque Renault (Clio, Megane, Twingo...) à vendre. Chaque véhicule a été rénové et réparé par nos équipes. <a class="btn-underline btn-arrow color-primary" href="#">En savoir plus</a></p>
+				</div>
+				<div class="zone-sort-by">
+					<ul class="list-inline">
+						<li>
+							<div class="filter-title">Classer par :</div>
+						</li><!--
+						--><li>
+							<div class="sort-by">
+								<span class="txt-sort-by">Prix</span>
+								<a href="#" class="triangle-down"></a><!--
+								--><a href="#" class="triangle-up"></a>
+							</div>
+						</li><!--
+						--><li>
+							<div class="sort-by is-active">
+								<span class="txt-sort-by">Année</span>
+								<a href="#" class="triangle-down is-selected"></a><!--
+								--><a href="#" class="triangle-up"></a>
+							</div>
+						</li><!--
+						--><li>
+							<div class="sort-by">
+								<span class="txt-sort-by">KM</span>
+								<a href="#" class="triangle-down"></a><!--
+								--><a href="#" class="triangle-up"></a>
+							</div>
+						</li><!--
+						--><li>
+							<div class="sort-by">
+								<span class="txt-sort-by">Publication</span>
+								<a href="#" class="triangle-down"></a><!--
+								--><a href="#" class="triangle-up"></a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<ul class="list-cars small-padding">
 					<li itemscope itemtype="http://schema.org/Product">
 						<a href="#" class="wrapper-car">
 							<span class="bandeau-image-car imgLiquidFill">
@@ -635,6 +674,18 @@
 							</span>
 						</a>
 					</li>
+				</ul>
+				<ul class="pagination no-margin">
+					<li class="arrow">‹</li>
+					<li>1</li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li>...</li>
+					<li><a href="#">11</a></li>
+					<li><a href="#">12</a></li>
+					<li><a href="#">13</a></li>
+					<li class="arrow"><a href="#">›</a></li>
 				</ul>
 			</div>
 		</section>

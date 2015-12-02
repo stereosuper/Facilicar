@@ -23,6 +23,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-triangle:before {
+  content: "\e914";
+}
+.icon-triangle-up:before {
+  content: "\e912";
+}
+.icon-triangle-down:before {
+  content: "\e913";
+}
 .icon-refresh:before {
   content: "\e911";
 }
@@ -715,14 +724,6 @@ a.color-theme-black:hover {
   background: url("../layoutImg/liste-cars.jpg") no-repeat 0 0;
   margin: 0;
   padding: 0 0 150px;
-}
-.description-recherche {
-  line-height: 1.5em;
-  position: absolute;
-  z-index: 2;
-  bottom: 50px;
-  left: 0;
-  right: 0;
 }
 .content-toggle {
   display: none;
@@ -2636,6 +2637,9 @@ a:focus {
   list-style-type: none;
   text-align: left;
 }
+.list-cars.small-padding {
+  padding: 12px 0 20px 0;
+}
 .list-cars > li {
   display: inline-block;
   vertical-align: top;
@@ -3219,6 +3223,12 @@ button:focus {
   white-space: nowrap;
   cursor: pointer;
 }
+.select-custom .select-options ul > li:hover {
+  text-decoration: underline;
+}
+.select-custom .select-options ul > li.is-selected {
+  color: #b0b0a8;
+}
 .select-custom.is-active {
   z-index: 3;
 }
@@ -3410,6 +3420,15 @@ button:focus {
   margin: 20px 0 0 0;
   padding: 0;
 }
+.pagination.no-margin,
+#main .pagination.no-margin {
+  margin: 0;
+}
+.pagination.big > li,
+#main .pagination.big > li {
+  font-family: 'Texta-Medium', sans-serif;
+  font-size: 1.875em;
+}
 .pagination > li,
 #main .pagination > li {
   display: inline-block;
@@ -3417,7 +3436,7 @@ button:focus {
   font-family: 'Texta-Medium', sans-serif;
   font-size: 1.275em;
   color: #b0b0a8;
-  margin: 0 10px;
+  margin: 0 4px;
   padding: 0;
   box-sizing: border-box;
 }
@@ -4685,16 +4704,11 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 0.875em;
   border-radius: 8px;
 }
-.select-type-car > li a:hover {
-  background-color: #e38c00;
-}
 .select-type-car > li a:hover .zone-picto {
-  color: #fff;
+  color: #e38c00;
 }
 .select-type-car > li a:hover .zone-txt {
-  font-family: 'Texta-Bold', sans-serif;
-  font-size: 1em;
-  color: #fff;
+  color: #e38c00;
 }
 .select-type-car > li.is-selected a {
   background-color: #e38c00;
@@ -4753,15 +4767,12 @@ a.btn-slider-citation:hover.btn-right span {
   border-radius: 6px;
   position: relative;
 }
-.select-option-car > li a:hover {
-  background-color: #e38c00;
-}
 .select-option-car > li a:hover .zone-picto {
-  color: #fff;
+  color: #e38c00;
 }
 .select-option-car > li a:hover .zone-picto.nb-places .places {
-  background-color: #fff;
-  color: #e38c00;
+  background-color: #e38c00;
+  color: #fff;
 }
 .select-option-car > li a:hover .zone-txt {
   opacity: 1;
@@ -4834,35 +4845,18 @@ a.btn-slider-citation:hover.btn-right span {
 .select-option-car .zone-txt .wrapper-align-middle {
   height: 100%;
 }
-.select-option-car .zone-txt .arrow {
-  width: 0px;
-  height: 0px;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 0 3px 4px 3px;
-  border-bottom-color: #e38c00;
-  border-left-color: rgba(227, 140, 0, 0);
-  border-right-color: rgba(227, 140, 0, 0);
-  position: absolute;
-  top: -7px;
-  left: 50%;
-  margin: 0 0 0 -3px;
-}
-.select-option-car .zone-txt .arrow:before {
-  content: "";
+.select-option-car .zone-txt .triangle {
   display: block;
-  width: 0px;
-  height: 0px;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 0 2px 4px 2px;
-  border-bottom-color: #fff;
-  border-left-color: rgba(255, 255, 255, 0);
-  border-right-color: rgba(255, 255, 255, 0);
+  width: 8px;
+  height: 4px;
+  line-height: 4px;
+  text-align: center;
+  font-size: 4px;
   position: absolute;
-  top: 0px;
+  top: -8px;
   left: 50%;
-  margin: 0 0 0 -2px;
+  margin: 0 0 0 -4px;
+  background: url("../layoutImg/triangle.png") no-repeat 0 0;
 }
 .select-option-car .zone-txt:before {
   content: "";
@@ -4909,6 +4903,57 @@ a.btn-slider-citation:hover.btn-right span {
 }
 #content-search-results {
   margin-top: 15px;
+}
+.zone-sort-by {
+  margin: 40px 0 0 0;
+}
+.zone-sort-by .list-inline > li {
+  margin: 0 23px;
+}
+.zone-sort-by .list-inline > li:first-of-type {
+  margin-left: 10px;
+}
+.zone-sort-by .list-inline > li:last-of-type {
+  margin-right: 0;
+}
+.sort-by {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  color: #b0b0a8;
+  text-transform: uppercase;
+}
+.sort-by .txt-sort-by {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 5px 0 0;
+}
+.sort-by a {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  text-decoration: none;
+  color: #b0b0a8;
+}
+.sort-by a.icon-triangle-down {
+  padding: 9px 2px 0 0;
+}
+.sort-by a.icon-triangle-up {
+  padding: 5px 0 0 0;
+}
+.sort-by a.is-selected {
+  color: #009cc4;
+}
+.sort-by.is-active {
+  color: #009cc4;
+}
+.description-recherche {
+  line-height: 1.5em;
+  z-index: 2;
+  padding: 40px 0;
+  /*position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;*/
 }
 /* @end */
 /* @group States */
@@ -6784,6 +6829,10 @@ a.btn-slider-citation:hover.btn-right span {
     background: url("../layoutImg/logo-facilicar@2x.png") no-repeat 0 0;
     background-size: 281px 49px;
   }
+  .select-option-car .zone-txt .triangle {
+    background: url("../layoutImg/triangle@2x.png") no-repeat 0 0;
+    background-size: 8px 4px;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   .e-trustedshops {
@@ -6802,6 +6851,10 @@ a.btn-slider-citation:hover.btn-right span {
     background: url("../layoutImg/logo-facilicar@2x.png") no-repeat 0 0;
     background-size: 281px 49px;
   }
+  .select-option-car .zone-txt .triangle {
+    background: url("../layoutImg/triangle@2x.png") no-repeat 0 0;
+    background-size: 8px 4px;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi) {
   .e-trustedshops {
@@ -6819,6 +6872,10 @@ a.btn-slider-citation:hover.btn-right span {
   a.logo-facilicar {
     background: url("../layoutImg/logo-facilicar@3x.png") no-repeat 0 0;
     background-size: 281px 49px;
+  }
+  .select-option-car .zone-txt .triangle {
+    background: url("../layoutImg/triangle@3x.png") no-repeat 0 0;
+    background-size: 8px 4px;
   }
 }
 /* ==|== print styles =======================================================

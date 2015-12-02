@@ -164,7 +164,15 @@ function majPlaceholder(containerSkinSelect){
 			$(".select-placeholder", containerSkinSelect).html($(".select-options ul li.is-selected", containerSkinSelect).html());
 		}
 	}
-	
+}
+
+// Positionnement de la description de recherche
+function descRecherche(){
+	if($("body").hasClass("resultat-recherche")){
+		var heightDescRecherche = $(".description-recherche").outerHeight();
+		TweenMax.set($("#content-search-results .container"), {paddingBottom: heightDescRecherche+"px"});
+		TweenMax.set($(".description-recherche"), {position: "absolute", bottom: "0px", left: "0px"});
+	}
 }
 
 $(function(){
@@ -524,6 +532,41 @@ $(function(){
 			range: true
 		});
 	}
+
+	// Effacer tous les critères
+	$("#btn-remove-criteria").click(function(){
+		$(".select-type-car li.is-selected").removeClass("is-selected");
+		$(".select-option-car li.is-selected").removeClass("is-selected");
+		$("#content-more-criteres .switch.on").removeClass("on").addClass("off");
+
+
+		$(".select-options ul li").click(function(){
+			var sOptionsParent = $(this).parents(".select-options");
+			$("li.is-selected", sOptionsParent).removeClass("is-selected");
+			$(this).addClass("is-selected");
+			// maj du réel select
+			/*var sSkinParent = $(this).parents(".select-skin");
+			var indexSelectCustom = $(this).index();
+			$("select.select-skinned option:enabled", sSkinParent).eq(indexSelectCustom).prop('selected', true);*/
+
+			var sSkinActive = $(".select-custom.is-active");
+			sSkinActive.removeClass("is-active");
+			majPlaceholder(sSkinActive);
+			return false;
+		});
+
+		$(".lines-filters .select-custom").each(function(){
+			$(".select-options li.is-selected", this).removeClass("is-selected");
+			$(".select-options li", this).first().addClass("is-selected");
+			majPlaceholder($(this));
+		});
+
+
+		return false;
+	});
+
+	// Positionnement de la description de recherche
+	descRecherche();
 });
 
 $(window).resize(function(){
@@ -544,4 +587,7 @@ $(window).resize(function(){
 	if($("body").hasClass("has-choose")){
 		$(".wrapper-choose").removeClass("survol-left").removeClass("survol-out-left").removeClass("survol-right").removeClass("survol-out-right");
 	}
+
+	// Positionnement de la description de recherche
+	descRecherche();
 });

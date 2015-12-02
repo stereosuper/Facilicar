@@ -245,6 +245,12 @@ button{
                 color: @theme-noir;
                 white-space: nowrap;
                 cursor: pointer;
+                &:hover{
+                    text-decoration: underline;
+                }
+                &.is-selected{
+                    color: @theme-gris2;
+                }
             }
         }
     }
