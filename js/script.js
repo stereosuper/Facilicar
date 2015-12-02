@@ -529,9 +529,42 @@ $(function(){
 	// Slider | Range
 	if($("body").hasClass("resultat-recherche")){
 		$("#filter-prix").slider({
-			range: true
+			range: true,
+			min: 1000,
+			max: 50000,
+			step: 1000,
+			values: [1000, 50000],
+			slide: function(event, ui) {
+		        var delay = function() {
+		            var handleIndex = $(ui.handle).data('index.uiSliderHandle');
+		            var label = handleIndex == 0 ? '#min' : '#max';
+		            $(label).html('$' + ui.value).position({
+		                my: 'center top',
+		                at: 'center bottom',
+		                of: ui.handle,
+		                offset: "0, 10"
+		            });
+		        };
+		        
+		        // wait for the ui.handle to set its position
+		        setTimeout(delay, 5);
+		    }
 		});
 	}
+
+	$('#min').html('$' + $('#filter-prix').slider('values', 0)).position({
+	    my: 'center top',
+	    at: 'center bottom',
+	    of: $('#filter-prix a:eq(0)'),
+	    offset: "0, 10"
+	});
+
+	$('#max').html('$' + $('#filter-prix').slider('values', 1)).position({
+	    my: 'center top',
+	    at: 'center bottom',
+	    of: $('#filter-prix a:eq(1)'),
+	    offset: "0, 10"
+	});
 
 	// Effacer tous les critères
 	$("#btn-remove-criteria").click(function(){

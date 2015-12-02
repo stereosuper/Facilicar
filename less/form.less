@@ -273,6 +273,40 @@ button{
     &#filter-prix{
         width: 320px;
     }
+    &.ui-corner-all{
+        border-radius: 0px;
+    }
+    &.ui-widget-content{
+        border: none;
+        background-color: #979797;
+    }
+    &.ui-slider-horizontal{
+        height: 2px;
+    }
+    .ui-state-default, &.ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+        border: none;
+        background-color: @theme-secondary;
+    }
+    &.ui-slider .ui-slider-handle{
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        &.ui-state-focus{
+            outline: none;
+        }
+    }
+    &.ui-slider-horizontal .ui-slider-handle{
+        top: -9px;
+        margin-left: -9px;
+        cursor: pointer;
+    }
+    .ui-widget-header{
+        background-color: @theme-secondary;
+    }
+    #min, #max {
+        width: 50px;
+        text-align: center;
+    }
 }
 
 .switch{
