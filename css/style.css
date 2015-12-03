@@ -3282,8 +3282,14 @@ button:focus {
 }
 .slider-range-inline #min,
 .slider-range-inline #max {
-  width: 50px;
+  display: block;
+  width: 80px;
   text-align: center;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.75em;
+  color: #333333;
+  padding: 20px 0 0 0;
+  margin: 0 0 0 -28px;
 }
 .switch {
   display: inline-block;
