@@ -460,7 +460,8 @@ $(function(){
 
 	// Clics sur les filters
 	$(".select-type-car > li a").click(function(){
-		$(this).parents("li").toggleClass("is-selected");
+		$(".select-type-car  >li.is-selected").removeClass("is-selected");
+		$(this).parents("li").first().toggleClass("is-selected");
 		return false;
 	});
 
