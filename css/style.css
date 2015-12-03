@@ -3175,6 +3175,9 @@ button:focus {
 .select-custom .select-placeholder.big-padding-right {
   padding-right: 104px;
 }
+.select-custom .select-placeholder.small-padding-right {
+  padding-right: 35px;
+}
 .select-custom .select-placeholder:before {
   font-family: 'facilicar';
   speak: none;
