@@ -31,6 +31,10 @@
 			opacity: 1;
 			transition-delay: 0.1s;
 		}
+		.motor-color{
+			opacity: 1;
+			transition-delay: 0.1s;
+		}
 		.car-km{
 			transform: translateY(0px) translateZ(1px);
 			transition-delay: 0s;
@@ -55,7 +59,7 @@
 			}
 		}
 		.car-labels{
-			opacity: 0;
+			//opacity: 0;
 			transition-delay: 0s;
 		}
 		.car-label{
@@ -164,15 +168,25 @@
 	line-height: 1.4em;
 	text-transform: uppercase;
 	color: @theme-noir;
-	.details{
-		display: block;
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	.motor-color{
-		display: block;
-	}
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.motor-color{
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	transition-delay: 0s;
+	top: 76px;
+	.texta-light(0.875em);
+	line-height: 1.4em;
+	text-transform: uppercase;
+	color: @theme-noir;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .car-km{
@@ -672,11 +686,12 @@
 			padding: 5px 0 0 0;
 		}
 		&.is-selected{
-			color: @theme-primary;
+			color: @theme-secondary;
 		}
 	}
 	&.is-active{
-		color: @theme-primary;
+		.texta-black(1em);
+		color: @theme-noir;
 	}
 }
 
@@ -688,6 +703,115 @@
     bottom: 50px;
     left: 0;
     right: 0;*/
+}
+
+.results-txt{
+	display: block;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+.is-list{
+	.bandeau-image-car{
+		width: 303px;
+		height: 100%;
+		top: 0px;
+	}
+	.fond-bandeau-car{
+		display: none;
+	}
+	.bandeau-car{
+		width: auto;
+		height: 100%;
+		left: 322px;
+		right: 0;
+		text-align: left;
+		overflow: visible;
+		&.bandeau-top{
+			top: 20px;
+			right: inherit;
+		}
+		&.bandeau-bottom{
+			left: inherit;
+			top: 20px;
+			bottom: inherit;
+			right: 20px;
+			text-align: right;
+		}
+	}
+	.car-year, .car-block.car-year{
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		transform: none;
+		right: inherit;
+		top: 0;
+		padding: 0 7px 0 0;
+	}
+	.car-km{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		transform: none;
+		top: 0;
+		padding: 2px 7px 0 0;
+		.texta-light(1em);
+		text-transform: uppercase;
+		color: @theme-gris3;
+		line-height: 1em;
+	}
+	.motor-color{
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+		transform: none;
+		top: 0;
+		opacity: 1;
+		.texta-light(1em);
+		text-transform: uppercase;
+		color: @theme-gris3;
+		line-height: 1em;
+		padding: 2px 0 0 0;
+	}
+	.car-name{
+		transform: none;
+		position: relative;
+		top: 0;
+		font-size: 1.625em;
+	}
+	.car-desc{
+		opacity: 1;
+		position: relative;
+		top: 0;
+		font-size: 1em;
+		color: @theme-gris3;
+	}
+	.car-old-price{
+		position: relative;
+		bottom: inherit;
+		left: inherit;
+	}
+	.car-price{
+		transform: none;
+		position: relative;
+		bottom: inherit;
+		left: inherit;
+	}
+	.car-price-saving{
+		opacity: 1;
+		transform: none;
+		position: relative;
+		bottom: inherit;
+	}
+	.car-btn-essai{
+		opacity: 1;
+		transform: none;
+		position: relative;
+		bottom: inherit;
+	}
 }
 
 /* @end */

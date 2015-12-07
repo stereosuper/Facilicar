@@ -188,6 +188,19 @@ button{
     padding: 0;
     position: relative;
     z-index: 2;
+    &:before{
+        content: "";
+        display: none;
+        width: auto;
+        height: auto;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: @theme-noir;
+        opacity: 0.1;
+    }
     .select-placeholder{
         display: inline-block;
         vertical-align: top;
@@ -199,6 +212,7 @@ button{
         padding: 5px 30px 5px 14px;
         border-radius: 69px;
         position: relative;
+        background-color: #fff;
         &.medium-padding-right{
             padding-right: 55px;
         }
@@ -237,6 +251,11 @@ button{
         border: 1px solid @theme-gris2;
         color: #363636;
         padding: 20px 15px;
+        &.one-column{
+            ul{
+                columns: 1;
+            }
+        }
         ul{
             list-style-type: none;
             margin: 0;
@@ -263,7 +282,10 @@ button{
         }
     }
     &.is-active{
-        z-index: 3;
+        z-index: 5;
+        &:before{
+            display: block;
+        }
         .select-options{
             display: block;
         }
