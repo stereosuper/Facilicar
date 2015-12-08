@@ -5416,6 +5416,7 @@ a.btn-slider-citation:hover.btn-right span {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.375em;
   color: #b0b0a8;
+  margin: -4px 0 2px 0;
 }
 .is-list .car-price-saving {
   opacity: 1;
@@ -5455,7 +5456,7 @@ a.btn-slider-citation:hover.btn-right span {
           transform: none;
   text-align: right;
   width: 50%;
-  bottom: 75px;
+  bottom: 73px;
   left: inherit;
   right: 20px;
 }
