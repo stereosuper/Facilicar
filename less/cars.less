@@ -174,6 +174,75 @@
 	text-overflow: ellipsis;
 }
 
+.car-options{
+	margin: 10px 0 0 0;
+	.zone-picto{
+		display: inline-block;
+		vertical-align: top;
+		width: 34px;
+		height: 34px;
+		text-align: center;
+		font-size: 25px;
+		color: @theme-gris3;
+		line-height: 34px;
+		&.icon-gps{
+			font-size: 25px;
+		}
+		&.icon-clim{
+			font-size: 22px;
+		}
+		&.icon-toit-ouvrant{
+			font-size: 20px;
+		}
+		&.icon-control-recul{
+			font-size: 14px;
+		}
+		&.nb-places{
+			.places{
+				display: inline-block;
+				vertical-align: middle;
+				background-color: @theme-gris3;
+				padding: 2px 7px;
+				margin: 0;
+				.texta(0.5em);
+				line-height: 1em;
+				color: #fff;
+				border-radius: 10px;
+				margin-top: -5px;
+			}
+		}
+		&.icon-phares{
+			font-size: 18px;
+		}
+		&.icon-cuir{
+			font-size: 20px;
+		}
+		&.icon-quatre-quatre{
+			font-size: 26px;
+		}
+	}
+}
+
+.car-photos{
+	display: none;
+	.texta-medium(1em);
+	color: @theme-secondary;
+	text-decoration: underline;
+	margin: 12px 0 0 0;
+	padding: 10px 0 10px 48px;
+	position: relative;
+	line-height: 1em;
+	&:before{
+		.icon-font;
+		content: "\e91e";
+		font-size: 41px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin: -20px 0 0 0;
+	}
+}
+
 .motor-color{
 	opacity: 0;
 	transition: opacity 0.2s ease-in-out;
@@ -255,6 +324,24 @@
 	text-transform: uppercase;
 }
 
+.car-btn-wishlist{
+	display: none;
+	.texta-medium(1em);
+	color: @theme-noir;
+	text-decoration: underline;
+	position: relative;
+	padding: 0 0 0 20px;
+	&:before{
+		content: "\e800";
+		.icon-font;
+		font-size: 12px;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin: -6px 0 0 0;
+	}
+}
+
 .zone-arrow-btn{
 	display: inline-block;
 	vertical-align: middle;
@@ -289,10 +376,55 @@
 	margin: 0 2px;
 	.texta-light(0.813em);
 	text-transform: uppercase;
-
 	transform: translateY(0px);
 	transition: transform 0.2s ease-in-out;
 	transition-delay: 0.1s;
+	&.indic{
+		display: none;
+		position: relative;
+		&.stock{
+			background-color: @theme-vert;
+			color: #fff;
+			padding-left: 24px; 
+			&:before{
+				content: "\e91c";
+				.icon-font;
+				font-size: 10px;
+				position: absolute;
+				top: 50%;
+				left: 8px;
+				margin: -5px 0 0 0;
+			}
+		}
+		&.arrivage{
+			background-color: @theme-marron;
+			color: #fff;
+			padding-left: 26px; 
+			&:before{
+				content: "\e91a";
+				.icon-font;
+				font-size: 10px;
+				position: absolute;
+				top: 50%;
+				left: 9px;
+				margin: -5px 0 0 0;
+			}
+		}
+		&.reserve{
+			background-color: @theme-gris2;
+			color: #fff;
+			padding-left: 24px; 
+			&:before{
+				content: "\e91b";
+				.icon-font;
+				font-size: 10px;
+				position: absolute;
+				top: 50%;
+				left: 9px;
+				margin: -5px 0 0 0;
+			}
+		}
+	}
 }
 
 .result-cars-number{
@@ -724,19 +856,20 @@
 	}
 	.bandeau-car{
 		width: auto;
-		height: 100%;
+		height: auto;
 		left: 322px;
 		right: 0;
 		text-align: left;
 		overflow: visible;
 		&.bandeau-top{
 			top: 20px;
+			bottom: 20px;
 			right: inherit;
 		}
 		&.bandeau-bottom{
 			left: inherit;
 			top: 20px;
-			bottom: inherit;
+			bottom: 20px;
 			right: 20px;
 			text-align: right;
 		}
@@ -789,28 +922,126 @@
 		font-size: 1em;
 		color: @theme-gris3;
 	}
-	.car-old-price{
-		position: relative;
-		bottom: inherit;
-		left: inherit;
+	.car-options{
+		display: block;
+	}
+	.car-photos{
+		display: block;
 	}
 	.car-price{
 		transform: none;
 		position: relative;
-		bottom: inherit;
-		left: inherit;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		.texta-light(2.813em);
+		.acronym{
+			font-size: 0.444em;
+			margin: 0 0 0 -5px;
+		}
+	}
+	.car-old-price{
+		position: relative;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		.texta-light(1.375em);
+		color: @theme-gris2;
 	}
 	.car-price-saving{
 		opacity: 1;
 		transform: none;
 		position: relative;
-		bottom: inherit;
+		bottom: 0;
+		left: 0;
+		right: 0;
 	}
 	.car-btn-essai{
 		opacity: 1;
 		transform: none;
-		position: relative;
-		bottom: inherit;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: inline-block;
+		vertical-align: top;
+		padding: 9px 20px;
+	}
+	.car-btn-wishlist{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.car-labels{
+		transform: none;
+		text-align: right;
+		width: 50%;
+		bottom: 75px;
+		left: inherit;
+		right: 20px;
+	}
+	.car-label{
+		&:last-of-type{
+			margin: 0 0 0 2px;
+		}
+		&.indic{
+			display: inline-block;
+		}
+	}
+	.wrapper-car{
+		&:hover{
+			.fond-bandeau-car{
+				&.bandeau-top{
+					transform: none;
+					transition-delay: 0s;
+				}
+				&.bandeau-bottom{
+					transform: none;
+					transition-delay: 0s;
+				}
+			}
+			.car-year{
+				transform: none;
+				transition-delay: 0s;
+			}
+			.car-name{
+				transform: none;
+				transition-delay: 0s;
+			}
+			.car-desc{
+				transition-delay: 0.1s;
+			}
+			.motor-color{
+				transition-delay: 0.1s;
+			}
+			.car-km{
+				transform: none;
+				transition-delay: 0s;
+			}
+			.car-price{
+				transform: none;
+				transition-delay: 0s;
+			}
+			.car-price-saving{
+				transform: none;
+				transition-delay: 0s;
+			}
+			.car-btn-essai{
+				transition-delay: 0.1s;
+			}
+			.bandeau-car{
+				&.bandeau-bottom{
+					height: auto;
+					transition-delay: 0s;
+				}
+			}
+			.car-labels{
+				transition-delay: 0s;
+			}
+			.car-label{
+				transform: none;
+				transition-delay: 0s;
+			}
+		}
 	}
 }
 
