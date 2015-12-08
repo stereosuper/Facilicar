@@ -175,6 +175,30 @@ function descRecherche(){
 	}
 }
 
+// Lancer le slideshow des photos de la voiture
+function animateNextCarSlide(ulActiveAze, currentSlideNb){
+	var currentSlideActive = $(">li.is-active", ulActiveAze);
+	var nextSlide = $(">li", ulActiveAze).eq(currentSlideNb);
+	TweenMax.set(nextSlide, {x: "100%"});
+	TweenMax.to(currentSlideActive, 1, {x: "-100%", ease:Cubic.easeInOut, delay: 0.5});
+	TweenMax.to(nextSlide, 1, {x: "0%", ease:Cubic.easeInOut, delay: 0.5, onComplete: completeAnimateNextCarSlide, onCompleteParams: [ulActiveAze, currentSlideNb]});
+}
+
+function completeAnimateNextCarSlide(ulActiveAze, currentSlideNb){
+	var nbSlidesCars = $(">li", ulActiveAze).length;
+	var currentSlideActive = $(">li.is-active", ulActiveAze);
+	var nextSlide = $(">li", ulActiveAze).eq(currentSlideNb);
+	currentSlideActive.removeClass("is-active");
+	nextSlide.addClass("is-active");
+	
+	if((currentSlideNb+1)<nbSlidesCars){
+		currentSlideNb++;
+	}else{
+		currentSlideNb=0;
+	}
+	animateNextCarSlide(ulActiveAze, currentSlideNb);
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -500,6 +524,25 @@ $(function(){
 		}
 		return false;
 	});
+
+	// Hover wrapper car
+	$(".list-cars .wrapper-car").hover(
+		function() {
+			if($(".list-cars").hasClass("is-list")){
+				// Lancer le slideshow des photos de la voiture
+				if($("ul", this).length){
+					var ulActive = $("ul", this);
+					var nbSlidesCars = $("ul li", this).length;
+					if(nbSlidesCars>1){
+						animateNextCarSlide(ulActive, 1);
+					}
+				}
+			}
+		}, function() {
+			// Arreter le slideshow
+			TweenMax.killTweensOf($("ul >li", this));
+		}
+	);
 
 	// Clic sur un select custom
 	$(".select-placeholder").click(function(){
