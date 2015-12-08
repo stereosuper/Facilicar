@@ -4,7 +4,7 @@
 	width: 100%;
 	height: 100%;
 	box-sizing: border-box;
-	border: 1px solid @theme-gris;
+	border: 1px solid @theme-gris2;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
@@ -1014,7 +1014,9 @@
 		}
 	}
 	.wrapper-car{
+		transition: border-color 0.2s ease-in-out;
 		&:hover{
+			border-color: @theme-primary;
 			.bandeau-image-car{
 				//width: 363px;
 				transform: scale(1.2);

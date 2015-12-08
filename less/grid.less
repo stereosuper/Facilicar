@@ -32,6 +32,24 @@
     		margin: 0 0 0 27px;
     	}
     }
+    &:after{
+        content: "";
+        display: none;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: @theme-noir;
+        opacity: 0.1;
+    }
+    .select-custom-open &{
+    	&:after{
+			display: block;
+    	}
+    }
 }
 #zone-right-header{
 	float: right;

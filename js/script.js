@@ -506,8 +506,10 @@ $(function(){
 		if(!$(this).parents(".select-custom").hasClass("is-active")){
 			$(".select-custom.is-active").removeClass("is-active");
 			$(this).parents(".select-custom").addClass("is-active");
+			$("body").removeClass("select-custom-open").addClass("select-custom-open");
 		}else{
 			$(".select-custom.is-active").removeClass("is-active");
+			$("body").removeClass("select-custom-open");
 		}
 		return false;
 	});
@@ -524,6 +526,7 @@ $(function(){
 
 		var sSkinActive = $(".select-custom.is-active");
 		sSkinActive.removeClass("is-active");
+		$("body").removeClass("select-custom-open");
 		majPlaceholder(sSkinActive);
 		return false;
 	});
@@ -540,6 +543,7 @@ $(function(){
 	    		if($(".select-custom").hasClass("is-active")){
 	    			var sSkinActive = $(".select-custom.is-active");
 	    			sSkinActive.removeClass("is-active");
+	    			$("body").removeClass("select-custom-open");
 	    			majPlaceholder(sSkinActive);
 	    		}
 	    	}

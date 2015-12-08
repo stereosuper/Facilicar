@@ -1096,6 +1096,22 @@ a.btn-menu-responsive .rect:before {
 .header-on #header a.logo-facilicar {
   margin: 0 0 0 27px;
 }
+#header:after {
+  content: "";
+  display: none;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #333333;
+  opacity: 0.1;
+}
+.select-custom-open #header:after {
+  display: block;
+}
 #zone-right-header {
   float: right;
   text-align: right;
@@ -4357,7 +4373,7 @@ a.btn-slider-citation:hover.btn-right span {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  border: 1px solid #797973;
+  border: 1px solid #b0b0a8;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -5465,6 +5481,13 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .is-list .car-label.indic {
   display: inline-block;
+}
+.is-list .wrapper-car {
+  -webkit-transition: border-color 0.2s ease-in-out;
+          transition: border-color 0.2s ease-in-out;
+}
+.is-list .wrapper-car:hover {
+  border-color: #009cc4;
 }
 .is-list .wrapper-car:hover .bandeau-image-car {
   -webkit-transform: scale(1.2);
