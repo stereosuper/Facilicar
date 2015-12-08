@@ -175,6 +175,7 @@
 }
 
 .car-options{
+	display: none;
 	margin: 10px 0 0 0;
 	.zone-picto{
 		display: inline-block;
@@ -312,11 +313,15 @@
 	margin: 0;
 }
 
+.car-zone-btn{
+	bottom: 8px;
+}
+
 .car-btn-essai{
+	display: block;
 	opacity: 0;
 	transition: opacity 0.2s ease-in-out;
 	transition-delay: 0s;
-	bottom: 8px;
 	background-color: @theme-primary;
 	color: #ffffff;
 	padding: 9px 0;
@@ -331,6 +336,7 @@
 	text-decoration: underline;
 	position: relative;
 	padding: 0 0 0 20px;
+	margin: 0 20px 0 0;
 	&:before{
 		content: "\e800";
 		.icon-font;
@@ -789,8 +795,15 @@
 			padding: 0 12px 0 0;
 			text-decoration: none;
 			color: @theme-gris2;
+			transition: opacity 0.2s ease-in-out;
 			&.is-selected{
 				color: @theme-secondary;
+				&:hover{
+					opacity: 1;
+				}
+			}
+			&:hover{
+				opacity: 0.8;
 			}
 		}
 	}
@@ -811,6 +824,7 @@
 		font-size: 14px;
 		text-decoration: none;
 		color: @theme-gris2;
+		transition: transform 0.2s ease-in-out;
 		&.icon-triangle-down{
 			padding: 9px 2px 0 0;
 		}
@@ -819,6 +833,9 @@
 		}
 		&.is-selected{
 			color: @theme-secondary;
+		}
+		&:hover{
+			opacity: 0.8;
 		}
 	}
 	&.is-active{
@@ -850,6 +867,8 @@
 		width: 303px;
 		height: 100%;
 		top: 0px;
+		transition: all 0.2s ease-in-out;
+		transform-origin: 0 50%;
 	}
 	.fond-bandeau-car{
 		display: none;
@@ -865,6 +884,7 @@
 			top: 20px;
 			bottom: 20px;
 			right: inherit;
+			transition: transform 0.2s ease-in-out;
 		}
 		&.bandeau-bottom{
 			left: inherit;
@@ -956,20 +976,25 @@
 		left: 0;
 		right: 0;
 	}
+	.car-zone-btn{
+		display: inline-block;
+		vertical-align: top;
+		left: inherit;
+		min-width: 450px;
+		bottom: 0;
+		right: 0;
+	}
 	.car-btn-essai{
 		opacity: 1;
 		transform: none;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
+		position: relative;
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 		padding: 9px 20px;
 	}
 	.car-btn-wishlist{
 		display: inline-block;
-		vertical-align: top;
+		vertical-align: middle;
 	}
 	.car-labels{
 		transform: none;
@@ -989,10 +1014,14 @@
 	}
 	.wrapper-car{
 		&:hover{
+			.bandeau-image-car{
+				//width: 363px;
+				transform: scale(1.2);
+			}
 			.fond-bandeau-car{
 				&.bandeau-top{
-					transform: none;
 					transition-delay: 0s;
+					transfom: none;
 				}
 				&.bandeau-bottom{
 					transform: none;
@@ -1032,6 +1061,9 @@
 				&.bandeau-bottom{
 					height: auto;
 					transition-delay: 0s;
+				}
+				&.bandeau-top{
+					transform: translateX(60px);
 				}
 			}
 			.car-labels{

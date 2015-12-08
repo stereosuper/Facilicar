@@ -482,6 +482,25 @@ $(function(){
 		return false;
 	});
 
+	// Clic sur les boutons mosaique / liste
+	$(".icon-mosaique").click(function(){
+		if($(".list-cars").hasClass("is-list")){
+			$(".list-cars").removeClass("is-list");
+			$(".icon-liste").removeClass("is-selected");
+			$(".icon-mosaique").addClass("is-selected");
+		}
+		return false;
+	});
+
+	$(".icon-liste").click(function(){
+		if(!$(".list-cars").hasClass("is-list")){
+			$(".list-cars").addClass("is-list");
+			$(".icon-mosaique").removeClass("is-selected");
+			$(".icon-liste").addClass("is-selected");
+		}
+		return false;
+	});
+
 	// Clic sur un select custom
 	$(".select-placeholder").click(function(){
 		if(!$(this).parents(".select-custom").hasClass("is-active")){

@@ -4557,6 +4557,7 @@ a.btn-slider-citation:hover.btn-right span {
   text-overflow: ellipsis;
 }
 .car-options {
+  display: none;
   margin: 10px 0 0 0;
 }
 .car-options .zone-picto {
@@ -4713,13 +4714,16 @@ a.btn-slider-citation:hover.btn-right span {
   padding: 2px 4px;
   margin: 0;
 }
+.car-zone-btn {
+  bottom: 8px;
+}
 .car-btn-essai {
+  display: block;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
           transition: opacity 0.2s ease-in-out;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
-  bottom: 8px;
   background-color: #009cc4;
   color: #ffffff;
   padding: 9px 0;
@@ -4738,6 +4742,7 @@ a.btn-slider-citation:hover.btn-right span {
   text-decoration: underline;
   position: relative;
   padding: 0 0 0 20px;
+  margin: 0 20px 0 0;
 }
 .car-btn-wishlist:before {
   content: "\e800";
@@ -5217,10 +5222,20 @@ a.btn-slider-citation:hover.btn-right span {
   padding: 0 12px 0 0;
   text-decoration: none;
   color: #b0b0a8;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
 }
 .zone-sort-by a.icon-mosaique.is-selected,
 .zone-sort-by a.icon-liste.is-selected {
   color: #e38c00;
+}
+.zone-sort-by a.icon-mosaique.is-selected:hover,
+.zone-sort-by a.icon-liste.is-selected:hover {
+  opacity: 1;
+}
+.zone-sort-by a.icon-mosaique:hover,
+.zone-sort-by a.icon-liste:hover {
+  opacity: 0.8;
 }
 .sort-by {
   font-family: 'Texta-Light', sans-serif;
@@ -5239,6 +5254,8 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 14px;
   text-decoration: none;
   color: #b0b0a8;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
 }
 .sort-by a.icon-triangle-down {
   padding: 9px 2px 0 0;
@@ -5248,6 +5265,9 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .sort-by a.is-selected {
   color: #e38c00;
+}
+.sort-by a:hover {
+  opacity: 0.8;
 }
 .sort-by.is-active {
   font-family: 'Texta-Black', sans-serif;
@@ -5277,6 +5297,11 @@ a.btn-slider-citation:hover.btn-right span {
   width: 303px;
   height: 100%;
   top: 0px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
 }
 .is-list .fond-bandeau-car {
   display: none;
@@ -5293,6 +5318,8 @@ a.btn-slider-citation:hover.btn-right span {
   top: 20px;
   bottom: 20px;
   right: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
 }
 .is-list .bandeau-car.bandeau-bottom {
   left: inherit;
@@ -5400,22 +5427,27 @@ a.btn-slider-citation:hover.btn-right span {
   left: 0;
   right: 0;
 }
+.is-list .car-zone-btn {
+  display: inline-block;
+  vertical-align: top;
+  left: inherit;
+  min-width: 450px;
+  bottom: 0;
+  right: 0;
+}
 .is-list .car-btn-essai {
   opacity: 1;
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   padding: 9px 20px;
 }
 .is-list .car-btn-wishlist {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .is-list .car-labels {
   -webkit-transform: none;
@@ -5433,12 +5465,15 @@ a.btn-slider-citation:hover.btn-right span {
 .is-list .car-label.indic {
   display: inline-block;
 }
+.is-list .wrapper-car:hover .bandeau-image-car {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+}
 .is-list .wrapper-car:hover .fond-bandeau-car.bandeau-top {
-  -webkit-transform: none;
-      -ms-transform: none;
-          transform: none;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+  transfom: none;
 }
 .is-list .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: none;
@@ -5498,6 +5533,11 @@ a.btn-slider-citation:hover.btn-right span {
   height: auto;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+.is-list .wrapper-car:hover .bandeau-car.bandeau-top {
+  -webkit-transform: translateX(60px);
+      -ms-transform: translateX(60px);
+          transform: translateX(60px);
 }
 .is-list .wrapper-car:hover .car-labels {
   -webkit-transition-delay: 0s;
