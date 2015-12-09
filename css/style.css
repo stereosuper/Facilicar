@@ -4488,6 +4488,9 @@ a.btn-slider-citation:hover.btn-right span {
       -ms-transform: translateX(0%);
           transform: translateX(0%);
 }
+.bandeau-image-car ul > li:first-of-type {
+  z-index: 2;
+}
 .fond-bandeau-car {
   display: block;
   width: 100%;

@@ -199,6 +199,15 @@ function completeAnimateNextCarSlide(ulActiveAze, currentSlideNb){
 	animateNextCarSlide(ulActiveAze, currentSlideNb);
 }
 
+function completeEndCarSlide(ulActiveAze){
+	var currentSlideActive = $(">li.is-active", ulActiveAze);
+	var nextSlide = $(">li", ulActiveAze).eq(0);
+	currentSlideActive.removeClass("is-active");
+	nextSlide.addClass("is-active");
+	TweenMax.set($(">li", ulActiveAze), {x: "100%"});
+	TweenMax.set($(">li.is-active", ulActiveAze), {x: "0%"});
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -541,6 +550,14 @@ $(function(){
 		}, function() {
 			// Arreter le slideshow
 			TweenMax.killTweensOf($("ul >li", this));
+			var ulActiveAze = $("ul", this);
+			var slideOne = $(">li", ulActiveAze).eq(0);
+
+			if(!$("ul li", this).first().hasClass("is-active")){
+				TweenMax.set(slideOne, {x: "100%"});
+			}
+			
+			TweenMax.to(slideOne, 0.2, {x: "0%", ease:Cubic.easeInOut, onComplete: completeEndCarSlide, onCompleteParams: [ulActiveAze]});
 		}
 	);
 
