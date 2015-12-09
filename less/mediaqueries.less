@@ -47,6 +47,12 @@
         }
     }
     /* @end */
+
+    /* @group Filters */
+    .slider-range-inline#filter-prix{
+        width: 200px;
+    }
+    /* @end */
 }
 
 @media (max-width: 1150px) {
@@ -138,6 +144,23 @@
         &.cta{
             font-size: 1em;
         }
+    }
+    /* @end */
+
+    /* @group Filters */
+    .slider-range-inline#filter-prix{
+        width: 200px;
+    }
+    .cars-filters{
+        .list-inline{
+            &.list-select-one{
+                > li{
+                    &:last-child{
+                        display: block;
+                    }
+                }
+            }
+        }    
     }
     /* @end */
 }
@@ -1086,6 +1109,61 @@
             .visu-article{
                 width: 100px;
             }    
+        }
+    }
+    /* @end */
+
+    /* @group Filters */
+    .cars-filters{
+        .list-inline{
+            &.list-select-one{
+                > li{
+                    &:last-child{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .line-filters-two{
+        .wrapper-align-middle{
+            display: block;
+        }
+        .content-align-middle{
+            display: block;
+            margin: 5px 0;
+            &.txt-right-aligned{
+                text-align: left;
+            }
+        }
+    }
+    .line-filters-three{
+        ul.list-inline{
+            > li{
+                display: block;
+                margin: 15px 0;
+            }
+        }
+    }
+    .line-filters-four{
+        .wrapper-align-middle{
+            display: block;
+        }
+        .content-align-middle{
+            display: block;
+            &.txt-right-aligned{
+                text-align: left;
+            }
+        }
+    }
+    #content-more-criteres .list-inline > li:last-of-type{
+        margin-left: 0;
+    }
+    .lines-filters, .list-block.lines-filters{
+        >li{
+            &:last-of-type{
+                margin-top: 15px;
+            }
         }
     }
     /* @end */

@@ -2623,7 +2623,7 @@ a:focus {
   display: none;
 }
 .list-inline.small-margin > li {
-  margin: 0 10px 0 0;
+  margin: 5px 10px 5px 0;
 }
 .list-block {
   display: block;
@@ -3314,7 +3314,8 @@ button:focus {
   vertical-align: middle;
 }
 .slider-range-inline#filter-prix {
-  width: 320px;
+  width: 310px;
+  margin: 0 11px 0 0;
 }
 .slider-range-inline.ui-corner-all {
   border-radius: 0px;
@@ -5099,7 +5100,7 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .lines-filters > li,
 .list-block.lines-filters > li {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 .lines-filters > li:last-of-type,
 .list-block.lines-filters > li:last-of-type {
@@ -5791,6 +5792,11 @@ a.btn-slider-citation:hover.btn-right span {
     padding: 0 15px;
   }
   /* @end */
+  /* @group Filters */
+  .slider-range-inline#filter-prix {
+    width: 200px;
+  }
+  /* @end */
 }
 @media (max-width: 1150px) {
   .wrapper-img .container {
@@ -5866,6 +5872,14 @@ a.btn-slider-citation:hover.btn-right span {
   /* @group Car */
   .wrapper-car.cta {
     font-size: 1em;
+  }
+  /* @end */
+  /* @group Filters */
+  .slider-range-inline#filter-prix {
+    width: 200px;
+  }
+  .cars-filters .list-inline.list-select-one > li:last-child {
+    display: block;
   }
   /* @end */
 }
@@ -6834,6 +6848,41 @@ a.btn-slider-citation:hover.btn-right span {
   .articles-presse > li .visu-article,
   #main .articles-presse > li .visu-article {
     width: 100px;
+  }
+  /* @end */
+  /* @group Filters */
+  .cars-filters .list-inline.list-select-one > li:last-child {
+    display: inline-block;
+  }
+  .line-filters-two .wrapper-align-middle {
+    display: block;
+  }
+  .line-filters-two .content-align-middle {
+    display: block;
+    margin: 5px 0;
+  }
+  .line-filters-two .content-align-middle.txt-right-aligned {
+    text-align: left;
+  }
+  .line-filters-three ul.list-inline > li {
+    display: block;
+    margin: 15px 0;
+  }
+  .line-filters-four .wrapper-align-middle {
+    display: block;
+  }
+  .line-filters-four .content-align-middle {
+    display: block;
+  }
+  .line-filters-four .content-align-middle.txt-right-aligned {
+    text-align: left;
+  }
+  #content-more-criteres .list-inline > li:last-of-type {
+    margin-left: 0;
+  }
+  .lines-filters > li:last-of-type,
+  .list-block.lines-filters > li:last-of-type {
+    margin-top: 15px;
   }
   /* @end */
 }
