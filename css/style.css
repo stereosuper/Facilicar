@@ -4504,6 +4504,7 @@ a.btn-slider-citation:hover.btn-right span {
   background-color: #ffffff;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
+  z-index: 2;
 }
 .fond-bandeau-car.bandeau-top {
   top: 0;
@@ -4531,6 +4532,7 @@ a.btn-slider-citation:hover.btn-right span {
   box-sizing: border-box;
   padding: 0;
   overflow: hidden;
+  z-index: 3;
 }
 .bandeau-car.bandeau-top {
   top: 0;
@@ -4835,6 +4837,7 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
   opacity: 1;
+  z-index: 4;
 }
 .car-label {
   display: inline-block;
