@@ -12,7 +12,10 @@
 		.texta-light(1.25em);
 		color: @theme-noir;
 		text-decoration: none;
-		line-height: 1.1em;
+		line-height: 1.2em;
+		&.big-line-height{
+			line-height: 1.3em;
+		}
 		i{
 			.texta-light-italic(1.2em);
 			color: #AEACA1;
@@ -29,6 +32,15 @@
 			padding: 0 20px;
 			position: relative;
 		}
+		.tel{
+			padding-right: 20px;
+		}
+		.icon-tel{
+			display: inline-block;
+			vertical-align: top;
+			margin: 2px 15px 0 0;
+			font-size: 0.9em;
+		}
 		.cta-content{
 			display: block;
 			&.cta-img{
@@ -37,9 +49,17 @@
 				img{
 					max-width: 50%;
 				}
+				&.full-width{
+					img{
+						max-width: 100%;
+					}
+				}
 			}
 			&.cta-txt{
 				margin: 5px 0;
+				&.big-margin{
+					margin: 12px 0;
+				}
 			}
 			&.cta-btn{
 				display: block;
@@ -60,8 +80,12 @@
 				}
 				.btn-underline{
 					padding: 0 12px;
+					display: inline-block;
+					vertical-align: top;
+					text-align: left;
 					&:before{
-						top: 5px;
+						top: 50%;
+						transform: translateY(-50%);
 					}
 				}
 			}

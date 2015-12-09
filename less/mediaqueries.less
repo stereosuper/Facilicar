@@ -1581,11 +1581,20 @@
     .wrapper-car{
         &.cta{
             font-size: 0.9em;
+            &.big-line-height{
+                line-height: 1.1em;
+            }
             i{
                 font-size: 1em;
             }
             strong{
                 font-size: 1em;
+            }
+            .tel{
+                padding-right: 8px;
+            }
+            .icon-tel{
+                margin: 1px 8px 0 0;
             }
             .cta-content{
                 &.cta-img{
@@ -1594,6 +1603,11 @@
                     img{
                         max-width: inherit;
                         max-height: 40px;
+                    }
+                }
+                &.cta-txt{
+                    &.big-margin{
+                        margin: 2px 0;
                     }
                 }
                 &.cta-btn{

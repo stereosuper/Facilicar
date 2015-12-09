@@ -4383,7 +4383,10 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 1.25em;
   color: #333333;
   text-decoration: none;
-  line-height: 1.1em;
+  line-height: 1.2em;
+}
+.wrapper-car.cta.big-line-height {
+  line-height: 1.3em;
 }
 .wrapper-car.cta i {
   font-family: 'Texta-LightIt', sans-serif;
@@ -4403,6 +4406,15 @@ a.btn-slider-citation:hover.btn-right span {
   padding: 0 20px;
   position: relative;
 }
+.wrapper-car.cta .tel {
+  padding-right: 20px;
+}
+.wrapper-car.cta .icon-tel {
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px 15px 0 0;
+  font-size: 0.9em;
+}
 .wrapper-car.cta .cta-content {
   display: block;
 }
@@ -4413,8 +4425,14 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-car.cta .cta-content.cta-img img {
   max-width: 50%;
 }
+.wrapper-car.cta .cta-content.cta-img.full-width img {
+  max-width: 100%;
+}
 .wrapper-car.cta .cta-content.cta-txt {
   margin: 5px 0;
+}
+.wrapper-car.cta .cta-content.cta-txt.big-margin {
+  margin: 12px 0;
 }
 .wrapper-car.cta .cta-content.cta-btn {
   display: block;
@@ -4437,9 +4455,15 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .wrapper-car.cta .cta-content.cta-btn .btn-underline {
   padding: 0 12px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
 }
 .wrapper-car.cta .cta-content.cta-btn .btn-underline:before {
-  top: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: translateY(0px) translateZ(1px);
@@ -7304,11 +7328,20 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-car.cta {
     font-size: 0.9em;
   }
+  .wrapper-car.cta.big-line-height {
+    line-height: 1.1em;
+  }
   .wrapper-car.cta i {
     font-size: 1em;
   }
   .wrapper-car.cta strong {
     font-size: 1em;
+  }
+  .wrapper-car.cta .tel {
+    padding-right: 8px;
+  }
+  .wrapper-car.cta .icon-tel {
+    margin: 1px 8px 0 0;
   }
   .wrapper-car.cta .cta-content.cta-img {
     padding: 8px 0 8px 0;
@@ -7317,6 +7350,9 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-car.cta .cta-content.cta-img img {
     max-width: inherit;
     max-height: 40px;
+  }
+  .wrapper-car.cta .cta-content.cta-txt.big-margin {
+    margin: 2px 0;
   }
   .wrapper-car.cta .cta-content.cta-btn {
     height: 52px;
