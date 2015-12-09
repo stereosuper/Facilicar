@@ -4378,6 +4378,69 @@ a.btn-slider-citation:hover.btn-right span {
   overflow: hidden;
   text-align: center;
 }
+.wrapper-car.cta {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.25em;
+  color: #333333;
+  text-decoration: none;
+  line-height: 1.1em;
+}
+.wrapper-car.cta i {
+  font-family: 'Texta-LightIt', sans-serif;
+  font-size: 1.2em;
+  color: #AEACA1;
+}
+.wrapper-car.cta strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.25em;
+}
+.wrapper-car.cta .cta-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px;
+  position: relative;
+}
+.wrapper-car.cta .cta-content {
+  display: block;
+}
+.wrapper-car.cta .cta-content.cta-img {
+  margin: 0;
+  padding: 20px 0;
+}
+.wrapper-car.cta .cta-content.cta-img img {
+  max-width: 50%;
+}
+.wrapper-car.cta .cta-content.cta-txt {
+  margin: 5px 0;
+}
+.wrapper-car.cta .cta-content.cta-btn {
+  display: block;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-family: 'Texta-Medium', sans-serif;
+  font-size: 1.2em;
+}
+.wrapper-car.cta .cta-content.cta-btn .wrapper-cta-btn {
+  display: table;
+  width: 100%;
+  height: 95px;
+}
+.wrapper-car.cta .cta-content.cta-btn .content-wrapper-cta-btn {
+  display: table-cell;
+  vertical-align: middle;
+}
+.wrapper-car.cta .cta-content.cta-btn .btn-underline {
+  padding: 0 12px;
+}
+.wrapper-car.cta .cta-content.cta-btn .btn-underline:before {
+  top: 5px;
+}
 .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
