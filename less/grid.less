@@ -512,3 +512,41 @@
 	}
 }
 /* @end */
+
+/* @group Map */
+#wrapper-map{
+	display: block;
+	width: 100%;
+	height: 770px;
+	position: relative;
+	#map{
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.wrapper-map-search{
+		display: block;
+		width: 468px;
+		height: auto;
+		position: absolute;
+		top: 385px;
+		left: 0;
+		transform: translateY(-50%);
+	}
+	.map-search-content{
+		display: block;
+		width: 100%;
+		height: auto;
+		box-sizing: border-box;
+		padding: 25px 20px;
+		margin: 5px 0;
+		background-color: #fff;
+		&.map-search-result{
+			display: none;
+		}
+	}
+}
+/* @end */

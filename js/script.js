@@ -677,6 +677,176 @@ $(function(){
 
 	// Positionnement de la description de recherche
 	descRecherche();
+
+
+
+
+
+	// Google map
+	if($("body").hasClass("has-map")){
+		var mapOptions = {
+		scrollwheel: false,
+		navigationControl: false,
+		mapTypeControl: false,
+		center: { lat: 48.856614, lng: 2.3522219000000177},
+		zoom: 10,
+		styles: [
+		    {
+		        "featureType": "administrative.country",
+		        "elementType": "labels.text.fill",
+		        "stylers": [
+		            {
+		                "color": "#175667"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.country",
+		        "elementType": "labels.text.stroke",
+		        "stylers": [
+		            {
+		                "color": "#96d4e4"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.province",
+		        "elementType": "labels.text.fill",
+		        "stylers": [
+		            {
+		                "color": "#175667"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.province",
+		        "elementType": "labels.text.stroke",
+		        "stylers": [
+		            {
+		                "color": "#96d4e4"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.locality",
+		        "elementType": "labels.text.fill",
+		        "stylers": [
+		            {
+		                "color": "#175461"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.locality",
+		        "elementType": "labels.text.stroke",
+		        "stylers": [
+		            {
+		                "color": "#7bc6e9"
+		            },
+		            {
+		                "weight": "0.88"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "administrative.locality",
+		        "elementType": "labels.icon",
+		        "stylers": [
+		            {
+		                "color": "#59b1e9"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "landscape",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "color": "#92d0df"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "poi",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "poi.park",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "color": "#79c6b5"
+		            },
+		            {
+		                "visibility": "on"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "geometry.fill",
+		        "stylers": [
+		            {
+		                "color": "#959f59"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "geometry.stroke",
+		        "stylers": [
+		            {
+		                "color": "#82bcbf"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "road",
+		        "elementType": "labels",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "transit",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "visibility": "off"
+		            }
+		        ]
+		    },
+		    {
+		        "featureType": "water",
+		        "elementType": "all",
+		        "stylers": [
+		            {
+		                "saturation": "48"
+		            },
+		            {
+		                "lightness": "-1"
+		            },
+		            {
+		                "gamma": "6.27"
+		            },
+		            {
+		                "color": "#70c3e9"
+		            }
+		        ]
+		    }
+		]
+	};
+
+	map = new google.maps.Map(document.getElementById('map'),
+	      mapOptions);
+	}
 });
 
 $(window).resize(function(){

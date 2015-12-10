@@ -1574,6 +1574,45 @@ a.btn-menu-responsive .rect:before {
   padding: 20px 0;
 }
 /* @end */
+/* @group Map */
+#wrapper-map {
+  display: block;
+  width: 100%;
+  height: 770px;
+  position: relative;
+}
+#wrapper-map #map {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrapper-map .wrapper-map-search {
+  display: block;
+  width: 468px;
+  height: auto;
+  position: absolute;
+  top: 385px;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#wrapper-map .map-search-content {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 25px 20px;
+  margin: 5px 0;
+  background-color: #fff;
+}
+#wrapper-map .map-search-content.map-search-result {
+  display: none;
+}
+/* @end */
 /* @group Buttons */
 a.btn-anim,
 div.btn-anim,
