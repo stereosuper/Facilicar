@@ -519,6 +519,9 @@
 	width: 100%;
 	height: 770px;
 	position: relative;
+	.header-on &{
+		margin-top: 110px;
+	}
 	#map{
 		display: block;
 		width: 100%;
@@ -548,5 +551,52 @@
 			display: none;
 		}
 	}
+	p{
+		.texta-light(1em);
+		box-sizing: border-box;
+		padding: 0 18px;
+	}
+	.list-legend{
+		> li{
+			margin: 0 30px 0 0;
+			position: relative;
+			padding: 0 0 0 28px;
+			line-height: 1.1em;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+
+	}
+}
+.img-facilistore{
+	display: inline-block;
+	vertical-align: top;
+	width: 18px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../layoutImg/facilistore.png") no-repeat 0 0;
+}
+.img-agence-relais{
+	display: inline-block;
+	vertical-align: top;
+	width: 18px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../layoutImg/agence-relais.png") no-repeat 0 0;
+}
+.img-centre-essai-livraison{
+	display: inline-block;
+	vertical-align: top;
+	width: 18px;
+	height: 22px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../layoutImg/centre-essai-livraison.png") no-repeat 0 0;
 }
 /* @end */

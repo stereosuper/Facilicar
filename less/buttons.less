@@ -33,7 +33,6 @@ a, div, span{
 	}
 	&.btn-toggle-one{
 		text-decoration: none;
-		.texta-black(1em);
 		text-transform: uppercase;
 		padding: 10px 50px 10px 0;
 		color: @theme-noir;
@@ -50,6 +49,26 @@ a, div, span{
 		}
 		&.right{
 			padding-left: 6px;
+		}
+		&.small{
+			.texta-light(1em);
+			line-height: 1.3em;
+			strong{
+				display: block;
+				.texta-black(1.375em);
+			}
+			.arrow-toggle-one{
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				.texta-black(1.5em);
+				&.left{
+					left: 14px;
+				}
+				&.right{
+					right: 14px;
+				}
+			}
 		}
 		.border{
 			display: block;

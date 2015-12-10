@@ -766,6 +766,9 @@ a.color-theme-black:hover {
 .content-toggle-one {
   display: none;
 }
+.content-toggle-one.open {
+  display: block;
+}
 /* @group Wrapper top */
 .wrapper-top {
   display: block;
@@ -1581,6 +1584,9 @@ a.btn-menu-responsive .rect:before {
   height: 770px;
   position: relative;
 }
+.header-on #wrapper-map {
+  margin-top: 110px;
+}
 #wrapper-map #map {
   display: block;
   width: 100%;
@@ -1611,6 +1617,51 @@ a.btn-menu-responsive .rect:before {
 }
 #wrapper-map .map-search-content.map-search-result {
   display: none;
+}
+#wrapper-map p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  box-sizing: border-box;
+  padding: 0 18px;
+}
+#wrapper-map .list-legend > li {
+  margin: 0 30px 0 0;
+  position: relative;
+  padding: 0 0 0 28px;
+  line-height: 1.1em;
+}
+#wrapper-map .list-legend > li:last-child {
+  margin-right: 0;
+}
+.img-facilistore {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../layoutImg/facilistore.png") no-repeat 0 0;
+}
+.img-agence-relais {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../layoutImg/agence-relais.png") no-repeat 0 0;
+}
+.img-centre-essai-livraison {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../layoutImg/centre-essai-livraison.png") no-repeat 0 0;
 }
 /* @end */
 /* @group Buttons */
@@ -1671,8 +1722,6 @@ a.btn-toggle-one,
 div.btn-toggle-one,
 span.btn-toggle-one {
   text-decoration: none;
-  font-size: 1em;
-  /* Better Font Rendering =========== */
   text-transform: uppercase;
   padding: 10px 50px 10px 0;
   color: #333333;
@@ -1698,6 +1747,47 @@ a.btn-toggle-one.right,
 div.btn-toggle-one.right,
 span.btn-toggle-one.right {
   padding-left: 6px;
+}
+a.btn-toggle-one.small,
+div.btn-toggle-one.small,
+span.btn-toggle-one.small {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+a.btn-toggle-one.small strong,
+div.btn-toggle-one.small strong,
+span.btn-toggle-one.small strong {
+  display: block;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.375em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a.btn-toggle-one.small .arrow-toggle-one,
+div.btn-toggle-one.small .arrow-toggle-one,
+span.btn-toggle-one.small .arrow-toggle-one {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.5em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a.btn-toggle-one.small .arrow-toggle-one.left,
+div.btn-toggle-one.small .arrow-toggle-one.left,
+span.btn-toggle-one.small .arrow-toggle-one.left {
+  left: 14px;
+}
+a.btn-toggle-one.small .arrow-toggle-one.right,
+div.btn-toggle-one.small .arrow-toggle-one.right,
+span.btn-toggle-one.small .arrow-toggle-one.right {
+  right: 14px;
 }
 a.btn-toggle-one .border,
 div.btn-toggle-one .border,
@@ -2657,6 +2747,12 @@ a:focus {
 }
 .list-inline.list-half > li:last-of-type {
   padding: 0 0 0 3px;
+}
+.list-inline.list-half.big-padding > li:first-of-type {
+  padding: 0 10px 0 0;
+}
+.list-inline.list-half.big-padding > li:last-of-type {
+  padding: 0 0 0 10px;
 }
 .list-inline.content-toggle-none {
   display: none;
