@@ -6851,6 +6851,9 @@ a.btn-slider-citation:hover.btn-right span {
   }
   /* @end */
   /* @group Filters */
+  .result-cars-number {
+    width: 168px;
+  }
   .cars-filters .list-inline.list-select-one > li:last-child {
     display: inline-block;
   }
@@ -6867,6 +6870,9 @@ a.btn-slider-citation:hover.btn-right span {
   .line-filters-three ul.list-inline > li {
     display: block;
     margin: 15px 0;
+  }
+  .line-filters-three ul.list-inline > li.line-options {
+    margin-bottom: 50px;
   }
   .line-filters-four .wrapper-align-middle {
     display: block;
@@ -7576,6 +7582,17 @@ a.btn-slider-citation:hover.btn-right span {
   .landing h1 {
     font-size: 1.8em;
     margin: 0 0 30px 0;
+  }
+  /* @end */
+  /* @group Filters */
+  .wrapper-car-filters {
+    display: block;
+  }
+  .result-cars-number {
+    display: block;
+  }
+  .cars-filters {
+    display: block;
   }
   /* @end */
 }
