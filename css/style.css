@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-search:before {
+  content: "\e91f";
+}
 .icon-neutral:before {
   content: "\e919";
 }
@@ -1605,6 +1608,25 @@ a.btn-menu-responsive .rect:before {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+#wrapper-map .wrapper-map-search .wrapper-search {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#wrapper-map .wrapper-map-search input {
+  width: 100%;
+  border-color: #AEACA1;
+}
+#wrapper-map .wrapper-map-search button {
+  font-size: 18px;
+  color: #b0b0a8;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin: -9px 0 0 0;
+  padding: 0;
+  background: none;
 }
 #wrapper-map .map-search-content {
   display: block;
