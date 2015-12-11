@@ -761,7 +761,7 @@ a.color-theme-black:hover {
   box-sizing: border-box;
 }
 .content-toggle.small {
-  padding: 20px 80px;
+  padding: 20px 40px;
 }
 .content-toggle.small .content-toggle.small {
   padding: 20px 20px;
@@ -771,6 +771,9 @@ a.color-theme-black:hover {
 }
 .content-toggle-one.open {
   display: block;
+}
+.zone-toggle {
+  margin: 0 0 60px 0;
 }
 /* @group Wrapper top */
 .wrapper-top {
@@ -1032,6 +1035,9 @@ a.btn-menu-responsive .rect:before {
   left: -79px;
   bottom: 7px;
   background-color: #009cc4;
+}
+.content-with-navbar h2.no-content:before {
+  display: none;
 }
 /* @end */
 /* @end */

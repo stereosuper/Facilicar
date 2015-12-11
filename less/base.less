@@ -460,7 +460,7 @@ a.logo-facilicar{
     display: none;
     box-sizing: border-box;
     &.small{
-        padding: 20px 80px;
+        padding: 20px 40px;
         .content-toggle{
             &.small{
                 padding: 20px 20px;
@@ -474,6 +474,10 @@ a.logo-facilicar{
     &.open{
         display: block;
     }
+}
+
+.zone-toggle{
+    margin: 0 0 60px 0;
 }
 
 /* @group Wrapper top */
@@ -731,6 +735,11 @@ a.btn-menu-responsive{
             left: -79px;
             bottom: 7px;
             background-color: @theme-primary;
+        }
+        &.no-content{
+            &:before{
+                display: none;
+            }
         }
     }
 }
