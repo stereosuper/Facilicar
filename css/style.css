@@ -982,6 +982,8 @@ a.btn-menu-responsive .rect:before {
   margin: 0;
   padding: 0;
   width: 220px;
+  max-height: 100%;
+  overflow: scroll;
 }
 .navbar .list-block > li,
 #main .navbar .list-block > li {
