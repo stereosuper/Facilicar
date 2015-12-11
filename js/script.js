@@ -268,8 +268,20 @@ $(function(){
 
 	// Clic sur les boutons toggle
 	$(".btn-toggle").click(function(){
-		$(this).toggleClass("open");
-		$(this).next(".content-toggle").slideToggle(200);
+		if($("body").hasClass("toggle-all")){
+			if(!$(this).hasClass("open")){
+				$(".wrapper-toggle-all .btn-toggle.open").next(".content-toggle").slideToggle(200);
+				$(".wrapper-toggle-all .btn-toggle.open").removeClass("open");
+				$(this).addClass("open");
+				$(this).next(".content-toggle").slideToggle(200);
+			}else{
+				$(".wrapper-toggle-all .btn-toggle.open").next(".content-toggle").slideToggle(200);
+				$(".wrapper-toggle-all .btn-toggle.open").removeClass("open");
+			}
+		}else{
+			$(this).toggleClass("open");
+			$(this).next(".content-toggle").slideToggle(200);
+		}
 		return false;
 	});
 
@@ -457,6 +469,10 @@ $(function(){
 				var target = this.hash;
 				$target = $(target);
 				TweenMax.to($('body'), 0.5, {scrollTo:{y:$target.offset().top-10}, ease:Power2.easeOut});
+			}
+			if($("body").hasClass("toggle-all")){
+				$(".wrapper-toggle-all .btn-toggle.open").next(".content-toggle").slideToggle(200);
+				$(".wrapper-toggle-all .btn-toggle.open").removeClass("open");
 			}
 			return false;
 		});
