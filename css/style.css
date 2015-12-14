@@ -1715,10 +1715,16 @@ a.btn-menu-responsive .rect:before {
   padding: 16px 38px;
   position: relative;
   line-height: 1.25em;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
 }
 .list-search-result > li a .img-type-store,
 .list-block.list-search-result > li a .img-type-store {
   top: 14px;
+}
+.list-search-result > li a:hover,
+.list-block.list-search-result > li a:hover {
+  opacity: 0.7;
 }
 .search-title {
   display: block;
@@ -1778,6 +1784,8 @@ a.btn-menu-responsive .rect:before {
   padding: 0 0 0 85px;
   position: relative;
   line-height: 1.25em;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
 }
 .list-agency > li a .zone-nb-agency,
 .list-block.list-agency > li a .zone-nb-agency {
@@ -1817,6 +1825,10 @@ a.btn-menu-responsive .rect:before {
   overflow: hidden;
   position: relative;
   text-overflow: ellipsis;
+}
+.list-agency > li a:hover,
+.list-block.list-agency > li a:hover {
+  opacity: 0.7;
 }
 /* @end */
 /* @group Buttons */
@@ -7203,6 +7215,15 @@ a.btn-slider-citation:hover.btn-right span {
   #wrapper-map .map-search-content {
     padding: 25px 0;
   }
+  #wrapper-map .map-search-content.map-search-result .title-map-search-result {
+    font-size: 1.1em;
+  }
+  .list-agency,
+  .list-block.list-agency {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1;
+  }
   /* @end */
 }
 @media (max-width: 767px) {
@@ -7908,6 +7929,16 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
   }
   /* @end */
+  /* @group Map */
+  .list-agency > li a,
+  .list-block.list-agency > li a {
+    padding: 0 0 0 55px;
+  }
+  .list-agency > li a .zone-nb-agency,
+  .list-block.list-agency > li a .zone-nb-agency {
+    width: 40px;
+  }
+  /* @end */
 }
 @media (max-width: 480px) {
   /* @group Popup */
@@ -8010,6 +8041,18 @@ a.btn-slider-citation:hover.btn-right span {
   .list-blocks-inline > li,
   #main .list-blocks-inline > li {
     padding: 20px;
+  }
+  /* @end */
+  /* @group Map */
+  .map-search a.btn-toggle-one.small strong,
+  .map-search div strong.btn-toggle-one.small strong,
+  .map-search span.btn-toggle-one.small strong {
+    font-size: 1.1em;
+  }
+  .map-search a.btn-toggle-one.small .arrow-toggle-one,
+  .map-search div strong.btn-toggle-one.small .arrow-toggle-one,
+  .map-search span.btn-toggle-one.small .arrow-toggle-one {
+    display: none;
   }
   /* @end */
 }

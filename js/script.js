@@ -723,7 +723,7 @@ $(function(){
 		navigationControl: false,
 		mapTypeControl: false,
 		center: { lat: 48.856614, lng: 2.3522219000000177},
-		zoom: 10,
+		zoom: 6,
 		styles: [
     {
         "featureType": "all",

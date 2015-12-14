@@ -1192,7 +1192,15 @@
         }
         .map-search-content{
             padding: 25px 0;
+            &.map-search-result{
+                .title-map-search-result{
+                    font-size: 1.1em;
+                }
+            }
         }
+    }
+    .list-agency, .list-block.list-agency{
+        columns: 1;
     }
     /* @end */
 }
@@ -1935,6 +1943,19 @@
         display: block;
     }
     /* @end */
+
+    /* @group Map */
+    .list-agency, .list-block.list-agency{
+        > li{
+            a{
+                padding: 0 0 0 55px;
+                .zone-nb-agency{
+                    width: 40px;
+                }
+            }
+        }
+    } 
+    /* @end */
 }
 
 @media (max-width: 480px) {
@@ -2049,6 +2070,23 @@
     .list-blocks-inline, #main .list-blocks-inline{
         > li{
             padding: 20px;
+        }
+    }
+    /* @end */
+
+    /* @group Map */
+    .map-search{
+        a, div strong, span{
+            &.btn-toggle-one{
+                &.small{
+                    strong{
+                        font-size: 1.1em;
+                    }
+                    .arrow-toggle-one{
+                        display: none;
+                    }
+                }
+            }
         }
     }
     /* @end */
