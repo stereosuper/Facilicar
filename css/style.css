@@ -5866,6 +5866,10 @@ a.btn-slider-citation:hover.btn-right span {
   height: auto;
   box-sizing: border-box;
   padding: 0 10px;
+  margin: 18px 0;
+}
+.results-txt p {
+  margin: 0;
 }
 .is-list .bandeau-image-car {
   width: 303px;
@@ -6214,6 +6218,14 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 1.13em;
   text-align: left;
 }
+.notif p.small-txt {
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 1em;
+}
+.notif p.small-txt strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
 .notif a {
   color: #fff;
 }
@@ -6257,6 +6269,13 @@ a.btn-slider-citation:hover.btn-right span {
   left: 20px;
   margin: auto;
 }
+.notif.padding-right {
+  padding-right: 70px;
+}
+.notif.notif-block {
+  display: block;
+  max-width: inherit;
+}
 .notif-valid {
   background: #76a626;
 }
@@ -6265,6 +6284,20 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .notif-error:before {
   content: "\e920";
+}
+.notif-neutral {
+  background: #d8d8d4;
+  color: #333333;
+}
+.notif-neutral button {
+  color: #333333;
+}
+.notif-neutral a {
+  color: #333333;
+}
+.notif-neutral:before {
+  content: "\e919";
+  color: #fff;
 }
 .notif-faq {
   display: block;

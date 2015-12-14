@@ -12,6 +12,12 @@
 		margin: 0;
 		.texta-bold(1.13em);
 		text-align: left;
+		&.small-txt{
+			.texta(1em);
+			strong{
+				.texta-bold(1em);
+			}
+		}
 	}
 	a{
 		color: #fff;
@@ -47,6 +53,13 @@
 		left: 20px;
 		margin: auto;
 	}
+	&.padding-right{
+		padding-right: 70px;
+	}
+	&.notif-block{
+		display: block;
+		max-width: inherit;
+	}
 }
 
 .notif-valid{
@@ -56,6 +69,20 @@
 	background: @theme-error;
 	&:before{
 		content: "\e920";
+	}
+}
+.notif-neutral{
+	background: @theme-neutral;
+	color: @theme-noir;
+	button{
+		color: @theme-noir;
+	}
+	a{
+		color: @theme-noir;
+	}
+	&:before{
+		content: "\e919";
+		color: #fff;
 	}
 }
 
