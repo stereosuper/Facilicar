@@ -53,6 +53,15 @@
         width: 200px;
     }
     /* @end */
+
+    /* @group Forms */
+    fieldset{
+        margin-right: 35px;
+    }
+    label{
+        margin-right: 15px;
+    }
+    /* @end */
 }
 
 @media (max-width: 1150px) {
@@ -161,6 +170,24 @@
                 }
             }
         }    
+    }
+    /* @end */
+
+    /* @group Forms */
+    .contactform{
+        margin-left: 0;
+        button{
+            margin: 0;
+        }
+        .notif{
+            margin-left: 0;
+        }
+    }
+    textarea{
+        width: 100%;
+    }
+    fieldset{
+        margin-bottom: 30px;
     }
     /* @end */
 }
@@ -1173,6 +1200,10 @@
         }
     }
     /* @end */
+
+    .notif-faq{
+        left: 76px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1913,6 +1944,38 @@
         display: block;
     }
     /* @end */
+
+    /* @group Forms */
+    label{
+        width: 75px;
+    }
+    .contactform{
+        font-size: .85em;
+    }
+    /* @end */
+    
+    .notif{
+        font-size: .85em;
+        padding: 20px 20px 20px 65px;
+        &:before{
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+        }
+        button{
+            width: 15px;
+            height: 15px;
+            right: 20px;
+            &:before{
+                font-size: 15px;
+            }
+        }
+    }
+    .notif-faq{
+        left: 0;
+        top: -265px;
+        padding-right: 50px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -2030,6 +2093,27 @@
         }
     }
     /* @end */
+
+    label{
+        display: block;
+        width: auto;
+        text-align: left;
+    }
+
+    fieldset{
+        margin-bottom: 20px;
+    }
+
+    .notif{
+        padding-left: 55px;
+        font-size: .75em;
+        &:before{
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+            left: 15px;
+        }
+    }
 }
 
 

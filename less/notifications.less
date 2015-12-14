@@ -1,0 +1,72 @@
+/* @group Notif */
+
+.notif{
+	display: inline-block;
+	padding: 20px 25px 20px 75px;
+	max-width: 460px;
+	position: relative;
+	background: @theme-gris2;
+	border-radius: 5px;
+	color: #fff;
+	p{
+		margin: 0;
+		.texta-bold(1.13em);
+		text-align: left;
+	}
+	a{
+		color: #fff;
+	}
+	button{
+		width: 18px;
+		height: 18px;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 25px;
+		margin: auto;
+		overflow: hidden;
+		background: none;
+		text-indent: -99em;
+		&:before{
+			display: block;
+			font-size: 18px;
+			text-indent: 0;
+		}
+	}
+	&:before{
+		display: block;
+		width: 35px;
+		height: 35px;
+		.icon-font();
+		content: "\e921";
+		position: absolute;
+		font-size: 35px;
+		top: 0;
+		bottom: 0;
+		left: 20px;
+		margin: auto;
+	}
+}
+
+.notif-valid{
+	background: @theme-vert;
+}
+.notif-error{
+	background: @theme-error;
+	&:before{
+		content: "\e920";
+	}
+}
+
+.notif-faq{
+	display: block;
+	padding-right: 70px;
+	max-width: none;
+	position: absolute;
+	right: 0;
+	left: 100px;
+	top: -120px;
+}
+
+/* @end */

@@ -25,20 +25,19 @@
 
 .popup{
 	display: inline-block;
+	width: 650px;
+	max-width: 100%;
+	height: auto;
+	max-height: 90%;
+	padding: 60px 60px 70px 60px;
+	box-sizing: border-box;
 	vertical-align: top;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: auto;
-	max-width: 100%;
-	height: auto;
 	margin: auto;
-	padding: 60px 70px 70px 70px;
-	background-color: #fff;
-	box-sizing: border-box;
-	max-width: 650px;
-	max-height: 90%;
+	background: #fff;
 	overflow: auto;
 	a.btn-close-popup{
 		color: @theme-noir;
@@ -46,6 +45,7 @@
 		top: 20px;
 		right: 20px;
 		font-size: 14px;
+		text-decoration: none;
 	}
 	h2{
 		margin-top: 0;
@@ -59,6 +59,16 @@
 		> li{
 			vertical-align: middle;
 			margin: 0 4px;
+		}
+	}
+	label{
+		width: auto;
+		margin: 0;
+		text-align: center;
+	}
+	.notif-valid{
+		+ p{
+			.texta-bold(1.25em);
 		}
 	}
 }

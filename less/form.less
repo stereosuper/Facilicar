@@ -1,5 +1,9 @@
 /* @group Form */
-input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"]{
+form{
+    position: relative;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"], textarea{
 	padding: 2px 12px;
 	border: 1px solid @theme-gris;
 	box-sizing: border-box;
@@ -19,13 +23,10 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     }
 }
 
+
 input[type="date"]{
     max-width: 150px;
-}
-
-/* Masquer le datepicker de Chrome */
-input::-webkit-calendar-picker-indicator{
-    display: none;
+    cursor: text;
 }
 
 input{
@@ -57,12 +58,6 @@ input{
 	color: #B0B0A8;
 }
 
-label{
-    .texta-light(1.25em);
-    strong{
-        .texta-bold(1em);
-    }
-}
 
 button{
 	-webkit-appearance: none;
@@ -398,6 +393,113 @@ button{
         .on-content{
             color: #fff;
         }
+    }
+}
+
+fieldset{
+    display: inline-block;
+    margin: 0 50px 35px 0;
+    &.block{
+        display: block;
+        margin-right: 0;
+    }
+    &.required{
+        label{
+            &:after{
+                content: '*';
+                color: @theme-primary;
+            }
+        }
+    }
+    &.error{
+        input, select, textarea{
+            border: 2px solid @theme-error;
+        }
+        label{
+            &:after{
+                color: @theme-error;
+            }
+        }
+    }
+}
+
+label{
+    display: inline-block;
+    width: 90px;
+    margin: 5px 20px 5px 0;
+    .texta-bold(1.25em);
+    text-align: right;
+    &.light{
+        .texta-light(1.25em);
+    }
+}
+
+textarea{
+    width: 630px;
+    height: 230px;
+    padding: 8px 12px;
+    .texta-light-italic(1.25em);
+    color: #B0B0A8;
+    &:focus, &.focus{
+        .texta-light(1.25em);
+        color: #000;
+    }
+}
+
+select{
+    border: 1px solid @theme-gris;
+    .texta-light(1.1em);
+    cursor: pointer;
+    &:focus{
+        outline: 0;
+        border-color: @theme-primary;
+    }
+}
+
+.contactform{
+    margin: 50px 0 0 -40px;
+    input{
+        width: 225px;
+        &[type="email"]{
+            width: 270px;
+        }
+        &[type=tel]{
+            width: 155px;
+        }
+    }
+    select{
+        min-width: 225px;
+    }
+    button{
+        padding: 6px 12px;
+        margin: -10px 0 0 112px;
+        .txt-hover-button{
+            padding: 15px 12px 9px 35px;
+        }
+    }
+    .notif{
+        margin: 30px 0 0 110px;
+    }
+}
+
+.loaderform{
+    position: absolute;
+    top: 0;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    p{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+    img{
+        display: block;
+        margin: 0 auto 20px;
     }
 }
 

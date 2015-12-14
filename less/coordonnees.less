@@ -1,0 +1,44 @@
+/* @group Coordonnées */
+
+.adresse-title{
+	padding: 0 0 15px;
+	border-bottom: 1px solid;
+	margin: 25px 0 20px !important;
+	font-size: 1.2em;
+}
+
+.coordonnees{
+	p{
+		padding: 0 0 0 30px;
+		position: relative;
+		&:before{
+			display: block;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 2px;
+			margin: auto;
+			.icon-font();
+			color: @theme-gris2;
+			font-size: 20px;
+		}
+		&.adresse{
+			&:before{
+				content: "\e803";
+				left: -4px;
+			}
+		}
+		&.tel{
+			&:before{
+				content: "\e804";
+			}
+		}
+	}
+	a{
+		text-decoration: none;
+	}
+}
+
+/* @end */

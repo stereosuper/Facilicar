@@ -88,6 +88,10 @@ h2{
         .texta-black(2.625em);
         line-height: 0.9em;
     }
+    &.small-title{
+        font-size: 1.9em;
+        margin-bottom: 30px;
+    }
     a{
         display: inline-block;
         vertical-align: top;
@@ -728,11 +732,14 @@ a.btn-menu-responsive{
     width: auto;
     padding: 13px 0 0 100px;
     box-sizing: border-box;
+    #contact &{
+        position: relative;
+    }
     h2{
+        position: relative;
         &:first-of-type{
             margin-top: 0;
         }
-        position: relative;
         &:before{
             content: "";
             display: block;
@@ -742,12 +749,21 @@ a.btn-menu-responsive{
             left: -79px;
             bottom: 7px;
             background-color: @theme-primary;
+            #contact &{
+                display: none;
+            }
         }
         &.no-content{
             &:before{
                 display: none;
             }
         }
+    }
+}
+
+#main{
+    #contact &{
+        padding-top: 100px;
     }
 }
 
