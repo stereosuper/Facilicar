@@ -4715,7 +4715,7 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-car.cta .icon-tel {
   display: inline-block;
   vertical-align: top;
-  margin: 2px 15px 0 0;
+  margin: 2px 10px 0 0;
   font-size: 0.9em;
 }
 .wrapper-car.cta .cta-content {
@@ -4734,9 +4734,6 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-car.cta .cta-content.cta-txt {
   margin: 5px 0;
 }
-.wrapper-car.cta .cta-content.cta-txt.big-margin {
-  margin: 12px 0;
-}
 .wrapper-car.cta .cta-content.cta-btn {
   display: block;
   width: 100%;
@@ -4744,8 +4741,6 @@ a.btn-slider-citation:hover.btn-right span {
   position: absolute;
   bottom: 0;
   left: 0;
-  font-family: 'Texta-Medium', sans-serif;
-  font-size: 1.2em;
 }
 .wrapper-car.cta .cta-content.cta-btn .wrapper-cta-btn {
   display: table;
@@ -4756,17 +4751,26 @@ a.btn-slider-citation:hover.btn-right span {
   display: table-cell;
   vertical-align: middle;
 }
+.wrapper-car.cta .cta-content.cta-btn .txt-cta-btn {
+  display: block;
+  margin: 0 0 12px 0;
+}
 .wrapper-car.cta .cta-content.cta-btn .btn-underline {
   padding: 0 12px;
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  font-family: 'Texta-Medium', sans-serif;
+  font-size: 1.2em;
 }
 .wrapper-car.cta .cta-content.cta-btn .btn-underline:before {
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.wrapper-car.cta .cta-content.cta-btn .btn-underline.has-txt-before {
+  margin-bottom: 30px;
 }
 .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: translateY(0px) translateZ(1px);
@@ -5942,6 +5946,15 @@ a.btn-slider-citation:hover.btn-right span {
   left: inherit;
   width: 31%;
   padding: 0;
+}
+.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline {
+  padding: 0 0 0 12px;
+}
+.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline.has-txt-before {
+  margin-bottom: 0;
+}
+.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn {
+  margin: 0 0 5px 0;
 }
 .is-list .wrapper-car:hover {
   border-color: #009cc4;
