@@ -1061,7 +1061,7 @@ a.btn-menu-responsive .rect:before {
 .content-with-navbar h2.no-content:before {
   display: none;
 }
-#contact #main {
+#main.has-notif {
   padding-top: 100px;
 }
 /* @end */

@@ -266,6 +266,14 @@ $(function(){
 		return false;
 	});
 
+	// Clic pour fermer les notifications
+	$('.notif').find('button').on('click', function(){
+		$(this).parents('.notif').fadeOut(300, function(){
+			$('#main').removeClass('has-notif');
+		});
+
+	});
+
 	// Clic sur les boutons toggle
 	$(".btn-toggle").click(function(){
 		if($("body").hasClass("toggle-all")){
