@@ -38,7 +38,7 @@
 		.icon-tel{
 			display: inline-block;
 			vertical-align: top;
-			margin: 2px 15px 0 0;
+			margin: 2px 10px 0 0;
 			font-size: 0.9em;
 		}
 		.cta-content{
@@ -57,9 +57,6 @@
 			}
 			&.cta-txt{
 				margin: 5px 0;
-				&.big-margin{
-					margin: 12px 0;
-				}
 			}
 			&.cta-btn{
 				display: block;
@@ -68,7 +65,6 @@
 				position: absolute;
 				bottom: 0;
 				left: 0;
-				.texta-medium(1.2em);
 				.wrapper-cta-btn{
 					display: table;
 					width: 100%;
@@ -78,14 +74,22 @@
 					display: table-cell;
 					vertical-align: middle;
 				}
+				.txt-cta-btn{
+					display: block;
+					margin: 0 0 12px 0;
+				}
 				.btn-underline{
 					padding: 0 12px;
 					display: inline-block;
 					vertical-align: top;
 					text-align: left;
+					.texta-medium(1.2em);
 					&:before{
 						top: 50%;
 						transform: translateY(-50%);
+					}
+					&.has-txt-before{
+						margin-bottom: 30px;
 					}
 				}
 			}
@@ -1159,6 +1163,15 @@
 						left: inherit;
 						width: 31%;
 						padding: 0;
+						.btn-underline{
+							padding: 0 0 0 12px;
+							&.has-txt-before{
+								margin-bottom: 0;
+							}
+						}
+						.txt-cta-btn{
+							margin: 0 0 5px 0;
+						}
 					}
 				}
 			}
