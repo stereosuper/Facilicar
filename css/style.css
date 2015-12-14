@@ -7181,6 +7181,29 @@ a.btn-slider-citation:hover.btn-right span {
     margin-top: 15px;
   }
   /* @end */
+  /* @group Map */
+  .header-on #wrapper-map {
+    margin-top: 0;
+  }
+  #wrapper-map {
+    height: auto;
+  }
+  #wrapper-map #map {
+    height: 300px;
+    position: relative;
+  }
+  #wrapper-map .wrapper-map-search {
+    width: 100%;
+    position: relative;
+    top: inherit;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  #wrapper-map .map-search-content {
+    padding: 25px 0;
+  }
+  /* @end */
 }
 @media (max-width: 767px) {
   .container.small {
