@@ -4905,6 +4905,12 @@ a.btn-slider-citation:hover.btn-right span {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.no-csstransforms3d .wrapper-car.cta .cta-content.cta-btn .btn-underline:before {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 47px;
+}
 .wrapper-car.cta .cta-content.cta-btn .btn-underline.has-txt-before {
   margin-bottom: 30px;
 }
@@ -4914,11 +4920,23 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
+.no-csstransforms3d .wrapper-car:hover .fond-bandeau-car.bandeau-top {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
+}
 .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+.no-csstransforms3d .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
 }
 .wrapper-car:hover .car-year {
   -webkit-transform: translateY(0px) translateZ(1px);
@@ -4926,11 +4944,23 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
+.no-csstransforms3d .wrapper-car:hover .car-year {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
+}
 .wrapper-car:hover .car-name {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+.no-csstransforms3d .wrapper-car:hover .car-name {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
 }
 .wrapper-car:hover .car-desc {
   opacity: 1;
@@ -4948,11 +4978,23 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
+.no-csstransforms3d .wrapper-car:hover .car-km {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
+}
 .wrapper-car:hover .car-price {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+.no-csstransforms3d .wrapper-car:hover .car-price {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
 }
 .wrapper-car:hover .car-price-saving {
   opacity: 1;
@@ -4960,6 +5002,12 @@ a.btn-slider-citation:hover.btn-right span {
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+.no-csstransforms3d .wrapper-car:hover .car-price-saving {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
 }
 .wrapper-car:hover .car-btn-essai {
   opacity: 1;
@@ -4981,6 +5029,12 @@ a.btn-slider-citation:hover.btn-right span {
           transform: translateY(-45px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+.no-csstransforms3d .wrapper-car:hover .car-label {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 45px;
 }
 .bandeau-image-car {
   display: block;
@@ -5013,10 +5067,22 @@ a.btn-slider-citation:hover.btn-right span {
       -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
+.no-csstransforms3d .bandeau-image-car ul > li {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 176px;
+}
 .bandeau-image-car ul > li.is-active {
   -webkit-transform: translateX(0%);
       -ms-transform: translateX(0%);
           transform: translateX(0%);
+}
+.no-csstransforms3d .bandeau-image-car ul > li.is-active {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
 }
 .bandeau-image-car ul > li:first-of-type {
   z-index: 2;
@@ -5044,6 +5110,12 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
+.no-csstransforms3d .fond-bandeau-car.bandeau-top {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 40px;
+}
 .fond-bandeau-car.bandeau-bottom {
   bottom: 0;
   height: 135px;
@@ -5051,6 +5123,12 @@ a.btn-slider-citation:hover.btn-right span {
           transform: translateY(40px) translateZ(1px);
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+}
+.no-csstransforms3d .fond-bandeau-car.bandeau-bottom {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: -40px;
 }
 .bandeau-car {
   display: block;
@@ -5092,6 +5170,12 @@ a.btn-slider-citation:hover.btn-right span {
   top: 8px;
   text-align: center;
 }
+.no-csstransforms3d .car-year {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: -10px;
+}
 .car-name {
   -webkit-transform: translateY(10px) translateZ(1px);
           transform: translateY(10px) translateZ(1px);
@@ -5110,6 +5194,12 @@ a.btn-slider-citation:hover.btn-right span {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.no-csstransforms3d .car-name {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: -10px;
 }
 .car-name strong {
   font-family: 'Texta-Black', sans-serif;
@@ -5243,6 +5333,12 @@ a.btn-slider-citation:hover.btn-right span {
   color: #b0b0a8;
   padding: 2px 0;
 }
+.no-csstransforms3d .car-km {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 32px;
+}
 .car-old-price {
   bottom: 111px;
   font-family: 'Texta-Light', sans-serif;
@@ -5263,6 +5359,12 @@ a.btn-slider-citation:hover.btn-right span {
   line-height: 0.8em;
   color: #e38c00;
 }
+.no-csstransforms3d .car-price {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: -45px;
+}
 .car-price-saving {
   opacity: 0;
   -webkit-transform: translateY(45px) translateZ(1px);
@@ -5276,6 +5378,12 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 0.875em;
   color: #333333;
   line-height: 1em;
+}
+.no-csstransforms3d .car-price-saving {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: -45px;
 }
 .car-price-saving strong {
   font-family: 'Texta-Bold', sans-serif;
@@ -5369,6 +5477,12 @@ a.btn-slider-citation:hover.btn-right span {
   opacity: 1;
   z-index: 4;
 }
+.no-csstransforms3d .car-labels {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: -11px;
+}
 .car-label {
   display: inline-block;
   vertical-align: top;
@@ -5386,6 +5500,12 @@ a.btn-slider-citation:hover.btn-right span {
           transition: transform 0.2s ease-in-out;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
+}
+.no-csstransforms3d .car-label {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 0;
 }
 .car-label.indic {
   display: none;
@@ -6172,6 +6292,12 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform: translateX(60px);
       -ms-transform: translateX(60px);
           transform: translateX(60px);
+}
+.no-csstransforms3d .is-list .wrapper-car:hover .bandeau-car.bandeau-top {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-left: 60px;
 }
 .is-list .wrapper-car:hover .car-labels {
   -webkit-transition-delay: 0s;

@@ -87,6 +87,10 @@
 					&:before{
 						top: 50%;
 						transform: translateY(-50%);
+						.no-csstransforms3d &{
+							transform: none;
+							margin-bottom: 47px;
+						}
 					}
 					&.has-txt-before{
 						margin-bottom: 30px;
@@ -100,19 +104,35 @@
 			&.bandeau-top{
 				transform: translateY(0px) translateZ(1px);
 				transition-delay: 0s;
+				.no-csstransforms3d &{
+					transform: none;
+					margin-bottom: 0;
+				}
 			}
 			&.bandeau-bottom{
 				transform: translateY(0px) translateZ(1px);
 				transition-delay: 0s;
+				.no-csstransforms3d &{
+					transform: none;
+					margin-bottom: 0;
+				}
 			}
 		}
 		.car-year{
 			transform: translateY(0px) translateZ(1px);
 			transition-delay: 0s;
+			.no-csstransforms3d &{
+				transform: none;
+				margin-bottom: 0;
+			}
 		}
 		.car-name{
 			transform: translateY(0px) translateZ(1px);
 			transition-delay: 0s;
+			.no-csstransforms3d &{
+				transform: none;
+				margin-bottom: 0;
+			}
 		}
 		.car-desc{
 			opacity: 1;
@@ -125,15 +145,27 @@
 		.car-km{
 			transform: translateY(0px) translateZ(1px);
 			transition-delay: 0s;
+			.no-csstransforms3d &{
+				transform: none;
+				margin-bottom: 0;
+			}
 		}
 		.car-price{
 			transform: translateY(0px) translateZ(1px);
 			transition-delay: 0s;
+			.no-csstransforms3d &{
+				transform: none;
+				margin-bottom: 0;
+			}
 		}
 		.car-price-saving{
 			opacity: 1;
 			transform: translateY(0px) translateZ(1px);
 			transition-delay: 0s;
+			.no-csstransforms3d &{
+				transform: none;
+				margin-bottom: 0;
+			}
 		}
 		.car-btn-essai{
 			opacity: 1;
@@ -152,6 +184,10 @@
 		.car-label{
 			transform: translateY(-45px);
 			transition-delay: 0s;
+			.no-csstransforms3d &{
+				transform: none;
+				margin-bottom: 45px;
+			}
 		}
 	}
 }
@@ -181,8 +217,16 @@
 			top: 0;
 			left: 0;
 			transform: translateX(-100%);
+			.no-csstransforms3d &{
+				transform: none;
+				margin-bottom: 176px;
+			}
 			&.is-active{
 				transform: translateX(0%);
+				.no-csstransforms3d &{
+					transform: none;
+					margin-bottom: 0;
+				}
 			}
 			&:first-of-type{
 				z-index: 2;
@@ -208,12 +252,20 @@
 		height: 127px;
 		transform: translateY(-40px) translateZ(1px);
 		transition-delay: 0.1s;
+		.no-csstransforms3d &{
+			transform: none;
+			margin-bottom: 40px;
+		}
 	}
 	&.bandeau-bottom{
 		bottom: 0;
 		height: 135px;
 		transform: translateY(40px) translateZ(1px);
 		transition-delay: 0.1s;
+		.no-csstransforms3d &{
+			transform: none;
+			margin-bottom: -40px;
+		}
 	}
 }
 .bandeau-car{
@@ -254,6 +306,10 @@
 	transition-delay: 0.1s;
 	top: 8px;
 	text-align: center;
+	.no-csstransforms3d &{
+		transform: none;
+		margin-bottom: -10px;
+	}
 }
 
 .car-name{
@@ -270,6 +326,10 @@
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	.no-csstransforms3d &{
+		transform: none;
+		margin-bottom: -10px;
+	}
 	strong{
 		.texta-black(1em);
 	}
@@ -384,6 +444,10 @@
 	line-height: 1em;
 	color: @theme-gris2;
 	padding: 2px 0;
+	.no-csstransforms3d &{
+		transform: none;
+		margin-bottom: 32px;
+	}
 }
 
 .car-old-price{
@@ -401,6 +465,10 @@
 	.texta-light(2.5em);
 	line-height: 0.8em;
 	color: @theme-secondary;
+	.no-csstransforms3d &{
+		transform: none;
+		margin-bottom: -45px;
+	}
 }
 
 .car-price-saving{
@@ -412,6 +480,10 @@
 	.texta-light(0.875em);
 	color: @theme-noir;
 	line-height: 1em;
+	.no-csstransforms3d &{
+		transform: none;
+		margin-bottom: -45px;
+	}
 	strong{
 		.texta-bold(1em);
 	}
@@ -488,6 +560,10 @@
 	transition-delay: 0.1s;
 	opacity: 1;
 	z-index: 4;
+	.no-csstransforms3d &{
+		transform: none;
+		margin-bottom: -11px;
+	}
 }
 
 .car-label{
@@ -502,6 +578,10 @@
 	transform: translateY(0px);
 	transition: transform 0.2s ease-in-out;
 	transition-delay: 0.1s;
+	.no-csstransforms3d &{
+		transform: none;
+		margin-bottom: 0;
+	}
 	&.indic{
 		display: none;
 		position: relative;
@@ -1232,6 +1312,10 @@
 				}
 				&.bandeau-top{
 					transform: translateX(60px);
+					.no-csstransforms3d &{
+						transform: none;
+						margin-left: 60px;
+					}
 				}
 			}
 			.car-labels{
