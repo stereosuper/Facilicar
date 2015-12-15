@@ -692,20 +692,24 @@ a.btn-menu-responsive{
     width: 220px;
     height: 100%;
     vertical-align: top;
+    position: relative;
     .list-block{
+        display: block;
         margin: 0;
         padding: 0 20px 0 0;
         width: 200px;
-        max-height: 100%;
+        max-height: 80%;
         overflow: auto;
         box-sizing: content-box;
         -ms-overflow-style: -ms-autohiding-scrollbar;
+        position: relative;
         >li{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             text-transform: uppercase;
             .texta-light(1em);
+            display: block;
             &:before{
                 display: none;
             }
