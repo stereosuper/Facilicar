@@ -694,10 +694,12 @@ a.btn-menu-responsive{
     vertical-align: top;
     .list-block{
         margin: 0;
-        padding: 0;
-        width: 220px;
+        padding: 0 20px 0 0;
+        width: 200px;
         max-height: 100%;
-        overflow: scroll;
+        overflow: auto;
+        box-sizing: content-box;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
         >li{
             margin: 0;
             padding: 0;
