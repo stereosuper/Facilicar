@@ -154,6 +154,29 @@
             font-size: 1em;
         }
     }
+    .is-list{
+        .bandeau-image-car{
+            width: 280px;
+        }
+        .bandeau-car{
+            left: 302px;
+        }
+        .car-name{
+            font-size: 1.4em;
+        }
+        .wrapper-car{
+            &:hover{
+                .bandeau-image-car{
+                    transform: scale(1);
+                }
+                .bandeau-car{
+                    &.bandeau-top{
+                        transform: translateX(0px);    
+                    }
+                }
+            }
+        }
+    }
     /* @end */
 
     /* @group Filters */
@@ -871,6 +894,131 @@
     .saving-percentage{
         font-size: 1.375em;
     }
+    .list-cars{
+        &.is-list{
+            > li{
+                height: 120px;
+            }
+        }
+    }
+    .is-list{
+        .bandeau-image-car{
+            width: 84px;
+            height: 56px;
+            top: 10px;
+            left: 10px;
+        }
+        .bandeau-car{
+            &.bandeau-top{
+                height: 56px;
+                top: 10px;
+                left: 104px;
+                right: 10px;
+                bottom: inherit;
+                width: auto;
+            }
+            &.bandeau-bottom{
+                height: 33px;
+                top: inherit;
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+            }
+        }
+        .car-year, .car-block.car-year{
+            line-height: 1em;
+            left: 0;
+        }
+        .encadre{
+            font-size: 0.625em;
+        }
+        .car-km{
+            font-size: 0.688em;
+            left: 0;
+        }
+        .motor-color{
+            font-size: 0.688em;
+            left: 0;
+        }
+        .car-name{
+            padding: 0;
+            font-size: 0.875em;
+            left: 0;
+            line-height: 1em;
+            margin: -5px 0 0 0;
+            strong{
+                line-height: 1em;
+            }
+        }
+        .car-desc{
+            display: block;
+            font-size: 0.625em;
+            left: 0;
+        }
+        .car-labels{
+            display: none;
+        }
+        .car-price{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: auto;
+            font-size: 1.5em;
+            color: @theme-secondary;
+        }
+        .car-photos{
+            display: none;
+        }
+        .car-zone-btn{
+            right: auto;
+            left: 0;
+            min-width: 0;
+        }
+        .car-btn-essai{
+            font-size: 0.875em;
+            padding: 7px 12px;
+        }
+        .car-price-saving{
+            display: none;
+        }
+        .car-options{
+            margin: 0;
+            left: 0;
+            .zone-picto{
+                width: 18px;
+                height: 18px;
+                line-height: 18px;
+                &.icon-gps{
+                    font-size: 14px;
+                }
+                &.icon-clim{
+                    font-size: 11px;
+                }
+                &.icon-toit-ouvrant{
+                    font-size: 11px;
+                }
+                &.icon-control-recul{
+                    font-size: 7px;
+                }
+                &.nb-places{
+                    .places{
+                        font-size: 0.375em;
+                        padding: 1px 4px;
+                    }
+                }
+                &.icon-phares{
+                    font-size: 9px;
+                }
+                &.icon-cuir{
+                    font-size: 10px;
+                }
+                &.icon-quatre-quatre{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
     /* @end */
 
     /* @group Choisir / Témoignage */

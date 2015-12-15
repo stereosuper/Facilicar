@@ -6024,6 +6024,7 @@ a.btn-slider-citation:hover.btn-right span {
   right: inherit;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
+  width: 40%;
 }
 .is-list .bandeau-car.bandeau-bottom {
   left: inherit;
@@ -6151,7 +6152,7 @@ a.btn-slider-citation:hover.btn-right span {
   padding: 9px 20px;
 }
 .is-list .car-btn-wishlist {
-  display: inline-block;
+  display: none;
   vertical-align: middle;
 }
 .is-list .car-labels {
@@ -6612,6 +6613,25 @@ a.btn-slider-citation:hover.btn-right span {
   /* @group Car */
   .wrapper-car.cta {
     font-size: 1em;
+  }
+  .is-list .bandeau-image-car {
+    width: 280px;
+  }
+  .is-list .bandeau-car {
+    left: 302px;
+  }
+  .is-list .car-name {
+    font-size: 1.4em;
+  }
+  .is-list .wrapper-car:hover .bandeau-image-car {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .is-list .wrapper-car:hover .bandeau-car.bandeau-top {
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
   }
   /* @end */
   /* @group Filters */
@@ -7346,6 +7366,121 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .saving-percentage {
     font-size: 1.375em;
+  }
+  .list-cars.is-list > li {
+    height: 120px;
+  }
+  .is-list .bandeau-image-car {
+    width: 84px;
+    height: 56px;
+    top: 10px;
+    left: 10px;
+  }
+  .is-list .bandeau-car.bandeau-top {
+    height: 56px;
+    top: 10px;
+    left: 104px;
+    right: 10px;
+    bottom: inherit;
+    width: auto;
+  }
+  .is-list .bandeau-car.bandeau-bottom {
+    height: 33px;
+    top: inherit;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .is-list .car-year,
+  .is-list .car-block.car-year {
+    line-height: 1em;
+    left: 0;
+  }
+  .is-list .encadre {
+    font-size: 0.625em;
+  }
+  .is-list .car-km {
+    font-size: 0.688em;
+    left: 0;
+  }
+  .is-list .motor-color {
+    font-size: 0.688em;
+    left: 0;
+  }
+  .is-list .car-name {
+    padding: 0;
+    font-size: 0.875em;
+    left: 0;
+    line-height: 1em;
+    margin: -5px 0 0 0;
+  }
+  .is-list .car-name strong {
+    line-height: 1em;
+  }
+  .is-list .car-desc {
+    display: block;
+    font-size: 0.625em;
+    left: 0;
+  }
+  .is-list .car-labels {
+    display: none;
+  }
+  .is-list .car-price {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: auto;
+    font-size: 1.5em;
+    color: #e38c00;
+  }
+  .is-list .car-photos {
+    display: none;
+  }
+  .is-list .car-zone-btn {
+    right: auto;
+    left: 0;
+    min-width: 0;
+  }
+  .is-list .car-btn-essai {
+    font-size: 0.875em;
+    padding: 7px 12px;
+  }
+  .is-list .car-price-saving {
+    display: none;
+  }
+  .is-list .car-options {
+    margin: 0;
+    left: 0;
+  }
+  .is-list .car-options .zone-picto {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+  }
+  .is-list .car-options .zone-picto.icon-gps {
+    font-size: 14px;
+  }
+  .is-list .car-options .zone-picto.icon-clim {
+    font-size: 11px;
+  }
+  .is-list .car-options .zone-picto.icon-toit-ouvrant {
+    font-size: 11px;
+  }
+  .is-list .car-options .zone-picto.icon-control-recul {
+    font-size: 7px;
+  }
+  .is-list .car-options .zone-picto.nb-places .places {
+    font-size: 0.375em;
+    padding: 1px 4px;
+  }
+  .is-list .car-options .zone-picto.icon-phares {
+    font-size: 9px;
+  }
+  .is-list .car-options .zone-picto.icon-cuir {
+    font-size: 10px;
+  }
+  .is-list .car-options .zone-picto.icon-quatre-quatre {
+    font-size: 13px;
   }
   /* @end */
   /* @group Choisir / Témoignage */
