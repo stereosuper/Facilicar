@@ -735,11 +735,20 @@ a.btn-menu-responsive{
 
 /* @group Navbar */
 
+.wrapper-navbar{
+    position: relative;
+}
+
 .navbar, #main .navbar{
     width: 220px;
     height: 100%;
     vertical-align: top;
     position: relative;
+    &.navbar-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .list-block{
         display: block;
         margin: 0;
@@ -785,6 +794,12 @@ a.btn-menu-responsive{
     width: auto;
     padding: 13px 0 0 100px;
     box-sizing: border-box;
+    &.has-navbar-left{
+        padding-left: 320px;
+        .wrapper-has-navbar-left{
+            position: relative;
+        }
+    }
     #contact &{
         position: relative;
     }

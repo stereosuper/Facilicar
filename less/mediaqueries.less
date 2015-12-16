@@ -1247,6 +1247,9 @@
     }
     .content-with-navbar{
         padding: 18px 0 0 76px;
+        &.has-navbar-left{
+            padding-left: 296px;
+        }
         h2{
             &:before{
                 width: 40px;
@@ -2232,7 +2235,7 @@
         }
     }
     #list-date-popup{
-        min-width: auto;
+        min-width: 0;
         >li{
             display: block;
             margin: 10px 0;
@@ -2248,6 +2251,9 @@
         display: block;
         width: 100%;
         height: auto;
+        &.navbar-left{
+            position: relative;
+        }
         .list-block{
             width: 100%;
             text-align: left;
@@ -2269,6 +2275,9 @@
         display: block;
         width: 100%;
         padding: 18px 0 0 0;
+        &.has-navbar-left{
+            padding-left: 0;
+        }
         h2{
             &:before{
                 display: none;
@@ -2456,7 +2465,7 @@
     }
     .notif-faq{
         left: 0;
-        top: -265px;
+        top: -106px;
         padding-right: 50px;
     }
 

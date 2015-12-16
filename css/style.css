@@ -1028,12 +1028,21 @@ a.btn-menu-responsive .rect:before {
 }
 /* @end */
 /* @group Navbar */
+.wrapper-navbar {
+  position: relative;
+}
 .navbar,
 #main .navbar {
   width: 220px;
   height: 100%;
   vertical-align: top;
   position: relative;
+}
+.navbar.navbar-left,
+#main .navbar.navbar-left {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .navbar .list-block,
 #main .navbar .list-block {
@@ -1084,6 +1093,12 @@ a.btn-menu-responsive .rect:before {
   width: auto;
   padding: 13px 0 0 100px;
   box-sizing: border-box;
+}
+.content-with-navbar.has-navbar-left {
+  padding-left: 320px;
+}
+.content-with-navbar.has-navbar-left .wrapper-has-navbar-left {
+  position: relative;
 }
 #contact .content-with-navbar {
   position: relative;
@@ -6498,8 +6513,9 @@ a.btn-slider-citation:hover.btn-right span {
   max-width: none;
   position: absolute;
   right: 0;
-  left: 100px;
+  width: 100%;
   top: -120px;
+  box-sizing: border-box;
 }
 /* @end */
 /* @group Coordonnées */
@@ -7766,6 +7782,9 @@ a.btn-slider-citation:hover.btn-right span {
   .content-with-navbar {
     padding: 18px 0 0 76px;
   }
+  .content-with-navbar.has-navbar-left {
+    padding-left: 296px;
+  }
   .content-with-navbar h2:before {
     width: 40px;
     left: -60px;
@@ -8677,7 +8696,7 @@ a.btn-slider-citation:hover.btn-right span {
     right: 15px;
   }
   #list-date-popup {
-    min-width: auto;
+    min-width: 0;
   }
   #list-date-popup > li {
     display: block;
@@ -8693,6 +8712,10 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
     width: 100%;
     height: auto;
+  }
+  .navbar.navbar-left,
+  #main .navbar.navbar-left {
+    position: relative;
   }
   .navbar .list-block,
   #main .navbar .list-block {
@@ -8718,6 +8741,9 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
     width: 100%;
     padding: 18px 0 0 0;
+  }
+  .content-with-navbar.has-navbar-left {
+    padding-left: 0;
   }
   .content-with-navbar h2:before {
     display: none;
@@ -8896,7 +8922,7 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .notif-faq {
     left: 0;
-    top: -265px;
+    top: -106px;
     padding-right: 50px;
   }
   /* @group Map */
