@@ -2331,12 +2331,93 @@
                 padding: 0;
                 margin: 0;
                 border-radius: 0;
+                .texta-light(1.125em);
                 .zone-txt{
                     padding: 0;
                     br{
                         display: none;
                     }
                 }
+            }
+        }
+    }
+    .lines-filters, .list-block.lines-filters{
+        > li{
+            &.line-filters-two{
+                .list-inline{
+                    display: block;
+                    > li{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .cars-filters{
+        .select-custom{
+            box-sizing: border-box;
+            padding: 0 25px;
+            .select-placeholder{
+                display: none;
+            }
+            .select-options{
+                position: relative;
+                top: 0;
+                left: 0;
+                display: block;
+                padding: 0;
+                border: none;
+                ul{
+                    columns: 1;
+                    >li{
+                        .texta-light(1.125em);
+                    }
+                }
+            }
+        }
+    }
+    #btn-more-criteres{
+        display: none;
+    }
+    #content-more-criteres{
+        display: block;
+    }
+    .select-option-car{
+        display: block;
+        > li{
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            a{
+                display: inline-block;
+                vertical-align: top;
+                width: auto;
+                border-radius: 0;
+            }
+        }
+        .zone-picto{
+            display: inline-block;
+            vertical-align: middle;
+            width: 34px;
+        }
+        .zone-txt{
+            display: inline-block;
+            vertical-align: middle;
+            width: auto;
+            height: auto;
+            position: relative;
+            bottom: 0;
+            margin: 0;
+            opacity: 1;
+            &:before{
+                display: none;
+            }
+            &:after{
+                display: none;
+            }
+            .triangle{
+                display: none;
             }
         }
     }
