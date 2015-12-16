@@ -1909,7 +1909,10 @@
     }
     .wrapper-car{
         &.cta{
-            font-size: 0.9em;
+            font-size: 0.85em;
+            .cta-wrapper{
+                padding: 0 10px;
+            }
             &.big-line-height{
                 line-height: 1.1em;
             }
@@ -1921,11 +1924,13 @@
             }
             .tel{
                 padding-right: 8px;
+                display: block;
             }
             .icon-tel{
-                margin: 1px 8px 0 0;
+                margin: 1px 4px 0 0;
             }
             .cta-content{
+                line-height: 1em;
                 &.cta-img{
                     width: 100%;
                     padding: 8px 0 8px 0;
@@ -1944,6 +1949,17 @@
                     height: 52px;
                     .wrapper-cta-btn{
                         height: 52px;
+                        text-align: center;
+                    }
+                    .btn-underline{
+                        text-align: center;
+                        font-size: 0.95em;
+                        &.has-txt-before{
+                            margin-bottom: 5px;
+                        }
+                    }
+                    .txt-cta-btn{
+                        margin: 0 0 2px 0;
                     }
                 }
             }
@@ -2059,6 +2075,9 @@
                             }
                             .btn-underline{
                                 padding: 0 12px;
+                            }
+                            .txt-cta-btn{
+                                margin: 0;
                             }
                         }
                         &.cta-txt{

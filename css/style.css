@@ -8337,7 +8337,10 @@ a.btn-slider-citation:hover.btn-right span {
     font-size: 0.813em;
   }
   .wrapper-car.cta {
-    font-size: 0.9em;
+    font-size: 0.85em;
+  }
+  .wrapper-car.cta .cta-wrapper {
+    padding: 0 10px;
   }
   .wrapper-car.cta.big-line-height {
     line-height: 1.1em;
@@ -8350,9 +8353,13 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-car.cta .tel {
     padding-right: 8px;
+    display: block;
   }
   .wrapper-car.cta .icon-tel {
-    margin: 1px 8px 0 0;
+    margin: 1px 4px 0 0;
+  }
+  .wrapper-car.cta .cta-content {
+    line-height: 1em;
   }
   .wrapper-car.cta .cta-content.cta-img {
     width: 100%;
@@ -8371,6 +8378,17 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-car.cta .cta-content.cta-btn .wrapper-cta-btn {
     height: 52px;
+    text-align: center;
+  }
+  .wrapper-car.cta .cta-content.cta-btn .btn-underline {
+    text-align: center;
+    font-size: 0.95em;
+  }
+  .wrapper-car.cta .cta-content.cta-btn .btn-underline.has-txt-before {
+    margin-bottom: 5px;
+  }
+  .wrapper-car.cta .cta-content.cta-btn .txt-cta-btn {
+    margin: 0 0 2px 0;
   }
   .list-cars.is-list > li {
     height: 126px;
@@ -8476,6 +8494,9 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline {
     padding: 0 12px;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn {
+    margin: 0;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt {
     width: 100%;
