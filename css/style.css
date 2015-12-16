@@ -468,6 +468,9 @@ p.medium-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
 }
+p.small-margin-top {
+  margin-top: 6px;
+}
 strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
@@ -8684,6 +8687,42 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .cars-filters {
     display: block;
+    padding: 0;
+  }
+  .select-type-car {
+    display: block;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+  .select-type-car .zone-picto {
+    display: none;
+  }
+  .select-type-car > li {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    text-align: left;
+  }
+  .select-type-car > li.is-selected a {
+    background: none;
+    color: #e38c00;
+  }
+  .select-type-car > li.is-selected a .zone-txt {
+    color: #e38c00;
+  }
+  .select-type-car > li a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+  }
+  .select-type-car > li a .zone-txt {
+    padding: 0;
+  }
+  .select-type-car > li a .zone-txt br {
+    display: none;
   }
   /* @end */
   /* @group Forms */

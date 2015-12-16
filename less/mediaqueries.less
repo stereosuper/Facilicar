@@ -2301,6 +2301,44 @@
     }
     .cars-filters{
         display: block;
+        padding: 0;
+    }
+    .select-type-car{
+        display: block;
+        padding: 0 25px;
+        box-sizing: border-box;
+        .zone-picto{
+            display: none;
+        }
+        > li{
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            text-align: left;
+            &.is-selected{
+                a{
+                    background: none;
+                    color: @theme-secondary;
+                    .zone-txt{
+                        color: @theme-secondary;
+                    }
+                }
+            }
+            a{
+                display: inline-block;
+                vertical-align: top;
+                padding: 0;
+                margin: 0;
+                border-radius: 0;
+                .zone-txt{
+                    padding: 0;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
     }
     /* @end */
 
