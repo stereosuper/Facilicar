@@ -1770,6 +1770,16 @@ a.btn-menu-responsive .rect:before {
   left: 0;
   background: url("../layoutImg/centre-essai-livraison.png") no-repeat 0 0;
 }
+.img-agence-reprise {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../layoutImg/agence-reprise.png") no-repeat 0 0;
+}
 .list-search-result > li,
 .list-block.list-search-result > li {
   margin: 0;
@@ -8700,6 +8710,10 @@ a.btn-slider-citation:hover.btn-right span {
   #main .navbar .list-block > li:first-of-type {
     margin: 0 10px 0 0;
   }
+  .navbar .list-block > li a,
+  #main .navbar .list-block > li a {
+    padding: 5px 0;
+  }
   .content-with-navbar {
     display: block;
     width: 100%;
@@ -8998,6 +9012,10 @@ a.btn-slider-citation:hover.btn-right span {
   #main .list-blocks-inline > li {
     padding: 20px;
   }
+  .list-blocks-inline > li#contact-presse,
+  #main .list-blocks-inline > li#contact-presse {
+    padding-top: 0;
+  }
   /* @end */
   label {
     display: block;
@@ -9029,6 +9047,11 @@ a.btn-slider-citation:hover.btn-right span {
     display: none;
   }
   /* @end */
+}
+@media (max-height: 500px) {
+  #main {
+    padding-top: 20px;
+  }
 }
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {

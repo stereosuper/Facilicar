@@ -1048,6 +1048,25 @@ $(function(){
 		scaledSize: new google.maps.Size(22, 26)
 	};
 
+	var urlAgenceReprise = 'img/agence-reprise.png';
+	var sizeAgenceReprise = new google.maps.Size(22, 27);
+
+	if(window.devicePixelRatio > 1.5){
+		urlAgenceReprise = 'img/agence-reprise@2x.png';
+		sizeAgenceReprise = new google.maps.Size(44, 54);
+	}
+	
+	if(window.devicePixelRatio > 2){
+		urlAgenceReprise = 'img/agence-reprise@3x.png';
+		sizeAgenceReprise = new google.maps.Size(66, 81);
+	}
+
+	var imageAgenceReprise = {
+		url: urlAgenceReprise,
+		size: sizeAgenceReprise,
+		scaledSize: new google.maps.Size(22, 27)
+	};
+
 	for (i = 0; i < locations.length; i++) {
 		if(locations[i][3] == "centre"){
 			marker = new google.maps.Marker({
@@ -1060,6 +1079,12 @@ $(function(){
 				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
 				map: map,
 				icon: imageFacilistore
+			});
+		}else if(locations[i][3] == "agence-reprise"){
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+				map: map,
+				icon: imageAgenceReprise
 			});
 		}
 

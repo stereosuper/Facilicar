@@ -2259,6 +2259,9 @@
                 &:first-of-type{
                     margin: 0 10px 0 0;
                 }
+                a{
+                    padding: 5px 0;
+                }
             }
         }
     }
@@ -2584,6 +2587,9 @@
     .list-blocks-inline, #main .list-blocks-inline{
         > li{
             padding: 20px;
+            &#contact-presse{
+                padding-top: 0;
+            }
         }
     }
     /* @end */
@@ -2628,8 +2634,11 @@
 
 }
 
-
-//e-trustedshops
+@media (max-height: 500px) {
+    #main{
+        padding-top: 20px;
+    }
+}
 
 /* retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
