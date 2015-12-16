@@ -8773,11 +8773,15 @@ a.btn-slider-citation:hover.btn-right span {
     display: none;
   }
   .lines-filters > li.line-filters-two .list-inline,
-  .list-block.lines-filters > li.line-filters-two .list-inline {
+  .list-block.lines-filters > li.line-filters-two .list-inline,
+  .lines-filters > li.line-filters-three .list-inline,
+  .list-block.lines-filters > li.line-filters-three .list-inline {
     display: block;
   }
   .lines-filters > li.line-filters-two .list-inline > li,
-  .list-block.lines-filters > li.line-filters-two .list-inline > li {
+  .list-block.lines-filters > li.line-filters-two .list-inline > li,
+  .lines-filters > li.line-filters-three .list-inline > li,
+  .list-block.lines-filters > li.line-filters-three .list-inline > li {
     display: block;
   }
   .cars-filters .select-custom {
@@ -8818,6 +8822,7 @@ a.btn-slider-citation:hover.btn-right span {
     width: 100%;
     height: auto;
     margin: 0;
+    text-align: left;
   }
   .select-option-car > li a {
     display: inline-block;
