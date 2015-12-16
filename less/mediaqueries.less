@@ -1029,6 +1029,28 @@
         }
     }
 
+    .is-list{
+        .wrapper-car{
+            &.cta{
+                font-size: 0.9em;
+                .cta-wrapper{
+                    .cta-content{
+                        padding: 0 20px 0 0;
+                        &.cta-img{
+                            width: 14%;
+                        }
+                        &.cta-txt{
+                            width: 32%;
+                        }
+                        &.cta-btn{
+                            width: 22%;
+                        }
+                    }               
+                }
+            }        
+        }
+    }
+
     /* @end */
 
     /* @group Choisir / Témoignage */
@@ -1905,6 +1927,7 @@
             }
             .cta-content{
                 &.cta-img{
+                    width: 100%;
                     padding: 8px 0 8px 0;
                     max-height: 40px;
                     img{
@@ -2002,6 +2025,51 @@
                 }
                 &.icon-quatre-quatre{
                     font-size: 13px;
+                }
+            }
+        }
+        .wrapper-car{
+            &.cta{
+                font-size: 0.85em;
+                .tel{
+                    display: block;
+                }
+                .cta-wrapper{
+                    padding: 0 10px;
+                    display: block;
+                    .cta-content{
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        padding: 0;
+                        margin: 3px 0;
+                        &.cta-img{
+                            width: 100%;
+                            margin-top: 5px;
+                        }
+                        &.cta-btn{
+                            width: 100%;
+                            text-align: center;
+                            .wrapper-cta-btn{
+                                display: block;
+                                height: auto;
+                                .content-wrapper-cta-btn{
+                                    display: block;
+                                }
+                            }
+                            .btn-underline{
+                                padding: 0 12px;
+                            }
+                        }
+                        &.cta-txt{
+                            width: 100%;
+                            text-align: center;
+                            line-height: 1em;
+                        }
+                        br{
+                            display: none;
+                        }
+                    }
                 }
             }
         }

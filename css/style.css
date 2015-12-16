@@ -7493,6 +7493,21 @@ a.btn-slider-citation:hover.btn-right span {
   .is-list .car-options .zone-picto.icon-quatre-quatre {
     font-size: 17px;
   }
+  .is-list .wrapper-car.cta {
+    font-size: 0.9em;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content {
+    padding: 0 20px 0 0;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img {
+    width: 14%;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt {
+    width: 32%;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn {
+    width: 22%;
+  }
   /* @end */
   /* @group Choisir / Témoignage */
   #wrapper-choisir-temoignage {
@@ -8340,6 +8355,7 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 1px 8px 0 0;
   }
   .wrapper-car.cta .cta-content.cta-img {
+    width: 100%;
     padding: 8px 0 8px 0;
     max-height: 40px;
   }
@@ -8425,6 +8441,49 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .is-list .car-options .zone-picto.icon-quatre-quatre {
     font-size: 13px;
+  }
+  .is-list .wrapper-car.cta {
+    font-size: 0.85em;
+  }
+  .is-list .wrapper-car.cta .tel {
+    display: block;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper {
+    padding: 0 10px;
+    display: block;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 3px 0;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn {
+    width: 100%;
+    text-align: center;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn {
+    display: block;
+    height: auto;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn {
+    display: block;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline {
+    padding: 0 12px;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt {
+    width: 100%;
+    text-align: center;
+    line-height: 1em;
+  }
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content br {
+    display: none;
   }
   /* @end */
   /* @group Newsletter */
