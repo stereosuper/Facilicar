@@ -40,6 +40,14 @@ function scrollPage(){
 		TweenMax.set($("body"), {className:"-=header-on"});
 	}
 
+	if($("body").hasClass("resultat-recherche")){
+		if (myScroll>66){
+			TweenMax.set($(".cars-filters"), {className:"+=fixed"});
+		}else{
+			TweenMax.set($(".cars-filters"), {className:"-=fixed"});
+		}
+	}
+
 	if($("body").hasClass("has-sidebar")){
 		// Fixer la sidebar au scroll
 		if(viewport().width>tabletBreakpoint){
@@ -557,6 +565,49 @@ $(function(){
 		return false;
 	});
 
+	// Clic sur les toggle filter
+	$(".toggle-filter").click(function(){
+		if($(window).width()<=767){
+			$(this).toggleClass("open");
+			$(this).next(".content-toggle-filter").slideToggle(200);
+		}
+		return false;
+	});
+
+	// Clic sur le bouton filtrer au responsive
+	$("#button-filter").click(function(){
+		if(!$(this).hasClass("open")){
+			$(this).addClass("open");
+			$(this).next(".lines-filters").slideToggle(200);
+		}
+		return false;
+	});
+
+	$(".zone-right-btn").click(function(){
+		if((!$(this).hasClass("disabled"))&&($(this).parents(".btn-filter").hasClass("open"))){
+			console.log("on filtre !");
+		}else if(!$(this).parents(".btn-filter").hasClass("open")){
+			$(this).parents(".btn-filter").addClass("open");
+			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
+		}
+		return false;
+	});
+
+	$(".zone-left-btn").click(function(){
+		if(!$(this).parents(".btn-filter").hasClass("open")){
+			$(this).parents(".btn-filter").addClass("open");
+			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
+		}else{
+			var parent = $(this).parents(".btn-filter");
+			if(!$(".zone-right-btn", parent).hasClass("disabled")){
+				console.log("on ne filtre pas ! On vide les modifs");
+			}
+			$(this).parents(".btn-filter").removeClass("open");
+			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
+		}
+		return false;
+	});
+
 	// Clic sur les boutons mosaique / liste
 	$(".icon-mosaique").click(function(){
 		if($(".list-cars").hasClass("is-list")){
@@ -581,9 +632,9 @@ $(function(){
 		function() {
 			if($(".list-cars").hasClass("is-list")){
 				// Lancer le slideshow des photos de la voiture
-				if($("ul", this).length){
-					var ulActive = $("ul", this);
-					var nbSlidesCars = $("ul li", this).length;
+				if($(".bandeau-image-car ul", this).length){
+					var ulActive = $(".bandeau-image-car ul", this);
+					var nbSlidesCars = $(".bandeau-image-car ul li", this).length;
 					if(nbSlidesCars>1){
 						animateNextCarSlide(ulActive, 1);
 					}
@@ -591,11 +642,11 @@ $(function(){
 			}
 		}, function() {
 			// Arreter le slideshow
-			TweenMax.killTweensOf($("ul >li", this));
-			var ulActiveAze = $("ul", this);
+			TweenMax.killTweensOf($(".bandeau-image-car ul >li", this));
+			var ulActiveAze = $(".bandeau-image-car ul", this);
 			var slideOne = $(">li", ulActiveAze).eq(0);
 
-			if(!$("ul li", this).first().hasClass("is-active")){
+			if(!$(".bandeau-image-car ul li", this).first().hasClass("is-active")){
 				TweenMax.set(slideOne, {x: "100%"});
 			}
 			
