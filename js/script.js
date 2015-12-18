@@ -738,6 +738,11 @@ $(function(){
 		    of: $('#filter-prix .ui-slider-handle').eq(1),
 		    offset: "0, 10"
 		});
+
+		if($(window).width()<=767){
+			TweenMax.set($(".list-cars"), {className:"+=is-list"});
+			TweenMax.set($("#change-liste-mosaique"), {display:"none"});
+		}
 	}
 
 	// Effacer tous les critères
@@ -1186,4 +1191,17 @@ $(window).resize(function(){
 	
 	// Positionnement de la description de recherche
 	descRecherche();
+
+	// Slider | Range
+	if($("body").hasClass("resultat-recherche")){
+		if($(window).width()<=767){
+			TweenMax.set($(".list-cars"), {className:"+=is-list"});
+			TweenMax.set($("#change-liste-mosaique"), {display:"none"});
+		}else{
+			TweenMax.set($(".list-cars"), {className:"-=is-list"});
+			TweenMax.set($("#change-liste-mosaique"), {clearProps:"all"});
+			TweenMax.set($("#change-liste-mosaique .icon-mosaique"), {className:"+=is-selected"});
+			TweenMax.set($("#change-liste-mosaique .icon-liste"), {className:"-=is-selected"});
+		}
+	}
 });

@@ -4287,7 +4287,7 @@ a.btn-slider-citation:hover.btn-right span {
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 10;
+  z-index: 12;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -9120,7 +9120,7 @@ a.btn-slider-citation:hover.btn-right span {
     height: auto;
     background-color: #fff;
     padding: 0;
-    z-index: 7;
+    z-index: 11;
     max-height: 100%;
     overflow-y: auto;
     -webkit-transform: translate3d(0, 0, 0);
