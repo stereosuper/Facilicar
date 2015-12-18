@@ -1388,6 +1388,19 @@
             }
         }
     }
+    .zone-sort-by{
+        .list-inline{
+            > li{
+                margin: 0 15px;
+                .filter-title{
+                    font-size: 0.9em;
+                }
+                a{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
     /* @end */
 
     .notif-faq{
@@ -2373,7 +2386,7 @@
     }
     .wrapper-car-filters{
         display: block;
-        position: relative;
+        //position: relative;
         z-index: 5;
         padding: 70px 0 0 0;
     }
@@ -2421,15 +2434,17 @@
         height: auto;
         background-color: #fff;
         padding: 28px 0 0 0;
-        /*max-height: 100%;
-        overflow-y: auto;*/
-        &.fixed{
+        z-index: 7;
+        max-height: 100%;
+        //overflow-x: visible;
+        overflow-y: auto;
+        /*&.fixed{
             position: fixed;
             top: -28px;
             box-sizing: border-box;
             padding-left: 5%;
             padding-right: 5%;
-        }
+        }*/
         .list-inline.small-margin > li{
             margin: 0;
         }
@@ -2745,6 +2760,20 @@
             }
             .triangle{
                 display: none;
+            }
+        }
+    }
+    .zone-sort-by{
+        .list-inline{
+            padding: 0 10px 0 0;
+            > li{
+                margin: 0 10px;
+                .filter-title{
+                    font-size: 0.8em;
+                }
+                a{
+                    font-size: 8px;
+                }
             }
         }
     }

@@ -6090,16 +6090,18 @@ a.btn-slider-citation:hover.btn-right span {
 }
 #button-filter {
   display: none;
-  width: 110%;
   padding: 0;
-  margin: 0 0 0 -5%;
+  width: 100%;
+  margin: 0;
+  /*width: 110%;
+	margin: 0 0 0 -5%;*/
   background-color: #009cc4;
   position: relative;
   cursor: pointer;
 }
 #button-filter .zone-left-btn {
   display: block;
-  width: 77px;
+  width: 60px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -6137,7 +6139,7 @@ a.btn-slider-citation:hover.btn-right span {
   -moz-osx-font-smoothing: grayscale;
   text-transform: uppercase;
   color: #fff;
-  padding: 8px 0 8px 77px;
+  padding: 8px 0 8px 60px;
   box-sizing: border-box;
   position: relative;
   text-align: center;
@@ -6147,7 +6149,7 @@ a.btn-slider-citation:hover.btn-right span {
 }
 #button-filter .zone-right-btn .txt-close {
   display: block;
-  padding-right: 77px;
+  padding-right: 50px;
 }
 #button-filter .zone-right-btn .txt-open {
   display: none;
@@ -8097,6 +8099,15 @@ a.btn-slider-citation:hover.btn-right span {
   .list-block.lines-filters > li:last-of-type {
     margin-top: 15px;
   }
+  .zone-sort-by .list-inline > li {
+    margin: 0 15px;
+  }
+  .zone-sort-by .list-inline > li .filter-title {
+    font-size: 0.9em;
+  }
+  .zone-sort-by .list-inline > li a {
+    font-size: 10px;
+  }
   /* @end */
   .notif-faq {
     left: 76px;
@@ -9055,7 +9066,6 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-car-filters {
     display: block;
-    position: relative;
     z-index: 5;
     padding: 70px 0 0 0;
   }
@@ -9111,15 +9121,16 @@ a.btn-slider-citation:hover.btn-right span {
     height: auto;
     background-color: #fff;
     padding: 28px 0 0 0;
-    /*max-height: 100%;
-        overflow-y: auto;*/
-  }
-  .cars-filters.fixed {
-    position: fixed;
-    top: -28px;
-    box-sizing: border-box;
-    padding-left: 5%;
-    padding-right: 5%;
+    z-index: 7;
+    max-height: 100%;
+    overflow-y: auto;
+    /*&.fixed{
+            position: fixed;
+            top: -28px;
+            box-sizing: border-box;
+            padding-left: 5%;
+            padding-right: 5%;
+        }*/
   }
   .cars-filters .list-inline.small-margin > li {
     margin: 0;
@@ -9445,6 +9456,18 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .select-option-car .zone-txt .triangle {
     display: none;
+  }
+  .zone-sort-by .list-inline {
+    padding: 0 10px 0 0;
+  }
+  .zone-sort-by .list-inline > li {
+    margin: 0 10px;
+  }
+  .zone-sort-by .list-inline > li .filter-title {
+    font-size: 0.8em;
+  }
+  .zone-sort-by .list-inline > li a {
+    font-size: 8px;
   }
   /* @end */
   /* @group Forms */

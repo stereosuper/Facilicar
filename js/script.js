@@ -1149,6 +1149,7 @@ $(function(){
 	}
 });
 
+var h = $(window).height(), w = $(window).width();
 $(window).resize(function(){
 	// Remettre les toggle btn
 	$(".container-toggle-one").each(function(){
@@ -1168,6 +1169,17 @@ $(window).resize(function(){
 		$(".wrapper-choose").removeClass("survol-left").removeClass("survol-out-left").removeClass("survol-right").removeClass("survol-out-right");
 	}
 
+	var nh = $(window).height(), nw = $(window).width();
+	if (nw != w){
+		// Le resize se fait au moins sur la largeur, p-e sur la largeur et la hauteur
+		if($("body").hasClass("resultat-recherche")){
+			TweenMax.set($(".toggle-filter"), {className:"-=open"});
+			TweenMax.set($(".content-toggle-filter"), {clearProps:"all"});
+			TweenMax.set($(".lines-filters"), {clearProps:"all"});
+		}
+	}
+	h = nh; w = nw;
+	
 	// Positionnement de la description de recherche
 	descRecherche();
 });
