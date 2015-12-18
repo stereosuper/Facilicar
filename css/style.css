@@ -9113,24 +9113,25 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .cars-filters {
     display: block;
-    padding: 0;
     position: absolute;
-    top: 0;
+    top: 28px;
     left: 0;
     width: 100%;
     height: auto;
     background-color: #fff;
-    padding: 28px 0 0 0;
+    padding: 0;
     z-index: 7;
     max-height: 100%;
     overflow-y: auto;
-    /*&.fixed{
-            position: fixed;
-            top: -28px;
-            box-sizing: border-box;
-            padding-left: 5%;
-            padding-right: 5%;
-        }*/
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .cars-filters.fixed {
+    position: fixed;
+    top: 0px;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .cars-filters .list-inline.small-margin > li {
     margin: 0;
