@@ -568,6 +568,10 @@ $(function(){
 	// Clic sur les toggle filter
 	$(".toggle-filter").click(function(){
 		if($(window).width()<=767){
+			if(!$(this).hasClass("open")){
+				$(".toggle-filter.open").next(".content-toggle-filter").slideToggle(200);
+				$(".toggle-filter.open").removeClass("open");
+			}
 			$(this).toggleClass("open");
 			$(this).next(".content-toggle-filter").slideToggle(200);
 		}
