@@ -1618,7 +1618,7 @@ a.btn-menu-responsive .rect:before {
   top: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 50% 0;
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
           transition: opacity 0.2s ease-in-out;
