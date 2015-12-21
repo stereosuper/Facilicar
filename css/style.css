@@ -1329,6 +1329,7 @@ a.btn-menu-responsive .rect:before {
   display: block;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  text-decoration: none;
 }
 .bloc-survol:hover .zone-picto-bloc-survol {
   opacity: 0;
