@@ -6144,9 +6144,6 @@ a.btn-slider-citation:hover.btn-right span {
   position: relative;
   text-align: center;
 }
-#button-filter .zone-right-btn.disabled .txt-open {
-  color: #b0b0a8;
-}
 #button-filter .zone-right-btn .txt-close {
   display: block;
   padding-right: 50px;
@@ -6175,6 +6172,9 @@ a.btn-slider-citation:hover.btn-right span {
 }
 #button-filter.open .zone-left-btn .icon-cross {
   display: block;
+}
+#button-filter.open .zone-right-btn.disabled {
+  background-color: #b0b0a8;
 }
 #button-filter.open .zone-right-btn .txt-close {
   display: none;

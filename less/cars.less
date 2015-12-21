@@ -1123,11 +1123,6 @@
 		box-sizing: border-box;
 		position: relative;
 		text-align: center;
-		&.disabled{
-			.txt-open{
-				color: @theme-gris2;
-			}
-		}
 		.txt-close{
 			display: block;
 			padding-right: 50px;
@@ -1160,6 +1155,9 @@
 			}
 		}
 		.zone-right-btn{
+			&.disabled{
+				background-color: @theme-gris2;
+			}
 			.txt-close{
 				display: none;
 			}
