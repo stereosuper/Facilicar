@@ -50,6 +50,8 @@ function scrollPage(){
 
 	if($("body").hasClass("has-sidebar")){
 		// Fixer la sidebar au scroll
+		//alert($(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight());
+		//console.log($(".navbar ul").outerHeight());
 		if(viewport().width>tabletBreakpoint){
 			if((myScroll>=$(".navbar").offset().top-$("#header").outerHeight()) && (myScroll<$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight())){
 				TweenMax.set($(".navbar ul"), {position: "fixed", top: $("#header").outerHeight()+"px"});

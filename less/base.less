@@ -743,7 +743,9 @@ a.btn-menu-responsive{
     width: 220px;
     height: 100%;
     vertical-align: top;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     &.navbar-left{
         position: absolute;
         top: 0;
@@ -759,6 +761,7 @@ a.btn-menu-responsive{
         box-sizing: content-box;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         position: relative;
+        backface-visibility: hidden;
         >li{
             margin: 0;
             padding: 0;
@@ -792,7 +795,7 @@ a.btn-menu-responsive{
 
 .content-with-navbar{
     width: auto;
-    padding: 13px 0 0 100px;
+    padding: 13px 0 0 320px;
     box-sizing: border-box;
     &.has-navbar-left{
         padding-left: 320px;

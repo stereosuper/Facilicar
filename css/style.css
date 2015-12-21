@@ -1042,7 +1042,9 @@ a.btn-menu-responsive .rect:before {
   width: 220px;
   height: 100%;
   vertical-align: top;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .navbar.navbar-left,
 #main .navbar.navbar-left {
@@ -1061,6 +1063,8 @@ a.btn-menu-responsive .rect:before {
   box-sizing: content-box;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .navbar .list-block > li,
 #main .navbar .list-block > li {
@@ -1097,7 +1101,7 @@ a.btn-menu-responsive .rect:before {
 }
 .content-with-navbar {
   width: auto;
-  padding: 13px 0 0 100px;
+  padding: 13px 0 0 320px;
   box-sizing: border-box;
 }
 .content-with-navbar.has-navbar-left {
@@ -8008,7 +8012,7 @@ a.btn-slider-citation:hover.btn-right span {
     width: 180px;
   }
   .content-with-navbar {
-    padding: 18px 0 0 76px;
+    padding: 18px 0 0 296px;
   }
   .content-with-navbar.has-navbar-left {
     padding-left: 296px;
@@ -8965,6 +8969,7 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
     width: 100%;
     height: auto;
+    position: relative;
   }
   .navbar.navbar-left,
   #main .navbar.navbar-left {
