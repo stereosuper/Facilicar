@@ -309,6 +309,28 @@ a, div, span{
 			left: 0;
 		}
 	}
+	&.btn-arrow-top{
+		position: relative;
+		padding-left: 14px;
+		text-decoration: none;
+		&:before{
+			content: "\e905";
+			.icon-font;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			font-size: 4px;
+			margin: -2px 0 0 0;
+		}
+		&.big{
+			padding-left: 22px;
+			.texta-black(1.125em);
+			text-transform: uppercase;
+			&:before{
+				font-size: 6px;
+			}
+		}
+	}
 	&.btn-cross{
 		position: relative;
 		padding-left: 18px;

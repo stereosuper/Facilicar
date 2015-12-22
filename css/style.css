@@ -996,7 +996,7 @@ a.btn-menu-responsive .rect:before {
 #main .breadcrumb {
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  width: auto;
   height: auto;
   margin: 0;
   padding: 15px 0 0 0;
@@ -1031,6 +1031,10 @@ a.btn-menu-responsive .rect:before {
   font-size: 1em;
   color: #6d6d67;
   text-decoration: underline;
+}
+#btn-retour-recherche {
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 /* @end */
 /* @group Navbar */
@@ -2412,6 +2416,49 @@ span.btn-arrow:before {
   position: absolute;
   top: 0;
   left: 0;
+}
+a.btn-arrow-top,
+div.btn-arrow-top,
+span.btn-arrow-top {
+  position: relative;
+  padding-left: 14px;
+  text-decoration: none;
+}
+a.btn-arrow-top:before,
+div.btn-arrow-top:before,
+span.btn-arrow-top:before {
+  content: "\e905";
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 4px;
+  margin: -2px 0 0 0;
+}
+a.btn-arrow-top.big,
+div.btn-arrow-top.big,
+span.btn-arrow-top.big {
+  padding-left: 22px;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.125em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+}
+a.btn-arrow-top.big:before,
+div.btn-arrow-top.big:before,
+span.btn-arrow-top.big:before {
+  font-size: 6px;
 }
 a.btn-cross,
 div.btn-cross,
@@ -6611,6 +6658,55 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
+.wrapper-car-detail {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 10px 0 0 0;
+  border-top: 1px solid #d8d8d4;
+}
+.top-car-detail {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.wrapper-slider-car-detail {
+  display: inline-block;
+  vertical-align: top;
+  width: 630px;
+  height: 422px;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper-txt-top-car-detail {
+  display: block;
+  width: 100%;
+  height: 422px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0 0 650px;
+}
+.car-details {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.car-details > li {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
 /* @end */
 /* @group States */
 .hide-text {
@@ -6622,6 +6718,12 @@ a.btn-slider-citation:hover.btn-right span {
 	&.car-block{
 		display: none;
 	}*/
+}
+.is-left {
+  float: left;
+}
+.is-right {
+  float: right;
 }
 .is-visible {
   opacity: 1;

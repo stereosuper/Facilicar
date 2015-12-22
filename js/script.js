@@ -50,13 +50,12 @@ function scrollPage(){
 
 	if($("body").hasClass("has-sidebar")){
 		// Fixer la sidebar au scroll
-		//alert($(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight());
-		//console.log($(".navbar ul").outerHeight());
 		if(viewport().width>tabletBreakpoint){
 			if((myScroll>=$(".navbar").offset().top-$("#header").outerHeight()) && (myScroll<$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight())){
 				TweenMax.set($(".navbar ul"), {position: "fixed", top: $("#header").outerHeight()+"px"});
 			}else if(myScroll>=$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()){
-				TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight()+"px"});
+				//TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight()+"px"});
+				TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight()+"px"});
 			}else{
 				TweenMax.set($(".navbar ul"), {position: "absolute", top: "0"});
 			}
@@ -64,7 +63,8 @@ function scrollPage(){
 			if((myScroll>=$(".navbar").offset().top) && (myScroll<$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight())){
 				TweenMax.set($(".navbar ul"), {position: "fixed", top: "0px"});
 			}else if(myScroll>=$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()){
-				TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+"px"});
+				//TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+"px"});
+				TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+"px"});
 			}else{
 				TweenMax.set($(".navbar ul"), {position: "relative", top: "inherit"});
 			}
