@@ -1812,13 +1812,47 @@
 		.prix-moyen-txt{
 			.texta-light(0.875em);
 			text-transform: uppercase;
+			width: 100px;
+			line-height: 1.2em;
+			padding-right: 12px;
 		}
 		.prix-moyen{
 			.texta-light(1.625em);
-			span{
+			.acronym{
 				.texta-light(0.615em);
 			}
 		}
+		.prix-financement{
+			.texta-light(2.813em);
+			color: @theme-secondary;
+			line-height: 0.6em;
+			padding: 4px 0 0 0;
+			span{
+				font-size: 0.444em;
+				padding: 0 0 0 5px;
+			}
+		}
+	}
+	.wrapper-economie-financement{
+		.texta-light(0.875em);
+	}
+	#btn-financement{
+		.texta-bold(1em);
+	}
+	.consultations{
+		color: @theme-gris2;
+		.texta-bold(0.875em);
+	}
+	#btn-essai-commande{
+		.texta-black(1.125em);
+	}
+	#btn-financement{
+		.texta-black(0.875em);
+		margin: 12px 0 0 0;
+	}
+	#btn-question{
+		.texta-black(0.875em);
+		margin: 12px 0 0 0;
 	}
 	.car-old-price{
 		bottom: 111px;
@@ -1865,7 +1899,7 @@
 		.texta-bold(0.929em);
 		line-height: 1em;
 		padding: 2px 4px;
-		margin: 0;
+		margin: 3px 0 0 0;
 	}
 	
 
@@ -1955,17 +1989,23 @@
 	display: inline-block;
 	vertical-align: top;
 	width: 630px;
-	height: 422px;
-	background-color: grey;
+	height: 500px;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
+.wrapper-current-slide{
+	display: block;
+	width: 100%;
+	height: 420px;
+	background-color: grey;
+}
+
 .wrapper-txt-top-car-detail{
 	display: block;
 	width: 100%;
-	height: 422px;
+	height: 500px;
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0 0 0 650px;
@@ -1984,6 +2024,12 @@
 		height: auto;
 		margin: 0;
 		padding: 0;
+		&#details-tel-consultations{
+			margin: 16px 0;
+		}
+		&#details-eco-financement{
+			margin: 8px 0 0 0;
+		}
 	}
 }
 

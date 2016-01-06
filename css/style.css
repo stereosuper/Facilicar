@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-tooltip:before {
+  content: "\e924";
+}
 .icon-filter:before {
   content: "\e923";
 }
@@ -723,6 +726,25 @@ a.color-theme-black:hover {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
 }
+.encadre-round {
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 18px;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.625em;
+  color: #fff;
+  background-color: #6d6d67;
+  text-decoration: none;
+  line-height: 1em;
+  padding: 3px 20px;
+}
+.encadre-round.encadre-icon {
+  padding-left: 15px;
+}
+.encadre-round .icon-tel {
+  font-size: 18px;
+  margin: 0 14px 0 0;
+}
 .txt-centered {
   text-align: center;
 }
@@ -763,6 +785,9 @@ a.color-theme-black:hover {
 }
 .full-height {
   height: 100%;
+}
+.full-width {
+  width: 100%;
 }
 .wrapper-align-middle {
   display: table;
@@ -2417,6 +2442,32 @@ span.btn-arrow:before {
   top: 0;
   left: 0;
 }
+a.btn-arrow-bottom,
+div.btn-arrow-bottom,
+span.btn-arrow-bottom {
+  position: relative;
+  padding-left: 14px;
+}
+a.btn-arrow-bottom:before,
+div.btn-arrow-bottom:before,
+span.btn-arrow-bottom:before {
+  content: "\e901";
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  font-size: 4px;
+  margin: -2px 0 0 0;
+}
 a.btn-arrow-top,
 div.btn-arrow-top,
 span.btn-arrow-top {
@@ -2674,6 +2725,36 @@ div.btn-block.big.btn-block-arrow .txt-hover-btn-block-arrow,
 span.btn-block.big.btn-block-arrow .txt-hover-btn-block-arrow {
   padding: 26px 58px;
 }
+a.btn-block.full-width,
+div.btn-block.full-width,
+span.btn-block.full-width {
+  text-align: center;
+}
+a.btn-block.full-width .txt-btn-block-arrow,
+div.btn-block.full-width .txt-btn-block-arrow,
+span.btn-block.full-width .txt-btn-block-arrow {
+  padding: 17px 10px;
+}
+a.btn-block.full-width .txt-hover-btn-block-arrow,
+div.btn-block.full-width .txt-hover-btn-block-arrow,
+span.btn-block.full-width .txt-hover-btn-block-arrow {
+  width: 100%;
+  text-align: center;
+  padding: 17px 10px 17px 13px;
+}
+a.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow,
+div.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow,
+span.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow {
+  position: relative;
+  top: inherit;
+  left: inherit;
+  margin: 0;
+  height: auto;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 16px 0 0 0;
+}
 a.btn-block.btn-block-border,
 div.btn-block.btn-block-border,
 span.btn-block.btn-block-border {
@@ -2710,6 +2791,7 @@ span.btn-block .txt-btn-block-arrow {
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
   padding: 17px 28px 17px 45px;
+  box-sizing: border-box;
 }
 a.btn-block .txt-hover-btn-block-arrow,
 div.btn-block .txt-hover-btn-block-arrow,
@@ -2723,6 +2805,7 @@ span.btn-block .txt-hover-btn-block-arrow {
           transform: translateY(-100%);
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
+  box-sizing: border-box;
 }
 a.btn-block .txt-hover-btn-block-arrow:before,
 div.btn-block .txt-hover-btn-block-arrow:before,
@@ -3081,6 +3164,12 @@ a:focus {
 }
 .list-inline.list-half > li:last-of-type {
   padding: 0 0 0 3px;
+}
+.list-inline.list-half.medium-padding > li:first-of-type {
+  padding: 0 6px 0 0;
+}
+.list-inline.list-half.medium-padding > li:last-of-type {
+  padding: 0 0 0 6px;
 }
 .list-inline.list-half.big-padding > li:first-of-type {
   padding: 0 10px 0 0;
@@ -4457,6 +4546,8 @@ a.btn-slider-citation:hover.btn-right span {
 #list-date-popup {
   min-width: 420px;
 }
+/* @end */
+/* @group Tooltip */
 /* @end */
 /* @group Choose */
 .wrapper-survol-out {
@@ -6974,14 +7065,64 @@ a.btn-slider-citation:hover.btn-right span {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
   text-transform: uppercase;
+  width: 100px;
+  line-height: 1.2em;
+  padding-right: 12px;
 }
 .wrapper-car-detail .wrapper-prix-detail .prix-moyen {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.625em;
 }
-.wrapper-car-detail .wrapper-prix-detail .prix-moyen span {
+.wrapper-car-detail .wrapper-prix-detail .prix-moyen .acronym {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.615em;
+}
+.wrapper-car-detail .wrapper-prix-detail .prix-financement {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 2.813em;
+  color: #e38c00;
+  line-height: 0.6em;
+  padding: 4px 0 0 0;
+}
+.wrapper-car-detail .wrapper-prix-detail .prix-financement span {
+  font-size: 0.444em;
+  padding: 0 0 0 5px;
+}
+.wrapper-car-detail .wrapper-economie-financement {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+}
+.wrapper-car-detail #btn-financement {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
+.wrapper-car-detail .consultations {
+  color: #b0b0a8;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+}
+.wrapper-car-detail #btn-essai-commande {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.125em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.wrapper-car-detail #btn-financement {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 0.875em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 12px 0 0 0;
+}
+.wrapper-car-detail #btn-question {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 0.875em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 12px 0 0 0;
 }
 .wrapper-car-detail .car-old-price {
   bottom: 111px;
@@ -7043,7 +7184,7 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 0.929em;
   line-height: 1em;
   padding: 2px 4px;
-  margin: 0;
+  margin: 3px 0 0 0;
 }
 .wrapper-car-detail .result-cars-number {
   width: 200px;
@@ -7132,16 +7273,21 @@ a.btn-slider-citation:hover.btn-right span {
   display: inline-block;
   vertical-align: top;
   width: 630px;
-  height: 422px;
-  background-color: grey;
+  height: 500px;
   position: absolute;
   top: 0;
   left: 0;
 }
+.wrapper-current-slide {
+  display: block;
+  width: 100%;
+  height: 420px;
+  background-color: grey;
+}
 .wrapper-txt-top-car-detail {
   display: block;
   width: 100%;
-  height: 422px;
+  height: 500px;
   box-sizing: border-box;
   margin: 0;
   padding: 0 0 0 650px;
@@ -7160,6 +7306,12 @@ a.btn-slider-citation:hover.btn-right span {
   height: auto;
   margin: 0;
   padding: 0;
+}
+.car-details > li#details-tel-consultations {
+  margin: 16px 0;
+}
+.car-details > li#details-eco-financement {
+  margin: 8px 0 0 0;
 }
 /* @end */
 /* @group States */
