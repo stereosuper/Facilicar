@@ -52,6 +52,8 @@ if(isset($_POST['submit'])){
 	  	<meta name="description" content="Achetez ou vendez votre voiture de façon plus simple, plus sûr et plus rapide avec Facilicar.com">
 		
 		<link rel="stylesheet" href="css/libs/normalize.css">
+		<!-- Tooltips -->
+		<link rel="stylesheet" href="css/tooltipster.css" />
 	  	<link rel="stylesheet" href="css/style.css">
 		
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -118,6 +120,8 @@ if(isset($_POST['submit'])){
 		<script src="js/libs/imgLiquid-min.js" type="text/javascript"></script>
 		<!-- Cookie -->
 		<script src="js/libs/js.cookie.js" type="text/javascript"></script>
+		<!-- Tooltip -->
+		<script src="js/libs/jquery.tooltipster.js" type="text/javascript"></script>
 		<!-- Scripts custom -->
 		<script src="js/script.js" type="text/javascript"></script>
 	</body>

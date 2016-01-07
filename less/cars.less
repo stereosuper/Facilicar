@@ -2036,4 +2036,98 @@
 	}
 }
 
+.wrapper-caracteristiques{
+	margin: 50px 0;
+	.content-align-middle{
+		vertical-align: top;
+	}
+}
+
+.caracteristiques, .list-inline.caracteristiques{
+	display: block;
+	width: 100%;
+	>li{
+		width: 100px;
+		margin: 0 32px;
+		&:first-of-type{
+			margin-left: 22px;
+		}
+		&:last-of-type{
+			margin-right: 22px;
+		}
+		a{
+			display: block;
+			width: 100%;
+			height: auto;
+			text-align: center;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: @theme-gris2;
+			.texta-light(0.875em);
+			line-height: 1.1em;
+			&:before{
+				content: "";
+				display: block;
+				width: 77px;
+				height: 77px;
+				margin: 0 auto 4px auto;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+			}
+		}
+		&.historique{
+			a{
+				&:before{
+					background-image: url("../layoutImg/historique.png")
+				}
+			}
+		}
+		&.inspection{
+			a{
+				&:before{
+					background-image: url("../layoutImg/inspection.png")
+				}
+			}
+		}
+		&.renovation{
+			a{
+				&:before{
+					background-image: url("../layoutImg/iso.png")
+				}
+			}
+		}
+		&.garantie{
+			a{
+				&:before{
+					background-image: url("../layoutImg/garantie.png")
+				}
+			}
+		}
+		&.satisfait-rembourse{
+			a{
+				&:before{
+					background-image: url("../layoutImg/satisfait-rembourse.png")
+				}
+			}
+		}
+	}
+}
+
+.content-localisation-detail{
+	width: 236px;
+	box-sizing: border-box;
+	padding: 0 0 0 30px;
+	position: relative;
+	&:before{
+		content: "\e803";
+		.icon-font;
+		font-size: 20px;
+		color: @theme-primary;
+		position: absolute;
+		top: 14px;
+		left: 0;
+	}
+}
+
+
 /* @end */

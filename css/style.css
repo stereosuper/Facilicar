@@ -477,6 +477,11 @@ p.medium-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
 }
+p.small-txt {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.2em;
+}
 p.small-margin-top {
   margin-top: 6px;
 }
@@ -4579,6 +4584,73 @@ a.btn-slider-citation:hover.btn-right span {
   bottom: -8px;
 }
 /* @end */
+/* @group Tabs */
+.wrapper-tabs {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.tabs-navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+.tabs-navigation > li {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: content-box;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+.tabs-navigation > li a {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.125em;
+  color: #333333;
+  text-decoration: underline;
+  padding: 20px 30px;
+  position: relative;
+}
+.tabs-navigation > li a.is-selected {
+  border-left: 1px solid #b0b0a8;
+  border-right: 1px solid #b0b0a8;
+  background-color: #fff;
+}
+.tabs-navigation > li a.is-selected:before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  right: -1px;
+  background-color: #009cc4;
+}
+.tabs-content {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  border: 1px solid #b0b0a8;
+  position: relative;
+  margin: -1px 0 0 0;
+}
+.tabs-content > li {
+  display: none;
+  margin: 0;
+  padding: 50px 80px;
+}
+.tabs-content > li.is-selected {
+  display: block;
+}
+/* @end */
 /* @group Choose */
 .wrapper-survol-out {
   display: block;
@@ -7345,6 +7417,97 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .car-details > li#details-vehicule-vendre {
   margin: 30px 0 0 0;
+}
+.wrapper-caracteristiques {
+  margin: 50px 0;
+}
+.wrapper-caracteristiques .content-align-middle {
+  vertical-align: top;
+}
+.caracteristiques,
+.list-inline.caracteristiques {
+  display: block;
+  width: 100%;
+}
+.caracteristiques > li,
+.list-inline.caracteristiques > li {
+  width: 100px;
+  margin: 0 32px;
+}
+.caracteristiques > li:first-of-type,
+.list-inline.caracteristiques > li:first-of-type {
+  margin-left: 22px;
+}
+.caracteristiques > li:last-of-type,
+.list-inline.caracteristiques > li:last-of-type {
+  margin-right: 22px;
+}
+.caracteristiques > li a,
+.list-inline.caracteristiques > li a {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #b0b0a8;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.1em;
+}
+.caracteristiques > li a:before,
+.list-inline.caracteristiques > li a:before {
+  content: "";
+  display: block;
+  width: 77px;
+  height: 77px;
+  margin: 0 auto 4px auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.caracteristiques > li.historique a:before,
+.list-inline.caracteristiques > li.historique a:before {
+  background-image: url("../layoutImg/historique.png");
+}
+.caracteristiques > li.inspection a:before,
+.list-inline.caracteristiques > li.inspection a:before {
+  background-image: url("../layoutImg/inspection.png");
+}
+.caracteristiques > li.renovation a:before,
+.list-inline.caracteristiques > li.renovation a:before {
+  background-image: url("../layoutImg/iso.png");
+}
+.caracteristiques > li.garantie a:before,
+.list-inline.caracteristiques > li.garantie a:before {
+  background-image: url("../layoutImg/garantie.png");
+}
+.caracteristiques > li.satisfait-rembourse a:before,
+.list-inline.caracteristiques > li.satisfait-rembourse a:before {
+  background-image: url("../layoutImg/satisfait-rembourse.png");
+}
+.content-localisation-detail {
+  width: 236px;
+  box-sizing: border-box;
+  padding: 0 0 0 30px;
+  position: relative;
+}
+.content-localisation-detail:before {
+  content: "\e803";
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 20px;
+  color: #009cc4;
+  position: absolute;
+  top: 14px;
+  left: 0;
 }
 /* @end */
 /* @group States */

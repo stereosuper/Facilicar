@@ -225,6 +225,41 @@ function setToolTip(){
 	});
 }
 
+function setTabs(){
+	var tabs = $('.wrapper-tabs');
+	
+	tabs.each(function(){
+		var tab = $(this),
+			tabItems = tab.find('ul.tabs-navigation'),
+			tabContentWrapper = tab.children('ul.tabs-content'),
+			tabNavigation = tab.find('nav');
+
+		tabItems.on('click', 'a', function(event){
+			event.preventDefault();
+			var selectedItem = $(this);
+			if( !selectedItem.hasClass('is-selected') ) {
+				var selectedTab = selectedItem.data('content'),
+					selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
+					slectedContentHeight = selectedContent.innerHeight();
+				
+				tabItems.find('a.is-selected').removeClass('is-selected');
+				selectedItem.addClass('is-selected');
+				selectedContent.addClass('is-selected').siblings('li').removeClass('is-selected');
+				//animate tabContentWrapper height when content changes 
+				tabContentWrapper.animate({
+					'height': slectedContentHeight
+				}, 200);
+			}
+		});
+
+		//hide the .cd-tabs::after element when tabbed navigation has scrolled to the end (mobile version)
+		//checkScrolling(tabNavigation);
+		//tabNavigation.on('scroll', function(){ 
+		//	checkScrolling($(this));
+		//});
+	});
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -238,6 +273,9 @@ $(function(){
 
 	// Tooltip
 	setToolTip();
+
+	// Tabs
+	setTabs();
 
 	// Clic sur le bouton close des cookies
 	$("#btn-close-cookies").click(function(){
