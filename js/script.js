@@ -218,6 +218,13 @@ function completeEndCarSlide(ulActiveAze){
 	TweenMax.set($(">li.is-active", ulActiveAze), {x: "0%"});
 }
 
+function setToolTip(){
+	$('.has-tooltip').tooltipster({
+	      contentAsHTML: true,
+	      theme: '.facilicar-theme'
+	});
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -228,6 +235,9 @@ $(function(){
 	if(!Cookies.get('acceptCookie')=='not'){
 		//$(".cookies").addClass("show");
 	}
+
+	// Tooltip
+	setToolTip();
 
 	// Clic sur le bouton close des cookies
 	$("#btn-close-cookies").click(function(){
