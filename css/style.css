@@ -4571,17 +4571,11 @@ a.btn-slider-citation:hover.btn-right span {
 .tooltipster-arrow-top span,
 .tooltipster-arrow-top-right span,
 .tooltipster-arrow-top-left span {
-  border-left: 8px solid transparent !important;
-  border-right: 8px solid transparent !important;
-  border-top: 8px solid;
   bottom: -8px;
 }
 .tooltipster-arrow-top .tooltipster-arrow-border,
 .tooltipster-arrow-top-right .tooltipster-arrow-border,
 .tooltipster-arrow-top-left .tooltipster-arrow-border {
-  border-left: 9px solid transparent !important;
-  border-right: 9px solid transparent !important;
-  border-top: 9px solid;
   bottom: -8px;
 }
 /* @end */
@@ -7348,6 +7342,9 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .car-details > li#details-eco-financement {
   margin: 8px 0 0 0;
+}
+.car-details > li#details-vehicule-vendre {
+  margin: 30px 0 0 0;
 }
 /* @end */
 /* @group States */
