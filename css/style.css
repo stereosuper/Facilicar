@@ -23,6 +23,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-email:before {
+  content: "\e925";
+}
+.icon-pinterest:before {
+  content: "\e926";
+}
+.icon-print:before {
+  content: "\e927";
+}
 .icon-tooltip:before {
   content: "\e924";
 }
@@ -459,6 +468,11 @@ h4 {
   font-size: 1.25em;
   margin: 15px 0;
 }
+h5 {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.125em;
+  margin: 10px 0;
+}
 .title-underline {
   text-transform: uppercase;
   border-bottom: 1px solid #b0b0a8;
@@ -476,6 +490,10 @@ p.big-txt {
 p.medium-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+}
+p.regular-txt {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
 }
 p.small-txt {
   font-family: 'Texta-Light', sans-serif;
@@ -803,6 +821,10 @@ a.color-theme-black:hover {
 .content-align-middle {
   display: table-cell;
   vertical-align: middle;
+}
+.content-align-top {
+  display: table-cell;
+  vertical-align: top;
 }
 .e-trustedshops {
   display: inline-block;
@@ -3206,6 +3228,57 @@ a:focus {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+.list-social.list-social-txt > li {
+  margin: 0 7px;
+}
+.list-social.list-social-txt > li:first-of-type {
+  margin-left: 0;
+}
+.list-social.list-social-txt > li:last-of-type {
+  margin-right: 0;
+}
+.list-social.list-social-txt > li a {
+  width: 70px;
+  height: auto;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 0;
+  line-height: 1em;
+}
+.list-social.list-social-txt > li a .zone-icon {
+  display: block;
+  margin: 0 auto 5px auto;
+  width: 62px;
+  height: 62px;
+  line-height: 62px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #333333;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+}
+.list-social.list-social-txt > li a .zone-icon.icon-facebook {
+  font-size: 38px;
+}
+.list-social.list-social-txt > li a .zone-icon.icon-twitter {
+  font-size: 28px;
+}
+.list-social.list-social-txt > li a .zone-icon.icon-pinterest {
+  font-size: 38px;
+}
+.list-social.list-social-txt > li a .zone-icon.icon-email {
+  font-size: 28px;
+}
+.list-social.list-social-txt > li a .zone-icon.icon-print {
+  font-size: 32px;
+}
+.list-social.list-social-txt > li a:hover {
+  background: none;
+}
+.list-social.list-social-txt > li a:hover .zone-icon {
+  opacity: 0.8;
 }
 .list-social > li {
   display: inline-block;
@@ -7508,6 +7581,41 @@ a.btn-slider-citation:hover.btn-right span {
   position: absolute;
   top: 14px;
   left: 0;
+}
+.wrapper-conseils {
+  margin: 64px 0 30px 0;
+}
+.visu-conseils {
+  width: 224px;
+}
+.visu-conseils img {
+  display: block;
+  width: 100%;
+}
+.txt-conseils {
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+}
+.wrapper-infos-envi-garanties-alerte {
+  margin: 0 0 35px 0;
+}
+.wrapper-infos-envi-garanties-alerte h5 {
+  margin-bottom: 20px;
+}
+.wrapper-infos-envi {
+  width: 27%;
+  box-sizing: border-box;
+  padding: 0 11px 0 0;
+}
+.wrapper-garanties {
+  width: 35%;
+  box-sizing: border-box;
+  padding: 0 11px;
+}
+.wrapper-alerte {
+  width: 38%;
+  box-sizing: border-box;
+  padding: 0 0 0 11px;
 }
 /* @end */
 /* @group States */

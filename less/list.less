@@ -75,6 +75,57 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
+	&.list-social-txt{
+		> li{
+			margin: 0 7px;
+			&:first-of-type{
+				margin-left: 0;
+			}
+			&:last-of-type{
+				margin-right: 0;
+			}
+			a{
+				width: 70px;
+				height: auto;
+				.texta-light(1em);
+				text-align: center;
+				border-radius: 0;
+				line-height: 1em;
+				.zone-icon{
+					display: block;
+					margin: 0 auto 5px auto;
+					width: 62px;
+					height: 62px;
+					line-height: 62px;
+					border-radius: 50%;
+					color: #fff;
+					background-color: @theme-noir;
+					transition: opacity 0.2s ease-in-out;
+					&.icon-facebook{
+						font-size: 38px;
+					}
+					&.icon-twitter{
+						font-size: 28px;
+					}
+					&.icon-pinterest{
+						font-size: 38px;
+					}
+					&.icon-email{
+						font-size: 28px;
+					}
+					&.icon-print{
+						font-size: 32px;
+					}
+				}
+				&:hover{
+					background: none;
+					.zone-icon{
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
 	> li{
 		display: inline-block;
 		vertical-align: top;
