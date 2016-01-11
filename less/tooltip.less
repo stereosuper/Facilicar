@@ -15,17 +15,41 @@
 		overflow: hidden;
 		line-height: 13px;
 	}
+	.tooltipster-arrow-top span, .tooltipster-arrow-top-right span, .tooltipster-arrow-top-left span {
+		bottom: -8px;
+	}
+	.tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-top-left .tooltipster-arrow-border {
+		bottom: -8px;
+	}
 }
 
-.facilicar-theme .tooltipster-arrow .tooltipster-arrow-border {
-	border-top-color: #B0B0A8 !important;
+.facilicar-car-option-theme{
+	border-radius: 0;
+	border-top: 1px solid @theme-secondary;
+	background: #fff;
+	color: @theme-noir;
+	text-align: center;
+	margin-top: -2px;
+	.tooltipster-content {
+		.texta-light(16px);
+		padding: 10px 8px;
+		overflow: hidden;
+		line-height: 15px;
+	}
+	.tooltipster-arrow-bottom .tooltipster-arrow-border, .tooltipster-arrow-bottom-right .tooltipster-arrow-border, .tooltipster-arrow-bottom-left .tooltipster-arrow-border{
+		top: -4px;
+		border-left: 4px solid transparent !important;
+	    border-right: 4px solid transparent !important;
+	    border-bottom: 4px solid;
+	}
+	.tooltipster-arrow-bottom span, .tooltipster-arrow-bottom-right span, .tooltipster-arrow-bottom-left span{
+		top: -4px;
+		border-left: 4px solid transparent !important;
+		border-right: 4px solid transparent !important;
+		border-bottom: 4px solid;
+	}
 }
 
-.tooltipster-arrow-top span, .tooltipster-arrow-top-right span, .tooltipster-arrow-top-left span {
-	bottom: -8px;
-}
-.tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-top-left .tooltipster-arrow-border {
-	bottom: -8px;
-}
+
 
 /* @end */

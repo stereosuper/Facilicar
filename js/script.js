@@ -223,6 +223,11 @@ function setToolTip(){
 	      contentAsHTML: true,
 	      theme: '.facilicar-theme'
 	});
+
+	$('.zone-picto').tooltipster({
+	      contentAsHTML: true,
+	      theme: '.facilicar-theme'
+	});
 }
 
 function setTabs(){
@@ -276,6 +281,29 @@ $(function(){
 
 	// Tabs
 	setTabs();
+
+	// Slider detail
+	if($("body").hasClass("slider-detail")){
+		 $('.slider-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+			asNavFor: '.slider-nav',
+			prevArrow: $('.prev-slider-for'),
+			nextArrow: $('.next-slider-for')
+		});
+		$('.slider-nav').slick({
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			dots: false,
+			centerMode: false,
+			focusOnSelect: true,
+			prevArrow: $('.prev-slider-nav'),
+			nextArrow: $('.next-slider-nav')
+		});
+	}
 
 	// Clic sur le bouton close des cookies
 	$("#btn-close-cookies").click(function(){

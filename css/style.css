@@ -4518,6 +4518,63 @@ a.btn-slider-citation:hover.btn-right span {
       -ms-transform: translateX(15px);
           transform: translateX(15px);
 }
+.slider-for {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.slider-for .slick-list {
+  width: 100%;
+  height: 100%;
+}
+.slider-for .slick-list .slick-track {
+  height: 100%;
+}
+.slider-for > li {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.prev-slider-for {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.next-slider-for {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.slider-nav {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.slider-nav .slick-list {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.slider-nav .slick-list .slick-track {
+  height: 100%;
+}
+.slider-nav li {
+  margin: 0 4px;
+}
+.prev-slider-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.next-slider-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
 /* @end */
 /* @group Alert */
 .alert {
@@ -4652,18 +4709,46 @@ a.btn-slider-citation:hover.btn-right span {
   overflow: hidden;
   line-height: 13px;
 }
-.facilicar-theme .tooltipster-arrow .tooltipster-arrow-border {
-  border-top-color: #B0B0A8 !important;
-}
-.tooltipster-arrow-top span,
-.tooltipster-arrow-top-right span,
-.tooltipster-arrow-top-left span {
+.facilicar-theme .tooltipster-arrow-top span,
+.facilicar-theme .tooltipster-arrow-top-right span,
+.facilicar-theme .tooltipster-arrow-top-left span {
   bottom: -8px;
 }
-.tooltipster-arrow-top .tooltipster-arrow-border,
-.tooltipster-arrow-top-right .tooltipster-arrow-border,
-.tooltipster-arrow-top-left .tooltipster-arrow-border {
+.facilicar-theme .tooltipster-arrow-top .tooltipster-arrow-border,
+.facilicar-theme .tooltipster-arrow-top-right .tooltipster-arrow-border,
+.facilicar-theme .tooltipster-arrow-top-left .tooltipster-arrow-border {
   bottom: -8px;
+}
+.facilicar-car-option-theme {
+  border-radius: 0;
+  border-top: 1px solid #e38c00;
+  background: #fff;
+  color: #333333;
+  text-align: center;
+  margin-top: -2px;
+}
+.facilicar-car-option-theme .tooltipster-content {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 16px;
+  padding: 10px 8px;
+  overflow: hidden;
+  line-height: 15px;
+}
+.facilicar-car-option-theme .tooltipster-arrow-bottom .tooltipster-arrow-border,
+.facilicar-car-option-theme .tooltipster-arrow-bottom-right .tooltipster-arrow-border,
+.facilicar-car-option-theme .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  top: -4px;
+  border-left: 4px solid transparent !important;
+  border-right: 4px solid transparent !important;
+  border-bottom: 4px solid;
+}
+.facilicar-car-option-theme .tooltipster-arrow-bottom span,
+.facilicar-car-option-theme .tooltipster-arrow-bottom-right span,
+.facilicar-car-option-theme .tooltipster-arrow-bottom-left span {
+  top: -4px;
+  border-left: 4px solid transparent !important;
+  border-right: 4px solid transparent !important;
+  border-bottom: 4px solid;
 }
 /* @end */
 /* @group Tabs */
@@ -7465,8 +7550,15 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-current-slide {
   display: block;
   width: 100%;
-  height: 420px;
-  background-color: grey;
+  height: 439px;
+  position: relative;
+}
+.wrapper-slider-nav {
+  display: block;
+  width: 100%;
+  height: 70px;
+  margin: 8px 0 0 0;
+  position: relative;
 }
 .wrapper-txt-top-car-detail {
   display: block;

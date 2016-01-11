@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="css/libs/normalize.css">
 		<!-- Tooltips -->
 		<link rel="stylesheet" href="css/tooltipster.css" />
+		<!-- Slick -->
+		<link rel="stylesheet" href="css/slick.css" />
 	  	<link rel="stylesheet" href="css/style.css">
 		
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -39,7 +41,7 @@
 		<script src="js/libs/modernizr.js" type="text/javascript"></script>
 	</head>
 
-	<body class="no-wrapper-top">
+	<body class="no-wrapper-top slider-detail">
 		<div class="bg-header-responsive"></div>
 		<header id="header">
 			<div class="container clearfix relative-position">
@@ -126,7 +128,52 @@
 					<div class="top-car-detail">
 						<div class="wrapper-slider-car-detail">
 							<div class="wrapper-current-slide">
-
+								<ul class="slider-for">
+									<li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-2.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-3.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-4.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-5.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-3.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-5.jpg">
+									</li>
+								</ul>
+								<div class="prev-slider-for">prev</div>
+								<div class="next-slider-for">next</div>
+							</div>
+							<div class="wrapper-slider-nav">
+								<ul class="slider-nav">
+									<li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-2.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-3.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-4.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-5.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-3.jpg">
+									</li><!--
+									--><li class="imgLiquidFill">
+										<img itemprop="image" src="img/cars/citroen-ds5-5.jpg">
+									</li>
+								</ul>
+								<div class="prev-slider-nav">prev</div>
+								<div class="next-slider-nav">next</div>
 							</div>
 						</div><!--
 						--><div class="wrapper-txt-top-car-detail">
@@ -153,74 +200,46 @@
 									<div class="car-options-detail">
 										<span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto icon-gps"></span>
-												<span class="zone-txt">
+												<span class="zone-picto icon-gps" title="GPS"></span>
+												<!--<span class="zone-txt">
 													<span class="triangle"></span>
 													GPS
-												</span>
+												</span>-->
 											</span>
 										</span><!--
 										--><span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto icon-clim"></span>
-												<span class="zone-txt">
-													<span class="triangle"></span>
-													Climatisation
-												</span>
+												<span class="zone-picto icon-clim" title="Climatisation"></span>
 											</span>
 										</span><!--
 										--><span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto icon-toit-ouvrant"></span>
-												<span class="zone-txt">
-													<span class="triangle"></span>
-													Toit ouvrant
-												</span>
+												<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
 											</span>
 										</span><!--
 										--><span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto icon-control-recul"></span>
-												<span class="zone-txt">
-													<span class="triangle"></span>
-													Contrôle de recul
-												</span>
+												<span class="zone-picto icon-control-recul" title="Contrôle de recul"></span>
 											</span>
 										</span><!--
 										--><span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-												<span class="zone-txt">
-													<span class="triangle"></span>
-													7 places
-												</span>
+												<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
 											</span>
 										</span><!--
 										--><span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto icon-phares"></span>
-												<span class="zone-txt">
-													<span class="triangle"></span>
-													Projecteurs<br> bi-xénon
-												</span>
+												<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
 											</span>
 										</span><!--
 										--><span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto icon-cuir"></span>
-												<span class="zone-txt">
-													<span class="triangle"></span>
-													Sellerie cuir
-												</span>
+												<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
 											</span>
 										</span><!--
 										--><span class="wrapper-car-option">
 											<span class="container-car-option">
-												<span class="zone-picto icon-quatre-quatre"></span>
-												<span class="zone-txt">
-													<span class="triangle"></span>
-													4 roues motrices
-												</span>
+												<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
 											</span>
 										</span>
 									</div>
@@ -805,6 +824,8 @@
 		<script src="js/libs/js.cookie.js" type="text/javascript"></script>
 		<!-- Tooltip -->
 		<script src="js/libs/jquery.tooltipster.js" type="text/javascript"></script>
+		<!-- Slick -->
+		<script src="js/libs/slick.min.js" type="text/javascript"></script>
 		<!-- Scripts custom -->
 		<script src="js/script.js" type="text/javascript"></script>
 	</body>
