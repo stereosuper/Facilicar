@@ -7676,10 +7676,15 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .consommation {
   margin: 15px 0 0 0;
+  padding: 8px 0;
   border: 1px solid #d8d8d4;
 }
 .consommation > li {
   vertical-align: middle;
+  margin: 0 16px;
+}
+.consommation > li:first-of-type {
+  margin-left: 54px;
 }
 .consommation > li.consommation-location {
   font-family: 'Texta-Bold', sans-serif;
@@ -7701,9 +7706,9 @@ a.btn-slider-citation:hover.btn-right span {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1em;
 }
-.consommation > li .consommation-gas-station {
+.consommation > li.consommation-gas-station {
   font-size: 60px;
-  color: #fab855;
+  color: #F3C685;
 }
 /* @end */
 /* @group States */

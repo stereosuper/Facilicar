@@ -2223,9 +2223,14 @@
 
 .consommation{
 	margin: 15px 0 0 0;
+	padding: 8px 0;
 	border: 1px solid @theme-neutral;
 	> li{
 		vertical-align: middle;
+		margin: 0 16px;
+		&:first-of-type{
+			margin-left: 54px;
+		}
 		&.consommation-location{
 			.texta-bold(0.875em);
 			text-transform: uppercase;
@@ -2240,9 +2245,9 @@
 			.texta-bold(0.875em);
 			color: @theme-gris3;
 		}
-		.consommation-gas-station{
+		&.consommation-gas-station{
 			font-size: 60px;
-			color: @theme-secondary-light;
+			color: #F3C685;
 		}
 	}
 }
