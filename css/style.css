@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-gas-station:before {
+  content: "\e928";
+}
 .icon-email:before {
   content: "\e925";
 }
@@ -3191,6 +3194,12 @@ a:focus {
 }
 .list-inline.list-half > li:last-of-type {
   padding: 0 0 0 3px;
+}
+.list-inline.list-half.no-padding > li:first-of-type {
+  padding: 0;
+}
+.list-inline.list-half.no-padding > li:last-of-type {
+  padding: 0;
 }
 .list-inline.list-half.medium-padding > li:first-of-type {
   padding: 0 6px 0 0;
@@ -7641,6 +7650,60 @@ a.btn-slider-citation:hover.btn-right span {
   width: 70px;
   height: 70px;
   background: url("../layoutImg/garantie-maxili-black.png") no-repeat 0 0;
+}
+.table-caracteristiques {
+  width: 100%;
+}
+.table-caracteristiques tr {
+  border-bottom: 1px solid #d8d8d4;
+}
+.table-caracteristiques tr td {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.table-caracteristiques tr td.title {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.813em;
+  padding-right: 50px;
+}
+.table-caracteristiques tr td.content {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  padding-right: 20px;
+}
+.table-caracteristiques tr:last-child {
+  border: none;
+}
+.consommation {
+  margin: 15px 0 0 0;
+  border: 1px solid #d8d8d4;
+}
+.consommation > li {
+  vertical-align: middle;
+}
+.consommation > li.consommation-location {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+.consommation > li.consommation-detail {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  color: #6d6d67;
+}
+.consommation > li.consommation-detail strong {
+  display: block;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 3.571em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1em;
+}
+.consommation > li .consommation-gas-station {
+  font-size: 60px;
+  color: #fab855;
 }
 /* @end */
 /* @group States */
