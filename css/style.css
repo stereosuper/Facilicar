@@ -2837,9 +2837,9 @@ span.btn-block .txt-hover-btn-block-arrow {
           transition: transform 0.2s ease-in-out;
   box-sizing: border-box;
 }
-a.btn-block .txt-hover-btn-block-arrow:before,
-div.btn-block .txt-hover-btn-block-arrow:before,
-span.btn-block .txt-hover-btn-block-arrow:before {
+a.btn-block .txt-hover-btn-block-arrow:after,
+div.btn-block .txt-hover-btn-block-arrow:after,
+span.btn-block .txt-hover-btn-block-arrow:after {
   content: attr(data-hover);
 }
 a.btn-block.btn-block-refresh,
@@ -7596,7 +7596,7 @@ a.btn-slider-citation:hover.btn-right span {
   display: inline-block;
   vertical-align: top;
   width: 630px;
-  height: 500px;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -8090,6 +8090,56 @@ a.btn-slider-citation:hover.btn-right span {
     margin-right: 15px;
   }
   /* @end */
+  /* @group Détail véhicule */
+  .wrapper-car-detail .consultations {
+    width: 150px;
+    line-height: 1.2em;
+  }
+  .car-details a.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow,
+  .car-details div.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow,
+  .car-details span.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow {
+    display: none;
+  }
+  .car-details a.btn-block.full-width .txt-btn-block-arrow:before,
+  .car-details div.btn-block.full-width .txt-btn-block-arrow:before,
+  .car-details span.btn-block.full-width .txt-btn-block-arrow:before {
+    content: "›";
+    display: inline-block;
+    vertical-align: top;
+    margin: -1px 4px 0 0;
+  }
+  .car-details a.btn-block.full-width .txt-hover-btn-block-arrow,
+  .car-details div.btn-block.full-width .txt-hover-btn-block-arrow,
+  .car-details span.btn-block.full-width .txt-hover-btn-block-arrow {
+    padding: 17px 10px;
+  }
+  .car-details a.btn-block.full-width .txt-hover-btn-block-arrow:before,
+  .car-details div.btn-block.full-width .txt-hover-btn-block-arrow:before,
+  .car-details span.btn-block.full-width .txt-hover-btn-block-arrow:before {
+    content: "›";
+    display: inline-block;
+    vertical-align: top;
+    margin: -1px 4px 0 0;
+  }
+  .wrapper-slider-car-detail {
+    width: 600px;
+  }
+  .wrapper-txt-top-car-detail {
+    padding: 0 0 0 620px;
+  }
+  .caracteristiques > li,
+  .list-inline.caracteristiques > li {
+    margin: 0 24px;
+  }
+  .caracteristiques > li:first-of-type,
+  .list-inline.caracteristiques > li:first-of-type {
+    margin-left: 10px;
+  }
+  .caracteristiques > li:last-of-type,
+  .list-inline.caracteristiques > li:last-of-type {
+    margin-right: 10px;
+  }
+  /* @end */
 }
 @media (max-width: 1150px) {
   .wrapper-img .container {
@@ -8211,6 +8261,29 @@ a.btn-slider-citation:hover.btn-right span {
     margin-bottom: 30px;
   }
   /* @end */
+  /* @group Détail véhicule */
+  .wrapper-slider-car-detail {
+    width: 500px;
+  }
+  .wrapper-txt-top-car-detail {
+    padding: 0 0 0 520px;
+  }
+  .wrapper-current-slide {
+    height: 361px;
+  }
+  .caracteristiques > li,
+  .list-inline.caracteristiques > li {
+    margin: 10px 16px;
+  }
+  .caracteristiques > li:first-of-type,
+  .list-inline.caracteristiques > li:first-of-type {
+    margin-left: 8px;
+  }
+  .caracteristiques > li:last-of-type,
+  .list-inline.caracteristiques > li:last-of-type {
+    margin-right: 8px;
+  }
+  /* @end */
 }
 @media (max-width: 1024px) {
   p.big-txt {
@@ -8262,6 +8335,17 @@ a.btn-slider-citation:hover.btn-right span {
   .articles-presse > li,
   #main .articles-presse > li {
     padding: 0;
+  }
+  /* @end */
+  /* @group Détail véhicule */
+  .wrapper-slider-car-detail {
+    width: 460px;
+  }
+  .wrapper-txt-top-car-detail {
+    padding: 0 0 0 480px;
+  }
+  .wrapper-current-slide {
+    height: 320px;
   }
   /* @end */
 }
@@ -9412,6 +9496,47 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-columns: 1;
        -moz-columns: 1;
             columns: 1;
+  }
+  /* @end */
+  /* @group Détail véhicule */
+  .wrapper-slider-car-detail {
+    width: 320px;
+  }
+  .wrapper-txt-top-car-detail {
+    padding: 0 0 0 340px;
+  }
+  .wrapper-current-slide {
+    height: 250px;
+  }
+  .wrapper-slider-nav {
+    height: 50px;
+  }
+  .wrapper-car-detail .wrapper-prix-detail .prix-moyen-txt {
+    font-size: 0.7em;
+  }
+  .wrapper-car-detail .wrapper-prix-detail .prix-moyen {
+    font-size: 1.3em;
+  }
+  .wrapper-car-detail .wrapper-prix-detail .prix-financement {
+    font-size: 2.3em;
+  }
+  .wrapper-car-detail .has-tooltip {
+    font-size: 15px;
+  }
+  .wrapper-caracteristiques {
+    display: block;
+  }
+  .wrapper-caracteristiques .content-align-middle {
+    display: block;
+    text-align: center;
+  }
+  .wrapper-caracteristiques .content-align-middle.content-localisation-detail {
+    text-align: left;
+    margin: 20px 0 0 0;
+  }
+  .wrapper-caracteristiques .content-align-middle .caracteristiques {
+    display: inline-block;
+    vertical-align: top;
   }
   /* @end */
 }
@@ -10782,6 +10907,22 @@ a.btn-slider-citation:hover.btn-right span {
     width: 40px;
   }
   /* @end */
+  /* @group Détail véhicule */
+  .wrapper-slider-car-detail {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  .wrapper-txt-top-car-detail {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .wrapper-current-slide {
+    height: 300px;
+  }
+  /* @end */
 }
 @media (max-width: 480px) {
   /* @group Popup */
@@ -10917,6 +11058,44 @@ a.btn-slider-citation:hover.btn-right span {
   .map-search a.btn-toggle-one.small .arrow-toggle-one,
   .map-search div strong.btn-toggle-one.small .arrow-toggle-one,
   .map-search span.btn-toggle-one.small .arrow-toggle-one {
+    display: none;
+  }
+  /* @end */
+  /* @group Détail véhicule */
+  .wrapper-current-slide {
+    height: 225px;
+  }
+  .caracteristiques > li,
+  .list-inline.caracteristiques > li {
+    text-align: left;
+    display: block;
+    margin: 20px 0;
+    width: auto;
+  }
+  .caracteristiques > li:first-of-type,
+  .list-inline.caracteristiques > li:first-of-type,
+  .caracteristiques > li:last-of-type,
+  .list-inline.caracteristiques > li:last-of-type {
+    margin: 10px 0;
+  }
+  .caracteristiques > li a,
+  .list-inline.caracteristiques > li a {
+    height: 70px;
+    box-sizing: border-box;
+    padding: 28px 0 0 90px;
+    position: relative;
+    width: auto;
+    text-align: left;
+  }
+  .caracteristiques > li a:before,
+  .list-inline.caracteristiques > li a:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin: -38px 0 0 0;
+  }
+  .caracteristiques > li a br,
+  .list-inline.caracteristiques > li a br {
     display: none;
   }
   /* @end */

@@ -62,6 +62,55 @@
         margin-right: 15px;
     }
     /* @end */
+
+    /* @group Détail véhicule */
+    .wrapper-car-detail{
+        .consultations{
+            width: 150px;
+            line-height: 1.2em;
+        }
+    }
+    .car-details{
+        a.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, div.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, span.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow{
+            display: none;
+        }
+        a.btn-block.full-width .txt-btn-block-arrow, div.btn-block.full-width .txt-btn-block-arrow, span.btn-block.full-width .txt-btn-block-arrow{
+            &:before{
+                content: "›";
+                display: inline-block;
+                vertical-align: top;
+                margin: -1px 4px 0 0;
+
+            }
+        }
+        a.btn-block.full-width .txt-hover-btn-block-arrow, div.btn-block.full-width .txt-hover-btn-block-arrow, span.btn-block.full-width .txt-hover-btn-block-arrow{
+            padding: 17px 10px;
+            &:before{
+                content: "›";
+                display: inline-block;
+                vertical-align: top;
+                margin: -1px 4px 0 0;
+            }
+        }
+    }
+    .wrapper-slider-car-detail{
+        width: 600px;
+    }
+    .wrapper-txt-top-car-detail{
+        padding: 0 0 0 620px;
+    }
+    .caracteristiques, .list-inline.caracteristiques{
+        >li{
+            margin: 0 24px;
+            &:first-of-type{
+                margin-left: 10px;
+            }
+            &:last-of-type{
+                margin-right: 10px;
+            }
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 1150px) {
@@ -213,6 +262,29 @@
         margin-bottom: 30px;
     }
     /* @end */
+
+    /* @group Détail véhicule */
+    .wrapper-slider-car-detail{
+        width: 500px;
+    }
+    .wrapper-txt-top-car-detail{
+        padding: 0 0 0 520px;
+    }
+    .wrapper-current-slide{
+        height: 361px;
+    }
+    .caracteristiques, .list-inline.caracteristiques{
+        >li{
+            margin: 10px 16px;
+            &:first-of-type{
+                margin-left: 8px;
+            }
+            &:last-of-type{
+                margin-right: 8px;
+            }
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 1024px) {
@@ -267,6 +339,18 @@
         > li{
             padding: 0;
         }
+    }
+    /* @end */
+
+    /* @group Détail véhicule */
+    .wrapper-slider-car-detail{
+        width: 460px;
+    }
+    .wrapper-txt-top-car-detail{
+        padding: 0 0 0 480px;
+    }
+    .wrapper-current-slide{
+        height: 320px;
     }
     /* @end */
 }
@@ -1438,6 +1522,51 @@
     }
     /* @end */
 
+    /* @group Détail véhicule */
+    .wrapper-slider-car-detail{
+        width: 320px;
+    }
+    .wrapper-txt-top-car-detail{
+        padding: 0 0 0 340px;
+    }
+    .wrapper-current-slide{
+        height: 250px;
+    }
+    .wrapper-slider-nav{
+        height: 50px;
+    }
+    .wrapper-car-detail{
+        .wrapper-prix-detail{
+            .prix-moyen-txt{
+                font-size: 0.7em;
+            }
+            .prix-moyen{
+                font-size: 1.3em;
+            }
+            .prix-financement{
+                font-size: 2.3em;
+            }
+         }
+         .has-tooltip{
+            font-size: 15px;
+         }
+    }
+    .wrapper-caracteristiques{
+        display: block;
+        .content-align-middle{
+            display: block;
+            text-align: center;
+            &.content-localisation-detail{
+                text-align: left;
+                margin: 20px 0 0 0;
+            }
+            .caracteristiques{
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 767px) {
@@ -2828,6 +2957,22 @@
     } 
     /* @end */
 
+    /* @group Détail véhicule */
+    .wrapper-slider-car-detail{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+    .wrapper-txt-top-car-detail{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .wrapper-current-slide{
+        height: 300px;
+    }
+    /* @end */
 }
 
 @media (max-width: 480px) {
@@ -2981,6 +3126,40 @@
                     .arrow-toggle-one{
                         display: none;
                     }
+                }
+            }
+        }
+    }
+    /* @end */
+
+    /* @group Détail véhicule */
+    .wrapper-current-slide{
+        height: 225px;
+    }
+    .caracteristiques, .list-inline.caracteristiques{
+        > li{
+            text-align: left;
+            display: block;
+            margin: 20px 0;
+            width: auto;
+            &:first-of-type, &:last-of-type{
+                margin: 10px 0; 
+            } 
+            a{
+                height: 70px;
+                box-sizing: border-box;
+                padding: 28px 0 0 90px;
+                position: relative;
+                width: auto;
+                text-align: left;
+                &:before{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin: -38px 0 0 0;
+                }
+                br{
+                    display: none;
                 }
             }
         }
