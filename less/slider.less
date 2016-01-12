@@ -183,13 +183,32 @@ a.btn-slider-citation{
 .prev-slider-for{
 	position: absolute;
 	top: 50%;
-	left: 0;
+	left: 30px;
+	color: #fff;
+	font-size: 34px;
+	margin-top: -17px;
+	padding: 0;
+	background: none;
 }
 
 .next-slider-for{
 	position: absolute;
 	top: 50%;
-	right: 0;
+	right: 30px;
+	color: #fff;
+	font-size: 34px;
+	margin-top: -17px;
+	padding: 0;
+	background: none;
+}
+
+.paging-info{
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	.texta-bold(1.25em);
+	color: #fff;
 }
 
 .slider-nav{
@@ -197,7 +216,8 @@ a.btn-slider-citation{
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 0 25px;
+	box-sizing: border-box;
 	.slick-list{
 		width: 100%;
 		height: 100%;
@@ -208,18 +228,50 @@ a.btn-slider-citation{
 	}
 	li{
 		margin: 0 4px;
+		box-sizing: border-box;
+		position: relative;
+		cursor: pointer;
+		&:focus{
+			outline: none;
+		}
+		&.slick-current{
+			opacity: 0.5;
+			&:before{
+				content: "";
+				display: block;
+				width: auto;
+				height: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				box-sizing: border-box;
+				border: 1px solid @theme-gris3;
+			}
+		}
 	}
 }
 
 .prev-slider-nav{
 	position: absolute;
 	top: 50%;
-	left: 0;
+	left: 7px;
+	color: @theme-gris3;
+	font-size: 20px;
+	margin-top: -10px;
+	padding: 0;
+	background: none;
 }
 
 .next-slider-nav{
 	position: absolute;
 	top: 50%;
-	right: 0;
+	right: 7px;
+	color: @theme-gris3;
+	font-size: 20px;
+	margin-top: -10px;
+	padding: 0;
+	background: none;
 }
 /* @end */
