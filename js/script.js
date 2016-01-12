@@ -246,7 +246,6 @@ function setTabs(){
 				var selectedTab = selectedItem.data('content'),
 					selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
 					slectedContentHeight = selectedContent.innerHeight();
-				
 				tabItems.find('a.is-selected').removeClass('is-selected');
 				selectedItem.addClass('is-selected');
 				selectedContent.addClass('is-selected').siblings('li').removeClass('is-selected');
@@ -1289,4 +1288,11 @@ $(window).resize(function(){
 			TweenMax.set($("#change-liste-mosaique .icon-liste"), {className:"-=is-selected"});
 		}
 	}
+
+	// Clearer le js inline dans les tabs
+	$(".tabs-content").each(function(){
+		$(".content-toggle", this).attr("style", "");
+		$(".btn-toggle.open", this).removeClass("open");
+		$(".content-toggle.open", this).removeClass("open");
+	});
 });

@@ -4815,8 +4815,10 @@ a.btn-slider-citation:hover.btn-right span {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  position: relative;
   z-index: 2;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
 }
 .tabs-navigation > li {
   display: inline-block;
@@ -4870,6 +4872,17 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .tabs-content > li.is-selected {
   display: block;
+}
+.tabs-content > li a.btn-toggle,
+.tabs-content > li div.btn-toggle,
+.tabs-content > li span.btn-toggle {
+  display: none;
+}
+.tabs-content > li .content-toggle {
+  display: block;
+}
+.tabs-content > li .content-toggle.small {
+  padding: 0;
 }
 /* @end */
 /* @group Choose */
@@ -8283,6 +8296,9 @@ a.btn-slider-citation:hover.btn-right span {
   .list-inline.caracteristiques > li:last-of-type {
     margin-right: 8px;
   }
+  .table-caracteristiques tr td.title {
+    padding-right: 20px;
+  }
   /* @end */
 }
 @media (max-width: 1024px) {
@@ -8346,6 +8362,36 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-current-slide {
     height: 320px;
+  }
+  .tabs-content > li {
+    padding: 30px 60px;
+  }
+  .tabs-navigation > li {
+    padding: 15px 0;
+  }
+  .tabs-navigation > li a {
+    padding: 15px 20px;
+  }
+  .wrapper-infos-envi-garanties-alerte {
+    display: block;
+  }
+  .wrapper-infos-envi-garanties-alerte .content-align-top {
+    display: block;
+    width: 100%;
+  }
+  .wrapper-infos-envi-garanties-alerte .content-align-top.wrapper-infos-envi {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .wrapper-infos-envi-garanties-alerte .content-align-top.wrapper-garanties {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 0;
+  }
+  .wrapper-infos-envi-garanties-alerte .content-align-top.wrapper-alerte {
+    padding: 0;
   }
   /* @end */
 }
@@ -9537,6 +9583,39 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-caracteristiques .content-align-middle .caracteristiques {
     display: inline-block;
     vertical-align: top;
+  }
+  .list-inline.list-half.list-tables-caracteristiques > li {
+    width: 100%;
+  }
+  .table-caracteristiques tr td.title {
+    width: 30%;
+    min-width: 100px;
+    padding-right: 10px;
+  }
+  .table-caracteristiques:first-child tr:last-child {
+    border-bottom: 1px solid #d8d8d4;
+  }
+  .tabs-navigation {
+    display: none;
+  }
+  .tabs-content {
+    height: auto!important;
+    border: none;
+  }
+  .tabs-content > li {
+    display: block;
+    padding: 0;
+  }
+  .tabs-content > li a.btn-toggle,
+  .tabs-content > li div.btn-toggle,
+  .tabs-content > li span.btn-toggle {
+    display: block;
+  }
+  .tabs-content > li .content-toggle {
+    display: none;
+  }
+  .tabs-content > li .content-toggle.small {
+    padding: 20px 40px;
   }
   /* @end */
 }
@@ -10921,6 +11000,58 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-current-slide {
     height: 300px;
+  }
+  .wrapper-conseils.wrapper-align-middle {
+    display: block;
+  }
+  .wrapper-conseils.wrapper-align-middle .content-align-top {
+    display: block;
+  }
+  .visu-conseils {
+    width: auto;
+    max-width: 100%;
+  }
+  .visu-conseils img {
+    width: auto;
+  }
+  .txt-conseils {
+    padding: 20px 0 0 0;
+  }
+  .wrapper-infos-envi-garanties-alerte .content-align-top {
+    margin: 0 0 20px 0;
+  }
+  .wrapper-infos-envi-garanties-alerte .content-align-top.wrapper-infos-envi {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .wrapper-infos-envi-garanties-alerte .content-align-top.wrapper-garanties {
+    width: 100%;
+    display: block;
+    padding: 0;
+  }
+  .list-social.list-social-txt > li {
+    margin: 6px 4px;
+  }
+  .list-social.list-social-txt > li a .zone-icon {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
+  .list-social.list-social-txt > li a .zone-icon.icon-facebook {
+    font-size: 23px;
+  }
+  .list-social.list-social-txt > li a .zone-icon.icon-twitter {
+    font-size: 21px;
+  }
+  .list-social.list-social-txt > li a .zone-icon.icon-pinterest {
+    font-size: 23px;
+  }
+  .list-social.list-social-txt > li a .zone-icon.icon-email {
+    font-size: 18px;
+  }
+  .list-social.list-social-txt > li a .zone-icon.icon-print {
+    font-size: 21px;
   }
   /* @end */
 }

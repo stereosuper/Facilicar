@@ -284,6 +284,15 @@
             }
         }
     }
+    .table-caracteristiques{
+        tr{
+            td{
+                &.title{
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
     /* @end */
 }
 
@@ -351,6 +360,40 @@
     }
     .wrapper-current-slide{
         height: 320px;
+    }
+    .tabs-content{
+        > li{
+            padding: 30px 60px;
+        }
+    }
+    .tabs-navigation{
+        > li{
+            padding: 15px 0;
+            a{
+                padding: 15px 20px;
+            }
+        }
+    }
+    .wrapper-infos-envi-garanties-alerte{
+        display: block;
+        .content-align-top{
+            display: block;
+            width: 100%;
+            &.wrapper-infos-envi{
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+            }
+            &.wrapper-garanties{
+                width: 50%;
+                display: inline-block;
+                vertical-align: top;
+                padding-right: 0;
+            }
+            &.wrapper-alerte{
+                padding: 0;
+            }
+        }
     }
     /* @end */
 }
@@ -1563,6 +1606,49 @@
             .caracteristiques{
                 display: inline-block;
                 vertical-align: top;
+            }
+        }
+    }
+    .list-inline.list-half.list-tables-caracteristiques{
+        >li{
+            width: 100%;
+        }
+    }
+    .table-caracteristiques{
+        tr{
+            td{
+                &.title{
+                    width: 30%;
+                    min-width: 100px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        &:first-child{
+            tr{
+                &:last-child{
+                    border-bottom: 1px solid @theme-neutral;
+                }
+            }
+        }
+    }
+    .tabs-navigation{
+        display: none;
+    }
+    .tabs-content{
+        height: auto!important;
+        border: none;
+        > li{
+            display: block;
+            padding: 0;
+            a.btn-toggle, div.btn-toggle, span.btn-toggle{
+                display: block;
+            }
+            .content-toggle{
+                display: none;
+                &.small{
+                    padding: 20px 40px;
+                }
             }
         }
     }
@@ -2971,6 +3057,66 @@
     }
     .wrapper-current-slide{
         height: 300px;
+    }
+    .wrapper-conseils.wrapper-align-middle{
+        display: block;
+        .content-align-top{
+            display: block;
+        }
+    }
+    .visu-conseils{
+        width: auto;
+        max-width: 100%;
+        img{
+            width: auto;
+        }
+    }
+    .txt-conseils{
+        padding: 20px 0 0 0;
+    }
+    .wrapper-infos-envi-garanties-alerte{
+        .content-align-top{
+            margin: 0 0 20px 0;
+            &.wrapper-infos-envi{
+                width: 100%;
+                display: block;
+                padding: 0;
+            }
+            &.wrapper-garanties{
+                width: 100%;
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+    .list-social{
+        &.list-social-txt{
+            > li{
+                margin: 6px 4px;
+                a{
+                    .zone-icon{
+                        width: 45px;
+                        height: 45px;
+                        line-height: 45px;
+                        &.icon-facebook{
+                            font-size: 23px;
+                        }
+                        &.icon-twitter {
+                            font-size: 21px;
+                        }
+                        &.icon-pinterest{
+                            font-size: 23px;
+                        }
+                        &.icon-email{
+                            font-size: 18px;
+                        }
+                        &.icon-print {
+                            font-size: 21px;
+                        }
+                    }
+                }
+            }
+        }
     }
     /* @end */
 }

@@ -5,9 +5,6 @@
 	height: auto;
 	margin: 0;
 	padding: 0;
-	nav{
-
-	}
 }
 
 .tabs-navigation{
@@ -16,7 +13,8 @@
 	padding: 0;
 	z-index: 2;
 	position: relative;
-	z-index: 2;
+	display: inline-block;
+	vertical-align: top;
 	>li{
 		display: inline-block;
 		vertical-align: top;
@@ -68,6 +66,15 @@
 		box-sizing: border-box;
 		&.is-selected{
 			display: block;
+		}
+		a.btn-toggle, div.btn-toggle, span.btn-toggle{
+			display: none;
+		}
+		.content-toggle{
+			display: block;
+			&.small{
+				padding: 0;
+			}
 		}
 	}
 }
