@@ -4865,6 +4865,8 @@ a.btn-slider-citation:hover.btn-right span {
   display: none;
   margin: 0;
   padding: 50px 80px;
+  width: 100%;
+  box-sizing: border-box;
 }
 .tabs-content > li.is-selected {
   display: block;
