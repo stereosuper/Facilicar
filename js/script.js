@@ -307,7 +307,27 @@ $(function(){
 			centerMode: false,
 			focusOnSelect: true,
 			prevArrow: $('.prev-slider-nav'),
-			nextArrow: $('.next-slider-nav')
+			nextArrow: $('.next-slider-nav'),
+			responsive: [
+			    {
+			      breakpoint: 1024,
+			      settings: {
+			        slidesToShow: 4
+			      }
+			    },
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        slidesToShow: 5
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 3
+			      }
+			    }
+			 ]
 		});
 	}
 
