@@ -2386,5 +2386,57 @@
 		}
 	}
 }
+.table-detail{
+	width: 100%;
+	tr{
+		border-bottom: 1px solid @theme-neutral;
+		&.no-border-bottom{
+			border: none;
+		}
+		td{
+			padding: 5px 0;
+			&.title{
+				.texta-light(0.813em);
+			}
+			&.content{
+				.texta-bold(0.875em);
+				text-transform: uppercase;
+			}
+			&.big-padding{
+				padding: 6px 0 7px 0;
+			}
+			.icon-check{
+				font-size: 12px;
+			}
+		}
+	}
+}
+.list-radar, .list-inline.list-radar, .list-third.list-radar{
+	> li{
+		&:first-child, &:nth-child(2), &:last-child{
+			padding-top: 15px;
+		}
+	}
+	p{
+		margin: 0;
+	}
+	.list-inline.list-half.list-impacts{
+		>li{
+			&:first-of-type{
+				padding: 0 12px 0 0;
+			}
+			&:last-of-type{
+				padding: 0 0 0 12px;
+			}
+			.texta-light(0.813em);
+			img{
+				margin: 0 0 5px 0;
+			}
+		}
+	}
+}
+.line-rapport-expertise{
+	margin: 0 0 30px 0;
+}
 
 /* @end */

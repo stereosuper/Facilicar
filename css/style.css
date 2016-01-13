@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-check:before {
+  content: "\e929";
+}
 .icon-gas-station:before {
   content: "\e928";
 }
@@ -2472,6 +2475,29 @@ span.btn-arrow:before {
   top: 0;
   left: 0;
 }
+a.btn-arrow.btn-file,
+div.btn-arrow.btn-file,
+span.btn-arrow.btn-file {
+  padding-left: 52px;
+}
+a.btn-arrow.btn-file:before,
+div.btn-arrow.btn-file:before,
+span.btn-arrow.btn-file:before {
+  left: 43px;
+}
+a.btn-arrow.btn-file:after,
+div.btn-arrow.btn-file:after,
+span.btn-arrow.btn-file:after {
+  content: "";
+  display: block;
+  background: url("../layoutImg/file.png") no-repeat 0 0;
+  width: 32px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -12px 0 0 0;
+}
 a.btn-arrow-bottom,
 div.btn-arrow-bottom,
 span.btn-arrow-bottom {
@@ -3181,6 +3207,23 @@ a:focus {
   margin: 0 16px;
   position: relative;
 }
+.list-inline.list-third {
+  width: 100%;
+}
+.list-inline.list-third > li {
+  width: 33.33333%;
+  margin: 0;
+  box-sizing: border-box;
+}
+.list-inline.list-third > li:first-of-type {
+  padding: 0 10px 0 0;
+}
+.list-inline.list-third > li:last-of-type {
+  padding: 0 0 0 10px;
+}
+.list-inline.list-third > li:nth-child(2) {
+  padding: 0 10px;
+}
 .list-inline.list-half {
   width: 100%;
 }
@@ -3628,6 +3671,51 @@ a:focus {
   font-size: 8px;
   top: 7px;
   left: 0;
+}
+.list-base {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  list-style-type: disc;
+  padding: 0 0 0 18px;
+}
+.list-qualite > li,
+.list-inline.list-third.list-qualite > li {
+  margin: 38px 0;
+  padding: 0 9px;
+}
+.list-qualite > li:first-of-type,
+.list-inline.list-third.list-qualite > li:first-of-type {
+  padding: 0 9px;
+}
+.list-qualite > li:last-of-type,
+.list-inline.list-third.list-qualite > li:last-of-type {
+  padding: 0 9px;
+}
+.list-qualite > li:nth-child(2),
+.list-inline.list-third.list-qualite > li:nth-child(2) {
+  padding: 0 9px;
+}
+.list-qualite > li:nth-child(5),
+.list-inline.list-third.list-qualite > li:nth-child(5) {
+  vertical-align: middle;
+}
+.list-qualite > li:nth-child(6),
+.list-inline.list-third.list-qualite > li:nth-child(6) {
+  vertical-align: middle;
+}
+.list-qualite .title-list-qualite,
+.list-inline.list-third.list-qualite .title-list-qualite {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  width: 80px;
+  margin: 0 auto;
+  line-height: 1.2em;
+}
+.list-qualite .title-list-qualite img,
+.list-inline.list-third.list-qualite .title-list-qualite img {
+  display: block;
+  margin: 0 auto 4px auto;
 }
 /* @end */
 /* @group Form */
@@ -8003,6 +8091,73 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .car-options-equipement .zone-txt .wrapper-align-middle {
   height: 100%;
+}
+.table-detail {
+  width: 100%;
+}
+.table-detail tr {
+  border-bottom: 1px solid #d8d8d4;
+}
+.table-detail tr.no-border-bottom {
+  border: none;
+}
+.table-detail tr td {
+  padding: 5px 0;
+}
+.table-detail tr td.title {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.813em;
+}
+.table-detail tr td.content {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+.table-detail tr td.big-padding {
+  padding: 6px 0 7px 0;
+}
+.table-detail tr td .icon-check {
+  font-size: 12px;
+}
+.list-radar > li:first-child,
+.list-inline.list-radar > li:first-child,
+.list-third.list-radar > li:first-child,
+.list-radar > li:nth-child(2),
+.list-inline.list-radar > li:nth-child(2),
+.list-third.list-radar > li:nth-child(2),
+.list-radar > li:last-child,
+.list-inline.list-radar > li:last-child,
+.list-third.list-radar > li:last-child {
+  padding-top: 15px;
+}
+.list-radar p,
+.list-inline.list-radar p,
+.list-third.list-radar p {
+  margin: 0;
+}
+.list-radar .list-inline.list-half.list-impacts > li,
+.list-inline.list-radar .list-inline.list-half.list-impacts > li,
+.list-third.list-radar .list-inline.list-half.list-impacts > li {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.813em;
+}
+.list-radar .list-inline.list-half.list-impacts > li:first-of-type,
+.list-inline.list-radar .list-inline.list-half.list-impacts > li:first-of-type,
+.list-third.list-radar .list-inline.list-half.list-impacts > li:first-of-type {
+  padding: 0 12px 0 0;
+}
+.list-radar .list-inline.list-half.list-impacts > li:last-of-type,
+.list-inline.list-radar .list-inline.list-half.list-impacts > li:last-of-type,
+.list-third.list-radar .list-inline.list-half.list-impacts > li:last-of-type {
+  padding: 0 0 0 12px;
+}
+.list-radar .list-inline.list-half.list-impacts > li img,
+.list-inline.list-radar .list-inline.list-half.list-impacts > li img,
+.list-third.list-radar .list-inline.list-half.list-impacts > li img {
+  margin: 0 0 5px 0;
+}
+.line-rapport-expertise {
+  margin: 0 0 30px 0;
 }
 /* @end */
 /* @group States */

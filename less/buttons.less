@@ -308,6 +308,23 @@ a, div, span{
 			top: 0;
 			left: 0;
 		}
+		&.btn-file{
+			padding-left: 52px;
+			&:before{
+				left: 43px;
+			}
+			&:after{
+				content: "";
+				display: block;
+				background: url("../layoutImg/file.png") no-repeat 0 0;
+				width: 32px;
+				height: 25px;
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin: -12px 0 0 0;
+			}
+		}
 	}
 	&.btn-arrow-bottom{
 		position: relative;
