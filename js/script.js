@@ -40,6 +40,24 @@ function scrollPage(){
 		TweenMax.set($("body"), {className:"-=header-on"});
 	}
 
+	if($("body").hasClass("detail-vehicule")){
+		// Positionnement fixed du btn "Rendez-vous d'essai ou commande"
+		if($(window).width()<=767){
+			var topBtnEssaiCommande = $("#container-btn-detail").offset().top;
+			if(myScroll >= topBtnEssaiCommande-10){
+				TweenMax.set($("#btn-essai-commande"), {className:"+=fixed"});
+				var heightBtnEssaiCommande = $("#btn-essai-commande").innerHeight();
+				TweenMax.set($("#container-btn-detail"), {paddingTop: heightBtnEssaiCommande+"px"});
+			}else{
+				TweenMax.set($("#btn-essai-commande"), {className:"-=fixed"});
+				TweenMax.set($("#container-btn-detail"), {paddingTop: "0"});
+			}
+		}else{
+			TweenMax.set($("#btn-essai-commande"), {className:"-=fixed"});
+			TweenMax.set($("#container-btn-detail"), {paddingTop: "0"});
+		}
+	}
+
 	if($("body").hasClass("resultat-recherche")){
 		if (myScroll>120){
 			TweenMax.set($(".cars-filters"), {className:"+=fixed"});
@@ -1290,29 +1308,29 @@ $(window).resize(function(){
 			TweenMax.set($(".content-toggle-filter"), {clearProps:"all"});
 			TweenMax.set($(".lines-filters"), {clearProps:"all"});
 		}
+
+		// Slider | Range
+		if($("body").hasClass("resultat-recherche")){
+			if($(window).width()<=767){
+				TweenMax.set($(".list-cars"), {className:"+=is-list"});
+				TweenMax.set($("#change-liste-mosaique"), {display:"none"});
+			}else{
+				TweenMax.set($(".list-cars"), {className:"-=is-list"});
+				TweenMax.set($("#change-liste-mosaique"), {clearProps:"all"});
+				TweenMax.set($("#change-liste-mosaique .icon-mosaique"), {className:"+=is-selected"});
+				TweenMax.set($("#change-liste-mosaique .icon-liste"), {className:"-=is-selected"});
+			}
+		}
+
+		// Clearer le js inline dans les tabs
+		$(".tabs-content").each(function(){
+			$(".content-toggle", this).attr("style", "");
+			$(".btn-toggle.open", this).removeClass("open");
+			$(".content-toggle.open", this).removeClass("open");
+		});
 	}
 	h = nh; w = nw;
 	
 	// Positionnement de la description de recherche
 	descRecherche();
-
-	// Slider | Range
-	if($("body").hasClass("resultat-recherche")){
-		if($(window).width()<=767){
-			TweenMax.set($(".list-cars"), {className:"+=is-list"});
-			TweenMax.set($("#change-liste-mosaique"), {display:"none"});
-		}else{
-			TweenMax.set($(".list-cars"), {className:"-=is-list"});
-			TweenMax.set($("#change-liste-mosaique"), {clearProps:"all"});
-			TweenMax.set($("#change-liste-mosaique .icon-mosaique"), {className:"+=is-selected"});
-			TweenMax.set($("#change-liste-mosaique .icon-liste"), {className:"-=is-selected"});
-		}
-	}
-
-	// Clearer le js inline dans les tabs
-	$(".tabs-content").each(function(){
-		$(".content-toggle", this).attr("style", "");
-		$(".btn-toggle.open", this).removeClass("open");
-		$(".content-toggle.open", this).removeClass("open");
-	});
 });

@@ -7453,6 +7453,13 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.wrapper-car-detail #btn-essai-commande.fixed {
+  position: fixed;
+  top: 10px;
+  left: 5%;
+  width: 90%;
+  z-index: 100;
+}
 .wrapper-car-detail #btn-financement {
   font-family: 'Texta-Black', sans-serif;
   font-size: 0.875em;
