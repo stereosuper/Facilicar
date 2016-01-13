@@ -1800,13 +1800,32 @@
 		}
 	}
 	.wrapper-prix-detail{
-		display: table;
+		display: block;
 		width: 100%;
 		height: auto;
 		margin: 10px 0 0 0;
 		padding: 10px 0 0 0;
 		border-top: 1px solid @theme-neutral;
+		position: relative;
+		.prix-financement{
+			width: 170px;
+			.texta-light(2.813em);
+			color: @theme-secondary;
+			line-height: 0.6em;
+			padding: 4px 0 0 0;
+			position: absolute;
+			top: 8px;
+			right: 0;
+			span{
+				font-size: 0.444em;
+				padding: 0 0 0 5px;
+			}
+		}
 		.prix-moyen-eco{
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 180px 0 0;
 			color: @theme-gris3;
 		}
 		.prix-moyen-txt{
@@ -1820,16 +1839,6 @@
 			.texta-light(1.625em);
 			.acronym{
 				.texta-light(0.615em);
-			}
-		}
-		.prix-financement{
-			.texta-light(2.813em);
-			color: @theme-secondary;
-			line-height: 0.6em;
-			padding: 4px 0 0 0;
-			span{
-				font-size: 0.444em;
-				padding: 0 0 0 5px;
 			}
 		}
 	}
