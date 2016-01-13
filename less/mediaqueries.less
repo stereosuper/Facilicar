@@ -3126,6 +3126,21 @@
         }
     }
     /* @end */
+    .breadcrumb{
+        &.is-left{
+            float: none;
+            display: block;
+        }
+    }
+    #btn-retour-recherche{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        &.is-right{
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -3366,8 +3381,25 @@
             }
         }
     }
+    .wrapper-car-detail{
+        .car-name-detail{
+            font-size: 1.4em;
+        }
+        .car-desc-detail{
+            font-size: 1em;
+        }
+    }
     /* @end */
-
+    a, div, span{
+        &.btn-arrow-top{
+            &.big{
+                font-size: 1em;
+                &:before{
+                    margin: -3px 0 0 0;
+                }
+            }
+        }
+    }
 }
 
 @media (max-height: 500px) {

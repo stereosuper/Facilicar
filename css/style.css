@@ -11069,6 +11069,19 @@ a.btn-slider-citation:hover.btn-right span {
     font-size: 21px;
   }
   /* @end */
+  .breadcrumb.is-left {
+    float: none;
+    display: block;
+  }
+  #btn-retour-recherche {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+  #btn-retour-recherche.is-right {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 @media (max-width: 480px) {
   /* @group Popup */
@@ -11281,7 +11294,23 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-car-detail .wrapper-prix-detail .prix-moyen-eco {
     padding: 0;
   }
+  .wrapper-car-detail .car-name-detail {
+    font-size: 1.4em;
+  }
+  .wrapper-car-detail .car-desc-detail {
+    font-size: 1em;
+  }
   /* @end */
+  a.btn-arrow-top.big,
+  div.btn-arrow-top.big,
+  span.btn-arrow-top.big {
+    font-size: 1em;
+  }
+  a.btn-arrow-top.big:before,
+  div.btn-arrow-top.big:before,
+  span.btn-arrow-top.big:before {
+    margin: -3px 0 0 0;
+  }
 }
 @media (max-height: 500px) {
   #main {
