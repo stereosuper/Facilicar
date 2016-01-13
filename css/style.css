@@ -9707,6 +9707,12 @@ a.btn-slider-citation:hover.btn-right span {
   .content-toggle.small .content-toggle.small {
     padding: 0px;
   }
+  .first-block {
+    padding: 66px 0 0 0;
+  }
+  .header-on.no-wrapper-top .first-block {
+    padding: 66px 0 0 0;
+  }
   /* @group Header */
   .menu-mobile-open .bg-header-responsive {
     display: block;
@@ -10598,7 +10604,7 @@ a.btn-slider-citation:hover.btn-right span {
   .cars-filters {
     display: block;
     position: absolute;
-    top: 28px;
+    top: 17px;
     left: 0;
     width: 100%;
     height: auto;

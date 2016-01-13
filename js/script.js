@@ -41,7 +41,7 @@ function scrollPage(){
 	}
 
 	if($("body").hasClass("resultat-recherche")){
-		if (myScroll>66){
+		if (myScroll>120){
 			TweenMax.set($(".cars-filters"), {className:"+=fixed"});
 		}else{
 			TweenMax.set($(".cars-filters"), {className:"-=fixed"});
