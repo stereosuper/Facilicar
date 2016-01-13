@@ -293,6 +293,11 @@
             }
         }
     }
+    .car-options-equipement{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     /* @end */
 }
 
@@ -3125,6 +3130,26 @@
             }
         }
     }
+    .tabs-content{
+        > li{
+            .content-toggle.small {
+                padding: 10px 10px;
+            }
+        }
+    }
+    .wrapper-equiements.wrapper-align-middle{
+        display: block;
+        .content-align-top{
+            display: block;
+            &.equipement-serie{
+                margin: 0 0 10px 0;
+            }
+            &.equipement-serie, &.options-installees{
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
     /* @end */
     .breadcrumb{
         &.is-left{
@@ -3388,6 +3413,9 @@
         .car-desc-detail{
             font-size: 1em;
         }
+    }
+    .liste-equipements{
+        columns: 1;
     }
     /* @end */
     a, div, span{

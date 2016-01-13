@@ -7885,6 +7885,125 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 60px;
   color: #F3C685;
 }
+.equipement-serie {
+  box-sizing: border-box;
+  padding: 0 10px 0 0;
+  width: 67%;
+}
+.options-installees {
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+  width: 33%;
+}
+.liste-equipements,
+.liste-options-installees,
+.list-block.liste-equipements,
+.list-block.liste-options-installees {
+  padding: 20px 0 0 0;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+}
+.liste-equipements > li,
+.liste-options-installees > li,
+.list-block.liste-equipements > li,
+.list-block.liste-options-installees > li {
+  margin: 0;
+}
+.liste-equipements > li strong,
+.liste-options-installees > li strong,
+.list-block.liste-equipements > li strong,
+.list-block.liste-options-installees > li strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+}
+.liste-equipements {
+  -webkit-columns: 2;
+     -moz-columns: 2;
+          columns: 2;
+}
+.car-options-equipement {
+  display: block;
+  margin: 10px 0 0 0;
+  list-style-type: none;
+  margin: 0 0 34px 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.car-options-equipement .wrapper-car-option {
+  display: inline-block;
+  vertical-align: top;
+  width: 86px;
+  height: auto;
+  margin: 10px;
+  text-align: left;
+}
+.car-options-equipement .wrapper-car-option .container-car-option {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  border-radius: 6px;
+  position: relative;
+  text-align: center;
+}
+.car-options-equipement .zone-picto {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 25px;
+  color: #6d6d67;
+  line-height: 34px;
+}
+.car-options-equipement .zone-picto.icon-gps {
+  font-size: 25px;
+}
+.car-options-equipement .zone-picto.icon-clim {
+  font-size: 22px;
+}
+.car-options-equipement .zone-picto.icon-toit-ouvrant {
+  font-size: 20px;
+}
+.car-options-equipement .zone-picto.icon-control-recul {
+  font-size: 14px;
+}
+.car-options-equipement .zone-picto.nb-places .places {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #6d6d67;
+  padding: 2px 7px;
+  margin: 0;
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 0.5em;
+  line-height: 1em;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: -5px;
+}
+.car-options-equipement .zone-picto.icon-phares {
+  font-size: 18px;
+}
+.car-options-equipement .zone-picto.icon-cuir {
+  font-size: 20px;
+}
+.car-options-equipement .zone-picto.icon-quatre-quatre {
+  font-size: 26px;
+}
+.car-options-equipement .zone-txt {
+  display: block;
+  line-height: 1em;
+  padding: 5px 0 0 0;
+  color: #6C6B6C;
+  margin: 0;
+}
+.car-options-equipement .zone-txt .wrapper-align-middle {
+  height: 100%;
+}
 /* @end */
 /* @group States */
 .hide-text {
@@ -8314,6 +8433,11 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .table-caracteristiques tr td.title {
     padding-right: 20px;
+  }
+  .car-options-equipement {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   /* @end */
 }
@@ -11075,6 +11199,23 @@ a.btn-slider-citation:hover.btn-right span {
   .list-social.list-social-txt > li a .zone-icon.icon-print {
     font-size: 21px;
   }
+  .tabs-content > li .content-toggle.small {
+    padding: 10px 10px;
+  }
+  .wrapper-equiements.wrapper-align-middle {
+    display: block;
+  }
+  .wrapper-equiements.wrapper-align-middle .content-align-top {
+    display: block;
+  }
+  .wrapper-equiements.wrapper-align-middle .content-align-top.equipement-serie {
+    margin: 0 0 10px 0;
+  }
+  .wrapper-equiements.wrapper-align-middle .content-align-top.equipement-serie,
+  .wrapper-equiements.wrapper-align-middle .content-align-top.options-installees {
+    width: 100%;
+    padding: 0;
+  }
   /* @end */
   .breadcrumb.is-left {
     float: none;
@@ -11306,6 +11447,11 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-car-detail .car-desc-detail {
     font-size: 1em;
+  }
+  .liste-equipements {
+    -webkit-columns: 1;
+       -moz-columns: 1;
+            columns: 1;
   }
   /* @end */
   a.btn-arrow-top.big,

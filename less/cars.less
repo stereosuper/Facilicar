@@ -2279,4 +2279,112 @@
 	}
 }
 
+.equipement-serie{
+	box-sizing: border-box;
+	padding: 0 10px 0 0;
+	width: 67%;
+}
+.options-installees{
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+	width: 33%;
+}
+.liste-equipements, .liste-options-installees, .list-block.liste-equipements, .list-block.liste-options-installees{
+	padding: 20px 0 0 0;
+	.texta-light(0.875em);
+	> li{
+		margin: 0;
+		strong{
+			.texta-bold(1em);
+		}
+	}
+}
+.liste-equipements{
+	columns: 2;
+}
+
+.car-options-equipement{
+	display: block;
+	margin: 10px 0 0 0;
+	list-style-type: none;
+	margin: 0 0 34px 0;
+	padding: 0;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	.wrapper-car-option{
+		display: inline-block;
+		vertical-align: top;
+		width: 86px;
+		height: auto;
+		margin: 10px;
+		text-align: left;
+		.container-car-option{
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			box-sizing: border-box;
+			padding: 0;
+			.texta-light(0.875em);
+			border-radius: 6px;
+			position: relative;
+			text-align: center;
+		}
+	}
+	.zone-picto{
+		display: block;
+		width: 100%;
+		height: 100%;
+		font-size: 25px;
+		color: @theme-gris3;
+		line-height: 34px;
+		&.icon-gps{
+			font-size: 25px;
+		}
+		&.icon-clim{
+			font-size: 22px;
+		}
+		&.icon-toit-ouvrant{
+			font-size: 20px;
+		}
+		&.icon-control-recul{
+			font-size: 14px;
+		}
+		&.nb-places{
+			.places{
+				display: inline-block;
+				vertical-align: middle;
+				background-color: @theme-gris3;
+				padding: 2px 7px;
+				margin: 0;
+				.texta(0.5em);
+				line-height: 1em;
+				color: #fff;
+				border-radius: 10px;
+				margin-top: -5px;
+			}
+		}
+		&.icon-phares{
+			font-size: 18px;
+		}
+		&.icon-cuir{
+			font-size: 20px;
+		}
+		&.icon-quatre-quatre{
+			font-size: 26px;
+		}
+	}
+	.zone-txt{
+		display: block;
+		line-height: 1em;
+		padding: 5px 0 0 0;
+		color: #6C6B6C;
+		margin: 0;
+		.wrapper-align-middle{
+			height: 100%;
+		}
+	}
+}
+
 /* @end */
