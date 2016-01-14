@@ -282,6 +282,15 @@ function setTabs(){
 	});
 }
 
+// Remplissage du Zoom détail véhicule
+function zoomDetailVehicule(){
+	// Récuperer le prix
+	$(".prix-financement-zoom").append($(".prix-financement").html());
+	$(".car-details-zoom .car-details-zoom-line-one").append($(".car-details .car-details-line-one").html());
+	$(".car-details-zoom .car-details-zoom-line-two").append($(".car-details .car-details-line-two").html());
+	$(".car-details-zoom .car-details-zoom-line-three").append($(".car-details .car-details-line-three").html());
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -298,6 +307,11 @@ $(function(){
 
 	// Tabs
 	setTabs();
+
+	// Remplissage du Zoom détail véhicule
+	if($("body").hasClass("detail-vehicule")){
+		zoomDetailVehicule();
+	}
 
 	// Slider detail
 	if($("body").hasClass("slider-detail")){

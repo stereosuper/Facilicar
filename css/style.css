@@ -8159,6 +8159,142 @@ a.btn-slider-citation:hover.btn-right span {
 .line-rapport-expertise {
   margin: 0 0 30px 0;
 }
+.detail-vehicule-zoom {
+  display: block;
+  width: auto;
+  height: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 150;
+  background-color: #d8d8d4;
+}
+.wrapper-top-zoom {
+  padding: 28px 0 0 0;
+}
+.wrapper-top-zoom.is-white {
+  color: #fff;
+}
+.wrapper-top-zoom.is-white .liste-caracteristiques-zoom {
+  display: block;
+}
+.wrapper-top-zoom.is-white .prix-financement-zoom {
+  color: #fff;
+}
+.wrapper-top-zoom.is-white .encadre {
+  border-color: #fff;
+  color: #fff;
+}
+.wrapper-top-zoom.is-white a.btn-tel,
+.wrapper-top-zoom.is-white div.btn-tel,
+.wrapper-top-zoom.is-white span.btn-tel {
+  color: #fff;
+}
+.wrapper-top-zoom.is-white a.btn-tel .tel-number,
+.wrapper-top-zoom.is-white div.btn-tel .tel-number,
+.wrapper-top-zoom.is-white span.btn-tel .tel-number {
+  border: 1px solid #fff;
+  background: none;
+}
+.wrapper-top-zoom.is-white #btn-rappel-zoom {
+  color: #fff;
+}
+.wrapper-top-zoom a.btn-tel,
+.wrapper-top-zoom div.btn-tel,
+.wrapper-top-zoom span.btn-tel {
+  font-family: 'Texta-Medium', sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  display: inline-block;
+  vertical-align: top;
+  margin: 4px 7px 0 0;
+}
+.wrapper-top-zoom a.btn-tel .tel-number,
+.wrapper-top-zoom div.btn-tel .tel-number,
+.wrapper-top-zoom span.btn-tel .tel-number {
+  padding: 0 4px;
+}
+.wrapper-top-zoom a.btn-tel .icon-tel,
+.wrapper-top-zoom div.btn-tel .icon-tel,
+.wrapper-top-zoom span.btn-tel .icon-tel {
+  padding: 0;
+  margin: -1px 4px 0 0;
+}
+.liste-caracteristiques-zoom > li,
+.list-inline.liste-caracteristiques-zoom > li {
+  width: 80px;
+  margin: 0;
+  line-height: 1.1em;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.liste-caracteristiques-zoom > li img,
+.list-inline.liste-caracteristiques-zoom > li img {
+  display: block;
+  margin: 0 auto 2px auto;
+}
+.prix-financement-zoom {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 2.813em;
+  color: #e38c00;
+}
+.car-details-zoom,
+.list-block.car-details-zoom {
+  max-width: 260px;
+}
+.car-details-zoom > li.car-details-zoom-line-one,
+.list-block.car-details-zoom > li.car-details-zoom-line-one {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+.car-details-zoom > li.car-details-zoom-line-two,
+.list-block.car-details-zoom > li.car-details-zoom-line-two {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.563em;
+  margin: 10px 0;
+}
+.car-details-zoom .encadre,
+.list-block.car-details-zoom .encadre {
+  padding: 1px 3px;
+}
+.car-details-zoom .car-year-detail,
+.list-block.car-details-zoom .car-year-detail {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1em;
+  margin: 0 6px 0 0;
+}
+.car-details-zoom .car-km-detail,
+.list-block.car-details-zoom .car-km-detail {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1em;
+  margin: 0 6px 0 0;
+  padding: 1px 0 0 0;
+}
+.car-details-zoom .motor-color-detail,
+.list-block.car-details-zoom .motor-color-detail {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1em;
+  text-transform: uppercase;
+  padding: 1px 0 0 0;
+}
+.car-details-zoom .car-name-detail,
+.list-block.car-details-zoom .car-name-detail {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#btn-essai-commande-zoom {
+  margin-top: 5px;
+}
 /* @end */
 /* @group States */
 .hide-text {
