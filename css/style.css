@@ -11715,6 +11715,10 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-car-detail .car-labels-detail {
     margin: 5px 0 0 0;
   }
+  .wrapper-car-detail .car-label-detail {
+    padding: 2px 5px;
+    font-size: 0.6em;
+  }
   .wrapper-car-detail .car-name-detail {
     font-size: 1.1em;
     margin: 2px 0 0 0;
@@ -11784,7 +11788,7 @@ a.btn-slider-citation:hover.btn-right span {
     text-align: center;
   }
   .wrapper-car-detail .car-options-detail {
-    line-height: 1em;
+    line-height: 0.9em;
   }
   .wrapper-car-detail .car-options-detail:before {
     display: none;
@@ -11799,6 +11803,7 @@ a.btn-slider-citation:hover.btn-right span {
     display: inline;
     width: auto;
     height: auto;
+    font-size: 0.8em;
   }
   .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option .zone-picto {
     display: none;
@@ -11821,6 +11826,10 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option .zone-txt:after {
     display: none;
+  }
+  #btn-retour-recherche {
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
   /* @end */
   a.btn-arrow-top.big,
