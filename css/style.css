@@ -8442,6 +8442,38 @@ a.btn-slider-citation:hover.btn-right span {
   .list-inline.caracteristiques > li:last-of-type {
     margin-right: 10px;
   }
+  .line-rapport-expertise > li,
+  .list-inline.list-third.line-rapport-expertise > li {
+    width: 50%;
+    margin: 0 0 10px 0;
+  }
+  .line-rapport-expertise > li:first-of-type,
+  .list-inline.list-third.line-rapport-expertise > li:first-of-type {
+    padding: 0 10px;
+  }
+  .line-rapport-expertise > li:last-of-type,
+  .list-inline.list-third.line-rapport-expertise > li:last-of-type {
+    padding: 0 10px;
+  }
+  .line-rapport-expertise > li:nth-child(2),
+  .list-inline.list-third.line-rapport-expertise > li:nth-child(2) {
+    padding: 0 10px;
+  }
+  .title-radar {
+    padding: 0 10px;
+  }
+  .list-radar:first-of-type,
+  .list-inline.list-third.list-radar:first-of-type {
+    padding: 15px 10px 0 10px;
+  }
+  .list-radar:last-of-type,
+  .list-inline.list-third.list-radar:last-of-type {
+    padding: 15px 10px 0 10px;
+  }
+  .list-radar:nth-child(2),
+  .list-inline.list-third.list-radar:nth-child(2) {
+    padding: 15px 10px 0 10px;
+  }
   /* @end */
 }
 @media (max-width: 1150px) {
@@ -11384,6 +11416,43 @@ a.btn-slider-citation:hover.btn-right span {
   .consommation > li.consommation-gas-station {
     font-size: 50px;
   }
+  .line-rapport-expertise,
+  .list-inline.list-third.line-rapport-expertise {
+    margin: 0 0 10px;
+  }
+  .line-rapport-expertise > li,
+  .list-inline.list-third.line-rapport-expertise > li {
+    width: 100%;
+  }
+  .line-rapport-expertise > li:first-of-type,
+  .list-inline.list-third.line-rapport-expertise > li:first-of-type {
+    padding: 0;
+  }
+  .line-rapport-expertise > li:last-of-type,
+  .list-inline.list-third.line-rapport-expertise > li:last-of-type {
+    padding: 0;
+  }
+  .line-rapport-expertise > li:nth-child(2),
+  .list-inline.list-third.line-rapport-expertise > li:nth-child(2) {
+    padding: 0;
+  }
+  .list-radar > li,
+  .list-inline.list-third.list-radar > li {
+    width: 50%;
+  }
+  .list-radar > li:first-child,
+  .list-inline.list-third.list-radar > li:first-child {
+    width: 100%;
+    padding: 0;
+  }
+  .list-radar > li:nth-child(2),
+  .list-inline.list-third.list-radar > li:nth-child(2) {
+    padding: 10px 0 10px 0;
+  }
+  .list-radar > li:last-child,
+  .list-inline.list-third.list-radar > li:last-child {
+    padding: 10px 0 0 10px;
+  }
   /* @end */
   .breadcrumb.is-left {
     float: none;
@@ -11640,6 +11709,18 @@ a.btn-slider-citation:hover.btn-right span {
     font-size: 30px;
     display: block;
     margin: 10px 0 5px 0;
+  }
+  .list-radar > li,
+  .list-inline.list-third.list-radar > li {
+    width: 100%;
+  }
+  .list-radar > li:nth-child(2),
+  .list-inline.list-third.list-radar > li:nth-child(2) {
+    padding: 10px 0 0 0;
+  }
+  .list-radar > li:last-child,
+  .list-inline.list-third.list-radar > li:last-child {
+    padding: 10px 0 0 0;
   }
   /* @end */
   a.btn-arrow-top.big,
