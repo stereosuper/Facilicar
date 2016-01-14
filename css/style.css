@@ -9841,16 +9841,22 @@ a.btn-slider-citation:hover.btn-right span {
   /* @end */
   /* @group Détail véhicule */
   .wrapper-slider-car-detail {
-    width: 320px;
+    display: block;
+    width: 100%;
+    position: relative;
+    margin: 0 0 10px 0;
   }
   .wrapper-txt-top-car-detail {
-    padding: 0 0 0 340px;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
   .wrapper-current-slide {
-    height: 250px;
+    height: 475px;
   }
   .wrapper-slider-nav {
-    height: 50px;
+    display: none;
   }
   .wrapper-car-detail .wrapper-prix-detail .prix-moyen-txt {
     font-size: 0.7em;
@@ -9911,6 +9917,12 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .tabs-content > li .content-toggle.small {
     padding: 20px 40px;
+  }
+  .tabs-content h5 {
+    font-size: 0.9em;
+  }
+  .tabs-content p.regular-txt {
+    font-size: 0.9em;
   }
   /* @end */
 }
@@ -11288,17 +11300,6 @@ a.btn-slider-citation:hover.btn-right span {
   }
   /* @end */
   /* @group Détail véhicule */
-  .wrapper-slider-car-detail {
-    display: block;
-    width: 100%;
-    position: relative;
-  }
-  .wrapper-txt-top-car-detail {
-    display: block;
-    width: 100%;
-    height: auto;
-    padding: 0;
-  }
   .wrapper-current-slide {
     height: 300px;
   }
@@ -11370,6 +11371,18 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-equiements.wrapper-align-middle .content-align-top.options-installees {
     width: 100%;
     padding: 0;
+  }
+  .consommation > li {
+    margin: 0 10px;
+  }
+  .consommation > li:first-of-type {
+    margin-left: 10px;
+  }
+  .consommation > li.consommation-detail strong {
+    font-size: 3em;
+  }
+  .consommation > li.consommation-gas-station {
+    font-size: 50px;
   }
   /* @end */
   .breadcrumb.is-left {
@@ -11607,6 +11620,26 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-columns: 1;
        -moz-columns: 1;
             columns: 1;
+  }
+  .consommation > li {
+    margin: 0 10px;
+  }
+  .consommation > li:first-of-type {
+    margin-left: 10px;
+  }
+  .consommation > li.consommation-detail {
+    width: 60px;
+  }
+  .consommation > li.consommation-detail strong {
+    font-size: 1.5em;
+  }
+  .consommation > li.consommation-location {
+    width: 80px;
+  }
+  .consommation > li.consommation-gas-station {
+    font-size: 30px;
+    display: block;
+    margin: 10px 0 5px 0;
   }
   /* @end */
   a.btn-arrow-top.big,

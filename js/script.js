@@ -42,7 +42,7 @@ function scrollPage(){
 
 	if($("body").hasClass("detail-vehicule")){
 		// Positionnement fixed du btn "Rendez-vous d'essai ou commande"
-		if($(window).width()<=767){
+		if($(window).width()<=979){
 			var topBtnEssaiCommande = $("#container-btn-detail").offset().top;
 			if(myScroll >= topBtnEssaiCommande-10){
 				TweenMax.set($("#btn-essai-commande"), {className:"+=fixed"});
@@ -331,18 +331,6 @@ $(function(){
 			      breakpoint: 1024,
 			      settings: {
 			        slidesToShow: 4
-			      }
-			    },
-			    {
-			      breakpoint: 767,
-			      settings: {
-			        slidesToShow: 5
-			      }
-			    },
-			    {
-			      breakpoint: 480,
-			      settings: {
-			        slidesToShow: 3
 			      }
 			    }
 			 ]
