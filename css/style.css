@@ -11333,7 +11333,7 @@ a.btn-slider-citation:hover.btn-right span {
   /* @end */
   /* @group Détail véhicule */
   .wrapper-current-slide {
-    height: 300px;
+    height: 250px;
   }
   .wrapper-conseils.wrapper-align-middle {
     display: block;
@@ -11457,10 +11457,16 @@ a.btn-slider-citation:hover.btn-right span {
   .list-inline.list-third.list-qualite > li {
     width: 50%;
   }
+  .wrapper-car-detail .car-name-detail {
+    font-size: 1.6em;
+  }
   /* @end */
+  .breadcrumb {
+    display: none;
+  }
   .breadcrumb.is-left {
     float: none;
-    display: block;
+    display: none;
   }
   #btn-retour-recherche {
     padding-top: 6px;
@@ -11611,7 +11617,7 @@ a.btn-slider-citation:hover.btn-right span {
   /* @end */
   /* @group Détail véhicule */
   .wrapper-current-slide {
-    height: 225px;
+    height: 170px;
   }
   .caracteristiques > li,
   .list-inline.caracteristiques > li {
@@ -11646,6 +11652,10 @@ a.btn-slider-citation:hover.btn-right span {
   .list-inline.caracteristiques > li a br {
     display: none;
   }
+  .car-details > li#details-tel-consultations {
+    margin: 6px 0 10px 0;
+    text-align: center;
+  }
   .car-details > li#details-tel-consultations .wrapper-align-middle {
     display: block;
   }
@@ -11657,17 +11667,21 @@ a.btn-slider-citation:hover.btn-right span {
     width: 100%;
   }
   .car-details > li#details-tel-consultations .content-align-middle.consultations.txt-right-aligned {
-    text-align: left;
+    text-align: center;
+  }
+  .car-details > li#details-eco-financement {
+    text-align: center;
+    margin: 0;
   }
   .car-details > li#details-eco-financement .wrapper-align-middle.wrapper-economie-financement {
-    display: block;
+    display: inline-block;
   }
   .car-details > li#details-eco-financement .wrapper-align-middle.wrapper-economie-financement .content-align-middle {
     display: block;
   }
   .car-details > li#details-eco-financement .wrapper-align-middle.wrapper-economie-financement .content-align-middle.txt-right-aligned {
-    text-align: left;
-    margin: 5px 0 0 0;
+    text-align: center;
+    margin: 2px 0 0 0;
   }
   .wrapper-car-detail .wrapper-prix-detail .prix-financement {
     position: relative;
@@ -11675,19 +11689,41 @@ a.btn-slider-citation:hover.btn-right span {
     right: inherit;
     width: 100%;
     padding: 0;
-    margin: 0 0 5px 0;
+    margin: 0 0 2px 0;
   }
   .wrapper-car-detail .wrapper-prix-detail .prix-financement.txt-right-aligned {
-    text-align: left;
+    text-align: center;
   }
   .wrapper-car-detail .wrapper-prix-detail .prix-moyen-eco {
     padding: 0;
   }
+  .wrapper-car-detail .wrapper-prix-detail .prix-moyen-eco .wrapper-align-middle {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .wrapper-car-detail .wrapper-prix-detail .prix-moyen-eco .wrapper-align-middle .content-align-middle {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .wrapper-car-detail .wrapper-prix-detail .prix-moyen-eco .wrapper-align-middle .prix-moyen-txt {
+    width: auto;
+    padding: 6px 8px 0 0;
+  }
+  .wrapper-car-detail .wrapper-prix-detail .prix-moyen-eco .wrapper-align-middle .prix-moyen {
+    font-size: 1.1em;
+  }
+  .wrapper-car-detail .car-labels-detail {
+    margin: 5px 0 0 0;
+  }
   .wrapper-car-detail .car-name-detail {
-    font-size: 1.4em;
+    font-size: 1.1em;
+    margin: 2px 0 0 0;
   }
   .wrapper-car-detail .car-desc-detail {
-    font-size: 1em;
+    font-size: 0.9em;
+  }
+  .wrapper-slider-car-detail {
+    margin: 0 0 5px 0;
   }
   .liste-equipements {
     -webkit-columns: 1;
@@ -11743,6 +11779,48 @@ a.btn-slider-citation:hover.btn-right span {
   .list-qualite > li:nth-child(2),
   .list-inline.list-third.list-qualite > li:nth-child(2) {
     padding: 0;
+  }
+  .wrapper-prix-detail {
+    text-align: center;
+  }
+  .wrapper-car-detail .car-options-detail {
+    line-height: 1em;
+  }
+  .wrapper-car-detail .car-options-detail:before {
+    display: none;
+  }
+  .wrapper-car-detail .car-options-detail .wrapper-car-option {
+    display: inline;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option {
+    display: inline;
+    width: auto;
+    height: auto;
+  }
+  .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option .zone-picto {
+    display: none;
+  }
+  .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option .zone-txt {
+    display: inline;
+    width: auto;
+    height: auto;
+    position: relative;
+    bottom: inherit;
+    left: inherit;
+    margin: 0;
+    opacity: 1;
+    background: none;
+    line-height: 0.9em;
+    padding: 0;
+  }
+  .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option .zone-txt:before {
+    display: none;
+  }
+  .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option .zone-txt:after {
+    display: none;
   }
   /* @end */
   a.btn-arrow-top.big,

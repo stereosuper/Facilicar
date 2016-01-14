@@ -3101,7 +3101,7 @@
 
     /* @group Détail véhicule */
     .wrapper-current-slide{
-        height: 300px;
+        height: 250px;
     }
     .wrapper-conseils.wrapper-align-middle{
         display: block;
@@ -3234,11 +3234,18 @@
             width: 50%;
         }
     }
+    .wrapper-car-detail{
+        .car-name-detail{
+            font-size: 1.6em;
+        }
+    }
     /* @end */
     .breadcrumb{
+        display: none;
         &.is-left{
             float: none;
-            display: block;
+            //display: block;
+            display: none;
         }
     }
     #btn-retour-recherche{
@@ -3411,7 +3418,7 @@
 
     /* @group Détail véhicule */
     .wrapper-current-slide{
-        height: 225px;
+        height: 170px;
     }
     .caracteristiques, .list-inline.caracteristiques{
         > li{
@@ -3444,6 +3451,8 @@
     .car-details{
         > li{
             &#details-tel-consultations{
+                margin: 6px 0 10px 0;
+                text-align: center;
                 .wrapper-align-middle{
                     display: block;
                 }
@@ -3453,19 +3462,21 @@
                         margin: 10px 0 0 0;
                         width: 100%;
                         &.txt-right-aligned{
-                            text-align: left;
+                            text-align: center;
                         }
                     }
                 }
             }
             &#details-eco-financement{
+                text-align: center;
+                margin: 0;
                 .wrapper-align-middle.wrapper-economie-financement{
-                    display: block;
+                    display: inline-block;
                     .content-align-middle{
                         display: block;
                         &.txt-right-aligned{
-                            text-align: left;
-                            margin: 5px 0 0 0;
+                            text-align: center;
+                            margin: 2px 0 0 0;
                         }
                     }
                 }
@@ -3480,23 +3491,45 @@
                 right: inherit;
                 width: 100%;
                 padding: 0;
-                margin: 0 0 5px 0;
+                margin: 0 0 2px 0;
                 &.txt-right-aligned{
-                    text-align: left;
+                    text-align: center;
                 }
             }
             .prix-moyen-eco{
                 padding: 0;
+                .wrapper-align-middle{
+                    display: inline-block;
+                    vertical-align: top;
+                    .content-align-middle{
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    .prix-moyen-txt{
+                        width: auto;
+                        padding: 6px 8px 0 0;
+                    }
+                    .prix-moyen{
+                        font-size: 1.1em;
+                    }
+                }
             }
+        }
+        .car-labels-detail{
+            margin: 5px 0 0 0;
         }
     }
     .wrapper-car-detail{
         .car-name-detail{
-            font-size: 1.4em;
+            font-size: 1.1em;
+            margin: 2px 0 0 0;
         }
         .car-desc-detail{
-            font-size: 1em;
+            font-size: 0.9em;
         }
+    }
+    .wrapper-slider-car-detail{
+        margin: 0 0 5px 0;
     }
     .liste-equipements{
         columns: 1;
@@ -3547,6 +3580,50 @@
             }
             &:nth-child(2){
                 padding: 0;
+            }
+        }
+    }
+    .wrapper-prix-detail{
+        text-align: center;
+    }
+    .wrapper-car-detail{
+        .car-options-detail{
+            line-height: 1em;
+            &:before{
+                display: none;
+            }
+            .wrapper-car-option{
+                display: inline;
+                width: auto;
+                height: auto;
+                margin: 0;
+                .container-car-option{
+                    display: inline;
+                    width: auto;
+                    height: auto;
+                    .zone-picto{
+                        display: none;
+                    }
+                    .zone-txt{
+                        display: inline;
+                        width: auto;
+                        height: auto;
+                        position: relative;
+                        bottom: inherit;
+                        left: inherit;
+                        margin: 0;
+                        opacity: 1;
+                        background: none;
+                        line-height: 0.9em;
+                        padding: 0;
+                        &:before{
+                            display: none;
+                        }
+                        &:after{
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }
