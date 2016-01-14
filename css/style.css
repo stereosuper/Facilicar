@@ -11453,6 +11453,10 @@ a.btn-slider-citation:hover.btn-right span {
   .list-inline.list-third.list-radar > li:last-child {
     padding: 10px 0 0 10px;
   }
+  .list-qualite > li,
+  .list-inline.list-third.list-qualite > li {
+    width: 50%;
+  }
   /* @end */
   .breadcrumb.is-left {
     float: none;
@@ -11721,6 +11725,24 @@ a.btn-slider-citation:hover.btn-right span {
   .list-radar > li:last-child,
   .list-inline.list-third.list-radar > li:last-child {
     padding: 10px 0 0 0;
+  }
+  .list-qualite > li,
+  .list-inline.list-third.list-qualite > li {
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+  }
+  .list-qualite > li:first-of-type,
+  .list-inline.list-third.list-qualite > li:first-of-type {
+    padding: 0;
+  }
+  .list-qualite > li:last-of-type,
+  .list-inline.list-third.list-qualite > li:last-of-type {
+    padding: 0;
+  }
+  .list-qualite > li:nth-child(2),
+  .list-inline.list-third.list-qualite > li:nth-child(2) {
+    padding: 0;
   }
   /* @end */
   a.btn-arrow-top.big,

@@ -3229,6 +3229,11 @@
             }
         }
     }
+    .list-qualite, .list-inline.list-third.list-qualite{
+        >li{
+            width: 50%;
+        }
+    }
     /* @end */
     .breadcrumb{
         &.is-left{
@@ -3526,6 +3531,22 @@
             }
             &:last-child{
                 padding: 10px 0 0 0;
+            }
+        }
+    }
+    .list-qualite, .list-inline.list-third.list-qualite{
+        >li{
+            width: 100%;
+            padding: 0;
+            margin: 10px 0;
+            &:first-of-type{
+                padding: 0;
+            }
+            &:last-of-type{
+                padding: 0;
+            }
+            &:nth-child(2){
+                padding: 0;
             }
         }
     }
