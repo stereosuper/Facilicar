@@ -587,9 +587,24 @@ $(function(){
 			return false;
 		}
 	});
-
-	// Clic sur un lien de la sidebar
+	
 	if($("body").hasClass("has-sidebar")){
+		/*// Définir la hauteur minimale du content-with-navbar en fonction de la sidebar
+		// Récupérer la hauteur de la sidebar
+		var heightNavbar = 0;
+		$(".navbar ul li").each(function() {
+		   heightNavbar += $(this).height();
+		});
+		console.log(heightNavbar);
+		// Récupérer la hauteur du content-with-navbar
+		var heightContentWithNavbar = $(".content-with-navbar").height();
+		if(heightContentWithNavbar<heightNavbar){
+			TweenMax.set($(".content-with-navbar"), {"min-height": heightNavbar+"px"});
+		}else{
+			TweenMax.set($(".content-with-navbar"), {clearProps:"all"});
+		}*/
+
+		// Clic sur un lien de la sidebar
 		$('.navbar li.has-content a').click(function(){
 			if(($("body").hasClass("toggle-all"))&&($(".wrapper-toggle-all .btn-toggle").hasClass("open"))){
 				var btnToggleThis = $(this);

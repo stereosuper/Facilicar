@@ -1165,6 +1165,7 @@ a.btn-menu-responsive .rect:before {
   width: auto;
   padding: 13px 0 0 320px;
   box-sizing: border-box;
+  min-height: 600px;
 }
 .content-with-navbar.has-navbar-left {
   padding-left: 320px;
