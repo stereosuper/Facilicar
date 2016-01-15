@@ -349,6 +349,15 @@ $(function(){
 			    }
 			 ]
 		});
+		 $('.slider-for-zoom').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+			//asNavFor: '.slider-nav',
+			prevArrow: $('.prev-slider-for-zoom'),
+			nextArrow: $('.next-slider-for-zoom')
+		});
 	}
 
 	// Clic sur le bouton close des cookies

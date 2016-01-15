@@ -274,4 +274,88 @@ a.btn-slider-citation{
 	padding: 0;
 	background: none;
 }
+
+.slider-for-zoom{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	.slick-list{
+		width: 100%;
+		height: 100%;
+		.slick-track{
+			height: 100%;
+		}
+	}
+	> li{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.prev-slider-for-zoom{
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	color: #fff;
+	font-size: 34px;
+	margin-top: -17px;
+	padding: 0;
+	background: none;
+}
+
+.next-slider-for-zoom{
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	color: #fff;
+	font-size: 34px;
+	margin-top: -17px;
+	padding: 0;
+	background: none;
+}
+
+.slider-nav-zoom{
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0 25px;
+	box-sizing: border-box;
+	.slick-list{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		.slick-track{
+			height: 100%;
+		}
+	}
+	li{
+		margin: 0 4px;
+		box-sizing: border-box;
+		position: relative;
+		cursor: pointer;
+		&:focus{
+			outline: none;
+		}
+		&.slick-current{
+			opacity: 0.5;
+			&:before{
+				content: "";
+				display: block;
+				width: auto;
+				height: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				box-sizing: border-box;
+				border: 1px solid @theme-gris3;
+			}
+		}
+	}
+}
 /* @end */

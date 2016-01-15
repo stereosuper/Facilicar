@@ -2452,18 +2452,32 @@
 }
 .wrapper-top-zoom{
 	padding: 28px 0 0 0;
+	width: 100%;
+	position: relative;
+	z-index: 2;
 	&.is-white{
 		color: #fff;
 		.content-caracteristiques-zoom{
 			border-right: 1px solid #fff;
 			padding-right: 10px;
+			width: 180px;
+			box-sizing: border-box;
 		}
 		.content-details-zoom{
 			border-right: 1px solid #fff;
 			padding: 0 20px;
+			width: 320px;
+			box-sizing: border-box;
 		}
 		.content-prix-zoom{
-			padding-left: 34px;
+			padding: 0 34px;
+			box-sizing: border-box;
+			//width: 270px;
+			width: auto;
+		}
+		.content-btn-zoom{
+			width: 375px;
+			box-sizing: border-box;
 		}
 		.liste-caracteristiques-zoom{
 			display: block;
@@ -2532,7 +2546,7 @@
 		}
 		&.car-details-zoom-line-two{
 			.texta-light(1.563em);
-			margin: 10px 0;
+			margin: 4px 0;
 		}
 	}
 	.encadre{
@@ -2564,9 +2578,36 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 	}
+	.car-desc-detail{
+		display: block;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 }
 #btn-essai-commande-zoom{
 	margin-top: 5px;
 }
+.wrapper-current-slide-zoom{
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.wrapper-slider-nav-zoom{
+	display: none;
+	width: 100%;
+	height: 70px;
+	margin: 8px 0 0 0;
+	position: relative;
+}
+
 
 /* @end */
