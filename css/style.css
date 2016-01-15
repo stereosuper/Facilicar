@@ -8177,6 +8177,17 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-top-zoom.is-white {
   color: #fff;
 }
+.wrapper-top-zoom.is-white .content-caracteristiques-zoom {
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+}
+.wrapper-top-zoom.is-white .content-details-zoom {
+  border-right: 1px solid #fff;
+  padding: 0 20px;
+}
+.wrapper-top-zoom.is-white .content-prix-zoom {
+  padding-left: 34px;
+}
 .wrapper-top-zoom.is-white .liste-caracteristiques-zoom {
   display: block;
 }
