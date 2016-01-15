@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-expand:before {
+  content: "\e92a";
+}
 .icon-check:before {
   content: "\e929";
 }
@@ -4626,6 +4629,9 @@ a.btn-slider-citation:hover.btn-right span {
   width: 100%;
   height: 100%;
 }
+.slider-for .slick-slide {
+  cursor: pointer;
+}
 .prev-slider-for {
   position: absolute;
   top: 50%;
@@ -4654,6 +4660,18 @@ a.btn-slider-citation:hover.btn-right span {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
   color: #fff;
+}
+.btn-expand {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 22px;
+  right: 22px;
 }
 .slider-nav {
   display: block;
@@ -4738,7 +4756,7 @@ a.btn-slider-citation:hover.btn-right span {
 .prev-slider-for-zoom {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 60px;
   color: #fff;
   font-size: 34px;
   margin-top: -17px;
@@ -4748,7 +4766,7 @@ a.btn-slider-citation:hover.btn-right span {
 .next-slider-for-zoom {
   position: absolute;
   top: 50%;
-  right: 30px;
+  right: 60px;
   color: #fff;
   font-size: 34px;
   margin-top: -17px;
@@ -4758,9 +4776,9 @@ a.btn-slider-citation:hover.btn-right span {
 .slider-nav-zoom {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 34px;
   margin: 0;
-  padding: 0 25px;
+  padding: 0;
   box-sizing: border-box;
 }
 .slider-nav-zoom .slick-list {
@@ -4794,7 +4812,7 @@ a.btn-slider-citation:hover.btn-right span {
   right: 0;
   bottom: 0;
   box-sizing: border-box;
-  border: 1px solid #6d6d67;
+  border: 1px solid #fff;
 }
 /* @end */
 /* @group Alert */
@@ -8241,7 +8259,7 @@ a.btn-slider-citation:hover.btn-right span {
   margin: 0 0 30px 0;
 }
 .detail-vehicule-zoom {
-  display: block;
+  display: none;
   width: auto;
   height: auto;
   position: fixed;
@@ -8251,6 +8269,9 @@ a.btn-slider-citation:hover.btn-right span {
   left: 0;
   z-index: 150;
   background-color: #d8d8d4;
+}
+.detail-vehicule-zoom.open {
+  display: block;
 }
 .wrapper-top-zoom {
   padding: 28px 0 0 0;
@@ -8420,11 +8441,48 @@ a.btn-slider-citation:hover.btn-right span {
   left: 0;
 }
 .wrapper-slider-nav-zoom {
-  display: none;
+  display: block;
   width: 100%;
   height: 70px;
   margin: 8px 0 0 0;
-  position: relative;
+  position: fixed;
+  bottom: 70px;
+}
+.wrapper-slider-nav-zoom .container {
+  height: 100%;
+}
+.btn-filters {
+  display: block;
+  width: auto;
+  height: auto;
+  list-style-type: none;
+  margin: 16px 0 0 2px;
+  padding: 0;
+}
+.btn-filters > li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+  padding: 0;
+}
+.btn-filters > li .filter-nav-zoom {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #e38c00;
+  line-height: 1em;
+  padding: 9px 10px;
+  box-sizing: border-box;
+}
+.btn-filters > li .filter-nav-zoom.is-active {
+  background: none;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 /* @end */
 /* @group States */

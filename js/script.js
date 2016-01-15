@@ -349,14 +349,32 @@ $(function(){
 			    }
 			 ]
 		});
-		 $('.slider-for-zoom').slick({
+		$('.slider-for-zoom').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,
 			fade: true,
-			//asNavFor: '.slider-nav',
+			asNavFor: '.slider-nav-zoom',
 			prevArrow: $('.prev-slider-for-zoom'),
 			nextArrow: $('.next-slider-for-zoom')
+		});
+		$('.slider-nav-zoom').slick({
+			slidesToShow: 20,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for-zoom',
+			dots: false,
+			centerMode: false,
+			arrows: false,
+			focusOnSelect: true
+		});
+
+		// Affichage du zoom
+		$(".slider-for .slick-slide").click(function(){
+			if(!$(".detail-vehicule-zoom").hasClass("open")){
+				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
+				$('.slider-for-zoom').get(0).slick.setPosition();
+				$('.slider-nav-zoom').get(0).slick.setPosition();
+			}
 		});
 	}
 

@@ -178,6 +178,9 @@ a.btn-slider-citation{
 		width: 100%;
 		height: 100%;
 	}
+	.slick-slide{
+		cursor: pointer;
+	}
 }
 
 .prev-slider-for{
@@ -209,6 +212,19 @@ a.btn-slider-citation{
 	text-align: center;
 	.texta-bold(1.25em);
 	color: #fff;
+}
+
+.btn-expand{
+	display: block;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	position: absolute;
+	bottom: 22px;
+	right: 22px;
 }
 
 .slider-nav{
@@ -298,7 +314,7 @@ a.btn-slider-citation{
 .prev-slider-for-zoom{
 	position: absolute;
 	top: 50%;
-	left: 30px;
+	left: 60px;
 	color: #fff;
 	font-size: 34px;
 	margin-top: -17px;
@@ -309,7 +325,7 @@ a.btn-slider-citation{
 .next-slider-for-zoom{
 	position: absolute;
 	top: 50%;
-	right: 30px;
+	right: 60px;
 	color: #fff;
 	font-size: 34px;
 	margin-top: -17px;
@@ -320,9 +336,9 @@ a.btn-slider-citation{
 .slider-nav-zoom{
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: 34px;
 	margin: 0;
-	padding: 0 25px;
+	padding: 0;
 	box-sizing: border-box;
 	.slick-list{
 		width: 100%;
@@ -353,7 +369,7 @@ a.btn-slider-citation{
 				right: 0;
 				bottom: 0;
 				box-sizing: border-box;
-				border: 1px solid @theme-gris3;
+				border: 1px solid #fff;
 			}
 		}
 	}

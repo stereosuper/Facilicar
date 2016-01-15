@@ -2439,7 +2439,7 @@
 	margin: 0 0 30px 0;
 }
 .detail-vehicule-zoom{
-	display: block;
+	display: none;
 	width: auto;
 	height: auto;
 	position: fixed;
@@ -2449,6 +2449,9 @@
 	left: 0;
 	z-index: 150;
 	background-color: @theme-neutral;
+	&.open{
+		display: block;
+	}
 }
 .wrapper-top-zoom{
 	padding: 28px 0 0 0;
@@ -2602,11 +2605,45 @@
 }
 
 .wrapper-slider-nav-zoom{
-	display: none;
+	display: block;
 	width: 100%;
 	height: 70px;
 	margin: 8px 0 0 0;
-	position: relative;
+	position: fixed;
+	bottom: 70px;
+	.container{
+		height: 100%;
+	}
+}
+
+.btn-filters{
+	display: block;
+	width: auto;
+	height: auto;
+	list-style-type: none;
+	margin: 16px 0 0 2px;
+	padding: 0;
+	> li{
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 2px;
+		padding: 0;
+		.filter-nav-zoom{
+			.texta-black(1em);
+			text-transform: uppercase;
+			color: #fff;
+			background-color: @theme-secondary;
+			line-height: 1em;
+			padding: 9px 10px;
+			box-sizing: border-box;
+			&.is-active{
+				background: none;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
 }
 
 
