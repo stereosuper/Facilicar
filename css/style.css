@@ -8280,13 +8280,13 @@ a.btn-slider-citation:hover.btn-right span {
   bottom: 0;
   left: 0;
   z-index: 150;
-  background-color: #d8d8d4;
+  background-color: #333333;
 }
 .detail-vehicule-zoom.open {
   display: block;
 }
 .wrapper-top-zoom {
-  padding: 28px 0 0 0;
+  padding: 34px 0 0 0;
   width: 100%;
   position: relative;
   z-index: 2;
@@ -8556,8 +8556,8 @@ a.btn-slider-citation:hover.btn-right span {
   text-transform: uppercase;
   text-decoration: none;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 15px;
+  top: 15px;
   padding: 0 30px 0 0;
   -webkit-transition: opacity 0.2s ease-in-out;
           transition: opacity 0.2s ease-in-out;
