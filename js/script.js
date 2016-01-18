@@ -390,6 +390,22 @@ $(function(){
 				$('.slider-nav-zoom').get(0).slick.setPosition();
 			}
 		});
+
+		$("#btn-open-zoom").click(function(){
+			if(!$(".detail-vehicule-zoom").hasClass("open")){
+				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
+				$('.slider-for-zoom').get(0).slick.setPosition();
+				$('.slider-nav-zoom').get(0).slick.setPosition();
+			}
+			return false;
+		});
+
+		// Masquage du zoom
+		$("#btn-close-zoom").click(function(){
+			TweenMax.set($(".detail-vehicule-zoom"), {className:"-=open"});
+			return false;
+		});
+		
 	}
 
 	// Filtrer le slideshow

@@ -4665,6 +4665,7 @@ a.btn-slider-citation:hover.btn-right span {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
   color: #fff;
+  pointer-events: none;
 }
 .btn-expand {
   display: block;
@@ -4677,6 +4678,7 @@ a.btn-slider-citation:hover.btn-right span {
   position: absolute;
   bottom: 22px;
   right: 22px;
+  cursor: pointer;
 }
 .slider-nav {
   display: block;
@@ -8448,13 +8450,14 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-slider-nav-zoom {
   display: block;
   width: 100%;
-  height: 70px;
+  height: 85px;
   margin: 8px 0 0 0;
   position: fixed;
   bottom: 70px;
 }
 .wrapper-slider-nav-zoom .container {
   height: 100%;
+  position: relative;
 }
 .btn-filters {
   display: block;
@@ -8486,6 +8489,14 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .btn-filters > li .filter-nav-zoom .tab-triangle {
   display: none;
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  margin: 0 0 0 -7px;
+  padding: 0;
+  background: url("../layoutImg/tab-exterieur.png") no-repeat 0 0;
 }
 .btn-filters > li .filter-nav-zoom .border-uncomplete {
   display: none;
@@ -8529,14 +8540,44 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .btn-filters > li .filter-nav-zoom.is-active .tab-triangle {
   display: block;
-  width: 14px;
-  height: 8px;
+}
+#btn-close-zoom {
+  color: #fff;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.125em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  text-decoration: none;
   position: absolute;
-  top: -7px;
-  left: 50%;
-  margin: 0 0 0 -7px;
+  right: 0;
+  bottom: 0;
+  padding: 0 30px 0 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+          transition: opacity 0.2s ease-in-out;
+}
+#btn-close-zoom:before {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e904";
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin: -8px 0 0 0;
   padding: 0;
-  background: url("../layoutImg/tab-exterieur.png") no-repeat 0 0;
+}
+#btn-close-zoom:hover {
+  opacity: 0.7;
 }
 /* @end */
 /* @group States */
@@ -12249,6 +12290,10 @@ a.btn-slider-citation:hover.btn-right span {
     background: url("../layoutImg/triangle@2x.png") no-repeat 0 0;
     background-size: 8px 4px;
   }
+  .btn-filters > li .filter-nav-zoom .tab-triangle {
+    background: url("../layoutImg/tab-exterieur@2x.png") no-repeat 0 0;
+    background-size: 14px 8px;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   .e-trustedshops {
@@ -12271,6 +12316,10 @@ a.btn-slider-citation:hover.btn-right span {
     background: url("../layoutImg/triangle@2x.png") no-repeat 0 0;
     background-size: 8px 4px;
   }
+  .btn-filters > li .filter-nav-zoom .tab-triangle {
+    background: url("../layoutImg/tab-exterieur@2x.png") no-repeat 0 0;
+    background-size: 14px 8px;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (min-resolution: 288dpi) {
   .e-trustedshops {
@@ -12292,6 +12341,10 @@ a.btn-slider-citation:hover.btn-right span {
   .select-option-car .zone-txt .triangle {
     background: url("../layoutImg/triangle@3x.png") no-repeat 0 0;
     background-size: 8px 4px;
+  }
+  .btn-filters > li .filter-nav-zoom .tab-triangle {
+    background: url("../layoutImg/tab-exterieur@3x.png") no-repeat 0 0;
+    background-size: 14px 8px;
   }
 }
 /* ==|== print styles =======================================================
