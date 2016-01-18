@@ -354,6 +354,7 @@ $(function(){
 			slidesToScroll: 1,
 			arrows: true,
 			fade: true,
+			infinite: true,
 			asNavFor: '.slider-nav-zoom',
 			prevArrow: $('.prev-slider-for-zoom'),
 			nextArrow: $('.next-slider-for-zoom')
@@ -362,10 +363,23 @@ $(function(){
 			slidesToShow: 20,
 			slidesToScroll: 1,
 			asNavFor: '.slider-for-zoom',
-			dots: true,
+			dots: false,
 			centerMode: false,
 			arrows: false,
 			focusOnSelect: true
+		});
+		var currentFilter = $(".filter-nav-zoom").parent("li").attr("id");
+		var slides = $(".slider-for-zoom .slick-track > .slick-slide").length;
+		$('.slider-for-zoom').on('afterChange', function(event, slick, currentSlide, nextSlide){
+			var inFocus = $('.slider-for-zoom .slick-current').attr('data-slick-index');
+			$('.slider-nav-zoom .slick-current').removeClass('slick-current');
+			$('.slider-nav-zoom .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
+			// vérifier et mettre à jour le filtre actif
+			var currentSlideFilter = $(".slider-nav-zoom li:eq("+currentSlide+")").data("filter");
+			if(!$(".btn-filters li#"+currentSlideFilter+" .filter-nav-zoom").hasClass("is-active")){
+				TweenMax.set($('.filter-nav-zoom.is-active'), {className:"-=is-active"});
+				TweenMax.set($(".btn-filters li#"+currentSlideFilter+" .filter-nav-zoom"), {className:"+=is-active"});
+			}
 		});
 
 		// Affichage du zoom
@@ -386,11 +400,10 @@ $(function(){
 		}
 		// Nom du filtre cliqué
 		var filtername = $(this).parent('li').attr('id');
-		var indexFirstWithFilter = $(".slider-nav-zoom li.filter-"+filtername+":first").index();
+		var indexFirstWithFilter = $(".slider-nav-zoom li[data-filter='"+filtername+"']:first").index();
 		$('.slider-for-zoom').get(0).slick.slickGoTo(indexFirstWithFilter);
 		$('.slider-nav-zoom').get(0).slick.slickGoTo(indexFirstWithFilter);
 	});
-	
 
 	// Clic sur le bouton close des cookies
 	$("#btn-close-cookies").click(function(){
