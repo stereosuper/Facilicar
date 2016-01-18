@@ -362,7 +362,7 @@ $(function(){
 			slidesToShow: 20,
 			slidesToScroll: 1,
 			asNavFor: '.slider-for-zoom',
-			dots: false,
+			dots: true,
 			centerMode: false,
 			arrows: false,
 			focusOnSelect: true
@@ -377,6 +377,20 @@ $(function(){
 			}
 		});
 	}
+
+	// Filtrer le slideshow
+	$('.filter-nav-zoom').on('click', function(){
+		if(!$(this).hasClass("is-active")){
+			TweenMax.set($('.filter-nav-zoom.is-active'), {className:"-=is-active"});
+			TweenMax.set($(this), {className:"+=is-active"});
+		}
+		// Nom du filtre cliqué
+		var filtername = $(this).parent('li').attr('id');
+		var indexFirstWithFilter = $(".slider-nav-zoom li.filter-"+filtername+":first").index();
+		$('.slider-for-zoom').get(0).slick.slickGoTo(indexFirstWithFilter);
+		$('.slider-nav-zoom').get(0).slick.slickGoTo(indexFirstWithFilter);
+	});
+	
 
 	// Clic sur le bouton close des cookies
 	$("#btn-close-cookies").click(function(){
