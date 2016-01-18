@@ -4629,7 +4629,7 @@ a.btn-slider-citation:hover.btn-right span {
 .slider-for .slick-list .slick-track {
   height: 100%;
 }
-.slider-for > li {
+.slider-for .slide {
   display: block;
   width: 100%;
   height: 100%;
@@ -4696,19 +4696,19 @@ a.btn-slider-citation:hover.btn-right span {
 .slider-nav .slick-list .slick-track {
   height: 100%;
 }
-.slider-nav li {
+.slider-nav .slide {
   margin: 0 4px;
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
 }
-.slider-nav li:focus {
+.slider-nav .slide:focus {
   outline: none;
 }
-.slider-nav li.slick-current {
+.slider-nav .slide.slick-current {
   opacity: 0.5;
 }
-.slider-nav li.slick-current:before {
+.slider-nav .slide.slick-current:before {
   content: "";
   display: block;
   width: auto;
@@ -4755,10 +4755,15 @@ a.btn-slider-citation:hover.btn-right span {
 .slider-for-zoom .slick-list .slick-track {
   height: 100%;
 }
-.slider-for-zoom > li {
+.slider-for-zoom .slide {
   display: block;
   width: 100%;
   height: 100%;
+}
+.slider-for-zoom .slide img {
+  height: 100%;
+  width: auto;
+  margin: 0 auto;
 }
 .prev-slider-for-zoom {
   position: absolute;
@@ -4796,19 +4801,19 @@ a.btn-slider-citation:hover.btn-right span {
 .slider-nav-zoom .slick-list .slick-track {
   height: 100%;
 }
-.slider-nav-zoom li {
+.slider-nav-zoom .slide {
   margin: 0 4px;
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
 }
-.slider-nav-zoom li:focus {
+.slider-nav-zoom .slide:focus {
   outline: none;
 }
-.slider-nav-zoom li.slick-current {
+.slider-nav-zoom .slide.slick-current {
   opacity: 0.5;
 }
-.slider-nav-zoom li.slick-current:before {
+.slider-nav-zoom .slide.slick-current:before {
   content: "";
   display: block;
   width: auto;

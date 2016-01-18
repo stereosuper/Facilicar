@@ -375,7 +375,7 @@ $(function(){
 			$('.slider-nav-zoom .slick-current').removeClass('slick-current');
 			$('.slider-nav-zoom .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
 			// vérifier et mettre à jour le filtre actif
-			var currentSlideFilter = $(".slider-nav-zoom li:eq("+currentSlide+")").data("filter");
+			var currentSlideFilter = $(".slider-nav-zoom .slide:eq("+currentSlide+")").data("filter");
 			if(!$(".btn-filters li#"+currentSlideFilter+" .filter-nav-zoom").hasClass("is-active")){
 				TweenMax.set($('.filter-nav-zoom.is-active'), {className:"-=is-active"});
 				TweenMax.set($(".btn-filters li#"+currentSlideFilter+" .filter-nav-zoom"), {className:"+=is-active"});
@@ -416,7 +416,7 @@ $(function(){
 		}
 		// Nom du filtre cliqué
 		var filtername = $(this).parent('li').attr('id');
-		var indexFirstWithFilter = $(".slider-nav-zoom li[data-filter='"+filtername+"']:first").index();
+		var indexFirstWithFilter = $(".slider-nav-zoom .slide[data-filter='"+filtername+"']:first").index();
 		$('.slider-for-zoom').get(0).slick.slickGoTo(indexFirstWithFilter);
 		$('.slider-nav-zoom').get(0).slick.slickGoTo(indexFirstWithFilter);
 	});
