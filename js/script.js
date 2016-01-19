@@ -298,6 +298,7 @@ function zoomDetailVehicule(){
 }
 
 function doOnOrientationChange(){
+	alert("aze");
 	if($("body").hasClass("detail-vehicule")){
 		if(isMobile.phone || isMobile.tablet){
 			switch(window.orientation){  

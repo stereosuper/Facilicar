@@ -1274,6 +1274,9 @@ a.btn-menu-responsive .rect:before {
 .header-on #header a.logo-facilicar {
   margin: 0 0 0 27px;
 }
+.header-on.detail-vehicule #header {
+  position: absolute;
+}
 #header:after {
   content: "";
   display: none;
@@ -7873,7 +7876,7 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-current-slide {
   display: block;
   width: 100%;
-  height: 439px;
+  height: 435px;
   position: relative;
 }
 .wrapper-slider-nav {
@@ -8685,17 +8688,17 @@ a.btn-slider-citation:hover.btn-right span {
   z-index: 10;
   color: #009cc4;
 }
-.orientationPortrait .wrapper-change-orientation {
+.orientationPortrait .open .wrapper-change-orientation {
   display: table;
 }
 .wrapper-change-orientation .st0 {
-  fill: #FFFFFF;
+  fill: #fff;
   stroke: #009cc4;
   stroke-width: 3;
   stroke-miterlimit: 10;
 }
 .wrapper-change-orientation .st1 {
-  fill: #FFFFFF;
+  fill: #fff;
   stroke: #009cc4;
   stroke-width: 2;
   stroke-miterlimit: 10;
