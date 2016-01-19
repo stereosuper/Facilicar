@@ -298,26 +298,20 @@ function zoomDetailVehicule(){
 }
 
 function doOnOrientationChange(){
-	alert("aze");
 	if($("body").hasClass("detail-vehicule")){
 		if(isMobile.phone || isMobile.tablet){
-			switch(window.orientation){  
-				case -90:
-				case 90:
-					// landscape
-					TweenMax.set($("body"), {className:"-=orientationPortrait"});
-					break; 
-				default:
-					// portrait
-					TweenMax.set($("body"), {className:"+=orientationPortrait"});
-					break; 
+			if(window.innerHeight > window.innerWidth){
+			    // portrait
+			    TweenMax.set($("body"), {className:"+=orientationPortrait"});
+			}else{
+				// landscape
+				TweenMax.set($("body"), {className:"-=orientationPortrait"});
 			}
 		}
 	}
 }
 
 function detailDeviceDetection(){
-	window.addEventListener('orientationchange', doOnOrientationChange);
 	doOnOrientationChange();
 }
 
@@ -1492,4 +1486,6 @@ $(window).resize(function(){
 	
 	// Positionnement de la description de recherche
 	descRecherche();
+
+	doOnOrientationChange();
 });
