@@ -789,6 +789,31 @@ a, div, span{
 	&.btn-underline{
 		text-decoration: underline;
 	}
+	&.btn-haut-page{
+		.texta-bold(0.938em);
+		text-transform: uppercase;
+		color: @theme-gris3;
+		text-decoration: none;
+		position: relative;
+		padding: 16px 0 0 0;
+		line-height: 1em;
+		display: inline-block;
+		vertical-align: top;
+		&:before{
+			.icon-font;
+			content: "\e905";
+			font-size: 5px;
+			display: block;
+			width: 10px;
+			height: 5px;
+			text-align: center;
+			color: @theme-secondary;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin: 0 0 0 -5px;
+		}
+	}
 }
 a{
 	&:focus{

@@ -56,6 +56,12 @@ function scrollPage(){
 			TweenMax.set($("#btn-essai-commande"), {className:"-=fixed"});
 			TweenMax.set($("#container-btn-detail"), {paddingTop: "0"});
 		}
+		// Affichage du détail du véhicule au scroll
+		if(myScroll >= 400){
+			TweenMax.set($(".detail-vehicule-zoom"), {className:"+=scroll"});
+		}else{
+			TweenMax.set($(".detail-vehicule-zoom"), {className:"-=scroll"});
+		}
 	}
 
 	if($("body").hasClass("resultat-recherche")){
@@ -291,6 +297,30 @@ function zoomDetailVehicule(){
 	$(".car-details-zoom .car-details-zoom-line-three").append($(".car-details .car-details-line-three").html());
 }
 
+function doOnOrientationChange(){
+	if($("body").hasClass("detail-vehicule")){
+		if(isMobile.phone || isMobile.tablet){
+			switch(window.orientation){  
+				case -90:
+				case 90:
+					alert('landscape');
+					// landscape
+					break; 
+				default:
+					// portrait
+					TweenMax.set($("body"), {className:"+=orientationPortrait"});
+					break; 
+			}
+		}
+	}
+}
+
+function detailDeviceDetection(){
+	window.addEventListener('orientationchange', doOnOrientationChange);
+
+	doOnOrientationChange();
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -308,10 +338,19 @@ $(function(){
 	// Tabs
 	setTabs();
 
+	// Détection du device pour la page de détail de véhicule
+	detailDeviceDetection();
+
 	// Remplissage du Zoom détail véhicule
 	if($("body").hasClass("detail-vehicule")){
 		zoomDetailVehicule();
 	}
+
+	// Clic sur un bouton "Haut de page"
+	$(".btn-haut-page").click(function(){
+		TweenMax.to(window, 0.8, {scrollTo:{y:0}});
+		return false;
+	});
 
 	// Slider detail
 	if($("body").hasClass("slider-detail")){
@@ -386,6 +425,7 @@ $(function(){
 		$(".slider-for .slick-slide").click(function(){
 			if(!$(".detail-vehicule-zoom").hasClass("open")){
 				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
+				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
 				$('.slider-for-zoom').get(0).slick.setPosition();
 				$('.slider-nav-zoom').get(0).slick.setPosition();
 			}
@@ -394,6 +434,7 @@ $(function(){
 		$("#btn-open-zoom").click(function(){
 			if(!$(".detail-vehicule-zoom").hasClass("open")){
 				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
+				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
 				$('.slider-for-zoom').get(0).slick.setPosition();
 				$('.slider-nav-zoom').get(0).slick.setPosition();
 			}
@@ -403,6 +444,7 @@ $(function(){
 		// Masquage du zoom
 		$("#btn-close-zoom").click(function(){
 			TweenMax.set($(".detail-vehicule-zoom"), {className:"-=open"});
+			TweenMax.set($(".wrapper-top-zoom"), {className:"-=is-white"});
 			return false;
 		});
 		

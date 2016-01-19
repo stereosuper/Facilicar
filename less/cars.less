@@ -2440,26 +2440,57 @@
 }
 .detail-vehicule-zoom{
 	display: none;
-	width: auto;
-	height: auto;
 	position: fixed;
+	width: 100%;
+	height: auto;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
 	z-index: 150;
-	background-color: @theme-noir;
+	background-color: #fff;
+	border-bottom: 1px solid #979797;
+	&.scroll{
+		display: block;
+	}
 	&.open{
 		display: block;
+		width: auto;
+		height: auto;
+		background-color: @theme-noir;
+		right: 0;
+		bottom: 0;
+		border: none;
 	}
 }
 .wrapper-top-zoom{
-	padding: 34px 0 0 0;
+	padding: 20px 0;
 	width: 100%;
 	position: relative;
 	z-index: 2;
+	.content-caracteristiques-zoom{
+		padding-right: 10px;
+		width: 120px;
+		box-sizing: border-box;
+	}
+	.content-details-zoom{
+		padding: 0 20px;
+		width: 320px;
+		box-sizing: border-box;
+	}
+	.content-prix-zoom{
+		padding: 0 34px;
+		box-sizing: border-box;
+		width: auto;
+	}
+	.content-btn-zoom{
+		width: 375px;
+		box-sizing: border-box;
+	}
+	.liste-caracteristiques-zoom{
+		display: none;
+	}
 	&.is-white{
 		color: #fff;
+		padding: 34px 0 0 0;
 		.content-caracteristiques-zoom{
 			border-right: 1px solid #fff;
 			padding-right: 10px;
@@ -2481,6 +2512,9 @@
 		.content-btn-zoom{
 			width: 375px;
 			box-sizing: border-box;
+		}
+		.btn-haut-page{
+			display: none;
 		}
 		.liste-caracteristiques-zoom{
 			display: block;
@@ -2592,7 +2626,7 @@
 	margin-top: 5px;
 }
 .wrapper-current-slide-zoom{
-	display: block;
+	display: none;
 	width: auto;
 	height: auto;
 	margin: 0;
@@ -2602,10 +2636,13 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+	.open &{
+		display: block;
+	}
 }
 
 .wrapper-slider-nav-zoom{
-	display: block;
+	display: none;
 	width: 100%;
 	height: 85px;
 	margin: 8px 0 0 0;
@@ -2614,6 +2651,9 @@
 	.container{
 		height: 100%;
 		position: relative;
+	}
+	.open &{
+		display: block;
 	}
 }
 
@@ -2697,6 +2737,7 @@
 }
 
 #btn-close-zoom{
+	display: none;
 	color: #fff;
 	.texta-black(1.125em);
 	text-transform: uppercase;
@@ -2718,6 +2759,10 @@
 	}
 	&:hover{
 		opacity: 0.7;
+	}
+	.open &{
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 
