@@ -123,6 +123,34 @@
 			</div>
 		</section>
 		<section class="detail-vehicule-zoom">
+			<div class="wrapper-change-orientation txt-centered">
+				<div class="content-align-middle">
+				<div class="container">
+					<div class="notice-rotation">
+						<div class="picto-notice">
+						<?xml version="1.0" encoding="utf-8"?>
+						<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+								<g id="device">
+									<path class="st0" d="M65,26.5v47c0,2.2-1.8,4-4,4H39c-2.2,0-4-1.8-4-4v-47c0-2.2,1.8-4,4-4h22C63.2,22.5,65,24.3,65,26.5z"/>
+									<rect x="40" y="27.5" class="st1" width="20.3" height="45"/>
+								</g>
+								<g id="fleche">
+									<g id="cerclefleche">
+										<path class="st2" d="M50,90.8C27.5,90.8,9.2,72.5,9.2,50S27.5,9.2,50,9.2S90.8,27.5,90.8,50"/>
+									</g>
+									<g id="pointe">
+										<polygon class="st3" points="95.5,50 90.8,54.8 86,50"/>
+									</g>
+								</g>
+							</svg>
+						</div>
+					</div>
+					<p><strong>Pour visualiser ces photos,<br /> inclinez votre appareil en<br /> mode horizontal</strong></p>
+				</div>
+				</div>
+			</div>
 			<div class="wrapper-current-slide-zoom">
 				<div class="slider-for-zoom">
 					<div class="slide" data-filter="exterieur">
@@ -147,7 +175,9 @@
 				<button class="prev-slider-for-zoom icon-arrow-left"></button>
 				<button class="next-slider-for-zoom icon-arrow-right"></button>
 			</div>
-			<a href="#" id="btn-close-zoom">Quitter le diaporama</a>
+			<div class="container container-btn-close-zoom">
+				<a href="#" id="btn-close-zoom"><span class="txt">Quitter le diaporama</span></a>
+			</div>
 			<div class="wrapper-slider-nav-zoom">
 				<div class="container">
 					<div class="slider-nav-zoom">
@@ -1228,6 +1258,8 @@
 		<script src="js/libs/greensock/plugins/BezierPlugin.min.js" type="text/javascript"></script>
 		<script src="js/libs/greensock/plugins/CSSRulePlugin.min.js" type="text/javascript"></script>
 		<script src="js/libs/greensock/plugins/ScrollToPlugin.min.js" type="text/javascript"></script>
+		<!-- DrawSVG -->
+		<script src="js/libs/greensock/plugins/DrawSVGPlugin.min.js" type="text/javascript"></script>
 		<!-- imgLiquid -->
 		<script src="js/libs/imgLiquid-min.js" type="text/javascript"></script>
 		<!-- Cookie -->

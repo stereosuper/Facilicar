@@ -303,8 +303,8 @@ function doOnOrientationChange(){
 			switch(window.orientation){  
 				case -90:
 				case 90:
-					alert('landscape');
 					// landscape
+					TweenMax.set($("body"), {className:"-=orientationPortrait"});
 					break; 
 				default:
 					// portrait
@@ -317,8 +317,21 @@ function doOnOrientationChange(){
 
 function detailDeviceDetection(){
 	window.addEventListener('orientationchange', doOnOrientationChange);
-
 	doOnOrientationChange();
+}
+
+function animChangeOrientation(){
+	var device = $("#device");
+	var fleche = $("#fleche");
+	var circle = $(".st2");
+	var pointe = $("#pointe");
+	tlChangeOrientation = new TimelineMax({repeat:-1, repeatDelay:2}),
+
+	tlChangeOrientation.fromTo(circle,0.5, {drawSVG:"0% 0%"}, {drawSVG:"50% 100%"});
+	tlChangeOrientation.staggerTo(pointe, 0.1, {opacity:1}, 0.2);
+	tlChangeOrientation.staggerTo(circle,0.5, {drawSVG:"100% 100%"});
+	tlChangeOrientation.staggerTo(fleche, 0.1, {opacity:0});
+	tlChangeOrientation.to(device, 1, {ease: Back.easeInOut.config(1.7), rotation:90, transformOrigin:"50% 50%"});
 }
 
 $(function(){
@@ -405,7 +418,21 @@ $(function(){
 			dots: false,
 			centerMode: false,
 			arrows: false,
-			focusOnSelect: true
+			focusOnSelect: true,
+			responsive: [
+			    {
+			      breakpoint: 1150,
+			      settings: {
+			        slidesToShow: 15
+			      }
+			    },
+			    {
+			      breakpoint: 979,
+			      settings: {
+			        slidesToShow: 12
+			      }
+			    }
+			 ]
 		});
 		var currentFilter = $(".filter-nav-zoom").parent("li").attr("id");
 		var slides = $(".slider-for-zoom .slick-track > .slick-slide").length;
@@ -428,6 +455,7 @@ $(function(){
 				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
 				$('.slider-for-zoom').get(0).slick.setPosition();
 				$('.slider-nav-zoom').get(0).slick.setPosition();
+				animChangeOrientation();
 			}
 		});
 
@@ -437,6 +465,7 @@ $(function(){
 				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
 				$('.slider-for-zoom').get(0).slick.setPosition();
 				$('.slider-nav-zoom').get(0).slick.setPosition();
+				animChangeOrientation();
 			}
 			return false;
 		});
