@@ -67,10 +67,12 @@
 		&.is-selected{
 			display: block;
 		}
-		a.btn-toggle, div.btn-toggle, span.btn-toggle{
-			display: none;
+		a, div, span{
+			&.btn-toggle, &.btn-toggle-once{
+				display: none;
+			}
 		}
-		.content-toggle{
+		.content-toggle, .content-toggle-once{
 			display: block;
 			&.small{
 				padding: 0;

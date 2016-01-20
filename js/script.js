@@ -259,9 +259,8 @@ function setTabs(){
 	
 	tabs.each(function(){
 		var tab = $(this),
-			tabItems = tab.find('ul.tabs-navigation'),
-			tabContentWrapper = tab.children('ul.tabs-content'),
-			tabNavigation = tab.find('nav');
+			tabItems = $('ul.tabs-navigation'),
+			tabContentWrapper = $('ul.tabs-content');
 
 		tabItems.on('click', 'a', function(event){
 			event.preventDefault();
@@ -279,12 +278,6 @@ function setTabs(){
 				}, 200);
 			}
 		});
-
-		//hide the .cd-tabs::after element when tabbed navigation has scrolled to the end (mobile version)
-		//checkScrolling(tabNavigation);
-		//tabNavigation.on('scroll', function(){ 
-		//	checkScrolling($(this));
-		//});
 	});
 }
 
@@ -561,6 +554,19 @@ $(function(){
 		}else{
 			$(this).toggleClass("open");
 			$(this).next(".content-toggle").slideToggle(200);
+		}
+		return false;
+	});
+
+	$(".btn-toggle-once").click(function(){
+		if(!$(this).hasClass("open")){
+			$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
+			$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
+			$(this).addClass("open");
+			$(this).next(".content-toggle-once").slideToggle(200);
+		}else{
+			$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
+			$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
 		}
 		return false;
 	});
@@ -1437,7 +1443,6 @@ $(function(){
 	}
 
 	// Hover des boutons pour passer d'un véhicule à un autre
-	
 	$(".btn-change-car").hover(
 		function() {
 			TweenMax.to($(".bg-btn-change-car"), 0.2, {display: "block", opacity: 1});
@@ -1445,6 +1450,94 @@ $(function(){
 			TweenMax.to($(".bg-btn-change-car"), 0.2, {display: "none", opacity: 0});
 		}
 	);
+
+	// Clic sur le bouton financement de la page détail
+	$("#btn-financement").click(function(){
+		if($(window).width()>979){
+			var tab =	$('.wrapper-tabs'),
+						tabItems = $('ul.tabs-navigation'),
+						tabContentWrapper = $('ul.tabs-content');
+
+			var selectedItem = $("ul.tabs-navigation li a[data-content='financement']");
+			if( !selectedItem.hasClass('is-selected') ) {
+				var selectedTab = selectedItem.data('content'),
+					selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
+					slectedContentHeight = selectedContent.innerHeight();
+				tabItems.find('a.is-selected').removeClass('is-selected');
+				selectedItem.addClass('is-selected');
+				selectedContent.addClass('is-selected').siblings('li').removeClass('is-selected');
+				//animate tabContentWrapper height when content changes 
+				tabContentWrapper.animate({
+					'height': slectedContentHeight
+				}, 200);
+			}
+			TweenMax.to(window, 0.5, {scrollTo:{y:$(".wrapper-tabs").offset().top-160+"px"}});
+		}else{
+			var btnToggleEqui = $("ul.tabs-content li[data-content='financement'] a");
+			if(!btnToggleEqui.hasClass("open")){
+				$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
+				$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
+				btnToggleEqui.addClass("open");
+				btnToggleEqui.next(".content-toggle-once").slideToggle(200);
+			}
+			TweenMax.to(window, 0.5, {scrollTo:{y:btnToggleEqui.offset().top-80+"px"}});
+		}
+		return false;
+	});
+
+	// Clic sur les AAC au dessus des tabs
+	$(".wrapper-caracteristiques .caracteristiques li a").click(function(){
+		if($(window).width()>979){
+			var tab =	$('.wrapper-tabs'),
+						tabItems = $('ul.tabs-navigation'),
+						tabContentWrapper = $('ul.tabs-content');
+
+			var selectedItem = $("ul.tabs-navigation li a[data-content='qualite']");
+			if( !selectedItem.hasClass('is-selected') ) {
+				var selectedTab = selectedItem.data('content'),
+					selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
+					slectedContentHeight = selectedContent.innerHeight();
+				tabItems.find('a.is-selected').removeClass('is-selected');
+				selectedItem.addClass('is-selected');
+				selectedContent.addClass('is-selected').siblings('li').removeClass('is-selected');
+				//animate tabContentWrapper height when content changes 
+				tabContentWrapper.animate({
+					'height': slectedContentHeight
+				}, 200);
+			}
+			if($(this).parents("li").hasClass("historique")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".historique-tab").offset().top-160+"px"}});
+			}else if($(this).parents("li").hasClass("inspection")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".inspection-tab").offset().top-160+"px"}});
+			}else if($(this).parents("li").hasClass("renovation")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".renovation-tab").offset().top-160+"px"}});
+			}else if($(this).parents("li").hasClass("garantie")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".garantie-tab").offset().top-160+"px"}});
+			}else if($(this).parents("li").hasClass("satisfait-rembourse")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".satisfait-rembourse-tab").offset().top-160+"px"}});
+			}
+		}else{
+			var btnToggleEqui = $("ul.tabs-content li[data-content='qualite'] a");
+			if(!btnToggleEqui.hasClass("open")){
+				$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
+				$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
+				btnToggleEqui.addClass("open");
+				btnToggleEqui.next(".content-toggle-once").slideToggle(200);
+			}
+			if($(this).parents("li").hasClass("historique")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".historique-tab").offset().top-80+"px"}});
+			}else if($(this).parents("li").hasClass("inspection")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".inspection-tab").offset().top-80+"px"}});
+			}else if($(this).parents("li").hasClass("renovation")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".renovation-tab").offset().top-80+"px"}});
+			}else if($(this).parents("li").hasClass("garantie")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".garantie-tab").offset().top-80+"px"}});
+			}else if($(this).parents("li").hasClass("satisfait-rembourse")){
+				TweenMax.to(window, 0.5, {scrollTo:{y:$(".satisfait-rembourse-tab").offset().top-80+"px"}});
+			}
+		}
+		return false;
+	});
 });
 
 var h = $(window).height(), w = $(window).width();
@@ -1491,9 +1584,9 @@ $(window).resize(function(){
 
 		// Clearer le js inline dans les tabs
 		$(".tabs-content").each(function(){
-			$(".content-toggle", this).attr("style", "");
-			$(".btn-toggle.open", this).removeClass("open");
-			$(".content-toggle.open", this).removeClass("open");
+			$(".content-toggle-once", this).attr("style", "");
+			$(".btn-toggle-once.open", this).removeClass("open");
+			$(".content-toggle-once.open", this).removeClass("open");
 		});
 	}
 	h = nh; w = nw;

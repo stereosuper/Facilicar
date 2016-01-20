@@ -2264,7 +2264,10 @@ span.btn-toggle-one.open:after {
 }
 a.btn-toggle,
 div.btn-toggle,
-span.btn-toggle {
+span.btn-toggle,
+a.btn-toggle-once,
+div.btn-toggle-once,
+span.btn-toggle-once {
   font-family: 'Texta-Black', sans-serif;
   font-size: 1em;
   /* Better Font Rendering =========== */
@@ -2284,42 +2287,69 @@ span.btn-toggle {
 a.btn-toggle h1,
 div.btn-toggle h1,
 span.btn-toggle h1,
+a.btn-toggle-once h1,
+div.btn-toggle-once h1,
+span.btn-toggle-once h1,
 a.btn-toggle h2,
 div.btn-toggle h2,
 span.btn-toggle h2,
+a.btn-toggle-once h2,
+div.btn-toggle-once h2,
+span.btn-toggle-once h2,
 a.btn-toggle h3,
 div.btn-toggle h3,
 span.btn-toggle h3,
+a.btn-toggle-once h3,
+div.btn-toggle-once h3,
+span.btn-toggle-once h3,
 a.btn-toggle h4,
 div.btn-toggle h4,
-span.btn-toggle h4 {
+span.btn-toggle h4,
+a.btn-toggle-once h4,
+div.btn-toggle-once h4,
+span.btn-toggle-once h4 {
   margin: 0;
   padding: 0;
 }
 #faq a.btn-toggle h4,
 #faq div.btn-toggle h4,
-#faq span.btn-toggle h4 {
+#faq span.btn-toggle h4,
+#faq a.btn-toggle-once h4,
+#faq div.btn-toggle-once h4,
+#faq span.btn-toggle-once h4 {
   color: #6d6d67;
 }
 a.btn-toggle.border-bottom,
 div.btn-toggle.border-bottom,
-span.btn-toggle.border-bottom {
+span.btn-toggle.border-bottom,
+a.btn-toggle-once.border-bottom,
+div.btn-toggle-once.border-bottom,
+span.btn-toggle-once.border-bottom {
   border-top: none;
   border-bottom: 1px solid #AEACA1;
 }
 a.btn-toggle.no-txt-transform,
 div.btn-toggle.no-txt-transform,
-span.btn-toggle.no-txt-transform {
+span.btn-toggle.no-txt-transform,
+a.btn-toggle-once.no-txt-transform,
+div.btn-toggle-once.no-txt-transform,
+span.btn-toggle-once.no-txt-transform {
   text-transform: none;
 }
 a.btn-toggle.big-btn-toggle,
 div.btn-toggle.big-btn-toggle,
-span.btn-toggle.big-btn-toggle {
+span.btn-toggle.big-btn-toggle,
+a.btn-toggle-once.big-btn-toggle,
+div.btn-toggle-once.big-btn-toggle,
+span.btn-toggle-once.big-btn-toggle {
   padding: 18px 100px 18px 100px;
 }
 a.btn-toggle .icon-arrow-right,
 div.btn-toggle .icon-arrow-right,
-span.btn-toggle .icon-arrow-right {
+span.btn-toggle .icon-arrow-right,
+a.btn-toggle-once .icon-arrow-right,
+div.btn-toggle-once .icon-arrow-right,
+span.btn-toggle-once .icon-arrow-right {
   position: absolute;
   font-size: 10px;
   right: 19px;
@@ -2336,12 +2366,18 @@ span.btn-toggle .icon-arrow-right {
 }
 .content-toggle a.btn-toggle .icon-arrow-right,
 .content-toggle div.btn-toggle .icon-arrow-right,
-.content-toggle span.btn-toggle .icon-arrow-right {
+.content-toggle span.btn-toggle .icon-arrow-right,
+.content-toggle a.btn-toggle-once .icon-arrow-right,
+.content-toggle div.btn-toggle-once .icon-arrow-right,
+.content-toggle span.btn-toggle-once .icon-arrow-right {
   color: #e38c00;
 }
 a.btn-toggle .icon-arrow-down,
 div.btn-toggle .icon-arrow-down,
-span.btn-toggle .icon-arrow-down {
+span.btn-toggle .icon-arrow-down,
+a.btn-toggle-once .icon-arrow-down,
+div.btn-toggle-once .icon-arrow-down,
+span.btn-toggle-once .icon-arrow-down {
   position: absolute;
   font-size: 6px;
   right: 19px;
@@ -2357,21 +2393,30 @@ span.btn-toggle .icon-arrow-down {
 }
 a.btn-toggle.open .icon-arrow-down,
 div.btn-toggle.open .icon-arrow-down,
-span.btn-toggle.open .icon-arrow-down {
+span.btn-toggle.open .icon-arrow-down,
+a.btn-toggle-once.open .icon-arrow-down,
+div.btn-toggle-once.open .icon-arrow-down,
+span.btn-toggle-once.open .icon-arrow-down {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 a.btn-toggle.open .icon-arrow-right,
 div.btn-toggle.open .icon-arrow-right,
-span.btn-toggle.open .icon-arrow-right {
+span.btn-toggle.open .icon-arrow-right,
+a.btn-toggle-once.open .icon-arrow-right,
+div.btn-toggle-once.open .icon-arrow-right,
+span.btn-toggle-once.open .icon-arrow-right {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 a.btn-toggle.big,
 div.btn-toggle.big,
-span.btn-toggle.big {
+span.btn-toggle.big,
+a.btn-toggle-once.big,
+div.btn-toggle-once.big,
+span.btn-toggle-once.big {
   border-top: none;
   font-family: 'Texta-Black', sans-serif;
   font-size: 1.375em;
@@ -2382,7 +2427,10 @@ span.btn-toggle.big {
 }
 a.btn-toggle.big span,
 div.btn-toggle.big span,
-span.btn-toggle.big span {
+span.btn-toggle.big span,
+a.btn-toggle-once.big span,
+div.btn-toggle-once.big span,
+span.btn-toggle-once.big span {
   display: block;
   position: absolute;
   width: 100%;
@@ -2393,7 +2441,10 @@ span.btn-toggle.big span {
 }
 a.btn-toggle.big span:before,
 div.btn-toggle.big span:before,
-span.btn-toggle.big span:before {
+span.btn-toggle.big span:before,
+a.btn-toggle-once.big span:before,
+div.btn-toggle-once.big span:before,
+span.btn-toggle-once.big span:before {
   content: "";
   display: block;
   box-sizing: border-box;
@@ -2406,12 +2457,18 @@ span.btn-toggle.big span:before {
 }
 a.btn-toggle.big.open,
 div.btn-toggle.big.open,
-span.btn-toggle.big.open {
+span.btn-toggle.big.open,
+a.btn-toggle-once.big.open,
+div.btn-toggle-once.big.open,
+span.btn-toggle-once.big.open {
   border-bottom: none;
 }
 a.btn-toggle.big.open span:before,
 div.btn-toggle.big.open span:before,
-span.btn-toggle.big.open span:before {
+span.btn-toggle.big.open span:before,
+a.btn-toggle-once.big.open span:before,
+div.btn-toggle-once.big.open span:before,
+span.btn-toggle-once.big.open span:before {
   content: "";
   display: block;
   box-sizing: border-box;
@@ -2424,7 +2481,10 @@ span.btn-toggle.big.open span:before {
 }
 a.btn-toggle.big.open span:after,
 div.btn-toggle.big.open span:after,
-span.btn-toggle.big.open span:after {
+span.btn-toggle.big.open span:after,
+a.btn-toggle-once.big.open span:after,
+div.btn-toggle-once.big.open span:after,
+span.btn-toggle-once.big.open span:after {
   content: "";
   display: block;
   box-sizing: border-box;
@@ -2437,7 +2497,10 @@ span.btn-toggle.big.open span:after {
 }
 a.btn-toggle.big.open:before,
 div.btn-toggle.big.open:before,
-span.btn-toggle.big.open:before {
+span.btn-toggle.big.open:before,
+a.btn-toggle-once.big.open:before,
+div.btn-toggle-once.big.open:before,
+span.btn-toggle-once.big.open:before {
   content: "";
   display: block;
   width: 9px;
@@ -2456,7 +2519,10 @@ span.btn-toggle.big.open:before {
 }
 a.btn-toggle.big.open:after,
 div.btn-toggle.big.open:after,
-span.btn-toggle.big.open:after {
+span.btn-toggle.big.open:after,
+a.btn-toggle-once.big.open:after,
+div.btn-toggle-once.big.open:after,
+span.btn-toggle-once.big.open:after {
   content: "";
   display: block;
   width: 9px;
@@ -5118,13 +5184,18 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .tabs-content > li a.btn-toggle,
 .tabs-content > li div.btn-toggle,
-.tabs-content > li span.btn-toggle {
+.tabs-content > li span.btn-toggle,
+.tabs-content > li a.btn-toggle-once,
+.tabs-content > li div.btn-toggle-once,
+.tabs-content > li span.btn-toggle-once {
   display: none;
 }
-.tabs-content > li .content-toggle {
+.tabs-content > li .content-toggle,
+.tabs-content > li .content-toggle-once {
   display: block;
 }
-.tabs-content > li .content-toggle.small {
+.tabs-content > li .content-toggle.small,
+.tabs-content > li .content-toggle-once.small {
   padding: 0;
 }
 /* @end */
@@ -10755,13 +10826,18 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .tabs-content > li a.btn-toggle,
   .tabs-content > li div.btn-toggle,
-  .tabs-content > li span.btn-toggle {
+  .tabs-content > li span.btn-toggle,
+  .tabs-content > li a.btn-toggle-once,
+  .tabs-content > li div.btn-toggle-once,
+  .tabs-content > li span.btn-toggle-once {
     display: block;
   }
-  .tabs-content > li .content-toggle {
+  .tabs-content > li .content-toggle,
+  .tabs-content > li .content-toggle-once {
     display: none;
   }
-  .tabs-content > li .content-toggle.small {
+  .tabs-content > li .content-toggle.small,
+  .tabs-content > li .content-toggle-once.small {
     padding: 20px 40px;
   }
   .tabs-content h5 {

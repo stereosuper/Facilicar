@@ -1754,10 +1754,12 @@
         > li{
             display: block;
             padding: 0;
-            a.btn-toggle, div.btn-toggle, span.btn-toggle{
-                display: block;
+            a, div, span{
+                &.btn-toggle, &.btn-toggle-once{
+                    display: block;
+                }
             }
-            .content-toggle{
+            .content-toggle, .content-toggle-once{
                 display: none;
                 &.small{
                     padding: 20px 40px;
