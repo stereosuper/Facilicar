@@ -447,6 +447,7 @@ $(function(){
 		$(".slider-for .slick-slide").click(function(){
 			if(!$(".detail-vehicule-zoom").hasClass("open")){
 				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
+				TweenMax.to($(".detail-vehicule-zoom"), 0.5, {autoAlpha: 1});
 				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
 				$('.slider-for-zoom').get(0).slick.setPosition();
 				$('.slider-nav-zoom').get(0).slick.setPosition();
@@ -457,6 +458,7 @@ $(function(){
 		$("#btn-open-zoom").click(function(){
 			if(!$(".detail-vehicule-zoom").hasClass("open")){
 				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
+				TweenMax.to($(".detail-vehicule-zoom"), 0.5, {autoAlpha: 1});
 				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
 				$('.slider-for-zoom').get(0).slick.setPosition();
 				$('.slider-nav-zoom').get(0).slick.setPosition();
@@ -467,7 +469,8 @@ $(function(){
 
 		// Masquage du zoom
 		$("#btn-close-zoom").click(function(){
-			TweenMax.set($(".detail-vehicule-zoom"), {className:"-=open"});
+			//TweenMax.to($(".detail-vehicule-zoom"), 1, {autoAlpha: 0, className:"-=open"});
+			TweenMax.set($(".detail-vehicule-zoom"), {autoAlpha: 0, className:"-=open"});
 			TweenMax.set($(".wrapper-top-zoom"), {className:"-=is-white"});
 			return false;
 		});

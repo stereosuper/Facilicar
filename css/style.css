@@ -8326,6 +8326,7 @@ a.btn-slider-citation:hover.btn-right span {
   border-bottom: 1px solid #979797;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  opacity: 0;
 }
 .detail-vehicule-zoom.scroll {
   display: block;
