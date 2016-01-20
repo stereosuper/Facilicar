@@ -8766,8 +8766,7 @@ a.btn-slider-citation:hover.btn-right span {
   text-align: left;
   padding: 4px 0 4px 32px;
 }
-.btn-change-car.prev-car .hors-survol:before {
-  content: "\e902";
+.btn-change-car.prev-car .arrow-change-car {
   left: 10px;
 }
 .btn-change-car.prev-car .survol {
@@ -8775,9 +8774,13 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform-origin: 0% 50%;
       -ms-transform-origin: 0% 50%;
           transform-origin: 0% 50%;
+  -webkit-transform: translateX(-320px);
+      -ms-transform: translateX(-320px);
+          transform: translateX(-320px);
 }
 .btn-change-car.prev-car .survol .wrapper-txt-survol {
-  padding: 0 0 0 10px;
+  padding: 0 30px 0 10px;
+  text-align: left;
 }
 .btn-change-car.prev-car .survol .wrapper-arrow-survol {
   text-align: right;
@@ -8790,8 +8793,7 @@ a.btn-slider-citation:hover.btn-right span {
   text-align: right;
   padding: 4px 32px 4px 0;
 }
-.btn-change-car.next-car .hors-survol:before {
-  content: "\e903";
+.btn-change-car.next-car .arrow-change-car {
   right: 10px;
 }
 .btn-change-car.next-car .survol {
@@ -8799,9 +8801,13 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform-origin: 100% 50%;
       -ms-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
+  -webkit-transform: translateX(320px);
+      -ms-transform: translateX(320px);
+          transform: translateX(320px);
 }
 .btn-change-car.next-car .survol .wrapper-txt-survol {
-  padding: 0 10px 0 0;
+  padding: 0 10px 0 30px;
+  text-align: right;
 }
 .btn-change-car.next-car .survol .wrapper-arrow-survol {
   text-align: left;
@@ -8816,23 +8822,15 @@ a.btn-slider-citation:hover.btn-right span {
   color: #6d6d67;
   line-height: 1.1em;
 }
-.btn-change-car .hors-survol:before {
-  font-family: 'facilicar';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.btn-change-car .arrow-change-car {
   display: block;
   position: absolute;
   top: 50%;
   color: #e38c00;
   font-size: 34px;
   margin: -17px 0 0 0;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+          transition: transform 0.2s ease-out;
 }
 .btn-change-car .survol {
   width: 320px;
@@ -8843,12 +8841,8 @@ a.btn-slider-citation:hover.btn-right span {
   padding: 13px;
   background-color: #fff;
   box-sizing: border-box;
-  -webkit-transform: scale(0.4);
-      -ms-transform: scale(0.4);
-          transform: scale(0.4);
-  opacity: 0;
-  -webkit-transition: -webkit-transform 0.15s ease-out, opacity 0.15s ease-out;
-          transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+          transition: transform 0.2s ease-out;
 }
 .btn-change-car .survol .wrapper-img-survol {
   width: 120px;
@@ -8856,7 +8850,7 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .btn-change-car .survol .wrapper-txt-survol .detail-change-car {
   display: block;
-  width: 120px;
+  width: 134px;
 }
 .btn-change-car .survol .wrapper-txt-survol .detail-change-car:first-child {
   color: #333333;
@@ -8890,11 +8884,25 @@ a.btn-slider-citation:hover.btn-right span {
 .btn-change-car .survol .wrapper-arrow-survol {
   font-size: 34px;
 }
-.btn-change-car:hover .survol {
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
+.btn-change-car:hover.prev-car .survol {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.btn-change-car:hover.prev-car .arrow-change-car {
+  -webkit-transform: translateX(275px);
+      -ms-transform: translateX(275px);
+          transform: translateX(275px);
+}
+.btn-change-car:hover.next-car .survol {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+.btn-change-car:hover.next-car .arrow-change-car {
+  -webkit-transform: translateX(-275px);
+      -ms-transform: translateX(-275px);
+          transform: translateX(-275px);
 }
 .bg-btn-change-car {
   display: none;
@@ -10761,6 +10769,9 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .tabs-content p.regular-txt {
     font-size: 0.9em;
+  }
+  .nav-change-car {
+    display: none;
   }
   /* @end */
   /* @group Zoom */
