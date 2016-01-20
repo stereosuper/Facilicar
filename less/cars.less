@@ -2450,9 +2450,9 @@
 	border-bottom: 1px solid #979797;
 	backface-visibility: hidden;
 	opacity: 0;
-	//transition: opacity 0.5s ease-in-out;
 	&.scroll{
 		display: block;
+		opacity: 1;
 	}
 	&.open{
 		display: block;
@@ -2462,6 +2462,7 @@
 		right: 0;
 		bottom: 0;
 		border: none;
+		z-index: 160;
 	}
 }
 .wrapper-top-zoom{
@@ -2842,5 +2843,145 @@
 #pointe{
 	opacity:0;
 }
-
+.btn-change-car{
+	display: block;
+	width: 100px;
+	height: 35px;
+	position: fixed;
+	top: 50%;
+	text-decoration: none;
+	background-color: #fff;
+	z-index: 10;
+	backface-visibility: hidden;
+	&.prev-car{
+		left: 0;
+		.hors-survol{
+			text-align: left;
+			padding: 4px 0 4px 32px;
+			&:before{
+				content: "\e902";
+				left: 10px;
+			}
+		}
+		.survol{
+			left: 0;
+			transform-origin: 0% 50%;
+			.wrapper-txt-survol{
+				padding: 0 0 0 10px;
+			}
+			.wrapper-arrow-survol{
+				text-align: right;
+				padding: 0 0 0 20px;
+			}
+		}
+	}
+	&.next-car{
+		right: 0;
+		.hors-survol{
+			text-align: right;
+			padding: 4px 32px 4px 0;
+			&:before{
+				content: "\e903";
+				right: 10px;
+			}
+		}
+		.survol{
+			right: 0;
+			transform-origin: 100% 50%;
+			.wrapper-txt-survol{
+				padding: 0 10px 0 0;
+			}
+			.wrapper-arrow-survol{
+				text-align: left;
+				padding: 0 20px 0 0;
+			}
+		}
+	}
+	.hors-survol{
+		display: block;
+		position: relative;
+		.texta-bold(0.75em);
+		text-transform: uppercase;
+		color: @theme-gris3;
+		line-height: 1.1em;
+		&:before{
+			.icon-font;
+			display: block;
+			position: absolute;
+			top: 50%;
+			color: @theme-secondary;
+			font-size: 34px;
+			margin: -17px 0 0 0;
+		}
+	}
+	.survol{
+		width: 320px;
+		height: 104px;
+		position: absolute;
+		top: 50%;
+		margin: -52px 0 0 0;
+		padding: 13px;
+		background-color: #fff;
+		box-sizing: border-box;
+		transform: scale(0.4);
+		opacity: 0;
+		transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+		.wrapper-img-survol{
+			width: 120px;
+			height: 80px;
+		}
+		.wrapper-txt-survol{
+			.detail-change-car{
+				display: block;
+				width: 120px;
+				&:first-child{
+					color: @theme-noir;
+				}
+				&:last-child{
+					color: @theme-gris3;
+				}
+				.car-name-detail{
+					.texta-light(1em);
+					display: block;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					strong{
+						.texta-black(1em);
+					}
+				}
+				.car-desc-detail{
+					.texta-light(0.813em);
+					display: block;
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+				}
+			}
+		}
+		.wrapper-arrow-survol{
+			font-size: 34px;
+		}
+	}
+	&:hover{
+		.survol{
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+}
+.bg-btn-change-car{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 151;
+}
+.nav-change-car{
+	position: relative;
+	z-index: 152;
+}
 /* @end */

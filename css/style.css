@@ -8330,6 +8330,7 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .detail-vehicule-zoom.scroll {
   display: block;
+  opacity: 1;
 }
 .detail-vehicule-zoom.open {
   display: block;
@@ -8339,6 +8340,7 @@ a.btn-slider-citation:hover.btn-right span {
   right: 0;
   bottom: 0;
   border: none;
+  z-index: 160;
 }
 .wrapper-top-zoom {
   padding: 20px 0;
@@ -8744,6 +8746,169 @@ a.btn-slider-citation:hover.btn-right span {
 }
 #pointe {
   opacity: 0;
+}
+.btn-change-car {
+  display: block;
+  width: 100px;
+  height: 35px;
+  position: fixed;
+  top: 50%;
+  text-decoration: none;
+  background-color: #fff;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.btn-change-car.prev-car {
+  left: 0;
+}
+.btn-change-car.prev-car .hors-survol {
+  text-align: left;
+  padding: 4px 0 4px 32px;
+}
+.btn-change-car.prev-car .hors-survol:before {
+  content: "\e902";
+  left: 10px;
+}
+.btn-change-car.prev-car .survol {
+  left: 0;
+  -webkit-transform-origin: 0% 50%;
+      -ms-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+.btn-change-car.prev-car .survol .wrapper-txt-survol {
+  padding: 0 0 0 10px;
+}
+.btn-change-car.prev-car .survol .wrapper-arrow-survol {
+  text-align: right;
+  padding: 0 0 0 20px;
+}
+.btn-change-car.next-car {
+  right: 0;
+}
+.btn-change-car.next-car .hors-survol {
+  text-align: right;
+  padding: 4px 32px 4px 0;
+}
+.btn-change-car.next-car .hors-survol:before {
+  content: "\e903";
+  right: 10px;
+}
+.btn-change-car.next-car .survol {
+  right: 0;
+  -webkit-transform-origin: 100% 50%;
+      -ms-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+}
+.btn-change-car.next-car .survol .wrapper-txt-survol {
+  padding: 0 10px 0 0;
+}
+.btn-change-car.next-car .survol .wrapper-arrow-survol {
+  text-align: left;
+  padding: 0 20px 0 0;
+}
+.btn-change-car .hors-survol {
+  display: block;
+  position: relative;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #6d6d67;
+  line-height: 1.1em;
+}
+.btn-change-car .hors-survol:before {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  position: absolute;
+  top: 50%;
+  color: #e38c00;
+  font-size: 34px;
+  margin: -17px 0 0 0;
+}
+.btn-change-car .survol {
+  width: 320px;
+  height: 104px;
+  position: absolute;
+  top: 50%;
+  margin: -52px 0 0 0;
+  padding: 13px;
+  background-color: #fff;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.4);
+      -ms-transform: scale(0.4);
+          transform: scale(0.4);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.15s ease-out, opacity 0.15s ease-out;
+          transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+.btn-change-car .survol .wrapper-img-survol {
+  width: 120px;
+  height: 80px;
+}
+.btn-change-car .survol .wrapper-txt-survol .detail-change-car {
+  display: block;
+  width: 120px;
+}
+.btn-change-car .survol .wrapper-txt-survol .detail-change-car:first-child {
+  color: #333333;
+}
+.btn-change-car .survol .wrapper-txt-survol .detail-change-car:last-child {
+  color: #6d6d67;
+}
+.btn-change-car .survol .wrapper-txt-survol .detail-change-car .car-name-detail {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-change-car .survol .wrapper-txt-survol .detail-change-car .car-name-detail strong {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.btn-change-car .survol .wrapper-txt-survol .detail-change-car .car-desc-detail {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.813em;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.btn-change-car .survol .wrapper-arrow-survol {
+  font-size: 34px;
+}
+.btn-change-car:hover .survol {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.bg-btn-change-car {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 151;
+}
+.nav-change-car {
+  position: relative;
+  z-index: 152;
 }
 /* @end */
 /* @group States */

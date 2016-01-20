@@ -469,8 +469,9 @@ $(function(){
 
 		// Masquage du zoom
 		$("#btn-close-zoom").click(function(){
-			//TweenMax.to($(".detail-vehicule-zoom"), 1, {autoAlpha: 0, className:"-=open"});
-			TweenMax.set($(".detail-vehicule-zoom"), {autoAlpha: 0, className:"-=open"});
+			TweenMax.set($(".detail-vehicule-zoom"), {autoAlpha: 0, className:"-=open", onComplete: function(){
+				TweenMax.set($(".detail-vehicule-zoom"), {clearProps:"all"});
+			}});
 			TweenMax.set($(".wrapper-top-zoom"), {className:"-=is-white"});
 			return false;
 		});
@@ -1434,6 +1435,16 @@ $(function(){
 		})(marker, i));
 	}
 	}
+
+	// Hover des boutons pour passer d'un véhicule à un autre
+	
+	$(".btn-change-car").hover(
+		function() {
+			TweenMax.to($(".bg-btn-change-car"), 0.2, {display: "block", opacity: 1});
+		}, function() {
+			TweenMax.to($(".bg-btn-change-car"), 0.2, {display: "none", opacity: 0});
+		}
+	);
 });
 
 var h = $(window).height(), w = $(window).width();
