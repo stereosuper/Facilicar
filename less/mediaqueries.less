@@ -3600,30 +3600,43 @@
     .wrapper-current-slide{
         height: 170px;
     }
-    .caracteristiques, .list-inline.caracteristiques{
-        > li{
-            text-align: left;
-            display: block;
-            margin: 20px 0;
-            width: auto;
-            &:first-of-type, &:last-of-type{
-                margin: 10px 0; 
-            } 
-            a{
-                height: 70px;
-                box-sizing: border-box;
-                padding: 28px 0 0 90px;
-                position: relative;
+    .wrapper-caracteristiques{
+        text-align: center;
+        .content-align-middle{
+            &.content-localisation-detail{
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 30px;
+                max-width: 266px;
                 width: auto;
-                text-align: left;
-                &:before{
-                    position: absolute;
-                    top: 50%;
-                    left: 0;
-                    margin: -38px 0 0 0;
-                }
-                br{
-                    display: none;
+            }
+            .caracteristiques, .list-inline.caracteristiques{
+                display: none;
+                > li{
+                    text-align: left;
+                    display: block;
+                    margin: 20px 0;
+                    width: auto;
+                    &:first-of-type, &:last-of-type{
+                        margin: 10px 0; 
+                    } 
+                    a{
+                        height: 70px;
+                        box-sizing: border-box;
+                        padding: 28px 0 0 90px;
+                        position: relative;
+                        width: auto;
+                        text-align: left;
+                        &:before{
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            margin: -38px 0 0 0;
+                        }
+                        br{
+                            display: none;
+                        }
+                    }
                 }
             }
         }

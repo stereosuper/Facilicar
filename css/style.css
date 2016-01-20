@@ -7649,7 +7649,7 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 26px;
 }
 .wrapper-car-detail .car-options-detail .zone-txt {
-  display: block;
+  display: none;
   width: 120px;
   height: 32px;
   line-height: 1em;
@@ -12594,21 +12594,35 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-current-slide {
     height: 170px;
   }
-  .caracteristiques > li,
-  .list-inline.caracteristiques > li {
+  .wrapper-caracteristiques {
+    text-align: center;
+  }
+  .wrapper-caracteristiques .content-align-middle.content-localisation-detail {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 30px;
+    max-width: 266px;
+    width: auto;
+  }
+  .wrapper-caracteristiques .content-align-middle .caracteristiques,
+  .wrapper-caracteristiques .content-align-middle .list-inline.caracteristiques {
+    display: none;
+  }
+  .wrapper-caracteristiques .content-align-middle .caracteristiques > li,
+  .wrapper-caracteristiques .content-align-middle .list-inline.caracteristiques > li {
     text-align: left;
     display: block;
     margin: 20px 0;
     width: auto;
   }
-  .caracteristiques > li:first-of-type,
-  .list-inline.caracteristiques > li:first-of-type,
-  .caracteristiques > li:last-of-type,
-  .list-inline.caracteristiques > li:last-of-type {
+  .wrapper-caracteristiques .content-align-middle .caracteristiques > li:first-of-type,
+  .wrapper-caracteristiques .content-align-middle .list-inline.caracteristiques > li:first-of-type,
+  .wrapper-caracteristiques .content-align-middle .caracteristiques > li:last-of-type,
+  .wrapper-caracteristiques .content-align-middle .list-inline.caracteristiques > li:last-of-type {
     margin: 10px 0;
   }
-  .caracteristiques > li a,
-  .list-inline.caracteristiques > li a {
+  .wrapper-caracteristiques .content-align-middle .caracteristiques > li a,
+  .wrapper-caracteristiques .content-align-middle .list-inline.caracteristiques > li a {
     height: 70px;
     box-sizing: border-box;
     padding: 28px 0 0 90px;
@@ -12616,15 +12630,15 @@ a.btn-slider-citation:hover.btn-right span {
     width: auto;
     text-align: left;
   }
-  .caracteristiques > li a:before,
-  .list-inline.caracteristiques > li a:before {
+  .wrapper-caracteristiques .content-align-middle .caracteristiques > li a:before,
+  .wrapper-caracteristiques .content-align-middle .list-inline.caracteristiques > li a:before {
     position: absolute;
     top: 50%;
     left: 0;
     margin: -38px 0 0 0;
   }
-  .caracteristiques > li a br,
-  .list-inline.caracteristiques > li a br {
+  .wrapper-caracteristiques .content-align-middle .caracteristiques > li a br,
+  .wrapper-caracteristiques .content-align-middle .list-inline.caracteristiques > li a br {
     display: none;
   }
   .car-details > li#details-tel-consultations {
