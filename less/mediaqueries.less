@@ -589,6 +589,13 @@
                 padding: 0;
             }
         }
+        &.detail-vehicule{
+            &.no-wrapper-top{
+                .first-block{
+                    padding: 110px 0 0 0;
+                }
+            }
+        }
     }
     /* @end */
 
@@ -1789,6 +1796,11 @@
     .wrapper-slider-nav-zoom{
         bottom: 30px;
     }
+    .detail-vehicule-zoom{
+        &.scroll{
+            display: none;
+        }
+    }
     /* @end */
 }
 
@@ -1935,6 +1947,9 @@
     .first-block{
         padding: 66px 0 0 0;
         .header-on.no-wrapper-top &{
+            padding: 66px 0 0 0;
+        }
+        .header-on.detail-vehicule.no-wrapper-top &{
             padding: 66px 0 0 0;
         }
     }
