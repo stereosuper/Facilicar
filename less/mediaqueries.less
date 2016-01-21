@@ -381,6 +381,36 @@
             padding: 0 15px;
         }
     }
+    .cote-autovista-wrapper{
+        > .wrapper-align-middle{
+            display: block;
+            .content-align-top{
+                display: block;
+                &.content-img-autovista{
+                    width: 100%;
+                }
+                &.content-table-autovista{
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .prix-ferme-wrapper{
+        width: 50%;
+    }
+    .cote-autovista-wrapper{
+        width: 50%;
+    }
+    .table-autovista{
+        tr{
+            td{
+                .prix-financement{
+                    font-size: 2.5em;
+                    min-width: 135px;
+                }
+            }
+        }
+    }
     /* @end */
 
     /* @group Zoom */
@@ -1778,6 +1808,18 @@
     .nav-change-car{
         display: none;
     }
+    .wrapper-prix-tab, .wrapper-align-middle.wrapper-prix-tab{
+        display: block;
+    }
+    .prix-ferme-wrapper, .content-align-top.prix-ferme-wrapper, .cote-autovista-wrapper, .content-align-top.cote-autovista-wrapper{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .prix-ferme-wrapper{
+        margin: 0 0 44px 0;
+    }
+
     /* @end */
 
     /* @group Zoom */

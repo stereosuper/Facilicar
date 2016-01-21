@@ -8455,6 +8455,7 @@ a.btn-slider-citation:hover.btn-right span {
   position: relative;
   margin: 40px 0 0 0;
   padding: 0;
+  max-width: 344px;
 }
 .prix-facilicar img {
   max-width: 100%;
@@ -8513,7 +8514,7 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .prix-facilicar .point-detail.prix-moyen {
   bottom: 87%;
-  left: 53%;
+  left: 58%;
 }
 .prix-facilicar .point-detail.prix-moyen .content-txt {
   color: #E76248;
@@ -8547,6 +8548,7 @@ a.btn-slider-citation:hover.btn-right span {
 .table-autovista {
   margin: 20px 0 0 0;
   width: 100%;
+  max-width: 430px;
 }
 .table-autovista tr td {
   vertical-align: bottom;
@@ -8556,6 +8558,7 @@ a.btn-slider-citation:hover.btn-right span {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
   color: #6d6d67;
+  line-height: 1.1em;
 }
 .table-autovista tr td.title-table-autovista {
   box-sizing: border-box;
@@ -8566,6 +8569,7 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 3.214em;
   color: #e38c00;
   line-height: 0.4em;
+  min-width: 170px;
 }
 .table-autovista tr td .prix-financement .acronym {
   font-family: 'Texta-Light', sans-serif;
@@ -9726,6 +9730,28 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .wrapper-top-zoom .content-prix-zoom {
     padding: 0 15px;
+  }
+  .cote-autovista-wrapper > .wrapper-align-middle {
+    display: block;
+  }
+  .cote-autovista-wrapper > .wrapper-align-middle .content-align-top {
+    display: block;
+  }
+  .cote-autovista-wrapper > .wrapper-align-middle .content-align-top.content-img-autovista {
+    width: 100%;
+  }
+  .cote-autovista-wrapper > .wrapper-align-middle .content-align-top.content-table-autovista {
+    padding: 0;
+  }
+  .prix-ferme-wrapper {
+    width: 50%;
+  }
+  .cote-autovista-wrapper {
+    width: 50%;
+  }
+  .table-autovista tr td .prix-financement {
+    font-size: 2.5em;
+    min-width: 135px;
   }
   /* @end */
   /* @group Zoom */
@@ -11078,6 +11104,21 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .nav-change-car {
     display: none;
+  }
+  .wrapper-prix-tab,
+  .wrapper-align-middle.wrapper-prix-tab {
+    display: block;
+  }
+  .prix-ferme-wrapper,
+  .content-align-top.prix-ferme-wrapper,
+  .cote-autovista-wrapper,
+  .content-align-top.cote-autovista-wrapper {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .prix-ferme-wrapper {
+    margin: 0 0 44px 0;
   }
   /* @end */
   /* @group Zoom */
