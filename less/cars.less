@@ -2529,6 +2529,60 @@
 		}
 	}
 }
+.content-img-autovista{
+	width: 150px;
+	img{
+		max-width: 100%;
+		height: auto;
+		margin: 40px 0 0 0;
+	}
+}
+.content-table-autovista{
+	box-sizing: border-box;
+	padding: 0 0 0 20px;
+}
+.table-autovista{
+	margin: 20px 0 0 0;
+	width: 100%;
+	tr{
+		td{
+			vertical-align: bottom;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			text-align: right;
+			.texta-light(0.875em);
+			color: @theme-gris3;
+			&.title-table-autovista{
+				box-sizing: border-box;
+				padding-right: 10px;
+			}
+			.prix-financement{
+				.texta-light(3.214em);
+				color: @theme-secondary;
+				line-height: 0.4em;
+				.acronym{
+					.texta-light(0.444em);
+				}
+			}
+			.prix-moyen{
+				.texta-light(1.571em);
+				.acronym{
+					.texta-light(0.727em);
+				}
+			}
+			.saving-percentage{
+				font-size: 20px;
+			}
+			.saving{
+				.texta-bold(1em);
+				color: @theme-noir;
+			}
+		}
+		&.border-bottom{
+			border-bottom: 1px solid @theme-neutral;
+		}
+	}
+}
 .detail-vehicule-zoom{
 	display: none;
 	position: fixed;

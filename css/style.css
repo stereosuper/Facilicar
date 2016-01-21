@@ -8532,6 +8532,64 @@ a.btn-slider-citation:hover.btn-right span {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
 }
+.content-img-autovista {
+  width: 150px;
+}
+.content-img-autovista img {
+  max-width: 100%;
+  height: auto;
+  margin: 40px 0 0 0;
+}
+.content-table-autovista {
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+}
+.table-autovista {
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+.table-autovista tr td {
+  vertical-align: bottom;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  text-align: right;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.875em;
+  color: #6d6d67;
+}
+.table-autovista tr td.title-table-autovista {
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+.table-autovista tr td .prix-financement {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 3.214em;
+  color: #e38c00;
+  line-height: 0.4em;
+}
+.table-autovista tr td .prix-financement .acronym {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.444em;
+}
+.table-autovista tr td .prix-moyen {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.571em;
+}
+.table-autovista tr td .prix-moyen .acronym {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.727em;
+}
+.table-autovista tr td .saving-percentage {
+  font-size: 20px;
+}
+.table-autovista tr td .saving {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+  color: #333333;
+}
+.table-autovista tr.border-bottom {
+  border-bottom: 1px solid #d8d8d4;
+}
 .detail-vehicule-zoom {
   display: none;
   position: fixed;
