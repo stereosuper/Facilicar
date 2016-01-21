@@ -2440,6 +2440,95 @@
 .line-rapport-expertise{
 	margin: 0 0 30px 0;
 }
+.prix-ferme-wrapper{
+	width: 40%;
+	box-sizing: border-box;
+	padding: 0 10px 0 0;
+}
+.cote-autovista-wrapper{
+	width: 60%;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+}
+.prix-facilicar{
+	display: block;
+	position: relative;
+	margin: 40px 0 0 0;
+	padding: 0;
+	img{
+		max-width: 100%;
+		height: auto;
+		position: relative;
+		z-index: 2;
+	}
+	.legend{
+		.texta-bold(0.875em);
+		text-transform: uppercase;
+		color: @theme-gris2;
+		line-height: 1em;
+		position: absolute;
+		&.ordonnees{
+			top: 0;
+			left: 4%;
+		}
+		&.abscisses{
+			bottom: -32px;
+			right: 16%;
+			text-align: right;
+		}
+	}
+	.point-detail{
+		display: inline-block;
+		vertical-align: top;
+		.texta-bold(0.875em);
+		line-height: 1em;
+		text-transform: uppercase;
+		position: absolute;
+		&.prix-risque{
+			text-align: right;
+			bottom: 17%;
+			left: 10%;
+			.content-txt{
+				color: #034354;
+			}
+			.content-prix{
+				background-color: #034354;
+				margin-right: 4px;
+			}
+		}
+		&.prix-facilicar{
+			text-align: center;
+			bottom: 42%;
+			left: 25%;
+			.content-txt{
+				color: #029EC8;
+			}
+			.content-prix{
+				background-color: #029EC8;
+			}
+		}
+		&.prix-moyen{
+			bottom: 87%;
+			left: 53%;
+			.content-txt{
+				color: #E76248;
+				padding: 0 0 0 10px;
+			}
+			.content-prix{
+				background-color: #E76248;
+			}
+		}
+		.content-prix{
+			display: inline-block;
+			vertical-align: top;
+			color: #fff;
+			margin-top: 3px;
+			padding: 2px 10px;
+			border-radius: 9px;
+			.texta-light(1em);
+		}
+	}
+}
 .detail-vehicule-zoom{
 	display: none;
 	position: fixed;

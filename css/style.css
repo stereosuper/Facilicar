@@ -8440,6 +8440,98 @@ a.btn-slider-citation:hover.btn-right span {
 .line-rapport-expertise {
   margin: 0 0 30px 0;
 }
+.prix-ferme-wrapper {
+  width: 40%;
+  box-sizing: border-box;
+  padding: 0 10px 0 0;
+}
+.cote-autovista-wrapper {
+  width: 60%;
+  box-sizing: border-box;
+  padding: 0 0 0 10px;
+}
+.prix-facilicar {
+  display: block;
+  position: relative;
+  margin: 40px 0 0 0;
+  padding: 0;
+}
+.prix-facilicar img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+.prix-facilicar .legend {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #b0b0a8;
+  line-height: 1em;
+  position: absolute;
+}
+.prix-facilicar .legend.ordonnees {
+  top: 0;
+  left: 4%;
+}
+.prix-facilicar .legend.abscisses {
+  bottom: -32px;
+  right: 16%;
+  text-align: right;
+}
+.prix-facilicar .point-detail {
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 0.875em;
+  line-height: 1em;
+  text-transform: uppercase;
+  position: absolute;
+}
+.prix-facilicar .point-detail.prix-risque {
+  text-align: right;
+  bottom: 17%;
+  left: 10%;
+}
+.prix-facilicar .point-detail.prix-risque .content-txt {
+  color: #034354;
+}
+.prix-facilicar .point-detail.prix-risque .content-prix {
+  background-color: #034354;
+  margin-right: 4px;
+}
+.prix-facilicar .point-detail.prix-facilicar {
+  text-align: center;
+  bottom: 42%;
+  left: 25%;
+}
+.prix-facilicar .point-detail.prix-facilicar .content-txt {
+  color: #029EC8;
+}
+.prix-facilicar .point-detail.prix-facilicar .content-prix {
+  background-color: #029EC8;
+}
+.prix-facilicar .point-detail.prix-moyen {
+  bottom: 87%;
+  left: 53%;
+}
+.prix-facilicar .point-detail.prix-moyen .content-txt {
+  color: #E76248;
+  padding: 0 0 0 10px;
+}
+.prix-facilicar .point-detail.prix-moyen .content-prix {
+  background-color: #E76248;
+}
+.prix-facilicar .point-detail .content-prix {
+  display: inline-block;
+  vertical-align: top;
+  color: #fff;
+  margin-top: 3px;
+  padding: 2px 10px;
+  border-radius: 9px;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+}
 .detail-vehicule-zoom {
   display: none;
   position: fixed;
