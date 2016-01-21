@@ -476,7 +476,7 @@
     }
     .wrapper-infos-envi-garanties-alerte{
         display: block;
-        .content-align-top{
+        > .content-align-top{
             display: block;
             width: 100%;
             &.wrapper-infos-envi{
@@ -547,10 +547,10 @@
             padding: 0 40px;
         }
     }
-    .content-toggle{
+    .content-toggle, .content-toggle-once{
         &.small{
             padding: 20px 40px;
-            .content-toggle{
+            .content-toggle, .content-toggle-once{
                 &.small{
                     padding: 10px 10px;
                 }
@@ -1955,10 +1955,10 @@
             }
         }
     }
-    .content-toggle{
+    .content-toggle, .content-toggle-once{
         &.small{
             padding: 10px 10px;
-            .content-toggle{
+            .content-toggle, .content-toggle-once{
                 &.small{
                     padding: 0px;
                 }
@@ -3345,7 +3345,7 @@
     }
     .tabs-content{
         > li{
-            .content-toggle.small {
+            .content-toggle.small, .content-toggle-once.small {
                 padding: 10px 10px;
             }
         }
@@ -3602,12 +3602,12 @@
     }
     .wrapper-caracteristiques{
         text-align: center;
+        margin: 0 0 15px 0;
         .content-align-middle{
             &.content-localisation-detail{
                 display: inline-block;
                 vertical-align: top;
                 padding: 0 30px;
-                max-width: 266px;
                 width: auto;
             }
             .caracteristiques, .list-inline.caracteristiques{

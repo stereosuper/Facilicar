@@ -2160,7 +2160,9 @@
 	margin: 64px 0 30px 0;
 }
 .visu-conseils{
-	width: 224px;
+	width: 244px;
+	padding: 0 20px 0 0;
+	box-sizing: border-box;
 	img{
 		display: block;
 		width: 100%;
@@ -2168,7 +2170,7 @@
 }
 .txt-conseils{
 	box-sizing: border-box;
-	padding: 0 0 0 20px;
+	padding: 0;
 }
 
 .wrapper-infos-envi-garanties-alerte{
@@ -2995,5 +2997,20 @@
 .nav-change-car{
 	position: relative;
 	z-index: 152;
+}
+.car-details a.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, .car-details div.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, .car-details span.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow{
+	display: none;
+}
+.car-details a.btn-block.full-width .txt-btn-block-arrow:before, .car-details div.btn-block.full-width .txt-btn-block-arrow:before, .car-details span.btn-block.full-width .txt-btn-block-arrow:before {
+    content: "›";
+    display: inline-block;
+    vertical-align: top;
+    margin: -1px 4px 0 0;
+}
+.car-details a.btn-block.full-width .txt-hover-btn-block-arrow:before, .car-details div.btn-block.full-width .txt-hover-btn-block-arrow:before, .car-details span.btn-block.full-width .txt-hover-btn-block-arrow:before{
+	content: "›";
+	display: inline-block;
+	vertical-align: top;
+	margin: -1px 4px 0 0;
 }
 /* @end */
