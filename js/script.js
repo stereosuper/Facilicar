@@ -392,6 +392,7 @@ $(function(){
 		$('.slider-for-zoom').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
+			infinite: false,
 			arrows: true,
 			fade: true,
 			infinite: true,
@@ -402,6 +403,7 @@ $(function(){
 		$('.slider-nav-zoom').slick({
 			slidesToShow: 20,
 			slidesToScroll: 1,
+			infinite: false,
 			asNavFor: '.slider-for-zoom',
 			dots: false,
 			centerMode: false,
@@ -425,9 +427,19 @@ $(function(){
 		var currentFilter = $(".filter-nav-zoom").parent("li").attr("id");
 		var slides = $(".slider-for-zoom .slick-track > .slick-slide").length;
 		$('.slider-for-zoom').on('afterChange', function(event, slick, currentSlide, nextSlide){
-			var inFocus = $('.slider-for-zoom .slick-current').attr('data-slick-index');
-			$('.slider-nav-zoom .slick-current').removeClass('slick-current');
-			$('.slider-nav-zoom .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
+			if($(window).width()>=1150 && $(".slider-nav-zoom .slide").length < 20){
+				var inFocus = $('.slider-for-zoom .slick-current').attr('data-slick-index');
+							$('.slider-nav-zoom .slick-current').removeClass('slick-current');
+							$('.slider-nav-zoom .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
+			}else if($(window).width()>=979 && $(".slider-nav-zoom .slide").length < 15){
+				var inFocus = $('.slider-for-zoom .slick-current').attr('data-slick-index');
+							$('.slider-nav-zoom .slick-current').removeClass('slick-current');
+							$('.slider-nav-zoom .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
+			}else if($(".slider-nav-zoom .slide").length < 12){
+				var inFocus = $('.slider-for-zoom .slick-current').attr('data-slick-index');
+							$('.slider-nav-zoom .slick-current').removeClass('slick-current');
+							$('.slider-nav-zoom .slick-slide[data-slick-index="' + inFocus + '"]').trigger('click');
+			}
 			// vérifier et mettre à jour le filtre actif
 			var currentSlideFilter = $(".slider-nav-zoom .slide:eq("+currentSlide+")").data("filter");
 			if(!$(".btn-filters li#"+currentSlideFilter+" .filter-nav-zoom").hasClass("is-active")){
