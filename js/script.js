@@ -345,6 +345,66 @@ $(function(){
 	// Remplissage du Zoom détail véhicule
 	if($("body").hasClass("detail-vehicule")){
 		zoomDetailVehicule();
+
+		$("#slider-apport").slider({
+			range: true,
+			min: 1000,
+			max: 50000,
+			step: 1000,
+			values: [1000, 50000],
+			animate: 'slow',
+			// Mettre les labels DANS les ui-slider-handle
+		    create: function() {
+		        $('#slider-apport .min').appendTo($('#slider-apport .ui-slider-handle').get(0));
+		        $('#slider-apport .max').appendTo($('#slider-apport .ui-slider-handle').get(1));
+		    },
+		    slide: function(event, ui) { $(ui.handle).find('span').html(ui.value+" €"); }
+		});
+
+		// Initialiser le contenu des labels
+		$('#slider-apport .min').html($('#slider-apport').slider('values', 0) + " €").position({
+		    my: 'center top',
+		    at: 'center bottom',
+		    of: $('#slider-apport .ui-slider-handle').eq(0),
+		    offset: "0, 10"
+		});
+
+		$('#slider-apport .max').html($('#slider-apport').slider('values', 1) + " €").position({
+		    my: 'center top',
+		    at: 'center bottom',
+		    of: $('#slider-apport .ui-slider-handle').eq(1),
+		    offset: "0, 10"
+		});
+
+		$("#slider-mensualites").slider({
+			range: true,
+			min: 1000,
+			max: 50000,
+			step: 1000,
+			values: [1000, 50000],
+			animate: 'slow',
+			// Mettre les labels DANS les ui-slider-handle
+		    create: function() {
+		        $('#slider-mensualites .min').appendTo($('#slider-mensualites .ui-slider-handle').get(0));
+		        $('#slider-mensualites .max').appendTo($('#slider-mensualites .ui-slider-handle').get(1));
+		    },
+		    slide: function(event, ui) { $(ui.handle).find('span').html(ui.value+" €"); }
+		});
+
+		// Initialiser le contenu des labels
+		$('#slider-mensualites .min').html($('#slider-mensualites').slider('values', 0) + " €").position({
+		    my: 'center top',
+		    at: 'center bottom',
+		    of: $('#slider-apport .ui-slider-handle').eq(0),
+		    offset: "0, 10"
+		});
+
+		$('#slider-mensualites .max').html($('#slider-mensualites').slider('values', 1) + " €").position({
+		    my: 'center top',
+		    at: 'center bottom',
+		    of: $('#slider-apport .ui-slider-handle').eq(1),
+		    offset: "0, 10"
+		});
 	}
 
 	// Clic sur un bouton "Haut de page"

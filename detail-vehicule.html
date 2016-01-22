@@ -17,6 +17,7 @@
 		<!-- Slick -->
 		<link rel="stylesheet" href="css/slick.css" />
 	  	<link rel="stylesheet" href="css/style.css">
+	  	<link rel="stylesheet" href="css/libs/jquery-ui.css">
 		
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -1320,7 +1321,84 @@
 						<li data-content="financement">
 							<a href="#" class="btn-toggle-once border-bottom no-txt-transform">Financement<span class="icon-arrow-right"></span></a>
 							<div class="content-toggle-once small">
-								<p class="regular-txt">En cours d'intégration</p>
+								<h3 class="small-title txt-centered">Votre véhicule garanti jusqu’à la fin de votre financement !</h3>
+								<div class="wrapper-align-middle wrapper-content-financement">
+									<div class="content-align-top content-apport-mensualites">
+										<div class="wrapper-align-middle wrapper-apport-financement">
+											<div class="content-align-middle content-txt">
+												Montant de votre apport
+											</div><!--
+											--><div class="content-align-middle content-graph">
+												<div id="slider-apport" class="slider-range-inline">
+													<span class="min"></span>
+													<span class="max"></span>
+												</div>
+											</div>
+										</div>
+										<div class="wrapper-align-middle wrapper-mensualites-financement">
+											<div class="content-align-middle content-txt">
+												Nombre de mensualités
+											</div><!--
+											--><div class="content-align-middle content-graph">
+												<div id="slider-mensualites" class="slider-range-inline">
+													<span class="min"></span>
+													<span class="max"></span>
+												</div>
+											</div>
+										</div>
+										<div class="wrapper-align-middle wrapper-financement-cetelem">
+											<div class="content-align-middle content-img-financement-cetelem">
+												<img src="img/logo-cetelem.png">
+											</div><!--
+											--><div class="content-align-middle content-txt-financement-cetelem">
+												<p class="very-small-txt">Le financement est assuré par notre partenaire cételem</p>
+											</div>
+										</div>
+										<p class="very-small-txt">texte de mentions légales consectetur adipiscing elit. Curabitur in dolor nec magna aliquet ultrices. Nullam at lorem dui. Nulla sed maximus magna. Mauris convallis scelerisque eleifend. Nunc sit amet consectetur purus, nec condimentum massa. In hac habitasse platea dictumst. Donec rhoncus augue sapien, non consequat sem sollicitudin id. Nulla sed maximus magna. Mauris convallis scelerisque eleifend. Nunc sit amet consectetur purus, nec condimentum massa. In hac habitasse platea dictumst. Donec rhoncus augue sapien, non consequat sem sollicitudin id.</p>
+									</div><!--
+									--><div class="content-align-top content-radios-financement">
+										<div class="wrapper-align-middle credits-financement">
+											<div class="content-align-top credit-financement is-selected">
+												<div class="content-credit-financement">
+													<div class="credit-financement-title">Crédit standard</div>
+													<div class="price-credit-financement">280<span class="acronym"> €</span><span class="periodicity">/mois</span></div>
+													<div class="duration-credit-financement">pendant 25 mois</div>
+													<ul class="credit-financement-inclusions">
+														<li class="no-plus">
+															Inclut le financement
+														</li>
+														<li>
+															La garantie mécanique<br />
+															<a class="btn-underline btn-arrow color-secondary" href="#">En savoir plus</a>
+														</li>
+													</ul>
+													<a href="#" class="btn-accord-principe btn-block btn-block-arrow bg-secondary small"><span class="arrow-btn-block-arrow">›</span><span class="txt-btn-block-arrow">Recevoir un accord de principe en 5 minutes</span><span class="wrapper-txt-hover-btn-block-arrow"><span class="txt-hover-btn-block-arrow" data-hover="Recevoir un accord de principe en 5 minutes"></span></span></a>
+												</div>
+											</div><!--
+											--><div class="content-align-top credit-financement">
+												<div class="credit-financement-title">Crédit all-in-one</div>
+												<div class="price-credit-financement">312<span class="acronym"> €</span><span class="periodicity">/mois</span></div>
+												<div class="duration-credit-financement">pendant 25 mois</div>
+												<ul class="credit-financement-inclusions">
+													<li class="no-plus">
+														Inclut le financement
+													</li>
+													<li>
+														La garantie mécanique<br />
+														<a class="btn-underline btn-arrow color-secondary" href="#">En savoir plus</a>
+													</li>
+													<li>
+														garantie remboursement valeur achat en cas de sinistre total
+													</li>
+													<li>
+														garantie décès et invalidité
+													</li>
+												</ul>
+												<a href="#" class="btn-accord-principe btn-block btn-block-arrow bg-secondary small"><span class="arrow-btn-block-arrow">›</span><span class="txt-btn-block-arrow">Recevoir un accord de principe en 5 minutes</span><span class="wrapper-txt-hover-btn-block-arrow"><span class="txt-hover-btn-block-arrow" data-hover="Recevoir un accord de principe en 5 minutes"></span></span></a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</li>
 
@@ -1707,6 +1785,9 @@
 
 		<!-- jQuery -->
 		<script src="js/libs/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<!-- jQuery UI -->
+		<script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="js/libs/jquery.ui.touch-punch.min.js"></script>
 		<!-- Tweens -->
 		<script src="js/libs/greensock/TweenMax.min.js" type="text/javascript"></script>
 		<script src="js/libs/greensock/TimelineMax.min.js" type="text/javascript"></script>
