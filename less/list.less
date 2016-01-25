@@ -210,6 +210,87 @@
 			margin-bottom: 18px;
 		}
 	}
+	&.list-cars-third{
+		> li{
+			width: 33.3333%;
+			padding: 0 6px;
+			height: 235px;
+			&:first-child{
+				padding: 0 12px 0 0;
+			}
+			&:last-child{
+				padding: 0 0 0 12px;
+			}
+		}
+	}
+	&.list-cars-small{
+		.wrapper-car{
+			&:hover{
+				.car-label{
+					transform: translateY(-48px);
+				}
+			}
+		}
+		.fond-bandeau-car{
+			&.bandeau-top{
+				height: 84px;
+				transform: translateY(-21px) translateZ(1px);
+			}
+			&.bandeau-bottom{
+				height: 100px;
+				transform: translateY(40px) translateZ(1px);
+			}
+		}
+		.car-year{
+			top: 5px;
+			transform: translateY(5px) translateZ(1px);
+		}
+		.encadre{
+			.texta-light(0.625em);
+			padding: 1px 2px;
+		}
+		.car-name{
+			.texta-light(0.813em);
+			top: 20px;
+			transform: translateY(5px) translateZ(1px);
+		}
+		.motor-color{
+			.texta-light(0.7em);
+			top: 50px;
+		}
+		.car-desc{
+			.texta-light(0.7em);
+			top: 38px;
+		}
+		.car-km{
+			.texta-light(0.75em);
+			top: 64px;
+			transform: translateY(-24px) translateZ(1px);
+		}
+		.car-price{
+			.texta-light(1.313em);
+			bottom: 78px;
+			transform: translateY(56px) translateZ(1px);
+		}
+		.car-labels{
+			bottom: 60px;
+		}
+		.car-label{
+			.texta-light(0.688em);
+			padding: 0 5px;
+		}
+		.bandeau-image-car{
+			top: 64px;
+			height: 110px;
+		}
+		.car-btn-essai{
+			padding: 7px 0;
+			font-size: 0.75em;
+		}
+		.car-price-saving{
+			bottom: 43px;
+		}
+	}
 }
 
 .list-team, #main .list-team{
