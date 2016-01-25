@@ -1910,6 +1910,62 @@
         }
     }
     /* @end */
+
+    /* @group Popup */
+    .popup{
+        .list-inline{
+            &.list-third{
+                &.list-vehicule-interet{
+                    > li{
+                        display: block;
+                        width: 100%;
+                        margin: 20px auto;
+                        padding: 0;
+                        max-width: 435px;
+                        &:first-of-type{
+                            padding: 0;
+                        }
+                        &:last-of-type{
+                            padding: 0;
+                        }
+                        &:nth-child(1){
+                            .zone-img{
+                                padding-top: 0;
+                            }
+                        }
+                        &:nth-child(2){
+                            padding: 0;
+                            .zone-img{
+                                padding-top: 0;
+                            }
+                        }
+                    }
+                    .zone-img{
+                        height: auto;
+                        margin: 0 0 20px 0;
+                    }
+                    a, div, span{
+                        &.btn-block{
+                            width: auto;
+                        }
+                    }
+                    a.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, div.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, span.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow{
+                        position: absolute;
+                        top: 50%;
+                        margin: -19px 0 0 0;
+                        left: 24px;
+                        height: 36px;
+                        line-height: 36px;
+                        padding: 0;
+                    }
+                    a.btn-block.full-width .txt-btn-block-arrow, div.btn-block.full-width .txt-btn-block-arrow, span.btn-block.full-width .txt-btn-block-arrow{
+                        padding: 17px 28px 17px 45px;
+                    }
+                }
+            }            
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 830px) {

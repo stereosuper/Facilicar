@@ -597,6 +597,17 @@ $(function(){
 		return false;
 	});
 
+	// Ouverture popup
+	$(".has-popup").click(function(){
+		var contentDataPopup = $(this).data('ref-popup');
+		var selectedPopup = $(".wrapper-popup[data-popup='"+contentDataPopup+"']");
+		if(!selectedPopup.hasClass("open")){
+			TweenMax.set($(".wrapper-popup"), {className:"-=open"});
+			TweenMax.set(selectedPopup, {className:"+=open"});
+		}
+		return false;
+	});
+
 	// Clic sur le bouton pour fermer le popup
 	$("a.btn-close-popup").click(function(){
 		$(this).parents(".wrapper-popup").removeClass("open");
