@@ -339,6 +339,11 @@ $(function(){
 	// Tabs
 	setTabs();
 
+	// Class is-list sur list-cars-small
+	if ($(".list-cars-small").length && $(window).width()<=767){
+		TweenMax.set($(".list-cars-small"), {className:"+=is-list"});
+	}
+
 	// Détection du device pour la page de détail de véhicule
 	detailDeviceDetection();
 
@@ -1662,6 +1667,15 @@ $(window).resize(function(){
 				TweenMax.set($("#change-liste-mosaique"), {clearProps:"all"});
 				TweenMax.set($("#change-liste-mosaique .icon-mosaique"), {className:"+=is-selected"});
 				TweenMax.set($("#change-liste-mosaique .icon-liste"), {className:"-=is-selected"});
+			}
+		}
+
+		// Class is-list sur list-cars-small
+		if ($(".list-cars-small").length){
+			if($(window).width()<=767){
+				TweenMax.set($(".list-cars-small"), {className:"+=is-list"});
+			}else{
+				TweenMax.set($(".list-cars-small"), {className:"-=is-list"});
 			}
 		}
 

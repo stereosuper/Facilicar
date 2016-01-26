@@ -567,6 +567,22 @@
         max-width: 550px;
         margin: 0 auto;
     }
+    .list-cars{
+        &.list-cars-third{
+            > li{
+                width: 50%;
+                &:first-child{
+                    padding: 0 10px 0 0;
+                }
+                &:nth-child(2){
+                    padding: 0 0 0 10px;
+                }
+                &:last-child{
+                    display: none;
+                }
+            }
+        }
+    }
     /* @end */
 }
 
@@ -1108,6 +1124,44 @@
         &.is-list{
             >li{
                 margin-bottom: 8px;
+            }
+        }
+        &.list-cars-small{
+            .wrapper-car{
+                &:hover{
+                    .car-price-saving{
+                        opacity: 1;
+                        transform: translateY(0px) translateZ(1px);
+                    }
+                    .motor-color{
+                        opacity: 1;
+                    }
+                }
+            }
+            .car-name{
+                top: 7px;
+            }
+            .car-km{
+                top: 60px;
+            }
+            .motor-color{
+                top: 37px;
+            }
+            .car-price-saving{
+                bottom: 21px;
+                left: 14px;
+                font-size: 0.6em;
+            }
+            .car-old-price{
+                bottom: 32px;
+                left: 70px;
+            }
+            .car-price{
+                bottom: 62px;
+                left: 70px;
+            }
+            .car-labels{
+                bottom: 52px;
             }
         }
     }
@@ -2595,7 +2649,7 @@
             }
         }
     }
-    .is-list{
+    .is-list, .list-cars.list-cars-small.is-list{
         .bandeau-image-car{
             width: 84px;
             height: 60px;
@@ -2626,6 +2680,9 @@
         }
         .car-price{
             font-size: 1.5em;
+        }
+        .car-old-price{
+            display: none;
         }
         .car-btn-essai{
             font-size: 0.875em;
@@ -3581,6 +3638,88 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
+            }
+        }
+    }
+    .list-inline{
+        &.list-half{
+            &.list-other-cars{
+                > li{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .list-cars{
+        &.list-cars-third{
+            > li{
+                width: 100%;
+                &:first-child{
+                    padding: 0;
+                }
+                &:nth-child(2){
+                    padding: 0;
+                }
+                &:last-child{
+                    padding: 0;
+                    display: block;
+                }
+            }
+        }
+        &.list-cars-small{
+            &.is-list{
+                .wrapper-car{
+                    &:hover{
+                        .car-year{
+                            transform: none;
+                        }
+                        .car-km{
+                            transform: none;   
+                        }
+                        .car-name{
+                            transform: none;
+                        }
+                        .car-desc{
+                            opacity: 1;
+                        }
+                        .car-price{
+                            transform: none;
+                        }
+                        .car-btn-essai{
+                            opacity: 1;
+                        }
+                    }
+                }
+                .bandeau-image-car{
+                    top: 10px;
+                    left: 10px;
+                }
+                .car-km{
+                    top: 0;
+                    transform: none;
+                }
+                .motor-color{
+                    top: 0;
+                }
+                .car-name{
+                    top: 0;
+                    transform: none;
+                }
+                .car-desc{
+                    top: 0;
+                }
+                .car-price{
+                    bottom: 4px;
+                    right: 0;
+                    left: auto;
+                    transform: none;
+                }
+                .car-options{
+                    .zone-picto{
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                }
             }
         }
     }

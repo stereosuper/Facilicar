@@ -10275,6 +10275,18 @@ a.btn-slider-citation:hover.btn-right span {
     max-width: 550px;
     margin: 0 auto;
   }
+  .list-cars.list-cars-third > li {
+    width: 50%;
+  }
+  .list-cars.list-cars-third > li:first-child {
+    padding: 0 10px 0 0;
+  }
+  .list-cars.list-cars-third > li:nth-child(2) {
+    padding: 0 0 0 10px;
+  }
+  .list-cars.list-cars-third > li:last-child {
+    display: none;
+  }
   /* @end */
 }
 @media (max-width: 979px) {
@@ -10832,6 +10844,39 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .list-cars.is-list > li {
     margin-bottom: 8px;
+  }
+  .list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
+    opacity: 1;
+    -webkit-transform: translateY(0px) translateZ(1px);
+            transform: translateY(0px) translateZ(1px);
+  }
+  .list-cars.list-cars-small .wrapper-car:hover .motor-color {
+    opacity: 1;
+  }
+  .list-cars.list-cars-small .car-name {
+    top: 7px;
+  }
+  .list-cars.list-cars-small .car-km {
+    top: 60px;
+  }
+  .list-cars.list-cars-small .motor-color {
+    top: 37px;
+  }
+  .list-cars.list-cars-small .car-price-saving {
+    bottom: 21px;
+    left: 14px;
+    font-size: 0.6em;
+  }
+  .list-cars.list-cars-small .car-old-price {
+    bottom: 32px;
+    left: 70px;
+  }
+  .list-cars.list-cars-small .car-price {
+    bottom: 62px;
+    left: 70px;
+  }
+  .list-cars.list-cars-small .car-labels {
+    bottom: 52px;
   }
   .bandeau-image-car {
     height: 158px;
@@ -12242,79 +12287,104 @@ a.btn-slider-citation:hover.btn-right span {
   .list-cars.is-list > li {
     height: 126px;
   }
-  .is-list .bandeau-image-car {
+  .is-list .bandeau-image-car,
+  .list-cars.list-cars-small.is-list .bandeau-image-car {
     width: 84px;
     height: 60px;
   }
-  .is-list .encadre {
+  .is-list .encadre,
+  .list-cars.list-cars-small.is-list .encadre {
     font-size: 0.625em;
     padding: 1px 3px;
   }
-  .is-list .bandeau-car.bandeau-top {
+  .is-list .bandeau-car.bandeau-top,
+  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top {
     height: 56px;
     left: 104px;
   }
-  .is-list .car-km {
+  .is-list .car-km,
+  .list-cars.list-cars-small.is-list .car-km {
     font-size: 0.688em;
   }
-  .is-list .motor-color {
+  .is-list .motor-color,
+  .list-cars.list-cars-small.is-list .motor-color {
     font-size: 0.688em;
   }
-  .is-list .car-name {
+  .is-list .car-name,
+  .list-cars.list-cars-small.is-list .car-name {
     font-size: 0.875em;
     margin: -8px 0 0 0;
   }
-  .is-list .car-desc {
+  .is-list .car-desc,
+  .list-cars.list-cars-small.is-list .car-desc {
     font-size: 0.625em;
     margin: 0;
   }
-  .is-list .car-price {
+  .is-list .car-price,
+  .list-cars.list-cars-small.is-list .car-price {
     font-size: 1.5em;
   }
-  .is-list .car-btn-essai {
+  .is-list .car-old-price,
+  .list-cars.list-cars-small.is-list .car-old-price {
+    display: none;
+  }
+  .is-list .car-btn-essai,
+  .list-cars.list-cars-small.is-list .car-btn-essai {
     font-size: 0.875em;
     padding: 7px 12px;
   }
-  .is-list .car-options {
+  .is-list .car-options,
+  .list-cars.list-cars-small.is-list .car-options {
     margin: 0;
   }
-  .is-list .car-options .wrapper-car-option {
+  .is-list .car-options .wrapper-car-option,
+  .list-cars.list-cars-small.is-list .car-options .wrapper-car-option {
     width: 17px;
     height: 18px;
     line-height: 18px;
   }
-  .is-list .car-options .zone-picto {
+  .is-list .car-options .zone-picto,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto {
     width: 17px;
     height: 18px;
     line-height: 18px;
   }
-  .is-list .car-options .zone-picto.icon-gps {
+  .is-list .car-options .zone-picto.icon-gps,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-gps {
     font-size: 14px;
   }
-  .is-list .car-options .zone-picto.icon-clim {
+  .is-list .car-options .zone-picto.icon-clim,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-clim {
     font-size: 11px;
   }
-  .is-list .car-options .zone-picto.icon-toit-ouvrant {
+  .is-list .car-options .zone-picto.icon-toit-ouvrant,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-toit-ouvrant {
     font-size: 11px;
   }
-  .is-list .car-options .zone-picto.icon-control-recul {
+  .is-list .car-options .zone-picto.icon-control-recul,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-control-recul {
     font-size: 7px;
   }
-  .is-list .car-options .zone-picto.nb-places .places {
+  .is-list .car-options .zone-picto.nb-places .places,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.nb-places .places {
     font-size: 0.3em;
     padding: 1px 3px;
     margin-top: -6px;
   }
-  .is-list .car-options .zone-picto.icon-phares {
+  .is-list .car-options .zone-picto.icon-phares,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-phares {
     font-size: 9px;
   }
-  .is-list .car-options .zone-picto.icon-cuir {
+  .is-list .car-options .zone-picto.icon-cuir,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-cuir {
     font-size: 10px;
   }
-  .is-list .car-options .zone-picto.icon-quatre-quatre {
+  .is-list .car-options .zone-picto.icon-quatre-quatre,
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-quatre-quatre {
     font-size: 13px;
   }
-  .is-list .car-options .zone-txt {
+  .is-list .car-options .zone-txt,
+  .list-cars.list-cars-small.is-list .car-options .zone-txt {
     font-size: 0.8em;
     bottom: -32px;
     padding: 3px 0 0 0;
@@ -12322,50 +12392,62 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 0 0 0 -50px;
     height: 26px;
   }
-  .is-list .wrapper-car.cta {
+  .is-list .wrapper-car.cta,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta {
     font-size: 0.85em;
   }
-  .is-list .wrapper-car.cta .tel {
+  .is-list .wrapper-car.cta .tel,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .tel {
     display: block;
   }
-  .is-list .wrapper-car.cta .cta-wrapper {
+  .is-list .wrapper-car.cta .cta-wrapper,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper {
     padding: 0 10px;
     display: block;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content {
     display: block;
     width: 100%;
     text-align: center;
     padding: 0;
     margin: 3px 0;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img {
     width: 100%;
     margin-top: 5px;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn {
     width: 100%;
     text-align: center;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn {
     display: block;
     height: auto;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn {
     display: block;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline {
     padding: 0 12px;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn {
     margin: 0;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt {
     width: 100%;
     text-align: center;
     line-height: 1em;
   }
-  .is-list .wrapper-car.cta .cta-wrapper .cta-content br {
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content br,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content br {
     display: none;
   }
   /* @end */
@@ -13203,6 +13285,82 @@ a.btn-slider-citation:hover.btn-right span {
     bottom: 0;
     left: 0;
     right: 0;
+  }
+  .list-inline.list-half.list-other-cars > li {
+    width: 100%;
+  }
+  .list-cars.list-cars-third > li {
+    width: 100%;
+  }
+  .list-cars.list-cars-third > li:first-child {
+    padding: 0;
+  }
+  .list-cars.list-cars-third > li:nth-child(2) {
+    padding: 0;
+  }
+  .list-cars.list-cars-third > li:last-child {
+    padding: 0;
+    display: block;
+  }
+  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-year {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-km {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-name {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-desc {
+    opacity: 1;
+  }
+  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-price {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-btn-essai {
+    opacity: 1;
+  }
+  .list-cars.list-cars-small.is-list .bandeau-image-car {
+    top: 10px;
+    left: 10px;
+  }
+  .list-cars.list-cars-small.is-list .car-km {
+    top: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small.is-list .motor-color {
+    top: 0;
+  }
+  .list-cars.list-cars-small.is-list .car-name {
+    top: 0;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small.is-list .car-desc {
+    top: 0;
+  }
+  .list-cars.list-cars-small.is-list .car-price {
+    bottom: 4px;
+    right: 0;
+    left: auto;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small.is-list .car-options .zone-picto {
+    display: inline-block;
+    vertical-align: top;
   }
   /* @end */
   .breadcrumb {
