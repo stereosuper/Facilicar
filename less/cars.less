@@ -2749,8 +2749,16 @@
 .wrapper-mensualites-financement{
 	margin: 0 0 40px;
 }
-.list-other-cars{
+.list-other-cars, .list-inline.list-half.list-other-cars{
 	margin: 0 0 20px 0;
+	> li{
+		&:first-of-type{
+			padding: 0 10px 0 0;
+		}
+		&:last-of-type{
+			padding: 0 0 0 10px;
+		}
+	}
 }
 
 .detail-vehicule-zoom{

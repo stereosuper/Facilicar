@@ -226,8 +226,41 @@
 	&.list-cars-small{
 		.wrapper-car{
 			&:hover{
+				.fond-bandeau-car{
+					&.bandeau-top{
+						transform: translateY(-21px) translateZ(1px);
+					}
+					&.bandeau-bottom{
+						transform: translateY(40px) translateZ(1px);
+					}
+				}
+				.car-year{
+					transform: translateY(5px) translateZ(1px);
+				}
+				.car-km{
+					transform: translateY(-24px) translateZ(1px);
+				}
+				.motor-color{
+					opacity: 0;
+				}
+				.car-name{
+					transform: translateY(5px) translateZ(1px);
+				}
+				.car-desc{
+					opacity: 0;
+				}
+				.car-price{
+					transform: translateY(53px) translateZ(1px);
+				}
+				.car-price-saving{
+					opacity: 0;
+					transform: translateY(45px) translateZ(1px);
+				}
+				.car-btn-essai{
+					opacity: 0;
+				}
 				.car-label{
-					transform: translateY(-48px);
+					transform: translateY(0);
 				}
 			}
 		}
@@ -269,8 +302,8 @@
 		}
 		.car-price{
 			.texta-light(1.313em);
-			bottom: 78px;
-			transform: translateY(56px) translateZ(1px);
+			bottom: 74px;
+			transform: translateY(53px) translateZ(1px);
 		}
 		.car-labels{
 			bottom: 60px;
@@ -289,6 +322,7 @@
 		}
 		.car-price-saving{
 			bottom: 43px;
+			.texta-light(0.7em);
 		}
 	}
 }

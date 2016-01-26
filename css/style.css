@@ -3603,10 +3603,48 @@ a:focus {
 .list-cars.list-cars-third > li:last-child {
   padding: 0 0 0 12px;
 }
+.list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-top {
+  -webkit-transform: translateY(-21px) translateZ(1px);
+          transform: translateY(-21px) translateZ(1px);
+}
+.list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+  -webkit-transform: translateY(40px) translateZ(1px);
+          transform: translateY(40px) translateZ(1px);
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-year {
+  -webkit-transform: translateY(5px) translateZ(1px);
+          transform: translateY(5px) translateZ(1px);
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-km {
+  -webkit-transform: translateY(-24px) translateZ(1px);
+          transform: translateY(-24px) translateZ(1px);
+}
+.list-cars.list-cars-small .wrapper-car:hover .motor-color {
+  opacity: 0;
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-name {
+  -webkit-transform: translateY(5px) translateZ(1px);
+          transform: translateY(5px) translateZ(1px);
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-desc {
+  opacity: 0;
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-price {
+  -webkit-transform: translateY(53px) translateZ(1px);
+          transform: translateY(53px) translateZ(1px);
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
+  opacity: 0;
+  -webkit-transform: translateY(45px) translateZ(1px);
+          transform: translateY(45px) translateZ(1px);
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-btn-essai {
+  opacity: 0;
+}
 .list-cars.list-cars-small .wrapper-car:hover .car-label {
-  -webkit-transform: translateY(-48px);
-      -ms-transform: translateY(-48px);
-          transform: translateY(-48px);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 .list-cars.list-cars-small .fond-bandeau-car.bandeau-top {
   height: 84px;
@@ -3655,9 +3693,9 @@ a:focus {
 .list-cars.list-cars-small .car-price {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.313em;
-  bottom: 78px;
-  -webkit-transform: translateY(56px) translateZ(1px);
-          transform: translateY(56px) translateZ(1px);
+  bottom: 74px;
+  -webkit-transform: translateY(53px) translateZ(1px);
+          transform: translateY(53px) translateZ(1px);
 }
 .list-cars.list-cars-small .car-labels {
   bottom: 60px;
@@ -3677,6 +3715,8 @@ a:focus {
 }
 .list-cars.list-cars-small .car-price-saving {
   bottom: 43px;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.7em;
 }
 .list-team,
 #main .list-team {
@@ -8907,8 +8947,17 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-mensualites-financement {
   margin: 0 0 40px;
 }
-.list-other-cars {
+.list-other-cars,
+.list-inline.list-half.list-other-cars {
   margin: 0 0 20px 0;
+}
+.list-other-cars > li:first-of-type,
+.list-inline.list-half.list-other-cars > li:first-of-type {
+  padding: 0 10px 0 0;
+}
+.list-other-cars > li:last-of-type,
+.list-inline.list-half.list-other-cars > li:last-of-type {
+  padding: 0 0 0 10px;
 }
 .detail-vehicule-zoom {
   display: none;
