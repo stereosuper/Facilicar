@@ -2616,6 +2616,8 @@
 	border: 1px solid @theme-neutral;
 	padding: 18px;
 	position: relative;
+	cursor: pointer;
+	backface-visibility: hidden;
 	.content-credit-financement{
 		display: block;
 		width: 100%;
@@ -2633,6 +2635,34 @@
 				display: block;
 			}
 		}
+		a, div, span{
+			&.btn-block{
+				&.btn-block-arrow{
+					&.bg-secondary{
+						&.btn-accord-principe{
+							&:before{
+								background-color: @theme-secondary;
+							}
+							&:after{
+								border-color: @theme-secondary;
+							}
+							&:hover{
+								color: @theme-secondary;
+								&:before{
+									opacity: 0;
+								}
+								.txt-btn-block-arrow{
+									transform: translateY(100%);
+								}
+								.txt-hover-btn-block-arrow{
+									transform: translateY(0);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	&:first-child{
 		.btn-accord-principe{
@@ -2640,6 +2670,34 @@
 			bottom: 18px;
 			left: 18px;
 			right: 18px;
+		}
+	}
+	a, div, span{
+		&.btn-block{
+			&.btn-block-arrow{
+				&.bg-secondary{
+					&.btn-accord-principe{
+						&:before{
+							background-color: @theme-neutral;
+						}
+						&:after{
+							border-color: @theme-neutral;
+						}
+						&:hover{
+							color: #fff;
+							&:before{
+								opacity: 1;
+							}
+							.txt-btn-block-arrow{
+								transform: none;
+							}
+							.txt-hover-btn-block-arrow{
+								transform: translateY(-100%);
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

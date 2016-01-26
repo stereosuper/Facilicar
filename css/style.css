@@ -8815,6 +8815,9 @@ a.btn-slider-citation:hover.btn-right span {
   border: 1px solid #d8d8d4;
   padding: 18px;
   position: relative;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .credit-financement .content-credit-financement {
   display: block;
@@ -8832,11 +8835,79 @@ a.btn-slider-citation:hover.btn-right span {
 .credit-financement.is-selected .credit-financement-title:after {
   display: block;
 }
+.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:before,
+.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:before,
+.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:before {
+  background-color: #e38c00;
+}
+.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after,
+.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after,
+.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after {
+  border-color: #e38c00;
+}
+.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover {
+  color: #e38c00;
+}
+.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before {
+  opacity: 0;
+}
+.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow {
+  -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+          transform: translateY(100%);
+}
+.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
 .credit-financement:first-child .btn-accord-principe {
   position: absolute;
   bottom: 18px;
   left: 18px;
   right: 18px;
+}
+.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:before,
+.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:before,
+.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:before {
+  background-color: #d8d8d4;
+}
+.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after,
+.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after,
+.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after {
+  border-color: #d8d8d4;
+}
+.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover {
+  color: #fff;
+}
+.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before {
+  opacity: 1;
+}
+.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 .credit-financement-title {
   font-family: 'Texta-Bold', sans-serif;

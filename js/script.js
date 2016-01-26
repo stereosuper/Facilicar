@@ -1626,6 +1626,23 @@ $(function(){
 		}
 		return false;
 	});
+
+	// Clic sur les radios de l'onglet "Financement" de la page détail
+	$(".credit-financement").click(function(){
+		if(!$(this).hasClass("is-selected")){
+			var creditsParents = $(this).parents(".credits-financement");
+			TweenMax.set($(".credit-financement.is-selected", creditsParents), {className:"-=is-selected"});
+			TweenMax.set($(this), {className:"+=is-selected"});
+		}
+	});
+	$(".credit-financement .btn-accord-principe").click(function(){
+		if(!$(this).parents(".credit-financement").hasClass("is-selected")){
+			var creditsParents = $(this).parents(".credits-financement");
+			TweenMax.set($(".credit-financement.is-selected", creditsParents), {className:"-=is-selected"});
+			TweenMax.set($(this).parents(".credit-financement"), {className:"+=is-selected"});
+			return false;
+		}
+	});
 });
 
 var h = $(window).height(), w = $(window).width();
