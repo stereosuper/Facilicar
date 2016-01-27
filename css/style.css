@@ -1265,7 +1265,7 @@ a.btn-menu-responsive .rect:before {
   margin: 0;
   padding: 20px 0;
   background-color: #ffffff;
-  z-index: 10;
+  z-index: 110;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: relative;
@@ -11925,6 +11925,9 @@ a.btn-slider-citation:hover.btn-right span {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .menu-mobile-open #header {
+    border-bottom: 1px solid #979797;
   }
   #header a.logo-facilicar {
     float: none;
