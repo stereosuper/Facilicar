@@ -895,6 +895,31 @@ a.btn-menu-responsive{
 
 /* @end */
 
+/* @group Preload img */
+.wrapper-with-preloader{
+    position: relative;
+    .to-load{
+        position: relative;
+        opacity: 0;
+        &.is-loaded{
+            opacity: 1;
+        }
+    }
+}
+.preloader{
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -20px 0 0 -20px;
+    &.is-visible{
+        display: block;
+    }
+}
+/* @end */
+
 /* @end */
 
 /* @group Non semantic Boilerplate */

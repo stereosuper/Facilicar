@@ -322,6 +322,18 @@ function animChangeOrientation(){
 	tlChangeOrientation.to(device, 1, {ease: Back.easeInOut.config(1.7), rotation:90, transformOrigin:"50% 50%"});
 }
 
+function loadImages(){
+	$(".preloader").addClass("is-visible");
+	$(".to-load").on("load", function() {
+    	$(this).parents(".preloader").removeClass("is-visible");
+    	$(this).addClass("is-loaded");
+	}).each(function() {
+	    // attempt to defeat cases where load event does not fire
+	    // on cached images
+	    if(this.complete) $(this).trigger("load");
+	});
+}
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -338,6 +350,9 @@ $(function(){
 
 	// Tabs
 	setTabs();
+
+	// Load images
+	loadImages();
 
 	// Class is-list sur list-cars-small
 	if ($(".list-cars-small").length && $(window).width()<=767){

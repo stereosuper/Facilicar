@@ -1215,6 +1215,30 @@ a.btn-menu-responsive .rect:before {
   padding-top: 100px;
 }
 /* @end */
+/* @group Preload img */
+.wrapper-with-preloader {
+  position: relative;
+}
+.wrapper-with-preloader .to-load {
+  position: relative;
+  opacity: 0;
+}
+.wrapper-with-preloader .to-load.is-loaded {
+  opacity: 1;
+}
+.preloader {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -20px;
+}
+.preloader.is-visible {
+  display: block;
+}
+/* @end */
 /* @end */
 /* @group Non semantic Boilerplate */
 /* remplacement image */
@@ -3904,8 +3928,8 @@ a:focus {
 #main .list-visu-txt > li .visu .wrapper-align-middle .content-align-middle {
   text-align: center;
 }
-.list-visu-txt > li .visu img,
-#main .list-visu-txt > li .visu img {
+.list-visu-txt > li .visu .img-visu,
+#main .list-visu-txt > li .visu .img-visu {
   display: inline-block;
   vertical-align: middle;
   width: 80%;
@@ -11456,8 +11480,8 @@ a.btn-slider-citation:hover.btn-right span {
   #main .list-visu-txt > li .visu .content-align-middle {
     display: block;
   }
-  .list-visu-txt > li .visu img,
-  #main .list-visu-txt > li .visu img {
+  .list-visu-txt > li .visu .img-visu,
+  #main .list-visu-txt > li .visu .img-visu {
     max-width: 230px;
   }
   .list-visu-txt > li .txt,
