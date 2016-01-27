@@ -12378,12 +12378,12 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 0 0 2px 0;
   }
   .list-cars.is-list > li {
-    height: 126px;
+    height: 170px;
   }
   .is-list .bandeau-image-car,
   .list-cars.list-cars-small.is-list .bandeau-image-car {
     width: 84px;
-    height: 60px;
+    height: 56px;
   }
   .is-list .encadre,
   .list-cars.list-cars-small.is-list .encadre {
@@ -12393,7 +12393,8 @@ a.btn-slider-citation:hover.btn-right span {
   .is-list .bandeau-car.bandeau-top,
   .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top {
     height: 56px;
-    left: 104px;
+    left: 10px;
+    top: 70px;
   }
   .is-list .car-km,
   .list-cars.list-cars-small.is-list .car-km {
@@ -12405,13 +12406,13 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .is-list .car-name,
   .list-cars.list-cars-small.is-list .car-name {
-    font-size: 0.875em;
-    margin: -8px 0 0 0;
+    font-size: 1.25em;
+    margin: -9px 0 0 0;
   }
   .is-list .car-desc,
   .list-cars.list-cars-small.is-list .car-desc {
-    font-size: 0.625em;
-    margin: 0;
+    font-size: 0.875em;
+    margin: -1px 0 0 0;
   }
   .is-list .car-price,
   .list-cars.list-cars-small.is-list .car-price {
@@ -12429,6 +12430,7 @@ a.btn-slider-citation:hover.btn-right span {
   .is-list .car-options,
   .list-cars.list-cars-small.is-list .car-options {
     margin: 0;
+    display: none;
   }
   .is-list .car-options .wrapper-car-option,
   .list-cars.list-cars-small.is-list .car-options .wrapper-car-option {
