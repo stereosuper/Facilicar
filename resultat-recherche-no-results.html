@@ -129,10 +129,19 @@
 						<span class="arrow"></span>
 					</div><!--
 					--><div class="content-align-middle cars-filters">
+						<div id="button-filter" class="btn-filter">
+							<div class="zone-left-btn">
+								<span class="icon-filter"></span>
+								<span class="icon-cross"></span>
+							</div><!--
+							--><div class="zone-right-btn disabled">
+								<span class="txt-close">Filtrer</span><span class="txt-open">Appliquer les filtres</span>
+							</div>
+						</div>
 						<ul class="list-block lines-filters">
-							<li class="line-filters-one">
-								<div class="filter-title">Type</div><!--
-								--><ul class="select-type-car">
+							<li class="line-filters-one has-border-mobile">
+								<div class="filter-title toggle-filter">Type</div><!--
+								--><ul class="select-type-car content-toggle-filter">
 									<li>
 										<a href="#">
 											<span class="zone-picto icon-citadine"></span>
@@ -207,12 +216,22 @@
 							</li><!--
 							--><li class="line-filters-two">
 								<div class="wrapper-align-middle">
-									<div class="content-align-middle">
+									<div class="content-align-middle has-border-mobile wrapper-line-filter-prix">
+										<div class="filter-title toggle-filter">Prix</div>
+										<div id="wrapper-filter-prix" class="content-toggle-filter">
+											<div id="filter-prix" class="slider-range-inline">
+												<span id="min"></span>
+												<span id="max"></span>
+											</div>
+										</div>
+									</div><!--
+									--><div class="content-align-middle txt-right-aligned">
 										<ul class="list-inline list-select-one small-margin">
-											<li>
+											<li class="has-border-mobile">
 												<div class="select-custom">
 													<a class="select-placeholder medium-padding-right" href="#">Toutes marques</a>
-													<div class="select-options">
+													<div class="filter-title toggle-filter show-mobile">Marque</div>
+													<div class="select-options content-toggle-filter">
 														<ul>
 															<li data-option data-value="toutes-marques" class="is-selected">
 																Toutes marques
@@ -270,32 +289,13 @@
 															</li>
 														</ul>
 													</div>
-													<!--<select class="select-skinned" name="select-marque">
-														<option value="toutes-marques" selected="">Toutes marques</option>
-														<option value="alfa-romeo">Alfa Romeo</option>
-														<option value="bmw">BMW</option>
-														<option value="dacia">Dacia</option>
-														<option value="ford">Ford</option>
-														<option value="hyundai">Hyundai</option>
-														<option value="kya">Kya</option>
-														<option value="mini">Mini</option>
-														<option value="nissan">Nissan</option>
-														<option value="opel">Opel</option>
-														<option value="peugeot">Peugeot</option>
-														<option value="renault">Renault</option>
-														<option value="seat">Seat</option>
-														<option value="skoda">Skoda</option>
-														<option value="suzuki">Suzuki</option>
-														<option value="toyota">Toyota</option>
-														<option value="volkswagen">Volkswagen</option>
-														<option value="volvo">Volvo</option>
-													</select>-->
 												</div>
 											</li><!--
-											--><li>
+											--><li class="has-border-mobile">
 												<div class="select-custom">
 													<a class="select-placeholder" href="#">Tous modèles</a>
-													<div class="select-options">
+													<div class="filter-title toggle-filter show-mobile">Modèle</div>
+													<div class="select-options content-toggle-filter">
 														<ul>
 															<li data-option data-value="tous-modeles"  class="is-selected">
 																Tous modèles
@@ -328,10 +328,11 @@
 													</div>
 												</div>
 											</li><!--
-											--><li>
+											--><li class="has-border-mobile">
 												<div class="select-custom">
 													<a class="select-placeholder small-padding-right" href="#">Tout kilométrage</a>
-													<div class="select-options">
+													<div class="filter-title toggle-filter show-mobile">Kilométrage</div>
+													<div class="select-options content-toggle-filter">
 														<ul>
 															<li data-option data-value="tout-km" class="is-selected">
 																Tout kilométrage
@@ -362,22 +363,16 @@
 												</div>
 											</li>
 										</ul>
-									</div><!--
-									--><div class="content-align-middle txt-right-aligned">
-										<div class="filter-title">Prix</div>
-										<div id="filter-prix" class="slider-range-inline">
-											<span id="min"></span>
-											<span id="max"></span>
-										</div>
 									</div>
 								</div>
 							</li><!--
 							--><li class="line-filters-three" id="content-more-criteres">
 								<ul class="list-inline small-margin">
-									<li>
+									<li class="has-border-mobile">
 										<div class="select-custom">
 											<a class="select-placeholder" href="#">Toutes énergies</a>
-											<div class="select-options one-column">
+											<div class="filter-title toggle-filter show-mobile">Énergies</div>
+											<div class="select-options one-column content-toggle-filter">
 												<ul>
 													<li data-option data-value="toutes-energies" class="is-selected">
 														Toutes énergies
@@ -398,9 +393,9 @@
 											</div>
 										</div>
 									</li><!--
-									--><li class="line-options">
-										<div class="filter-title">Options</div>
-										<ul class="select-option-car">
+									--><li class="line-options has-border-mobile">
+										<div class="filter-title toggle-filter">Options</div>
+										<ul class="select-option-car content-toggle-filter">
 											<li class="is-selected">
 												<a href="#">
 													<span class="zone-picto icon-gps"></span>
@@ -415,7 +410,7 @@
 													<span class="zone-picto icon-clim"></span>
 													<span class="zone-txt">
 														<span class="triangle"></span>
-														Aide au parking<br /> AV et/ou AR
+														Climatisation
 													</span>
 												</a>
 											</li><!--
@@ -451,7 +446,7 @@
 													<span class="zone-picto icon-phares"></span>
 													<span class="zone-txt">
 														<span class="triangle"></span>
-														Phares
+														Projecteurs<br /> bi-xénon
 													</span>
 												</a>
 											</li><!--
@@ -460,7 +455,7 @@
 													<span class="zone-picto icon-cuir"></span>
 													<span class="zone-txt">
 														<span class="triangle"></span>
-														Cuir
+														Sellerie cuir
 													</span>
 												</a>
 											</li><!--
@@ -469,15 +464,15 @@
 													<span class="zone-picto icon-quatre-quatre"></span>
 													<span class="zone-txt">
 														<span class="triangle"></span>
-														4*4
+														4 roues motrices
 													</span>
 												</a>
 											</li>
 										</ul>
 									</li><!--
-									--><li>
-										<div class="filter-title">Boîte auto</div>
-										<div class="switch off noselect">
+									--><li class="has-border-mobile">
+										<div class="filter-title toggle-filter">Boîte auto</div>
+										<div class="switch off noselect content-toggle-filter">
 											<div class="switch-toggle"></div>
 											<span class="off-content">Non</span><!--
 											--><span class="on-content">Oui</span>

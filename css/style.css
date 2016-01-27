@@ -3467,6 +3467,9 @@ a:focus {
 .list-inline.small-margin > li {
   margin: 5px 10px 5px 0;
 }
+.list-inline.small-margin > li:last-child {
+  margin-right: 0;
+}
 .list-block {
   display: block;
   margin: 0;
@@ -11503,6 +11506,9 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
     margin: 5px 0;
   }
+  .line-filters-two .content-align-middle.wrapper-line-filter-prix {
+    margin-bottom: 20px;
+  }
   .line-filters-two .content-align-middle.txt-right-aligned {
     text-align: left;
   }
@@ -12973,6 +12979,9 @@ a.btn-slider-citation:hover.btn-right span {
     padding: 0 0 0 40px;
   }
   .line-filters-two .content-align-middle {
+    margin: 0;
+  }
+  .line-filters-two .content-align-middle.wrapper-line-filter-prix {
     margin: 0;
   }
   .line-filters-three ul.list-inline > li {
