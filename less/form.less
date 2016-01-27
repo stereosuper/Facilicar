@@ -337,6 +337,25 @@ button{
         padding: 20px 0 0 0;
         margin: 0 0 0 -28px;
     }
+    .min-txt, .max-txt{
+        position: absolute;
+        top: 11px;
+        margin: 0;
+        padding: 0;
+        .texta-light(0.750em);
+        text-transform: uppercase;
+        color: #AEACA1;
+        &.hide{
+            display: none;
+        }
+    }
+    .min-txt{
+        left: 0;
+    }
+    .max-txt{
+        right: 0;
+        text-align: right;
+    }
 }
 
 .switch{

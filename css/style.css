@@ -4427,6 +4427,28 @@ button:focus {
   padding: 20px 0 0 0;
   margin: 0 0 0 -28px;
 }
+.slider-range-inline .min-txt,
+.slider-range-inline .max-txt {
+  position: absolute;
+  top: 11px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #AEACA1;
+}
+.slider-range-inline .min-txt.hide,
+.slider-range-inline .max-txt.hide {
+  display: none;
+}
+.slider-range-inline .min-txt {
+  left: 0;
+}
+.slider-range-inline .max-txt {
+  right: 0;
+  text-align: right;
+}
 .switch {
   display: inline-block;
   vertical-align: middle;
