@@ -265,8 +265,8 @@ function setTabs(){
 	var tabs = $('.wrapper-tabs');
 	tabs.each(function(){
 		var tab = $(this),
-			tabItems = $('ul.tabs-navigation'),
-			tabContentWrapper = $('ul.tabs-content');
+			tabItems = $('ul.tabs-navigation', tab),
+			tabContentWrapper = $('ul.tabs-content', tab);
 		tabItems.on('click', 'a', function(event){
 			event.preventDefault();
 			var selectedItem = $(this);
@@ -279,7 +279,7 @@ function setTabs(){
 				selectedItem.addClass('is-selected');
 				selectedContent.addClass('is-selected').siblings('li').removeClass('is-selected');
 				//animate tabContentWrapper height when content changes 
-				tabContentWrapper.stop().animate({
+				tabContentWrapper.animate({
 					'height': slectedContentHeight
 				}, 200);
 			}
