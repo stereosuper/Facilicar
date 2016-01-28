@@ -12748,21 +12748,41 @@ a.btn-slider-citation:hover.btn-right span {
   #main .navbar .list-block {
     width: 100%;
     text-align: left;
+    padding: 0;
   }
   .navbar .list-block > li,
   #main .navbar .list-block > li {
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px;
-    padding: 5px 0;
+    margin: 0 5px 0 0;
+    padding: 0 10px 0 0;
+    font-family: 'Texta-Bold', sans-serif;
+    font-size: 1em;
+    color: #009cc4;
   }
-  .navbar .list-block > li:first-of-type,
-  #main .navbar .list-block > li:first-of-type {
-    margin: 0 10px 0 0;
+  .navbar .list-block > li:last-child,
+  #main .navbar .list-block > li:last-child {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar .list-block > li:last-child:after,
+  #main .navbar .list-block > li:last-child:after {
+    display: none;
+  }
+  .navbar .list-block > li:after,
+  #main .navbar .list-block > li:after {
+    content: "-";
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   .navbar .list-block > li a,
   #main .navbar .list-block > li a {
-    padding: 5px 0;
+    padding: 0;
+    text-transform: none;
+    text-decoration: underline;
+    border: none;
+    color: #009cc4;
   }
   .content-with-navbar {
     display: block;
