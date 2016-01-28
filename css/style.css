@@ -12888,6 +12888,22 @@ a.btn-slider-citation:hover.btn-right span {
   .zone-sort-by .results-txt {
     margin: 10px 0;
   }
+  .wrapper-sort-by,
+  .list-inline.wrapper-sort-by {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .wrapper-sort-by > li,
+  .list-inline.wrapper-sort-by > li {
+    display: none;
+  }
+  .wrapper-sort-by > li.wrapper-sort-by-prix,
+  .list-inline.wrapper-sort-by > li.wrapper-sort-by-prix {
+    display: block;
+  }
   .result-cars-number {
     display: block;
     width: 100%;
