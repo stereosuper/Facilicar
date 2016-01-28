@@ -1967,15 +1967,14 @@ a.btn-menu-responsive .rect:before {
   font-size: 1em;
   color: #333333;
 }
-.search-distance-charges {
-  display: block;
-}
 .search-distance {
+  display: block;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
   color: #e38c00;
 }
 .search-charges {
+  display: block;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
   color: #333333;
