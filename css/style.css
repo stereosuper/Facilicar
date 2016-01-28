@@ -11819,6 +11819,11 @@ a.btn-slider-citation:hover.btn-right span {
   }
   /* @end */
 }
+@media (max-width: 979px) and (max-height: 360px) {
+  #wrapper-map #map {
+    height: 210px;
+  }
+}
 @media (max-width: 830px) {
   /* @group Zoom */
   .wrapper-top-zoom.is-white {
@@ -13320,6 +13325,9 @@ a.btn-slider-citation:hover.btn-right span {
   .list-agency > li a .zone-nb-agency,
   .list-block.list-agency > li a .zone-nb-agency {
     width: 40px;
+  }
+  #wrapper-map .map-search-content {
+    padding: 15px 0 25px 0;
   }
   /* @end */
   /* @group Détail véhicule */

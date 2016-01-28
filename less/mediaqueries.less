@@ -1799,6 +1799,9 @@
         #map{
             height: 300px;
             position: relative;
+            @media (max-height: 360px){
+                height: 210px;
+            }
         }
         .wrapper-map-search{
             width: 100%;
@@ -3531,6 +3534,11 @@
                     width: 40px;
                 }
             }
+        }
+    }
+    #wrapper-map{
+        .map-search-content {
+            padding: 15px 0 25px 0;
         }
     } 
     /* @end */
