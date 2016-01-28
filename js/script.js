@@ -254,14 +254,19 @@ function setToolTip(){
 	});
 }
 
+function setTabsHeight(){
+	var tabs = $('.wrapper-tabs');
+	tabs.each(function(){
+		TweenMax.set($(".tabs-content"), {height:$(".tabs-content li.is-selected").outerHeight()});
+	});
+}
+
 function setTabs(){
 	var tabs = $('.wrapper-tabs');
-	
 	tabs.each(function(){
 		var tab = $(this),
 			tabItems = $('ul.tabs-navigation'),
 			tabContentWrapper = $('ul.tabs-content');
-
 		tabItems.on('click', 'a', function(event){
 			event.preventDefault();
 			var selectedItem = $(this);
@@ -269,11 +274,12 @@ function setTabs(){
 				var selectedTab = selectedItem.data('content'),
 					selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
 					slectedContentHeight = selectedContent.innerHeight();
+
 				tabItems.find('a.is-selected').removeClass('is-selected');
 				selectedItem.addClass('is-selected');
 				selectedContent.addClass('is-selected').siblings('li').removeClass('is-selected');
 				//animate tabContentWrapper height when content changes 
-				tabContentWrapper.animate({
+				tabContentWrapper.stop().animate({
 					'height': slectedContentHeight
 				}, 200);
 			}
@@ -334,6 +340,12 @@ function loadImages(){
 	});
 }
 
+$(window).load(function() {
+	// Tabs
+	setTabsHeight();
+	setTabs();
+});
+
 $(function(){
 	// Request anim frame
 	scrollPage();
@@ -347,9 +359,6 @@ $(function(){
 
 	// Tooltip
 	setToolTip();
-
-	// Tabs
-	setTabs();
 
 	// Load images
 	loadImages();
@@ -875,16 +884,19 @@ $(function(){
 						$('.navbar li.has-content.active').removeClass("active");
 						btnToggleThis.parents("li").addClass('active');
 						$target = $(target);
-						TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-85}, ease:Power2.easeOut});
+						$('html, body').animate( { scrollTop: $target.offset().top-85 }, 500 );
+						//TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-85}, ease:Power2.easeOut});
 					}else if(viewport().width>mobileBreakpoint){
 						$('.navbar li.has-content.active').removeClass("active");
 						btnToggleThis.parents("li").addClass('active');
 						$target = $(target);
-						TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-20}, ease:Power2.easeOut});
+						$('html, body').animate( { scrollTop: $target.offset().top-20 }, 500 );
+						//TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-20}, ease:Power2.easeOut});
 					}else{
 						$('.navbar li.has-content.active').removeClass("active");
 						$target = $(target);
-						TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-10}, ease:Power2.easeOut});
+						$('html, body').animate( { scrollTop: $target.offset().top-10 }, 500 );
+						//TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-10}, ease:Power2.easeOut});
 					}
 				});
 				$(".wrapper-toggle-all .btn-toggle.open").removeClass("open");
@@ -894,18 +906,21 @@ $(function(){
 					$(this).parents("li").addClass('active');
 					var target = this.hash;
 					$target = $(target);
-					TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-85}, ease:Power2.easeOut});
+					$('html, body').animate( { scrollTop: $target.offset().top-85 }, 500 );
+					//TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-85}, ease:Power2.easeOut});
 				}else if(viewport().width>mobileBreakpoint){
 					$('.navbar li.has-content.active').removeClass("active");
 					$(this).parents("li").addClass('active');
 					var target = this.hash;
 					$target = $(target);
-					TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-20}, ease:Power2.easeOut});
+					$('html, body').animate( { scrollTop: $target.offset().top-20 }, 500 );
+					//TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-20}, ease:Power2.easeOut});
 				}else{
 					$('.navbar li.has-content.active').removeClass("active");
 					var target = this.hash;
 					$target = $(target);
-					TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-10}, ease:Power2.easeOut});
+					$('html, body').animate( { scrollTop: $target.offset().top-10 }, 500 );
+					//TweenMax.to($('html, body'), 0.5, {scrollTo:{y:$target.offset().top-10}, ease:Power2.easeOut});
 				}
 			}
 			return false;
@@ -1674,6 +1689,7 @@ $(function(){
 
 var h = $(window).height(), w = $(window).width();
 $(window).resize(function(){
+	setTabsHeight();
 	// Remettre les toggle btn
 	$(".container-toggle-one").each(function(){
 		// clearer le js en style inline
