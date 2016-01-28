@@ -476,6 +476,11 @@ h3.small-title {
   font-size: 1.5em;
   margin: 0 0 40px 0;
 }
+h3.h4 {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.25em;
+  margin: 15px 0;
+}
 h4 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
@@ -3940,7 +3945,9 @@ a:focus {
   box-sizing: border-box;
 }
 .list-visu-txt > li h4,
-#main .list-visu-txt > li h4 {
+#main .list-visu-txt > li h4,
+.list-visu-txt > li h3.h4,
+#main .list-visu-txt > li h3.h4 {
   color: #e38c00;
 }
 .list-visu-txt > li:nth-child(odd) .visu,
@@ -10459,6 +10466,9 @@ a.btn-slider-citation:hover.btn-right span {
   h3.small-title {
     font-size: 1.3em;
   }
+  h3.h4 {
+    font-size: 1.6em;
+  }
   h4 {
     font-size: 1.1em;
   }
@@ -11896,6 +11906,9 @@ a.btn-slider-citation:hover.btn-right span {
   h3.small-title {
     font-size: 1.1em;
     margin: 0 0 20px 0;
+  }
+  h3.h4 {
+    font-size: 1.4em;
   }
   h4 {
     font-size: 1em;
