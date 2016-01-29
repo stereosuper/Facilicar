@@ -681,7 +681,7 @@ $(function(){
 		}
 		var btnClique = $(this);
 		setTimeout(function(){
-			$('html, body').stop().animate( { scrollTop: btnClique.offset().top-50 }, 500 );
+			$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
 		}, 200);
 		return false;
 	});
@@ -700,7 +700,11 @@ $(function(){
 		}
 		var btnClique = $(this);
 		setTimeout(function(){
-			$('html, body').stop().animate( { scrollTop: btnClique.offset().top-50 }, 500 );
+			if($("body").hasClass("detail-vehicule")){
+				$('html, body').stop().animate( { scrollTop: btnClique.offset().top-82 }, 500 );
+			}else{
+				$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
+			}
 		}, 200);
 		return false;
 	});
