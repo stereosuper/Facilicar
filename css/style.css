@@ -13976,6 +13976,9 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-conseils {
     margin: 20px 0 30px 0;
   }
+  .wrapper-top-zoom.is-white #btn-essai-commande-zoom {
+    display: none;
+  }
   /* @end */
   a.btn-arrow-top.big,
   div.btn-arrow-top.big,
