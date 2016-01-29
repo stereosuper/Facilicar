@@ -11781,6 +11781,9 @@ a.btn-slider-citation:hover.btn-right span {
   .detail-vehicule-zoom.scroll {
     display: none;
   }
+  .detail-vehicule-zoom.scroll.open {
+    display: block;
+  }
   /* @end */
   /* @group Popup */
   .popup .list-inline.list-third.list-vehicule-interet > li {
