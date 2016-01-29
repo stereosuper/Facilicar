@@ -13405,6 +13405,7 @@ a.btn-slider-citation:hover.btn-right span {
   .tabs-content > li .content-toggle.small,
   .tabs-content > li .content-toggle-once.small {
     padding: 10px 10px;
+    border-bottom: 1px solid #AEACA1;
   }
   .wrapper-equiements.wrapper-align-middle {
     display: block;
