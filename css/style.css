@@ -3634,6 +3634,13 @@ a:focus {
 .list-cars.list-cars-third > li:last-child {
   padding: 0 0 0 12px;
 }
+.list-cars.list-cars-small .wrapper-car {
+  -webkit-transition: opacity 0.1s ease-in-out;
+          transition: opacity 0.1s ease-in-out;
+}
+.list-cars.list-cars-small .wrapper-car:hover {
+  opacity: 0.85;
+}
 .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: translateY(-21px) translateZ(1px);
           transform: translateY(-21px) translateZ(1px);
@@ -3659,6 +3666,9 @@ a:focus {
 }
 .list-cars.list-cars-small .wrapper-car:hover .car-desc {
   opacity: 0;
+}
+.list-cars.list-cars-small .wrapper-car:hover .car-old-price {
+  display: none;
 }
 .list-cars.list-cars-small .wrapper-car:hover .car-price {
   -webkit-transform: translateY(53px) translateZ(1px);
@@ -3720,6 +3730,9 @@ a:focus {
   top: 64px;
   -webkit-transform: translateY(-24px) translateZ(1px);
           transform: translateY(-24px) translateZ(1px);
+}
+.list-cars.list-cars-small .car-old-price {
+  display: none;
 }
 .list-cars.list-cars-small .car-price {
   font-family: 'Texta-Light', sans-serif;
@@ -13495,6 +13508,12 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .list-inline.list-half.list-other-cars > li {
     width: 100%;
+  }
+  .list-inline.list-half.list-other-cars > li:first-of-type {
+    padding: 0;
+  }
+  .list-inline.list-half.list-other-cars > li:last-of-type {
+    padding: 0;
   }
   .list-cars.list-cars-third > li {
     width: 100%;

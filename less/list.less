@@ -228,7 +228,9 @@
 	}
 	&.list-cars-small{
 		.wrapper-car{
+			transition: opacity 0.1s ease-in-out;
 			&:hover{
+				opacity: 0.85;
 				.fond-bandeau-car{
 					&.bandeau-top{
 						transform: translateY(-21px) translateZ(1px);
@@ -251,6 +253,9 @@
 				}
 				.car-desc{
 					opacity: 0;
+				}
+				.car-old-price{
+					display: none;
 				}
 				.car-price{
 					transform: translateY(53px) translateZ(1px);
@@ -302,6 +307,9 @@
 			.texta-light(0.75em);
 			top: 64px;
 			transform: translateY(-24px) translateZ(1px);
+		}
+		.car-old-price{
+			display: none;
 		}
 		.car-price{
 			.texta-light(1.313em);
