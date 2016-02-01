@@ -491,6 +491,14 @@ h5 {
   font-size: 1.125em;
   margin: 10px 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
 .title-underline {
   text-transform: uppercase;
   border-bottom: 1px solid #b0b0a8;
