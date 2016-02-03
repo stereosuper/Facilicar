@@ -5114,6 +5114,7 @@ a.btn-slider-citation:hover.btn-right span {
   bottom: 22px;
   right: 22px;
   cursor: pointer;
+  pointer-events: none;
 }
 .slider-nav {
   display: block;

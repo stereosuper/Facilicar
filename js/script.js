@@ -585,40 +585,34 @@ $(function(){
 		// Affichage du zoom
 		$(".slider-for .slick-slide").click(function(){
 			if(!$(".detail-vehicule-zoom").hasClass("open")){
-				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
-				//TweenMax.to($(".detail-vehicule-zoom"), 0.5, {autoAlpha: 1});
-				TweenMax.to($(".detail-vehicule-zoom"), 0.3, {opacity: 1});
-				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
-				var indexCurrentSlide = $('.slider-for .slick-active.slick-current').index();
-				$('.slider-for-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
-				$('.slider-nav-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
-				$('.slider-for-zoom').get(0).slick.setPosition();
-				$('.slider-nav-zoom').get(0).slick.setPosition();
-				animChangeOrientation();
+				openZoom();
 			}
 		});
 
 		$("#btn-open-zoom").click(function(){
+			openZoom();
+			return false;
+		});
+
+		function openZoom(){
 			if(!$(".detail-vehicule-zoom").hasClass("open")){
 				TweenMax.set($(".detail-vehicule-zoom"), {className:"+=open"});
-				//TweenMax.to($(".detail-vehicule-zoom"), 0.5, {autoAlpha: 1});
 				TweenMax.to($(".detail-vehicule-zoom"), 0.3, {opacity: 1});
 				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
 				var indexCurrentSlide = $('.slider-for .slick-active.slick-current').index();
-				$('.slider-for-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
-				$('.slider-nav-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
+				$('.slider-for-zoom').get(0).slick.slickGoTo(indexCurrentSlide-1, false);
+				$('.slider-nav-zoom').get(0).slick.slickGoTo(indexCurrentSlide-1, false);
 				$('.slider-for-zoom').get(0).slick.setPosition();
 				$('.slider-nav-zoom').get(0).slick.setPosition();
 				animChangeOrientation();
 			}
-			return false;
-		});
+		}
 
 		// Masquage du zoom
 		$("#btn-close-zoom").click(function(){
 			var indexCurrentSlide = $('.slider-for-zoom .slick-active.slick-current').index();
-			$('.slider-for').get(0).slick.slickGoTo(indexCurrentSlide, false);
-			$('.slider-nav').get(0).slick.slickGoTo(indexCurrentSlide, false);
+			$('.slider-for').get(0).slick.slickGoTo(indexCurrentSlide-1, false);
+			$('.slider-nav').get(0).slick.slickGoTo(indexCurrentSlide-1, false);
 			TweenMax.set($(".detail-vehicule-zoom"), {autoAlpha: 0, className:"-=open", onComplete: function(){
 				TweenMax.set($(".detail-vehicule-zoom"), {clearProps:"all"});
 			}});
