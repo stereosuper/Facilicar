@@ -2026,19 +2026,23 @@
                     a, div, span{
                         &.btn-block{
                             width: auto;
+                            &.full-width{
+                                &.btn-block-arrow{
+                                    .arrow-btn-block-arrow{
+                                        position: absolute;
+                                        top: 50%;
+                                        margin: -19px 0 0 0;
+                                        left: 24px;
+                                        height: 36px;
+                                        line-height: 36px;
+                                        padding: 0;
+                                    }
+                                    .txt-btn-block-arrow{
+                                        padding: 17px 28px 17px 45px;
+                                    }
+                                }
+                            }
                         }
-                    }
-                    a.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, div.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow, span.btn-block.full-width.btn-block-arrow .arrow-btn-block-arrow{
-                        position: absolute;
-                        top: 50%;
-                        margin: -19px 0 0 0;
-                        left: 24px;
-                        height: 36px;
-                        line-height: 36px;
-                        padding: 0;
-                    }
-                    a.btn-block.full-width .txt-btn-block-arrow, div.btn-block.full-width .txt-btn-block-arrow, span.btn-block.full-width .txt-btn-block-arrow{
-                        padding: 17px 28px 17px 45px;
                     }
                 }
             }            
@@ -2963,9 +2967,34 @@
     /* @group Popup */
     .popup{
         padding: 40px 30px;
+        &.big{
+            padding: 40px 30px;
+        }
         a.btn-close-popup{
             top: 15px;
             right: 15px;
+        }
+        .list-inline{
+            &.list-third{
+                &.list-vehicule-interet{
+                    //AZE//
+                    a, div, span{
+                        &.btn-block{
+                            &.full-width{
+                                &.btn-block-arrow{
+                                    font-size: 0.9em;
+                                    .arrow-btn-block-arrow{
+                                        left: 13px;
+                                    }
+                                    .txt-btn-block-arrow{
+                                        padding: 17px 17px 17px 24px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     #list-date-popup{
@@ -2975,6 +3004,7 @@
             margin: 10px 0;
         }
     }
+
     /* @end */
 
     /* @group Navbar | Team */
