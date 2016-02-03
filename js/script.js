@@ -316,7 +316,7 @@ function detailDeviceDetection(){
 }
 
 function animChangeOrientation(){
-	var device = $("#device");
+	/*var device = $("#device");
 	var fleche = $("#fleche");
 	var circle = $(".st2");
 	var pointe = $("#pointe");
@@ -326,7 +326,7 @@ function animChangeOrientation(){
 	tlChangeOrientation.staggerTo(pointe, 0.1, {opacity:1}, 0.2);
 	tlChangeOrientation.staggerTo(circle,0.5, {drawSVG:"100% 100%"});
 	tlChangeOrientation.staggerTo(fleche, 0.1, {opacity:0});
-	tlChangeOrientation.to(device, 1, {ease: Back.easeInOut.config(1.7), rotation:90, transformOrigin:"50% 50%"});
+	tlChangeOrientation.to(device, 1, {ease: Back.easeInOut.config(1.7), rotation:90, transformOrigin:"50% 50%"});*/
 }
 
 function loadImages(){
@@ -589,11 +589,11 @@ $(function(){
 				//TweenMax.to($(".detail-vehicule-zoom"), 0.5, {autoAlpha: 1});
 				TweenMax.to($(".detail-vehicule-zoom"), 0.3, {opacity: 1});
 				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
-				var indexCurrentSlide = $('.slider-for .slick-active.slick-current').index();
+				/*var indexCurrentSlide = $('.slider-for .slick-active.slick-current').index();
 				$('.slider-for-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
 				$('.slider-nav-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
 				$('.slider-for-zoom').get(0).slick.setPosition();
-				$('.slider-nav-zoom').get(0).slick.setPosition();
+				$('.slider-nav-zoom').get(0).slick.setPosition();*/
 				animChangeOrientation();
 			}
 		});
@@ -604,11 +604,11 @@ $(function(){
 				//TweenMax.to($(".detail-vehicule-zoom"), 0.5, {autoAlpha: 1});
 				TweenMax.to($(".detail-vehicule-zoom"), 0.3, {opacity: 1});
 				TweenMax.set($(".wrapper-top-zoom"), {className:"+=is-white"});
-				var indexCurrentSlide = $('.slider-for .slick-active.slick-current').index();
+				/*var indexCurrentSlide = $('.slider-for .slick-active.slick-current').index();
 				$('.slider-for-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
 				$('.slider-nav-zoom').get(0).slick.slickGoTo(indexCurrentSlide, false);
 				$('.slider-for-zoom').get(0).slick.setPosition();
-				$('.slider-nav-zoom').get(0).slick.setPosition();
+				$('.slider-nav-zoom').get(0).slick.setPosition();*/
 				animChangeOrientation();
 			}
 			return false;
