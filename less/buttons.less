@@ -801,16 +801,25 @@ a, div, span{
 			}
 		}
 		&.btn-fixed-height{
-			height: 54px;
-			display: table;
+			display: block;
 			.txt-btn-block-arrow, .txt-hover-btn-block-arrow{
 				padding: 0 10px;
 				display: table-cell;
 				vertical-align: middle;
 				line-height: 1em;
 				box-sizing: border-box;
+				width: 100%;
+			}
+			.wrapper-txt-btn-block-arrow{
+				height: 54px;
+				display: table;
+				table-layout: fixed;
+				transition: transform 0.2s ease-in-out;
+				width: 100%;
 			}
 			.wrapper-txt-hover-btn-block-arrow{
+				display: table;
+				table-layout: fixed;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -818,9 +827,8 @@ a, div, span{
 				transform: translateY(-100%);
 				transition: transform 0.2s ease-in-out;
 				box-sizing: border-box;
-				height: 100%;
+				height: 54px;
 				width: 100%;
-				display: table;
 				.txt-hover-btn-block-arrow{
 					position: relative;
 					transform: none;
@@ -833,6 +841,13 @@ a, div, span{
 				.wrapper-txt-hover-btn-block-arrow{
 					transform: translateY(0);
 				}
+				/*.txt-btn-block-arrow{
+					transform: translateY(0);
+				}
+				
+				.wrapper-txt-btn-block-arrow{
+					transform: translateY(100%);
+				}*/
 			}
 		}
 	}

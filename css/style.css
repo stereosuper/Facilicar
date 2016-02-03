@@ -3335,8 +3335,7 @@ span.btn-block.btn-block-arrow:hover.border-white:before {
 a.btn-block.btn-fixed-height,
 div.btn-block.btn-fixed-height,
 span.btn-block.btn-fixed-height {
-  height: 54px;
-  display: table;
+  display: block;
 }
 a.btn-block.btn-fixed-height .txt-btn-block-arrow,
 div.btn-block.btn-fixed-height .txt-btn-block-arrow,
@@ -3349,10 +3348,23 @@ span.btn-block.btn-fixed-height .txt-hover-btn-block-arrow {
   vertical-align: middle;
   line-height: 1em;
   box-sizing: border-box;
+  width: 100%;
+}
+a.btn-block.btn-fixed-height .wrapper-txt-btn-block-arrow,
+div.btn-block.btn-fixed-height .wrapper-txt-btn-block-arrow,
+span.btn-block.btn-fixed-height .wrapper-txt-btn-block-arrow {
+  height: 54px;
+  display: table;
+  table-layout: fixed;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
+  width: 100%;
 }
 a.btn-block.btn-fixed-height .wrapper-txt-hover-btn-block-arrow,
 div.btn-block.btn-fixed-height .wrapper-txt-hover-btn-block-arrow,
 span.btn-block.btn-fixed-height .wrapper-txt-hover-btn-block-arrow {
+  display: table;
+  table-layout: fixed;
   position: absolute;
   top: 0;
   left: 0;
@@ -3363,9 +3375,8 @@ span.btn-block.btn-fixed-height .wrapper-txt-hover-btn-block-arrow {
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
           transition: transform 0.2s ease-in-out;
   box-sizing: border-box;
-  height: 100%;
+  height: 54px;
   width: 100%;
-  display: table;
 }
 a.btn-block.btn-fixed-height .wrapper-txt-hover-btn-block-arrow .txt-hover-btn-block-arrow,
 div.btn-block.btn-fixed-height .wrapper-txt-hover-btn-block-arrow .txt-hover-btn-block-arrow,
@@ -3377,6 +3388,17 @@ span.btn-block.btn-fixed-height .wrapper-txt-hover-btn-block-arrow .txt-hover-bt
   box-sizing: border-box;
   padding: 0 10px;
   padding: 0 10px!important;
+}
+a.btn-block.btn-fixed-height:hover,
+div.btn-block.btn-fixed-height:hover,
+span.btn-block.btn-fixed-height:hover {
+  /*.txt-btn-block-arrow{
+					transform: translateY(0);
+				}
+				
+				.wrapper-txt-btn-block-arrow{
+					transform: translateY(100%);
+				}*/
 }
 a.btn-block.btn-fixed-height:hover .wrapper-txt-hover-btn-block-arrow,
 div.btn-block.btn-fixed-height:hover .wrapper-txt-hover-btn-block-arrow,
