@@ -468,7 +468,7 @@ $(function(){
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,
-			fade: true,
+			//fade: true,
 			asNavFor: '.slider-nav',
 			prevArrow: $('.prev-slider-for'),
 			nextArrow: $('.next-slider-for')
@@ -524,7 +524,7 @@ $(function(){
 			slidesToScroll: 1,
 			infinite: false,
 			arrows: true,
-			fade: true,
+			//fade: true,
 			infinite: true,
 			asNavFor: '.slider-nav-zoom',
 			prevArrow: $('.prev-slider-for-zoom'),
