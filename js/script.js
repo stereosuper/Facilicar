@@ -275,7 +275,7 @@ function setTabs(){
 				var selectedTab = selectedItem.data('content'),
 					selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
 					slectedContentHeight = selectedContent.innerHeight();
-
+				$('html, body').stop().animate( { scrollTop: tabItems.offset().top-150 }, 500 );
 				tabItems.find('a.is-selected').removeClass('is-selected');
 				selectedItem.addClass('is-selected');
 				selectedContent.addClass('is-selected').siblings('li').removeClass('is-selected');
