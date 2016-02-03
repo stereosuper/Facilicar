@@ -1262,13 +1262,16 @@ $(function(){
 		mapTypeControl: false,
 		center: { lat: 45.973759, lng: -4.661462},
 		zoom: 6,
+		
+
+			
 			styles: [
 			    {
 			        "featureType": "all",
 			        "elementType": "geometry.fill",
 			        "stylers": [
 			            {
-			                "color": "#92d0df"
+				                "color": "#dfdfdf"
 			            }
 			        ]
 			    },
@@ -1298,7 +1301,7 @@ $(function(){
 			        "elementType": "geometry.stroke",
 			        "stylers": [
 			            {
-			                "color": "#62a1b2"
+			                "color": "#e4e4e4"
 			            }
 			        ]
 			    },
@@ -1307,7 +1310,7 @@ $(function(){
 			        "elementType": "labels.text.fill",
 			        "stylers": [
 			            {
-			                "color": "#175461"
+			                "color": "#606060"
 			            }
 			        ]
 			    },
@@ -1316,7 +1319,7 @@ $(function(){
 			        "elementType": "labels.text.stroke",
 			        "stylers": [
 			            {
-			                "color": "#7bc6e9"
+			                "color": "#606060"
 			            },
 			            {
 			                "weight": "0.80"
@@ -1328,7 +1331,7 @@ $(function(){
 			        "elementType": "labels.text.fill",
 			        "stylers": [
 			            {
-			                "color": "#175667"
+			                "color": "#606060"
 			            }
 			        ]
 			    },
@@ -1337,7 +1340,7 @@ $(function(){
 			        "elementType": "labels.text.stroke",
 			        "stylers": [
 			            {
-			                "color": "#96d4e4"
+			                "color": "#606060"
 			            }
 			        ]
 			    },
@@ -1346,7 +1349,8 @@ $(function(){
 			        "elementType": "labels.text.fill",
 			        "stylers": [
 			            {
-			                "color": "#175667"
+			            	"display" : 'none',
+			                "color": "#606060"
 			            }
 			        ]
 			    },
@@ -1355,7 +1359,7 @@ $(function(){
 			        "elementType": "labels.text.stroke",
 			        "stylers": [
 			            {
-			                "color": "#96d4e4"
+			                "color": "#606060"
 			            }
 			        ]
 			    },
@@ -1364,7 +1368,7 @@ $(function(){
 			        "elementType": "labels.text.fill",
 			        "stylers": [
 			            {
-			                "color": "#175461"
+			                "color": "#606060"
 			            }
 			        ]
 			    },
@@ -1385,7 +1389,7 @@ $(function(){
 			        "elementType": "labels.icon",
 			        "stylers": [
 			            {
-			                "color": "#59b1e9"
+			                "color": "#e4e4e4"
 			            }
 			        ]
 			    },
@@ -1394,7 +1398,7 @@ $(function(){
 			        "elementType": "all",
 			        "stylers": [
 			            {
-			                "color": "#92d0df"
+			                "color": "#dfdfdf"
 			            }
 			        ]
 			    },
@@ -1415,7 +1419,7 @@ $(function(){
 			                "visibility": "on"
 			            },
 			            {
-			                "color": "#79c6b5"
+			                "color": "#dfdfdf"
 			            }
 			        ]
 			    },
@@ -1433,7 +1437,7 @@ $(function(){
 			        "elementType": "geometry.fill",
 			        "stylers": [
 			            {
-			                "color": "#989f52"
+			                "color": "#e4e4e4"
 			            },
 			            {
 			                "weight": "0.5"
@@ -1445,7 +1449,7 @@ $(function(){
 			        "elementType": "geometry.stroke",
 			        "stylers": [
 			            {
-			                "color": "#8d9b50"
+			                "color": "#e4e4e4"
 			            },
 			            {
 			                "gamma": "1.00"
@@ -1457,7 +1461,7 @@ $(function(){
 			        "elementType": "geometry.fill",
 			        "stylers": [
 			            {
-			                "color": "#ff0000"
+			                "color": "#e4e4e4"
 			            },
 			            {
 			                "visibility": "off"
@@ -1469,7 +1473,7 @@ $(function(){
 			        "elementType": "geometry.fill",
 			        "stylers": [
 			            {
-			                "color": "#99d8e9"
+			                "color": "#e4e4e4"
 			            }
 			        ]
 			    },
@@ -1478,7 +1482,7 @@ $(function(){
 			        "elementType": "geometry.stroke",
 			        "stylers": [
 			            {
-			                "color": "#7ebac5"
+			                "color": "#e4e4e4"
 			            }
 			        ]
 			    },
@@ -1487,7 +1491,7 @@ $(function(){
 			        "elementType": "geometry.fill",
 			        "stylers": [
 			            {
-			                "color": "#99d8e9"
+			                "color": "#e4e4e4"
 			            }
 			        ]
 			    },
@@ -1496,7 +1500,7 @@ $(function(){
 			        "elementType": "geometry.stroke",
 			        "stylers": [
 			            {
-			                "color": "#7bbabd"
+			                "color": "#e4e4e4"
 			            }
 			        ]
 			    },
@@ -1523,7 +1527,7 @@ $(function(){
 			                "gamma": "6.27"
 			            },
 			            {
-			                "color": "#70c3e9"
+			                "color": "#a1cbde"
 			            }
 			        ]
 			    }
