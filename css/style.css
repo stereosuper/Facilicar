@@ -5256,6 +5256,9 @@ a.btn-slider-citation:hover.btn-right span {
   box-sizing: border-box;
   border: 1px solid #fff;
 }
+.slick-slide:focus {
+  outline: none;
+}
 /* @end */
 /* @group Alert */
 .alert {
