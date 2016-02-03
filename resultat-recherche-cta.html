@@ -107,15 +107,18 @@
 
 		<section class="bg-white first-block">
 			<div class="container">
-				<ul class="breadcrumb">
-					<li>
-						<a href="#">Accueil</a>
+				<ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Accueil</span></a>
+						<meta itemprop="position" content="1" />
 					</li><!--
-					--><li>
-						<a href="#">Voitures d’occasion</a>
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Voitures d’occasion</span></a>
+						<meta itemprop="position" content="2" />
 					</li><!--
-					--><li>
-						Votre recherche
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<span itemprop="item"><span itemprop="name">Votre recherche</span></span>
+						<meta itemprop="position" content="3" />
 					</li>
 				</ul>
 			</div>

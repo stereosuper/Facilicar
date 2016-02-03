@@ -145,15 +145,18 @@
 		</header>
 		<section class="first-block">
 			<div class="container clearfix">
-				<ul class="breadcrumb is-left">
-					<li>
-						<a href="#">Accueil</a>
+				<ul class="breadcrumb is-left" itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Accueil</span></a>
+						<meta itemprop="position" content="1" />
 					</li><!--
-					--><li>
-						<a href="#">Voitures d’occasion</a>
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Voitures d’occasion</span></a>
+						<meta itemprop="position" content="2" />
 					</li><!--
-					--><li>
-						Votre recherche
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<span itemprop="item"><span itemprop="name">Votre recherche</span></span>
+						<meta itemprop="position" content="3" />
 					</li>
 				</ul>
 				<a href="#" id="btn-retour-recherche" class="btn-arrow-top big color-secondary is-right">Retour à votre recherche</a>
@@ -444,7 +447,7 @@
 		</section>
 		<section class="bg-white">
 			<div class="container">
-				<div class="wrapper-car-detail">
+				<div class="wrapper-car-detail" itemscope="" itemtype="http://schema.org/Product">
 					<div class="top-car-detail">
 						<div class="wrapper-slider-car-detail">
 							<div class="wrapper-current-slide">
@@ -745,9 +748,9 @@
 									</div>
 								</li><!--
 								--><li>
-									<div class="wrapper-prix-detail">
-										<div class="prix-financement txt-right-aligned">
-											16 880<span class="acronym">€</span>
+									<div class="wrapper-prix-detail" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+										<div class="prix-financement txt-right-aligned" itemprop="price" content="16880">
+											16 880<span class="acronym" itemprop="priceCurrency" content="EUR">€</span>
 										</div><!--
 										--><div class="prix-moyen-eco">
 											<div class="wrapper-align-middle">

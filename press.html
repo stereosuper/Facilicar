@@ -115,15 +115,18 @@
 
 		<section class="bg-white">
 			<div class="container">
-				<ul class="breadcrumb">
-					<li>
-						<a href="#">Accueil</a>
+				<ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Accueil</span></a>
+						<meta itemprop="position" content="1" />
 					</li><!--
-					--><li>
-						<a href="#">Communication</a>
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Communication</span></a>
+						<meta itemprop="position" content="2" />
 					</li><!--
-					--><li>
-						Presse
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<span itemprop="item"><span itemprop="name">Presse</span></span>
+						<meta itemprop="position" content="3" />
 					</li>
 				</ul>
 			</div>

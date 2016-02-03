@@ -145,15 +145,18 @@
 		</header>
 		<section class="first-block">
 			<div class="container clearfix">
-				<ul class="breadcrumb is-left">
-					<li>
-						<a href="#">Accueil</a>
+				<ul class="breadcrumb is-left" itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Accueil</span></a>
+						<meta itemprop="position" content="1" />
 					</li><!--
-					--><li>
-						<a href="#">Voitures d’occasion</a>
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a href="#" itemprop="item"><span itemprop="name">Voitures d’occasion</span></a>
+						<meta itemprop="position" content="2" />
 					</li><!--
-					--><li>
-						Votre recherche
+					--><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<span itemprop="item"><span itemprop="name">Votre recherche</span></span>
+						<meta itemprop="position" content="3" />
 					</li>
 				</ul>
 				<a href="#" id="btn-retour-recherche" class="btn-arrow-top big color-secondary is-right">Retour à votre recherche</a>
@@ -444,7 +447,7 @@
 		</section>
 		<section class="bg-white">
 			<div class="container">
-				<div class="wrapper-car-detail">
+				<div class="wrapper-car-detail" itemscope="" itemtype="http://schema.org/Product">
 					<div class="top-car-detail">
 						<div class="wrapper-slider-car-detail">
 							<div class="wrapper-current-slide">
@@ -745,9 +748,9 @@
 									</div>
 								</li><!--
 								--><li>
-									<div class="wrapper-prix-detail">
-										<div class="prix-financement txt-right-aligned">
-											16 880<span class="acronym">€</span>
+									<div class="wrapper-prix-detail" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+										<div class="prix-financement txt-right-aligned" itemprop="price" content="16880">
+											16 880<span class="acronym" itemprop="priceCurrency" content="EUR">€</span>
 										</div><!--
 										--><div class="prix-moyen-eco">
 											<div class="wrapper-align-middle">
@@ -1641,21 +1644,21 @@
 					<li>
 						<h5 class="title-underline no-margin">Vous aimerez aussi</h5>
 						<ul class="list-cars list-cars-third list-cars-small">
-							<li itemscope="" itemtype="http://schema.org/Product">
+							<li>
 								<a href="#" class="wrapper-car">
 									<span class="bandeau-image-car">
 										<ul>
 											<li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready is-active" style="transform: matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-2.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-2.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-2.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-3.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-3.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-3.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-4.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-4.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-4.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-5.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-5.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-5.jpg" style="display: none;">
 											</li>
 										</ul>
 									</span>
@@ -1665,9 +1668,9 @@
 											<span class="encadre">2012</span>
 										</span><!--
 										--><span class="car-km car-block">103 054 Km</span><!--
-										--><span class="motor-color car-block">DIESEL • <span itemprop="color">GRIS</span></span>
-										<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope="">VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
-										<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
+										--><span class="motor-color car-block">DIESEL • <span>GRIS</span></span>
+										<span class="car-name car-block"><strong  >VOLKWAGEN</strong> <span >SERIE 5 TOURING (F11)</span></span>
+										<span class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 										<span class="car-options">
 											<span class="zone-picto icon-gps tooltipstered"></span>
 											<span class="zone-picto icon-clim tooltipstered"></span>
@@ -1682,7 +1685,7 @@
 									</span>
 									<span class="fond-bandeau-car bandeau-bottom"></span>
 									<span class="bandeau-car bandeau-bottom">
-										<span itemprop="price" class="car-price car-block">16 880 <span class="acronym">€</span></span>
+										<span class="car-price car-block">16 880 <span class="acronym">€</span></span>
 										<span class="car-old-price car-block is-hidden"><span class="line-through">19 100</span> €</span>
 										<span class="car-price-saving car-block is-hidden"><span class="saving-percentage">-12%</span><span class="saving-txt"> vous économisez <strong>2200 €</strong></span></span>
 										<span class="car-block car-zone-btn">
@@ -1701,16 +1704,16 @@
 									<span class="bandeau-image-car">
 										<ul>
 											<li class="imgLiquidFill is-active imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-2.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-2.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-2.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-3.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-3.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-3.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-4.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-4.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-4.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-5.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-5.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-5.jpg" style="display: none;">
 											</li>
 										</ul>
 									</span>
@@ -1720,9 +1723,9 @@
 											<span class="encadre">2012</span>
 										</span><!--
 										--><span class="car-km car-block">103 054 Km</span><!--
-										--><span class="motor-color car-block">DIESEL • <span itemprop="color">GRIS</span></span>
-										<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope="">VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
-										<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
+										--><span class="motor-color car-block">DIESEL • <span>GRIS</span></span>
+										<span class="car-name car-block"><strong>VOLKWAGEN</strong> <span>SERIE 5 TOURING (F11)</span></span>
+										<span class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 										<span class="car-options">
 											<span class="zone-picto icon-gps tooltipstered"></span>
 											<span class="zone-picto icon-clim tooltipstered"></span>
@@ -1737,7 +1740,7 @@
 									</span>
 									<span class="fond-bandeau-car bandeau-bottom"></span>
 									<span class="bandeau-car bandeau-bottom">
-										<span itemprop="price" class="car-price car-block">16 880 <span class="acronym">€</span></span>
+										<span class="car-price car-block">16 880 <span class="acronym">€</span></span>
 										<span class="car-price-saving car-block is-hidden"><span class="saving-percentage">-12%</span><span class="saving-txt"> vous économisez <strong>2200 €</strong></span></span>
 										<span class="car-block car-zone-btn">
 											<span class="car-btn-wishlist">
@@ -1755,16 +1758,16 @@
 									<span class="bandeau-image-car">
 										<ul>
 											<li class="imgLiquidFill is-active imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-2.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-2.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-2.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-3.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-3.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-3.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-4.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-4.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-4.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-5.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-5.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-5.jpg" style="display: none;">
 											</li>
 										</ul>
 									</span>
@@ -1774,9 +1777,9 @@
 											<span class="encadre">2012</span>
 										</span><!--
 										--><span class="car-km car-block">103 054 Km</span><!--
-										--><span class="motor-color car-block">DIESEL • <span itemprop="color">GRIS</span></span>
-										<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope="">VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
-										<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
+										--><span class="motor-color car-block">DIESEL • <span>GRIS</span></span>
+										<span class="car-name car-block"><strong>VOLKWAGEN</strong> <span>SERIE 5 TOURING (F11)</span></span>
+										<span class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 										<span class="car-options">
 											<span class="zone-picto icon-gps tooltipstered"></span>
 											<span class="zone-picto icon-clim tooltipstered"></span>
@@ -1791,7 +1794,7 @@
 									</span>
 									<span class="fond-bandeau-car bandeau-bottom"></span>
 									<span class="bandeau-car bandeau-bottom">
-										<span itemprop="price" class="car-price car-block">16 880 <span class="acronym">€</span></span>
+										<span class="car-price car-block">16 880 <span class="acronym">€</span></span>
 										<span class="car-price-saving car-block is-hidden"><span class="saving-percentage">-12%</span><span class="saving-txt"> vous économisez <strong>2200 €</strong></span></span>
 										<span class="car-block car-zone-btn">
 											<span class="car-btn-wishlist">
@@ -1810,21 +1813,21 @@
 					--><li>
 						<h5 class="title-underline no-margin">Derniers véhicules consultés</h5>
 						<ul class="list-cars list-cars-third list-cars-small">
-							<li itemscope="" itemtype="http://schema.org/Product">
+							<li>
 								<a href="#" class="wrapper-car">
 									<span class="bandeau-image-car">
 										<ul>
 											<li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready is-active" style="transform: matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-2.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-2.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-2.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-3.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-3.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-3.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-4.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-4.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-4.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0); background-image: url(&quot;img/cars/citroen-ds5-5.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-5.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-5.jpg" style="display: none;">
 											</li>
 										</ul>
 									</span>
@@ -1834,9 +1837,9 @@
 											<span class="encadre">2012</span>
 										</span><!--
 										--><span class="car-km car-block">103 054 Km</span><!--
-										--><span class="motor-color car-block">DIESEL • <span itemprop="color">GRIS</span></span>
-										<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope="">VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
-										<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
+										--><span class="motor-color car-block">DIESEL • <span>GRIS</span></span>
+										<span class="car-name car-block"><strong  >VOLKWAGEN</strong> <span >SERIE 5 TOURING (F11)</span></span>
+										<span class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 										<span class="car-options">
 											<span class="zone-picto icon-gps tooltipstered"></span>
 											<span class="zone-picto icon-clim tooltipstered"></span>
@@ -1851,7 +1854,8 @@
 									</span>
 									<span class="fond-bandeau-car bandeau-bottom"></span>
 									<span class="bandeau-car bandeau-bottom">
-										<span itemprop="price" class="car-price car-block">16 880 <span class="acronym">€</span></span>
+										<span class="car-price car-block">16 880 <span class="acronym">€</span></span>
+										<span class="car-old-price car-block is-hidden"><span class="line-through">19 100</span> €</span>
 										<span class="car-price-saving car-block is-hidden"><span class="saving-percentage">-12%</span><span class="saving-txt"> vous économisez <strong>2200 €</strong></span></span>
 										<span class="car-block car-zone-btn">
 											<span class="car-btn-wishlist">
@@ -1869,16 +1873,16 @@
 									<span class="bandeau-image-car">
 										<ul>
 											<li class="imgLiquidFill is-active imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-2.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-2.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-2.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-3.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-3.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-3.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-4.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-4.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-4.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-5.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-5.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-5.jpg" style="display: none;">
 											</li>
 										</ul>
 									</span>
@@ -1888,9 +1892,9 @@
 											<span class="encadre">2012</span>
 										</span><!--
 										--><span class="car-km car-block">103 054 Km</span><!--
-										--><span class="motor-color car-block">DIESEL • <span itemprop="color">GRIS</span></span>
-										<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope="">VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
-										<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
+										--><span class="motor-color car-block">DIESEL • <span>GRIS</span></span>
+										<span class="car-name car-block"><strong>VOLKWAGEN</strong> <span>SERIE 5 TOURING (F11)</span></span>
+										<span class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 										<span class="car-options">
 											<span class="zone-picto icon-gps tooltipstered"></span>
 											<span class="zone-picto icon-clim tooltipstered"></span>
@@ -1905,7 +1909,7 @@
 									</span>
 									<span class="fond-bandeau-car bandeau-bottom"></span>
 									<span class="bandeau-car bandeau-bottom">
-										<span itemprop="price" class="car-price car-block">16 880 <span class="acronym">€</span></span>
+										<span class="car-price car-block">16 880 <span class="acronym">€</span></span>
 										<span class="car-price-saving car-block is-hidden"><span class="saving-percentage">-12%</span><span class="saving-txt"> vous économisez <strong>2200 €</strong></span></span>
 										<span class="car-block car-zone-btn">
 											<span class="car-btn-wishlist">
@@ -1923,16 +1927,16 @@
 									<span class="bandeau-image-car">
 										<ul>
 											<li class="imgLiquidFill is-active imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-2.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-2.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-2.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-3.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-3.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-3.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-4.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-4.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-4.jpg" style="display: none;">
 											</li><!--
 											--><li class="imgLiquidFill imgLiquid_bgSize imgLiquid_ready" style="background-image: url(&quot;img/cars/citroen-ds5-5.jpg&quot;); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;">
-												<img itemprop="image" src="img/cars/citroen-ds5-5.jpg" style="display: none;">
+												<img src="img/cars/citroen-ds5-5.jpg" style="display: none;">
 											</li>
 										</ul>
 									</span>
@@ -1942,9 +1946,9 @@
 											<span class="encadre">2012</span>
 										</span><!--
 										--><span class="car-km car-block">103 054 Km</span><!--
-										--><span class="motor-color car-block">DIESEL • <span itemprop="color">GRIS</span></span>
-										<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope="">VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
-										<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
+										--><span class="motor-color car-block">DIESEL • <span>GRIS</span></span>
+										<span class="car-name car-block"><strong>VOLKWAGEN</strong> <span>SERIE 5 TOURING (F11)</span></span>
+										<span class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 										<span class="car-options">
 											<span class="zone-picto icon-gps tooltipstered"></span>
 											<span class="zone-picto icon-clim tooltipstered"></span>
@@ -1959,7 +1963,7 @@
 									</span>
 									<span class="fond-bandeau-car bandeau-bottom"></span>
 									<span class="bandeau-car bandeau-bottom">
-										<span itemprop="price" class="car-price car-block">16 880 <span class="acronym">€</span></span>
+										<span class="car-price car-block">16 880 <span class="acronym">€</span></span>
 										<span class="car-price-saving car-block is-hidden"><span class="saving-percentage">-12%</span><span class="saving-txt"> vous économisez <strong>2200 €</strong></span></span>
 										<span class="car-block car-zone-btn">
 											<span class="car-btn-wishlist">
