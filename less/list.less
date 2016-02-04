@@ -234,9 +234,15 @@
 				.fond-bandeau-car{
 					&.bandeau-top{
 						transform: translateY(-21px) translateZ(1px);
+						.no-csstransforms3d &{
+							margin-top: -21px;
+						}
 					}
 					&.bandeau-bottom{
 						transform: translateY(40px) translateZ(1px);
+						.no-csstransforms3d &{
+							margin-bottom: -40px;
+						}
 					}
 				}
 				.car-year{
@@ -244,6 +250,9 @@
 				}
 				.car-km{
 					transform: translateY(-24px) translateZ(1px);
+					.no-csstransforms3d &{
+						margin-top: -24px;
+					}
 				}
 				.motor-color{
 					opacity: 0;
@@ -259,6 +268,9 @@
 				}
 				.car-price{
 					transform: translateY(53px) translateZ(1px);
+					.no-csstransforms3d &{
+						margin-bottom: -53px;
+					}
 				}
 				.car-price-saving{
 					opacity: 0;
@@ -269,6 +281,9 @@
 				}
 				.car-label{
 					transform: translateY(0);
+					.no-csstransforms3d &{
+						margin-bottom: 0px;
+					}
 				}
 			}
 		}
@@ -276,6 +291,9 @@
 			&.bandeau-top{
 				height: 84px;
 				transform: translateY(-21px) translateZ(1px);
+				.no-csstransforms3d &{
+					margin-top: -21px;
+				}
 			}
 			&.bandeau-bottom{
 				height: 100px;
@@ -307,6 +325,9 @@
 			.texta-light(0.75em);
 			top: 64px;
 			transform: translateY(-24px) translateZ(1px);
+			.no-csstransforms3d &{
+				margin-top: -24px;
+			}
 		}
 		.car-old-price{
 			display: none;
@@ -315,6 +336,9 @@
 			.texta-light(1.313em);
 			bottom: 74px;
 			transform: translateY(53px) translateZ(1px);
+			.no-csstransforms3d &{
+				margin-bottom: -53px;
+			}
 		}
 		.car-labels{
 			bottom: 60px;

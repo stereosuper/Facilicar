@@ -3675,9 +3675,15 @@ a:focus {
   -webkit-transform: translateY(-21px) translateZ(1px);
           transform: translateY(-21px) translateZ(1px);
 }
+.no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-top {
+  margin-top: -21px;
+}
 .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: translateY(40px) translateZ(1px);
           transform: translateY(40px) translateZ(1px);
+}
+.no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+  margin-bottom: -40px;
 }
 .list-cars.list-cars-small .wrapper-car:hover .car-year {
   -webkit-transform: translateY(5px) translateZ(1px);
@@ -3686,6 +3692,9 @@ a:focus {
 .list-cars.list-cars-small .wrapper-car:hover .car-km {
   -webkit-transform: translateY(-24px) translateZ(1px);
           transform: translateY(-24px) translateZ(1px);
+}
+.no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .car-km {
+  margin-top: -24px;
 }
 .list-cars.list-cars-small .wrapper-car:hover .motor-color {
   opacity: 0;
@@ -3704,6 +3713,9 @@ a:focus {
   -webkit-transform: translateY(53px) translateZ(1px);
           transform: translateY(53px) translateZ(1px);
 }
+.no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .car-price {
+  margin-bottom: -53px;
+}
 .list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
   opacity: 0;
   -webkit-transform: translateY(45px) translateZ(1px);
@@ -3717,10 +3729,16 @@ a:focus {
       -ms-transform: translateY(0);
           transform: translateY(0);
 }
+.no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .car-label {
+  margin-bottom: 0px;
+}
 .list-cars.list-cars-small .fond-bandeau-car.bandeau-top {
   height: 84px;
   -webkit-transform: translateY(-21px) translateZ(1px);
           transform: translateY(-21px) translateZ(1px);
+}
+.no-csstransforms3d .list-cars.list-cars-small .fond-bandeau-car.bandeau-top {
+  margin-top: -21px;
 }
 .list-cars.list-cars-small .fond-bandeau-car.bandeau-bottom {
   height: 100px;
@@ -3761,6 +3779,9 @@ a:focus {
   -webkit-transform: translateY(-24px) translateZ(1px);
           transform: translateY(-24px) translateZ(1px);
 }
+.no-csstransforms3d .list-cars.list-cars-small .car-km {
+  margin-top: -24px;
+}
 .list-cars.list-cars-small .car-old-price {
   display: none;
 }
@@ -3770,6 +3791,9 @@ a:focus {
   bottom: 74px;
   -webkit-transform: translateY(53px) translateZ(1px);
           transform: translateY(53px) translateZ(1px);
+}
+.no-csstransforms3d .list-cars.list-cars-small .car-price {
+  margin-bottom: -53px;
 }
 .list-cars.list-cars-small .car-labels {
   bottom: 60px;
@@ -6191,7 +6215,7 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: translateY(0px) translateZ(1px);
@@ -6249,7 +6273,7 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  margin-bottom: 0;
+  margin-top: 0;
 }
 .wrapper-car:hover .car-price {
   -webkit-transform: translateY(0px) translateZ(1px);
@@ -6385,7 +6409,7 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  margin-bottom: 40px;
+  margin-top: -40px;
 }
 .fond-bandeau-car.bandeau-bottom {
   bottom: 0;
@@ -6705,7 +6729,7 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
-  margin-bottom: 32px;
+  margin-top: -36px;
 }
 .car-old-price {
   bottom: 111px;
