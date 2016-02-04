@@ -457,6 +457,14 @@ $(function(){
 
 	// Slider detail
 	if($("body").hasClass("slider-detail")){
+		// Sur les petites résolutions, on charge les photos du zoom en petite def
+		if(isMobile.tablet || isMobile.phone){
+			if($(window).width()<1100){
+				$(".slider-for-zoom .slide img").each(function(index){
+					$(this).attr("src", $(this).prop("src").replace("diapo/", "diapo/small/"));
+				});
+			}
+		}
 		var status = $('.paging-info');
 		var slickElement = $('.slider-for');
 		slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
