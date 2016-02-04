@@ -4196,35 +4196,37 @@ textarea.input-round {
   padding: 8px 12px;
 }
 input[type="date"] {
-  max-width: 150px;
+  max-width: 188px;
   cursor: text;
 }
-input::-webkit-inner-spin-button,
-input::-webkit-calendar-picker-indicator,
-input::-webkit-clear-button {
-  display: none;
-  -webkit-appearance: none;
+/*input{
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-clear-button{
+        display: none;
+        -webkit-appearance: none;
+    }
 }
+
 ::-webkit-input-placeholder {
-  font-family: 'Texta-LightIt', sans-serif;
-  font-size: 1em;
-  color: #B0B0A8;
+ 	.texta-light-italic(1em);
+ 	color: #B0B0A8;
 }
+
 :-moz-placeholder {
-  font-family: 'Texta-LightIt', sans-serif;
-  font-size: 1em;
-  color: #B0B0A8;
+	.texta-light-italic(1em);
+	color: #B0B0A8;
 }
+
 ::-moz-placeholder {
-  font-family: 'Texta-LightIt', sans-serif;
-  font-size: 1em;
-  color: #B0B0A8;
+	.texta-light-italic(1em);
+	color: #B0B0A8;
 }
-:-ms-input-placeholder {
-  font-family: 'Texta-LightIt', sans-serif;
-  font-size: 1em;
-  color: #B0B0A8;
-}
+
+:-ms-input-placeholder {  
+	.texta-light-italic(1em);
+	color: #B0B0A8;
+}*/
 button {
   -webkit-appearance: none;
   appearance: none;
@@ -5384,6 +5386,8 @@ a.btn-slider-citation:hover.btn-right span {
   margin: auto;
   background: #fff;
   overflow: auto;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .popup.big {
   width: 960px;
