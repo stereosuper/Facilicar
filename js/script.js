@@ -103,13 +103,20 @@ function scrollPage(){
 			$('.navbar li.has-content a').each(function () {
 				var currentLink = $(this);
 				var refElement = $(currentLink.attr("href"));
-				//-$(".wrapper-navbar").offset().top
-				//-$("#header").outerHeight()
+				var firstLink = $('.navbar li.has-content a').first();
+				var refFirstElement = $(firstLink.attr("href"));
+				var lastLink = $('.navbar li.has-content a').last();
+				var refLastElement = $(lastLink.attr("href"));
+				
 				if ((refElement.offset().top <= scrollPosition+20+$("#header").outerHeight()) && (refElement.offset().top + refElement.height() > scrollPosition+20+$("#header").outerHeight())) {
 					$('.navbar li.has-content').removeClass("active");
 					currentLink.parents("li").addClass("active");
-				}else{
-					currentLink.parents("li").removeClass("active");
+				}else if(scrollPosition<refFirstElement.offset().top){
+					$('.navbar li.has-content').removeClass("active");
+					$('.navbar li.has-content').first().addClass("active");
+				}else if(scrollPosition>(refLastElement.offset().top+refLastElement.height())){
+					$('.navbar li.has-content').removeClass("active");
+					$('.navbar li.has-content').last().addClass("active");
 				}
 			});
 		}else if(viewport().width>mobileBreakpoint){
@@ -117,11 +124,20 @@ function scrollPage(){
 			$('.navbar li.has-content a').each(function () {
 				var currentLink = $(this);
 				var refElement = $(currentLink.attr("href"));
+				var firstLink = $('.navbar li.has-content a').first();
+				var refFirstElement = $(firstLink.attr("href"));
+				var lastLink = $('.navbar li.has-content a').last();
+				var refLastElement = $(lastLink.attr("href"));
+				
 				if (refElement.offset().top <= scrollPosition+20 && refElement.offset().top + refElement.height() > scrollPosition+20) {
 					$('.navbar li.has-content').removeClass("active");
 					currentLink.parents("li").addClass("active");
-				}else{
-					currentLink.parents("li").removeClass("active");
+				}else if(scrollPosition<refFirstElement.offset().top){
+					$('.navbar li.has-content').removeClass("active");
+					$('.navbar li.has-content').first().addClass("active");
+				}else if(scrollPosition>(refLastElement.offset().top+refLastElement.height())){
+					$('.navbar li.has-content').removeClass("active");
+					$('.navbar li.has-content').last().addClass("active");
 				}
 			});
 		}else{
