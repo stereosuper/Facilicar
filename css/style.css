@@ -11112,6 +11112,9 @@ a.btn-slider-citation:hover.btn-right span {
   .list-cars.is-list > li {
     margin-bottom: 8px;
   }
+  .list-cars.list-cars-small > li {
+    height: 222px;
+  }
   .list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
     opacity: 1;
     -webkit-transform: translateY(0px) translateZ(1px);
@@ -11120,14 +11123,17 @@ a.btn-slider-citation:hover.btn-right span {
   .list-cars.list-cars-small .wrapper-car:hover .motor-color {
     opacity: 1;
   }
+  .list-cars.list-cars-small .wrapper-car:hover .car-old-price {
+    display: block;
+  }
   .list-cars.list-cars-small .car-name {
     top: 7px;
   }
   .list-cars.list-cars-small .car-km {
-    top: 60px;
+    top: 54px;
   }
   .list-cars.list-cars-small .motor-color {
-    top: 37px;
+    top: 31px;
   }
   .list-cars.list-cars-small .car-price-saving {
     bottom: 21px;
@@ -11137,13 +11143,34 @@ a.btn-slider-citation:hover.btn-right span {
   .list-cars.list-cars-small .car-old-price {
     bottom: 32px;
     left: 70px;
+    display: block;
+    font-size: 0.9em;
   }
   .list-cars.list-cars-small .car-price {
-    bottom: 62px;
+    bottom: 64px;
     left: 70px;
   }
   .list-cars.list-cars-small .car-labels {
     bottom: 52px;
+  }
+  .list-cars.list-cars-small .bandeau-image-car {
+    height: 106px;
+    top: 54px;
+  }
+  .list-cars.list-cars-small .bandeau-car.bandeau-top {
+    height: 54px;
+  }
+  .list-cars.list-cars-small .fond-bandeau-car.bandeau-top {
+    height: 54px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
+  .list-cars.list-cars-small .fond-bandeau-car.bandeau-bottom {
+    height: 60px;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
   .bandeau-image-car {
     height: 158px;

@@ -1150,6 +1150,9 @@
             }
         }
         &.list-cars-small{
+            >li{
+                height: 222px;
+            }
             .wrapper-car{
                 &:hover{
                     .car-price-saving{
@@ -1159,16 +1162,19 @@
                     .motor-color{
                         opacity: 1;
                     }
+                    .car-old-price{
+                        display: block;
+                    }
                 }
             }
             .car-name{
                 top: 7px;
             }
             .car-km{
-                top: 60px;
+                top: 54px;
             }
             .motor-color{
-                top: 37px;
+                top: 31px;
             }
             .car-price-saving{
                 bottom: 21px;
@@ -1178,13 +1184,34 @@
             .car-old-price{
                 bottom: 32px;
                 left: 70px;
+                display: block;
+                font-size: 0.9em;
             }
             .car-price{
-                bottom: 62px;
+                bottom: 64px;
                 left: 70px;
             }
             .car-labels{
                 bottom: 52px;
+            }
+            .bandeau-image-car{
+                height: 106px;
+                top: 54px;
+            }
+            .bandeau-car{
+                &.bandeau-top{
+                    height: 54px;
+                }
+            }
+            .fond-bandeau-car{
+                &.bandeau-top{
+                    height: 54px;
+                    transform: none;
+                }
+                &.bandeau-bottom{
+                    height: 60px;
+                    transform: none;
+                }
             }
         }
     }
