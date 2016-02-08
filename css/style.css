@@ -10182,6 +10182,11 @@ a.btn-slider-citation:hover.btn-right span {
   .wrapper-top-zoom .content-btn-zoom {
     width: 264px;
   }
+  .wrapper-top-zoom a.btn-tel,
+  .wrapper-top-zoom div.btn-tel,
+  .wrapper-top-zoom span.btn-tel {
+    font-size: 0.95em;
+  }
   /* @end */
   /* @group Zoom */
   .wrapper-top-zoom.is-white .content-details-zoom {
