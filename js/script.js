@@ -708,12 +708,14 @@ $(function(){
 			TweenMax.set($(".wrapper-popup"), {className:"-=open"});
 			TweenMax.set(selectedPopup, {className:"+=open"});
 		}
+		TweenMax.set($("html"), {className:"+=popup-open"});
 		return false;
 	});
 
 	// Clic sur le bouton pour fermer le popup
 	$("a.btn-close-popup").click(function(){
 		$(this).parents(".wrapper-popup").removeClass("open");
+		TweenMax.set($("html"), {className:"-=popup-open"});
 		return false;
 	});
 
@@ -1274,6 +1276,7 @@ $(function(){
 
 	// Google map
 	if($("body").hasClass("has-map")){
+		var bounds = new google.maps.LatLngBounds();
 		var mapOptions = {
 		scrollwheel: false,
 		navigationControl: false,
@@ -1643,7 +1646,7 @@ $(function(){
 				icon: imageAgenceReprise
 			});
 		}
-
+		bounds.extend(marker.position);
 		google.maps.event.addListener(marker, 'click', (function(marker, i) {
 			return function() {
 			  infowindow.setContent(locations[i][0]);
@@ -1651,6 +1654,10 @@ $(function(){
 			}
 		})(marker, i));
 	}
+	map.fitBounds(bounds);
+	console.log($(window).width()/5);
+	var decalage = $(window).width()/5;
+	map.panBy(-decalage,0);
 	}
 
 	// Hover des boutons pour passer d'un véhicule à un autre

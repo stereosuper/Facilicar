@@ -45,6 +45,17 @@ textarea {
 
 /* @group Global */
 
+html{
+    &.popup-open{
+        overflow-x: hidden;
+        height: 100%;
+        body{
+            overflow-x: hidden;
+            height: 100%;
+        }
+    }
+}
+
 body{
     width: 100%;
 	.texta(1em);

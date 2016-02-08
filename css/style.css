@@ -387,6 +387,14 @@ textarea {
 }
 /* @end */
 /* @group Global */
+html.popup-open {
+  overflow-x: hidden;
+  height: 100%;
+}
+html.popup-open body {
+  overflow-x: hidden;
+  height: 100%;
+}
 body {
   width: 100%;
   font-family: 'Texta-Regular', sans-serif;
