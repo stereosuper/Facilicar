@@ -702,6 +702,10 @@ $(function(){
 
 	// Ouverture popup
 	$(".has-popup").click(function(){
+		if($(this).prop("id")=="btn-essai-commande-zoom"){
+			TweenMax.set($(".detail-vehicule-zoom"), {className:"-=open"});
+			TweenMax.set($(".wrapper-top-zoom"), {className:"-=is-white"});
+		}
 		var contentDataPopup = $(this).data('ref-popup');
 		var selectedPopup = $(".wrapper-popup[data-popup='"+contentDataPopup+"']");
 		if(!selectedPopup.hasClass("open")){

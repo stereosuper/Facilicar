@@ -389,10 +389,12 @@ textarea {
 /* @group Global */
 html.popup-open {
   overflow-x: hidden;
+  overflow-x: hidden!important;
   height: 100%;
 }
 html.popup-open body {
   overflow-x: hidden;
+  overflow-x: hidden!important;
   height: 100%;
 }
 body {
