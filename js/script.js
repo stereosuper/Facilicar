@@ -1054,14 +1054,24 @@ $(function(){
 		}
 	}
 
+	function enableBtnFilter(){
+		$("#button-filter.open .zone-right-btn.disabled").removeClass("disabled");
+	}
+
 	// Clics sur les filters
 	$(".select-type-car > li a").click(function(){
+		if(!$(this).parents("li").hasClass("is-selected")){
+			enableBtnFilter();
+		}
 		$(".select-type-car  >li.is-selected").removeClass("is-selected");
 		$(this).parents("li").first().toggleClass("is-selected");
 		return false;
 	});
 
 	$(".select-option-car > li a").click(function(){
+		if(!$(this).parents("li").hasClass("is-selected")){
+			enableBtnFilter();
+		}
 		$(this).parents("li").toggleClass("is-selected");
 		return false;
 	});
@@ -1103,6 +1113,10 @@ $(function(){
 	$(".zone-right-btn").click(function(){
 		if((!$(this).hasClass("disabled"))&&($(this).parents(".btn-filter").hasClass("open"))){
 			console.log("on filtre !");
+			$(this).addClass("disabled");
+			var parent = $(this).parents(".btn-filter");
+			$(this).parents(".btn-filter").removeClass("open");
+			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
 		}else if(!$(this).parents(".btn-filter").hasClass("open")){
 			$(this).parents(".btn-filter").addClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
@@ -1186,9 +1200,14 @@ $(function(){
 
 	// Clic sur un choix du select custom
 	$(".select-options ul li").click(function(){
+		if(!$(this).hasClass("is-selected") && $("body").hasClass("resultat-recherche")){
+			enableBtnFilter();
+		}
+
 		var sOptionsParent = $(this).parents(".select-options");
 		$("li.is-selected", sOptionsParent).removeClass("is-selected");
 		$(this).addClass("is-selected");
+
 		// maj du réel select
 		/*var sSkinParent = $(this).parents(".select-skin");
 		var indexSelectCustom = $(this).index();
@@ -1234,7 +1253,10 @@ $(function(){
 		        $('#min').appendTo($('#filter-prix .ui-slider-handle').get(0));
 		        $('#max').appendTo($('#filter-prix .ui-slider-handle').get(1));
 		    },
-		    slide: function(event, ui) { $(ui.handle).find('span').html(ui.value+" €"); }
+		    slide: function(event, ui) {
+		    	enableBtnFilter();
+		    	$(ui.handle).find('span').html(ui.value+" €"); 
+		    }
 		}
 		$("#filter-prix").slider(optionsFilterPrix);
 
@@ -1255,6 +1277,7 @@ $(function(){
 
 		// Effacer tous les critères
 		$("#btn-remove-criteria").click(function(){
+			enableBtnFilter();
 			$(".select-type-car li.is-selected").removeClass("is-selected");
 			$(".select-option-car li.is-selected").removeClass("is-selected");
 			$('#boite-auto').prop('selectedIndex',0);
@@ -1276,10 +1299,16 @@ $(function(){
 		}
 	}
 
+	$("#boite-auto").change(function(){
+		enableBtnFilter();
+	});
+
 	$(".select-options ul li").click(function(){
 		var sOptionsParent = $(this).parents(".select-options");
 		$("li.is-selected", sOptionsParent).removeClass("is-selected");
 		$(this).addClass("is-selected");
+
+
 		// maj du réel select
 		/*var sSkinParent = $(this).parents(".select-skin");
 		var indexSelectCustom = $(this).index();
