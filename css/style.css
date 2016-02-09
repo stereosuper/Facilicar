@@ -10989,6 +10989,8 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .list-choose {
     opacity: 1;
+    display: inline-block;
+    vertical-align: top;
   }
   .content-txt-choose {
     opacity: 1;
@@ -12491,6 +12493,7 @@ a.btn-slider-citation:hover.btn-right span {
         -ms-transform: none;
             transform: none;
     opacity: 1;
+    text-align: right;
   }
   .wrapper-zone-choose.wrapper-zone-right-choose .list-choose > li:before {
     color: #009cc4;

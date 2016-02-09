@@ -1027,6 +1027,8 @@
     }
     .list-choose{
         opacity: 1;
+        display: inline-block;
+        vertical-align: top;
     }
     .content-txt-choose{
         opacity: 1;
@@ -1120,10 +1122,8 @@
                 transition: opacity 0.2s ease-in-out;
             }
             .list-choose{
-                //text-align: right;
                 >li{
                     &:before{
-                        //display: none;
                         color: @theme-primary;
                     }
                 }
@@ -2577,6 +2577,7 @@
             .content-txt-choose{
                 transform: none;
                 opacity: 1;
+                text-align: right;
             }
             .list-choose{
                 >li{
