@@ -333,6 +333,23 @@
             }
         }    
     }
+    #filter-title-type{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin: -11px 10px 0 0;
+    }
+    .select-type-car{
+        display: block;
+        box-sizing: border-box;
+        padding: 0 0 0 40px;
+        > li{
+            width: 14%;
+            margin: 0;
+            padding: 0 5px;
+            box-sizing: border-box;
+        }
+    }
     /* @end */
 
     /* @group Forms */
@@ -1746,10 +1763,28 @@
     /* @end */
 
     /* @group Filters */
+    .select-type-car{
+        > li{
+            height: 70px;
+            padding: 0 3px;
+            a{
+                padding: 12px 0 12px 0;
+                font-size: 0.8em;
+            }
+        }
+        .zone-picto{
+            font-size: 16px;
+            height: 16px;
+        }
+    }
     .result-cars-number{
-        width: 168px;
+        width: 150px;
+        p{
+            font-size: 1em;
+        }
     }
     .cars-filters{
+        padding: 0 0 0 15px;
         .list-inline{
             &.list-select-one{
                 > li{
@@ -3183,6 +3218,12 @@
     /* @end */
 
     /* @group Filters */
+    #filter-title-type{
+        position: relative;
+        top: inherit;
+        left: inherit;
+        margin: 0;
+    }
     .has-border-mobile{
         border-bottom: 1px solid #AEACA1;
     }
