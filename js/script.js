@@ -707,6 +707,10 @@ $(function(){
 	// Ouverture du menu responsive
 	$("a.btn-menu-responsive").click(function(){
 		$("body").toggleClass("menu-mobile-open");
+		if($(".btn-filter").hasClass("open")){
+			$(".btn-filter").removeClass("open");
+			$(".lines-filters").slideToggle(200);
+		}
 		return false;
 	});
 
@@ -1218,20 +1222,21 @@ $(function(){
 
 	// Slider | Range
 	if($("body").hasClass("resultat-recherche")){
-		$("#filter-prix").slider({
+		var optionsFilterPrix = {
 			range: true,
 			min: 1000,
 			max: 50000,
 			step: 1000,
 			values: [1000, 50000],
-			animate: 'slow',
+			animate: false,
 			// Mettre les labels DANS les ui-slider-handle
 		    create: function() {
 		        $('#min').appendTo($('#filter-prix .ui-slider-handle').get(0));
 		        $('#max').appendTo($('#filter-prix .ui-slider-handle').get(1));
 		    },
 		    slide: function(event, ui) { $(ui.handle).find('span').html(ui.value+" €"); }
-		});
+		}
+		$("#filter-prix").slider(optionsFilterPrix);
 
 		// Initialiser le contenu des labels
 		$('#min').html($('#filter-prix').slider('values', 0) + " €").position({
@@ -1248,41 +1253,41 @@ $(function(){
 		    offset: "0, 10"
 		});
 
+		// Effacer tous les critères
+		$("#btn-remove-criteria").click(function(){
+			$(".select-type-car li.is-selected").removeClass("is-selected");
+			$(".select-option-car li.is-selected").removeClass("is-selected");
+			$('#boite-auto').prop('selectedIndex',0);
+			$("#filter-prix").slider("values", 0, optionsFilterPrix.values[0]);  
+           	$("#filter-prix").slider("values", 1, optionsFilterPrix.values[1] ); 
+			$('#filter-prix #min').html($('#filter-prix').slider('values', 0) + " €");
+			$('#filter-prix #max').html($('#filter-prix').slider('values', 1) + " €");
+			$(".lines-filters .select-custom").each(function(){
+				$(".select-options li.is-selected", this).removeClass("is-selected");
+				$(".select-options li", this).first().addClass("is-selected");
+				majPlaceholder($(this));
+			});
+			return false;
+		});
+
 		if($(window).width()<=767){
 			TweenMax.set($(".list-cars"), {className:"+=is-list"});
 			TweenMax.set($("#change-liste-mosaique"), {display:"none"});
 		}
 	}
 
-	// Effacer tous les critères
-	$("#btn-remove-criteria").click(function(){
-		$(".select-type-car li.is-selected").removeClass("is-selected");
-		$(".select-option-car li.is-selected").removeClass("is-selected");
-		$("#content-more-criteres .switch.on").removeClass("on").addClass("off");
+	$(".select-options ul li").click(function(){
+		var sOptionsParent = $(this).parents(".select-options");
+		$("li.is-selected", sOptionsParent).removeClass("is-selected");
+		$(this).addClass("is-selected");
+		// maj du réel select
+		/*var sSkinParent = $(this).parents(".select-skin");
+		var indexSelectCustom = $(this).index();
+		$("select.select-skinned option:enabled", sSkinParent).eq(indexSelectCustom).prop('selected', true);*/
 
-
-		$(".select-options ul li").click(function(){
-			var sOptionsParent = $(this).parents(".select-options");
-			$("li.is-selected", sOptionsParent).removeClass("is-selected");
-			$(this).addClass("is-selected");
-			// maj du réel select
-			/*var sSkinParent = $(this).parents(".select-skin");
-			var indexSelectCustom = $(this).index();
-			$("select.select-skinned option:enabled", sSkinParent).eq(indexSelectCustom).prop('selected', true);*/
-
-			var sSkinActive = $(".select-custom.is-active");
-			sSkinActive.removeClass("is-active");
-			majPlaceholder(sSkinActive);
-			return false;
-		});
-
-		$(".lines-filters .select-custom").each(function(){
-			$(".select-options li.is-selected", this).removeClass("is-selected");
-			$(".select-options li", this).first().addClass("is-selected");
-			majPlaceholder($(this));
-		});
-
-
+		var sSkinActive = $(".select-custom.is-active");
+		sSkinActive.removeClass("is-active");
+		majPlaceholder(sSkinActive);
 		return false;
 	});
 

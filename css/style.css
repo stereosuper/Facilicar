@@ -7300,6 +7300,10 @@ a.btn-slider-citation:hover.btn-right span {
   margin: 0 -19px 0 0;
   background-color: #e38c00;
 }
+.wrapper-boite-auto {
+  display: inline-block;
+  vertical-align: middle;
+}
 #btn-more-criteres {
   display: inline-block;
   vertical-align: middle;
@@ -13397,6 +13401,9 @@ a.btn-slider-citation:hover.btn-right span {
   }
   #btn-voir-vehicules {
     display: none;
+  }
+  .wrapper-boite-auto {
+    padding: 10px 25px 15px 25px;
   }
   .select-option-car {
     display: block;
