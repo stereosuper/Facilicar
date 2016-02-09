@@ -2723,11 +2723,30 @@
     .list-cars{
         &.is-list{
             > li{
-                height: 170px;
+                height: 120px;
             }
         }
     }
     .is-list, .list-cars.list-cars-small.is-list{
+        .wrapper-car{
+            &:before{
+                .icon-font;
+                content: "\e903";
+                font-size: 14px;
+                color: @theme-primary;
+                position: absolute;
+                top: 50%;
+                right: 16px;
+                margin: -7px 0 0 0;
+            }
+            &:hover{
+                .bandeau-car{
+                    &.bandeau-bottom{
+                        height: 33px;
+                    }
+                }
+            }
+        }
         .bandeau-image-car{
             width: 84px;
             height: 56px;
@@ -2740,8 +2759,38 @@
             &.bandeau-top{
                 height: 56px;
                 left: 10px;
-                top: 70px;
+                top: 52px;
             }
+        }
+        .car-block{
+            &.car-year{
+                left: 92px;
+            }
+            &.car-km{
+                left: 94px;
+            }
+            &.motor-color{
+                left: 98px;
+            }
+        }
+        .bandeau-car{
+            &.bandeau-top{
+                right: 28px;
+            }
+            &.bandeau-bottom{
+                bottom: inherit;
+                top: 10px;
+                left: 102px;
+                right: 28px;
+            }
+        }
+        .car-price{
+            font-size: 1.5em;
+            right: inherit;
+            left: 0;
+        }
+        .car-zone-btn{
+            display: none;
         }
         .car-km{
             font-size: 0.688em;
@@ -2751,14 +2800,11 @@
         }
         .car-name{
             font-size: 1.25em;
-            margin: -9px 0 0 0;
+            margin: -4px 0 0 0;
         }
         .car-desc{
             font-size: 0.875em;
             margin: -1px 0 0 0;
-        }
-        .car-price{
-            font-size: 1.5em;
         }
         .car-old-price{
             display: none;
@@ -2820,23 +2866,33 @@
         .wrapper-car{
             &.cta{
                 font-size: 1em;
+                &:before{
+                    display: none;
+                }
                 .tel{
                     display: block;
                 }
                 &.big-line-height{
+                    .cta-content{
+                        &.cta-img{
+                            img{
+                                max-height: 17px;
+                            }
+                        }
+                    }
                     .cta-wrapper{
-                        padding: 23px 10px 10px 10px;
+                        padding: 6px 10px 10px 10px;
                     }
                 }
                 .cta-wrapper{
-                    padding: 27px 10px 10px 10px;
+                    padding: 10px 10px 10px 10px;
                     display: block;
                     .cta-content{
                         display: block;
                         width: 100%;
                         text-align: center;
                         padding: 0;
-                        margin: 6px 0;
+                        margin: 3px 0;
                         &.cta-img{
                             width: 100%;
                             margin-top: 0;
@@ -3872,8 +3928,8 @@
                 }
                 .car-price{
                     bottom: 4px;
-                    right: 0;
-                    left: auto;
+                    right: inherit;
+                    left: 0;
                     transform: none;
                 }
                 .car-options{

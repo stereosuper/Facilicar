@@ -12625,7 +12625,31 @@ a.btn-slider-citation:hover.btn-right span {
     margin: 0 0 2px 0;
   }
   .list-cars.is-list > li {
-    height: 170px;
+    height: 120px;
+  }
+  .is-list .wrapper-car:before,
+  .list-cars.list-cars-small.is-list .wrapper-car:before {
+    font-family: 'facilicar';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e903";
+    font-size: 14px;
+    color: #009cc4;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin: -7px 0 0 0;
+  }
+  .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom,
+  .list-cars.list-cars-small.is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
+    height: 33px;
   }
   .is-list .bandeau-image-car,
   .list-cars.list-cars-small.is-list .bandeau-image-car {
@@ -12641,7 +12665,40 @@ a.btn-slider-citation:hover.btn-right span {
   .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top {
     height: 56px;
     left: 10px;
-    top: 70px;
+    top: 52px;
+  }
+  .is-list .car-block.car-year,
+  .list-cars.list-cars-small.is-list .car-block.car-year {
+    left: 92px;
+  }
+  .is-list .car-block.car-km,
+  .list-cars.list-cars-small.is-list .car-block.car-km {
+    left: 94px;
+  }
+  .is-list .car-block.motor-color,
+  .list-cars.list-cars-small.is-list .car-block.motor-color {
+    left: 98px;
+  }
+  .is-list .bandeau-car.bandeau-top,
+  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top {
+    right: 28px;
+  }
+  .is-list .bandeau-car.bandeau-bottom,
+  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-bottom {
+    bottom: inherit;
+    top: 10px;
+    left: 102px;
+    right: 28px;
+  }
+  .is-list .car-price,
+  .list-cars.list-cars-small.is-list .car-price {
+    font-size: 1.5em;
+    right: inherit;
+    left: 0;
+  }
+  .is-list .car-zone-btn,
+  .list-cars.list-cars-small.is-list .car-zone-btn {
+    display: none;
   }
   .is-list .car-km,
   .list-cars.list-cars-small.is-list .car-km {
@@ -12654,16 +12711,12 @@ a.btn-slider-citation:hover.btn-right span {
   .is-list .car-name,
   .list-cars.list-cars-small.is-list .car-name {
     font-size: 1.25em;
-    margin: -9px 0 0 0;
+    margin: -4px 0 0 0;
   }
   .is-list .car-desc,
   .list-cars.list-cars-small.is-list .car-desc {
     font-size: 0.875em;
     margin: -1px 0 0 0;
-  }
-  .is-list .car-price,
-  .list-cars.list-cars-small.is-list .car-price {
-    font-size: 1.5em;
   }
   .is-list .car-old-price,
   .list-cars.list-cars-small.is-list .car-old-price {
@@ -12738,17 +12791,25 @@ a.btn-slider-citation:hover.btn-right span {
   .list-cars.list-cars-small.is-list .wrapper-car.cta {
     font-size: 1em;
   }
+  .is-list .wrapper-car.cta:before,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta:before {
+    display: none;
+  }
   .is-list .wrapper-car.cta .tel,
   .list-cars.list-cars-small.is-list .wrapper-car.cta .tel {
     display: block;
   }
+  .is-list .wrapper-car.cta.big-line-height .cta-content.cta-img img,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta.big-line-height .cta-content.cta-img img {
+    max-height: 17px;
+  }
   .is-list .wrapper-car.cta.big-line-height .cta-wrapper,
   .list-cars.list-cars-small.is-list .wrapper-car.cta.big-line-height .cta-wrapper {
-    padding: 23px 10px 10px 10px;
+    padding: 6px 10px 10px 10px;
   }
   .is-list .wrapper-car.cta .cta-wrapper,
   .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper {
-    padding: 27px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     display: block;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content,
@@ -12757,7 +12818,7 @@ a.btn-slider-citation:hover.btn-right span {
     width: 100%;
     text-align: center;
     padding: 0;
-    margin: 6px 0;
+    margin: 3px 0;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img,
   .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img {
@@ -13772,8 +13833,8 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .list-cars.list-cars-small.is-list .car-price {
     bottom: 4px;
-    right: 0;
-    left: auto;
+    right: inherit;
+    left: 0;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
