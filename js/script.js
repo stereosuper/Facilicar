@@ -1674,7 +1674,6 @@ $(function(){
 	//var decalage = $(window).width()/5;
 	//map.panBy(-decalage,0);
 	var margeExterieureDroite = ($(window).width()-$("#wrapper-map .container").width())/2;
-	//var widthRestanteContainer = $("#wrapper-map .container").width()-$(".wrapper-map-search").width();
 	var widthRestanteContainer = $("#wrapper-map .container").width()/2;
 	var decalage = (widthRestanteContainer+margeExterieureDroite)/2;
 	map.panBy(-decalage,0);
