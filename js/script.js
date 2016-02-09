@@ -476,7 +476,8 @@ $(function(){
 
 	// Clic sur un bouton "Haut de page"
 	$(".btn-haut-page").click(function(){
-		TweenMax.to(window, 0.8, {scrollTo:{y:0}});
+		//TweenMax.to(window, 0.8, {scrollTo:{y:0}});
+		$('html, body').stop().animate( { scrollTop: 0 }, 500 );
 		return false;
 	});
 
@@ -1708,7 +1709,9 @@ $(function(){
 					'height': slectedContentHeight
 				}, 200);
 			}
-			TweenMax.to(window, 0.5, {scrollTo:{y:$(".wrapper-tabs").offset().top-160+"px"}});
+			//TweenMax.to(window, 0.5, {scrollTo:{y:$(".wrapper-tabs").offset().top-160+"px"}});
+
+			$('html, body').stop().animate( { scrollTop: $(".wrapper-tabs").offset().top-160 }, 500 );
 		}else{
 			var btnToggleEqui = $("ul.tabs-content li[data-content='financement'] a");
 			if(!btnToggleEqui.hasClass("open")){
@@ -1717,7 +1720,8 @@ $(function(){
 				btnToggleEqui.addClass("open");
 				btnToggleEqui.next(".content-toggle-once").slideToggle(200);
 			}
-			TweenMax.to(window, 0.5, {scrollTo:{y:btnToggleEqui.offset().top-80+"px"}});
+			//TweenMax.to(window, 0.5, {scrollTo:{y:btnToggleEqui.offset().top-80+"px"}});
+			$('html, body').stop().animate( { scrollTop: btnToggleEqui.offset().top-80 }, 500 );
 		}
 		return false;
 	});
@@ -1743,15 +1747,20 @@ $(function(){
 				}, 200);
 			}
 			if($(this).parents("li").hasClass("historique")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".historique-tab").offset().top-160+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".historique-tab").offset().top-160+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".historique-tab").offset().top-160 }, 500 );
 			}else if($(this).parents("li").hasClass("inspection")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".inspection-tab").offset().top-160+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".inspection-tab").offset().top-160+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".inspection-tab").offset().top-160 }, 500 );
 			}else if($(this).parents("li").hasClass("renovation")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".renovation-tab").offset().top-160+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".renovation-tab").offset().top-160+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".renovation-tab").offset().top-160 }, 500 );
 			}else if($(this).parents("li").hasClass("garantie")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".garantie-tab").offset().top-160+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".garantie-tab").offset().top-160+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".garantie-tab").offset().top-160 }, 500 );
 			}else if($(this).parents("li").hasClass("satisfait-rembourse")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".satisfait-rembourse-tab").offset().top-160+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".satisfait-rembourse-tab").offset().top-160+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".satisfait-rembourse-tab").offset().top-160 }, 500 );
 			}
 		}else{
 			var btnToggleEqui = $("ul.tabs-content li[data-content='qualite'] a");
@@ -1762,15 +1771,20 @@ $(function(){
 				btnToggleEqui.next(".content-toggle-once").slideToggle(200);
 			}
 			if($(this).parents("li").hasClass("historique")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".historique-tab").offset().top-80+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".historique-tab").offset().top-80+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".historique-tab").offset().top-80 }, 500 );
 			}else if($(this).parents("li").hasClass("inspection")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".inspection-tab").offset().top-80+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".inspection-tab").offset().top-80+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".inspection-tab").offset().top-80 }, 500 );
 			}else if($(this).parents("li").hasClass("renovation")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".renovation-tab").offset().top-80+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".renovation-tab").offset().top-80+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".renovation-tab").offset().top-80 }, 500 );
 			}else if($(this).parents("li").hasClass("garantie")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".garantie-tab").offset().top-80+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".garantie-tab").offset().top-80+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".garantie-tab").offset().top-80 }, 500 );
 			}else if($(this).parents("li").hasClass("satisfait-rembourse")){
-				TweenMax.to(window, 0.5, {scrollTo:{y:$(".satisfait-rembourse-tab").offset().top-80+"px"}});
+				//TweenMax.to(window, 0.5, {scrollTo:{y:$(".satisfait-rembourse-tab").offset().top-80+"px"}});
+				$('html, body').stop().animate( { scrollTop: $(".satisfait-rembourse-tab").offset().top-80 }, 500 );
 			}
 		}
 		return false;
