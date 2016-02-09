@@ -35,22 +35,34 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 	margin: auto;
 	background: #fff;
 	overflow: auto;
 	backface-visibility: hidden;
+	text-align: right;
+	.no-js &{
+		transform: translate(-50%, -50%);
+	}
 	&.big{
 		width: 960px;
 		padding: 45px 45px 60px 45px;
 	}
 	a.btn-close-popup{
 		color: @theme-noir;
-		position: absolute;
-		top: 20px;
-		right: 20px;
+		position: fixed;
+		margin: -14px 0 0 10px;
 		font-size: 14px;
 		text-decoration: none;
+		.no-js &{
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			margin: 0;
+		}
+	}
+	.content-popup{
+		display: block;
+		text-align: center;
 	}
 	h2{
 		margin-top: 0;

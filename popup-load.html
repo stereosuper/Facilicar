@@ -621,64 +621,66 @@
 			<div class="container">
 				<div class="popup">
 					<a href="#" class="btn-close-popup icon-cross"></a>
-					<h2 class="medium-title">Se faire rappeler</h2>
-					<form action='#' method='post'>
-						<ul class="list-block">
-							<li>
-								<label for="input-num-rappel">Votre numéro :</label>
-							</li>
-							<li class="big-margin-bottom">
-								<input id="input-num-rappel" class="size2" name="input-num-rappel" type="tel" placeholder="ex. : 0600000000">
-							</li>
-							<li>
-								<hr>
-								<button class="button-arrow button-primary bg-primary" type='submit'><span class="arrow-button">›</span><span class="txt-button">Appelez-moi immédiatement</span><span class="txt-hover-button" data-hover="Appelez-moi immédiatement"></span></button>
-							</li>
-						</ul>
-						<p class="small-margin-top">OU<br/>Indiquez une date de rappel, si vous souhaitez être rappelé ultérieurement :</p>
-						<ul class="list-inline" id="list-date-popup">
-							<li>
-								<ul class="list-inline">
-									<li>
-										<label for="input-date-rappel" class='light'>Le </label>
-									</li><!--
-									--><li>
-										<input id="input-date-rappel" name="input-date-rappel" type="date" placeholder="jj/mm/aaaa">
-									</li>
-								</ul>
-							</li><!--
-							--><li>
-								<ul class="list-inline">
-									<li>
-										<label for="select-heure-rappel" class='light'> à </label>
-									</li><!--
-									--><li>
-										<select name="select-heure-rappel">
-											<option value="08">08</option>
-											<option value="09">09</option>
-											<option value="10">10</option>
-											<option value="11">11</option>
-											<option value="14">14</option>
-											<option value="15">15</option>
-											<option value="16">16</option>
-											<option value="17">17</option>
-										</select>
-										&nbsp;:&nbsp;
-										<select name="select-heure-rappel">
-											<option value="00">00</option>
-											<option value="15">15</option>
-											<option value="30">30</option>
-											<option value="45">45</option>
-										</select>
-									</li>
-								</ul>
-							</li><!--
-							--><li>
-								<button class="button-arrow button-primary bg-secondary" type='submit'><span class="arrow-button">›</span><span class="txt-button">Ok</span><span class="txt-hover-button" data-hover="Ok"></span></button>
-							</li>
-						</ul>
-						<div class='loaderform'><p><img src='layoutImg/loader.png' alt='Chargement'>En cours. Patientez SVP...</p></div>
-					</form>
+					<div class="content-popup">
+						<h2 class="medium-title">Se faire rappeler</h2>
+						<form action='#' method='post'>
+							<ul class="list-block">
+								<li>
+									<label for="input-num-rappel">Votre numéro :</label>
+								</li>
+								<li class="big-margin-bottom">
+									<input id="input-num-rappel" class="size2" name="input-num-rappel" type="tel" placeholder="ex. : 0600000000">
+								</li>
+								<li>
+									<hr>
+									<button class="button-arrow button-primary bg-primary" type='submit'><span class="arrow-button">›</span><span class="txt-button">Appelez-moi immédiatement</span><span class="txt-hover-button" data-hover="Appelez-moi immédiatement"></span></button>
+								</li>
+							</ul>
+							<p class="small-margin-top">OU<br/>Indiquez une date de rappel, si vous souhaitez être rappelé ultérieurement :</p>
+							<ul class="list-inline" id="list-date-popup">
+								<li>
+									<ul class="list-inline">
+										<li>
+											<label for="input-date-rappel" class='light'>Le </label>
+										</li><!--
+										--><li>
+											<input id="input-date-rappel" name="input-date-rappel" type="date" placeholder="jj/mm/aaaa">
+										</li>
+									</ul>
+								</li><!--
+								--><li>
+									<ul class="list-inline">
+										<li>
+											<label for="select-heure-rappel" class='light'> à </label>
+										</li><!--
+										--><li>
+											<select name="select-heure-rappel">
+												<option value="08">08</option>
+												<option value="09">09</option>
+												<option value="10">10</option>
+												<option value="11">11</option>
+												<option value="14">14</option>
+												<option value="15">15</option>
+												<option value="16">16</option>
+												<option value="17">17</option>
+											</select>
+											&nbsp;:&nbsp;
+											<select name="select-heure-rappel">
+												<option value="00">00</option>
+												<option value="15">15</option>
+												<option value="30">30</option>
+												<option value="45">45</option>
+											</select>
+										</li>
+									</ul>
+								</li><!--
+								--><li>
+									<button class="button-arrow button-primary bg-secondary" type='submit'><span class="arrow-button">›</span><span class="txt-button">Ok</span><span class="txt-hover-button" data-hover="Ok"></span></button>
+								</li>
+							</ul>
+							<div class='loaderform'><p><img src='layoutImg/loader.png' alt='Chargement'>En cours. Patientez SVP...</p></div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>

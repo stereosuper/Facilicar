@@ -388,14 +388,18 @@ textarea {
 /* @end */
 /* @group Global */
 html.popup-open {
-  overflow-x: hidden;
-  overflow-x: hidden!important;
+  overflow: hidden;
+  overflow: hidden!important;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 html.popup-open body {
-  overflow-x: hidden;
-  overflow-x: hidden!important;
+  overflow: hidden;
+  overflow: hidden!important;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 body {
   width: 100%;
@@ -5390,14 +5394,17 @@ a.btn-slider-citation:hover.btn-right span {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   margin: auto;
   background: #fff;
   overflow: auto;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  text-align: right;
+}
+.no-js .popup {
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .popup.big {
   width: 960px;
@@ -5405,11 +5412,20 @@ a.btn-slider-citation:hover.btn-right span {
 }
 .popup a.btn-close-popup {
   color: #333333;
+  position: fixed;
+  margin: -14px 0 0 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.no-js .popup a.btn-close-popup {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 14px;
-  text-decoration: none;
+  margin: 0;
+}
+.popup .content-popup {
+  display: block;
+  text-align: center;
 }
 .popup h2 {
   margin-top: 0;
@@ -11136,7 +11152,7 @@ a.btn-slider-citation:hover.btn-right span {
     top: 31px;
   }
   .list-cars.list-cars-small .car-price-saving {
-    bottom: 21px;
+    bottom: 14px;
     left: 14px;
     font-size: 0.6em;
   }
@@ -11147,14 +11163,14 @@ a.btn-slider-citation:hover.btn-right span {
     font-size: 0.9em;
   }
   .list-cars.list-cars-small .car-price {
-    bottom: 64px;
+    bottom: 68px;
     left: 70px;
   }
   .list-cars.list-cars-small .car-labels {
-    bottom: 52px;
+    bottom: 46px;
   }
   .list-cars.list-cars-small .bandeau-image-car {
-    height: 106px;
+    height: 112px;
     top: 54px;
   }
   .list-cars.list-cars-small .bandeau-car.bandeau-top {
@@ -11167,7 +11183,7 @@ a.btn-slider-citation:hover.btn-right span {
             transform: none;
   }
   .list-cars.list-cars-small .fond-bandeau-car.bandeau-bottom {
-    height: 60px;
+    height: 54px;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -12881,11 +12897,15 @@ a.btn-slider-citation:hover.btn-right span {
     padding: 40px 30px;
   }
   .popup.big {
-    padding: 40px 30px;
+    padding: 40px 35px;
   }
   .popup a.btn-close-popup {
+    margin: -15px 0 0 6px;
+  }
+  .no-js .popup a.btn-close-popup {
     top: 15px;
     right: 15px;
+    margin: 0;
   }
   .popup .list-inline.list-third.list-vehicule-interet a.btn-block.full-width.btn-block-arrow,
   .popup .list-inline.list-third.list-vehicule-interet div.btn-block.full-width.btn-block-arrow,
