@@ -769,9 +769,15 @@ $(function(){
 			$(this).next(".content-toggle").slideToggle(200);
 		}
 		var btnClique = $(this);
-		setTimeout(function(){
-			$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
-		}, 200);
+		if($(window).width()<=979){
+			setTimeout(function(){
+				$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
+			}, 200);
+		}else{
+			setTimeout(function(){
+				$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12-$("#header").outerHeight() }, 500 );
+			}, 200);
+		}
 		return false;
 	});
 
@@ -1716,6 +1722,11 @@ $(function(){
 		})(marker, i));
 	}
 	map.fitBounds(bounds);
+	google.maps.event.addListenerOnce(map, 'bounds_changed', function(event) {
+	  //if (this.getZoom() > 15) {
+	    this.setZoom(this.getZoom()-1);
+	  //}
+	});
 	//console.log($(window).width()/5);
 	//var decalage = $(window).width()/5;
 	//map.panBy(-decalage,0);
