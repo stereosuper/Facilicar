@@ -387,14 +387,16 @@ textarea {
 }
 /* @end */
 /* @group Global */
-html.popup-open {
+html.popup-open,
+html.no-overflow {
   overflow: hidden;
   overflow: hidden!important;
   height: 100%;
   max-width: 100%;
   max-height: 100%;
 }
-html.popup-open body {
+html.popup-open body,
+html.no-overflow body {
   overflow: hidden;
   overflow: hidden!important;
   height: 100%;
@@ -12717,6 +12719,7 @@ a.btn-slider-citation:hover.btn-right span {
   .is-list .bandeau-car.bandeau-top,
   .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top {
     right: 28px;
+    overflow: hidden;
   }
   .is-list .bandeau-car.bandeau-bottom,
   .list-cars.list-cars-small.is-list .bandeau-car.bandeau-bottom {
@@ -14285,6 +14288,17 @@ a.btn-slider-citation:hover.btn-right span {
   div.btn-arrow-top.big:before,
   span.btn-arrow-top.big:before {
     margin: -3px 0 0 0;
+  }
+  .is-list .wrapper-car:before,
+  .list-cars.list-cars-small.is-list .wrapper-car:before {
+    right: 8px;
+  }
+  .is-list .car-block.motor-color,
+  .list-cars.list-cars-small.is-list .car-block.motor-color {
+    max-width: 58px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 @media (max-height: 800px) {

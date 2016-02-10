@@ -2811,6 +2811,7 @@
         .bandeau-car{
             &.bandeau-top{
                 right: 28px;
+                overflow: hidden;
             }
             &.bandeau-bottom{
                 bottom: inherit;
@@ -3334,6 +3335,7 @@
         padding: 0;
         z-index: 11;
         max-height: 100%;
+        //max-height: calc(~"100% - 83px");
         //overflow-x: visible;
         overflow-y: auto;
         transform: translate3d(0,0,0);
@@ -4412,6 +4414,22 @@
                 &:before{
                     margin: -3px 0 0 0;
                 }
+            }
+        }
+    }
+
+    .is-list, .list-cars.list-cars-small.is-list{
+        .wrapper-car{
+            &:before{
+                right: 8px;
+            }
+        }
+        .car-block{
+            &.motor-color{
+                max-width: 58px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }

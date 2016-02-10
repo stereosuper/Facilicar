@@ -364,6 +364,12 @@ function posiPopup(){
 	});
 }
 
+function setMaxHeightFilters(){
+	var windowHeight = $(window).height();
+	var heightCarFilter = windowHeight - $("#header").outerHeight() - 17;
+	TweenMax.set($(".cars-filters"), {"max-height": heightCarFilter+"px"});
+}
+
 $(window).load(function() {
 	// Tabs
 	setTabsHeight();
@@ -1117,9 +1123,12 @@ $(function(){
 			var parent = $(this).parents(".btn-filter");
 			$(this).parents(".btn-filter").removeClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
+			TweenMax.set($("html"), {className:"-=no-overflow"});
 		}else if(!$(this).parents(".btn-filter").hasClass("open")){
 			$(this).parents(".btn-filter").addClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
+			TweenMax.set($("html"), {className:"+=no-overflow"});
+			setMaxHeightFilters();
 		}
 		return false;
 	});
@@ -1128,6 +1137,8 @@ $(function(){
 		if(!$(this).parents(".btn-filter").hasClass("open")){
 			$(this).parents(".btn-filter").addClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
+			TweenMax.set($("html"), {className:"+=no-overflow"});
+			setMaxHeightFilters();
 		}else{
 			var parent = $(this).parents(".btn-filter");
 			if(!$(".zone-right-btn", parent).hasClass("disabled")){
@@ -1135,6 +1146,7 @@ $(function(){
 			}
 			$(this).parents(".btn-filter").removeClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
+			TweenMax.set($("html"), {className:"-=no-overflow"});
 		}
 		return false;
 	});
@@ -1863,12 +1875,20 @@ $(window).resize(function(){
 	if($("body").hasClass("has-choose")){
 		$(".wrapper-choose").removeClass("survol-left").removeClass("survol-out-left").removeClass("survol-right").removeClass("survol-out-right");
 	}
+	if($("body").hasClass("resultat-recherche")){
+		if($(window).width()<=767){
+			setMaxHeightFilters();
+		}else{
+			TweenMax.set($(".cars-filters"), {clearProps:"max-height"});
+		}
+	}
 
 	var nh = $(window).height(), nw = $(window).width();
 	if (nw != w){
 		// Le resize se fait au moins sur la largeur, p-e sur la largeur et la hauteur
 		if($("body").hasClass("resultat-recherche")){
 			TweenMax.set($(".toggle-filter"), {className:"-=open"});
+			TweenMax.set($("#button-filter"), {className:"-=open"});
 			TweenMax.set($(".content-toggle-filter"), {clearProps:"all"});
 			TweenMax.set($(".lines-filters"), {clearProps:"all"});
 		}
