@@ -1067,7 +1067,8 @@ $(function(){
 	}
 
 	function enableBtnFilter(){
-		$("#button-filter.open .zone-right-btn.disabled").removeClass("disabled");
+		$("#button-filter .zone-right-btn.disabled").removeClass("disabled");
+		$("#btn-voir-vehicules").removeClass("disabled");
 	}
 
 	// Clics sur les filters
@@ -1113,6 +1114,18 @@ $(function(){
 		return false;
 	});
 
+	// Clic sur le bouton "voir les véhicules"
+	$("#btn-voir-vehicules").click(function(){
+		if($(this).hasClass("disabled")){
+			console.log("on ne filtre pas");
+		}else{
+			console.log("on filtre");
+			$(this).addClass("disabled");
+			$("#button-filter .zone-right-btn").addClass("disabled");
+		}
+		return false;
+	});
+
 	// Clic sur le bouton filtrer au responsive
 	$("#button-filter").click(function(){
 		if(!$(this).hasClass("open")){
@@ -1126,6 +1139,7 @@ $(function(){
 		if((!$(this).hasClass("disabled"))&&($(this).parents(".btn-filter").hasClass("open"))){
 			console.log("on filtre !");
 			$(this).addClass("disabled");
+			$("#btn-voir-vehicules").addClass("disabled");
 			var parent = $(this).parents(".btn-filter");
 			$(this).parents(".btn-filter").removeClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
@@ -1902,6 +1916,7 @@ $(window).resize(function(){
 			TweenMax.set($("#button-filter"), {className:"-=open"});
 			TweenMax.set($(".content-toggle-filter"), {clearProps:"all"});
 			TweenMax.set($(".lines-filters"), {clearProps:"all"});
+			TweenMax.set($("html"), {className:"-=no-overflow"});
 		}
 
 		// Slider | Range

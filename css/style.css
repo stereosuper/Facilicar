@@ -7318,6 +7318,28 @@ a.btn-slider-citation:hover.btn-right span {
   display: inline-block;
   vertical-align: middle;
 }
+#btn-voir-vehicules.disabled:before {
+  background-color: #b0b0a8 !important;
+}
+#btn-voir-vehicules.disabled:after {
+  border-color: #b0b0a8 !important;
+}
+#btn-voir-vehicules.disabled:hover {
+  color: #fff!important;
+}
+#btn-voir-vehicules.disabled:hover:before {
+  opacity: 1!important;
+}
+#btn-voir-vehicules.disabled:hover .txt-btn-block-arrow {
+  -webkit-transform: translateY(0%) !important;
+      -ms-transform: translateY(0%) !important;
+          transform: translateY(0%) !important;
+}
+#btn-voir-vehicules.disabled:hover .txt-hover-btn-block-arrow {
+  -webkit-transform: translateY(-100%) !important;
+      -ms-transform: translateY(-100%) !important;
+          transform: translateY(-100%) !important;
+}
 #content-more-criteres {
   display: none;
 }

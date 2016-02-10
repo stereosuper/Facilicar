@@ -1058,6 +1058,26 @@
 #btn-voir-vehicules{
 	display: inline-block;
 	vertical-align: middle;
+	&.disabled{
+		&:before{
+			background-color: @theme-gris2!important;
+		}
+		&:after{
+			border-color: @theme-gris2!important;
+		}
+		&:hover{
+			color: #fff!important;
+			&:before{
+				opacity: 1!important;
+			}
+			.txt-btn-block-arrow{
+				transform: translateY(0%)!important;
+			}
+			.txt-hover-btn-block-arrow{
+				transform: translateY(-100%)!important;
+			}
+		}
+	}
 }
 
 #content-more-criteres{
