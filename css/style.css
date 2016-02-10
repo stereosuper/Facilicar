@@ -13134,9 +13134,16 @@ a.btn-slider-citation:hover.btn-right span {
   #button-filter {
     display: block;
   }
+  #button-filter.open {
+    position: fixed;
+    z-index: 4;
+    left: 5%;
+    right: 5%;
+    width: auto;
+  }
   .lines-filters,
   .list-block.line-filters {
-    padding: 70px 0 70px 0;
+    padding: 110px 0 70px 0;
     display: none;
   }
   .content-toggle-filter {
@@ -13261,8 +13268,9 @@ a.btn-slider-citation:hover.btn-right span {
     z-index: 11;
     max-height: 100%;
     overflow-y: auto;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
   }
   .cars-filters.fixed {
     position: fixed;
@@ -13376,7 +13384,7 @@ a.btn-slider-citation:hover.btn-right span {
   .lines-filters > li.line-filters-four,
   .list-block.lines-filters > li.line-filters-four {
     position: absolute;
-    top: 88px;
+    top: 60px;
     left: 5%;
     right: 5%;
     width: auto;

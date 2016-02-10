@@ -3233,9 +3233,17 @@
     }
     #button-filter{
         display: block;
+        &.open{
+            position: fixed;
+            z-index: 4;
+            left: 5%;
+            right: 5%;
+            width: auto;
+        }
     }
     .lines-filters, .list-block.line-filters{
-        padding: 70px 0 70px 0;
+        //padding: 70px 0 70px 0;
+        padding: 110px 0 70px 0;
         display: none;
     }
     .content-toggle-filter{
@@ -3338,7 +3346,7 @@
         //max-height: calc(~"100% - 83px");
         //overflow-x: visible;
         overflow-y: auto;
-        transform: translate3d(0,0,0);
+        transform: none;
         &.fixed{
             position: fixed;
             top: 0px;
@@ -3447,7 +3455,8 @@
             }
             &.line-filters-four{
                 position: absolute;
-                top: 88px;
+                //top: 88px;
+                top: 60px;
                 left: 5%;
                 right: 5%;
                 width: auto;
