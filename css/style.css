@@ -943,6 +943,12 @@ a.color-theme-black:hover {
 .content-toggle-one.open {
   display: block;
 }
+.content-toggle-once {
+  display: none;
+}
+.content-toggle-once.open {
+  display: block;
+}
 .zone-toggle {
   margin: 0 0 60px 0;
 }
@@ -2098,11 +2104,106 @@ a.btn-menu-responsive .rect:before {
   padding: 0;
 }
 .def-detail-localisation .content-def-detail-localisation {
-  margin: -70px 0 0 0;
-  padding: 22px;
+  margin: -200px 0 0 0;
+  padding: 10px 22px 22px 22px;
   border: 1px solid #b0b0a8;
   background-color: #fff;
   box-sizing: border-box;
+}
+.def-detail-localisation .content-def-detail-localisation .content-toggle-once {
+  display: block;
+}
+.def-detail-localisation .zone-txt {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.def-detail-localisation .small-width {
+  max-width: 260px;
+  margin: 35px 0 0 0;
+}
+.def-detail-localisation .wrapper-photos {
+  display: block;
+  width: 100%;
+  height: 237px;
+  position: relative;
+  margin: 25px 0 0 0;
+}
+.def-detail-localisation .wrapper-photos .slider-photos {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  bottom: 0;
+  left: -20px;
+}
+.desc-detail-localisation {
+  width: auto;
+  box-sizing: border-box;
+  padding: 0 0 0 20px;
+}
+.list-detail {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list-detail > li {
+  position: relative;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.25em;
+}
+.list-detail > li:before {
+  display: none;
+}
+.list-detail .img-type-store {
+  top: 4px;
+}
+.address-detail {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style-type: none;
+}
+.tel-detail {
+  margin: 0;
+  padding: 0 0 0 30px;
+  text-decoration: none;
+  position: relative;
+}
+.tel-detail:before {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e804";
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  margin: -8px 0 0 0;
+  color: #b0b0a8;
+}
+table.table-horaires {
+  margin: 0 0 30px 0;
+}
+table.table-horaires tr td {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  padding: 5px 0;
+}
+table.table-horaires tr td.jour {
+  min-width: 130px;
+  padding-right: 10px;
+}
+.list-block.list-btn-detail-localisation {
+  margin: -8px 0 8px 0;
 }
 /* @end */
 /* @group Buttons */
@@ -2402,6 +2503,25 @@ span.btn-toggle-once h4 {
 #faq div.btn-toggle-once h4,
 #faq span.btn-toggle-once h4 {
   color: #6d6d67;
+}
+a.btn-toggle.toggle-once-mobile,
+div.btn-toggle.toggle-once-mobile,
+span.btn-toggle.toggle-once-mobile,
+a.btn-toggle-once.toggle-once-mobile,
+div.btn-toggle-once.toggle-once-mobile,
+span.btn-toggle-once.toggle-once-mobile {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.25em;
+  padding: 2px 0;
+  cursor: default;
+}
+a.btn-toggle.toggle-once-mobile .icon-arrow-right,
+div.btn-toggle.toggle-once-mobile .icon-arrow-right,
+span.btn-toggle.toggle-once-mobile .icon-arrow-right,
+a.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+div.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+span.btn-toggle-once.toggle-once-mobile .icon-arrow-right {
+  display: none;
 }
 a.btn-toggle.border-bottom,
 div.btn-toggle.border-bottom,
@@ -2728,6 +2848,19 @@ span.btn-arrow-top.big {
 a.btn-arrow-top.big:before,
 div.btn-arrow-top.big:before,
 span.btn-arrow-top.big:before {
+  font-size: 6px;
+}
+a.btn-arrow-top.maxi,
+div.btn-arrow-top.maxi,
+span.btn-arrow-top.maxi {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.25em;
+  text-decoration: underline;
+  padding-left: 24px;
+}
+a.btn-arrow-top.maxi:before,
+div.btn-arrow-top.maxi:before,
+span.btn-arrow-top.maxi:before {
   font-size: 6px;
 }
 a.btn-cross,
@@ -4238,34 +4371,6 @@ input[type="date"] {
   max-width: 188px;
   cursor: text;
 }
-/*input{
-    &::-webkit-inner-spin-button,
-    &::-webkit-calendar-picker-indicator,
-    &::-webkit-clear-button{
-        display: none;
-        -webkit-appearance: none;
-    }
-}
-
-::-webkit-input-placeholder {
- 	.texta-light-italic(1em);
- 	color: #B0B0A8;
-}
-
-:-moz-placeholder {
-	.texta-light-italic(1em);
-	color: #B0B0A8;
-}
-
-::-moz-placeholder {
-	.texta-light-italic(1em);
-	color: #B0B0A8;
-}
-
-:-ms-input-placeholder {  
-	.texta-light-italic(1em);
-	color: #B0B0A8;
-}*/
 button {
   -webkit-appearance: none;
   appearance: none;
@@ -10694,6 +10799,28 @@ a.btn-slider-citation:hover.btn-right span {
   .content-toggle.small .content-toggle-once.small,
   .content-toggle-once.small .content-toggle-once.small {
     padding: 10px 10px;
+  }
+  a.btn-toggle.toggle-once-mobile,
+  div.btn-toggle.toggle-once-mobile,
+  span.btn-toggle.toggle-once-mobile,
+  a.btn-toggle-once.toggle-once-mobile,
+  div.btn-toggle-once.toggle-once-mobile,
+  span.btn-toggle-once.toggle-once-mobile {
+    font-family: 'Texta-Black', sans-serif;
+    font-size: 1em;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 10px 50px 10px 0;
+    cursor: pointer;
+  }
+  a.btn-toggle.toggle-once-mobile .icon-arrow-right,
+  div.btn-toggle.toggle-once-mobile .icon-arrow-right,
+  span.btn-toggle.toggle-once-mobile .icon-arrow-right,
+  a.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+  div.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+  span.btn-toggle-once.toggle-once-mobile .icon-arrow-right {
+    display: block;
   }
   /* @group Header */
   #header a.logo-facilicar {
