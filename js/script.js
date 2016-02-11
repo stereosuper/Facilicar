@@ -31,6 +31,15 @@ window.requestAnimFrame = (function(){
 			function(callback){ window.setTimeout(callback, 1000/60); };
 })();
 
+// Detect ie10
+function isIE10(){
+	var isIE = false;
+	if (Function('/*@cc_on return document.documentMode===10@*/')()){
+		isIE = true;
+	}
+	return isIE;
+}
+
 // Request anim frame
 function scrollPage(){
 	myScroll = $(document).scrollTop();
@@ -348,7 +357,8 @@ function animChangeOrientation(){
 function loadImages(){
 	$(".preloader").addClass("is-visible");
 	$(".to-load").on("load", function() {
-    	$(this).parents(".preloader").removeClass("is-visible");
+		var wrapperWithPreloader = $(this).parents(".wrapper-with-preloader");
+    	$(".preloader", wrapperWithPreloader).removeClass("is-visible");
     	$(this).addClass("is-loaded");
 	}).each(function() {
 	    // attempt to defeat cases where load event does not fire
@@ -387,6 +397,11 @@ $(function(){
 	// Test si il y a un cookie "acceptCookie"
 	if(!Cookies.get('acceptCookie')=='not'){
 		//$(".cookies").addClass("show");
+	}
+
+	// detect ie10
+	if(isIE10()){
+		$("html").addClass("ie10");
 	}
 
 	// Tooltip
@@ -1728,6 +1743,10 @@ $(function(){
 		if($("body").hasClass("results")){
 			// juste après le firbounds, on dézoome d'un cran
 			this.setZoom(this.getZoom()-1);
+		}else{
+			if($(window).width()<=767){
+				//this.setZoom(this.getZoom()-1);
+			}
 		}
 		if($(window).width()>979){
 			// on décale le centre de la map à droite du bloc de résultat de recherche
@@ -1865,6 +1884,15 @@ $(function(){
 			return false;
 		}
 	});
+
+	// Passer les gifs de la page "qui est Facilicar" en images fixes, pour ie10 et moins
+	if($("body").hasClass("qui-est-facilicar")){
+		if(isIE10() || $("html").hasClass("lt-ie10")){
+			$('img.img-visu[src$=".gif"]').each(function(index,element) {
+				element.src = element.src.replace('.gif','.png');
+			});
+		}
+	}
 });
 
 var h = $(window).height(), w = $(window).width();
