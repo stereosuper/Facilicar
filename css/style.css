@@ -425,6 +425,14 @@ h1.small-title {
   line-height: 1.1em;
   margin: 0 0 35px 0;
 }
+h1.very-small-title {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 2.75em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1em;
+}
 h1 a {
   display: inline-block;
   vertical-align: top;
@@ -1838,6 +1846,9 @@ a.btn-menu-responsive .rect:before {
   height: 770px;
   position: relative;
 }
+#wrapper-map.detail {
+  height: 250px;
+}
 .header-on #wrapper-map {
   margin-top: 110px;
 }
@@ -2080,6 +2091,18 @@ a.btn-menu-responsive .rect:before {
 .list-agency > li a:hover,
 .list-block.list-agency > li a:hover {
   opacity: 0.7;
+}
+.def-detail-localisation {
+  width: 468px;
+  margin: 0;
+  padding: 0;
+}
+.def-detail-localisation .content-def-detail-localisation {
+  margin: -70px 0 0 0;
+  padding: 22px;
+  border: 1px solid #b0b0a8;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 /* @end */
 /* @group Buttons */
