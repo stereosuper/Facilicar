@@ -11833,9 +11833,11 @@ a.btn-slider-citation:hover.btn-right span {
   }
   #wrapper-map {
     height: auto;
+    box-sizing: border-box;
+    padding: 65px 0 0 0;
   }
   #wrapper-map #map {
-    height: 300px;
+    height: 235px;
     position: relative;
   }
   #wrapper-map .wrapper-map-search {

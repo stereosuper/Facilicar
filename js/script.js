@@ -1743,6 +1743,10 @@ $(function(){
 		if($("body").hasClass("results")){
 			// juste après le firbounds, on dézoome d'un cran
 			this.setZoom(this.getZoom()-1);
+		}else{
+			if($(window).width()<=767){
+				//this.setZoom(this.getZoom()-1);
+			}
 		}
 		if($(window).width()>979){
 			// on décale le centre de la map à droite du bloc de résultat de recherche
