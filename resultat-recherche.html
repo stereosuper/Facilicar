@@ -476,10 +476,22 @@
 									--><li class="has-border-mobile">
 										<div class="filter-title toggle-filter">Boîte auto</div>
 										<div class="wrapper-boite-auto content-toggle-filter">
-											<select name="select-boite-auto" id="boite-auto">
-												<option value="non" selected>Non</option>
-												<option value="oui">Oui</option>
-											</select>
+											<div class="select-custom is-active">
+												<a class="select-placeholder medium-padding-right" href="#">Toutes</a>
+												<div class="select-options content-toggle-filter" style="">
+													<ul>
+														<li data-option="" data-value="toutes" class="is-selected">
+															Toutes
+														</li>
+														<li data-option="" data-value="oui">
+															Oui
+														</li>
+														<li data-option="" data-value="non">
+															Non
+														</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</li>
 								</ul>
@@ -543,12 +555,12 @@
 							</ul>
 						</div>
 						<div id="change-liste-mosaique" class="content-align-middle txt-right-aligned">
-							<a href="#" class="icon-mosaique is-selected"></a><!--
-							--><a href="#" class="icon-liste"></a>
+							<a href="#" class="icon-mosaique"></a><!--
+							--><a href="#" class="icon-liste is-selected"></a>
 						</div>
 					</div>
 				</div>
-				<ul class="list-cars small-padding">
+				<ul class="list-cars small-padding is-list">
 					<li itemscope itemtype="http://schema.org/Product">
 						<a href="#" class="wrapper-car">
 							<span class="bandeau-image-car">
@@ -1490,7 +1502,7 @@
 			</div>
 		</footer>
 
-		<section class="alert cookies show">
+		<section class="alert cookies">
 			<div class="container">
 				<div class="wrapper-align-middle">
 					<div class="content-txt-alert content-align-middle">

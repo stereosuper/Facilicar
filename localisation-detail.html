@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="css/libs/normalize.css">
 		<!-- Tooltips -->
 		<link rel="stylesheet" href="css/tooltipster.css" />
+		<!-- Slick -->
+		<link rel="stylesheet" href="css/slick.css" />
 	  	<link rel="stylesheet" href="css/style.css">
 		
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -40,7 +42,7 @@
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 	</head>
 
-	<body class="has-map results">
+	<body class="has-map results localisation-detail">
 		<header id="header">
 			<div class="container clearfix relative-position">
 				<a href="#" class="logo-facilicar hide-text">Facilicar</a>
@@ -113,12 +115,155 @@
 			<div class="container">
 				<div class="wrapper-align-top wrapper-detail-localisation">
 					<div class="content-align-top def-detail-localisation">
-						<div class="content-def-detail-localisation">
-							<h1 class="very-small-title">Superstore Créteil Pompadour</h1>
+						<div class="content-def-detail-localisation wrapper-toggle-once">
+							<a href="#" id="btn-trouver-autre-agence" class="btn-arrow-top maxi color-secondary">Trouver une autre agence</a>
+							<div class="zone-txt">
+								<h1 class="very-small-title">Superstore Créteil Pompadour</h1>
+								<ul class="list-detail">
+									<li>
+										<span class="img-type-store img-facilistore"></span>
+										<ul class="address-detail">
+											<li>
+												1 rue de l'île de France
+											</li>
+											<li>
+												94460 Valenton
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a class="tel-detail" href='tel:0145101616'>01 45 10 16 16</a>
+									</li>
+								</ul>
+								<a href="#" class="btn-block btn-block-arrow bg-primary" id="btn-rdv-localisation"><span class="arrow-btn-block-arrow">›</span><span class="txt-btn-block-arrow">Prendre rendez-vous dans cette agence</span><span class="txt-hover-btn-block-arrow" data-hover="Prendre rendez-vous dans cette agence"></span></a>
+								<div class="small-width">
+									<a href="#" class="btn-toggle-once toggle-once-mobile border-bottom no-txt-transform">Ouverture<span class="icon-arrow-right"></span></a>
+									<div class="content-toggle-once">
+										<table class="table-horaires">
+											<tr>
+												<td class="jour">
+													Lundi
+												</td>
+												<td class="horaires">
+													06:00 – 16:30
+												</td>
+											</tr>
+											<tr>
+												<td class="jour">
+													Mardi
+												</td>
+												<td class="horaires">
+													06:00 – 16:30
+												</td>
+											</tr>
+											<tr>
+												<td class="jour">
+													Mercredi
+												</td>
+												<td class="horaires">
+													06:00 – 16:30
+												</td>
+											</tr>
+											<tr>
+												<td class="jour">
+													Jeudi
+												</td>
+												<td class="horaires">
+													06:00 – 16:30
+												</td>
+											</tr>
+											<tr>
+												<td class="jour">
+													Vendredi
+												</td>
+												<td class="horaires">
+													06:00 – 16:30
+												</td>
+											</tr>
+											<tr>
+												<td class="jour">
+													Samedi
+												</td>
+												<td class="horaires">
+													Fermé
+												</td>
+											</tr>
+											<tr>
+												<td class="jour">
+													Dimanche
+												</td>
+												<td class="horaires">
+													Fermé
+												</td>
+											</tr>
+										</table>
+									</div>
+									<ul class="list-block list-btn-detail-localisation">
+										<li class="no-margin">
+											<a class="btn-underline btn-arrow color-secondary" href="#">Envoyer cette fiche par email</a>
+										</li>
+										<li class="no-margin">
+											<a class="btn-underline btn-arrow color-secondary" href="#">Calculer votre itinéraire</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<a href="#" class="btn-toggle-once toggle-once-mobile border-bottom no-txt-transform" id="btn-photos-localisation">Quelques photos<span class="icon-arrow-right"></span></a>
+							<div class="content-toggle-once">
+								<div class="wrapper-photos">
+									<div class="slider-photos">
+										<div class="slide imgLiquidFill">
+											<img src="img/cars/diapo/CE-487-PK_01.jpg">
+										</div><!--
+										--><div class="slide imgLiquidFill">
+											<img src="img/cars/diapo/CE-487-PK_01.jpg">
+										</div>
+									</div>
+									<button class="prev-slider-photos icon-arrow-left"></button>
+									<button class="next-slider-photos icon-arrow-right"></button>
+								</div>
+							</div>
 						</div>
 					</div><!--
 					--><div class="content-align-top desc-detail-localisation">
-						Bienvenue dans notre Supertsore de Créteil Pompadour!
+						<h4>Bienvenue dans notre Supertsore de Créteil Pompadour!</h4>
+						<p>Arnaud, Sylvie, Philippe et Alexis seront ravis de vous accueillir dans notre Facilistore!</p>
+						<p>Vous avez un projet d'achat? Toutes nos voitures sont présentes dans notre Facilistore! Préparez votre visite sur notre site et venez essayer les voitures de votre choix. N'oubliez pas de nous prevenir de votre arrivée pour que nous puissions préparer les véhicules que vous souhaitez essayer.</p>
+						<p>Vous avez un projet de vente? Prenez rendez-vous pour une expertise de 30 minutes suite à laquelle nous pourrons vous faire une offre ferme de rachat.</p>
+						<h4>Pour y accéder</h4>
+						<p>Notre agence se situe dans la centre STVA / VALTRANS à proximité du Carrefour Pompadour</p>
+						<p>En voiture: Accès facile par l'A4 ou l'A86</p>
+						<p>En transport: Gare de créteil Pompadour, RER D. Bus ligne O, direction E.combes ou Plaine Haute, arrêt les GRAVIERS.</p>
+						<p>Le jour de la livraison de votre nouveau véhicule, nous pouvons venir vous chercher à la gare de Créteil Pompadour. Pensez à nous appeler avant pour que nous puissions organiser votre transport.</p>
+						<h4>Ce que vous pourrez faire à l’agence</h4>
+						<ul>
+							<li>Essai et Livraison après consultation sur notre site internet </li>
+							<li>Reprise de votre véhicule</li>
+						</ul>
+						<ul class="list-cars small-padding is-list">
+							<li>
+								<a href="#" class="wrapper-car cta">
+									<span class="cta-wrapper">
+										<span class="cta-content cta-img">
+											<img src="img/cta/thumb-up.png">
+										</span><!--
+										--><span class="cta-content cta-txt">
+											<i>Un service simple,<br> sans surprise</i>
+										</span><!--
+										--><span class="cta-content cta-txt">
+											<strong>Pourquoi<br> choisir Facilicar&nbsp;?</strong>
+										</span><!--
+										--><span class="cta-content cta-btn">
+											<span class="wrapper-cta-btn">
+												<span class="content-wrapper-cta-btn">
+													<span class="btn-underline btn-arrow color-secondary">Tous les<br> avantages</span>
+												</span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -248,7 +393,7 @@
 			</div>
 		</footer>
 
-		<section class="alert cookies show">
+		<section class="alert cookies">
 			<div class="container">
 				<div class="wrapper-align-middle">
 					<div class="content-txt-alert content-align-middle">
@@ -275,6 +420,8 @@
 		<script src="js/libs/js.cookie.js" type="text/javascript"></script>
 		<!-- Tooltip -->
 		<script src="js/libs/jquery.tooltipster.js" type="text/javascript"></script>
+		<!-- Slick -->
+		<script src="js/libs/slick.js" type="text/javascript"></script>
 		<!-- Scripts custom -->
 		<script src="js/script.js" type="text/javascript"></script>
 	</body>

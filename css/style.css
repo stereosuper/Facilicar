@@ -943,6 +943,12 @@ a.color-theme-black:hover {
 .content-toggle-one.open {
   display: block;
 }
+.content-toggle-once {
+  display: none;
+}
+.content-toggle-once.open {
+  display: block;
+}
 .zone-toggle {
   margin: 0 0 60px 0;
 }
@@ -1330,6 +1336,9 @@ a.btn-menu-responsive .rect:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: relative;
+}
+.hide-header #header {
+  margin-top: -66px;
 }
 #header a.logo-facilicar {
   float: left;
@@ -2092,17 +2101,159 @@ a.btn-menu-responsive .rect:before {
 .list-block.list-agency > li a:hover {
   opacity: 0.7;
 }
+.wrapper-detail-localisation {
+  padding-bottom: 50px;
+  position: relative;
+}
+#btn-rdv-localisation {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
 .def-detail-localisation {
   width: 468px;
   margin: 0;
   padding: 0;
 }
 .def-detail-localisation .content-def-detail-localisation {
-  margin: -70px 0 0 0;
-  padding: 22px;
+  margin: -200px 0 0 0;
+  padding: 10px 22px 22px 22px;
   border: 1px solid #b0b0a8;
   background-color: #fff;
   box-sizing: border-box;
+}
+.def-detail-localisation .content-def-detail-localisation h1 {
+  margin: 25px 0 15px 0;
+}
+.def-detail-localisation .content-def-detail-localisation .content-toggle-once {
+  display: block;
+}
+.def-detail-localisation .zone-txt {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+.def-detail-localisation .small-width {
+  max-width: 260px;
+  margin: 35px 0 0 0;
+}
+.def-detail-localisation .wrapper-photos {
+  display: block;
+  width: 100%;
+  height: 237px;
+  position: relative;
+  margin: 0;
+}
+.def-detail-localisation .wrapper-photos .slider-photos {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.def-detail-localisation .wrapper-photos .slider-photos .slick-list {
+  width: 100%;
+  height: 100%;
+}
+.def-detail-localisation .wrapper-photos .slider-photos .slick-list .slick-track {
+  height: 100%;
+}
+.desc-detail-localisation {
+  width: auto;
+  box-sizing: border-box;
+  padding: 120px 0 0 20px;
+}
+.desc-detail-localisation p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+}
+.list-detail {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.list-detail > li {
+  position: relative;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.25em;
+}
+.list-detail > li:before {
+  display: none;
+}
+.list-detail .img-type-store {
+  top: 4px;
+}
+.address-detail {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 30px;
+  list-style-type: none;
+}
+.tel-detail {
+  margin: 0;
+  padding: 0 0 0 30px;
+  text-decoration: none;
+  position: relative;
+}
+.tel-detail:before {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e804";
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  margin: -8px 0 0 0;
+  color: #b0b0a8;
+}
+table.table-horaires {
+  margin: 0 0 30px 0;
+}
+table.table-horaires tr td {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  padding: 5px 0;
+}
+table.table-horaires tr td.jour {
+  min-width: 130px;
+  padding-right: 10px;
+}
+.list-block.list-btn-detail-localisation {
+  margin: -8px 0 12px 0;
+}
+#btn-photos-localisation {
+  margin: 0 0 30px 0;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: none;
+  position: relative;
+  max-width: 280px;
+}
+#btn-photos-localisation:after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  right: 0;
+  background-color: #AEACA1;
+}
+.wrapper-aze {
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 /* @end */
 /* @group Buttons */
@@ -2402,6 +2553,25 @@ span.btn-toggle-once h4 {
 #faq div.btn-toggle-once h4,
 #faq span.btn-toggle-once h4 {
   color: #6d6d67;
+}
+a.btn-toggle.toggle-once-mobile,
+div.btn-toggle.toggle-once-mobile,
+span.btn-toggle.toggle-once-mobile,
+a.btn-toggle-once.toggle-once-mobile,
+div.btn-toggle-once.toggle-once-mobile,
+span.btn-toggle-once.toggle-once-mobile {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.25em;
+  padding: 2px 0;
+  cursor: default;
+}
+a.btn-toggle.toggle-once-mobile .icon-arrow-right,
+div.btn-toggle.toggle-once-mobile .icon-arrow-right,
+span.btn-toggle.toggle-once-mobile .icon-arrow-right,
+a.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+div.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+span.btn-toggle-once.toggle-once-mobile .icon-arrow-right {
+  display: none;
 }
 a.btn-toggle.border-bottom,
 div.btn-toggle.border-bottom,
@@ -2728,6 +2898,19 @@ span.btn-arrow-top.big {
 a.btn-arrow-top.big:before,
 div.btn-arrow-top.big:before,
 span.btn-arrow-top.big:before {
+  font-size: 6px;
+}
+a.btn-arrow-top.maxi,
+div.btn-arrow-top.maxi,
+span.btn-arrow-top.maxi {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.25em;
+  text-decoration: underline;
+  padding-left: 24px;
+}
+a.btn-arrow-top.maxi:before,
+div.btn-arrow-top.maxi:before,
+span.btn-arrow-top.maxi:before {
   font-size: 6px;
 }
 a.btn-cross,
@@ -4238,34 +4421,6 @@ input[type="date"] {
   max-width: 188px;
   cursor: text;
 }
-/*input{
-    &::-webkit-inner-spin-button,
-    &::-webkit-calendar-picker-indicator,
-    &::-webkit-clear-button{
-        display: none;
-        -webkit-appearance: none;
-    }
-}
-
-::-webkit-input-placeholder {
- 	.texta-light-italic(1em);
- 	color: #B0B0A8;
-}
-
-:-moz-placeholder {
-	.texta-light-italic(1em);
-	color: #B0B0A8;
-}
-
-::-moz-placeholder {
-	.texta-light-italic(1em);
-	color: #B0B0A8;
-}
-
-:-ms-input-placeholder {  
-	.texta-light-italic(1em);
-	color: #B0B0A8;
-}*/
 button {
   -webkit-appearance: none;
   appearance: none;
@@ -4468,7 +4623,7 @@ button:focus {
   padding: 0;
   position: absolute;
   top: 37px;
-  left: 0;
+  right: 0;
   background-color: #fff;
   box-sizing: border-box;
   border: 1px solid #b0b0a8;
@@ -4531,7 +4686,10 @@ button:focus {
   background-color: #979797;
 }
 .slider-range-inline.ui-slider-horizontal {
-  height: 2px;
+  box-sizing: border-box;
+  height: 22px;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
 }
 .slider-range-inline .ui-state-default,
 .slider-range-inline.ui-widget-content .ui-state-default,
@@ -5148,6 +5306,36 @@ a.btn-slider-citation:hover.btn-right span {
   right: 25px;
   color: #fff;
   font-size: 34px;
+  margin-top: -25px;
+  padding: 0;
+  background: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.prev-slider-photos {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  color: #fff;
+  font-size: 28px;
+  margin-top: -25px;
+  padding: 0;
+  background: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.next-slider-photos {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  color: #fff;
+  font-size: 28px;
   margin-top: -25px;
   padding: 0;
   background: none;
@@ -10681,6 +10869,9 @@ a.btn-slider-citation:hover.btn-right span {
   p.big-txt {
     font-size: 1.2em;
   }
+  .select-custom .select-options {
+    padding: 15px 10px;
+  }
   #main ul,
   #main ol {
     padding: 0 40px;
@@ -10694,6 +10885,28 @@ a.btn-slider-citation:hover.btn-right span {
   .content-toggle.small .content-toggle-once.small,
   .content-toggle-once.small .content-toggle-once.small {
     padding: 10px 10px;
+  }
+  a.btn-toggle.toggle-once-mobile,
+  div.btn-toggle.toggle-once-mobile,
+  span.btn-toggle.toggle-once-mobile,
+  a.btn-toggle-once.toggle-once-mobile,
+  div.btn-toggle-once.toggle-once-mobile,
+  span.btn-toggle-once.toggle-once-mobile {
+    font-family: 'Texta-Black', sans-serif;
+    font-size: 1em;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 10px 50px 10px 0;
+    cursor: pointer;
+  }
+  a.btn-toggle.toggle-once-mobile .icon-arrow-right,
+  div.btn-toggle.toggle-once-mobile .icon-arrow-right,
+  span.btn-toggle.toggle-once-mobile .icon-arrow-right,
+  a.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+  div.btn-toggle-once.toggle-once-mobile .icon-arrow-right,
+  span.btn-toggle-once.toggle-once-mobile .icon-arrow-right {
+    display: block;
   }
   /* @group Header */
   #header a.logo-facilicar {
@@ -12229,6 +12442,9 @@ a.btn-slider-citation:hover.btn-right span {
   .first-block {
     padding: 66px 0 0 0;
   }
+  .hide-header .first-block {
+    padding: 0;
+  }
   .header-on.no-wrapper-top .first-block {
     padding: 66px 0 0 0;
   }
@@ -13458,6 +13674,10 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .cars-filters .slider-range-inline#filter-prix {
     width: 80%;
+  }
+  .cars-filters .wrapper-boite-auto .select-custom .select-options.content-toggle-filter {
+    display: block;
+    padding: 0;
   }
   .cars-filters .select-custom {
     box-sizing: border-box;
