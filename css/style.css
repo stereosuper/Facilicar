@@ -1337,6 +1337,9 @@ a.btn-menu-responsive .rect:before {
           backface-visibility: hidden;
   position: relative;
 }
+.hide-header #header {
+  margin-top: -66px;
+}
 #header a.logo-facilicar {
   float: left;
   margin: 11px 0 0 27px;
@@ -12438,6 +12441,9 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .first-block {
     padding: 66px 0 0 0;
+  }
+  .hide-header .first-block {
+    padding: 0;
   }
   .header-on.no-wrapper-top .first-block {
     padding: 66px 0 0 0;

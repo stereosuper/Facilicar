@@ -403,7 +403,8 @@ function posiPopup(){
 
 function setMaxHeightFilters(){
 	var windowHeight = $(window).height();
-	var heightCarFilter = windowHeight - $("#header").outerHeight() - 17;
+	//var heightCarFilter = windowHeight - $("#header").outerHeight() - 17;
+	var heightCarFilter = windowHeight - 17;
 	TweenMax.set($(".cars-filters"), {"max-height": heightCarFilter+"px"});
 }
 
@@ -1182,7 +1183,9 @@ $(function(){
 			$(this).parents(".btn-filter").removeClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
 			TweenMax.set($("html"), {className:"-=no-overflow"});
+			$("body").removeClass("hide-header");
 		}else if(!$(this).parents(".btn-filter").hasClass("open")){
+			$("body").addClass("hide-header");
 			$(this).parents(".btn-filter").addClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
 			TweenMax.set($("html"), {className:"+=no-overflow"});
@@ -1193,11 +1196,13 @@ $(function(){
 
 	$(".zone-left-btn").click(function(){
 		if(!$(this).parents(".btn-filter").hasClass("open")){
+			$("body").addClass("hide-header");
 			$(this).parents(".btn-filter").addClass("open");
 			$(this).parents(".btn-filter").next(".lines-filters").slideToggle(200);
 			TweenMax.set($("html"), {className:"+=no-overflow"});
 			setMaxHeightFilters();
 		}else{
+			$("body").removeClass("hide-header");
 			var parent = $(this).parents(".btn-filter");
 			if(!$(".zone-right-btn", parent).hasClass("disabled")){
 				console.log("on ne filtre pas ! On vide les modifs");
