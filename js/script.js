@@ -40,6 +40,33 @@ function isIE10(){
 	return isIE;
 }
 
+// Detect ie
+function detectIE() {
+  var ua = window.navigator.userAgent;
+
+  var msie = ua.indexOf('MSIE ');
+  if (msie > 0) {
+    // IE 10 or older => return version number
+    return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+  }
+
+  var trident = ua.indexOf('Trident/');
+  if (trident > 0) {
+    // IE 11 => return version number
+    var rv = ua.indexOf('rv:');
+    return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+  }
+
+  var edge = ua.indexOf('Edge/');
+  if (edge > 0) {
+    // Edge (IE 12+) => return version number
+    return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+  }
+
+  // other browser
+  return false;
+}
+
 // Request anim frame
 function scrollPage(){
 	myScroll = $(document).scrollTop();
@@ -395,13 +422,19 @@ $(function(){
 	var transitionEvent = whichTransitionEvent();
 
 	// Test si il y a un cookie "acceptCookie"
-	if(!Cookies.get('acceptCookie')=='not'){
-		//$(".cookies").addClass("show");
+	if(!(Cookies.get('acceptCookie')=='not')){
+		$(".cookies").addClass("show");
 	}
 
 	// detect ie10
 	if(isIE10()){
 		$("html").addClass("ie10");
+	}
+
+	// detect ie
+	var IEversion = detectIE();
+	if (IEversion !== false) {
+		$("html").addClass("ie");
 	}
 
 	// Tooltip
@@ -498,6 +531,17 @@ $(function(){
 		return false;
 	});
 
+	// Slider localisation detail
+	if($("body").hasClass("localisation-detail")){
+		$('.slider-photos').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			prevArrow: $('.prev-slider-photos'),
+			nextArrow: $('.next-slider-photos')
+		});
+	}
+
 	// Slider detail
 	if($("body").hasClass("slider-detail")){
 		// Sur les petites résolutions, on charge les photos du zoom en petite def
@@ -515,7 +559,7 @@ $(function(){
 			var i = (currentSlide ? currentSlide : 0) + 1;
 			status.text(i + '/' + slick.slideCount);
 		});
-		 $('.slider-for').slick({
+		$('.slider-for').slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: true,
@@ -690,7 +734,7 @@ $(function(){
 	$("#btn-close-cookies").click(function(){
 		$(".cookies").removeClass("show");
 		// Création du cookie
-		//Cookies.set('acceptCookie', 'not');
+		Cookies.set('acceptCookie', 'not');
 		return false;
 	});
 
@@ -1099,7 +1143,11 @@ $(function(){
 				$(".toggle-filter.open").removeClass("open");
 			}
 			$(this).toggleClass("open");
-			$(this).next(".content-toggle-filter").slideToggle(200);
+			var toggleFilter = $(this);
+			$(this).next(".content-toggle-filter").slideToggle(200, function(){
+				var scrollToTitle = ($(".toggle-filter").index(toggleFilter))*39;
+				$('.cars-filters').stop().animate( { scrollTop: scrollToTitle+65 }, 500 );
+			});
 		}
 		return false;
 	});
@@ -1889,7 +1937,8 @@ $(function(){
 
 	// Passer les gifs de la page "qui est Facilicar" en images fixes, pour ie10 et moins
 	if($("body").hasClass("qui-est-facilicar")){
-		if(isIE10() || $("html").hasClass("lt-ie10")){
+		var IEversion = detectIE();
+		if (IEversion !== false) {
 			$('img.img-visu[src$=".gif"]').each(function(index,element) {
 				element.src = element.src.replace('.gif','.png');
 			});

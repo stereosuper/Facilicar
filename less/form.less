@@ -210,7 +210,7 @@ button{
         padding: 0;
         position: absolute;
         top: 37px;
-        left: 0;
+        right: 0;
         background-color: #fff;
         box-sizing: border-box;
         border: 1px solid @theme-gris2;
@@ -276,7 +276,11 @@ button{
         background-color: #979797;
     }
     &.ui-slider-horizontal{
-        height: 2px;
+        //height: 2px;
+        box-sizing: border-box;
+        height: 22px;
+        border-top: 10px solid #fff;
+        border-bottom: 10px solid #fff;
     }
     .ui-state-default, &.ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
         border: none;
