@@ -396,8 +396,8 @@ function loadImages(){
 
 function posiPopup(){
 	$(".popup").each(function(index){
-		console.log($(this).height());
 		TweenMax.set($(this), {"margin-top": -($(this).outerHeight())/2+"px", "margin-left": -($(this).outerWidth())/2+"px"});
+		TweenMax.set($(this), {className:"+=no-transform"});
 	});
 }
 

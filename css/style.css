@@ -5617,11 +5617,17 @@ a.btn-slider-citation:hover.btn-right span {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   text-align: right;
-}
-.no-js .popup {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  /*.no-js &{
+		transform: translate(-50%, -50%);
+	}*/
+}
+.popup.no-transform {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 .popup.big {
   width: 960px;

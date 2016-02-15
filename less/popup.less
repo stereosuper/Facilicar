@@ -40,8 +40,12 @@
 	overflow: auto;
 	backface-visibility: hidden;
 	text-align: right;
-	.no-js &{
+	transform: translate(-50%, -50%);
+	/*.no-js &{
 		transform: translate(-50%, -50%);
+	}*/
+	&.no-transform{
+		transform: none;
 	}
 	&.big{
 		width: 960px;
