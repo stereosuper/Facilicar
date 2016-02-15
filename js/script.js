@@ -1237,27 +1237,31 @@ $(function(){
 	// Hover wrapper car
 	$(".list-cars .wrapper-car").hover(
 		function() {
-			if($(".list-cars").hasClass("is-list")){
-				// Lancer le slideshow des photos de la voiture
-				if($(".bandeau-image-car ul", this).length){
-					var ulActive = $(".bandeau-image-car ul", this);
-					var nbSlidesCars = $(".bandeau-image-car ul li", this).length;
-					if(nbSlidesCars>1){
-						animateNextCarSlide(ulActive, 1);
+			if($("html").hasClass("no-touch")){
+				if($(".list-cars").hasClass("is-list")){
+					// Lancer le slideshow des photos de la voiture
+					if($(".bandeau-image-car ul", this).length){
+						var ulActive = $(".bandeau-image-car ul", this);
+						var nbSlidesCars = $(".bandeau-image-car ul li", this).length;
+						if(nbSlidesCars>1){
+							animateNextCarSlide(ulActive, 1);
+						}
 					}
 				}
 			}
 		}, function() {
-			// Arreter le slideshow
-			TweenMax.killTweensOf($(".bandeau-image-car ul >li", this));
-			var ulActiveAze = $(".bandeau-image-car ul", this);
-			var slideOne = $(">li", ulActiveAze).eq(0);
+			if($("html").hasClass("no-touch")){
+				// Arreter le slideshow
+				TweenMax.killTweensOf($(".bandeau-image-car ul >li", this));
+				var ulActiveAze = $(".bandeau-image-car ul", this);
+				var slideOne = $(">li", ulActiveAze).eq(0);
 
-			if(!$(".bandeau-image-car ul li", this).first().hasClass("is-active")){
-				TweenMax.set(slideOne, {x: "100%"});
+				if(!$(".bandeau-image-car ul li", this).first().hasClass("is-active")){
+					TweenMax.set(slideOne, {x: "100%"});
+				}
+				
+				TweenMax.to(slideOne, 0.2, {x: "0%", ease:Cubic.easeInOut, onComplete: completeEndCarSlide, onCompleteParams: [ulActiveAze]});
 			}
-			
-			TweenMax.to(slideOne, 0.2, {x: "0%", ease:Cubic.easeInOut, onComplete: completeEndCarSlide, onCompleteParams: [ulActiveAze]});
 		}
 	);
 

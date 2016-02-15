@@ -33,17 +33,19 @@
 				margin: 0;
 				padding: 0;
 				&:hover{
-					.wrapper-img-slider-citation{
-						transform: scale(1.2);
-					}
-					.img-slider-citation{
-						filter: blur(4px);
-						transition-delay: 0s;
-					}
-					.zone-txt-slider-citation{
-						opacity: 1;
-						transform: translateY(0px);
-						transition-delay: 0.1s;
+					.no-touch &{
+						.wrapper-img-slider-citation{
+							transform: scale(1.2);
+						}
+						.img-slider-citation{
+							filter: blur(4px);
+							transition-delay: 0s;
+						}
+						.zone-txt-slider-citation{
+							opacity: 1;
+							transform: translateY(0px);
+							transition-delay: 0.1s;
+						}
 					}
 				}
 			}
@@ -147,14 +149,16 @@ a.btn-slider-citation{
 		}
 	}
 	&:hover{
-		&.btn-left{
-			span{
-				transform: translateX(-15px);
+		.no-touch &{
+			&.btn-left{
+				span{
+					transform: translateX(-15px);
+				}
 			}
-		}
-		&.btn-right{
-			span{
-				transform: translateX(15px);
+			&.btn-right{
+				span{
+					transform: translateX(15px);
+				}
 			}
 		}
 	}
@@ -178,7 +182,9 @@ a.btn-slider-citation{
 		width: 100%;
 		height: 100%;
 		&:hover{
-			opacity: 0.8;
+			.no-touch &{
+				opacity: 0.8;
+			}
 		}
 	}
 	.slick-slide{
@@ -299,7 +305,9 @@ a.btn-slider-citation{
 			outline: none;
 		}
 		&:hover{
-			opacity: 0.8;
+			.no-touch &{
+				opacity: 0.8;
+			}
 		}
 		&.slick-current{
 			opacity: 0.5;
@@ -421,7 +429,9 @@ a.btn-slider-citation{
 		position: relative;
 		cursor: pointer;
 		&:hover{
-			opacity: 0.8;
+			.no-touch &{
+				opacity: 0.8;
+			}
 		}
 		&:focus{
 			outline: none;

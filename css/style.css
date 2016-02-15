@@ -702,7 +702,7 @@ a.logo-facilicar {
   -webkit-transition: opacity 0.1s ease-in-out;
           transition: opacity 0.1s ease-in-out;
 }
-a.logo-facilicar:hover {
+.no-touch a.logo-facilicar:hover {
   opacity: 0.8;
 }
 .header-on a.logo-facilicar {
@@ -731,7 +731,7 @@ a.color-primary {
   -webkit-transition: opacity 0.1s ease-in-out;
           transition: opacity 0.1s ease-in-out;
 }
-a.color-primary:hover {
+.no-touch a.color-primary:hover {
   opacity: 0.8;
 }
 .color-secondary {
@@ -741,7 +741,7 @@ a.color-secondary {
   -webkit-transition: opacity 0.1s ease-in-out;
           transition: opacity 0.1s ease-in-out;
 }
-a.color-secondary:hover {
+.no-touch a.color-secondary:hover {
   opacity: 0.8;
 }
 .color-grey {
@@ -751,7 +751,7 @@ a.color-grey {
   -webkit-transition: opacity 0.1s ease-in-out;
           transition: opacity 0.1s ease-in-out;
 }
-a.color-grey:hover {
+.no-touch a.color-grey:hover {
   opacity: 0.8;
 }
 .color-white {
@@ -761,7 +761,7 @@ a.color-white {
   -webkit-transition: color 0.1s ease-in-out;
           transition: color 0.1s ease-in-out;
 }
-a.color-white:hover {
+.no-touch a.color-white:hover {
   color: #797973;
 }
 .color-gris-3 {
@@ -774,7 +774,7 @@ a.color-theme-black {
   -webkit-transition: opacity 0.1s ease-in-out;
           transition: opacity 0.1s ease-in-out;
 }
-a.color-theme-black:hover {
+.no-touch a.color-theme-black:hover {
   opacity: 0.8;
 }
 .bg-gradient {
@@ -1211,8 +1211,8 @@ a.btn-menu-responsive .rect:before {
   border-bottom: 1px solid #b0b0a8;
   text-decoration: none;
 }
-.navbar .list-block > li a:hover,
-#main .navbar .list-block > li a:hover {
+.no-touch .navbar .list-block > li a:hover,
+.no-touch #main .navbar .list-block > li a:hover {
   border-bottom-color: #009cc4;
 }
 .navbar .list-block > li.active a,
@@ -1488,24 +1488,24 @@ a.btn-menu-responsive .rect:before {
           backface-visibility: hidden;
   text-decoration: none;
 }
-.bloc-survol:hover .zone-picto-bloc-survol {
+.no-touch .bloc-survol:hover .zone-picto-bloc-survol {
   opacity: 0;
   -webkit-transform: translateY(-130px);
       -ms-transform: translateY(-130px);
           transform: translateY(-130px);
 }
-.bloc-survol:hover h2 {
+.no-touch .bloc-survol:hover h2 {
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
 }
-.bloc-survol:hover p {
+.no-touch .bloc-survol:hover p {
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
           transform: translateY(0px);
 }
-.bloc-survol:hover .btn-block {
+.no-touch .bloc-survol:hover .btn-block {
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
@@ -1792,10 +1792,10 @@ a.btn-menu-responsive .rect:before {
 #footer-bottom .bloc-partenaires .list-inline > li a.cetelem:before {
   background-image: url("../img/partenaires/cetelem.png");
 }
-#footer-bottom .bloc-partenaires .list-inline > li a:hover img {
+.no-touch #footer-bottom .bloc-partenaires .list-inline > li a:hover img {
   opacity: 0;
 }
-#footer-bottom .bloc-partenaires .list-inline > li a:hover:before {
+.no-touch #footer-bottom .bloc-partenaires .list-inline > li a:hover:before {
   opacity: 1;
 }
 /* @end */
@@ -1998,8 +1998,8 @@ a.btn-menu-responsive .rect:before {
 .list-block.list-search-result > li a .img-type-store {
   top: 14px;
 }
-.list-search-result > li a:hover,
-.list-block.list-search-result > li a:hover {
+.no-touch .list-search-result > li a:hover,
+.no-touch .list-block.list-search-result > li a:hover {
   opacity: 0.7;
 }
 .search-title {
@@ -2101,8 +2101,8 @@ a.btn-menu-responsive .rect:before {
   position: relative;
   text-overflow: ellipsis;
 }
-.list-agency > li a:hover,
-.list-block.list-agency > li a:hover {
+.no-touch .list-agency > li a:hover,
+.no-touch .list-block.list-agency > li a:hover {
   opacity: 0.7;
 }
 .wrapper-detail-localisation {
@@ -3081,19 +3081,19 @@ span.btn-heart .heart-number {
   -webkit-transition: color 0.1s ease-in-out;
           transition: color 0.1s ease-in-out;
 }
-a.btn-heart:hover,
-div.btn-heart:hover,
-span.btn-heart:hover {
+.no-touch a.btn-heart:hover,
+.no-touch div.btn-heart:hover,
+.no-touch span.btn-heart:hover {
   opacity: 1;
 }
-a.btn-heart:hover .icon-heart,
-div.btn-heart:hover .icon-heart,
-span.btn-heart:hover .icon-heart {
+.no-touch a.btn-heart:hover .icon-heart,
+.no-touch div.btn-heart:hover .icon-heart,
+.no-touch span.btn-heart:hover .icon-heart {
   color: #F45858;
 }
-a.btn-heart:hover .heart-number,
-div.btn-heart:hover .heart-number,
-span.btn-heart:hover .heart-number {
+.no-touch a.btn-heart:hover .heart-number,
+.no-touch div.btn-heart:hover .heart-number,
+.no-touch span.btn-heart:hover .heart-number {
   color: #009cc4;
 }
 a.btn-block,
@@ -3818,10 +3818,10 @@ a:focus {
 .list-social.list-social-txt > li a .zone-icon.icon-print {
   font-size: 32px;
 }
-.list-social.list-social-txt > li a:hover {
+.no-touch .list-social.list-social-txt > li a:hover {
   background: none;
 }
-.list-social.list-social-txt > li a:hover .zone-icon {
+.no-touch .list-social.list-social-txt > li a:hover .zone-icon {
   opacity: 0.8;
 }
 .list-social > li {
@@ -3850,7 +3850,7 @@ a:focus {
 .list-social > li a.icon-twitter {
   font-size: 24px;
 }
-.list-social > li a:hover {
+.no-touch .list-social > li a:hover {
   color: #333333;
   background-color: #797973;
 }
@@ -3894,63 +3894,63 @@ a:focus {
   -webkit-transition: opacity 0.1s ease-in-out;
           transition: opacity 0.1s ease-in-out;
 }
-.list-cars.list-cars-small .wrapper-car:hover {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover {
   opacity: 0.85;
 }
-.list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-top {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: translateY(-21px) translateZ(1px);
           transform: translateY(-21px) translateZ(1px);
 }
 .no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   margin-top: -21px;
 }
-.list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: translateY(40px) translateZ(1px);
           transform: translateY(40px) translateZ(1px);
 }
 .no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   margin-bottom: -40px;
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-year {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-year {
   -webkit-transform: translateY(5px) translateZ(1px);
           transform: translateY(5px) translateZ(1px);
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-km {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-km {
   -webkit-transform: translateY(-24px) translateZ(1px);
           transform: translateY(-24px) translateZ(1px);
 }
 .no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .car-km {
   margin-top: -24px;
 }
-.list-cars.list-cars-small .wrapper-car:hover .motor-color {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .motor-color {
   opacity: 0;
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-name {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-name {
   -webkit-transform: translateY(5px) translateZ(1px);
           transform: translateY(5px) translateZ(1px);
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-desc {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-desc {
   opacity: 0;
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-old-price {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-old-price {
   display: none;
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-price {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-price {
   -webkit-transform: translateY(53px) translateZ(1px);
           transform: translateY(53px) translateZ(1px);
 }
 .no-csstransforms3d .list-cars.list-cars-small .wrapper-car:hover .car-price {
   margin-bottom: -53px;
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
   opacity: 0;
   -webkit-transform: translateY(45px) translateZ(1px);
           transform: translateY(45px) translateZ(1px);
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-btn-essai {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-btn-essai {
   opacity: 0;
 }
-.list-cars.list-cars-small .wrapper-car:hover .car-label {
+.no-touch .list-cars.list-cars-small .wrapper-car:hover .car-label {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
@@ -4179,14 +4179,14 @@ a:focus {
   left: 50%;
   margin: 0 0 0 -8px;
 }
-.list-team > li:hover .name-team,
-#main .list-team > li:hover .name-team {
+.no-touch .list-team > li:hover .name-team,
+.no-touch #main .list-team > li:hover .name-team {
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
 }
-.list-team > li:hover .function-team,
-#main .list-team > li:hover .function-team {
+.no-touch .list-team > li:hover .function-team,
+.no-touch #main .list-team > li:hover .function-team {
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
@@ -4444,7 +4444,7 @@ button.button-primary {
   -webkit-transition: background-color 0.2s ease-in-out;
           transition: background-color 0.2s ease-in-out;
 }
-button.button-primary:hover {
+.no-touch button.button-primary:hover {
   background-color: #e38c00;
 }
 button.button-secondary {
@@ -4527,26 +4527,26 @@ button.button-arrow:after {
   border-style: solid;
   box-sizing: border-box;
 }
-button.button-arrow:hover {
+.no-touch button.button-arrow:hover {
   background-color: #ffffff;
 }
-button.button-arrow:hover:before {
+.no-touch button.button-arrow:hover:before {
   opacity: 0;
 }
-button.button-arrow:hover .txt-button {
+.no-touch button.button-arrow:hover .txt-button {
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
 }
-button.button-arrow:hover .txt-hover-button {
+.no-touch button.button-arrow:hover .txt-hover-button {
   -webkit-transform: translateY(0%);
       -ms-transform: translateY(0%);
           transform: translateY(0%);
 }
-button.button-arrow:hover.bg-primary {
+.no-touch button.button-arrow:hover.bg-primary {
   color: #009cc4;
 }
-button.button-arrow:hover.bg-secondary {
+.no-touch button.button-arrow:hover.bg-secondary {
   color: #e38c00;
 }
 button:focus {
@@ -4655,7 +4655,7 @@ button:focus {
   white-space: nowrap;
   cursor: pointer;
 }
-.select-custom .select-options ul > li:hover {
+.no-touch .select-custom .select-options ul > li:hover {
   text-decoration: underline;
 }
 .select-custom .select-options ul > li.is-selected {
@@ -5064,8 +5064,8 @@ select:focus {
   -webkit-transition: opacity 0.2s ease-in-out;
           transition: opacity 0.2s ease-in-out;
 }
-.pagination > li a:hover,
-#main .pagination > li a:hover {
+.no-touch .pagination > li a:hover,
+.no-touch #main .pagination > li a:hover {
   opacity: 0.8;
 }
 .pagination > li.arrow,
@@ -5117,18 +5117,18 @@ select:focus {
   margin: 0;
   padding: 0;
 }
-.wrapper-slider-citation ul li a:hover .wrapper-img-slider-citation {
+.no-touch .wrapper-slider-citation ul li a:hover .wrapper-img-slider-citation {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
-.wrapper-slider-citation ul li a:hover .img-slider-citation {
+.no-touch .wrapper-slider-citation ul li a:hover .img-slider-citation {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.wrapper-slider-citation ul li a:hover .zone-txt-slider-citation {
+.no-touch .wrapper-slider-citation ul li a:hover .zone-txt-slider-citation {
   opacity: 1;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
@@ -5254,12 +5254,12 @@ a.btn-slider-citation.btn-right {
 a.btn-slider-citation.btn-right span {
   left: 0;
 }
-a.btn-slider-citation:hover.btn-left span {
+.no-touch a.btn-slider-citation:hover.btn-left span {
   -webkit-transform: translateX(-15px);
       -ms-transform: translateX(-15px);
           transform: translateX(-15px);
 }
-a.btn-slider-citation:hover.btn-right span {
+.no-touch a.btn-slider-citation:hover.btn-right span {
   -webkit-transform: translateX(15px);
       -ms-transform: translateX(15px);
           transform: translateX(15px);
@@ -5283,7 +5283,7 @@ a.btn-slider-citation:hover.btn-right span {
   width: 100%;
   height: 100%;
 }
-.slider-for .slide:hover {
+.no-touch .slider-for .slide:hover {
   opacity: 0.8;
 }
 .slider-for .slick-slide {
@@ -5398,7 +5398,7 @@ a.btn-slider-citation:hover.btn-right span {
 .slider-nav .slide:focus {
   outline: none;
 }
-.slider-nav .slide:hover {
+.no-touch .slider-nav .slide:hover {
   opacity: 0.8;
 }
 .slider-nav .slide.slick-current {
@@ -5514,7 +5514,7 @@ a.btn-slider-citation:hover.btn-right span {
   position: relative;
   cursor: pointer;
 }
-.slider-nav-zoom .slide:hover {
+.no-touch .slider-nav-zoom .slide:hover {
   opacity: 0.8;
 }
 .slider-nav-zoom .slide:focus {
@@ -6458,123 +6458,123 @@ a.btn-slider-citation:hover.btn-right span {
 .wrapper-car.cta .cta-content.cta-btn .btn-underline.has-txt-before {
   margin-bottom: 30px;
 }
-.wrapper-car:hover .fond-bandeau-car.bandeau-top {
+.no-touch .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .fond-bandeau-car.bandeau-top {
+.no-csstransforms3d .no-touch .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-top: 0;
 }
-.wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+.no-touch .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+.no-csstransforms3d .no-touch .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-bottom: 0;
 }
-.wrapper-car:hover .car-year {
+.no-touch .wrapper-car:hover .car-year {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .car-year {
+.no-csstransforms3d .no-touch .wrapper-car:hover .car-year {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-bottom: 0;
 }
-.wrapper-car:hover .car-name {
+.no-touch .wrapper-car:hover .car-name {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .car-name {
+.no-csstransforms3d .no-touch .wrapper-car:hover .car-name {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-bottom: 0;
 }
-.wrapper-car:hover .car-desc {
+.no-touch .wrapper-car:hover .car-desc {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
-.wrapper-car:hover .motor-color {
+.no-touch .wrapper-car:hover .motor-color {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
-.wrapper-car:hover .car-km {
+.no-touch .wrapper-car:hover .car-km {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .car-km {
+.no-csstransforms3d .no-touch .wrapper-car:hover .car-km {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-top: 0;
 }
-.wrapper-car:hover .car-price {
+.no-touch .wrapper-car:hover .car-price {
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .car-price {
+.no-csstransforms3d .no-touch .wrapper-car:hover .car-price {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-bottom: 0;
 }
-.wrapper-car:hover .car-price-saving {
+.no-touch .wrapper-car:hover .car-price-saving {
   opacity: 1;
   -webkit-transform: translateY(0px) translateZ(1px);
           transform: translateY(0px) translateZ(1px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .car-price-saving {
+.no-csstransforms3d .no-touch .wrapper-car:hover .car-price-saving {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-bottom: 0;
 }
-.wrapper-car:hover .car-btn-essai {
+.no-touch .wrapper-car:hover .car-btn-essai {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
-.wrapper-car:hover .bandeau-car.bandeau-bottom {
+.no-touch .wrapper-car:hover .bandeau-car.bandeau-bottom {
   height: 135px;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.wrapper-car:hover .car-labels {
+.no-touch .wrapper-car:hover .car-labels {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.wrapper-car:hover .car-label {
+.no-touch .wrapper-car:hover .car-label {
   -webkit-transform: translateY(-45px);
       -ms-transform: translateY(-45px);
           transform: translateY(-45px);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.no-csstransforms3d .wrapper-car:hover .car-label {
+.no-csstransforms3d .no-touch .wrapper-car:hover .car-label {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
@@ -6814,14 +6814,14 @@ a.btn-slider-citation:hover.btn-right span {
   position: relative;
   text-align: center;
 }
-.car-options .wrapper-car-option .container-car-option:hover .zone-picto {
+.no-touch .car-options .wrapper-car-option .container-car-option:hover .zone-picto {
   color: #e38c00;
 }
-.car-options .wrapper-car-option .container-car-option:hover .zone-picto.nb-places .places {
+.no-touch .car-options .wrapper-car-option .container-car-option:hover .zone-picto.nb-places .places {
   background-color: #e38c00;
   color: #fff;
 }
-.car-options .wrapper-car-option .container-car-option:hover .zone-txt {
+.no-touch .car-options .wrapper-car-option .container-car-option:hover .zone-txt {
   opacity: 1;
 }
 .car-options .zone-picto {
@@ -7347,10 +7347,10 @@ a.btn-slider-citation:hover.btn-right span {
   font-size: 0.875em;
   border-radius: 8px;
 }
-.select-type-car > li a:hover .zone-picto {
+.no-touch .select-type-car > li a:hover .zone-picto {
   color: #e38c00;
 }
-.select-type-car > li a:hover .zone-txt {
+.no-touch .select-type-car > li a:hover .zone-txt {
   color: #e38c00;
 }
 .select-type-car > li.is-selected a {
@@ -7410,14 +7410,14 @@ a.btn-slider-citation:hover.btn-right span {
   border-radius: 6px;
   position: relative;
 }
-.select-option-car > li a:hover .zone-picto {
+.no-touch .select-option-car > li a:hover .zone-picto {
   color: #e38c00;
 }
-.select-option-car > li a:hover .zone-picto.nb-places .places {
+.no-touch .select-option-car > li a:hover .zone-picto.nb-places .places {
   background-color: #e38c00;
   color: #fff;
 }
-.select-option-car > li a:hover .zone-txt {
+.no-touch .select-option-car > li a:hover .zone-txt {
   opacity: 1;
 }
 .select-option-car > li.is-selected a {
@@ -7545,18 +7545,18 @@ a.btn-slider-citation:hover.btn-right span {
 #btn-voir-vehicules.disabled:after {
   border-color: #b0b0a8 !important;
 }
-#btn-voir-vehicules.disabled:hover {
+.no-touch #btn-voir-vehicules.disabled:hover {
   color: #fff!important;
 }
-#btn-voir-vehicules.disabled:hover:before {
+.no-touch #btn-voir-vehicules.disabled:hover:before {
   opacity: 1!important;
 }
-#btn-voir-vehicules.disabled:hover .txt-btn-block-arrow {
+.no-touch #btn-voir-vehicules.disabled:hover .txt-btn-block-arrow {
   -webkit-transform: translateY(0%) !important;
       -ms-transform: translateY(0%) !important;
           transform: translateY(0%) !important;
 }
-#btn-voir-vehicules.disabled:hover .txt-hover-btn-block-arrow {
+.no-touch #btn-voir-vehicules.disabled:hover .txt-hover-btn-block-arrow {
   -webkit-transform: translateY(-100%) !important;
       -ms-transform: translateY(-100%) !important;
           transform: translateY(-100%) !important;
@@ -7694,12 +7694,12 @@ a.btn-slider-citation:hover.btn-right span {
 .zone-sort-by a.icon-liste.is-selected {
   color: #e38c00;
 }
-.zone-sort-by a.icon-mosaique.is-selected:hover,
-.zone-sort-by a.icon-liste.is-selected:hover {
+.no-touch .zone-sort-by a.icon-mosaique.is-selected:hover,
+.no-touch .zone-sort-by a.icon-liste.is-selected:hover {
   opacity: 1;
 }
-.zone-sort-by a.icon-mosaique:hover,
-.zone-sort-by a.icon-liste:hover {
+.no-touch .zone-sort-by a.icon-mosaique:hover,
+.no-touch .zone-sort-by a.icon-liste:hover {
   opacity: 0.8;
 }
 .sort-by {
@@ -7731,7 +7731,7 @@ a.btn-slider-citation:hover.btn-right span {
 .sort-by a.is-selected {
   color: #e38c00;
 }
-.sort-by a:hover {
+.no-touch .sort-by a:hover {
   opacity: 0.8;
 }
 .sort-by.is-active {
@@ -7984,94 +7984,94 @@ a.btn-slider-citation:hover.btn-right span {
 .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn {
   margin: 0 0 5px 0;
 }
-.is-list .wrapper-car:hover {
+.no-touch .is-list .wrapper-car:hover {
   border-color: #009cc4;
 }
-.is-list .wrapper-car:hover .bandeau-image-car {
+.no-touch .is-list .wrapper-car:hover .bandeau-image-car {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
 }
-.is-list .wrapper-car:hover .fond-bandeau-car.bandeau-top {
+.no-touch .is-list .wrapper-car:hover .fond-bandeau-car.bandeau-top {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
   transfom: none;
 }
-.is-list .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
+.no-touch .is-list .wrapper-car:hover .fond-bandeau-car.bandeau-bottom {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .car-year {
+.no-touch .is-list .wrapper-car:hover .car-year {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .car-name {
+.no-touch .is-list .wrapper-car:hover .car-name {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .car-desc {
+.no-touch .is-list .wrapper-car:hover .car-desc {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
-.is-list .wrapper-car:hover .motor-color {
+.no-touch .is-list .wrapper-car:hover .motor-color {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
-.is-list .wrapper-car:hover .car-km {
+.no-touch .is-list .wrapper-car:hover .car-km {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .car-price {
+.no-touch .is-list .wrapper-car:hover .car-price {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .car-price-saving {
+.no-touch .is-list .wrapper-car:hover .car-price-saving {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .car-btn-essai {
+.no-touch .is-list .wrapper-car:hover .car-btn-essai {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
-.is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
+.no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
   height: auto;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .bandeau-car.bandeau-top {
+.no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-top {
   -webkit-transform: translateX(60px);
       -ms-transform: translateX(60px);
           transform: translateX(60px);
 }
-.no-csstransforms3d .is-list .wrapper-car:hover .bandeau-car.bandeau-top {
+.no-csstransforms3d .no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-top {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
   margin-left: 60px;
 }
-.is-list .wrapper-car:hover .car-labels {
+.no-touch .is-list .wrapper-car:hover .car-labels {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.is-list .wrapper-car:hover .car-label {
+.no-touch .is-list .wrapper-car:hover .car-label {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
@@ -8275,14 +8275,14 @@ a.btn-slider-citation:hover.btn-right span {
   position: relative;
   text-align: center;
 }
-.wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-picto {
+.no-touch .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-picto {
   color: #e38c00;
 }
-.wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-picto.nb-places .places {
+.no-touch .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-picto.nb-places .places {
   background-color: #e38c00;
   color: #fff;
 }
-.wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-txt {
+.no-touch .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-txt {
   opacity: 1;
 }
 .wrapper-car-detail .car-options-detail .zone-picto {
@@ -9283,26 +9283,26 @@ a.btn-slider-citation:hover.btn-right span {
 .credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after {
   border-color: #e38c00;
 }
-.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
-.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
-.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover {
+.no-touch .credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.no-touch .credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.no-touch .credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover {
   color: #e38c00;
 }
-.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
-.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
-.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before {
+.no-touch .credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.no-touch .credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.no-touch .credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before {
   opacity: 0;
 }
-.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
-.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
-.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow {
+.no-touch .credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.no-touch .credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.no-touch .credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow {
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
 }
-.credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
-.credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
-.credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow {
+.no-touch .credit-financement.is-selected a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.no-touch .credit-financement.is-selected div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.no-touch .credit-financement.is-selected span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow {
   -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
           transform: translateY(0);
@@ -9323,26 +9323,26 @@ a.btn-slider-citation:hover.btn-right span {
 .credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:after {
   border-color: #d8d8d4;
 }
-.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
-.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
-.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover {
+.no-touch .credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.no-touch .credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover,
+.no-touch .credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover {
   color: #fff;
 }
-.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
-.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
-.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before {
+.no-touch .credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.no-touch .credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before,
+.no-touch .credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover:before {
   opacity: 1;
 }
-.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
-.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
-.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow {
+.no-touch .credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.no-touch .credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow,
+.no-touch .credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-btn-block-arrow {
   -webkit-transform: none;
       -ms-transform: none;
           transform: none;
 }
-.credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
-.credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
-.credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow {
+.no-touch .credit-financement a.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.no-touch .credit-financement div.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow,
+.no-touch .credit-financement span.btn-block.btn-block-arrow.bg-secondary.btn-accord-principe:hover .txt-hover-btn-block-arrow {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -9847,7 +9847,7 @@ a.btn-slider-citation:hover.btn-right span {
   margin: -8px 0 0 0;
   padding: 0;
 }
-#btn-close-zoom:hover {
+.no-touch #btn-close-zoom:hover {
   opacity: 0.7;
 }
 .open #btn-close-zoom {
@@ -10038,22 +10038,22 @@ a.btn-slider-citation:hover.btn-right span {
 .btn-change-car .survol .wrapper-arrow-survol {
   font-size: 34px;
 }
-.btn-change-car:hover.prev-car .survol {
+.no-touch .btn-change-car:hover.prev-car .survol {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
-.btn-change-car:hover.prev-car .arrow-change-car {
+.no-touch .btn-change-car:hover.prev-car .arrow-change-car {
   -webkit-transform: translateX(275px);
       -ms-transform: translateX(275px);
           transform: translateX(275px);
 }
-.btn-change-car:hover.next-car .survol {
+.no-touch .btn-change-car:hover.next-car .survol {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
 }
-.btn-change-car:hover.next-car .arrow-change-car {
+.no-touch .btn-change-car:hover.next-car .arrow-change-car {
   -webkit-transform: translateX(-275px);
       -ms-transform: translateX(-275px);
           transform: translateX(-275px);
@@ -10550,12 +10550,12 @@ a.btn-slider-citation:hover.btn-right span {
   .is-list .car-name {
     font-size: 1.4em;
   }
-  .is-list .wrapper-car:hover .bandeau-image-car {
+  .no-touch .is-list .wrapper-car:hover .bandeau-image-car {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
             transform: scale(1);
   }
-  .is-list .wrapper-car:hover .bandeau-car.bandeau-top {
+  .no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-top {
     -webkit-transform: translateX(0px);
         -ms-transform: translateX(0px);
             transform: translateX(0px);
@@ -11424,15 +11424,15 @@ a.btn-slider-citation:hover.btn-right span {
   .list-cars.list-cars-small > li {
     height: 222px;
   }
-  .list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
+  .no-touch .list-cars.list-cars-small .wrapper-car:hover .car-price-saving {
     opacity: 1;
     -webkit-transform: translateY(0px) translateZ(1px);
             transform: translateY(0px) translateZ(1px);
   }
-  .list-cars.list-cars-small .wrapper-car:hover .motor-color {
+  .no-touch .list-cars.list-cars-small .wrapper-car:hover .motor-color {
     opacity: 1;
   }
-  .list-cars.list-cars-small .wrapper-car:hover .car-old-price {
+  .no-touch .list-cars.list-cars-small .wrapper-car:hover .car-old-price {
     display: block;
   }
   .list-cars.list-cars-small .car-name {
@@ -11500,10 +11500,10 @@ a.btn-slider-citation:hover.btn-right span {
         -ms-transform: none;
             transform: none;
   }
-  .wrapper-car:hover .car-labels {
+  .no-touch .wrapper-car:hover .car-labels {
     opacity: 1;
   }
-  .wrapper-car:hover .car-label {
+  .no-touch .wrapper-car:hover .car-label {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -11617,7 +11617,7 @@ a.btn-slider-citation:hover.btn-right span {
     right: 16px;
     margin: -7px 0 0 0;
   }
-  .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
+  .no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
     height: 33px;
   }
   .is-list .bandeau-image-car {
@@ -11835,7 +11835,7 @@ a.btn-slider-citation:hover.btn-right span {
         -ms-transform: none;
             transform: none;
   }
-  .bloc-survol:hover .zone-picto-bloc-survol {
+  .no-touch .bloc-survol:hover .zone-picto-bloc-survol {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -11942,7 +11942,7 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-filter: none;
             filter: none;
   }
-  .wrapper-slider-citation ul li.active a:hover .wrapper-img-slider-citation {
+  .no-touch .wrapper-slider-citation ul li.active a:hover .wrapper-img-slider-citation {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -12629,13 +12629,13 @@ a.btn-slider-citation:hover.btn-right span {
     display: block;
     text-indent: inherit;
   }
-  #menu-bottom-header ul.list-inline > li a:hover {
+  .no-touch #menu-bottom-header ul.list-inline > li a:hover {
     color: #009cc4;
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  #menu-bottom-header ul.list-inline > li a:hover .txt-btn-anim {
+  .no-touch #menu-bottom-header ul.list-inline > li a:hover .txt-btn-anim {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
@@ -12985,8 +12985,8 @@ a.btn-slider-citation:hover.btn-right span {
     right: 16px;
     margin: -7px 0 0 0;
   }
-  .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom,
-  .list-cars.list-cars-small.is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
+  .no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom,
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
     height: 33px;
   }
   .is-list .bandeau-image-car,
@@ -13268,12 +13268,12 @@ a.btn-slider-citation:hover.btn-right span {
     width: 10px;
     margin: -18px 0 0 0;
   }
-  a.btn-slider-citation:hover.btn-right span {
+  .no-touch a.btn-slider-citation:hover.btn-right span {
     -webkit-transform: translateX(10px);
         -ms-transform: translateX(10px);
             transform: translateX(10px);
   }
-  a.btn-slider-citation:hover.btn-left span {
+  .no-touch a.btn-slider-citation:hover.btn-left span {
     -webkit-transform: translateX(-10px);
         -ms-transform: translateX(-10px);
             transform: translateX(-10px);
@@ -13756,7 +13756,7 @@ a.btn-slider-citation:hover.btn-right span {
     padding: 2px 0;
     position: relative;
   }
-  .cars-filters .select-custom .select-options ul > li:hover {
+  .no-touch .cars-filters .select-custom .select-options ul > li:hover {
     text-decoration: none;
     color: #e38c00;
   }
@@ -13811,7 +13811,7 @@ a.btn-slider-citation:hover.btn-right span {
     font-family: 'Texta-Bold', sans-serif;
     font-size: 1em;
   }
-  .cars-filters .switch.off .on-content:hover {
+  .no-touch .cars-filters .switch.off .on-content:hover {
     color: #e38c00;
   }
   .cars-filters .switch.on .on-content {
@@ -13819,7 +13819,7 @@ a.btn-slider-citation:hover.btn-right span {
     font-family: 'Texta-Bold', sans-serif;
     font-size: 1em;
   }
-  .cars-filters .switch.on .off-content:hover {
+  .no-touch .cars-filters .switch.on .off-content:hover {
     color: #e38c00;
   }
   #btn-more-criteres {
@@ -13892,7 +13892,7 @@ a.btn-slider-citation:hover.btn-right span {
     font-size: 1.125em;
     padding: 6px 0 6px 0;
   }
-  .select-option-car > li a:hover .zone-txt {
+  .no-touch .select-option-car > li a:hover .zone-txt {
     color: #e38c00;
   }
   .select-option-car .zone-picto {
@@ -14151,30 +14151,30 @@ a.btn-slider-citation:hover.btn-right span {
     padding: 0;
     display: block;
   }
-  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-year {
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .car-year {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-km {
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .car-km {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-name {
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .car-name {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-desc {
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .car-desc {
     opacity: 1;
   }
-  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-price {
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .car-price {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
   }
-  .list-cars.list-cars-small.is-list .wrapper-car:hover .car-btn-essai {
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .car-btn-essai {
     opacity: 1;
   }
   .list-cars.list-cars-small.is-list .bandeau-image-car {

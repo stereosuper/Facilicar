@@ -305,12 +305,14 @@
         }
         .wrapper-car{
             &:hover{
-                .bandeau-image-car{
-                    transform: scale(1);
-                }
-                .bandeau-car{
-                    &.bandeau-top{
-                        transform: translateX(0px);    
+                .no-touch &{
+                    .bandeau-image-car{
+                        transform: scale(1);
+                    }
+                    .bandeau-car{
+                        &.bandeau-top{
+                            transform: translateX(0px);    
+                        }
                     }
                 }
             }
@@ -1191,15 +1193,17 @@
             }
             .wrapper-car{
                 &:hover{
-                    .car-price-saving{
-                        opacity: 1;
-                        transform: translateY(0px) translateZ(1px);
-                    }
-                    .motor-color{
-                        opacity: 1;
-                    }
-                    .car-old-price{
-                        display: block;
+                    .no-touch &{
+                        .car-price-saving{
+                            opacity: 1;
+                            transform: translateY(0px) translateZ(1px);
+                        }
+                        .motor-color{
+                            opacity: 1;
+                        }
+                        .car-old-price{
+                            display: block;
+                        }
                     }
                 }
             }
@@ -1272,11 +1276,13 @@
     }
     .wrapper-car{
         &:hover{
-            .car-labels{
-                opacity: 1;
-            }
-            .car-label{
-                transform: none;
+            .no-touch &{
+                .car-labels{
+                    opacity: 1;
+                }
+                .car-label{
+                    transform: none;
+                }
             }
         }
     }
@@ -1369,9 +1375,11 @@
                 margin: -7px 0 0 0;
             }
             &:hover{
-                .bandeau-car{
-                    &.bandeau-bottom{
-                        height: 33px;
+                .no-touch &{
+                    .bandeau-car{
+                        &.bandeau-bottom{
+                            height: 33px;
+                        }
                     }
                 }
             }
@@ -1598,9 +1606,11 @@
             transform: none;
         }
         &:hover{
-            .zone-picto-bloc-survol{
-                transform: none;
-                opacity: 1;
+            .no-touch &{
+                .zone-picto-bloc-survol{
+                    transform: none;
+                    opacity: 1;
+                }
             }
         }
     }
@@ -1705,8 +1715,10 @@
                             filter: none;
                         }
                         &:hover{
-                            .wrapper-img-slider-citation{
-                                transform: none;
+                            .no-touch &{
+                                .wrapper-img-slider-citation{
+                                    transform: none;
+                                }
                             }
                         }
                     }
@@ -2472,10 +2484,12 @@
                         text-indent: inherit;
                     }
                     &:hover{
-                        color: @theme-primary;
-                        transform: none;
-                        .txt-btn-anim{
+                        .no-touch &{
+                            color: @theme-primary;
                             transform: none;
+                            .txt-btn-anim{
+                                transform: none;
+                            }
                         }
                     }
                 }
@@ -2822,9 +2836,11 @@
                 margin: -7px 0 0 0;
             }
             &:hover{
-                .bandeau-car{
-                    &.bandeau-bottom{
-                        height: 33px;
+                .no-touch &{
+                    .bandeau-car{
+                        &.bandeau-bottom{
+                            height: 33px;
+                        }
                     }
                 }
             }
@@ -3097,14 +3113,16 @@
             margin: -18px 0 0 0;
         }
         &:hover{
-            &.btn-right{
-                span{
-                    transform: translateX(10px);
+            .no-touch &{
+                &.btn-right{
+                    span{
+                        transform: translateX(10px);
+                    }
                 }
-            }
-            &.btn-left{
-                span{
-                    transform: translateX(-10px);
+                &.btn-left{
+                    span{
+                        transform: translateX(-10px);
+                    }
                 }
             }
         }
@@ -3582,8 +3600,10 @@
                         padding: 2px 0;
                         position: relative;
                         &:hover{
-                            text-decoration: none;
-                            color: @theme-secondary;
+                            .no-touch &{
+                                text-decoration: none;
+                                color: @theme-secondary;
+                            }
                         }
                         &.is-selected{
                             padding: 6px 0 6px 18px;
@@ -3630,7 +3650,9 @@
                 }
                 .on-content{
                     &:hover{
-                        color: @theme-secondary;
+                        .no-touch &{
+                            color: @theme-secondary;
+                        }
                     }
                 }
             }
@@ -3641,7 +3663,9 @@
                 }
                 .off-content{
                     &:hover{
-                        color: @theme-secondary;
+                        .no-touch &{
+                            color: @theme-secondary;
+                        }
                     }
                 }
             }
@@ -3706,8 +3730,10 @@
                 .texta-light(1.125em);
                 padding: 6px 0 6px 0;
                 &:hover{
-                    .zone-txt{
-                        color: @theme-secondary;
+                    .no-touch &{
+                        .zone-txt{
+                            color: @theme-secondary;
+                        }
                     }
                 }
             }
@@ -4005,23 +4031,25 @@
             &.is-list{
                 .wrapper-car{
                     &:hover{
-                        .car-year{
-                            transform: none;
-                        }
-                        .car-km{
-                            transform: none;   
-                        }
-                        .car-name{
-                            transform: none;
-                        }
-                        .car-desc{
-                            opacity: 1;
-                        }
-                        .car-price{
-                            transform: none;
-                        }
-                        .car-btn-essai{
-                            opacity: 1;
+                        .no-touch &{
+                            .car-year{
+                                transform: none;
+                            }
+                            .car-km{
+                                transform: none;   
+                            }
+                            .car-name{
+                                transform: none;
+                            }
+                            .car-desc{
+                                opacity: 1;
+                            }
+                            .car-price{
+                                transform: none;
+                            }
+                            .car-btn-essai{
+                                opacity: 1;
+                            }
                         }
                     }
                 }

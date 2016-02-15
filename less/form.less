@@ -42,7 +42,9 @@ button{
     	background-color: @theme-primary;
         transition: background-color 0.2s ease-in-out;
         &:hover{
-            background-color: @theme-secondary;
+            .no-touch &{
+                background-color: @theme-secondary;
+            }
         }
     }
     &.button-secondary{
@@ -123,21 +125,23 @@ button{
             box-sizing: border-box;
         }
         &:hover{
-            background-color: #ffffff;
-            &:before{
-                opacity: 0;
-            }
-            .txt-button{
-                transform: translateY(100%);
-            }
-            .txt-hover-button{
-                transform: translateY(0%);
-            }
-            &.bg-primary{
-                color: @theme-primary;
-            }
-            &.bg-secondary{
-                color: @theme-secondary;
+            .no-touch &{
+                background-color: #ffffff;
+                &:before{
+                    opacity: 0;
+                }
+                .txt-button{
+                    transform: translateY(100%);
+                }
+                .txt-hover-button{
+                    transform: translateY(0%);
+                }
+                &.bg-primary{
+                    color: @theme-primary;
+                }
+                &.bg-secondary{
+                    color: @theme-secondary;
+                }
             }
         }
     }
@@ -233,7 +237,9 @@ button{
                 white-space: nowrap;
                 cursor: pointer;
                 &:hover{
-                    text-decoration: underline;
+                    .no-touch &{
+                        text-decoration: underline;
+                    }
                 }
                 &.is-selected{
                     color: @theme-gris2;

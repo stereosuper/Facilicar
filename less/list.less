@@ -148,9 +148,11 @@
 					}
 				}
 				&:hover{
-					background: none;
-					.zone-icon{
-						opacity: 0.8;
+					.no-touch &{
+						background: none;
+						.zone-icon{
+							opacity: 0.8;
+						}
 					}
 				}
 			}
@@ -180,8 +182,10 @@
 				font-size: 24px;
 			}
 			&:hover{
-				color: @theme-noir;
-				background-color: @theme-gris;
+				.no-touch &{
+					color: @theme-noir;
+					background-color: @theme-gris;
+				}
 			}
 		}
 	}
@@ -230,57 +234,75 @@
 		.wrapper-car{
 			transition: opacity 0.1s ease-in-out;
 			&:hover{
-				opacity: 0.85;
+				.no-touch &{
+					opacity: 0.85;
+				}
 				.fond-bandeau-car{
 					&.bandeau-top{
-						transform: translateY(-21px) translateZ(1px);
+						.no-touch &{
+							transform: translateY(-21px) translateZ(1px);
+						}
 						.no-csstransforms3d &{
 							margin-top: -21px;
 						}
 					}
 					&.bandeau-bottom{
-						transform: translateY(40px) translateZ(1px);
+						.no-touch &{
+							transform: translateY(40px) translateZ(1px);
+						}
 						.no-csstransforms3d &{
 							margin-bottom: -40px;
 						}
 					}
 				}
 				.car-year{
-					transform: translateY(5px) translateZ(1px);
+					.no-touch &{
+						transform: translateY(5px) translateZ(1px);
+					}
 				}
 				.car-km{
-					transform: translateY(-24px) translateZ(1px);
+					.no-touch &{
+						transform: translateY(-24px) translateZ(1px);
+					}
 					.no-csstransforms3d &{
 						margin-top: -24px;
 					}
 				}
-				.motor-color{
-					opacity: 0;
-				}
-				.car-name{
-					transform: translateY(5px) translateZ(1px);
-				}
-				.car-desc{
-					opacity: 0;
-				}
-				.car-old-price{
-					display: none;
+				.no-touch &{
+					.motor-color{
+						opacity: 0;
+					}
+					.car-name{
+						transform: translateY(5px) translateZ(1px);
+					}
+					.car-desc{
+						opacity: 0;
+					}
+					.car-old-price{
+						display: none;
+					}
 				}
 				.car-price{
-					transform: translateY(53px) translateZ(1px);
+					.no-touch &{
+						transform: translateY(53px) translateZ(1px);
+					}
 					.no-csstransforms3d &{
 						margin-bottom: -53px;
 					}
 				}
-				.car-price-saving{
-					opacity: 0;
-					transform: translateY(45px) translateZ(1px);
-				}
-				.car-btn-essai{
-					opacity: 0;
+				.no-touch &{
+					.car-price-saving{
+						opacity: 0;
+						transform: translateY(45px) translateZ(1px);
+					}
+					.car-btn-essai{
+						opacity: 0;
+					}
 				}
 				.car-label{
-					transform: translateY(0);
+					.no-touch &{
+						transform: translateY(0);
+					}
 					.no-csstransforms3d &{
 						margin-bottom: 0px;
 					}
@@ -468,11 +490,13 @@
 			}
 		}
 		&:hover{
-			.name-team{
-				transform: translateY(0%);
-			}
-			.function-team{
-				transform: translateY(0%);
+			.no-touch &{
+				.name-team{
+					transform: translateY(0%);
+				}
+				.function-team{
+					transform: translateY(0%);
+				}
 			}
 		}
 	}

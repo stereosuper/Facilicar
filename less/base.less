@@ -336,7 +336,9 @@ a.logo-facilicar{
     background: url("../layoutImg/logo-facilicar.png") no-repeat 0 0;
     transition: opacity 0.1s ease-in-out;
     &:hover{
-        opacity: 0.8;
+        .no-touch &{
+            opacity: 0.8;
+        }
     }
     .header-on &{
         width: 179px;
@@ -366,7 +368,9 @@ a.logo-facilicar{
     a&{
         transition: opacity 0.1s ease-in-out;
         &:hover{
-            opacity: 0.8;
+            .no-touch &{
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -376,7 +380,9 @@ a.logo-facilicar{
     a&{
         transition: opacity 0.1s ease-in-out;
         &:hover{
-            opacity: 0.8;
+            .no-touch &{
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -386,7 +392,9 @@ a.logo-facilicar{
     a&{
         transition: opacity 0.1s ease-in-out;
         &:hover{
-            opacity: 0.8;
+            .no-touch &{
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -396,7 +404,9 @@ a.logo-facilicar{
     a&{
         transition: color 0.1s ease-in-out;
         &:hover{
-            color: @theme-gris;
+            .no-touch &{
+                color: @theme-gris;
+            }
         }
     }
 }
@@ -410,7 +420,9 @@ a.logo-facilicar{
     a&{
         transition: opacity 0.1s ease-in-out;
         &:hover{
-            opacity: 0.8;
+            .no-touch &{
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -874,7 +886,9 @@ a.btn-menu-responsive{
                 border-bottom: 1px solid @theme-gris2;
                 text-decoration: none;
                 &:hover{
-                    border-bottom-color: @theme-primary;
+                    .no-touch &{
+                        border-bottom-color: @theme-primary;
+                    }
                 }
             }
             &.active{

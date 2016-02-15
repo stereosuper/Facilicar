@@ -494,12 +494,14 @@ a, div, span{
 			transition: color 0.1s ease-in-out;
 		}
 		&:hover{
-			opacity: 1;
-			.icon-heart{
-				color: #F45858;
-			}
-			.heart-number{
-				color: @theme-primary;
+			.no-touch &{
+				opacity: 1;
+				.icon-heart{
+					color: #F45858;
+				}
+				.heart-number{
+					color: @theme-primary;
+				}
 			}
 		}
 	}

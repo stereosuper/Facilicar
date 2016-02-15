@@ -100,16 +100,26 @@
 		}
 	}
 	&:hover{
-		.fond-bandeau-car{
-			&.bandeau-top{
-				transform: translateY(0px) translateZ(1px);
-				transition-delay: 0s;
-				.no-csstransforms3d &{
-					transform: none;
-					margin-top: 0;
+		.no-touch &{
+			.fond-bandeau-car{
+				&.bandeau-top{
+					transform: translateY(0px) translateZ(1px);
+					transition-delay: 0s;
+					.no-csstransforms3d &{
+						transform: none;
+						margin-top: 0;
+					}
+				}
+				&.bandeau-bottom{
+					transform: translateY(0px) translateZ(1px);
+					transition-delay: 0s;
+					.no-csstransforms3d &{
+						transform: none;
+						margin-bottom: 0;
+					}
 				}
 			}
-			&.bandeau-bottom{
+			.car-year{
 				transform: translateY(0px) translateZ(1px);
 				transition-delay: 0s;
 				.no-csstransforms3d &{
@@ -117,76 +127,68 @@
 					margin-bottom: 0;
 				}
 			}
-		}
-		.car-year{
-			transform: translateY(0px) translateZ(1px);
-			transition-delay: 0s;
-			.no-csstransforms3d &{
-				transform: none;
-				margin-bottom: 0;
+			.car-name{
+				transform: translateY(0px) translateZ(1px);
+				transition-delay: 0s;
+				.no-csstransforms3d &{
+					transform: none;
+					margin-bottom: 0;
+				}
 			}
-		}
-		.car-name{
-			transform: translateY(0px) translateZ(1px);
-			transition-delay: 0s;
-			.no-csstransforms3d &{
-				transform: none;
-				margin-bottom: 0;
+			.car-desc{
+				opacity: 1;
+				transition-delay: 0.1s;
 			}
-		}
-		.car-desc{
-			opacity: 1;
-			transition-delay: 0.1s;
-		}
-		.motor-color{
-			opacity: 1;
-			transition-delay: 0.1s;
-		}
-		.car-km{
-			transform: translateY(0px) translateZ(1px);
-			transition-delay: 0s;
-			.no-csstransforms3d &{
-				transform: none;
-				margin-top: 0;
+			.motor-color{
+				opacity: 1;
+				transition-delay: 0.1s;
 			}
-		}
-		.car-price{
-			transform: translateY(0px) translateZ(1px);
-			transition-delay: 0s;
-			.no-csstransforms3d &{
-				transform: none;
-				margin-bottom: 0;
+			.car-km{
+				transform: translateY(0px) translateZ(1px);
+				transition-delay: 0s;
+				.no-csstransforms3d &{
+					transform: none;
+					margin-top: 0;
+				}
 			}
-		}
-		.car-price-saving{
-			opacity: 1;
-			transform: translateY(0px) translateZ(1px);
-			transition-delay: 0s;
-			.no-csstransforms3d &{
-				transform: none;
-				margin-bottom: 0;
+			.car-price{
+				transform: translateY(0px) translateZ(1px);
+				transition-delay: 0s;
+				.no-csstransforms3d &{
+					transform: none;
+					margin-bottom: 0;
+				}
 			}
-		}
-		.car-btn-essai{
-			opacity: 1;
-			transition-delay: 0.1s;
-		}
-		.bandeau-car{
-			&.bandeau-bottom{
-				height: 135px;
+			.car-price-saving{
+				opacity: 1;
+				transform: translateY(0px) translateZ(1px);
+				transition-delay: 0s;
+				.no-csstransforms3d &{
+					transform: none;
+					margin-bottom: 0;
+				}
+			}
+			.car-btn-essai{
+				opacity: 1;
+				transition-delay: 0.1s;
+			}
+			.bandeau-car{
+				&.bandeau-bottom{
+					height: 135px;
+					transition-delay: 0s;
+				}
+			}
+			.car-labels{
+				//opacity: 0;
 				transition-delay: 0s;
 			}
-		}
-		.car-labels{
-			//opacity: 0;
-			transition-delay: 0s;
-		}
-		.car-label{
-			transform: translateY(-45px);
-			transition-delay: 0s;
-			.no-csstransforms3d &{
-				transform: none;
-				margin-bottom: 45px;
+			.car-label{
+				transform: translateY(-45px);
+				transition-delay: 0s;
+				.no-csstransforms3d &{
+					transform: none;
+					margin-bottom: 45px;
+				}
 			}
 		}
 	}
@@ -390,17 +392,19 @@
 			position: relative;
 			text-align: center;
 			&:hover{
-				.zone-picto{
-					color: @theme-secondary;
-					&.nb-places{
-						.places{
-							background-color: @theme-secondary;
-							color: #fff;
+				.no-touch &{
+					.zone-picto{
+						color: @theme-secondary;
+						&.nb-places{
+							.places{
+								background-color: @theme-secondary;
+								color: #fff;
+							}
 						}
 					}
-				}
-				.zone-txt{
-					opacity: 1;
+					.zone-txt{
+						opacity: 1;
+					}
 				}
 			}
 		}
@@ -850,11 +854,13 @@
 			.texta-light(0.875em);
 			border-radius: 8px;
 			&:hover{
-				.zone-picto{
-					color: @theme-secondary;
-				}
-				.zone-txt{
-					color: @theme-secondary;
+				.no-touch &{
+					.zone-picto{
+						color: @theme-secondary;
+					}
+					.zone-txt{
+						color: @theme-secondary;
+					}
 				}
 			}
 		}
@@ -916,17 +922,19 @@
 			border-radius: 6px;
 			position: relative;
 			&:hover{
-				.zone-picto{
-					color: @theme-secondary;
-					&.nb-places{
-						.places{
-							background-color: @theme-secondary;
-							color: #fff;
+				.no-touch &{
+					.zone-picto{
+						color: @theme-secondary;
+						&.nb-places{
+							.places{
+								background-color: @theme-secondary;
+								color: #fff;
+							}
 						}
 					}
-				}
-				.zone-txt{
-					opacity: 1;
+					.zone-txt{
+						opacity: 1;
+					}
 				}
 			}
 		}
@@ -1066,15 +1074,17 @@
 			border-color: @theme-gris2!important;
 		}
 		&:hover{
-			color: #fff!important;
-			&:before{
-				opacity: 1!important;
-			}
-			.txt-btn-block-arrow{
-				transform: translateY(0%)!important;
-			}
-			.txt-hover-btn-block-arrow{
-				transform: translateY(-100%)!important;
+			.no-touch &{
+				color: #fff!important;
+				&:before{
+					opacity: 1!important;
+				}
+				.txt-btn-block-arrow{
+					transform: translateY(0%)!important;
+				}
+				.txt-hover-btn-block-arrow{
+					transform: translateY(-100%)!important;
+				}
 			}
 		}
 	}
@@ -1218,11 +1228,15 @@
 			&.is-selected{
 				color: @theme-secondary;
 				&:hover{
-					opacity: 1;
+					.no-touch &{
+						opacity: 1;
+					}
 				}
 			}
 			&:hover{
-				opacity: 0.8;
+				.no-touch &{
+					opacity: 0.8;
+				}
 			}
 		}
 	}
@@ -1254,7 +1268,9 @@
 			color: @theme-secondary;
 		}
 		&:hover{
-			opacity: 0.8;
+			.no-touch &{
+				opacity: 0.8;
+			}
 		}
 	}
 	&.is-active{
@@ -1487,69 +1503,71 @@
 			}
 		}
 		&:hover{
-			border-color: @theme-primary;
-			.bandeau-image-car{
-				//width: 363px;
-				transform: scale(1.2);
-			}
-			.fond-bandeau-car{
-				&.bandeau-top{
-					transition-delay: 0s;
-					transfom: none;
+			.no-touch &{
+				border-color: @theme-primary;
+				.bandeau-image-car{
+					//width: 363px;
+					transform: scale(1.2);
 				}
-				&.bandeau-bottom{
+				.fond-bandeau-car{
+					&.bandeau-top{
+						transition-delay: 0s;
+						transfom: none;
+					}
+					&.bandeau-bottom{
+						transform: none;
+						transition-delay: 0s;
+					}
+				}
+				.car-year{
 					transform: none;
 					transition-delay: 0s;
 				}
-			}
-			.car-year{
-				transform: none;
-				transition-delay: 0s;
-			}
-			.car-name{
-				transform: none;
-				transition-delay: 0s;
-			}
-			.car-desc{
-				transition-delay: 0.1s;
-			}
-			.motor-color{
-				transition-delay: 0.1s;
-			}
-			.car-km{
-				transform: none;
-				transition-delay: 0s;
-			}
-			.car-price{
-				transform: none;
-				transition-delay: 0s;
-			}
-			.car-price-saving{
-				transform: none;
-				transition-delay: 0s;
-			}
-			.car-btn-essai{
-				transition-delay: 0.1s;
-			}
-			.bandeau-car{
-				&.bandeau-bottom{
-					height: auto;
+				.car-name{
+					transform: none;
 					transition-delay: 0s;
 				}
-				&.bandeau-top{
-					transform: translateX(60px);
-					.no-csstransforms3d &{
-						transform: none;
-						margin-left: 60px;
+				.car-desc{
+					transition-delay: 0.1s;
+				}
+				.motor-color{
+					transition-delay: 0.1s;
+				}
+				.car-km{
+					transform: none;
+					transition-delay: 0s;
+				}
+				.car-price{
+					transform: none;
+					transition-delay: 0s;
+				}
+				.car-price-saving{
+					transform: none;
+					transition-delay: 0s;
+				}
+				.car-btn-essai{
+					transition-delay: 0.1s;
+				}
+				.bandeau-car{
+					&.bandeau-bottom{
+						height: auto;
+						transition-delay: 0s;
+					}
+					&.bandeau-top{
+						transform: translateX(60px);
+						.no-csstransforms3d &{
+							transform: none;
+							margin-left: 60px;
+						}
 					}
 				}
-			}
-			.car-labels{
-				transition-delay: 0s;
-			}
-			.car-label{
-				transform: none;
-				transition-delay: 0s;
+				.car-labels{
+					transition-delay: 0s;
+				}
+				.car-label{
+					transform: none;
+					transition-delay: 0s;
+				}
 			}
 		}
 	}
@@ -1713,17 +1731,19 @@
 				position: relative;
 				text-align: center;
 				&:hover{
-					.zone-picto{
-						color: @theme-secondary;
-						&.nb-places{
-							.places{
-								background-color: @theme-secondary;
-								color: #fff;
+					.no-touch &{
+						.zone-picto{
+							color: @theme-secondary;
+							&.nb-places{
+								.places{
+									background-color: @theme-secondary;
+									color: #fff;
+								}
 							}
 						}
-					}
-					.zone-txt{
-						opacity: 1;
+						.zone-txt{
+							opacity: 1;
+						}
 					}
 				}
 			}
@@ -2676,15 +2696,17 @@
 								border-color: @theme-secondary;
 							}
 							&:hover{
-								color: @theme-secondary;
-								&:before{
-									opacity: 0;
-								}
-								.txt-btn-block-arrow{
-									transform: translateY(100%);
-								}
-								.txt-hover-btn-block-arrow{
-									transform: translateY(0);
+								.no-touch &{
+									color: @theme-secondary;
+									&:before{
+										opacity: 0;
+									}
+									.txt-btn-block-arrow{
+										transform: translateY(100%);
+									}
+									.txt-hover-btn-block-arrow{
+										transform: translateY(0);
+									}
 								}
 							}
 						}
@@ -2713,15 +2735,17 @@
 							border-color: @theme-neutral;
 						}
 						&:hover{
-							color: #fff;
-							&:before{
-								opacity: 1;
-							}
-							.txt-btn-block-arrow{
-								transform: none;
-							}
-							.txt-hover-btn-block-arrow{
-								transform: translateY(-100%);
+							.no-touch &{
+								color: #fff;
+								&:before{
+									opacity: 1;
+								}
+								.txt-btn-block-arrow{
+									transform: none;
+								}
+								.txt-hover-btn-block-arrow{
+									transform: translateY(-100%);
+								}
 							}
 						}
 					}
@@ -3196,7 +3220,9 @@
 		padding: 0;
 	}
 	&:hover{
-		opacity: 0.7;
+		.no-touch &{
+			opacity: 0.7;
+		}
 	}
 	.open &{
 		display: inline-block;
@@ -3375,19 +3401,23 @@
 	}
 	&:hover{
 		&.prev-car{
-			.survol{
-				transform: translateX(0);
-			}
-			.arrow-change-car{
-				transform: translateX(275px);
+			.no-touch &{
+				.survol{
+					transform: translateX(0);
+				}
+				.arrow-change-car{
+					transform: translateX(275px);
+				}
 			}
 		}
 		&.next-car{
-			.survol{
-				transform: translateX(0);
-			}
-			.arrow-change-car{
-				transform: translateX(-275px);
+			.no-touch &{
+				.survol{
+					transform: translateX(0);
+				}
+				.arrow-change-car{
+					transform: translateX(-275px);
+				}
 			}
 		}
 	}
