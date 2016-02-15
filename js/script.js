@@ -1999,10 +1999,10 @@ $(window).resize(function(){
 				TweenMax.set($(".list-cars"), {className:"+=is-list"});
 				TweenMax.set($("#change-liste-mosaique"), {display:"none"});
 			}else{
-				TweenMax.set($(".list-cars"), {className:"-=is-list"});
+				TweenMax.set($(".list-cars"), {className:"+=is-list"});
 				TweenMax.set($("#change-liste-mosaique"), {clearProps:"all"});
-				TweenMax.set($("#change-liste-mosaique .icon-mosaique"), {className:"+=is-selected"});
-				TweenMax.set($("#change-liste-mosaique .icon-liste"), {className:"-=is-selected"});
+				TweenMax.set($("#change-liste-mosaique .icon-mosaique"), {className:"-=is-selected"});
+				TweenMax.set($("#change-liste-mosaique .icon-liste"), {className:"+=is-selected"});
 			}
 		}
 

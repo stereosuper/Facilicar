@@ -1352,11 +1352,30 @@
         &.is-list{
             max-width: 600px;
             > li{
-                height: 190px;
+                height: 142px;
             }
         }
     }
     .is-list{
+        .wrapper-car{
+            &:before{
+                .icon-font;
+                content: "\e903";
+                font-size: 14px;
+                color: @theme-primary;
+                position: absolute;
+                top: 50%;
+                right: 16px;
+                margin: -7px 0 0 0;
+            }
+            &:hover{
+                .bandeau-car{
+                    &.bandeau-bottom{
+                        height: 33px;
+                    }
+                }
+            }
+        }
         .bandeau-image-car{
             width: 180px;
             height: 120px;
@@ -1365,19 +1384,18 @@
         }
         .bandeau-car{
             &.bandeau-top{
-                height: 100px;
-                top: 10px;
+                height: 70px;
+                top: 60px;
                 left: 200px;
-                right: 10px;
+                right: 36px;
                 bottom: inherit;
                 width: auto;
             }
             &.bandeau-bottom{
                 height: 33px;
-                top: inherit;
-                bottom: 10px;
-                left: 10px;
-                right: 10px;
+                top: 20px;
+                left: 200px;
+                right: 36px;
             }
         }
         .car-year, .car-block.car-year{
@@ -1417,13 +1435,15 @@
         .car-price{
             position: absolute;
             bottom: 7px;
-            right: 0;
-            left: auto;
+            left: 0;
             font-size: 2em;
             color: @theme-secondary;
             .acronym{
                 font-size: 1em;
             }
+        }
+        .car-old-price{
+            display: none;
         }
         .car-photos{
             display: none;
@@ -1432,6 +1452,7 @@
             right: auto;
             left: 0;
             min-width: 0;
+            display: none;
         }
         .car-btn-essai{
             font-size: 0.9em;
@@ -1441,7 +1462,8 @@
             display: none;
         }
         .car-options{
-            margin: 6px 0 0 0;
+            display: none;
+            margin: 0;
             left: 0;
             .wrapper-car-option{
                 width: 24px;

@@ -11596,7 +11596,29 @@ a.btn-slider-citation:hover.btn-right span {
     max-width: 600px;
   }
   .list-cars.is-list > li {
-    height: 190px;
+    height: 142px;
+  }
+  .is-list .wrapper-car:before {
+    font-family: 'facilicar';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e903";
+    font-size: 14px;
+    color: #009cc4;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin: -7px 0 0 0;
+  }
+  .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
+    height: 33px;
   }
   .is-list .bandeau-image-car {
     width: 180px;
@@ -11605,19 +11627,18 @@ a.btn-slider-citation:hover.btn-right span {
     left: 10px;
   }
   .is-list .bandeau-car.bandeau-top {
-    height: 100px;
-    top: 10px;
+    height: 70px;
+    top: 60px;
     left: 200px;
-    right: 10px;
+    right: 36px;
     bottom: inherit;
     width: auto;
   }
   .is-list .bandeau-car.bandeau-bottom {
     height: 33px;
-    top: inherit;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    top: 20px;
+    left: 200px;
+    right: 36px;
   }
   .is-list .car-year,
   .is-list .car-block.car-year {
@@ -11657,13 +11678,15 @@ a.btn-slider-citation:hover.btn-right span {
   .is-list .car-price {
     position: absolute;
     bottom: 7px;
-    right: 0;
-    left: auto;
+    left: 0;
     font-size: 2em;
     color: #e38c00;
   }
   .is-list .car-price .acronym {
     font-size: 1em;
+  }
+  .is-list .car-old-price {
+    display: none;
   }
   .is-list .car-photos {
     display: none;
@@ -11672,6 +11695,7 @@ a.btn-slider-citation:hover.btn-right span {
     right: auto;
     left: 0;
     min-width: 0;
+    display: none;
   }
   .is-list .car-btn-essai {
     font-size: 0.9em;
@@ -11681,7 +11705,8 @@ a.btn-slider-citation:hover.btn-right span {
     display: none;
   }
   .is-list .car-options {
-    margin: 6px 0 0 0;
+    display: none;
+    margin: 0;
     left: 0;
   }
   .is-list .car-options .wrapper-car-option {
