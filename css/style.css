@@ -394,6 +394,8 @@ html.no-overflow {
   height: 100%;
   max-width: 100%;
   max-height: 100%;
+  margin-top: -200px;
+  padding-top: 200px;
 }
 html.popup-open body,
 html.no-overflow body {
@@ -402,6 +404,8 @@ html.no-overflow body {
   height: 100%;
   max-width: 100%;
   max-height: 100%;
+  margin-top: -200px;
+  padding-top: 200px;
 }
 body {
   width: 100%;
@@ -12448,6 +12452,9 @@ a.btn-slider-citation:hover.btn-right span {
   .header-on.no-wrapper-top .first-block {
     padding: 66px 0 0 0;
   }
+  .header-on.no-wrapper-top.hide-header .first-block {
+    padding: 0;
+  }
   .header-on.detail-vehicule.no-wrapper-top .first-block {
     padding: 66px 0 0 0;
   }
@@ -13406,7 +13413,7 @@ a.btn-slider-citation:hover.btn-right span {
   }
   .lines-filters,
   .list-block.line-filters {
-    padding: 110px 0 70px 0;
+    padding: 90px 0 70px 0;
     display: none;
   }
   .content-toggle-filter {
@@ -13522,7 +13529,7 @@ a.btn-slider-citation:hover.btn-right span {
   .cars-filters {
     display: block;
     position: absolute;
-    top: 17px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: auto;
@@ -13537,12 +13544,21 @@ a.btn-slider-citation:hover.btn-right span {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
   }
+  .hide-header .cars-filters {
+    top: -150px;
+    padding: 150px 0 0 0;
+  }
   .cars-filters.fixed {
     position: fixed;
     top: 0px;
     box-sizing: border-box;
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .hide-header .cars-filters.fixed {
+    position: absolute;
+    top: -150px;
+    padding: 150px 0 0 0;
   }
   .cars-filters .list-inline.small-margin > li {
     margin: 0;
@@ -13649,7 +13665,7 @@ a.btn-slider-citation:hover.btn-right span {
   .lines-filters > li.line-filters-four,
   .list-block.lines-filters > li.line-filters-four {
     position: absolute;
-    top: 60px;
+    top: 205px;
     left: 5%;
     right: 5%;
     width: auto;

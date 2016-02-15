@@ -2302,6 +2302,9 @@
         .header-on.no-wrapper-top &{
             padding: 66px 0 0 0;
         }
+        .header-on.no-wrapper-top.hide-header &{
+            padding: 0;
+        }
         .header-on.detail-vehicule.no-wrapper-top &{
             padding: 66px 0 0 0;
         }
@@ -3265,7 +3268,7 @@
     }
     .lines-filters, .list-block.line-filters{
         //padding: 70px 0 70px 0;
-        padding: 110px 0 70px 0;
+        padding: 90px 0 70px 0;
         display: none;
     }
     .content-toggle-filter{
@@ -3357,7 +3360,8 @@
         padding: 0;
         position: absolute;
         //top: 28px;
-        top: 17px;
+        //top: 17px;
+        top: 0px;
         left: 0;
         width: 100%;
         height: auto;
@@ -3368,12 +3372,21 @@
         overflow-y: auto;
         transform: none;
         backface-visibility: hidden;
+        .hide-header &{
+            top: -150px;
+            padding: 150px 0 0 0;
+        }
         &.fixed{
             position: fixed;
             top: 0px;
             box-sizing: border-box;
             padding-left: 5%;
             padding-right: 5%;
+            .hide-header &{
+                position: absolute;
+                top: -150px;
+                padding: 150px 0 0 0;
+            }
         }
         .list-inline.small-margin > li{
             margin: 0;
@@ -3477,7 +3490,8 @@
             &.line-filters-four{
                 position: absolute;
                 //top: 88px;
-                top: 60px;
+                //top: 60px;
+                top: 205px;
                 left: 5%;
                 right: 5%;
                 width: auto;

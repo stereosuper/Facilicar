@@ -71,7 +71,7 @@ function detectIE() {
 function scrollPage(){
 	myScroll = $(document).scrollTop();
 
-	if (myScroll>40){
+	if (myScroll>40 && !$("body").hasClass("hide-header")){
 		TweenMax.set($("body"), {className:"+=header-on"});
 	}else{
 		TweenMax.set($("body"), {className:"-=header-on"});
@@ -404,7 +404,8 @@ function posiPopup(){
 function setMaxHeightFilters(){
 	var windowHeight = $(window).height();
 	//var heightCarFilter = windowHeight - $("#header").outerHeight() - 17;
-	var heightCarFilter = windowHeight - 17;
+	//var heightCarFilter = windowHeight - 17;
+	var heightCarFilter = windowHeight + 150;
 	TweenMax.set($(".cars-filters"), {"max-height": heightCarFilter+"px"});
 }
 
@@ -1147,7 +1148,7 @@ $(function(){
 			var toggleFilter = $(this);
 			$(this).next(".content-toggle-filter").slideToggle(200, function(){
 				var scrollToTitle = ($(".toggle-filter").index(toggleFilter))*39;
-				$('.cars-filters').stop().animate( { scrollTop: scrollToTitle+65 }, 500 );
+				$('.cars-filters').stop().animate( { scrollTop: scrollToTitle+48 }, 500 );
 			});
 		}
 		return false;
