@@ -6360,6 +6360,7 @@ a.btn-slider-citation.btn-right span {
   position: relative;
   overflow: hidden;
   text-align: center;
+  text-decoration: none;
 }
 .wrapper-car.cta {
   font-family: 'Texta-Light', sans-serif;
@@ -7939,6 +7940,7 @@ a.btn-slider-citation.btn-right span {
   display: inline-block;
 }
 .is-list .wrapper-car {
+  text-decoration: none;
   -webkit-transition: border-color 0.2s ease-in-out;
           transition: border-color 0.2s ease-in-out;
 }
@@ -11598,6 +11600,9 @@ a.btn-slider-citation.btn-right span {
   .list-cars.is-list > li {
     height: 142px;
   }
+  .is-list .wrapper-car {
+    text-decoration: none;
+  }
   .is-list .wrapper-car:before {
     font-family: 'facilicar';
     speak: none;
@@ -11616,6 +11621,7 @@ a.btn-slider-citation.btn-right span {
     top: 50%;
     right: 16px;
     margin: -7px 0 0 0;
+    text-decoration: none;
   }
   .no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
     height: 33px;
@@ -12965,6 +12971,10 @@ a.btn-slider-citation.btn-right span {
   .list-cars.is-list > li {
     height: 120px;
   }
+  .is-list .wrapper-car,
+  .list-cars.list-cars-small.is-list .wrapper-car {
+    text-decoration: none;
+  }
   .is-list .wrapper-car:before,
   .list-cars.list-cars-small.is-list .wrapper-car:before {
     font-family: 'facilicar';
@@ -12984,6 +12994,7 @@ a.btn-slider-citation.btn-right span {
     top: 50%;
     right: 16px;
     margin: -7px 0 0 0;
+    text-decoration: none;
   }
   .no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom,
   .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
