@@ -326,16 +326,6 @@
   src: url('../fonts/2F77AE_1B_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1B_0.woff2') format('woff2'), url('../fonts/2F77AE_1B_0.woff') format('woff'), url('../fonts/2F77AE_1B_0.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'TextaAlt-MediumIt';
-  src: url('../fonts/2F77AE_1C_0.eot');
-  src: url('../fonts/2F77AE_1C_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1C_0.woff2') format('woff2'), url('../fonts/2F77AE_1C_0.woff') format('woff'), url('../fonts/2F77AE_1C_0.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'TextaAlt-Medium';
-  src: url('../fonts/2F77AE_1D_0.eot');
-  src: url('../fonts/2F77AE_1D_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1D_0.woff2') format('woff2'), url('../fonts/2F77AE_1D_0.woff') format('woff'), url('../fonts/2F77AE_1D_0.ttf') format('truetype');
-}
-@font-face {
   font-family: 'TextaAlt-Regular';
   src: url('../fonts/2F77AE_1E_0.eot');
   src: url('../fonts/2F77AE_1E_0.eot?#iefix') format('embedded-opentype'), url('../fonts/2F77AE_1E_0.woff2') format('woff2'), url('../fonts/2F77AE_1E_0.woff') format('woff'), url('../fonts/2F77AE_1E_0.ttf') format('truetype');
@@ -1404,7 +1394,7 @@ a.btn-menu-responsive .rect:before {
   margin: 0;
 }
 #menu-top-header ul > li a {
-  font-family: 'Texta-Medium', sans-serif;
+  font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
 }
 .header-on #menu-bottom-header {
@@ -5039,14 +5029,14 @@ select:focus {
 }
 .pagination.big > li,
 #main .pagination.big > li {
-  font-family: 'Texta-Medium', sans-serif;
+  font-family: 'Texta-Bold', sans-serif;
   font-size: 1.875em;
 }
 .pagination > li,
 #main .pagination > li {
   display: inline-block;
   vertical-align: top;
-  font-family: 'Texta-Medium', sans-serif;
+  font-family: 'Texta-Bold', sans-serif;
   font-size: 1.275em;
   color: #b0b0a8;
   margin: 0 4px;
@@ -6441,7 +6431,7 @@ a.btn-slider-citation.btn-right span {
   display: inline-block;
   vertical-align: top;
   text-align: left;
-  font-family: 'Texta-Medium', sans-serif;
+  font-family: 'Texta-Bold', sans-serif;
   font-size: 1.2em;
 }
 .wrapper-car.cta .cta-content.cta-btn .btn-underline:before {
@@ -6921,7 +6911,7 @@ a.btn-slider-citation.btn-right span {
 }
 .car-photos {
   display: none;
-  font-family: 'Texta-Medium', sans-serif;
+  font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
   color: #e38c00;
   text-decoration: underline;
@@ -7069,7 +7059,7 @@ a.btn-slider-citation.btn-right span {
 }
 .car-btn-wishlist {
   display: none;
-  font-family: 'Texta-Medium', sans-serif;
+  font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
   color: #333333;
   text-decoration: underline;
@@ -9597,7 +9587,7 @@ a.btn-slider-citation.btn-right span {
 .wrapper-top-zoom a.btn-tel,
 .wrapper-top-zoom div.btn-tel,
 .wrapper-top-zoom span.btn-tel {
-  font-family: 'Texta-Medium', sans-serif;
+  font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
   line-height: 1em;
   display: inline-block;
