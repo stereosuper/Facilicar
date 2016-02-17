@@ -137,57 +137,58 @@
 
 		<section class="bg-white has-notif" id="main">
 			<div class="container">
-				<div class="wrapper-align-middle wrapper-navbar">
-					<nav class="content-align-middle navbar coordonnees">
+				<div class="wrapper-navbar">
+					<section class="content-with-navbar has-navbar-left">
+						<div class="wrapper-has-navbar-left">
+							<div class='notif notif-faq'>
+								<p>
+									La réponse à votre question n'est peut-être pas si loin!<br>
+									Avez-vous consulté <a href='#'>nos F.A.Q.</a>?
+								</p>
+								<button class='icon-cross'>Fermer</button>
+							</div>
+
+							<h2 class='small-title'>Nous envoyer un message</h2>
+							<p>Merci de remplir le formulaire ci-dessous, nous le lirons avec attention, afin de vous répondre le plus rapidement et efficacement possible.</p>
+							<p>Vous pouvez également <a href=''>contacter une de nos agences</a> en particulier.</p>
+
+							<form action='#' method='post' class='contactform'>
+								<fieldset class='required'>
+									<label for='prenom'>Prénom</label>
+									<input type='text' id='prenom' name='prenom' placeholder='Votre prénom' value=''>
+								</fieldset><fieldset class='required'>
+									<label for='nom'>Nom</label>
+									<input type='text' id='nom' name='nom' placeholder='Votre nom' value=''>
+								</fieldset><fieldset class='required'>
+									<label for='email'>Email</label>
+									<input type='email' id='email' name='email' placeholder='Votre email' value=''>
+								</fieldset><fieldset>
+									<label for='tel'>Téléphone</label>
+									<input type='tel' id='tel' name='tel' placeholder='Votre téléphone'>
+								</fieldset><fieldset class='required'>
+									<label for='sujet'>Sujet</label>
+									<select id='sujet' name='sujet'>
+										<option disabled selected>Sélectionnez votre sujet</option>
+										<option value='Achat réalisé récemment'>Achat réalisé récemment</option>
+									</select>
+								</fieldset><fieldset class='required block'>
+									<label for='message'>Message</label>
+									<textarea id='message' name='message'>Saisissez votre message ici</textarea>
+									<div class='notif notif-valid'>
+										<p>Votre message est envoyé, nous vous répondrons dans les meilleurs délais</p>
+									</div>
+								</fieldset>
+								<button class='button-arrow button-primary bg-primary' type='submit'>
+									<span class="arrow-button">›</span><span class="txt-button">Envoyer</span><span class="txt-hover-button" data-hover="Envoyer"></span>
+								</button>
+							</form>
+						</div>
+					</section>
+					<nav class="navbar navbar-left coordonnees">
 						<h2 class='adresse-title'>Nos coordonnées</h2>
 						<p class='adresse'>1 rue de l'île de France<br>94460 Valenton</p>
 						<p class='tel'><a href='tel:0145101616'>01 45 10 16 16</a></p>
 					</nav>
-
-					<section class="content-align-middle content-with-navbar">
-						<div class='notif notif-faq'>
-							<p>
-								La réponse à votre question n'est peut-être pas si loin!<br>
-								Avez-vous consulté <a href='#'>nos F.A.Q.</a>?
-							</p>
-							<button class='icon-cross'>Fermer</button>
-						</div>
-
-						<h2 class='small-title'>Nous envoyer un message</h2>
-						<p>Merci de remplir le formulaire ci-dessous, nous le lirons avec attention, afin de vous répondre le plus rapidement et efficacement possible.</p>
-						<p>Vous pouvez également <a href=''>contacter une de nos agences</a> en particulier.</p>
-
-						<form action='#' method='post' class='contactform'>
-							<fieldset class='required'>
-								<label for='prenom'>Prénom</label>
-								<input type='text' id='prenom' name='prenom' placeholder='Votre prénom' value=''>
-							</fieldset><fieldset class='required'>
-								<label for='nom'>Nom</label>
-								<input type='text' id='nom' name='nom' placeholder='Votre nom' value=''>
-							</fieldset><fieldset class='required'>
-								<label for='email'>Email</label>
-								<input type='email' id='email' name='email' placeholder='Votre email' value=''>
-							</fieldset><fieldset>
-								<label for='tel'>Téléphone</label>
-								<input type='tel' id='tel' name='tel' placeholder='Votre téléphone'>
-							</fieldset><fieldset class='required'>
-								<label for='sujet'>Sujet</label>
-								<select id='sujet' name='sujet'>
-									<option disabled selected>Sélectionnez votre sujet</option>
-									<option value='Achat réalisé récemment'>Achat réalisé récemment</option>
-								</select>
-							</fieldset><fieldset class='required block'>
-								<label for='message'>Message</label>
-								<textarea id='message' name='message'>Saisissez votre message ici</textarea>
-								<div class='notif notif-valid'>
-									<p>Votre message est envoyé, nous vous répondrons dans les meilleurs délais</p>
-								</div>
-							</fieldset>
-							<button class='button-arrow button-primary bg-primary' type='submit'>
-								<span class="arrow-button">›</span><span class="txt-button">Envoyer</span><span class="txt-hover-button" data-hover="Envoyer"></span>
-							</button>
-						</form>
-					</section>
 				</div>
 			</div>
 		</section>

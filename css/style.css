@@ -1249,7 +1249,7 @@ a.btn-menu-responsive .rect:before {
   display: none;
 }
 #main.has-notif {
-  padding-top: 100px;
+  padding-top: 125px;
 }
 /* @end */
 /* @group Preload img */
@@ -12089,9 +12089,6 @@ a.btn-slider-citation.btn-right span {
     font-size: 10px;
   }
   /* @end */
-  .notif-faq {
-    left: 76px;
-  }
   /* @group Map */
   .header-on #wrapper-map {
     margin-top: 0;
