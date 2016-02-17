@@ -1335,7 +1335,13 @@ $(function(){
 		    },
 		    slide: function(event, ui) {
 		    	enableBtnFilter();
-		    	$(ui.handle).find('span').html(ui.value+" €"); 
+		    	$(ui.handle).find('span').html(ui.value+" €");
+		    	// Éviter la superposition des tooltips
+				if (ui.values[1] - ui.values[0] < 10000) {
+					TweenMax.set($("#filter-prix #min"), {marginTop:"10px"});
+				} else {
+					TweenMax.set($("#filter-prix #min"), {marginTop:"0px"});
+				}
 		    }
 		}
 		$("#filter-prix").slider(optionsFilterPrix);
