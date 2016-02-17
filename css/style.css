@@ -6812,9 +6812,6 @@ a.btn-slider-citation.btn-right span {
   background-color: #e38c00;
   color: #fff;
 }
-.no-touch .car-options .wrapper-car-option .container-car-option:hover .zone-txt {
-  opacity: 1;
-}
 .car-options .zone-picto {
   display: block;
   width: 100%;
@@ -6858,7 +6855,7 @@ a.btn-slider-citation.btn-right span {
   font-size: 26px;
 }
 .car-options .zone-txt {
-  display: block;
+  display: none;
   width: 120px;
   height: 32px;
   line-height: 1em;
@@ -7408,9 +7405,6 @@ a.btn-slider-citation.btn-right span {
   background-color: #e38c00;
   color: #fff;
 }
-.no-touch .select-option-car > li a:hover .zone-txt {
-  opacity: 1;
-}
 .select-option-car > li.is-selected a {
   background-color: #e38c00;
 }
@@ -7418,6 +7412,13 @@ a.btn-slider-citation.btn-right span {
   color: #fff;
 }
 .select-option-car > li.is-selected a .zone-picto.nb-places .places {
+  background-color: #fff;
+  color: #e38c00;
+}
+.no-touch .select-option-car > li.is-selected a:hover .zone-picto {
+  color: #fff;
+}
+.no-touch .select-option-car > li.is-selected a:hover .zone-picto.nb-places .places {
   background-color: #fff;
   color: #e38c00;
 }
@@ -7464,7 +7465,7 @@ a.btn-slider-citation.btn-right span {
   font-size: 26px;
 }
 .select-option-car .zone-txt {
-  display: block;
+  display: none;
   width: 120px;
   height: 32px;
   line-height: 1em;
@@ -8273,9 +8274,6 @@ a.btn-slider-citation.btn-right span {
 .no-touch .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-picto.nb-places .places {
   background-color: #e38c00;
   color: #fff;
-}
-.no-touch .wrapper-car-detail .car-options-detail .wrapper-car-option .container-car-option:hover .zone-txt {
-  opacity: 1;
 }
 .wrapper-car-detail .car-options-detail .zone-picto {
   display: block;

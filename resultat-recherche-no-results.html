@@ -143,7 +143,7 @@
 						</div>
 						<ul class="list-block lines-filters">
 							<li class="line-filters-one has-border-mobile">
-								<div class="filter-title toggle-filter">Type</div><!--
+								<div class="filter-title toggle-filter" id="filter-title-type">Type</div><!--
 								--><ul class="select-type-car content-toggle-filter">
 									<li>
 										<a href="#">
@@ -401,72 +401,64 @@
 										<ul class="select-option-car content-toggle-filter">
 											<li class="is-selected">
 												<a href="#">
-													<span class="zone-picto icon-gps"></span>
+													<span class="zone-picto icon-gps" title="GPS"></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
 														GPS
 													</span>
 												</a>
 											</li><!--
 											--><li>
 												<a href="#">
-													<span class="zone-picto icon-clim"></span>
+													<span class="zone-picto icon-clim" title="Climatisation"></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
 														Climatisation
 													</span>
 												</a>
 											</li><!--
 											--><li>
 												<a href="#">
-													<span class="zone-picto icon-toit-ouvrant"></span>
+													<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
 														Toit ouvrant
 													</span>
 												</a>
 											</li><!--
 											--><li>
 												<a href="#">
-													<span class="zone-picto icon-control-recul"></span>
+													<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
 														Aide au parking<br /> AV et/ou AR
 													</span>
 												</a>
 											</li><!--
 											--><li>
 												<a href="#">
-													<span class="zone-picto nb-places"><span class="places">7pl</span></span>
+													<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
 														7 places
 													</span>
 												</a>
 											</li><!--
 											--><li>
 												<a href="#">
-													<span class="zone-picto icon-phares"></span>
+													<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
-														Projecteurs<br /> bi-xénon
+														Projecteurs<br> bi-xénon
 													</span>
 												</a>
 											</li><!--
 											--><li>
 												<a href="#">
-													<span class="zone-picto icon-cuir"></span>
+													<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
 														Sellerie cuir
 													</span>
 												</a>
 											</li><!--
 											--><li>
 												<a href="#">
-													<span class="zone-picto icon-quatre-quatre"></span>
+													<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
 													<span class="zone-txt">
-														<span class="triangle"></span>
 														4 roues motrices
 													</span>
 												</a>
@@ -475,10 +467,23 @@
 									</li><!--
 									--><li class="has-border-mobile">
 										<div class="filter-title toggle-filter">Boîte auto</div>
-										<div class="switch off noselect content-toggle-filter">
-											<div class="switch-toggle"></div>
-											<span class="off-content">Non</span><!--
-											--><span class="on-content">Oui</span>
+										<div class="wrapper-boite-auto content-toggle-filter">
+											<div class="select-custom is-active">
+												<a class="select-placeholder medium-padding-right" href="#">Toutes</a>
+												<div class="select-options content-toggle-filter" style="">
+													<ul>
+														<li data-option="" data-value="toutes" class="is-selected">
+															Toutes
+														</li>
+														<li data-option="" data-value="oui">
+															Oui
+														</li>
+														<li data-option="" data-value="non">
+															Non
+														</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</li>
 								</ul>
@@ -490,7 +495,7 @@
 									</div><!--
 									--><div class="content-align-middle txt-right-aligned">
 										<a id="btn-more-criteres" class="btn-arrow-down btn-underline color-theme-secondary" href="#"><span class="txt-btn">Plus de critères de recherche</span><span class="txt-open-btn">Moins de critères de recherche</span></a>
-										<a id="btn-voir-vehicules" href="#" class="btn-block btn-block-refresh bg-primary"><span class="icon-refresh"></span><span class="txt-btn-block-arrow">Voir les véhicules</span><span class="txt-hover-btn-block-arrow" data-hover="Voir les véhicules"></span></a>
+										<a id="btn-voir-vehicules" href="#" class="btn-block btn-block-refresh bg-primary disabled"><span class="icon-refresh"></span><span class="txt-btn-block-arrow">Voir les véhicules</span><span class="txt-hover-btn-block-arrow" data-hover="Voir les véhicules"></span></a>
 									</div>
 								</div>
 							</li>
@@ -582,14 +587,70 @@
 								<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope>VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
 								<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 								<span class="car-options">
-									<span class="zone-picto icon-gps"></span>
-									<span class="zone-picto icon-clim"></span>
-									<span class="zone-picto icon-toit-ouvrant"></span>
-									<span class="zone-picto icon-control-recul"></span>
-									<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-									<span class="zone-picto icon-phares"></span>
-									<span class="zone-picto icon-cuir"></span>
-									<span class="zone-picto icon-quatre-quatre"></span>
+									<span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-gps" title="GPS"></span>
+											<span class="zone-txt">
+												GPS
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-clim" title="Climatisation"></span>
+											<span class="zone-txt">
+												Climatisation
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
+											<span class="zone-txt">
+												Toit ouvrant
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
+											<span class="zone-txt">
+												Aide au parking<br /> AV et/ou AR
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
+											<span class="zone-txt">
+												7 places
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
+											<span class="zone-txt">
+												Projecteurs<br> bi-xénon
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
+											<span class="zone-txt">
+												Sellerie cuir
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
+											<span class="zone-txt">
+												4 roues motrices
+											</span>
+										</span>
+									</span>
 								</span>
 								<span class="car-photos">voir les 38 photos</span>
 							</span>
@@ -636,14 +697,70 @@
 								<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope>VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
 								<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 								<span class="car-options">
-									<span class="zone-picto icon-gps"></span>
-									<span class="zone-picto icon-clim"></span>
-									<span class="zone-picto icon-toit-ouvrant"></span>
-									<span class="zone-picto icon-control-recul"></span>
-									<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-									<span class="zone-picto icon-phares"></span>
-									<span class="zone-picto icon-cuir"></span>
-									<span class="zone-picto icon-quatre-quatre"></span>
+									<span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-gps" title="GPS"></span>
+											<span class="zone-txt">
+												GPS
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-clim" title="Climatisation"></span>
+											<span class="zone-txt">
+												Climatisation
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
+											<span class="zone-txt">
+												Toit ouvrant
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
+											<span class="zone-txt">
+												Aide au parking<br /> AV et/ou AR
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
+											<span class="zone-txt">
+												7 places
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
+											<span class="zone-txt">
+												Projecteurs<br> bi-xénon
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
+											<span class="zone-txt">
+												Sellerie cuir
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
+											<span class="zone-txt">
+												4 roues motrices
+											</span>
+										</span>
+									</span>
 								</span>
 								<span class="car-photos">voir les 38 photos</span>
 							</span>
@@ -690,14 +807,70 @@
 								<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope>VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
 								<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 								<span class="car-options">
-									<span class="zone-picto icon-gps"></span>
-									<span class="zone-picto icon-clim"></span>
-									<span class="zone-picto icon-toit-ouvrant"></span>
-									<span class="zone-picto icon-control-recul"></span>
-									<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-									<span class="zone-picto icon-phares"></span>
-									<span class="zone-picto icon-cuir"></span>
-									<span class="zone-picto icon-quatre-quatre"></span>
+									<span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-gps" title="GPS"></span>
+											<span class="zone-txt">
+												GPS
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-clim" title="Climatisation"></span>
+											<span class="zone-txt">
+												Climatisation
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
+											<span class="zone-txt">
+												Toit ouvrant
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
+											<span class="zone-txt">
+												Aide au parking<br /> AV et/ou AR
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
+											<span class="zone-txt">
+												7 places
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
+											<span class="zone-txt">
+												Projecteurs<br> bi-xénon
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
+											<span class="zone-txt">
+												Sellerie cuir
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
+											<span class="zone-txt">
+												4 roues motrices
+											</span>
+										</span>
+									</span>
 								</span>
 								<span class="car-photos">voir les 38 photos</span>
 							</span>
@@ -732,14 +905,70 @@
 								<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope>VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
 								<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 								<span class="car-options">
-									<span class="zone-picto icon-gps"></span>
-									<span class="zone-picto icon-clim"></span>
-									<span class="zone-picto icon-toit-ouvrant"></span>
-									<span class="zone-picto icon-control-recul"></span>
-									<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-									<span class="zone-picto icon-phares"></span>
-									<span class="zone-picto icon-cuir"></span>
-									<span class="zone-picto icon-quatre-quatre"></span>
+									<span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-gps" title="GPS"></span>
+											<span class="zone-txt">
+												GPS
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-clim" title="Climatisation"></span>
+											<span class="zone-txt">
+												Climatisation
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
+											<span class="zone-txt">
+												Toit ouvrant
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
+											<span class="zone-txt">
+												Aide au parking<br /> AV et/ou AR
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
+											<span class="zone-txt">
+												7 places
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
+											<span class="zone-txt">
+												Projecteurs<br> bi-xénon
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
+											<span class="zone-txt">
+												Sellerie cuir
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
+											<span class="zone-txt">
+												4 roues motrices
+											</span>
+										</span>
+									</span>
 								</span>
 								<span class="car-photos">voir les 38 photos</span>
 							</span>
@@ -774,14 +1003,70 @@
 								<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope>VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
 								<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 								<span class="car-options">
-									<span class="zone-picto icon-gps"></span>
-									<span class="zone-picto icon-clim"></span>
-									<span class="zone-picto icon-toit-ouvrant"></span>
-									<span class="zone-picto icon-control-recul"></span>
-									<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-									<span class="zone-picto icon-phares"></span>
-									<span class="zone-picto icon-cuir"></span>
-									<span class="zone-picto icon-quatre-quatre"></span>
+									<span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-gps" title="GPS"></span>
+											<span class="zone-txt">
+												GPS
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-clim" title="Climatisation"></span>
+											<span class="zone-txt">
+												Climatisation
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
+											<span class="zone-txt">
+												Toit ouvrant
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
+											<span class="zone-txt">
+												Aide au parking<br /> AV et/ou AR
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
+											<span class="zone-txt">
+												7 places
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
+											<span class="zone-txt">
+												Projecteurs<br> bi-xénon
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
+											<span class="zone-txt">
+												Sellerie cuir
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
+											<span class="zone-txt">
+												4 roues motrices
+											</span>
+										</span>
+									</span>
 								</span>
 								<span class="car-photos">voir les 38 photos</span>
 							</span>
@@ -837,14 +1122,70 @@
 								<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope>VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
 								<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 								<span class="car-options">
-									<span class="zone-picto icon-gps"></span>
-									<span class="zone-picto icon-clim"></span>
-									<span class="zone-picto icon-toit-ouvrant"></span>
-									<span class="zone-picto icon-control-recul"></span>
-									<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-									<span class="zone-picto icon-phares"></span>
-									<span class="zone-picto icon-cuir"></span>
-									<span class="zone-picto icon-quatre-quatre"></span>
+									<span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-gps" title="GPS"></span>
+											<span class="zone-txt">
+												GPS
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-clim" title="Climatisation"></span>
+											<span class="zone-txt">
+												Climatisation
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
+											<span class="zone-txt">
+												Toit ouvrant
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
+											<span class="zone-txt">
+												Aide au parking<br /> AV et/ou AR
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
+											<span class="zone-txt">
+												7 places
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
+											<span class="zone-txt">
+												Projecteurs<br> bi-xénon
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
+											<span class="zone-txt">
+												Sellerie cuir
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
+											<span class="zone-txt">
+												4 roues motrices
+											</span>
+										</span>
+									</span>
 								</span>
 								<span class="car-photos">voir les 38 photos</span>
 							</span>
@@ -879,14 +1220,70 @@
 								<span itemprop="name" class="car-name car-block"><strong itemprop="manufacturer" itemscope>VOLKWAGEN</strong> <span itemprop="model">SERIE 5 TOURING (F11)</span></span>
 								<span itemprop="description" class="car-desc car-block is-hidden">2.0 TDI143 DPF AMBITION LUXE MULTITRONIC</span>
 								<span class="car-options">
-									<span class="zone-picto icon-gps"></span>
-									<span class="zone-picto icon-clim"></span>
-									<span class="zone-picto icon-toit-ouvrant"></span>
-									<span class="zone-picto icon-control-recul"></span>
-									<span class="zone-picto nb-places"><span class="places">7pl</span></span>
-									<span class="zone-picto icon-phares"></span>
-									<span class="zone-picto icon-cuir"></span>
-									<span class="zone-picto icon-quatre-quatre"></span>
+									<span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-gps" title="GPS"></span>
+											<span class="zone-txt">
+												GPS
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-clim" title="Climatisation"></span>
+											<span class="zone-txt">
+												Climatisation
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-toit-ouvrant" title="Toit ouvrant"></span>
+											<span class="zone-txt">
+												Toit ouvrant
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-control-recul" title="Aide au parking<br /> AV et/ou AR"></span>
+											<span class="zone-txt">
+												Aide au parking<br /> AV et/ou AR
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto nb-places" title="7 places"><span class="places">7pl</span></span>
+											<span class="zone-txt">
+												7 places
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-phares" title="Projecteurs<br> bi-xénon"></span>
+											<span class="zone-txt">
+												Projecteurs<br> bi-xénon
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-cuir" title="Sellerie cuir"></span>
+											<span class="zone-txt">
+												Sellerie cuir
+											</span>
+										</span>
+									</span><!--
+									--><span class="wrapper-car-option">
+										<span class="container-car-option">
+											<span class="zone-picto icon-quatre-quatre" title="4 roues motrices"></span>
+											<span class="zone-txt">
+												4 roues motrices
+											</span>
+										</span>
+									</span>
 								</span>
 								<span class="car-photos">voir les 38 photos</span>
 							</span>
