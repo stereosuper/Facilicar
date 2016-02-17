@@ -623,6 +623,12 @@
         }
     }
     /* @end */
+
+    /* @group Localisation */
+    .def-detail-localisation{
+        width: 420px;
+    }
+    /* @end */
 }
 
 @media (max-width: 979px) {
@@ -644,6 +650,9 @@
     }
     h1{
         font-size: 4.375em;
+        &.very-small-title{
+            font-size: 2.3em;
+        }
     }
     h2{
         font-size: 2em;
@@ -1917,7 +1926,16 @@
     #wrapper-map{
         height: auto;
         box-sizing: border-box;
-        padding: 65px 0 0 0;
+        padding: 0;
+        &.detail{
+            height: auto;
+            #map{
+                height: 150px;
+                @media (max-height: 360px){
+                    height: 150px;
+                }
+            }
+        }
         #map{
             height: 235px;
             position: relative;
@@ -2171,6 +2189,65 @@
         }
     }
     /* @end */
+
+    /* @group Localisation */
+    .wrapper-detail-localisation, .wrapper-align-top.wrapper-detail-localisation{
+        display: block;
+    }
+    .def-detail-localisation, .content-align-top.def-detail-localisation{
+        display: block;
+        width: 100%;
+        .content-def-detail-localisation{
+            margin: 0;
+            border: none;
+            padding: 10px 0 20px 0;
+            .content-toggle-once{
+                display: none;
+            }
+            h1{
+                margin: 10px 0 10px 0;
+            }
+        }
+    }
+    .desc-detail-localisation, .content-align-top.desc-detail-localisation{
+         display: block;
+         width: 100%;
+         padding: 0;
+   
+    }
+    #btn-rdv-localisation{
+        position: relative;
+        top: inherit;
+        right: inherit;
+        margin: 20px 0 0 0;
+    }
+    .list-block.list-btn-detail-localisation{
+        margin: 0;
+        > li{
+            margin: 0;
+            a{
+                .texta-black(1em);
+                text-transform: uppercase;
+                padding: 10px 10px 10px 0;
+                color: @theme-noir;
+                position: relative;
+                width: 100%;
+                height: auto;
+                display: block;
+                box-sizing: border-box;
+                border-bottom: 1px solid #AEACA1;
+                text-decoration: none;
+                text-transform: none;
+                &:before{
+                    display: none;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    /* @end */
 }
 
 @media (max-width: 830px) {
@@ -2255,6 +2332,9 @@
     }
     h1{
         font-size: 2.5em;
+        &.very-small-title{
+            font-size: 2em;
+        }
     }
     h2{
         font-size: 1.6em;
@@ -2312,6 +2392,15 @@
                     .txt-btn-block-arrow{
                         padding: 19px 36px 19px 48px;
                     }
+                }
+            }
+        }
+        &.btn-arrow-top{
+            &.maxi{
+                font-size: 1em;
+                padding-left: 16px;
+                &:before{
+                    font-size: 4px;
                 }
             }
         }
@@ -3831,10 +3920,32 @@
         }
     }
     #wrapper-map{
+        padding: 65px 0 0 0;
         .map-search-content {
             padding: 15px 0 25px 0;
         }
-    } 
+    }
+    .def-detail-localisation{
+        .zone-txt{
+            padding: 0;
+        }
+    }
+    #btn-photos-localisation{
+        padding-left: 0;
+        max-width: 260px;
+        margin: 0;
+        &:after{
+            display: none;
+        }
+    }
+    .def-detail-localisation{
+        .small-width{
+            margin: 10px 0 0 0;
+        }
+    }
+    #btn-rdv-localisation{
+        max-width: 250px;
+    }
     /* @end */
 
     /* @group Détail véhicule */

@@ -401,6 +401,7 @@ body {
   width: 100%;
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #333333;
 }
 h1 {
@@ -409,6 +410,7 @@ h1 {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 h1.small-title {
   font-family: 'Texta-Black', sans-serif;
@@ -416,6 +418,7 @@ h1.small-title {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1.1em;
   margin: 0 0 35px 0;
 }
@@ -425,6 +428,7 @@ h1.very-small-title {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
 }
 h1 a {
@@ -434,6 +438,7 @@ h1 a {
 h1 .small-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.417em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   display: inline-block;
   vertical-align: top;
@@ -449,6 +454,7 @@ h2 {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   margin: 72px 0 40px 0;
   line-height: 1.1em;
 }
@@ -458,6 +464,7 @@ h2.big-title {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1.1em;
   margin: 0 0 35px 0;
 }
@@ -467,6 +474,7 @@ h2.medium-title {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 0.9em;
 }
 h2.small-title {
@@ -480,6 +488,7 @@ h2 a {
 h2 .small-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.417em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   display: inline-block;
   vertical-align: top;
@@ -488,6 +497,7 @@ h2 .small-txt {
 h3 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.813em;
+  text-rendering: optimizeLegibility;
   margin: 15px 0;
 }
 h3.small-title {
@@ -497,16 +507,19 @@ h3.small-title {
 h3.h4 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   margin: 15px 0;
 }
 h4 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   margin: 15px 0;
 }
 h5 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
   margin: 10px 0;
 }
 h1,
@@ -524,24 +537,29 @@ h6 {
 p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   line-height: 1.3em;
 }
 p.big-txt {
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1.625em;
+  text-rendering: optimizeLegibility;
   margin: 26px 0 70px 0;
 }
 p.medium-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
 }
 p.regular-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 p.small-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   line-height: 1.2em;
 }
 p.small-margin-top {
@@ -553,11 +571,13 @@ p.small-margin {
 p.very-small-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
   line-height: 1.4em;
 }
 strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   font-weight: normal;
 }
 #main ul {
@@ -584,10 +604,12 @@ strong {
 #main ul > li p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
 }
 #main ul > li p strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 #main ol {
   display: block;
@@ -608,6 +630,7 @@ strong {
   content: counter(my-awesome-counter) '.';
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   position: absolute;
   top: 1px;
   left: 0px;
@@ -616,10 +639,12 @@ strong {
 #main ol > li p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
 }
 #main ol > li p strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 img {
   max-width: 100%;
@@ -634,6 +659,7 @@ i {
   font-style: normal;
   font-family: 'Texta-LightIt', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 a {
   color: #e38c00;
@@ -798,6 +824,7 @@ a.color-theme-black {
   padding: 2px 4px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
 }
 .encadre-round {
   display: inline-block;
@@ -805,6 +832,7 @@ a.color-theme-black {
   border-radius: 18px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.625em;
+  text-rendering: optimizeLegibility;
   color: #fff;
   background-color: #6d6d67;
   text-decoration: none;
@@ -1115,6 +1143,7 @@ a.btn-menu-responsive .rect:before {
   vertical-align: top;
   font-family: 'Texta-It', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   padding: 0;
   margin: 0 4px 0 0;
   color: #BEBDB7;
@@ -1124,6 +1153,7 @@ a.btn-menu-responsive .rect:before {
   content: "›";
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #6d6d67;
   position: relative;
   top: inherit;
@@ -1137,6 +1167,7 @@ a.btn-menu-responsive .rect:before {
 #main .breadcrumb > li a {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #6d6d67;
   text-decoration: underline;
 }
@@ -1186,6 +1217,7 @@ a.btn-menu-responsive .rect:before {
   text-transform: uppercase;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   display: block;
 }
 .navbar .list-block > li:before,
@@ -1209,6 +1241,7 @@ a.btn-menu-responsive .rect:before {
 #main .navbar .list-block > li.active a {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   border-bottom-color: #009cc4;
 }
 .content-with-navbar {
@@ -1396,6 +1429,7 @@ a.btn-menu-responsive .rect:before {
 #menu-top-header ul > li a {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .header-on #menu-bottom-header {
   display: inline-block;
@@ -1417,6 +1451,7 @@ a.btn-menu-responsive .rect:before {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 #menu-bottom-header ul > li a .txt-hover-btn-anim {
@@ -1555,6 +1590,7 @@ a.btn-menu-responsive .rect:before {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   margin: 0 0 20px 0;
   line-height: 0.9em;
 }
@@ -1567,6 +1603,7 @@ a.btn-menu-responsive .rect:before {
           transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   margin: 0 0 20px 0;
   line-height: 1.2em;
 }
@@ -1584,6 +1621,7 @@ a.btn-menu-responsive .rect:before {
 #trusted-shops h4 {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.375em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   margin: 0;
   padding: 0;
@@ -1609,11 +1647,13 @@ a.btn-menu-responsive .rect:before {
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   line-height: 1.2em;
 }
 #content-txt-trustedshops-avis p strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 #content-trustedshops-avis {
   width: 91px;
@@ -1662,6 +1702,7 @@ a.btn-menu-responsive .rect:before {
   margin: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
 }
 #block-newsletter .mail-icon {
   display: inline-block;
@@ -1726,6 +1767,7 @@ a.btn-menu-responsive .rect:before {
 #footer-bottom .list-block > li a {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
 }
 #footer-bottom .list-social {
   margin: 16px 0 0 0;
@@ -1807,6 +1849,7 @@ a.btn-menu-responsive .rect:before {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
 }
 .landing h1 span {
@@ -1816,6 +1859,7 @@ a.btn-menu-responsive .rect:before {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .landing .logo-big {
   display: block;
@@ -1827,6 +1871,7 @@ a.btn-menu-responsive .rect:before {
 .landing p {
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
 }
 .landing #email {
   padding: 6px 12px;
@@ -1911,6 +1956,7 @@ a.btn-menu-responsive .rect:before {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   margin: 0 0 12px 0;
   padding: 0;
@@ -1918,6 +1964,7 @@ a.btn-menu-responsive .rect:before {
 #wrapper-map p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   box-sizing: border-box;
   padding: 0 18px;
 }
@@ -1996,6 +2043,7 @@ a.btn-menu-responsive .rect:before {
   display: block;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #333333;
 }
@@ -2003,18 +2051,21 @@ a.btn-menu-responsive .rect:before {
   display: block;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #333333;
 }
 .search-distance {
   display: block;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #e38c00;
 }
 .search-charges {
   display: block;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #333333;
 }
 .arrow-right {
@@ -2056,6 +2107,7 @@ a.btn-menu-responsive .rect:before {
 .list-block.list-agency > li a .zone-nb-agency {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   width: 60px;
   position: absolute;
   top: 0px;
@@ -2161,6 +2213,7 @@ a.btn-menu-responsive .rect:before {
 .desc-detail-localisation p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .list-detail {
   display: block;
@@ -2172,6 +2225,7 @@ a.btn-menu-responsive .rect:before {
   position: relative;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
 }
 .list-detail > li:before {
   display: none;
@@ -2216,6 +2270,7 @@ table.table-horaires {
 table.table-horaires tr td {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   padding: 5px 0;
 }
 table.table-horaires tr td.jour {
@@ -2321,6 +2376,7 @@ span.btn-toggle-one {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   padding: 4px 0;
   color: #009cc4;
 }
@@ -2339,6 +2395,7 @@ div.btn-toggle-one.small,
 span.btn-toggle-one.small {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   line-height: 1.3em;
 }
 a.btn-toggle-one.small strong,
@@ -2350,6 +2407,7 @@ span.btn-toggle-one.small strong {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 a.btn-toggle-one.small .arrow-toggle-one,
 div.btn-toggle-one.small .arrow-toggle-one,
@@ -2364,6 +2422,7 @@ span.btn-toggle-one.small .arrow-toggle-one {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 a.btn-toggle-one.small .arrow-toggle-one.left,
 div.btn-toggle-one.small .arrow-toggle-one.left,
@@ -2502,6 +2561,7 @@ span.btn-toggle-once {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   padding: 10px 50px 10px 0;
   color: #333333;
@@ -2556,6 +2616,7 @@ div.btn-toggle-once.toggle-once-mobile,
 span.btn-toggle-once.toggle-once-mobile {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   padding: 2px 0;
   cursor: default;
 }
@@ -2671,6 +2732,7 @@ span.btn-toggle-once.big {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   padding: 4px 0;
 }
 a.btn-toggle.big span,
@@ -2887,6 +2949,7 @@ span.btn-arrow-top.big {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 a.btn-arrow-top.big:before,
@@ -2899,6 +2962,7 @@ div.btn-arrow-top.maxi,
 span.btn-arrow-top.maxi {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   text-decoration: underline;
   padding-left: 24px;
 }
@@ -3057,6 +3121,7 @@ div.btn-heart .heart-number,
 span.btn-heart .heart-number {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.611em;
+  text-rendering: optimizeLegibility;
   line-height: 11px;
   display: inline-block;
   vertical-align: top;
@@ -3098,6 +3163,7 @@ span.btn-block {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   position: relative;
   overflow: hidden;
   text-decoration: none;
@@ -3110,6 +3176,7 @@ span.btn-block.big {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 a.btn-block.big.btn-block-arrow .txt-btn-block-arrow,
 div.btn-block.big.btn-block-arrow .txt-btn-block-arrow,
@@ -3129,6 +3196,7 @@ span.btn-block.small {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1.1em;
 }
 a.btn-block.small .txt-btn-block-arrow,
@@ -3633,6 +3701,7 @@ div.btn-haut-page,
 span.btn-haut-page {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.938em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #6d6d67;
   text-decoration: none;
@@ -3777,6 +3846,7 @@ a:focus {
   height: auto;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   text-align: center;
   border-radius: 0;
   line-height: 1em;
@@ -3969,11 +4039,13 @@ a:focus {
 .list-cars.list-cars-small .encadre {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.625em;
+  text-rendering: optimizeLegibility;
   padding: 1px 2px;
 }
 .list-cars.list-cars-small .car-name {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
   top: 20px;
   -webkit-transform: translateY(5px) translateZ(1px);
           transform: translateY(5px) translateZ(1px);
@@ -3981,16 +4053,19 @@ a:focus {
 .list-cars.list-cars-small .motor-color {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.7em;
+  text-rendering: optimizeLegibility;
   top: 50px;
 }
 .list-cars.list-cars-small .car-desc {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.7em;
+  text-rendering: optimizeLegibility;
   top: 38px;
 }
 .list-cars.list-cars-small .car-km {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.75em;
+  text-rendering: optimizeLegibility;
   top: 64px;
   -webkit-transform: translateY(-24px) translateZ(1px);
           transform: translateY(-24px) translateZ(1px);
@@ -4004,6 +4079,7 @@ a:focus {
 .list-cars.list-cars-small .car-price {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.313em;
+  text-rendering: optimizeLegibility;
   bottom: 74px;
   -webkit-transform: translateY(53px) translateZ(1px);
           transform: translateY(53px) translateZ(1px);
@@ -4017,6 +4093,7 @@ a:focus {
 .list-cars.list-cars-small .car-label {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.688em;
+  text-rendering: optimizeLegibility;
   padding: 0 5px;
 }
 .list-cars.list-cars-small .bandeau-image-car {
@@ -4031,6 +4108,7 @@ a:focus {
   bottom: 43px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.7em;
+  text-rendering: optimizeLegibility;
 }
 .list-team,
 #main .list-team {
@@ -4062,6 +4140,7 @@ a:focus {
   display: block;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   margin: 0 0 10px 0;
 }
 .list-team > li.team-join a,
@@ -4106,6 +4185,7 @@ a:focus {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   background-color: #fff;
   padding: 20px 20px 10px 20px;
   line-height: 1.1em;
@@ -4144,6 +4224,7 @@ a:focus {
   text-align: center;
   font-family: 'Texta-LightIt', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
   background-color: #fff;
   padding: 10px 20px;
   line-height: 1.1em;
@@ -4322,6 +4403,7 @@ a:focus {
 .list-base {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   list-style-type: disc;
   padding: 0 0 0 18px;
 }
@@ -4354,6 +4436,7 @@ a:focus {
 .list-inline.list-third.list-qualite .title-list-qualite {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   width: 80px;
   margin: 0 auto;
@@ -4380,6 +4463,7 @@ textarea {
   box-sizing: border-box;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   max-width: 100%;
   -webkit-transition: border-color 0.2s ease-in-out;
           transition: border-color 0.2s ease-in-out;
@@ -4392,6 +4476,7 @@ textarea {
 #block-newsletter textarea {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -4427,6 +4512,7 @@ button {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 button.button-primary {
@@ -4569,6 +4655,7 @@ button:focus {
   border: 1px solid #b0b0a8;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #333333;
   text-decoration: none;
@@ -4640,6 +4727,7 @@ button:focus {
 .select-custom .select-options ul > li {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #333333;
   white-space: nowrap;
@@ -4716,6 +4804,7 @@ button:focus {
   text-align: center;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.75em;
+  text-rendering: optimizeLegibility;
   color: #333333;
   padding: 20px 0 0 0;
   margin: 0 0 0 -28px;
@@ -4728,6 +4817,7 @@ button:focus {
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.75em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #AEACA1;
 }
@@ -4753,6 +4843,7 @@ button:focus {
   padding: 2px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   text-transform: uppercase;
   position: relative;
@@ -4831,11 +4922,13 @@ label {
   margin: 5px 20px 5px 0;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   text-align: right;
 }
 label.light {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
 }
 textarea {
   width: 630px;
@@ -4843,18 +4936,21 @@ textarea {
   padding: 8px 12px;
   font-family: 'Texta-LightIt', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   color: #B0B0A8;
 }
 textarea:focus,
 textarea.focus {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   color: #000;
 }
 select {
   border: 1px solid #797973;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.1em;
+  text-rendering: optimizeLegibility;
   cursor: pointer;
 }
 select:focus {
@@ -4953,12 +5049,14 @@ select:focus {
 #main .articles-presse > li .txt-article .title-article {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .articles-presse > li .txt-article p,
 #main .articles-presse > li .txt-article p {
   margin: 15px 0 0 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .articles-presse > li .txt-article p + audio,
 #main .articles-presse > li .txt-article p + audio {
@@ -5031,6 +5129,7 @@ select:focus {
 #main .pagination.big > li {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.875em;
+  text-rendering: optimizeLegibility;
 }
 .pagination > li,
 #main .pagination > li {
@@ -5038,6 +5137,7 @@ select:focus {
   vertical-align: top;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.275em;
+  text-rendering: optimizeLegibility;
   color: #b0b0a8;
   margin: 0 4px;
   padding: 0;
@@ -5195,6 +5295,7 @@ select:focus {
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.875em;
+  text-rendering: optimizeLegibility;
 }
 .bloc-txt-slider-citation p strong {
   font-family: 'Texta-Black', sans-serif;
@@ -5202,6 +5303,7 @@ select:focus {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   display: block;
   line-height: 0.9em;
 }
@@ -5211,6 +5313,7 @@ select:focus {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 a.btn-slider-citation {
   display: block;
@@ -5346,6 +5449,7 @@ a.btn-slider-citation.btn-right span {
   text-align: center;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   color: #fff;
   pointer-events: none;
 }
@@ -5690,6 +5794,7 @@ a.btn-slider-citation.btn-right span {
 .popup .notif-valid + p {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
 }
 #list-date-popup {
   min-width: 420px;
@@ -5709,6 +5814,7 @@ a.btn-slider-citation.btn-right span {
 .facilicar-theme .tooltipster-content {
   font-family: 'Texta-Light', sans-serif;
   font-size: 12px;
+  text-rendering: optimizeLegibility;
   padding: 10px 8px;
   overflow: hidden;
   line-height: 13px;
@@ -5734,6 +5840,7 @@ a.btn-slider-citation.btn-right span {
 .facilicar-car-option-theme .tooltipster-content {
   font-family: 'Texta-Light', sans-serif;
   font-size: 16px;
+  text-rendering: optimizeLegibility;
   padding: 10px 8px;
   overflow: hidden;
   line-height: 15px;
@@ -5782,6 +5889,7 @@ a.btn-slider-citation.btn-right span {
 .tabs-navigation > li a {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
   color: #333333;
   text-decoration: underline;
   padding: 20px 30px;
@@ -5910,6 +6018,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-align: center;
   color: #E2E0E0;
 }
@@ -5992,6 +6101,7 @@ a.btn-slider-citation.btn-right span {
 .title-choose {
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.8em;
+  text-rendering: optimizeLegibility;
   color: #333333;
   line-height: 1em;
   margin: 0 0 10px 0;
@@ -6003,6 +6113,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   color: #009cc4;
   line-height: 1em;
   text-transform: uppercase;
@@ -6132,11 +6243,13 @@ a.btn-slider-citation.btn-right span {
 .list-choose > li p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .list-choose > li p strong {
   display: block;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.3em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-zone-left-choose .list-choose {
   text-align: right;
@@ -6355,6 +6468,7 @@ a.btn-slider-citation.btn-right span {
 .wrapper-car.cta {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   color: #333333;
   text-decoration: none;
   line-height: 1.2em;
@@ -6365,11 +6479,13 @@ a.btn-slider-citation.btn-right span {
 .wrapper-car.cta i {
   font-family: 'Texta-LightIt', sans-serif;
   font-size: 1.2em;
+  text-rendering: optimizeLegibility;
   color: #AEACA1;
 }
 .wrapper-car.cta strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car.cta .cta-wrapper {
   display: block;
@@ -6433,6 +6549,7 @@ a.btn-slider-citation.btn-right span {
   text-align: left;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.2em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car.cta .cta-content.cta-btn .btn-underline:before {
   top: 50%;
@@ -6725,6 +6842,7 @@ a.btn-slider-citation.btn-right span {
   top: 30px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.375em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #333333;
   line-height: 1em;
@@ -6746,6 +6864,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .car-desc {
   opacity: 0;
@@ -6756,6 +6875,7 @@ a.btn-slider-citation.btn-right span {
   top: 58px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   line-height: 1.4em;
   text-transform: uppercase;
   color: #333333;
@@ -6801,6 +6921,7 @@ a.btn-slider-citation.btn-right span {
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   border-radius: 6px;
   position: relative;
   text-align: center;
@@ -6840,6 +6961,7 @@ a.btn-slider-citation.btn-right span {
   margin: 0;
   font-family: 'Texta-Regular', sans-serif;
   font-size: 0.5em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #fff;
   border-radius: 10px;
@@ -6910,6 +7032,7 @@ a.btn-slider-citation.btn-right span {
   display: none;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #e38c00;
   text-decoration: underline;
   margin: 12px 0 0 0;
@@ -6944,6 +7067,7 @@ a.btn-slider-citation.btn-right span {
   top: 76px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   line-height: 1.4em;
   text-transform: uppercase;
   color: #333333;
@@ -6962,6 +7086,7 @@ a.btn-slider-citation.btn-right span {
   top: 96px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #b0b0a8;
   padding: 2px 0;
@@ -6976,6 +7101,7 @@ a.btn-slider-citation.btn-right span {
   bottom: 111px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #797973;
 }
@@ -6989,6 +7115,7 @@ a.btn-slider-citation.btn-right span {
   bottom: 78px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.5em;
+  text-rendering: optimizeLegibility;
   line-height: 0.8em;
   color: #e38c00;
 }
@@ -7009,6 +7136,7 @@ a.btn-slider-citation.btn-right span {
   bottom: 55px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   color: #333333;
   line-height: 1em;
 }
@@ -7021,6 +7149,7 @@ a.btn-slider-citation.btn-right span {
 .car-price-saving strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .saving-percentage {
   display: inline-block;
@@ -7030,6 +7159,7 @@ a.btn-slider-citation.btn-right span {
   color: #ffffff;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.929em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   padding: 2px 4px;
   margin: 0;
@@ -7052,12 +7182,14 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 .car-btn-wishlist {
   display: none;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #333333;
   text-decoration: underline;
   position: relative;
@@ -7125,6 +7257,7 @@ a.btn-slider-citation.btn-right span {
   margin: 0 2px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   -webkit-transform: translateY(0px);
       -ms-transform: translateY(0px);
@@ -7230,6 +7363,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .result-cars-number .cars-number strong {
   display: block;
@@ -7306,6 +7440,7 @@ a.btn-slider-citation.btn-right span {
   vertical-align: middle;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   margin: 0 10px 0 0;
 }
@@ -7333,6 +7468,7 @@ a.btn-slider-citation.btn-right span {
   padding: 19px 0 14px 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   border-radius: 8px;
 }
 .no-touch .select-type-car > li a:hover .zone-picto {
@@ -7351,6 +7487,7 @@ a.btn-slider-citation.btn-right span {
 .select-type-car > li.is-selected a .zone-txt {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #fff;
 }
 .select-type-car .zone-picto {
@@ -7395,6 +7532,7 @@ a.btn-slider-citation.btn-right span {
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   border-radius: 6px;
   position: relative;
 }
@@ -7450,6 +7588,7 @@ a.btn-slider-citation.btn-right span {
   margin: 0;
   font-family: 'Texta-Regular', sans-serif;
   font-size: 0.5em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #fff;
   border-radius: 10px;
@@ -7614,6 +7753,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #fff;
   padding: 8px 0 8px 60px;
@@ -7697,6 +7837,7 @@ a.btn-slider-citation.btn-right span {
 .sort-by {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #b0b0a8;
   text-transform: uppercase;
 }
@@ -7732,6 +7873,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   color: #333333;
 }
 .description-recherche {
@@ -7816,6 +7958,7 @@ a.btn-slider-citation.btn-right span {
   padding: 2px 7px 0 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #6d6d67;
   line-height: 1em;
@@ -7831,6 +7974,7 @@ a.btn-slider-citation.btn-right span {
   opacity: 1;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #6d6d67;
   line-height: 1em;
@@ -7867,6 +8011,7 @@ a.btn-slider-citation.btn-right span {
   right: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.813em;
+  text-rendering: optimizeLegibility;
 }
 .is-list .car-price .acronym {
   font-size: 0.444em;
@@ -7879,6 +8024,7 @@ a.btn-slider-citation.btn-right span {
   right: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.375em;
+  text-rendering: optimizeLegibility;
   color: #b0b0a8;
   margin: -4px 0 2px 0;
 }
@@ -8095,6 +8241,7 @@ a.btn-slider-citation.btn-right span {
   vertical-align: top;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #6d6d67;
   margin: 0 6px 0 0;
@@ -8105,6 +8252,7 @@ a.btn-slider-citation.btn-right span {
   vertical-align: top;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   text-transform: uppercase;
   color: #6d6d67;
@@ -8114,6 +8262,7 @@ a.btn-slider-citation.btn-right span {
   display: block;
   font-family: 'Texta-Light', sans-serif;
   font-size: 2em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #333333;
   line-height: 1em;
@@ -8130,10 +8279,12 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail .car-desc-detail {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   text-transform: uppercase;
   color: #6d6d67;
@@ -8154,6 +8305,7 @@ a.btn-slider-citation.btn-right span {
   margin: 0 4px 0 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 .wrapper-car-detail .car-label-detail.indic {
@@ -8264,6 +8416,7 @@ a.btn-slider-citation.btn-right span {
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   border-radius: 6px;
   position: relative;
   text-align: center;
@@ -8303,6 +8456,7 @@ a.btn-slider-citation.btn-right span {
   margin: 0;
   font-family: 'Texta-Regular', sans-serif;
   font-size: 0.5em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #fff;
   border-radius: 10px;
@@ -8382,6 +8536,7 @@ a.btn-slider-citation.btn-right span {
   width: 144px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.813em;
+  text-rendering: optimizeLegibility;
   color: #e38c00;
   line-height: 0.6em;
   padding: 4px 0 0 0;
@@ -8403,6 +8558,7 @@ a.btn-slider-citation.btn-right span {
 .wrapper-car-detail .wrapper-prix-detail .prix-moyen-txt {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   width: 100px;
   line-height: 1.2em;
@@ -8411,23 +8567,28 @@ a.btn-slider-citation.btn-right span {
 .wrapper-car-detail .wrapper-prix-detail .prix-moyen {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.625em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail .wrapper-prix-detail .prix-moyen .acronym {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.615em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail .wrapper-economie-financement {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail #btn-financement {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail .consultations {
   color: #b0b0a8;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail #btn-essai-commande {
   font-family: 'Texta-Black', sans-serif;
@@ -8435,6 +8596,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail #btn-essai-commande.fixed {
   position: fixed;
@@ -8449,6 +8611,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   margin: 12px 0 0 0;
 }
 .wrapper-car-detail #btn-question {
@@ -8457,12 +8620,14 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   margin: 12px 0 0 0;
 }
 .wrapper-car-detail .car-old-price {
   bottom: 111px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #797973;
 }
@@ -8476,6 +8641,7 @@ a.btn-slider-citation.btn-right span {
   bottom: 78px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.5em;
+  text-rendering: optimizeLegibility;
   line-height: 0.8em;
   color: #e38c00;
 }
@@ -8496,6 +8662,7 @@ a.btn-slider-citation.btn-right span {
   bottom: 55px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   color: #333333;
   line-height: 1em;
 }
@@ -8508,6 +8675,7 @@ a.btn-slider-citation.btn-right span {
 .wrapper-car-detail .car-price-saving strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail .saving-percentage {
   display: inline-block;
@@ -8517,6 +8685,7 @@ a.btn-slider-citation.btn-right span {
   color: #ffffff;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.929em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   padding: 2px 4px;
   margin: 3px 0 0 0;
@@ -8538,6 +8707,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-car-detail .result-cars-number .cars-number strong {
   display: block;
@@ -8693,6 +8863,7 @@ a.btn-slider-citation.btn-right span {
   color: #b0b0a8;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   line-height: 1.1em;
 }
 .caracteristiques > li a:before,
@@ -8824,11 +8995,13 @@ a.btn-slider-citation.btn-right span {
 .table-caracteristiques tr td.title {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
   padding-right: 50px;
 }
 .table-caracteristiques tr td.content {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   padding-right: 20px;
 }
 .table-caracteristiques tr:last-child {
@@ -8849,12 +9022,14 @@ a.btn-slider-citation.btn-right span {
 .consommation > li.consommation-location {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   line-height: 1em;
 }
 .consommation > li.consommation-detail {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   color: #6d6d67;
 }
 .consommation > li.consommation-detail strong {
@@ -8864,6 +9039,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
 }
 .consommation > li.consommation-gas-station {
@@ -8887,6 +9063,7 @@ a.btn-slider-citation.btn-right span {
   padding: 20px 0 0 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
 }
 .liste-equipements > li,
 .liste-options-installees > li,
@@ -8900,6 +9077,7 @@ a.btn-slider-citation.btn-right span {
 .list-block.liste-options-installees > li strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .liste-equipements {
   -webkit-columns: 2;
@@ -8933,6 +9111,7 @@ a.btn-slider-citation.btn-right span {
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   border-radius: 6px;
   position: relative;
   text-align: center;
@@ -8965,6 +9144,7 @@ a.btn-slider-citation.btn-right span {
   margin: 0;
   font-family: 'Texta-Regular', sans-serif;
   font-size: 0.5em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   color: #fff;
   border-radius: 10px;
@@ -9004,10 +9184,12 @@ a.btn-slider-citation.btn-right span {
 .table-detail tr td.title {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
 }
 .table-detail tr td.content {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 .table-detail tr td.big-padding {
@@ -9037,6 +9219,7 @@ a.btn-slider-citation.btn-right span {
 .list-third.list-radar .list-inline.list-half.list-impacts > li {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
 }
 .list-radar .list-inline.list-half.list-impacts > li:first-of-type,
 .list-inline.list-radar .list-inline.list-half.list-impacts > li:first-of-type,
@@ -9082,6 +9265,7 @@ a.btn-slider-citation.btn-right span {
 .prix-facilicar .legend {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #b0b0a8;
   line-height: 1em;
@@ -9101,6 +9285,7 @@ a.btn-slider-citation.btn-right span {
   vertical-align: top;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   text-transform: uppercase;
   position: absolute;
@@ -9148,6 +9333,7 @@ a.btn-slider-citation.btn-right span {
   border-radius: 9px;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .content-img-autovista {
   width: 150px;
@@ -9173,6 +9359,7 @@ a.btn-slider-citation.btn-right span {
   text-align: right;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   color: #6d6d67;
   line-height: 1.1em;
 }
@@ -9183,6 +9370,7 @@ a.btn-slider-citation.btn-right span {
 .table-autovista tr td .prix-financement {
   font-family: 'Texta-Light', sans-serif;
   font-size: 3.214em;
+  text-rendering: optimizeLegibility;
   color: #e38c00;
   line-height: 0.4em;
   min-width: 170px;
@@ -9190,14 +9378,17 @@ a.btn-slider-citation.btn-right span {
 .table-autovista tr td .prix-financement .acronym {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.444em;
+  text-rendering: optimizeLegibility;
 }
 .table-autovista tr td .prix-moyen {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.571em;
+  text-rendering: optimizeLegibility;
 }
 .table-autovista tr td .prix-moyen .acronym {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.727em;
+  text-rendering: optimizeLegibility;
 }
 .table-autovista tr td .saving-percentage {
   font-size: 20px;
@@ -9205,6 +9396,7 @@ a.btn-slider-citation.btn-right span {
 .table-autovista tr td .saving {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   color: #333333;
 }
 .table-autovista tr.border-bottom {
@@ -9340,6 +9532,7 @@ a.btn-slider-citation.btn-right span {
 .credit-financement-title {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.125em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   box-sizing: border-box;
   padding: 0 20px;
@@ -9372,6 +9565,7 @@ a.btn-slider-citation.btn-right span {
 .price-credit-financement {
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.813em;
+  text-rendering: optimizeLegibility;
   color: #e38c00;
   text-transform: uppercase;
   line-height: 0.4em;
@@ -9388,6 +9582,7 @@ a.btn-slider-citation.btn-right span {
 .duration-credit-financement {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   box-sizing: border-box;
   padding: 0 20px;
 }
@@ -9403,6 +9598,7 @@ a.btn-slider-citation.btn-right span {
 .credit-financement-inclusions > li {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   line-height: 1.1em;
   position: relative;
 }
@@ -9416,6 +9612,7 @@ a.btn-slider-citation.btn-right span {
 .credit-financement-inclusions > li.no-plus {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   margin: 0 0 8px 0;
 }
 .credit-financement-inclusions > li.no-plus:before {
@@ -9433,6 +9630,7 @@ a.btn-slider-citation.btn-right span {
   padding: 0 20px 0 0;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   line-height: 1em;
 }
@@ -9515,6 +9713,7 @@ a.btn-slider-citation.btn-right span {
 .wrapper-top-zoom .content-prix-zoom .prix-financement-zoom .acronym {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.444em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-top-zoom .content-btn-zoom {
   width: 375px;
@@ -9550,6 +9749,7 @@ a.btn-slider-citation.btn-right span {
 .wrapper-top-zoom.is-white .content-prix-zoom .prix-financement-zoom .acronym {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-top-zoom.is-white .content-btn-zoom {
   width: 375px;
@@ -9587,6 +9787,7 @@ a.btn-slider-citation.btn-right span {
 .wrapper-top-zoom span.btn-tel {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   line-height: 1em;
   display: inline-block;
   vertical-align: top;
@@ -9610,6 +9811,7 @@ a.btn-slider-citation.btn-right span {
   line-height: 1.1em;
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.75em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   text-align: center;
 }
@@ -9621,6 +9823,7 @@ a.btn-slider-citation.btn-right span {
 .prix-financement-zoom {
   font-family: 'Texta-Light', sans-serif;
   font-size: 2.813em;
+  text-rendering: optimizeLegibility;
   color: #e38c00;
 }
 .car-details-zoom,
@@ -9631,12 +9834,14 @@ a.btn-slider-citation.btn-right span {
 .list-block.car-details-zoom > li.car-details-zoom-line-one {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.875em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
 }
 .car-details-zoom > li.car-details-zoom-line-two,
 .list-block.car-details-zoom > li.car-details-zoom-line-two {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.563em;
+  text-rendering: optimizeLegibility;
   margin: 4px 0;
 }
 .car-details-zoom .encadre,
@@ -9733,6 +9938,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #e38c00;
@@ -9809,6 +10015,7 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   text-decoration: none;
   position: fixed;
@@ -9962,6 +10169,7 @@ a.btn-slider-citation.btn-right span {
   position: relative;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 0.75em;
+  text-rendering: optimizeLegibility;
   text-transform: uppercase;
   color: #6d6d67;
   line-height: 1.1em;
@@ -10005,6 +10213,7 @@ a.btn-slider-citation.btn-right span {
 .btn-change-car .survol .wrapper-txt-survol .detail-change-car .car-name-detail {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -10016,10 +10225,12 @@ a.btn-slider-citation.btn-right span {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 .btn-change-car .survol .wrapper-txt-survol .detail-change-car .car-desc-detail {
   font-family: 'Texta-Light', sans-serif;
   font-size: 0.813em;
+  text-rendering: optimizeLegibility;
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -10127,15 +10338,18 @@ a.btn-slider-citation.btn-right span {
   margin: 0;
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.13em;
+  text-rendering: optimizeLegibility;
   text-align: left;
 }
 .notif p.small-txt {
   font-family: 'Texta-Regular', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .notif p.small-txt strong {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .notif a {
   color: #fff;
@@ -10824,6 +11038,11 @@ a.btn-slider-citation.btn-right span {
     display: none;
   }
   /* @end */
+  /* @group Localisation */
+  .def-detail-localisation {
+    width: 420px;
+  }
+  /* @end */
 }
 @media (max-width: 979px) {
   .container.small {
@@ -10840,6 +11059,9 @@ a.btn-slider-citation.btn-right span {
   }
   h1 {
     font-size: 4.375em;
+  }
+  h1.very-small-title {
+    font-size: 2.3em;
   }
   h2 {
     font-size: 2em;
@@ -10897,6 +11119,7 @@ a.btn-slider-citation.btn-right span {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     padding: 10px 50px 10px 0;
     cursor: pointer;
   }
@@ -11103,6 +11326,7 @@ a.btn-slider-citation.btn-right span {
   .wrapper-choose .list-choose > li p strong {
     font-family: 'Texta-Light', sans-serif;
     font-size: 1em;
+    text-rendering: optimizeLegibility;
   }
   .content-choose {
     overflow: hidden;
@@ -11123,6 +11347,7 @@ a.btn-slider-citation.btn-right span {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     padding: 4px 0;
     color: #009cc4;
     line-height: 1.1em;
@@ -12096,7 +12321,13 @@ a.btn-slider-citation.btn-right span {
   #wrapper-map {
     height: auto;
     box-sizing: border-box;
-    padding: 65px 0 0 0;
+    padding: 0;
+  }
+  #wrapper-map.detail {
+    height: auto;
+  }
+  #wrapper-map.detail #map {
+    height: 150px;
   }
   #wrapper-map #map {
     height: 235px;
@@ -12316,6 +12547,79 @@ a.btn-slider-citation.btn-right span {
     padding: 17px 28px 17px 45px;
   }
   /* @end */
+  /* @group Localisation */
+  .wrapper-detail-localisation,
+  .wrapper-align-top.wrapper-detail-localisation {
+    display: block;
+  }
+  .def-detail-localisation,
+  .content-align-top.def-detail-localisation {
+    display: block;
+    width: 100%;
+  }
+  .def-detail-localisation .content-def-detail-localisation,
+  .content-align-top.def-detail-localisation .content-def-detail-localisation {
+    margin: 0;
+    border: none;
+    padding: 10px 0 20px 0;
+  }
+  .def-detail-localisation .content-def-detail-localisation .content-toggle-once,
+  .content-align-top.def-detail-localisation .content-def-detail-localisation .content-toggle-once {
+    display: none;
+  }
+  .def-detail-localisation .content-def-detail-localisation h1,
+  .content-align-top.def-detail-localisation .content-def-detail-localisation h1 {
+    margin: 10px 0 10px 0;
+  }
+  .desc-detail-localisation,
+  .content-align-top.desc-detail-localisation {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  #btn-rdv-localisation {
+    position: relative;
+    top: inherit;
+    right: inherit;
+    margin: 20px 0 0 0;
+  }
+  .list-block.list-btn-detail-localisation {
+    margin: 0;
+  }
+  .list-block.list-btn-detail-localisation > li {
+    margin: 0;
+  }
+  .list-block.list-btn-detail-localisation > li a {
+    font-family: 'Texta-Black', sans-serif;
+    font-size: 1em;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 0;
+    color: #333333;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #AEACA1;
+    text-decoration: none;
+    text-transform: none;
+  }
+  .list-block.list-btn-detail-localisation > li a:before {
+    display: none;
+  }
+  .list-block.list-btn-detail-localisation > li a:hover {
+    opacity: 1;
+  }
+  /* @end */
+}
+@media (max-width: 979px) and (max-height: 360px) {
+  #wrapper-map.detail #map {
+    height: 150px;
+  }
 }
 @media (max-width: 979px) and (max-height: 360px) {
   #wrapper-map #map {
@@ -12394,6 +12698,9 @@ a.btn-slider-citation.btn-right span {
   h1 {
     font-size: 2.5em;
   }
+  h1.very-small-title {
+    font-size: 2em;
+  }
   h2 {
     font-size: 1.6em;
     margin: 40px 0 15px 0;
@@ -12454,6 +12761,17 @@ a.btn-slider-citation.btn-right span {
   div.btn-block.big.btn-block-arrow .txt-btn-block-arrow,
   span.btn-block.big.btn-block-arrow .txt-btn-block-arrow {
     padding: 19px 36px 19px 48px;
+  }
+  a.btn-arrow-top.maxi,
+  div.btn-arrow-top.maxi,
+  span.btn-arrow-top.maxi {
+    font-size: 1em;
+    padding-left: 16px;
+  }
+  a.btn-arrow-top.maxi:before,
+  div.btn-arrow-top.maxi:before,
+  span.btn-arrow-top.maxi:before {
+    font-size: 4px;
   }
   .content-toggle.small,
   .content-toggle-once.small {
@@ -12523,6 +12841,7 @@ a.btn-slider-citation.btn-right span {
     font-size: 1.1em;
     font-family: 'Texta-Light', sans-serif;
     font-size: 1em;
+    text-rendering: optimizeLegibility;
     padding: 3px 5px;
     margin: 3px 0 0 5px;
   }
@@ -12607,6 +12926,7 @@ a.btn-slider-citation.btn-right span {
     text-transform: none;
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
+    text-rendering: optimizeLegibility;
     color: #333333;
     padding: 0;
   }
@@ -12714,6 +13034,7 @@ a.btn-slider-citation.btn-right span {
   .wrapper-choose .list-choose > li p strong {
     font-family: 'Texta-Light', sans-serif;
     font-size: 1em;
+    text-rendering: optimizeLegibility;
   }
   .title-action-choose {
     display: none;
@@ -13362,6 +13683,7 @@ a.btn-slider-citation.btn-right span {
     padding: 0 10px 0 0;
     font-family: 'Texta-Bold', sans-serif;
     font-size: 1em;
+    text-rendering: optimizeLegibility;
     color: #009cc4;
   }
   .navbar .list-block > li:last-child,
@@ -13452,6 +13774,7 @@ a.btn-slider-citation.btn-right span {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     display: block;
     width: 100%;
     cursor: pointer;
@@ -13540,6 +13863,7 @@ a.btn-slider-citation.btn-right span {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     text-decoration: underline;
     margin: 0 0 8px 0;
   }
@@ -13552,6 +13876,7 @@ a.btn-slider-citation.btn-right span {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   .cars-filters {
     display: block;
@@ -13599,6 +13924,7 @@ a.btn-slider-citation.btn-right span {
   .cars-filters .select-custom .select-options ul > li.is-selected {
     font-family: 'Texta-Bold', sans-serif;
     font-size: 1.125em;
+    text-rendering: optimizeLegibility;
     color: #e38c00;
   }
   .select-type-car {
@@ -13658,6 +13984,7 @@ a.btn-slider-citation.btn-right span {
     border-radius: 0;
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
+    text-rendering: optimizeLegibility;
   }
   .select-type-car > li a .zone-txt {
     padding: 0;
@@ -13749,6 +14076,7 @@ a.btn-slider-citation.btn-right span {
   .cars-filters .select-custom .select-options ul > li {
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
+    text-rendering: optimizeLegibility;
     padding: 2px 0;
     position: relative;
   }
@@ -13787,6 +14115,7 @@ a.btn-slider-citation.btn-right span {
     border-radius: 0;
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
+    text-rendering: optimizeLegibility;
   }
   .cars-filters .switch.content-toggle-filter {
     display: none;
@@ -13806,6 +14135,7 @@ a.btn-slider-citation.btn-right span {
     background-color: #e38c00;
     font-family: 'Texta-Bold', sans-serif;
     font-size: 1em;
+    text-rendering: optimizeLegibility;
   }
   .no-touch .cars-filters .switch.off .on-content:hover {
     color: #e38c00;
@@ -13814,6 +14144,7 @@ a.btn-slider-citation.btn-right span {
     background-color: #e38c00;
     font-family: 'Texta-Bold', sans-serif;
     font-size: 1em;
+    text-rendering: optimizeLegibility;
   }
   .no-touch .cars-filters .switch.on .off-content:hover {
     color: #e38c00;
@@ -13849,6 +14180,7 @@ a.btn-slider-citation.btn-right span {
     background: none;
     font-family: 'Texta-Bold', sans-serif;
     font-size: 1.125em;
+    text-rendering: optimizeLegibility;
   }
   .select-option-car > li.is-selected a .zone-picto {
     background-color: #e38c00;
@@ -13886,6 +14218,7 @@ a.btn-slider-citation.btn-right span {
     border-radius: 0;
     font-family: 'Texta-Light', sans-serif;
     font-size: 1.125em;
+    text-rendering: optimizeLegibility;
     padding: 6px 0 6px 0;
   }
   .no-touch .select-option-car > li a:hover .zone-txt {
@@ -13974,8 +14307,28 @@ a.btn-slider-citation.btn-right span {
   .list-block.list-agency > li a .zone-nb-agency {
     width: 40px;
   }
+  #wrapper-map {
+    padding: 65px 0 0 0;
+  }
   #wrapper-map .map-search-content {
     padding: 15px 0 25px 0;
+  }
+  .def-detail-localisation .zone-txt {
+    padding: 0;
+  }
+  #btn-photos-localisation {
+    padding-left: 0;
+    max-width: 260px;
+    margin: 0;
+  }
+  #btn-photos-localisation:after {
+    display: none;
+  }
+  .def-detail-localisation .small-width {
+    margin: 10px 0 0 0;
+  }
+  #btn-rdv-localisation {
+    max-width: 250px;
   }
   /* @end */
   /* @group Détail véhicule */
