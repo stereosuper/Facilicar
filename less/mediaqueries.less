@@ -292,6 +292,25 @@
         &.cta{
             font-size: 1em;
         }
+        .is-list.list-cars.small &{
+            &.cta{
+                font-size: 0.9em;
+                .cta-wrapper{
+                    padding: 0 15px;
+                }
+                .cta-content{
+                    padding: 0 15px 0 0;
+                    &.cta-img{
+                        height: 45px;
+                        width: 49px;
+                    }
+                    &.cta-btn{
+                        padding: 0;
+                        width: 80px;
+                    }
+                }
+            }
+        }
     }
     .is-list{
         .bandeau-image-car{
@@ -1374,6 +1393,11 @@
     .is-list{
         .wrapper-car{
             text-decoration: none;
+            &.cta{
+                &:before{
+                    display: none;
+                }
+            }
             &:before{
                 .icon-font;
                 content: "\e903";
@@ -2904,13 +2928,13 @@
         }
     }
     .list-cars{
-        &.is-list{
+        &.is-list, &.small.is-list{
             > li{
                 height: 120px;
             }
         }
     }
-    .is-list, .list-cars.list-cars-small.is-list{
+    .is-list, .list-cars.list-cars-small.is-list, .is-list.list-cars.small{
         .wrapper-car{
             text-decoration: none;
             &:before{
@@ -3280,6 +3304,11 @@
                         }
                     }
                 }
+            }
+        }
+        &.basic-form{
+            label{
+                    width: 80px;
             }
         }
     }
@@ -3943,9 +3972,6 @@
             margin: 10px 0 0 0;
         }
     }
-    #btn-rdv-localisation{
-        max-width: 250px;
-    }
     /* @end */
 
     /* @group Détail véhicule */
@@ -4228,6 +4254,21 @@
     /* @group Popup */
     .popup{
         width: 100%;
+        &.basic-form{
+            label{
+                display: block;
+                width: auto;
+                text-align: left;
+                br{
+                    display: none;
+                }
+            }
+            button{
+                &.submit-base{
+                    margin-left: 0;
+                }
+            }
+        }
     }
     /* @end */
     .container{
@@ -4377,6 +4418,14 @@
                     }
                 }
             }
+        }
+    }
+    #btn-rdv-localisation{
+        max-width: 250px;
+    }
+    .def-detail-localisation{
+        .wrapper-photos{
+            height: 200px;
         }
     }
     /* @end */

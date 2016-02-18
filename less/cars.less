@@ -14,6 +14,35 @@
 		color: @theme-noir;
 		text-decoration: none;
 		line-height: 1.2em;
+		.is-list.list-cars.small &{
+			font-size: 1.125em;
+			i{
+				font-size: 1em;
+			}
+			strong{
+				font-size: 1em;
+			}
+			.cta-content{
+				padding: 0 25px 0 0;
+				width: auto;
+				&.cta-img{
+					width: 60px;
+					height: 58px;
+					img{
+						max-height: 100%;
+					}
+				}
+				&.cta-btn{
+					width: auto;
+					br{
+						display: none;
+					}
+					.btn-underline{
+						font-size: 1em;
+					}
+				}
+			}
+		}
 		&.big-line-height{
 			line-height: 1.3em;
 		}

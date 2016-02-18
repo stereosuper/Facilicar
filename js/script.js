@@ -850,6 +850,11 @@ $(function(){
 				$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
 				var contentToggleEqui = $(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once");
 			}
+
+			if($(this).attr("id")=="btn-photos-localisation"){
+				$('.slider-photos').get(0).slick.setPosition();
+			}
+
 			var btnClique = $(this);
 			setTimeout(function(){
 				if($("body").hasClass("detail-vehicule")){

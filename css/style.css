@@ -2186,6 +2186,7 @@ a.btn-menu-responsive .rect:before {
 .def-detail-localisation .wrapper-photos {
   display: block;
   width: 100%;
+  max-width: 500px;
   height: 237px;
   position: relative;
   margin: 0;
@@ -3932,6 +3933,12 @@ a:focus {
   box-sizing: border-box;
   padding: 0 9px;
   margin: 9px 0;
+}
+.list-cars.small.is-list > li {
+  display: block;
+  width: 100%;
+  height: 104px;
+  margin-bottom: 18px;
 }
 .list-cars.is-list > li {
   display: block;
@@ -5791,6 +5798,38 @@ a.btn-slider-citation.btn-right span {
   margin: 0;
   text-align: center;
 }
+.popup.basic-form label {
+  width: 90px;
+  margin: 5px 20px 5px 0;
+  text-align: right;
+}
+.popup.basic-form input {
+  width: 220px;
+}
+.popup.basic-form form {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.popup.basic-form #list-date-popup label {
+  width: auto;
+  margin: 0 20px;
+  text-align: left;
+}
+.popup.basic-form #list-date-popup label#label-date-rdv {
+  margin: 0 20px 0 0;
+}
+.popup.basic-form #list-date-popup label:after {
+  display: none;
+}
+.popup.basic-form #list-date-popup li {
+  margin: 0;
+}
+.popup.basic-form #list-date-popup > li:first-child {
+  margin-bottom: 10px;
+}
+.popup.basic-form button.submit-base {
+  margin-left: 110px;
+}
 .popup .notif-valid + p {
   font-family: 'Texta-Bold', sans-serif;
   font-size: 1.25em;
@@ -6472,6 +6511,35 @@ a.btn-slider-citation.btn-right span {
   color: #333333;
   text-decoration: none;
   line-height: 1.2em;
+}
+.is-list.list-cars.small .wrapper-car.cta {
+  font-size: 1.125em;
+}
+.is-list.list-cars.small .wrapper-car.cta i {
+  font-size: 1em;
+}
+.is-list.list-cars.small .wrapper-car.cta strong {
+  font-size: 1em;
+}
+.is-list.list-cars.small .wrapper-car.cta .cta-content {
+  padding: 0 25px 0 0;
+  width: auto;
+}
+.is-list.list-cars.small .wrapper-car.cta .cta-content.cta-img {
+  width: 60px;
+  height: 58px;
+}
+.is-list.list-cars.small .wrapper-car.cta .cta-content.cta-img img {
+  max-height: 100%;
+}
+.is-list.list-cars.small .wrapper-car.cta .cta-content.cta-btn {
+  width: auto;
+}
+.is-list.list-cars.small .wrapper-car.cta .cta-content.cta-btn br {
+  display: none;
+}
+.is-list.list-cars.small .wrapper-car.cta .cta-content.cta-btn .btn-underline {
+  font-size: 1em;
 }
 .wrapper-car.cta.big-line-height {
   line-height: 1.3em;
@@ -10745,6 +10813,23 @@ a.btn-slider-citation.btn-right span {
   .wrapper-car.cta {
     font-size: 1em;
   }
+  .is-list.list-cars.small .wrapper-car.cta {
+    font-size: 0.9em;
+  }
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper {
+    padding: 0 15px;
+  }
+  .is-list.list-cars.small .wrapper-car.cta .cta-content {
+    padding: 0 15px 0 0;
+  }
+  .is-list.list-cars.small .wrapper-car.cta .cta-content.cta-img {
+    height: 45px;
+    width: 49px;
+  }
+  .is-list.list-cars.small .wrapper-car.cta .cta-content.cta-btn {
+    padding: 0;
+    width: 80px;
+  }
   .is-list .bandeau-image-car {
     width: 280px;
   }
@@ -11815,6 +11900,9 @@ a.btn-slider-citation.btn-right span {
   }
   .is-list .wrapper-car {
     text-decoration: none;
+  }
+  .is-list .wrapper-car.cta:before {
+    display: none;
   }
   .is-list .wrapper-car:before {
     font-family: 'facilicar';
@@ -13274,15 +13362,18 @@ a.btn-slider-citation.btn-right span {
   .wrapper-car.cta .cta-content.cta-btn .txt-cta-btn {
     margin: 0 0 2px 0;
   }
-  .list-cars.is-list > li {
+  .list-cars.is-list > li,
+  .list-cars.small.is-list > li {
     height: 120px;
   }
   .is-list .wrapper-car,
-  .list-cars.list-cars-small.is-list .wrapper-car {
+  .list-cars.list-cars-small.is-list .wrapper-car,
+  .is-list.list-cars.small .wrapper-car {
     text-decoration: none;
   }
   .is-list .wrapper-car:before,
-  .list-cars.list-cars-small.is-list .wrapper-car:before {
+  .list-cars.list-cars-small.is-list .wrapper-car:before,
+  .is-list.list-cars.small .wrapper-car:before {
     font-family: 'facilicar';
     speak: none;
     font-style: normal;
@@ -13303,139 +13394,168 @@ a.btn-slider-citation.btn-right span {
     text-decoration: none;
   }
   .no-touch .is-list .wrapper-car:hover .bandeau-car.bandeau-bottom,
-  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .bandeau-car.bandeau-bottom {
+  .no-touch .list-cars.list-cars-small.is-list .wrapper-car:hover .bandeau-car.bandeau-bottom,
+  .no-touch .is-list.list-cars.small .wrapper-car:hover .bandeau-car.bandeau-bottom {
     height: 33px;
   }
   .is-list .bandeau-image-car,
-  .list-cars.list-cars-small.is-list .bandeau-image-car {
+  .list-cars.list-cars-small.is-list .bandeau-image-car,
+  .is-list.list-cars.small .bandeau-image-car {
     width: 84px;
     height: 56px;
   }
   .is-list .encadre,
-  .list-cars.list-cars-small.is-list .encadre {
+  .list-cars.list-cars-small.is-list .encadre,
+  .is-list.list-cars.small .encadre {
     font-size: 0.625em;
     padding: 1px 3px;
   }
   .is-list .bandeau-car.bandeau-top,
-  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top {
+  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top,
+  .is-list.list-cars.small .bandeau-car.bandeau-top {
     height: 56px;
     left: 10px;
     top: 52px;
   }
   .is-list .car-block.car-year,
-  .list-cars.list-cars-small.is-list .car-block.car-year {
+  .list-cars.list-cars-small.is-list .car-block.car-year,
+  .is-list.list-cars.small .car-block.car-year {
     left: 92px;
   }
   .is-list .car-block.car-km,
-  .list-cars.list-cars-small.is-list .car-block.car-km {
+  .list-cars.list-cars-small.is-list .car-block.car-km,
+  .is-list.list-cars.small .car-block.car-km {
     left: 94px;
   }
   .is-list .car-block.motor-color,
-  .list-cars.list-cars-small.is-list .car-block.motor-color {
+  .list-cars.list-cars-small.is-list .car-block.motor-color,
+  .is-list.list-cars.small .car-block.motor-color {
     left: 98px;
   }
   .is-list .bandeau-car.bandeau-top,
-  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top {
+  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-top,
+  .is-list.list-cars.small .bandeau-car.bandeau-top {
     right: 28px;
     overflow: hidden;
   }
   .is-list .bandeau-car.bandeau-bottom,
-  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-bottom {
+  .list-cars.list-cars-small.is-list .bandeau-car.bandeau-bottom,
+  .is-list.list-cars.small .bandeau-car.bandeau-bottom {
     bottom: inherit;
     top: 10px;
     left: 102px;
     right: 28px;
   }
   .is-list .car-price,
-  .list-cars.list-cars-small.is-list .car-price {
+  .list-cars.list-cars-small.is-list .car-price,
+  .is-list.list-cars.small .car-price {
     font-size: 1.5em;
     right: inherit;
     left: 0;
   }
   .is-list .car-zone-btn,
-  .list-cars.list-cars-small.is-list .car-zone-btn {
+  .list-cars.list-cars-small.is-list .car-zone-btn,
+  .is-list.list-cars.small .car-zone-btn {
     display: none;
   }
   .is-list .car-km,
-  .list-cars.list-cars-small.is-list .car-km {
+  .list-cars.list-cars-small.is-list .car-km,
+  .is-list.list-cars.small .car-km {
     font-size: 0.688em;
   }
   .is-list .motor-color,
-  .list-cars.list-cars-small.is-list .motor-color {
+  .list-cars.list-cars-small.is-list .motor-color,
+  .is-list.list-cars.small .motor-color {
     font-size: 0.688em;
   }
   .is-list .car-name,
-  .list-cars.list-cars-small.is-list .car-name {
+  .list-cars.list-cars-small.is-list .car-name,
+  .is-list.list-cars.small .car-name {
     font-size: 1.25em;
     margin: -4px 0 0 0;
   }
   .is-list .car-desc,
-  .list-cars.list-cars-small.is-list .car-desc {
+  .list-cars.list-cars-small.is-list .car-desc,
+  .is-list.list-cars.small .car-desc {
     font-size: 0.875em;
     margin: -1px 0 0 0;
   }
   .is-list .car-old-price,
-  .list-cars.list-cars-small.is-list .car-old-price {
+  .list-cars.list-cars-small.is-list .car-old-price,
+  .is-list.list-cars.small .car-old-price {
     display: none;
   }
   .is-list .car-btn-essai,
-  .list-cars.list-cars-small.is-list .car-btn-essai {
+  .list-cars.list-cars-small.is-list .car-btn-essai,
+  .is-list.list-cars.small .car-btn-essai {
     font-size: 0.875em;
     padding: 7px 12px;
   }
   .is-list .car-options,
-  .list-cars.list-cars-small.is-list .car-options {
+  .list-cars.list-cars-small.is-list .car-options,
+  .is-list.list-cars.small .car-options {
     margin: 0;
     display: none;
   }
   .is-list .car-options .wrapper-car-option,
-  .list-cars.list-cars-small.is-list .car-options .wrapper-car-option {
+  .list-cars.list-cars-small.is-list .car-options .wrapper-car-option,
+  .is-list.list-cars.small .car-options .wrapper-car-option {
     width: 17px;
     height: 18px;
     line-height: 18px;
   }
   .is-list .car-options .zone-picto,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto,
+  .is-list.list-cars.small .car-options .zone-picto {
     width: 17px;
     height: 18px;
     line-height: 18px;
   }
   .is-list .car-options .zone-picto.icon-gps,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-gps {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-gps,
+  .is-list.list-cars.small .car-options .zone-picto.icon-gps {
     font-size: 14px;
   }
   .is-list .car-options .zone-picto.icon-clim,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-clim {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-clim,
+  .is-list.list-cars.small .car-options .zone-picto.icon-clim {
     font-size: 11px;
   }
   .is-list .car-options .zone-picto.icon-toit-ouvrant,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-toit-ouvrant {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-toit-ouvrant,
+  .is-list.list-cars.small .car-options .zone-picto.icon-toit-ouvrant {
     font-size: 11px;
   }
   .is-list .car-options .zone-picto.icon-control-recul,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-control-recul {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-control-recul,
+  .is-list.list-cars.small .car-options .zone-picto.icon-control-recul {
     font-size: 7px;
   }
   .is-list .car-options .zone-picto.nb-places .places,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.nb-places .places {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.nb-places .places,
+  .is-list.list-cars.small .car-options .zone-picto.nb-places .places {
     font-size: 0.3em;
     padding: 1px 3px;
     margin-top: -6px;
   }
   .is-list .car-options .zone-picto.icon-phares,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-phares {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-phares,
+  .is-list.list-cars.small .car-options .zone-picto.icon-phares {
     font-size: 9px;
   }
   .is-list .car-options .zone-picto.icon-cuir,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-cuir {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-cuir,
+  .is-list.list-cars.small .car-options .zone-picto.icon-cuir {
     font-size: 10px;
   }
   .is-list .car-options .zone-picto.icon-quatre-quatre,
-  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-quatre-quatre {
+  .list-cars.list-cars-small.is-list .car-options .zone-picto.icon-quatre-quatre,
+  .is-list.list-cars.small .car-options .zone-picto.icon-quatre-quatre {
     font-size: 13px;
   }
   .is-list .car-options .zone-txt,
-  .list-cars.list-cars-small.is-list .car-options .zone-txt {
+  .list-cars.list-cars-small.is-list .car-options .zone-txt,
+  .is-list.list-cars.small .car-options .zone-txt {
     font-size: 0.8em;
     bottom: -32px;
     padding: 3px 0 0 0;
@@ -13444,32 +13564,39 @@ a.btn-slider-citation.btn-right span {
     height: 26px;
   }
   .is-list .wrapper-car.cta,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta,
+  .is-list.list-cars.small .wrapper-car.cta {
     font-size: 1em;
   }
   .is-list .wrapper-car.cta:before,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta:before {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta:before,
+  .is-list.list-cars.small .wrapper-car.cta:before {
     display: none;
   }
   .is-list .wrapper-car.cta .tel,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .tel {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .tel,
+  .is-list.list-cars.small .wrapper-car.cta .tel {
     display: block;
   }
   .is-list .wrapper-car.cta.big-line-height .cta-content.cta-img img,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta.big-line-height .cta-content.cta-img img {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta.big-line-height .cta-content.cta-img img,
+  .is-list.list-cars.small .wrapper-car.cta.big-line-height .cta-content.cta-img img {
     max-height: 17px;
   }
   .is-list .wrapper-car.cta.big-line-height .cta-wrapper,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta.big-line-height .cta-wrapper {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta.big-line-height .cta-wrapper,
+  .is-list.list-cars.small .wrapper-car.cta.big-line-height .cta-wrapper {
     padding: 6px 10px 10px 10px;
   }
   .is-list .wrapper-car.cta .cta-wrapper,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper {
     padding: 10px 10px 10px 10px;
     display: block;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content {
     display: block;
     width: 100%;
     text-align: center;
@@ -13477,40 +13604,48 @@ a.btn-slider-citation.btn-right span {
     margin: 3px 0;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-img,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.cta-img {
     width: 100%;
     margin-top: 0;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.cta-btn {
     width: 100%;
     text-align: center;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn {
     display: block;
     height: auto;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .wrapper-cta-btn .content-wrapper-cta-btn {
     display: block;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .btn-underline {
     padding: 0 12px;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.cta-btn .txt-cta-btn {
     margin: 0;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-txt,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.cta-txt {
     width: 100%;
     text-align: center;
     line-height: 1em;
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content br,
-  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content br {
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content br,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content br {
     display: none;
   }
   /* @end */
@@ -13645,6 +13780,9 @@ a.btn-slider-citation.btn-right span {
   .popup .list-inline.list-third.list-vehicule-interet div.btn-block.full-width.btn-block-arrow .txt-btn-block-arrow,
   .popup .list-inline.list-third.list-vehicule-interet span.btn-block.full-width.btn-block-arrow .txt-btn-block-arrow {
     padding: 17px 17px 17px 24px;
+  }
+  .popup.basic-form label {
+    width: 80px;
   }
   #list-date-popup {
     min-width: 0;
@@ -14327,9 +14465,6 @@ a.btn-slider-citation.btn-right span {
   .def-detail-localisation .small-width {
     margin: 10px 0 0 0;
   }
-  #btn-rdv-localisation {
-    max-width: 250px;
-  }
   /* @end */
   /* @group Détail véhicule */
   .wrapper-current-slide {
@@ -14586,6 +14721,17 @@ a.btn-slider-citation.btn-right span {
   .popup {
     width: 100%;
   }
+  .popup.basic-form label {
+    display: block;
+    width: auto;
+    text-align: left;
+  }
+  .popup.basic-form label br {
+    display: none;
+  }
+  .popup.basic-form button.submit-base {
+    margin-left: 0;
+  }
   /* @end */
   .wrapper-img .container {
     height: 150px;
@@ -14716,6 +14862,12 @@ a.btn-slider-citation.btn-right span {
   .map-search div strong.btn-toggle-one.small .arrow-toggle-one,
   .map-search span.btn-toggle-one.small .arrow-toggle-one {
     display: none;
+  }
+  #btn-rdv-localisation {
+    max-width: 250px;
+  }
+  .def-detail-localisation .wrapper-photos {
+    height: 200px;
   }
   /* @end */
   /* @group Détail véhicule */
