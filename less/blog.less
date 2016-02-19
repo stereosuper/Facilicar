@@ -124,4 +124,191 @@
 		}
 	}
 }
+
+
+.navbar, #main .navbar{
+    width: 220px;
+    height: 100%;
+    vertical-align: top;
+    position: absolute;
+    &.navbar-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .list-block-blog{
+        display: block;
+        margin: 0;
+        padding: 0 20px 0 0;
+        width: 200px;
+        max-height: 80%;
+        overflow: auto;
+        box-sizing: content-box;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        position: relative;
+        backface-visibility: hidden;
+        >li{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding-right:10px;
+            .texta-light(1em);
+            display: block;
+			&:before{
+				display: none;
+			}
+            &:first-child{
+            	text-decoration:none;
+            	box-sizing: border-box;
+				border-bottom: 1px solid #009CC4;
+				padding:10px 10px;
+				margin-bottom:15px;
+				.texta-bold(1em);
+				color: @theme-noir;
+				text-align:right;
+            }
+            &:last-child{
+            	text-decoration:none;
+            	box-sizing: border-box;
+				border-bottom: 1px solid #D8D8D4;
+				padding-bottom:20px;
+            }
+            a{
+            	display: inline-block;
+                position: relative;
+                padding: 0 0 0 8px;
+                &:before{
+	                content: "›";
+	                color: @theme-noir;
+	                display:block;
+	                position: absolute;
+	                top: 0;
+	                left: 0;
+
+	            }
+                color: @theme-noir;
+                &:hover{
+                    .no-touch &{
+                        border-bottom-color: @theme-primary;
+                    }
+                }
+
+            }
+
+            /*a::before{
+                content: "«\00A0";
+                color: @theme-noir;
+            }
+            a:first-child{
+                display: block;
+                color: @theme-noir;
+                padding: 20px 0 0 0;
+                box-sizing: border-box;
+                text-decoration : underline;
+                &:hover{
+                    .no-touch &{
+                        border-bottom-color: @theme-primary;
+                    }
+                }
+                
+            }
+            a:last-child{
+                display: block;
+                color: @theme-noir;
+                padding: 0 0 20px 0;
+                box-sizing: border-box;
+                border-bottom: 1px solid @theme-gris2;
+                text-decoration : underline;
+                &:hover{
+                    .no-touch &{
+                        border-bottom-color: @theme-primary;
+                    }
+                }
+                profil-photo.png
+            }*/
+            
+        }
+    }
+}
+.blog-width{
+	display:block;
+	box-sizing: border-box;
+}
+
+.article-blog{
+	display:block;
+	box-sizing: border-box;
+	border-bottom: 1px solid @theme-neutral;
+	padding-bottom: 30px;
+}
+.blog{
+	#main{
+		.content-with-navbar{
+		.text-width-small{
+			padding: 0 80px;
+			padding-top:20px;
+			p {
+				font-size:1em;
+			}
+			a{
+		        display: inline-block;
+		        position: relative;
+		        padding: 0 0 0 8px;
+		        color: @theme-primary;
+		        .texta-bold(1em);
+		        &:before{
+			        content: "›";
+			        display:block;
+			        position: absolute;
+			        top: 0;
+			        left: 0;
+				}
+			}
+			h2{
+				&:before{
+		            display:none;
+		        }
+		        a{
+		  			text-decoration:none;
+		  			.texta-black(1em);
+		  			color:@theme-noir;
+		  			&:before{
+			            display:none;
+			        }
+		         }
+			 }
+			 ul{
+    			display: block;
+    			padding: 0;
+			 	>li{
+			 		display: inline-block;
+			 		vertical-align: middle;
+		            margin: 0;
+		            padding: 0;
+		            .texta-light(1em);
+		            color:@theme-gris3;
+		            &:before{
+			            display:none;
+			        }
+					img{
+						border-radius:50%;
+						widht:34px;
+						height:34px;
+					}
+					a{
+		  			.texta-light(1em);
+		  			color:@theme-gris3;
+		  			&:before{
+			           	display:none;
+			        }
+		  			
+		         	}
+				}
+			 }
+		}
+	}
+	}
+	}
+
+
 /* @end */
