@@ -14661,7 +14661,7 @@ a.btn-slider-citation.btn-right span {
   }
   #btn-photos-localisation {
     padding-left: 0;
-    max-width: 260px;
+    max-width: none;
     margin: 0;
   }
   #btn-photos-localisation:after {
@@ -14669,6 +14669,7 @@ a.btn-slider-citation.btn-right span {
   }
   .def-detail-localisation .small-width {
     margin: 10px 0 0 0;
+    max-width: none;
   }
   /* @end */
   /* @group Détail véhicule */
@@ -15072,7 +15073,7 @@ a.btn-slider-citation.btn-right span {
     max-width: 250px;
   }
   .def-detail-localisation .wrapper-photos {
-    height: 200px;
+    height: 180px;
   }
   /* @end */
   /* @group Détail véhicule */

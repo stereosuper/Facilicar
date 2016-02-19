@@ -1729,7 +1729,7 @@ $(function(){
 
 	var marker, i, image;
 
-	if($("body").hasClass("localisation-detail")){
+	if($("body").hasClass("localisation-detail") && $(window).width()>979){
 		var urlCentreEssaiLivraison = 'img/centre-essai-livraison-big.png';
 		var sizeCentreEssaiLivraison = new google.maps.Size(59, 70);
 
