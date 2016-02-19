@@ -2,7 +2,8 @@ var nbCurrentSlideTemoignage = 1,
 	tpsChangeCar = 8000,
 	mobileBreakpoint = 767,
 	tabletBreakpoint = 979,
-	timeout;
+	timeout,
+	decalage = 0;
 
 function whichTransitionEvent(){
   var t,
@@ -850,6 +851,11 @@ $(function(){
 				$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
 				var contentToggleEqui = $(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once");
 			}
+
+			if($(this).attr("id")=="btn-photos-localisation"){
+				$('.slider-photos').get(0).slick.setPosition();
+			}
+
 			var btnClique = $(this);
 			setTimeout(function(){
 				if($("body").hasClass("detail-vehicule")){
@@ -1418,6 +1424,7 @@ $(function(){
 		mapTypeControl: false,
 		center: { lat: 45.973759, lng: -4.661462},
 		zoom: 6,
+		maxZoom: 15,
 		styles: [
 		    {
 		        "featureType": "all",
@@ -1697,6 +1704,10 @@ $(function(){
 			['Paris', 48.864146, 2.337942, 'centre'],
 			['Créteil', 48.795395, 2.453940, 'facilistore']
 		];
+	}else if($("body").hasClass("localisation-detail")){
+		var locations = [
+			['Créteil', 48.795395, 2.453940, 'facilistore']
+		];
 	}else{
 		var locations = [
 			['Paris', 48.864146, 2.337942, 'centre'],
@@ -1718,62 +1729,121 @@ $(function(){
 
 	var marker, i, image;
 
-	var urlCentreEssaiLivraison = 'img/centre-essai-livraison.png';
-	var sizeCentreEssaiLivraison = new google.maps.Size(22, 27);
+	if($("body").hasClass("localisation-detail")){
+		var urlCentreEssaiLivraison = 'img/centre-essai-livraison-big.png';
+		var sizeCentreEssaiLivraison = new google.maps.Size(59, 70);
 
-	if(window.devicePixelRatio > 1.5){
-		urlCentreEssaiLivraison = 'img/centre-essai-livraison@2x.png';
-		sizeCentreEssaiLivraison = new google.maps.Size(44, 54);
+		if(window.devicePixelRatio > 1.5){
+			urlCentreEssaiLivraison = 'img/centre-essai-livraison-big@2x.png';
+			sizeCentreEssaiLivraison = new google.maps.Size(118, 140);
+		}
+		
+		if(window.devicePixelRatio > 2){
+			urlCentreEssaiLivraison = 'img/centre-essai-livraison-big@3x.png';
+			sizeCentreEssaiLivraison = new google.maps.Size(177, 210);
+		}
+
+		var imageCentreEssaiLivraison = {
+			url: urlCentreEssaiLivraison,
+			size: sizeCentreEssaiLivraison,
+			scaledSize: new google.maps.Size(59, 70)
+		};
+
+		var urlFacilistore = 'img/facilistore-big.png';
+		var sizeFacilistore = new google.maps.Size(59, 72);
+
+		if(window.devicePixelRatio > 1.5){
+			urlFacilistore = 'img/facilistore-big@2x.png';
+			sizeFacilistore = new google.maps.Size(118, 144);
+		}
+		
+		if(window.devicePixelRatio > 2){
+			urlFacilistore = 'img/facilistore-big@3x.png';
+			sizeFacilistore = new google.maps.Size(177, 216);
+		}
+
+		var imageFacilistore = {
+			url: urlFacilistore,
+			size: sizeFacilistore,
+			scaledSize: new google.maps.Size(59, 72)
+		};
+
+		var urlAgenceReprise = 'img/agence-reprise.png';
+		var sizeAgenceReprise = new google.maps.Size(22, 27);
+
+		if(window.devicePixelRatio > 1.5){
+			urlAgenceReprise = 'img/agence-reprise@2x.png';
+			sizeAgenceReprise = new google.maps.Size(44, 54);
+		}
+		
+		if(window.devicePixelRatio > 2){
+			urlAgenceReprise = 'img/agence-reprise@3x.png';
+			sizeAgenceReprise = new google.maps.Size(66, 81);
+		}
+
+		var imageAgenceReprise = {
+			url: urlAgenceReprise,
+			size: sizeAgenceReprise,
+			scaledSize: new google.maps.Size(22, 27)
+		};
+	}else{
+		var urlCentreEssaiLivraison = 'img/centre-essai-livraison.png';
+		var sizeCentreEssaiLivraison = new google.maps.Size(22, 27);
+
+		if(window.devicePixelRatio > 1.5){
+			urlCentreEssaiLivraison = 'img/centre-essai-livraison@2x.png';
+			sizeCentreEssaiLivraison = new google.maps.Size(44, 54);
+		}
+		
+		if(window.devicePixelRatio > 2){
+			urlCentreEssaiLivraison = 'img/centre-essai-livraison@3x.png';
+			sizeCentreEssaiLivraison = new google.maps.Size(66, 81);
+		}
+
+		var imageCentreEssaiLivraison = {
+			url: urlCentreEssaiLivraison,
+			size: sizeCentreEssaiLivraison,
+			scaledSize: new google.maps.Size(22, 26)
+		};
+
+		var urlFacilistore = 'img/facilistore.png';
+		var sizeFacilistore = new google.maps.Size(22, 26);
+
+		if(window.devicePixelRatio > 1.5){
+			urlFacilistore = 'img/facilistore@2x.png';
+			sizeFacilistore = new google.maps.Size(44, 52);
+		}
+		
+		if(window.devicePixelRatio > 2){
+			urlFacilistore = 'img/facilistore@3x.png';
+			sizeFacilistore = new google.maps.Size(66, 78);
+		}
+
+		var imageFacilistore = {
+			url: urlFacilistore,
+			size: sizeFacilistore,
+			scaledSize: new google.maps.Size(22, 26)
+		};
+
+		var urlAgenceReprise = 'img/agence-reprise.png';
+		var sizeAgenceReprise = new google.maps.Size(22, 27);
+
+		if(window.devicePixelRatio > 1.5){
+			urlAgenceReprise = 'img/agence-reprise@2x.png';
+			sizeAgenceReprise = new google.maps.Size(44, 54);
+		}
+		
+		if(window.devicePixelRatio > 2){
+			urlAgenceReprise = 'img/agence-reprise@3x.png';
+			sizeAgenceReprise = new google.maps.Size(66, 81);
+		}
+
+		var imageAgenceReprise = {
+			url: urlAgenceReprise,
+			size: sizeAgenceReprise,
+			scaledSize: new google.maps.Size(22, 27)
+		};
 	}
-	
-	if(window.devicePixelRatio > 2){
-		urlCentreEssaiLivraison = 'img/centre-essai-livraison@3x.png';
-		sizeCentreEssaiLivraison = new google.maps.Size(66, 81);
-	}
-
-	var imageCentreEssaiLivraison = {
-		url: urlCentreEssaiLivraison,
-		size: sizeCentreEssaiLivraison,
-		scaledSize: new google.maps.Size(22, 26)
-	};
-
-	var urlFacilistore = 'img/facilistore.png';
-	var sizeFacilistore = new google.maps.Size(22, 26);
-
-	if(window.devicePixelRatio > 1.5){
-		urlFacilistore = 'img/facilistore@2x.png';
-		sizeFacilistore = new google.maps.Size(44, 52);
-	}
-	
-	if(window.devicePixelRatio > 2){
-		urlFacilistore = 'img/facilistore@3x.png';
-		sizeFacilistore = new google.maps.Size(66, 78);
-	}
-
-	var imageFacilistore = {
-		url: urlFacilistore,
-		size: sizeFacilistore,
-		scaledSize: new google.maps.Size(22, 26)
-	};
-
-	var urlAgenceReprise = 'img/agence-reprise.png';
-	var sizeAgenceReprise = new google.maps.Size(22, 27);
-
-	if(window.devicePixelRatio > 1.5){
-		urlAgenceReprise = 'img/agence-reprise@2x.png';
-		sizeAgenceReprise = new google.maps.Size(44, 54);
-	}
-	
-	if(window.devicePixelRatio > 2){
-		urlAgenceReprise = 'img/agence-reprise@3x.png';
-		sizeAgenceReprise = new google.maps.Size(66, 81);
-	}
-
-	var imageAgenceReprise = {
-		url: urlAgenceReprise,
-		size: sizeAgenceReprise,
-		scaledSize: new google.maps.Size(22, 27)
-	};
 
 	for (i = 0; i < locations.length; i++) {
 		if(locations[i][3] == "centre"){
@@ -1814,13 +1884,20 @@ $(function(){
 				//this.setZoom(this.getZoom()-1);
 			}
 		}
-		if($(window).width()>979){
-			// on décale le centre de la map à droite du bloc de résultat de recherche
-			var margeExterieureDroite = ($(window).width()-$("#wrapper-map .container").width())/2;
-			var widthRestanteContainer = $("#wrapper-map .container").width()/2;
-			var decalage = (widthRestanteContainer+margeExterieureDroite)/2;
-			map.panBy(-decalage,0);
+		if($("body").hasClass("localisation-detail")){
+			if($(window).width()>979){
+				// on décale le centre de la map à droite du bloc de description du store
+				decalage = ((-($("#wrapper-map .container").width()/2)+$("#wrapper-map .container").width()+(($(window).width()-$("#wrapper-map .container").width())/2))/2)-59;
+			}
+		}else{
+			if($(window).width()>979){
+				// on décale le centre de la map à droite du bloc de résultat de recherche
+				var margeExterieureDroite = ($(window).width()-$("#wrapper-map .container").width())/2;
+				var widthRestanteContainer = $("#wrapper-map .container").width()/2;
+				decalage = (widthRestanteContainer+margeExterieureDroite)/2;
+			}
 		}
+		map.panBy(-decalage,0);
 	});
 	}
 

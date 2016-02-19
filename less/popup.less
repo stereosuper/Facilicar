@@ -127,6 +127,46 @@
 		margin: 0;
 		text-align: center;
 	}
+	&.basic-form{
+		label{
+			width: 90px;
+			margin: 5px 20px 5px 0;
+			text-align: right;
+		}
+		input{
+			width: 220px;
+		}
+		form{
+			max-width: 780px;
+			margin: 0 auto;
+		}
+		#list-date-popup{
+			label{
+				width: auto;
+				margin: 0 20px;
+				text-align: left;
+				&#label-date-rdv{
+					margin: 0 20px 0 0;
+				}
+				&:after{
+					display: none;
+				}
+			}
+			li{
+				margin: 0;
+			}
+		    >li{
+		    	&:first-child{
+		    		margin-bottom: 10px;
+		    	}
+		    }
+		}
+		button{
+			&.submit-base{
+				margin-left: 110px;
+			}
+		}
+	}
 	.notif-valid{
 		+ p{
 			.texta-bold(1.25em);
