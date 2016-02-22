@@ -1731,7 +1731,7 @@ $(function(){
 
 	var marker, i, image;
 
-	if($("body").hasClass("localisation-detail")){
+	if($("body").hasClass("localisation-detail") && $(window).width()>979){
 		var urlCentreEssaiLivraison = 'img/centre-essai-livraison-big.png';
 		var sizeCentreEssaiLivraison = new google.maps.Size(59, 70);
 
@@ -1748,7 +1748,8 @@ $(function(){
 		var imageCentreEssaiLivraison = {
 			url: urlCentreEssaiLivraison,
 			size: sizeCentreEssaiLivraison,
-			scaledSize: new google.maps.Size(59, 70)
+			scaledSize: new google.maps.Size(59, 70),
+			anchor: new google.maps.Point(0,70)
 		};
 
 		var urlFacilistore = 'img/facilistore-big.png';
@@ -1767,7 +1768,8 @@ $(function(){
 		var imageFacilistore = {
 			url: urlFacilistore,
 			size: sizeFacilistore,
-			scaledSize: new google.maps.Size(59, 72)
+			scaledSize: new google.maps.Size(59, 72),
+			anchor: new google.maps.Point(0,72)
 		};
 
 		var urlAgenceReprise = 'img/agence-reprise.png';
@@ -1786,7 +1788,8 @@ $(function(){
 		var imageAgenceReprise = {
 			url: urlAgenceReprise,
 			size: sizeAgenceReprise,
-			scaledSize: new google.maps.Size(22, 27)
+			scaledSize: new google.maps.Size(22, 27),
+			anchor: new google.maps.Point(0,27)
 		};
 	}else{
 		var urlCentreEssaiLivraison = 'img/centre-essai-livraison.png';
@@ -1805,7 +1808,8 @@ $(function(){
 		var imageCentreEssaiLivraison = {
 			url: urlCentreEssaiLivraison,
 			size: sizeCentreEssaiLivraison,
-			scaledSize: new google.maps.Size(22, 26)
+			scaledSize: new google.maps.Size(22, 26),
+			anchor: new google.maps.Point(0,26)
 		};
 
 		var urlFacilistore = 'img/facilistore.png';
@@ -1824,7 +1828,8 @@ $(function(){
 		var imageFacilistore = {
 			url: urlFacilistore,
 			size: sizeFacilistore,
-			scaledSize: new google.maps.Size(22, 26)
+			scaledSize: new google.maps.Size(22, 26),
+			anchor: new google.maps.Point(0,26)
 		};
 
 		var urlAgenceReprise = 'img/agence-reprise.png';
@@ -1843,7 +1848,8 @@ $(function(){
 		var imageAgenceReprise = {
 			url: urlAgenceReprise,
 			size: sizeAgenceReprise,
-			scaledSize: new google.maps.Size(22, 27)
+			scaledSize: new google.maps.Size(22, 27),
+			anchor: new google.maps.Point(0,27)
 		};
 	}
 
