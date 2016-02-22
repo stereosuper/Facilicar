@@ -5205,37 +5205,6 @@ select:focus {
   font-size: 1em;
   text-rendering: optimizeLegibility;
   display: block;
-  /*a::before{
-                content: "«\00A0";
-                color: @theme-noir;
-            }
-            a:first-child{
-                display: block;
-                color: @theme-noir;
-                padding: 20px 0 0 0;
-                box-sizing: border-box;
-                text-decoration : underline;
-                &:hover{
-                    .no-touch &{
-                        border-bottom-color: @theme-primary;
-                    }
-                }
-                
-            }
-            a:last-child{
-                display: block;
-                color: @theme-noir;
-                padding: 0 0 20px 0;
-                box-sizing: border-box;
-                border-bottom: 1px solid @theme-gris2;
-                text-decoration : underline;
-                &:hover{
-                    .no-touch &{
-                        border-bottom-color: @theme-primary;
-                    }
-                }
-                profil-photo.png
-            }*/
 }
 .navbar .list-block-blog > li:before,
 #main .navbar .list-block-blog > li:before {
@@ -5277,6 +5246,10 @@ select:focus {
   top: 0;
   left: 0;
 }
+.navbar .list-block-blog > li a a.tag-blog,
+#main .navbar .list-block-blog > li a a.tag-blog {
+  display: block;
+}
 .no-touch .navbar .list-block-blog > li a:hover,
 .no-touch #main .navbar .list-block-blog > li a:hover {
   border-bottom-color: #009CC4;
@@ -5290,10 +5263,14 @@ select:focus {
   box-sizing: border-box;
   border-bottom: 1px solid #D8D8D4;
   padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.blog #main {
+  margin-bottom: 0px;
+  padding: 40px 0 60px 0;
 }
 .blog #main .content-with-navbar .text-width-small {
   padding: 0 80px;
-  padding-top: 20px;
 }
 .blog #main .content-with-navbar .text-width-small p {
   font-size: 1em;
@@ -5317,6 +5294,9 @@ select:focus {
 .blog #main .content-with-navbar .text-width-small h2:before {
   display: none;
 }
+.blog #main .content-with-navbar .text-width-small h2:first-child {
+  margin-top: 30px;
+}
 .blog #main .content-with-navbar .text-width-small h2 a {
   text-decoration: none;
   font-family: 'Texta-Black', sans-serif;
@@ -5337,20 +5317,36 @@ select:focus {
 .blog #main .content-with-navbar .text-width-small ul > li {
   display: inline-block;
   vertical-align: middle;
-  margin: 0;
+  margin: 0 22px 0 0;
   padding: 0;
   font-family: 'Texta-Light', sans-serif;
-  font-size: 1em;
+  font-size: 0.75em;
   text-rendering: optimizeLegibility;
   color: #6D6D67;
 }
 .blog #main .content-with-navbar .text-width-small ul > li:before {
   display: none;
 }
+.blog #main .content-with-navbar .text-width-small ul > li:first-child {
+  width: 142px;
+}
+.blog #main .content-with-navbar .text-width-small ul > li:nth-child(2) {
+  width: 60px;
+}
+.blog #main .content-with-navbar .text-width-small ul > li:nth-child(3) {
+  width: 142px;
+  line-height: 15px;
+  text-align: center;
+}
+.blog #main .content-with-navbar .text-width-small ul > li:last-child {
+  width: 130px;
+  margin-right: 0;
+}
 .blog #main .content-with-navbar .text-width-small ul > li img {
   border-radius: 50%;
   widht: 34px;
   height: 34px;
+  margin-right: 20px;
 }
 .blog #main .content-with-navbar .text-width-small ul > li a {
   font-family: 'Texta-Light', sans-serif;
@@ -10874,6 +10870,9 @@ a.btn-slider-citation.btn-right span {
   .wrapper-top-zoom.is-white .content-prix-zoom {
     padding: 0 16px;
   }
+  .blog #main .content-with-navbar .text-width-small {
+    padding: 0;
+  }
   /* @end */
 }
 @media (max-width: 1150px) {
@@ -11259,6 +11258,9 @@ a.btn-slider-citation.btn-right span {
   /* @group Localisation */
   .def-detail-localisation {
     width: 420px;
+  }
+  .blog #main .content-with-navbar {
+    padding-right: 0;
   }
   /* @end */
 }
@@ -13734,6 +13736,12 @@ a.btn-slider-citation.btn-right span {
   .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content br,
   .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content br {
     display: none;
+  }
+  .blog #main .content-with-navbar {
+    padding-right: 0;
+  }
+  .blog #main .text-width-small ul li:nth-child(3) {
+    margin: 0;
   }
   /* @end */
   /* @group Newsletter */

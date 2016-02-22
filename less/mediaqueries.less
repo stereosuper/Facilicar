@@ -200,6 +200,16 @@
             }
         }
     }
+    .blog{
+        #main{
+            .content-with-navbar{
+                .text-width-small{
+                    padding:0;
+                }
+            }
+        }
+    }
+    
     /* @end */
 }
 
@@ -647,8 +657,17 @@
     .def-detail-localisation{
         width: 420px;
     }
+    .blog{
+        #main{
+            .content-with-navbar{
+                padding-right:0;
+                
+            }
+        }
+    }
     /* @end */
 }
+
 
 @media (max-width: 979px) {
     .container{
@@ -3134,6 +3153,26 @@
                         br{
                             display: none;
                         }
+                    }
+                }
+            }
+        }
+    }
+    .blog{
+        #main{
+            .content-with-navbar{
+                padding-right:0;
+                
+            }
+            .text-width-small{
+                ul{
+                    li{
+                        &:nth-child(3){
+                        margin:0;
+                        a{
+
+                        }
+                    }
                     }
                 }
             }

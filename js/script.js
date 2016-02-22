@@ -135,7 +135,8 @@ function scrollPage(){
 		}
 
 		// Rendre les éléments de la sidebar "actifs" au scroll
-		if(viewport().width>tabletBreakpoint){
+		if(!$("body").hasClass("blog")){
+			if(viewport().width>tabletBreakpoint){
 			var scrollPosition = $(document).scrollTop();
 			$('.navbar li.has-content a').each(function () {
 				var currentLink = $(this);
@@ -180,6 +181,7 @@ function scrollPage(){
 		}else{
 			$('.navbar li.has-content.active').removeClass("active");
 		}
+	}
 	}
 
 	requestAnimFrame(scrollPage);
