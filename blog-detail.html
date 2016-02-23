@@ -217,6 +217,9 @@
 							<ul>
 								<li>
 									<a href="#" class="wrapper-align-middle">
+										<span class="wrapper-img-link imgLiquidFill">
+											<img src="img/blog-article-similar.png">
+										</span>
 										<span class="content-align-middle">
 											<p>Un titre d'article similaire dans une vignette</p>
 											<span class="link-article">Lire</span>
@@ -225,14 +228,20 @@
 								</li>
 								<li>
 									<a href="#" class="wrapper-align-middle">
-										<span class="content-align-middle">
-											<p>Un titre d’article un peu plus long que le précédent dans une vignette</p>
-											<span class="link-article">Lire</span>
-										</span>
-									</a>
+											<span class="wrapper-img-link imgLiquidFill">
+												<img src="img/blog-article-similar.png">
+											</span>
+											<span class="content-align-middle">
+												<p>Un titre d’article un peu plus long que le précédent dans une vignette</p>
+												<span class="link-article">Lire</span>
+											</span>
+										</a>
 								</li>
 								<li>
 									<a href="#" class="wrapper-align-middle">
+										<span class="wrapper-img-link imgLiquidFill">
+											<img src="img/blog-article-similar.png">
+										</span>
 										<span class="content-align-middle">
 											<p>Un titre d'article similaire dans une vignette</p>
 											<span class="link-article">Lire</span>
@@ -272,7 +281,22 @@
 						</div>
 						<div class="comment-article-blog blog-comment">
 							<h4 class="title-article">Postez votre commentaire</h4>
-							<button class="button-arrow button-primary bg-primary"><span class="arrow-button">›</span><span class="txt-button">Envoyer</span><span class="txt-hover-button" data-hover="Envoyer"></span></button>
+							<form action="#" method="post" class="comform">
+								<fieldset class="required">
+									<label for="prenom-com">Prénom</label>
+									<input type="text" id="prenom-com" name="prenom-com">
+								</fieldset><fieldset class="required">
+									<label for="site-com">Site web</label>
+									<input type="text" id="site-com" name="site-com">
+								</fieldset><fieldset class="required">
+									<label for="email-com">Email</label>
+									<input type="text" id="email-com" name="email-com">
+								</fieldset><fieldset class="block required">
+									<label for="email-rdv">Message</label>
+									<textarea id="message-com" name="message-com"></textarea>
+								</fieldset>
+								<button class="button-arrow button-primary bg-primary big"><span class="arrow-button">›</span><span class="txt-button">Envoyer</span><span class="txt-hover-button" data-hover="Envoyer"></span></button>
+							</form>
 						</div>
 					</section>
 				</div>
