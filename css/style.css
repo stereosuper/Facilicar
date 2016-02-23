@@ -4497,8 +4497,8 @@ a:focus {
   box-sizing: border-box;
   padding: 7px 0;
   margin: 0;
-  border-top: 1px solid #D8D8D4;
-  border-bottom: 1px solid #D8D8D4;
+  border-top: 1px solid #d8d8d4;
+  border-bottom: 1px solid #d8d8d4;
   counter-reset: counter-steps;
 }
 .steps > li {
@@ -4513,7 +4513,7 @@ a:focus {
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
   line-height: 1em;
-  color: #6D6D67;
+  color: #6d6d67;
 }
 .steps > li:last-child {
   margin-right: 0;
@@ -4557,11 +4557,11 @@ a:focus {
   box-sizing: border-box;
   text-align: center;
   line-height: 28px;
-  border: 1px solid #6D6D67;
+  border: 1px solid #6d6d67;
   border-radius: 50%;
 }
 .steps > li a:before {
-  border-color: #E38C00;
+  border-color: #e38c00;
 }
 /* @end */
 /* @group Form */
@@ -4620,11 +4620,18 @@ input[type="date"] {
 }
 input[type="radio"] {
   margin: 0 6px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+input[type="checkbox"] {
+  margin: -3px 10px 0 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 .radio-inline {
   display: inline-block;
   vertical-align: top;
-  margin: 4px 20px 0 0;
+  margin: 2px 20px 0 0;
 }
 button {
   -webkit-appearance: none;
@@ -5037,7 +5044,10 @@ fieldset.block {
   display: block;
   margin-right: 0;
 }
-fieldset.required label:after {
+fieldset.small-margin-bottom {
+  margin-bottom: 8px;
+}
+fieldset.required > label:after {
   content: '*';
   color: #009cc4;
   position: absolute;
@@ -5068,6 +5078,16 @@ label.light {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
   text-rendering: optimizeLegibility;
+}
+label.label-inline {
+  width: auto;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+label.label-checkbox {
+  width: auto;
 }
 textarea {
   display: inline-block;
@@ -5153,11 +5173,25 @@ select:focus {
 .cycle-achat-form label {
   width: 85px;
 }
+.cycle-achat-form label.label-inline {
+  width: auto;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+.cycle-achat-form label.label-checkbox {
+  width: auto;
+}
 .line-fieldset fieldset {
   margin: 0 30px 35px 0;
 }
 .line-fieldset fieldset:last-child {
   margin-right: 0;
+}
+.align-right-form {
+  box-sizing: border-box;
+  padding-left: 108px;
 }
 /* @end */
 /* @group Blog */
@@ -5694,11 +5728,10 @@ select:focus {
   top: 0;
   left: 0;
   -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
   -webkit-transition: -webkit-transform 0.2s ease-in-out;
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out;
-  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+          transition: transform 0.2s ease-in-out;
 }
 .blog #main .content-with-navbar .article-similar ul .wrapper-img-link img {
   padding: 0;
@@ -5721,6 +5754,7 @@ select:focus {
 }
 .blog #main .content-with-navbar .article-similar ul a:hover .wrapper-img-link {
   -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
           transform: scale(1.25);
 }
 .blog #main .content-with-navbar .article-similar ul p {
@@ -11103,6 +11137,7 @@ a.btn-slider-citation.btn-right span {
 }
 .detail-car .car-year {
   -webkit-transform: none;
+      -ms-transform: none;
           transform: none;
   top: inherit;
   display: inline-block;
@@ -11115,27 +11150,30 @@ a.btn-slider-citation.btn-right span {
 .detail-car .car-km {
   top: inherit;
   -webkit-transform: none;
+      -ms-transform: none;
           transform: none;
   padding: 0;
   display: inline-block;
   vertical-align: top;
-  color: #6D6D67;
+  color: #6d6d67;
 }
 .detail-car .motor-color {
   display: inline-block;
   vertical-align: top;
   top: inherit;
   -webkit-transform: none;
+      -ms-transform: none;
           transform: none;
   opacity: 1;
   font-family: 'Texta-Light', sans-serif;
   font-size: 1em;
   text-rendering: optimizeLegibility;
-  color: #6D6D67;
+  color: #6d6d67;
   line-height: 1em;
 }
 .detail-car .car-name {
   -webkit-transform: none;
+      -ms-transform: none;
           transform: none;
   top: inherit;
   padding: 0;
@@ -11147,7 +11185,7 @@ a.btn-slider-citation.btn-right span {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.25em;
   text-rendering: optimizeLegibility;
-  color: #6D6D67;
+  color: #6d6d67;
   line-height: 1em;
 }
 .cta-small {
@@ -11157,7 +11195,7 @@ a.btn-slider-citation.btn-right span {
   padding: 25px 35px;
   box-sizing: border-box;
   text-align: center;
-  border: 1px solid #B0B0A8;
+  border: 1px solid #b0b0a8;
   text-decoration: none;
 }
 .cta-small .cta-small-txt {

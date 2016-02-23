@@ -148,12 +148,14 @@
 						<h3>Vos coordonnées</h3>
 						<form action="#" method="post" class="cycle-achat-form">
 							<fieldset class="block required">
-								<label for="select-agence-rdv">Civilité</label>
+								<label>Civilité</label>
 								<div class="radio-inline">
-									<input type="radio" name="civilite" value="mr" checked>Mr
+									<input type="radio" name="civilite" value="mr" id="radio-mr-cycle" checked><!--
+									--><label for="radio-mr-cycle" class="label-inline">Mr</label>
 								</div>
 								<div class="radio-inline">
-									<input type="radio" name="civilite" value="mme">Mme<br>
+									<input type="radio" name="civilite" value="mme" id="radio-mme-cycle"><!--
+									--><label for="radio-mme-cycle" class="label-inline">Mme</label>
 								</div>
 							</fieldset><!--
 							--><div class="line-fieldset">
@@ -190,9 +192,17 @@
 									<input type="tel" id="ville-cycle" name="ville-cycle">
 								</fieldset>
 							</div>
-							<button class="button-arrow button-primary bg-primary submit-base" type="submit">
-								<span class="arrow-button">›</span><span class="txt-button">Valider &amp; choisir mon agence</span><span class="txt-hover-button" data-hover="Valider &amp; choisir mon agence"></span>
-							</button>
+							<div class="align-right-form">
+								<fieldset class="block small-margin-bottom">
+									<label class="label-checkbox" for="financement-cycle"><input type="checkbox" id="financement-cycle" value="financement">Je suis intéressé par un financement</label>
+								</fieldset>
+								<fieldset class="block">
+									<label class="label-checkbox" for="vendre-voiture-cycle"><input type="checkbox" id="vendre-voiture-cycle" value="vendre-voiture">Je souhaiterai aussi vendre ma voiture</label>
+								</fieldset>
+								<button class="button-arrow button-primary bg-primary submit-base big" type="submit">
+									<span class="arrow-button">›</span><span class="txt-button">Valider &amp; choisir mon agence</span><span class="txt-hover-button" data-hover="Valider &amp; choisir mon agence"></span>
+								</button>
+							</div>
 						</form>
 					</div><!--
 					--><div class="content-align-top detail-cycle-achat">
