@@ -4,7 +4,9 @@ form{
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"], textarea{
-	padding: 2px 12px;
+	display: inline-block;
+    vertical-align: middle;
+    padding: 2px 12px;
 	border: 1px solid @theme-gris;
 	box-sizing: border-box;
     .texta-light(1.25em);
@@ -35,7 +37,7 @@ input[type="radio"]{
 .radio-inline{
     display: inline-block;
     vertical-align: top;
-    margin: 0 20px 0 0;
+    margin: 4px 20px 0 0;
 }
 
 button{
@@ -420,6 +422,9 @@ fieldset{
             &:after{
                 content: '*';
                 color: @theme-primary;
+                position: absolute;
+                top: 0;
+                right: -8px;
             }
         }
     }
@@ -437,16 +442,21 @@ fieldset{
 
 label{
     display: inline-block;
+    vertical-align: middle;
+    position: relative;
     width: 90px;
     margin: 5px 20px 5px 0;
     .texta-bold(1.25em);
     text-align: right;
+    line-height: 1em;
     &.light{
         .texta-light(1.25em);
     }
 }
 
 textarea{
+    display: inline-block;
+    vertical-align: top;
     width: 630px;
     height: 230px;
     padding: 8px 12px;
@@ -459,6 +469,8 @@ textarea{
 }
 
 select{
+    display: inline-block;
+    vertical-align: middle;
     border: 1px solid @theme-gris;
     .texta-light(1.1em);
     cursor: pointer;
@@ -517,10 +529,14 @@ select{
 
 .cycle-achat-form{
     margin: 60px 0 0 0;
+    label{
+        width: 85px;
+    }
 }
 
 .line-fieldset{
     fieldset{
+        margin: 0 30px 35px 0;
         &:last-child{
             margin-right: 0;
         }
