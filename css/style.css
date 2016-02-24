@@ -15749,7 +15749,66 @@ a.btn-slider-citation.btn-right span {
     display: inline-block;
     vertical-align: top;
   }
-<<<<<<< HEAD
+  .comform textarea {
+    width: 320px;
+  }
+  .comform button {
+    margin-left: 0;
+  }
+  .blog #main .content-with-navbar .text-width-full p {
+    padding: 0;
+  }
+  .blog #main .content-with-navbar .text-width-full .alignleft {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+  }
+  .blog #main .content-with-navbar .text-width-full h2 {
+    font-size: 2.250em;
+    line-height: 35px;
+  }
+  .blog #main .content-with-navbar .text-width-full h3 {
+    font-size: 1.750em;
+    line-height: 30px;
+    padding: 0;
+  }
+  .blog #main .content-with-navbar .text-width-full h4 {
+    font-size: 1.5em;
+    line-height: 25px;
+    padding: 0;
+  }
+  .blog #main .content-with-navbar .text-width-full ul li {
+    font-size: 1em;
+  }
+  .blog #main .content-with-navbar .text-width-full ul li:first-child {
+    width: 150px;
+  }
+  .blog #main .content-with-navbar .text-width-full ul li:nth-child(2) {
+    width: 80px;
+  }
+  .blog #main .content-with-navbar .text-width-full ul li:nth-child(3) {
+    width: 80px;
+    margin-left: 35px;
+  }
+  .blog #main .content-with-navbar .text-width-full ul li:last-child {
+    width: 150px;
+  }
+  .blog #main .content-with-navbar .text-width-full ul li a {
+    font-size: 1em;
+  }
+  .blog #main .content-with-navbar .text-width-full blockquote {
+    margin: 40px 0 0 0;
+  }
+  .blog #main .content-with-navbar .text-width-full blockquote p {
+    font-size: 0.750em;
+    line-height: 30px;
+  }
+  .blog #main .content-with-navbar .article-similar ul li {
+    margin-right: 0;
+  }
+  .blog #main .content-with-navbar .article-similar ul li:last-child {
+    margin-right: 0;
+  }
   /* @group Cycle d'achat */
   .detail-car {
     max-width: none;
@@ -15835,71 +15894,6 @@ a.btn-slider-citation.btn-right span {
     display: inline;
   }
   /* @end */
-=======
-  .comform textarea {
-    width: 320px;
-  }
-  .comform button {
-    margin-left: 0;
-  }
-  .blog #main .content-with-navbar .text-width-full p {
-    padding: 0;
-  }
-  .blog #main .content-with-navbar .text-width-full p {
-    padding: 0;
-  }
-  .blog #main .content-with-navbar .text-width-full .alignleft {
-    text-align: center;
-    margin: 20px 0;
-    padding: 0;
-  }
-  .blog #main .content-with-navbar .text-width-full h2 {
-    font-size: 2.250em;
-    line-height: 35px;
-  }
-  .blog #main .content-with-navbar .text-width-full h3 {
-    font-size: 1.750em;
-    line-height: 30px;
-    padding: 0;
-  }
-  .blog #main .content-with-navbar .text-width-full h4 {
-    font-size: 1.5em;
-    line-height: 25px;
-    padding: 0;
-  }
-  .blog #main .content-with-navbar .text-width-full ul li {
-    font-size: 1em;
-  }
-  .blog #main .content-with-navbar .text-width-full ul li:first-child {
-    width: 150px;
-  }
-  .blog #main .content-with-navbar .text-width-full ul li:nth-child(2) {
-    width: 80px;
-  }
-  .blog #main .content-with-navbar .text-width-full ul li:nth-child(3) {
-    width: 80px;
-    margin-left: 35px;
-  }
-  .blog #main .content-with-navbar .text-width-full ul li:last-child {
-    width: 150px;
-  }
-  .blog #main .content-with-navbar .text-width-full ul li a {
-    font-size: 1em;
-  }
-  .blog #main .content-with-navbar .text-width-full blockquote {
-    margin: 40px 0 0 0;
-  }
-  .blog #main .content-with-navbar .text-width-full blockquote p {
-    font-size: 0.750em;
-    line-height: 30px;
-  }
-  .blog #main .content-with-navbar .article-similar ul li {
-    margin-right: 0;
-  }
-  .blog #main .content-with-navbar .article-similar ul li:last-child {
-    margin-right: 0;
-  }
->>>>>>> 230df85c79eeacb02a275d3739e915fab12ee95c
 }
 @media (max-width: 480px) {
   /* @group Popup */

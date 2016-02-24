@@ -229,15 +229,19 @@
                     }
                 }
             }
-
         }
     }
-
+    .comform{
+        textarea{
+            width:590px;
+        }
+    }
+    /* @end */
 
     /* @group Cycle d'achat */
     #adresse-cycle{
-
-
+        &.size3{
+            width: 350px;
         }
     }
     /* @end */
@@ -2346,18 +2350,23 @@
             }
         }
     }
+    .comform{
+        textarea{
+            width:323px;
+        }
+    }
     /* @end */
 
     /* @group Cycle d'achat */
     .content-cycle-achat{
-
+        padding: 0 305px 0 0; 
     }
     .detail-cycle-achat{
         width: 305px;
     }
     #adresse-cycle{
         &.size3{
-
+            width: 270px;
         }
     }
     .detail-car{
@@ -4461,23 +4470,100 @@
             vertical-align: top;
         }
     }
+    .comform{
+        textarea{
+            width:320px;
+        }
+        button{
+            margin-left:0;
+        }
+    }
+
+    .blog{
+        #main{
+            .content-with-navbar{
+                .text-width-full {
+                    p{
+                        padding:0;
+                    }
+                    .alignleft{
+                        text-align:center;
+                        margin:20px 0;
+                        padding:0;
+                    }
+                    h2{
+                        font-size:2.250em;
+                        line-height:35px;
+                    }
+                    h3{
+                        font-size:1.750em;
+                        line-height:30px;
+                        padding:0;
+                    }
+                    h4{
+                        font-size:1.5em;
+                        line-height:25px;
+                        padding:0;
+                    }
+                    ul{
+                        li{
+                            font-size:1em;
+                            &:first-child{
+                                width:150px;
+                            }
+                            &:nth-child(2){
+                                width:80px;
+                            }
+                            &:nth-child(3){
+                                width:80px;
+                                margin-left:35px;
+                            }
+                            &:last-child{
+                                width:150px;
+                            }
+                            & a{
+                                font-size:1em;
+                            }
+                        }
+                    }
+                    blockquote{
+                        margin:40px 0 0 0;
+                        p{
+                            font-size:0.750em;
+                            line-height:30px;
+                        }
+                    }
+                }
+                .article-similar{
+                    ul{
+                        li{
+                            margin-right:0;
+                            &:last-child{
+                                margin-right:0;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+    }
 
     /* @group Cycle d'achat */
-
-
+    .detail-car{
+        max-width: none;
         .car-name{
-
+            margin: -3px 0 3px 0;
             display: block;
         }
-
-
+        .car-desc{
+            font-size: 0.9em;
         }
     }
-
-
+    .wrapper-content-cycle-achat{
+        padding: 0 0 220px 0;
     }
-
-
+    .content-cycle-achat{
+        padding: 0;
     }
     .detail-cycle-achat{
         position: static;
@@ -4488,20 +4574,20 @@
         margin: 0 0 20px 0;
     }
     .detail-car{
-
+        margin: 20px 0 20px 0;
         .car-km{
             top: inherit;
-
+        }
     }
     .cta-small{
         position: absolute;
         bottom: 70px;
         left: 0;
-
+        padding: 15px;
         .cta-small-txt{
             font-size: 1.1em;
             margin: 0 0 8px 0;
-
+        }
         .cta-small-tel{
             font-size: 1.1em;
             .icon-tel{
@@ -4510,77 +4596,36 @@
             }
         }
     }
-
-        #main{
-            .content-with-navbar{
-                .text-width-full {
-
-                        padding:0;
-                    }
-
-                        text-align:center;
-
-                        padding:0;
-                    }
-                    h2{
-                        font-size:2.250em;
-                        line-height:35px;
-                    }
-                    h3{
-                        font-size:1.750em;
-
-                        padding:0;
-                    }
-                    h4{
-                        font-size:1.5em;
-
-                        padding:0;
-                    }
-                    ul{
-                        li{
-                            font-size:1em;
-
-
-                            }
-                            &:nth-child(2){
-                                width:80px;
-                            }
-                            &:nth-child(3){
-                                width:80px;
-
-                            }
-                            &:last-child{
-                                width:150px;
-
-
-                                font-size:1em;
-                            }
-                        }
-                    }
-                    blockquote{
-
-
-
-                            line-height:30px;
-                        }
-                    }
+    .steps{
+        > li{
+            .texta-light(1em);
+            margin: 2px 16px 2px 0;
+            height: auto;
+            line-height: 1em;
+            &:before{
+                right: -10px;
+                margin: -4px 0 0 0;
+            }
+            >div, a{
+                padding: 0;
+                br{
+                    display: none;
                 }
-
-
-
-
-
+                &:before{
+                    content: counter(counter-steps)'.';
+                    border: none;
+                    border-radius: 0;
+                    position: relative;
                     height: auto;
-
+                    width: auto;
                     margin: 0 6px 0 0;
                     display: inline;
-
+                    line-height: normal;
                 }
-
+                span{
                     display: inline;
                 }
             }
-            }  
         }
     }
     /* @end */
