@@ -2329,18 +2329,27 @@ table.table-horaires tr td.jour {
 /* @end */
 /* @group Cycle d'achat */
 .wrapper-content-cycle-achat {
+  position: relative;
   margin: 30px 0 0 0;
   padding: 0 0 170px 0;
 }
 .content-cycle-achat {
   width: auto;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 400px 0 0;
 }
 .content-cycle-achat h3 {
   margin-top: 0;
 }
 .detail-cycle-achat {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 400px;
   padding: 0 0 0 23px;
+  z-index: 1;
+  box-sizing: border-box;
 }
 /* @end */
 /* @group Buttons */
@@ -4514,6 +4523,8 @@ a:focus {
   text-transform: uppercase;
   line-height: 1em;
   color: #6d6d67;
+  height: 36px;
+  line-height: 36px;
 }
 .steps > li:last-child {
   margin-right: 0;
@@ -4541,7 +4552,9 @@ a:focus {
 .steps > li a {
   text-decoration: none;
   padding: 0 0 0 45px;
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em;
 }
 .steps > li > div:before,
 .steps > li a:before {
@@ -4552,7 +4565,7 @@ a:focus {
   position: absolute;
   top: 50%;
   left: 0;
-  margin: -15px 0 0 0;
+  margin: -14px 0 0 0;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
@@ -5088,6 +5101,8 @@ label.label-inline {
 }
 label.label-checkbox {
   width: auto;
+  text-align: left;
+  margin-right: 0;
 }
 textarea {
   display: inline-block;
@@ -11156,6 +11171,9 @@ a.btn-slider-citation.btn-right span {
   display: inline-block;
   vertical-align: top;
   color: #6d6d67;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
 }
 .detail-car .motor-color {
   display: inline-block;
@@ -11617,6 +11635,11 @@ a.btn-slider-citation.btn-right span {
   }
   .blog #main .content-with-navbar .text-width-full {
     padding: 0;
+  }
+  /* @end */
+  /* @group Cycle d'achat */
+  #adresse-cycle.size3 {
+    width: 350px;
   }
   /* @end */
 }
@@ -13586,6 +13609,26 @@ a.btn-slider-citation.btn-right span {
   }
   .list-block.list-btn-detail-localisation > li a:hover {
     opacity: 1;
+  }
+  /* @end */
+  /* @group Cycle d'achat */
+  .content-cycle-achat {
+    padding: 0 305px 0 0;
+  }
+  .detail-cycle-achat {
+    width: 305px;
+  }
+  #adresse-cycle.size3 {
+    width: 270px;
+  }
+  .detail-car .motor-color {
+    padding: 0;
+  }
+  .detail-car .car-desc {
+    display: block;
+  }
+  .cycle-achat-form {
+    margin: 30px 0 0 0;
   }
   /* @end */
 }
@@ -15610,6 +15653,91 @@ a.btn-slider-citation.btn-right span {
     display: inline-block;
     vertical-align: top;
   }
+  /* @group Cycle d'achat */
+  .detail-car {
+    max-width: none;
+  }
+  .detail-car .car-name {
+    margin: -3px 0 3px 0;
+    display: block;
+  }
+  .detail-car .car-desc {
+    font-size: 0.9em;
+  }
+  .wrapper-content-cycle-achat {
+    padding: 0 0 220px 0;
+  }
+  .content-cycle-achat {
+    padding: 0;
+  }
+  .detail-cycle-achat {
+    position: static;
+    top: inherit;
+    right: inherit;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  .detail-car {
+    margin: 20px 0 20px 0;
+  }
+  .detail-car .car-km {
+    top: inherit;
+  }
+  .cta-small {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    padding: 15px;
+  }
+  .cta-small .cta-small-txt {
+    font-size: 1.1em;
+    margin: 0 0 8px 0;
+  }
+  .cta-small .cta-small-tel {
+    font-size: 1.1em;
+  }
+  .cta-small .cta-small-tel .icon-tel {
+    font-size: 14px;
+    margin: 6px 6px 0 0;
+  }
+  .steps > li {
+    font-family: 'Texta-Light', sans-serif;
+    font-size: 1em;
+    text-rendering: optimizeLegibility;
+    margin: 2px 16px 2px 0;
+    height: auto;
+    line-height: 1em;
+  }
+  .steps > li:before {
+    right: -10px;
+    margin: -4px 0 0 0;
+  }
+  .steps > li > div,
+  .steps > li a {
+    padding: 0;
+  }
+  .steps > li > div br,
+  .steps > li a br {
+    display: none;
+  }
+  .steps > li > div:before,
+  .steps > li a:before {
+    content: counter(counter-steps) '.';
+    border: none;
+    border-radius: 0;
+    position: relative;
+    height: auto;
+    width: auto;
+    margin: 0 6px 0 0;
+    display: inline;
+    line-height: normal;
+  }
+  .steps > li > div span,
+  .steps > li a span {
+    display: inline;
+  }
+  /* @end */
 }
 @media (max-width: 480px) {
   /* @group Popup */
@@ -15633,6 +15761,9 @@ a.btn-slider-citation.btn-right span {
   }
   h1 {
     font-size: 2.2em;
+  }
+  h5 {
+    font-size: 1em;
   }
   .wrapper-img {
     height: 150px;
@@ -15733,6 +15864,9 @@ a.btn-slider-citation.btn-right span {
     display: block;
     width: auto;
     text-align: left;
+  }
+  label.label-inline {
+    display: inline;
   }
   fieldset {
     margin-bottom: 20px;
@@ -16002,6 +16136,38 @@ a.btn-slider-citation.btn-right span {
   }
   .wrapper-conseils {
     margin: 20px 0 30px 0;
+  }
+  /* @end */
+  /* @group Cycle d'achat */
+  .cycle-achat-form label {
+    width: auto;
+  }
+  .cycle-achat-form label br {
+    display: none;
+  }
+  .align-right-form {
+    padding: 0;
+  }
+  .cycle-achat-form {
+    margin: 10px 0 0 0;
+  }
+  .content-cycle-achat h3 {
+    margin-bottom: 10px;
+  }
+  label {
+    font-size: 1em;
+  }
+  button.button-cycle {
+    font-size: 0.9em;
+  }
+  .wrapper-content-cycle-achat {
+    margin: 15px 0 0 0;
+    padding: 0 0 240px 0;
+  }
+  .steps > li {
+    font-family: 'Texta-Light', sans-serif;
+    font-size: 0.8em;
+    text-rendering: optimizeLegibility;
   }
   /* @end */
   a.btn-arrow-top.big,
