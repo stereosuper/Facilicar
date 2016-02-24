@@ -4670,6 +4670,15 @@
 
     fieldset{
         margin-bottom: 20px;
+        &.required{
+            label{
+                &:after{
+                    position: relative;
+                    top: inherit;
+                    right: inherit;
+                }
+            }
+        }
     }
 
     .notif{
