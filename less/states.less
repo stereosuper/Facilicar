@@ -19,6 +19,28 @@
 	opacity: 1;
 }
 
+.is-info{
+	padding-left: 24px;
+	position: relative;
+	&:before{
+		content: "i";
+		display: block;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: @theme-gris3;
+		text-align: center;
+		line-height: 18px;
+		.texta(0.9em);
+		color: #fff;
+		text-transform: none;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin: -9px 0 0 0;
+	}
+}
+
 .noselect{
     -webkit-touch-callout: none;
     -webkit-user-select: none;

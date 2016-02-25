@@ -556,7 +556,12 @@
             width:471px;
         }
     }
-
+    /* @end */
+    
+    /* @group Cycle d'achat */
+    .wrapper-cycle-achat{
+        padding: 0;
+    }
     /* @end */
 }
 
@@ -726,6 +731,20 @@
         }
     }
     /* @end */
+
+    /* @group Cycle d'achat */
+    .table-cycle-achat{
+        tr{
+            td{
+                width: auto;
+                padding-right: 20px;
+                &.price{
+                    width: 110px;
+                }       
+            }
+        }
+    }
+    /* @end */
 }
 
 
@@ -776,6 +795,9 @@
     }
     h4{
         font-size: 1.1em;
+    }
+    h5{
+        font-size: 1em;
     }
     p{
         &.big-txt{
@@ -2379,6 +2401,15 @@
     }
     .cycle-achat-form{
         margin: 30px 0 0 0;
+    }
+    .table-cycle-achat{
+        tr{
+            td{
+                &.price{
+                    padding-right: 0;
+                }       
+            }
+        }
     }
     /* @end */
 }
@@ -4563,7 +4594,10 @@
         }
     }
     .wrapper-content-cycle-achat{
-        padding: 0 0 220px 0;
+        padding: 0 0 110px 0;
+        &.has-btn-bottom{
+            padding: 0 0 220px 0;
+        }
     }
     .content-cycle-achat{
         padding: 0;
@@ -4631,6 +4665,11 @@
             }
         }
     }
+    h5{
+        &.big-margin-top{
+            margin-top: 10px;
+        }
+    }
     /* @end */
 }
 
@@ -4662,9 +4701,6 @@
     }
     h1{
         font-size: 2.2em;
-    }
-    h5{
-        font-size: 1em;
     }
     .wrapper-img{
         height: 150px;
@@ -5099,11 +5135,31 @@
     }
     .wrapper-content-cycle-achat{
         margin: 15px 0 0 0;
-        padding: 0 0 240px 0;
+        padding: 0 0 50px 0;
+        &.has-btn-bottom{
+            padding: 0 0 220px 0;
+        }
     }
     .steps{
         > li{
             .texta-light(0.8em);
+        }
+    }
+    .table-cycle-achat{
+        tr{
+            td{
+                font-size: 0.9em;
+                strong{
+                    font-size: 0.9em;
+                }
+                &.price{
+                    width: 78px;
+                    font-size: 0.9em;
+                    strong{
+                        font-size: 1.3em;
+                    }
+                }
+            }
         }
     }
     /* @end */

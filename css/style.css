@@ -2381,6 +2381,7 @@ table.table-horaires tr td.jour {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.125em;
   text-rendering: optimizeLegibility;
+  line-height: 1.1em;
   padding: 14px 0;
   width: 52%;
   vertical-align: top;
@@ -11345,6 +11346,29 @@ a.btn-slider-citation.btn-right span {
 .is-visible {
   opacity: 1;
 }
+.is-info {
+  padding-left: 24px;
+  position: relative;
+}
+.is-info:before {
+  content: "i";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #6d6d67;
+  text-align: center;
+  line-height: 18px;
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 0.9em;
+  text-rendering: optimizeLegibility;
+  color: #fff;
+  text-transform: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -9px 0 0 0;
+}
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -11985,6 +12009,11 @@ a.btn-slider-citation.btn-right span {
     width: 471px;
   }
   /* @end */
+  /* @group Cycle d'achat */
+  .wrapper-cycle-achat {
+    padding: 0;
+  }
+  /* @end */
 }
 @media (max-width: 1024px) {
   p.big-txt {
@@ -12126,6 +12155,15 @@ a.btn-slider-citation.btn-right span {
     padding: 0;
   }
   /* @end */
+  /* @group Cycle d'achat */
+  .table-cycle-achat tr td {
+    width: auto;
+    padding-right: 20px;
+  }
+  .table-cycle-achat tr td.price {
+    width: 110px;
+  }
+  /* @end */
 }
 @media (max-width: 979px) {
   .container.small {
@@ -12170,6 +12208,9 @@ a.btn-slider-citation.btn-right span {
   }
   h4 {
     font-size: 1.1em;
+  }
+  h5 {
+    font-size: 1em;
   }
   p.big-txt {
     font-size: 1.2em;
@@ -13722,6 +13763,9 @@ a.btn-slider-citation.btn-right span {
   }
   .cycle-achat-form {
     margin: 30px 0 0 0;
+  }
+  .table-cycle-achat tr td.price {
+    padding-right: 0;
   }
   /* @end */
 }
@@ -15883,6 +15927,9 @@ a.btn-slider-citation.btn-right span {
     font-size: 0.9em;
   }
   .wrapper-content-cycle-achat {
+    padding: 0 0 110px 0;
+  }
+  .wrapper-content-cycle-achat.has-btn-bottom {
     padding: 0 0 220px 0;
   }
   .content-cycle-achat {
@@ -15955,6 +16002,9 @@ a.btn-slider-citation.btn-right span {
   .steps > li a span {
     display: inline;
   }
+  h5.big-margin-top {
+    margin-top: 10px;
+  }
   /* @end */
 }
 @media (max-width: 480px) {
@@ -15979,9 +16029,6 @@ a.btn-slider-citation.btn-right span {
   }
   h1 {
     font-size: 2.2em;
-  }
-  h5 {
-    font-size: 1em;
   }
   .wrapper-img {
     height: 150px;
@@ -16380,12 +16427,28 @@ a.btn-slider-citation.btn-right span {
   }
   .wrapper-content-cycle-achat {
     margin: 15px 0 0 0;
-    padding: 0 0 240px 0;
+    padding: 0 0 50px 0;
+  }
+  .wrapper-content-cycle-achat.has-btn-bottom {
+    padding: 0 0 220px 0;
   }
   .steps > li {
     font-family: 'Texta-Light', sans-serif;
     font-size: 0.8em;
     text-rendering: optimizeLegibility;
+  }
+  .table-cycle-achat tr td {
+    font-size: 0.9em;
+  }
+  .table-cycle-achat tr td strong {
+    font-size: 0.9em;
+  }
+  .table-cycle-achat tr td.price {
+    width: 78px;
+    font-size: 0.9em;
+  }
+  .table-cycle-achat tr td.price strong {
+    font-size: 1.3em;
   }
   /* @end */
   a.btn-arrow-top.big,
