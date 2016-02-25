@@ -952,4 +952,40 @@ table.table-horaires{
 	z-index: 1;
 	box-sizing: border-box;
 }
+.wrapper-cycle-achat{
+	box-sizing: border-box;
+	padding: 0 38px 0 0;
+}
+.table-cycle-achat{
+	width: 100%;
+	table-layout: fixed;
+	tr{
+		border-bottom: 1px solid @theme-neutral;
+		&.no-border-bottom{
+			border-bottom: 0;
+		}
+		&.is-grey{
+			color: @theme-gris3;
+		}
+		td{
+			.texta-light(1.125em);
+			padding: 14px 0;
+			width: 52%;
+			vertical-align: top;
+			strong{
+				.texta-bold(1.111em);
+				text-transform: uppercase;
+			}
+			&.price{
+				width: 48%;
+				.texta-bold(1.125em);
+				text-align: right;
+				padding-right: 60px;
+				strong{
+					.texta-bold(1.722em);
+				}
+			}
+		}
+	}
+}
 /* @end */

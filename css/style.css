@@ -525,6 +525,9 @@ h5 {
   text-rendering: optimizeLegibility;
   margin: 10px 0;
 }
+h5.big-margin-top {
+  margin-top: 62px;
+}
 h1,
 h2,
 h3,
@@ -2356,6 +2359,50 @@ table.table-horaires tr td.jour {
   padding: 0 0 0 23px;
   z-index: 1;
   box-sizing: border-box;
+}
+.wrapper-cycle-achat {
+  box-sizing: border-box;
+  padding: 0 38px 0 0;
+}
+.table-cycle-achat {
+  width: 100%;
+  table-layout: fixed;
+}
+.table-cycle-achat tr {
+  border-bottom: 1px solid #d8d8d4;
+}
+.table-cycle-achat tr.no-border-bottom {
+  border-bottom: 0;
+}
+.table-cycle-achat tr.is-grey {
+  color: #6d6d67;
+}
+.table-cycle-achat tr td {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.125em;
+  text-rendering: optimizeLegibility;
+  padding: 14px 0;
+  width: 52%;
+  vertical-align: top;
+}
+.table-cycle-achat tr td strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.111em;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+.table-cycle-achat tr td.price {
+  width: 48%;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.125em;
+  text-rendering: optimizeLegibility;
+  text-align: right;
+  padding-right: 60px;
+}
+.table-cycle-achat tr td.price strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.722em;
+  text-rendering: optimizeLegibility;
 }
 /* @end */
 /* @group Buttons */
@@ -15492,6 +15539,9 @@ a.btn-slider-citation.btn-right span {
   }
   #wrapper-map {
     padding: 65px 0 0 0;
+  }
+  .cycle-achat #wrapper-map {
+    padding: 0;
   }
   #wrapper-map .map-search-content {
     padding: 15px 0 25px 0;
