@@ -11284,6 +11284,91 @@ a.btn-slider-citation.btn-right span {
   text-align: center;
   border: 1px solid #b0b0a8;
   text-decoration: none;
+  color: #333333;
+}
+.cta-small .cta-wrapper-small {
+  display: table;
+}
+.cta-small.inline {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 25px 60px;
+  text-align: left;
+}
+.cycle-achat .cta-small.inline {
+  margin-top: 60px;
+}
+.cta-small.inline .cta-content-small {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 60px 0 0;
+}
+.cta-small.inline .cta-small-txt {
+  text-align: left;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.25em;
+  text-rendering: optimizeLegibility;
+}
+.cta-small.inline .cta-small-txt strong {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.25em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+.cta-small.inline .cta-small-txt:last-child {
+  padding: 0;
+}
+.cta-small.inline .cta-small-img {
+  width: 23%;
+}
+.cta-small.inline .cta-small-btn {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 0;
+  text-align: right;
+  line-height: 1.2em;
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 1.3em;
+  text-rendering: optimizeLegibility;
+}
+.cta-small.inline .cta-small-btn .wrapper-cta-small-btn {
+  display: table;
+  width: 100%;
+  height: 95px;
+}
+.cta-small.inline .cta-small-btn .content-wrapper-cta-small-btn {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cta-small.inline .cta-small-btn .txt-cta-btn {
+  display: block;
+  margin: 0 0 12px 0;
+}
+.cta-small.inline .cta-small-btn .btn-underline {
+  padding: 0 0 0 25px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.2em;
+  text-rendering: optimizeLegibility;
+}
+.cta-small.inline .cta-small-btn .btn-underline:before {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.no-csstransforms3d .cta-small.inline .cta-small-btn .btn-underline:before {
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin-bottom: 47px;
+}
+.cta-small.inline .cta-small-btn .btn-underline.has-txt-before {
+  margin-bottom: 30px;
 }
 .cta-small .cta-small-txt {
   display: block;
@@ -13105,6 +13190,12 @@ a.btn-slider-citation.btn-right span {
   }
   .is-list .wrapper-car.cta .cta-wrapper .cta-content.cta-btn {
     width: 22%;
+  }
+  .cta-small.inline .cta-small-txt {
+    font-size: 1em;
+  }
+  .cta-small.inline .cta-small-btn .btn-underline {
+    font-size: 1em;
   }
   /* @end */
   /* @group Choisir / Témoignage */
@@ -15954,6 +16045,66 @@ a.btn-slider-citation.btn-right span {
     bottom: 70px;
     left: 0;
     padding: 15px;
+  }
+  .cta-small.inline {
+    position: relative;
+    top: inherit;
+    left: inherit;
+    bottom: inherit;
+    padding: 10px;
+    text-align: center;
+    max-width: 400px;
+  }
+  .cta-small.inline .cta-wrapper-small {
+    display: block;
+  }
+  .cycle-achat .cta-small.inline {
+    margin-top: 20px;
+  }
+  .cta-small.inline .cta-content-small {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 3px 0;
+  }
+  .cta-small.inline .cta-small-img {
+    width: 100%;
+    margin: 0 0 3px 0;
+  }
+  .cta-small.inline .cta-small-img img {
+    max-width: 100%;
+    max-height: 40px;
+    display: inline;
+  }
+  .cta-small.inline .cta-small-txt {
+    text-align: center;
+  }
+  .cta-small.inline .cta-small-txt strong {
+    font-family: 'Texta-Bold', sans-serif;
+    font-size: 1em;
+    text-rendering: optimizeLegibility;
+    display: block;
+  }
+  .cta-small.inline .cta-small-txt br {
+    display: none;
+  }
+  .cta-small.inline .cta-small-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+  }
+  .cta-small.inline .cta-small-btn br {
+    display: none;
+  }
+  .cta-small.inline .cta-small-btn .wrapper-cta-small-btn {
+    display: block;
+    height: auto;
+  }
+  .cta-small.inline .cta-small-btn .wrapper-cta-small-btn .content-wrapper-cta-small-btn {
+    display: block;
+  }
+  .cta-small.inline .cta-small-btn .wrapper-cta-small-btn .content-wrapper-cta-small-btn .btn-underline {
+    padding: 0 12px;
   }
   .cta-small .cta-small-txt {
     font-size: 1.1em;
