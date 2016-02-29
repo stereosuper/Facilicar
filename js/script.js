@@ -2116,6 +2116,14 @@ $(window).resize(function(){
 			$(".btn-toggle-once.open", this).removeClass("open");
 			$(".content-toggle-once.open", this).removeClass("open");
 		});
+
+		// Clearer photos localisation detail
+		if($("body").hasClass("localisation-detail")){
+			$(".def-detail-localisation .content-def-detail-localisation .content-toggle-once, .content-align-top.def-detail-localisation .content-def-detail-localisation .content-toggle-once").attr("style", "");
+			$(".content-def-detail-localisation .small-width .btn-toggle-once.open").removeClass("open");
+			$("#btn-photos-localisation.open").removeClass("open");
+			
+		}
 	}
 	h = nh; w = nw;
 	

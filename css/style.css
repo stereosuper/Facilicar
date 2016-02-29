@@ -13577,6 +13577,9 @@ a.btn-slider-citation.btn-right span {
   }
   .def-detail-localisation .wrapper-photos {
     margin-left: 20px;
+    max-width: 823px;
+    max-width: calc(100% - 40px);
+    height: 280px;
   }
   #btn-photos-localisation {
     max-width: none;
@@ -15703,6 +15706,7 @@ a.btn-slider-citation.btn-right span {
   }
   .def-detail-localisation .wrapper-photos {
     margin-left: 0;
+    max-width: none;
   }
   #btn-photos-localisation {
     padding-left: 0;
