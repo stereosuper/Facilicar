@@ -13571,6 +13571,23 @@ a.btn-slider-citation.btn-right span {
        -moz-columns: 1;
             columns: 1;
   }
+  .def-detail-localisation .small-width {
+    margin: 10px 0 0 0;
+    max-width: none;
+  }
+  .def-detail-localisation .wrapper-photos {
+    margin-left: 20px;
+  }
+  #btn-photos-localisation {
+    max-width: none;
+    padding-right: 70px;
+  }
+  #btn-photos-localisation .icon-arrow-right {
+    right: 39px;
+  }
+  #btn-photos-localisation:after {
+    right: 20px;
+  }
   /* @end */
   /* @group Détail véhicule */
   .wrapper-slider-car-detail {
@@ -15684,17 +15701,19 @@ a.btn-slider-citation.btn-right span {
   .def-detail-localisation .zone-txt {
     padding: 0;
   }
+  .def-detail-localisation .wrapper-photos {
+    margin-left: 0;
+  }
   #btn-photos-localisation {
     padding-left: 0;
-    max-width: none;
+    padding-right: 50px;
     margin: 0;
+  }
+  #btn-photos-localisation .icon-arrow-right {
+    right: 19px;
   }
   #btn-photos-localisation:after {
     display: none;
-  }
-  .def-detail-localisation .small-width {
-    margin: 10px 0 0 0;
-    max-width: none;
   }
   /* @end */
   /* @group Détail véhicule */
