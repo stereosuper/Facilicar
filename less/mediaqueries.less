@@ -4666,6 +4666,7 @@
         bottom: 70px;
         left: 0;
         padding: 15px;
+        max-width: none;
         &.inline{
             position: relative;
             top: inherit;
@@ -4920,7 +4921,10 @@
     }
 
     fieldset{
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        .line-fieldset &{
+            margin-bottom: 15px;
+        }
         &.required{
             label{
                 &:after{
