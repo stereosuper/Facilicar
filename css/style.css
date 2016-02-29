@@ -16314,6 +16314,19 @@ a.btn-slider-citation.btn-right span {
             transform: none;
   }
   /* @end */
+  /* @group Car */
+  .is-list .wrapper-car.cta .cta-wrapper .cta-content.inline-mobile,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .cta-wrapper .cta-content.inline-mobile,
+  .is-list.list-cars.small .wrapper-car.cta .cta-wrapper .cta-content.inline-mobile {
+    display: inline;
+  }
+  .is-list .wrapper-car.cta .tel.inline-mobile,
+  .list-cars.list-cars-small.is-list .wrapper-car.cta .tel.inline-mobile,
+  .is-list.list-cars.small .wrapper-car.cta .tel.inline-mobile {
+    display: inline;
+    margin-left: 2px;
+  }
+  /* @end */
   /* @group Blog */
   .articles-presse > li,
   #main .articles-presse > li {
