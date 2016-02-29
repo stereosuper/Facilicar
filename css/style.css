@@ -2335,6 +2335,20 @@ table.table-horaires tr td.jour {
   box-sizing: border-box;
   padding: 0 20px;
 }
+#btn-conditions-remboursement {
+  border: none;
+  padding: 0;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+}
+.content-toggle-once#content-conditions-remboursement {
+  display: block;
+}
+.content-toggle-once#content-conditions-remboursement p {
+  margin: 0;
+  padding: 12px 0;
+}
 /* @end */
 /* @group Cycle d'achat */
 .wrapper-content-cycle-achat {
@@ -11440,7 +11454,7 @@ a.btn-slider-citation.btn-right span {
   opacity: 1;
 }
 .is-info {
-  padding-left: 24px;
+  padding-left: 24px!important;
   position: relative;
 }
 .is-info:before {
@@ -13599,6 +13613,10 @@ a.btn-slider-citation.btn-right span {
   #btn-photos-localisation:after {
     right: 20px;
   }
+  #btn-conditions-remboursement .icon-arrow-right,
+  #btn-conditions-remboursement.is-info .icon-arrow-right {
+    display: none;
+  }
   /* @end */
   /* @group Détail véhicule */
   .wrapper-slider-car-detail {
@@ -14064,6 +14082,10 @@ a.btn-slider-citation.btn-right span {
   }
   h4 {
     font-size: 1em;
+  }
+  h5#title-conditions-remboursement {
+    font-size: 0.92em;
+    line-height: 1em;
   }
   p {
     font-size: 1em;
@@ -16193,6 +16215,17 @@ a.btn-slider-citation.btn-right span {
   }
   h5.big-margin-top {
     margin-top: 10px;
+  }
+  #btn-conditions-remboursement,
+  #btn-conditions-remboursement.is-info {
+    padding: 10px 50px 10px 24px!important;
+  }
+  #btn-conditions-remboursement .icon-arrow-right,
+  #btn-conditions-remboursement.is-info .icon-arrow-right {
+    display: block;
+  }
+  .content-toggle-once#content-conditions-remboursement {
+    display: none;
   }
   /* @end */
 }

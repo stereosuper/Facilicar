@@ -842,30 +842,54 @@ $(function(){
 	});
 
 	$(".btn-toggle-once").click(function(){
-		if(!$(this).hasClass("toggle-once-mobile") || $(window).width()<=979){
-			if(!$(this).hasClass("open")){
-				$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
-				$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
-				$(this).addClass("open");
-				$(this).next(".content-toggle-once").slideToggle(200);
-			}else{
-				$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
-				$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
-				var contentToggleEqui = $(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once");
-			}
-
-			if($(this).attr("id")=="btn-photos-localisation"){
-				$('.slider-photos').get(0).slick.setPosition();
-			}
-
-			var btnClique = $(this);
-			setTimeout(function(){
-				if($("body").hasClass("detail-vehicule")){
-					$('html, body').stop().animate( { scrollTop: btnClique.offset().top-82 }, 500 );
+		if($(this).attr("id")=="btn-conditions-remboursement"){
+			// Dans le cas du bouton "Condition de remboursement" de la 3ème étape du cycle d'achat
+			if($(window).width()<=767){
+				if(!$(this).hasClass("open")){
+					$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
+					$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
+					$(this).addClass("open");
+					$(this).parent().next(".content-toggle-once").slideToggle(200);
 				}else{
-					$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
+					$(".wrapper-toggle-once .btn-toggle-once.open").parent().next(".content-toggle-once").slideToggle(200);
+					$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
+					var contentToggleEqui = $(".wrapper-toggle-once .btn-toggle-once.open").parent().next(".content-toggle-once");
 				}
-			}, 200);
+				var btnClique = $(this);
+				setTimeout(function(){
+					if($("body").hasClass("detail-vehicule")){
+						$('html, body').stop().animate( { scrollTop: btnClique.offset().top-82 }, 500 );
+					}else{
+						$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
+					}
+				}, 200);
+			}
+		}else{
+			if(!$(this).hasClass("toggle-once-mobile") || $(window).width()<=979){
+				if(!$(this).hasClass("open")){
+					$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
+					$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
+					$(this).addClass("open");
+					$(this).next(".content-toggle-once").slideToggle(200);
+				}else{
+					$(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once").slideToggle(200);
+					$(".wrapper-toggle-once .btn-toggle-once.open").removeClass("open");
+					var contentToggleEqui = $(".wrapper-toggle-once .btn-toggle-once.open").next(".content-toggle-once");
+				}
+
+				if($(this).attr("id")=="btn-photos-localisation"){
+					$('.slider-photos').get(0).slick.setPosition();
+				}
+
+				var btnClique = $(this);
+				setTimeout(function(){
+					if($("body").hasClass("detail-vehicule")){
+						$('html, body').stop().animate( { scrollTop: btnClique.offset().top-82 }, 500 );
+					}else{
+						$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
+					}
+				}, 200);
+			}
 		}
 		return false;
 	});
@@ -2122,7 +2146,11 @@ $(window).resize(function(){
 			$(".def-detail-localisation .content-def-detail-localisation .content-toggle-once, .content-align-top.def-detail-localisation .content-def-detail-localisation .content-toggle-once").attr("style", "");
 			$(".content-def-detail-localisation .small-width .btn-toggle-once.open").removeClass("open");
 			$("#btn-photos-localisation.open").removeClass("open");
-			
+		}
+
+		if($("#btn-conditions-remboursement").length){
+			$("#content-conditions-remboursement").attr("style", "");
+			$("#btn-conditions-remboursement.open").removeClass("open");
 		}
 	}
 	h = nh; w = nw;

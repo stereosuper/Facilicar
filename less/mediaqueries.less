@@ -2121,6 +2121,12 @@
             right: 20px;
         }
     }
+    #btn-conditions-remboursement, #btn-conditions-remboursement.is-info{
+        //padding: 10px 50px 10px 24px!important;
+        .icon-arrow-right{
+            display: none;
+        }
+    }
     /* @end */
 
     /* @group Détail véhicule */
@@ -2647,6 +2653,12 @@
     }
     h4{
         font-size: 1em;
+    }
+    h5{
+        &#title-conditions-remboursement{
+            font-size: 0.92em;
+            line-height: 1em;
+        }
     }
     p{
         font-size: 1em;
@@ -4773,6 +4785,15 @@
         &.big-margin-top{
             margin-top: 10px;
         }
+    }
+    #btn-conditions-remboursement, #btn-conditions-remboursement.is-info{
+        padding: 10px 50px 10px 24px!important;
+        .icon-arrow-right{
+            display: block;
+        }
+    }
+    .content-toggle-once#content-conditions-remboursement{
+        display: none;
     }
     /* @end */
 }
