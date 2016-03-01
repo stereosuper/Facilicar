@@ -14370,6 +14370,16 @@ a.btn-slider-citation.btn-right span {
   .header-on .wrapper-top {
     padding: 0;
   }
+  .wrapper-top.bg-primary,
+  .wrapper-top.bg-secondary,
+  .wrapper-top.bg-white {
+    height: 120px;
+  }
+  .wrapper-top.bg-primary .container,
+  .wrapper-top.bg-secondary .container,
+  .wrapper-top.bg-white .container {
+    height: 120px;
+  }
   /* @group Choose */
   .wrapper-survol-out {
     display: none;
