@@ -11915,6 +11915,17 @@ a.btn-slider-citation.btn-right span {
   .bloc-survol p br {
     display: none;
   }
+  /* @group header */
+  .header-on #menu-top-header ul {
+    margin: 0 40px 0 0;
+  }
+  .header-on #menu-top-header ul > li {
+    margin: 0 0 0 18px;
+  }
+  .header-on #header a.logo-facilicar {
+    margin: 0;
+  }
+  /* @end */
   /* @group Newsletter */
   #block-newsletter {
     text-align: center;
@@ -12181,6 +12192,11 @@ a.btn-slider-citation.btn-right span {
     margin-left: 0;
     margin-right: 0;
   }
+  /* @group header */
+  .header-on #menu-top-header ul {
+    margin: 0 20px 0 0;
+  }
+  /* @end */
   /* @group Footer */
   #footer-bottom .list-inline > li {
     width: 33.3333%;
