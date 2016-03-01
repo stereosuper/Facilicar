@@ -1207,6 +1207,20 @@ a.btn-menu-responsive .rect:before {
   top: 0;
   left: 0;
 }
+.navbar.navbar-blog,
+#main .navbar.navbar-blog {
+  z-index: 2;
+  background-color: #fff;
+}
+.cate-blog-fixed .navbar.navbar-blog,
+.cate-blog-fixed #main .navbar.navbar-blog {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
 .navbar .list-block,
 #main .navbar .list-block {
   display: block;
@@ -6040,6 +6054,36 @@ select:focus {
 }
 .no-touch .blog .list-social-blog > li a:hover {
   background-color: #797973;
+}
+#content-categ-blog,
+#main #content-categ-blog {
+  display: block;
+  padding: 0;
+}
+#content-categ-blog > li,
+#main #content-categ-blog > li {
+  padding: 0;
+}
+#content-categ-blog > li:before,
+#main #content-categ-blog > li:before {
+  display: none;
+}
+#btn-categ-blog,
+.navbar .list-block-blog > li a#btn-categ-blog,
+#main .navbar .list-block-blog > li a#btn-categ-blog {
+  text-transform: none;
+  border-top: none;
+  font-size: 1em;
+}
+#btn-categ-blog:before,
+.navbar .list-block-blog > li a#btn-categ-blog:before,
+#main .navbar .list-block-blog > li a#btn-categ-blog:before {
+  display: none;
+}
+#btn-categ-blog .icon-arrow-right,
+.navbar .list-block-blog > li a#btn-categ-blog .icon-arrow-right,
+#main .navbar .list-block-blog > li a#btn-categ-blog .icon-arrow-right {
+  display: none;
 }
 /* @end */
 /* @group Slider citation */
@@ -12121,6 +12165,9 @@ a.btn-slider-citation.btn-right span {
     padding: 0;
   }
   /* @end */
+  .blog .content-with-navbar {
+    padding: 18px 0 0 230px;
+  }
 }
 @media (max-width: 1024px) {
   p.big-txt {
@@ -13905,8 +13952,26 @@ a.btn-slider-citation.btn-right span {
     padding-right: 0;
   }
   /* @end */
-  .blog .content-with-navbar {
-    padding: 18px 0 0 230px;
+  .blog #main .content-with-navbar .text-width-full h2 {
+    font-size: 2.2em;
+    line-height: 1.1em;
+  }
+  .blog #main .content-with-navbar .text-width-full h3 {
+    font-size: 1.750em;
+    line-height: 1.1em;
+    padding: 0;
+  }
+  .blog #main .content-with-navbar .text-width-full h4 {
+    font-size: 1.5em;
+    line-height: 1.1em;
+    padding: 0;
+  }
+  .blog #main .content-with-navbar .text-width-full blockquote {
+    margin: 40px 0 0 0;
+  }
+  .blog #main .content-with-navbar .text-width-full blockquote p {
+    font-size: 0.750em;
+    line-height: 30px;
   }
 }
 @media (max-width: 979px) and (max-height: 360px) {
@@ -13983,20 +14048,6 @@ a.btn-slider-citation.btn-right span {
     text-align: center;
     padding: 0;
   }
-  .blog #main .content-with-navbar .text-width-full h2 {
-    font-size: 2.250em;
-    line-height: 35px;
-  }
-  .blog #main .content-with-navbar .text-width-full h3 {
-    font-size: 1.750em;
-    line-height: 30px;
-    padding: 0;
-  }
-  .blog #main .content-with-navbar .text-width-full h4 {
-    font-size: 1.5em;
-    line-height: 25px;
-    padding: 0;
-  }
   .blog #main .content-with-navbar .text-width-full ul li {
     font-size: 1em;
   }
@@ -14015,13 +14066,6 @@ a.btn-slider-citation.btn-right span {
   }
   .blog #main .content-with-navbar .text-width-full ul li a {
     font-size: 1em;
-  }
-  .blog #main .content-with-navbar .text-width-full blockquote {
-    margin: 40px 0 0 0;
-  }
-  .blog #main .content-with-navbar .text-width-full blockquote p {
-    font-size: 0.750em;
-    line-height: 30px;
   }
   .blog #main .content-with-navbar .article-similar ul li {
     margin-right: 0;
@@ -15084,6 +15128,12 @@ a.btn-slider-citation.btn-right span {
   #main .navbar.navbar-left {
     position: relative;
   }
+  .navbar.navbar-blog,
+  #main .navbar.navbar-blog {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
   .navbar .list-block,
   #main .navbar .list-block {
     width: 100%;
@@ -16006,7 +16056,7 @@ a.btn-slider-citation.btn-right span {
     margin-left: 0;
   }
   .blog #main .content-with-navbar {
-    padding: 0;
+    padding: 70px 0 0 0;
   }
   .blog #main .content-with-navbar .text-width-full p {
     padding: 0;
@@ -16064,6 +16114,37 @@ a.btn-slider-citation.btn-right span {
   }
   .blog #main .content-with-navbar .article-similar ul li:last-child {
     margin-right: 0;
+  }
+  .navbar .list-block-blog,
+  #main .navbar .list-block-blog {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+  }
+  .navbar .list-block-blog > li:first-child,
+  #main .navbar .list-block-blog > li:first-child {
+    text-align: left;
+    padding: 0;
+    border: none;
+    margin: 0;
+  }
+  .navbar .list-block-blog > li:last-child,
+  #main .navbar .list-block-blog > li:last-child {
+    padding: 0;
+    border-bottom: none;
+  }
+  .navbar .list-block-blog > li a#btn-categ-blog,
+  #main .navbar .list-block-blog > li a#btn-categ-blog {
+    padding: 10px 50px 10px 0;
+    border-bottom: 1px solid #AEACA1;
+  }
+  .navbar .list-block-blog > li a#btn-categ-blog .icon-arrow-right,
+  #main .navbar .list-block-blog > li a#btn-categ-blog .icon-arrow-right {
+    display: block;
+  }
+  #content-categ-blog,
+  #main #content-categ-blog {
+    display: none;
   }
   /* @group Cycle d'achat */
   .detail-car {
@@ -16728,7 +16809,7 @@ a.btn-slider-citation.btn-right span {
     display: block;
   }
   .blog #main .content-with-navbar .text-width-full h2 {
-    font-size: 2.250em;
+    font-size: 2em;
     line-height: 35px;
   }
   .blog #main .content-with-navbar .text-width-full h3 {

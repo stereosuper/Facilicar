@@ -865,6 +865,17 @@ a.btn-menu-responsive{
         top: 0;
         left: 0;
     }
+    &.navbar-blog{
+        z-index: 2;
+        background-color: #fff;
+        .cate-blog-fixed &{
+            position: fixed;
+            top: 0;
+            left: 5%;
+            width: 90%;
+            backface-visibility: hidden;
+        }
+    }
     .list-block{
         display: block;
         margin: 0;
@@ -924,7 +935,6 @@ a.btn-menu-responsive{
         padding-right:108px;
     }
     .blog &{
-
         h2{
             a{
                 font-size: 1.875em;

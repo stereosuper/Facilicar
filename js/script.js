@@ -78,6 +78,18 @@ function scrollPage(){
 		TweenMax.set($("body"), {className:"-=header-on"});
 	}
 
+	if ($("#btn-categ-blog").length){
+		// Positionnement fixed du btn "Catégories"
+		if($(window).width()<=767){
+			var topBtnCategBlog = $(".wrapper-navbar-blog").offset().top;
+			if (myScroll>topBtnCategBlog){
+				TweenMax.set($("body"), {className:"+=cate-blog-fixed"});
+			}else{
+				TweenMax.set($("body"), {className:"-=cate-blog-fixed"});
+			}
+		}
+	}
+
 	if($("body").hasClass("detail-vehicule")){
 		// Positionnement fixed du btn "Rendez-vous d'essai ou commande"
 		if($(window).width()<=979){
@@ -114,24 +126,24 @@ function scrollPage(){
 		// Fixer la sidebar au scroll
 		if(viewport().width>tabletBreakpoint){
 			if((myScroll>=$(".navbar").offset().top-$("#header").outerHeight()) && (myScroll<$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight())){
-				TweenMax.set($(".navbar ul"), {position: "fixed", top: $("#header").outerHeight()+"px"});
+				TweenMax.set($(".navbar > ul"), {position: "fixed", top: $("#header").outerHeight()+"px"});
 			}else if(myScroll>=$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()){
 				//TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight()+"px"});
-				TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight()+"px"});
+				TweenMax.set($(".navbar > ul"), {position: "absolute", top: $(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+$("#header").outerHeight()+"px"});
 			}else{
-				TweenMax.set($(".navbar ul"), {position: "absolute", top: "0"});
+				TweenMax.set($(".navbar > ul"), {position: "absolute", top: "0"});
 			}
 		}else if(viewport().width>mobileBreakpoint){
-			if((myScroll>=$(".navbar").offset().top) && (myScroll<$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight())){
-				TweenMax.set($(".navbar ul"), {position: "fixed", top: "0px"});
-			}else if(myScroll>=$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()){
+			if((myScroll>=$(".navbar").offset().top) && (myScroll<$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar > ul").outerHeight())){
+				TweenMax.set($(".navbar > ul"), {position: "fixed", top: "0px"});
+			}else if(myScroll>=$(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar > ul").outerHeight()){
 				//TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".navbar").offset().top+$(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+"px"});
-				TweenMax.set($(".navbar ul"), {position: "absolute", top: $(".content-with-navbar").outerHeight()-$(".navbar ul").outerHeight()+"px"});
+				TweenMax.set($(".navbar > ul"), {position: "absolute", top: $(".content-with-navbar").outerHeight()-$(".navbar > ul").outerHeight()+"px"});
 			}else{
-				TweenMax.set($(".navbar ul"), {position: "relative", top: "inherit"});
+				TweenMax.set($(".navbar > ul"), {position: "relative", top: "inherit"});
 			}
 		}else{
-			TweenMax.set($(".navbar ul"), {position: "relative", top: "inherit"});
+			TweenMax.set($(".navbar > ul"), {position: "relative", top: "inherit"});
 		}
 
 		// Rendre les éléments de la sidebar "actifs" au scroll
@@ -842,7 +854,16 @@ $(function(){
 	});
 
 	$(".btn-toggle-once").click(function(){
-		if($(this).attr("id")=="btn-conditions-remboursement"){
+		if($(this).attr("id")=="btn-categ-blog"){
+			if($(window).width()<=767){
+				$("#btn-categ-blog").toggleClass("open");
+				$("#content-categ-blog").slideToggle(200);
+				var btnClique = $(this);
+				setTimeout(function(){
+					$('html, body').stop().animate( { scrollTop: btnClique.offset().top-12 }, 500 );
+				}, 200);
+			}
+		}else if($(this).attr("id")=="btn-conditions-remboursement"){
 			// Dans le cas du bouton "Condition de remboursement" de la 3ème étape du cycle d'achat
 			if($(window).width()<=767){
 				if(!$(this).hasClass("open")){
@@ -2151,6 +2172,11 @@ $(window).resize(function(){
 		if($("#btn-conditions-remboursement").length){
 			$("#content-conditions-remboursement").attr("style", "");
 			$("#btn-conditions-remboursement.open").removeClass("open");
+		}
+
+		if($("#btn-categ-blog").length){
+			$("#content-categ-blog").attr("style", "");
+			$("#btn-categ-blog.open").removeClass("open");
 		}
 	}
 	h = nh; w = nw;

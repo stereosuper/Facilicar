@@ -563,6 +563,11 @@
         padding: 0;
     }
     /* @end */
+    .blog{
+        .content-with-navbar{
+            padding: 18px 0 0 230px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -2454,8 +2459,32 @@
     }
     /* @end */
     .blog{
-        .content-with-navbar{
-            padding: 18px 0 0 230px;
+        #main{
+            .content-with-navbar{
+                .text-width-full {
+                    h2{
+                        font-size: 2.2em;
+                        line-height: 1.1em;
+                    }
+                    h3{
+                        font-size:1.750em;
+                        line-height: 1.1em;
+                        padding:0;
+                    }
+                    h4{
+                        font-size:1.5em;
+                        line-height: 1.1em;
+                        padding:0;
+                    }
+                    blockquote{
+                        margin:40px 0 0 0;
+                        p{
+                            font-size:0.750em;
+                            line-height:30px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -2539,20 +2568,6 @@
                         text-align:center;
                         padding:0;
                     }
-                    h2{
-                        font-size:2.250em;
-                        line-height:35px;
-                    }
-                    h3{
-                        font-size:1.750em;
-                        line-height:30px;
-                        padding:0;
-                    }
-                    h4{
-                        font-size:1.5em;
-                        line-height:25px;
-                        padding:0;
-                    }
                     ul{
                         li{
                             font-size:1em;
@@ -2572,13 +2587,6 @@
                             & a{
                                 font-size:1em;
                             }
-                        }
-                    }
-                    blockquote{
-                        margin:40px 0 0 0;
-                        p{
-                            font-size:0.750em;
-                            line-height:30px;
                         }
                     }
                 }
@@ -3638,6 +3646,11 @@
         &.navbar-left{
             position: relative;
         }
+        &.navbar-blog{
+            position: absolute;
+            top: 0;
+            left: 0;   
+        }
         .list-block{
             width: 100%;
             text-align: left;
@@ -4569,7 +4582,8 @@
     .blog{
         #main{
             .content-with-navbar{
-                padding:0;
+               //padding: 44px 0 0 0;
+               padding: 70px 0 0 0;
                 .text-width-full {
                     p{
                         padding:0;
@@ -4637,6 +4651,37 @@
                 }
             }  
         }
+    }
+    .navbar, #main .navbar{
+        .list-block-blog{
+            width: 100%;
+            padding: 0;
+            text-align: left;
+            > li{
+                &:first-child{
+                    text-align: left;
+                    padding: 0;
+                    border: none;
+                    margin: 0;
+                }
+                &:last-child{
+                    padding: 0;
+                    border-bottom: none;
+                }
+                a{
+                    &#btn-categ-blog{
+                        padding: 10px 50px 10px 0;
+                        border-bottom: 1px solid #AEACA1;
+                        .icon-arrow-right{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #content-categ-blog, #main #content-categ-blog{
+        display: none;
     }
 
     /* @group Cycle d'achat */
@@ -5359,7 +5404,7 @@
                         display:block;
                     }
                     h2{
-                        font-size:2.250em;
+                        font-size:2em;
                         line-height:35px;
                     }
                     h3{
