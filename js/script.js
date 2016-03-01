@@ -87,6 +87,8 @@ function scrollPage(){
 			}else{
 				TweenMax.set($("body"), {className:"-=cate-blog-fixed"});
 			}
+		}else{
+			TweenMax.set($("body"), {className:"-=cate-blog-fixed"});
 		}
 	}
 
