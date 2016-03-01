@@ -16790,6 +16790,10 @@ a.btn-slider-citation.btn-right span {
     font-size: 0.8em;
     text-rendering: optimizeLegibility;
   }
+  .steps > li > div span,
+  .steps > li a span {
+    font-size: 1em;
+  }
   .table-cycle-achat tr td {
     font-size: 0.9em;
   }
