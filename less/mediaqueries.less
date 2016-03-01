@@ -4835,9 +4835,10 @@
             margin: 2px 16px 2px 0;
             height: auto;
             line-height: 1em;
+            text-transform: none;
             &:before{
                 right: -10px;
-                margin: -4px 0 0 0;
+                margin: -3px 0 0 0;
             }
             >div, a{
                 padding: 0;
@@ -4845,7 +4846,7 @@
                     display: none;
                 }
                 &:before{
-                    content: counter(counter-steps)'.';
+                    /*content: counter(counter-steps)'.';
                     border: none;
                     border-radius: 0;
                     position: relative;
@@ -4853,10 +4854,14 @@
                     width: auto;
                     margin: 0 6px 0 0;
                     display: inline;
-                    line-height: normal;
+                    line-height: normal;*/
+                    display: none;
                 }
                 span{
                     display: inline;
+                }
+                &.is-active{
+                    .texta-bold(1em);
                 }
             }
         }

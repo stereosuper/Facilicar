@@ -16291,10 +16291,11 @@ a.btn-slider-citation.btn-right span {
     margin: 2px 16px 2px 0;
     height: auto;
     line-height: 1em;
+    text-transform: none;
   }
   .steps > li:before {
     right: -10px;
-    margin: -4px 0 0 0;
+    margin: -3px 0 0 0;
   }
   .steps > li > div,
   .steps > li a {
@@ -16306,19 +16307,26 @@ a.btn-slider-citation.btn-right span {
   }
   .steps > li > div:before,
   .steps > li a:before {
-    content: counter(counter-steps) '.';
-    border: none;
-    border-radius: 0;
-    position: relative;
-    height: auto;
-    width: auto;
-    margin: 0 6px 0 0;
-    display: inline;
-    line-height: normal;
+    /*content: counter(counter-steps)'.';
+                    border: none;
+                    border-radius: 0;
+                    position: relative;
+                    height: auto;
+                    width: auto;
+                    margin: 0 6px 0 0;
+                    display: inline;
+                    line-height: normal;*/
+    display: none;
   }
   .steps > li > div span,
   .steps > li a span {
     display: inline;
+  }
+  .steps > li > div.is-active,
+  .steps > li a.is-active {
+    font-family: 'Texta-Bold', sans-serif;
+    font-size: 1em;
+    text-rendering: optimizeLegibility;
   }
   h5.big-margin-top {
     margin-top: 10px;
