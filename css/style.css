@@ -6085,6 +6085,17 @@ select:focus {
 #main .navbar .list-block-blog > li a#btn-categ-blog .icon-arrow-right {
   display: none;
 }
+#zone-btn-postuler,
+.blog #main .content-with-navbar #zone-btn-postuler {
+  box-sizing: border-box;
+  margin: 20px 0 0 0;
+  padding: 0 0 30px 80px;
+  border-bottom: 1px solid #d8d8d4;
+}
+#zone-btn-postuler + h5,
+.blog #main .content-with-navbar #zone-btn-postuler + h5 {
+  margin-top: 25px;
+}
 /* @end */
 /* @group Slider citation */
 .wrapper-slider-citation {
@@ -12334,6 +12345,10 @@ a.btn-slider-citation.btn-right span {
     width: 110px;
   }
   /* @end */
+  #zone-btn-postuler,
+  .blog #main .content-with-navbar #zone-btn-postuler {
+    padding-left: 0;
+  }
 }
 @media (max-width: 979px) {
   .container.small {
