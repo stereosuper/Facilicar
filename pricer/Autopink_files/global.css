@@ -1,0 +1,258 @@
+/*
+ * @autor : dynamic creative
+ * @date : 2015
+ */
+
+/* ---------------------------- */
+/*	   Mise en page générale	*/
+/* ---------------------------- */
+body {height:100%; text-align: center; background: #f5f5f5; }
+
+.content {position:relative; text-align: center;}
+.wrap{ position:relative; max-width: 100%; margin: 0 auto; background: #f5f5f5; border-bottom: 10px solid #004c99;}
+.container { position:relative; max-width: 960px; margin: 0 auto;}
+
+
+.hide {display: none !important;}
+.visible {display: block;}
+.center {text-align: center !important;}
+
+.desktop {display: block !important;}
+.mobile {display: none !important;}
+
+
+/* ------------------------------------ */
+/*	   Class Vérification formulaires	*/
+/* ------------------------------------ */
+
+/* Emplacement message d'erreur */
+.mess-error {color: #c84b4b; border: none !important; background: none !important; height: auto !important; margin-bottom: 20px; text-align: left; line-height:25px;}
+
+/* Erreur FORMULAIRE  Cadre rouge */
+.form-error, #fdate.form-error {border: 1px solid #c84c4c !important; background-color: #f9d9da !important;}
+
+/* Formulaire Validé  Cadre vert + picto */
+.form-valid {border: 1px solid #3da80e !important; /*background: url(../img/valid.png) 82% / 15px no-repeat !important; */}
+
+/* Formulaire désactivé  Cadre vert + picto */
+select:disabled {background-color: #b6b6b6 !important; background-size: 20px 20px;}
+option{ padding:5px !important}
+/*input{ text-transform : uppercase;}*/
+
+
+
+/*PICTO*/
+.picto { display: inline-block; background-image: url(../img/sprite.png); background-repeat: no-repeat; }
+
+#cadre-formulaire-accueil .p1 { display: inline-block; background-image: url(../img/picto_form_1.png); background-repeat: no-repeat; background-size:cover; width:20px; height:24px; margin:10px 17px 15px 10px; vertical-align:top;}
+#cadre-formulaire-620 .p1 {display: inline-block; background-image: url(../img/picto_form_2.png); background-repeat: no-repeat; background-size:cover; width:40px; height:24px; margin:10px 10px 15px 10px; vertical-align:top;}
+#cadre-formulaire-680 .p1 {display: inline-block; background-image: url(../img/picto_form_2.png); background-repeat: no-repeat; background-size:cover; width:40px; height:24px; margin:10px 10px 15px 10px; vertical-align:top;}
+#cadre-formulaire-960 .p1 {display: inline-block; background-image: url(../img/picto_form_4.png); background-repeat: no-repeat; background-size:cover; width:32px; height:40px; margin:5px 10px 15px 10px; vertical-align:top;}
+
+.p2 { display: inline-block; background-image: url(../img/sprite.png); background-repeat: no-repeat; background-position:-183px 0; width:39px; height:48px; float: left;}
+.p3 { display: inline-block; background-image: url(../img/sprite.png); background-repeat: no-repeat; background-position: 0px -50px; width:50px; height:50px;}
+.p4 { display: inline-block; background-image: url(../img/picto_form_3.png); background-repeat: no-repeat; background-size:cover; width:39px; height:36px; margin:0px 10px 8px 10px; vertical-align:middle;}
+.p5 { background-position:-222px 0; width:20px; height:17px; vertical-align:top;}
+.p6 { background-position:-153px 0; width:30px; height:30px; margin:10px 10px 15px 10px; vertical-align:top; }
+.p7 { display: inline-block; background-image: url(../img/picto_form_7.png); background-repeat: no-repeat; background-size:cover;  width:30px; height:30px; margin:10px 10px 10px 10px; vertical-align:top;}
+.p8 { background-position:-242px 0; width:30px; height:24px; vertical-align:top; }
+
+/* ALERT COOKIE */
+#alert {position:relative; background: #e1e1e1; width: 100%; padding: 10px 0px;}
+#alert p, #alert p a {display:inline-block; font-size: 12px; color:#606060; font-weight: 400;}
+#alert p a {text-decoration: underline;}
+#alert > a {background: url(../img/sprite.png) no-repeat #e1e1e1; background-position:0px -100px; width:20px; height:20px; position:absolute; top:50%; right:20px; margin-top: -10px;}
+
+/* HEADER */
+header {background:#004c99; height:100px;}
+#logo { padding:10px 0px; float: left;}
+#logo a {display: block;}
+#logo img {width: 233px; height: 80px;}
+
+#baseline {float: right; text-align: right; padding: 26px 0px;}
+#baseline h2 {color: #ffffff; font-size: 30px; font-weight: 700; text-transform: uppercase; line-height: 22px;}
+#baseline h2 span { font-size: 20px; font-weight: 400;}
+
+#etapes {float: right; padding-top: 30px;}
+#etapes li {display: inline-block; width: 200px; height:40px; line-height:30px; background:#ffffff; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; padding: 5px; font-size: 16px; color:#004c99;}
+#etapes #etape-1 i {background-position:0px -120px; width:30px; height:30px; float: left}
+#etapes #etape-2 i {background-position:-30px -120px; width:30px; height:30px; float: left}
+#etapes #etape-3 i {background-position:-60px -120px; width:30px; height:30px; float: left}
+
+#etapes .current {background:#e2007a; color:#ffffff;}
+#etapes #etape-2.current i {background-position:-120px -120px;}
+#etapes #etape-3.current i {background-position:-150px -120px;}
+#etapes li.valid i {background-position:-90px -120px !important;}
+
+/* CONTENT */
+.section-1#visuel_1a { position:relative; background: url(../img/visuel_1a.png) no-repeat top center #f5f5f5; min-height:688px; padding-top: 20px; text-align: right;}
+.section-1#visuel_1b { position:relative; background: url(../img/visuel_1a.png) no-repeat top center #f5f5f5; min-height:688px; padding-top: 20px; text-align: right;}
+.section-1#visuel_1c { position:relative; background: url(../img/visuel_1a.png) no-repeat top center transparent; min-height:688px; padding-top: 20px; text-align: right; z-index: 2000;}
+
+
+/* FORMULAIRE ACCUEIL*/
+/*#cadre-formulaire-accueil {float:right; width: 320px; background: #004c99; text-align: left; padding: 5px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}*/
+#cadre-formulaire-accueil {margin: 0 auto; width: 680px; background: #004c99; text-align: left; padding: 5px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+.intro-formulaire {display:inline-block; margin-top: 12px;}
+.intro-formulaire h3 {color: #ffffff; font-size: 18px; font-weight: 600; line-height:22px; text-transform: uppercase;}
+
+.formulaire { width: 100%; background: url(../img/form.png) no-repeat #ffffff; background-position: 18px 0px; padding: 8px 15px; text-align: center;  -webkit-border-radius: 7px; -moz-border-radius: 7px; border-radius: 7px;}
+#cadre-formulaire-accueil form div {position:relative; display:block; width: 100%; height: 50px; border: 1px solid #cccccc; background:#f5f5f5; margin: 0 0 10px 0px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+.formulaire{ padding-top: 30px; }
+.formulaire input, .formulaire select {width: 100%; background-color: #F5F5F5; border: none; line-height: 48px; height: 48px; padding-left: 10px; }
+.formulaire button {width: 99.5%; font-size:18px; font-weight:600; color:#ffffff; text-transform:uppercase; line-height: 50px; background: #e2007a; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+.formulaire input.form-picto {width: 230px; display: inline-block;}
+.formulaire #form-separateur {background: url(../img/trait.png) center #ffffff; background-repeat: repeat-x; height:20px; margin:-10px auto; border: none;}
+.formulaire #form-separateur p {width:40px; margin:0 auto; font-size: 16px; color: #004c99; font-weight:600; text-transform: uppercase; background: #ffffff;}
+.formulaire > p {font-size: 14px; color: #5f5f5f; margin: 15px auto 5px auto; line-height: 20px;}
+
+#s_date_rdv {background: url(../img/calendrier.png) 95% / 20px no-repeat transparent !important; background-size: 20px 20px;}
+
+
+input[type=number]::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type=number]::-moz-inner-spin-button {-moz-appearance: none;}
+input[type=number]::inner-spin-button {appearance: none;}
+
+::-webkit-input-placeholder { color: #272727; font-family: 'Open Sans', sans-serif;}
+:-moz-placeholder { color: #272727; opacity: 1; font-family: 'Open Sans', sans-serif;}
+::-moz-placeholder { color: #272727; opacity: 1; font-family: 'Open Sans', sans-serif;}
+:-ms-input-placeholder { color: #272727; font-family: 'Open Sans', sans-serif;}
+
+.form-100 .form-valid {border: 1px solid #3da80e !important; /*background: url(../img/valid.png) 90% / 15px no-repeat !important;*/}
+input.form-valid {border: 1px solid #3da80e !important; /*background: url(../img/valid.png) 95% / 15px no-repeat !important;*/}
+
+
+/* FORMULAIRE ETAPES*/
+#cadre-formulaire-620 {width: 620px; margin:0 auto; background: #004c99; text-align: left; padding: 5px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+#cadre-formulaire-620 .formulaire {padding-top: 30px; text-align: left;}
+#cadre-formulaire-620 .formulaire button { margin: 0px auto 5px auto;}
+#cadre-formulaire-620 .formulaire#formulaire-fin {text-align: center;}
+#cadre-formulaire-620 .form-50 {position:relative; width: 280px; display: inline-block; vertical-align:top; }
+#cadre-formulaire-620 .form-50 div {position:relative; width: 280px; border: 1px solid #cccccc; margin-bottom:20px; background:#f5f5f5;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#cadre-formulaire-620 .form-50 p {font-size: 12px; color:#272727; line-height: 20px; margin: -15px 0px 10px 0px;}
+#cadre-formulaire-620 .form-50 div#form-tel {margin-top: 0px;}
+
+#cadre-formulaire-680 {width: 680px; margin:0 auto; background: #004c99; text-align: left; padding: 5px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+#cadre-formulaire-680 .formulaire {padding-top: 30px; text-align: left;}
+#cadre-formulaire-680 .formulaire button { margin: 0px auto 5px auto;}
+#cadre-formulaire-680 .formulaire#formulaire-fin {text-align: center;}
+#cadre-formulaire-680 .form-50 {position:relative; width: 310px; display: inline-block; vertical-align:top; }
+#cadre-formulaire-680 .form-50 div {position:relative; width: 310px; border: 1px solid #cccccc; margin-bottom:20px; background:#f5f5f5;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#cadre-formulaire-680 .form-50 p {font-size: 12px; color:#272727; line-height: 20px; margin: -15px 0px 10px 0px;}
+#cadre-formulaire-680 .form-50 div#form-tel {margin-top: 0px;}
+#cadre-formulaire-680 .form-100 {position:relative; display: block; vertical-align:top; }
+#cadre-formulaire-680 .form-100 div {position:relative; width: 100%; border: 1px solid #cccccc; margin-bottom:10px; background:#f5f5f5;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#cadre-formulaire-680 .form-100 p {font-size: 12px; color:#272727; line-height: 20px; margin: -5px 0px 10px 0px;}
+#info-form {padding: 10px 15px 0px 0px; text-align: right;}
+#cadre-formulaire-680 .form-100 div#form-tel {margin-top: 0px;}
+
+#cadre-formulaire-960 {width: 960px; margin:0 auto; background: #004c99; text-align: left; padding: 5px; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+#cadre-formulaire-960 .intro-formulaire {margin-top: 5px;}
+#cadre-formulaire-960 h3 span {text-transform: none;}
+#cadre-formulaire-960 .intro-contact {display: inline-block; text-align: right; width: 460px; vertical-align:top;}
+#cadre-formulaire-960 .intro-contact p {margin: 5px 0px 10px 0px; color: #ffffff; font-size: 14px; font-weight: 600; line-height:20px;}
+#cadre-formulaire-960 .intro-contact p span {font-size: 18px;}
+
+
+#bloc-estimation {width: 300px; display: inline-block; vertical-align: top;}
+#bloc-estimation #estimation {width: 100%; border: 1px solid #cccccc; text-align: left; margin-top: 20px; padding: 10px;}
+#bloc-estimation #estimation .form-50 p, #bloc-estimation #estimation .form-100 p {color:#e2007a; font-size: 20px; font-weight: 600;}
+#bloc-estimation #estimation p span {color:#004c99; font-size: 26px; font-weight: 600;}
+#bloc-estimation ul {text-align: left; padding: 20px 0px; font-size: 16px; line-height: 20px; border-bottom: 1px solid #cccccc;}
+#bloc-estimation ul li:nth-child(3) {color: #e2007a;}
+#bloc-estimation > p {font-size: 12px; text-align: justify; margin-top: 15px;}
+
+#cadre-formulaire-960 #form-estimation {width: 600px; display: inline-block; padding: 0px 0px 10px 45px;}
+#cadre-formulaire-960 #form-estimation form > p {font-size: 15px; color:#004c99; font-weight: 700; text-align: left; margin-top: 5px;}
+#cadre-formulaire-960 #form-estimation .form-100 {position:relative; display:block; width: 100%; height: 50px;  margin-bottom:20px; border: 1px solid #cccccc; background:#f5f5f5; margin-top: 20px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#cadre-formulaire-960 #form-estimation .form-50 {position:relative; width: 268px; display: inline-block; vertical-align:top;}
+#cadre-formulaire-960 #form-estimation .form-50 > div {position:relative; width: 100%; margin-bottom:20px; border: 1px solid #cccccc; background:#f5f5f5;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+#cadre-formulaire-960 #form-estimation .mess-error {margin-top: 20px;}
+.margin {margin-left: 15px;}
+
+
+#cadre-formulaire-960 #form-estimation .form-50 div #fdate-calendar {position: absolute; top:0px !important; left:0px !important; width: 100%; height:300px; z-index: 100000;}
+
+#formulaire-fin {padding: 15px !important;}
+#formulaire-fin > p:first-child {margin: 5px 0px; color:#272727;}
+#formulaire-fin p {font-size: 16px; padding: 10px;}
+#formulaire-fin p span {font-weight: 600;}
+#formulaire-fin .bouton-fin {display:block; width: 98%; font-size:18px; margin:0 auto; font-weight:600; text-transform:uppercase; line-height: 60px; background: #e2007a; border: none; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+#formulaire-fin .bouton-fin a {color:#ffffff;}
+#formulaire-fin #adresse-fin {background:#f5f5f5; width: 380px; margin:20px auto; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;}
+#formulaire-fin #info-fin {text-align: left;}
+#formulaire-fin #info-fin p {font-size: 14px; display: inline-block; padding: 0px 0px 0px 10px;}
+#formulaire-fin #achat-fin {font-size: 20px; font-weight:600; color:#004c99;}
+
+/* AVANTAGES */
+.avantages {margin: 160px 0px 30px 0px; text-align: left;}
+.avantages .container div {display: inline-block; text-align: center; margin: 0px 40px;}
+.avantages .container div img {width: 100px; height: 100px;}
+.avantages p {color:#004c99; font-size: 14px; font-weight: 600;}
+.avantages span {display: block; font-weight: 700; font-size: 20px; text-transform: uppercase;}
+
+.avantages-margin {margin: 10px 0px 20px 0px !important;}
+.avantages-vehicule {margin: 120px 0px 30px 0px !important;}
+.avantages-coordonnees {margin: 95px 0px 30px 0px !important;}
+.avantages-estimation {margin: 75px 0px 30px 0px !important;}
+
+/* SECTION CONTACT */
+#section-contact {background:#004c99; padding: 25px 0px;}
+#section-contact > div div {display: inline-block; width: 94%; text-align: left;  vertical-align: top;}
+#section-contact p {color:#ffffff; font-size: 30px; font-weight: 300; padding-left: 25px; line-height: 25px;}
+#section-contact p span {font-size: 16px; line-height: 20px; display: block; margin-top: 10px;}
+#section-contact p span:first-child {font-size: 30px; line-height: 25px; display: inline;}
+
+/* GOOGLE MAPS */
+#google-map {position:relative; width: 100%; margin-top: -200px; z-index:1;}
+#map-canvas {width: 100%; height:590px;}
+#google-zoom {position:absolute; left:20px; top:250px; z-index: 10000;}
+#google-zoom div {width: 40px; height: 40px; background-image: url(../img/sprite.png); background-repeat: no-repeat; margin-top: 10px;}
+
+/* SECTION 2 */
+.section-2#visuel_2b {background: url(../img/visuel_2b.png) no-repeat left 155px #ffffff;}
+.section-2 .container h3 {color:#004c99; font-size: 20px; padding: 40px 0px 25px 0px; background: #ffffff;}
+.section-2 .container span {font-weight: 600;}
+.section-2 .container > p {color:#272727; font-size: 16px; padding: 0px 20px;}
+
+.section-2 .container > div {text-align: right; padding: 125px 0px 190px 0px; z-index: 30000;}
+.section-2 .container > div h4 {font-size: 50px; color:#004c99; font-weight: 700; line-height: 40px; text-transform: uppercase;}
+.section-2 .container > div h4 span {font-size: 40px;}
+.section-2 .container > div h4 i {font-size: 60px; font-style: normal;}
+.section-2 .container img {width: 281px; height: 135px; margin: 25px 0px;}
+.section-2 .container > div p {color:#272727; font-size: 20px; font-weight: 600; text-transform: uppercase;}
+
+.bouton {float:right; width: 200px; margin-top:20px; background: #e2007a; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;} 
+.bouton:hover, .bouton-fin:hover {opacity: 0.9;}
+.bouton a {display:block;  font-size:16px; font-weight:600; color:#ffffff; line-height: 40px;  text-align: center; text-transform: uppercase;}
+
+
+/* CARROUSEL */
+#carrousel {margin-top:-150px; background: url(../img/bordure.png) no-repeat top center;}
+#carrousel .container div {display: inline-block; width: 280px; vertical-align: top; margin: 18px; text-align: left; padding-top: 10px;}
+#carrousel h3 {color:#004c99; font-size: 20px; padding-left: 100px; text-align: left; font-weight: 600; padding-top: 90px;}
+#carrousel .container div span {font-weight: 600;}
+#carrousel .temoin {margin: 15px 0px;}
+#carrousel .temoignage {font-style: italic;}
+
+
+/* FOOTER */
+footer {background: #ffffff;}
+footer .container div {width: 49%; text-align: left; line-height: 30px;}
+footer #chaines {float: right; padding: 10px 0px 30px 0px;}
+footer #chaines p {display: inline-block;}
+footer #chaines img {margin: 4px;}
+
+footer #mentions {float: left; padding: 10px 0px 30px 0px;}
+footer #mentions a {color:#272727;}
+
+footer .container > a {position:absolute; width:40px; height:20px; bottom:0; left: 50%; margin-left: -20px;}
+
+
+.ui-widget-header {
+    background: #e2007a none repeat scroll 0 0 !important;
+     
+    color: #fff !important; 
+ 
+}

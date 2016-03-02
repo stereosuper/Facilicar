@@ -1,0 +1,189 @@
+﻿/* ---------------------------- */
+/*		    Responsive  		*/
+/* ---------------------------- */
+@media screen and (min-width: 1330px) {
+    select {background: url(../img/form-arrow.png) 97% / 14px no-repeat transparent !important; background-size: 20px 20px; color: #272727; font-family: 'Open Sans', sans-serif; -webkit-appearance: none !important; -moz-appearance: none !important; appearance: none !important;}
+    select::-ms-expand { /* for IE 11 */ color: #272727; font-family: 'Open Sans', sans-serif; display: none; appearance: none;}
+
+    /* Formulaire désactivé  Cadre vert + picto */
+    select:disabled {background: url(../img/form-arrow.png) 97% / 14px no-repeat #b6b6b6 !important; background-size: 20px 20px;}
+}
+
+@media screen and (max-width: 1330px) {
+
+    #alert p {padding: 0px 40px;}
+    .form-100 .form-valid {/*background: url(../img/valid.png) 95% / 15px no-repeat !important;*/}
+    .section-2 {background-position: 0px 150px !important; background-size: 130% !important;}
+    .section-2 .container > div {padding: 70px 20px 180px 0px;}
+    .section-2 .container img {width: 200px; height: 96px; margin: 15px 0px;}
+
+}
+
+@media screen and (max-width: 960px) {
+
+    #baseline h2 {font-size: 25px;}
+    #baseline h2 span { font-size: 15px;}
+
+    #etapes li {font-size: 14px; width: 170px;}
+    .container {padding: 0px 10px;}
+
+    .section-1 {padding-top: 10px !important;}
+    .avantages {text-align: center; margin: 120px 0px 30px 0px;}
+    #cadre-formulaire-accueil {float: none; margin: 0 auto;}
+    
+    #section-contact i {display: none;}
+    #section-contact p {text-align: center; width: 100%; padding: 0;}
+    #section-contact p span  {font-size: 14px; line-height: 20px;}
+
+   .form-valid, .form-100 .form-valid, input.form-valid {/*background: url(../img/valid.png) 90% / 15px no-repeat !important;*/}
+
+    /*#cadre-formulaire-960 {width: 100%; max-width: 620px;}*/
+    #cadre-formulaire-960 {width: 100%; max-width: 680px;}
+    #cadre-formulaire-960 .intro-contact, .p6 {display: none;}
+    #cadre-formulaire-960 #form-estimation .form-50 {width: 48%;}
+
+    .margin div {margin: 0px;}
+    #bloc-estimation, #cadre-formulaire-960 #form-estimation {width: 100%; padding: 0;}
+    #bloc-estimation #estimation { text-align: center;}
+    #bloc-estimation ul {text-align: center;}
+
+    #visuel_1b.section-1 {height: auto; vertical-align: top; background-position: top center;}
+
+    .section-2 {background-position: 0px 180px !important; background-size: 130% !important;}
+    .section-2 .container > div {text-align: right; padding: 60px 20px 150px 0px;}
+    .section-2 .container > div h4 {font-size: 40px; line-height: 30px;}
+    .section-2 .container > div h4 span {font-size: 30px;}
+    .section-2 .container > div h4 i {font-size: 45px;}
+    .section-2 .container img {width: 200px; height: 96px; margin: 15px 0px;}
+    .section-2 .container > div p {font-size: 20px;}
+
+    #carrousel {margin-top:-150px;}
+
+    footer .container div {display:block; width: 100%; text-align: center;}
+    footer #chaines {padding: 10px 0px 10px 0px;}
+    footer #mentions {padding: 0px 0px 30px 0px;}
+}
+
+
+@media screen and (max-width: 800px) {
+    #alert p, #alert p a { font-size: 10px;}
+
+    header {height:140px;}
+    #logo { display: block; width: 100%;}
+    #logo img {width: 204px; height: 70px;}
+
+    #baseline {display: block; width: 100%; text-align: center; padding: 0px;}
+    #baseline h2 {font-size: 20px;}
+    #baseline h2 span { font-size: 15px;}
+
+    #etapes {margin: 0 auto; float: none;}
+
+    .section-2 {background-position: 0px 200px !important; background-size: 135% !important;}
+    .section-2 .container > div {text-align: right; padding: 50px 20px 150px 0px;}
+    .section-2 .container > div h4 {font-size: 30px; line-height: 30px;}
+    .section-2 .container > div h4 span {font-size: 20px;}
+    .section-2 .container > div h4 i {font-size: 35px;}
+    .section-2 .container img {width: 200px; height: 96px; margin: 15px 0px;}
+    .section-2 .container > div p {font-size: 16px;}
+
+    #carrousel .container {background: none;}
+    #carrousel h3 {text-align: center; padding-left: 0px;}
+    #carrousel .container div {text-align: center;}
+}
+
+@media screen and (max-width: 695px) {
+
+    .section-1#visuel_1a, .section-1#visuel_1b, .section-1#visuel_1c { background: none; height : inherit; min-height: inherit;}
+    .avantages {margin: 10px 0px 20px 0px !important;}
+
+    .desktop {display: none !important;}
+    .mobile {display: block !important;}
+    
+    #cadre-formulaire-620, #cadre-formulaire-accueil {width: 100%; max-width: 620px;}
+    #cadre-formulaire-620 .form-50 {width: 100%; display: block;}
+    #cadre-formulaire-620 .form-50 div {margin: 20px auto; width: 100%;}
+    #cadre-formulaire-620 .formulaire button {width: 100%;}
+    #cadre-formulaire-620 .form-50 > p {text-align: left; padding-left: 2px;}
+    
+    #cadre-formulaire-680, #cadre-formulaire-accueil {width: 100%; max-width: 680px;}
+    #cadre-formulaire-680 .form-50 {width: 100%; display: block;}
+    #cadre-formulaire-680 .form-50 div {margin: 20px auto; width: 100%;}
+    #cadre-formulaire-680 .formulaire button {width: 100%;}
+    #cadre-formulaire-680 .form-50 > p {text-align: left; padding-left: 2px;}
+
+    #cadre-formulaire-960 #form-estimation .form-50 {width: 100%; display: block;}
+    #cadre-formulaire-960 #form-estimation .form-50 div {width: 100%;}
+    .margin {margin-left: 0px !important;}
+    #info-form {padding: 20px 0px 0px 0px;}
+
+    #form-estimation {margin-top: 10px;}
+
+    #cadre-formulaire-960 #form-estimation .form-50 div #fdate-calendar {width: 99.9%;}
+
+    #titre-fin {width: 80%; margin-top: 5px;}
+    #titre-fin h3 {font-size: 15px;}
+    #formulaire-fin {padding: 5px !important;}
+    #formulaire-fin #adresse-fin {width: 100%;}
+
+    #info-fin i {display: none;}
+    #formulaire-fin a {font-size: 15px;}
+
+    #google-map {margin-top: 20px;}
+    #map-canvas {height: 400px;}
+    #google-zoom {top: 150px;}
+
+    .section-2 .container {background: #ffffff;}
+    .section-2 .container > div {text-align: center; padding: 30px 20px 30px 0px;}
+    .bouton {float:none; margin:20px auto 0px auto;}
+    #carrousel {margin-top:0px;}
+    #carrousel h3 {padding-top: 20px;}
+}
+
+@media screen and (max-width: 550px) {
+    #alert > a {right: 10px; top: 30%;}
+
+    #etapes i {transform: scale(0.8); padding: 0px;}
+    #etapes li {width: 150px; padding: 3px; height:35px; text-align: left;}
+    #section-contact p span:first-child {display: block;}
+
+    #cadre-formulaire-960 #form-estimation .form-50 div #fdate-calendar {width: 98%;}
+
+    .form-valid, .form-100 .form-valid, input.form-valid {/*background: url(../img/valid.png) 85% / 15px no-repeat !important;*/}
+}
+
+@media screen and (max-width: 500px) {
+    #cadre-formulaire-960 .p1 {display: none;}
+    #cadre-formulaire-960 {text-align: center;}
+    #cadre-formulaire-960 h3 {padding-bottom: 10px;}
+    #cadre-formulaire-960 #form-estimation .form-50 div #fdate-calendar {width: 99.8%;}
+
+    #etapes li {width: auto; height:auto; padding: 3px; text-align: center;}
+    #etapes li p {display: none;}
+    #etapes i {transform: scale(1);}
+    #baseline h2 {font-size: 16px;}
+    #baseline h2 span { font-size: 15px;}
+    footer #chaines p {display: block;}
+}
+
+@media screen and (max-width: 360px) {
+
+    .formulaire input.form-picto#fimmat {width: 200px;}
+    
+    #cadre-formulaire-accueil .p1 { width:20px; height:24px; margin: 10px 5px 15px 7px; }
+    #cadre-formulaire-620 .p1, #cadre-formulaire-680 .p1 { width:28px; height:17px; margin: 10px 5px 15px 7px;}
+    #cadre-formulaire-960 .p1 { width:23px; height:28px; margin: 10px 5px 15px 7px;}
+    .p4 { width:31px; height:29px; margin:0px 5px 8px 10px; }
+    .p7 { width:20px; height:20px; margin: 10px 5px 15px 7px; vertical-align: bottom;}
+    #cadre-formulaire-960 button {font-size: 16px;}
+
+    .intro-formulaire {margin-top: 5px;}
+    .intro-formulaire h3.mobile {font-size: 16px; line-height:35px}
+    #titre-fin h3 {font-size: 14px;}
+    #baseline h2 {font-size: 14px;}
+    #baseline h2 span { font-size: 12px;}
+
+
+    #info-fin p {text-align: center; }
+    #formulaire-fin a {font-size: 14px;}
+
+}
