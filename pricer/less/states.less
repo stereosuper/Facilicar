@@ -1,0 +1,52 @@
+/* @group States */
+.hide-text{
+	text-indent: -9999px;
+	display: none;
+}
+.is-hidden{
+	/*display: none;
+	&.car-block{
+		display: none;
+	}*/
+}
+.is-left{
+	float: left;
+}
+.is-right{
+	float: right;
+}
+.is-visible{
+	opacity: 1;
+}
+
+.is-info{
+	padding-left: 24px!important;
+	position: relative;
+	&:before{
+		content: "i";
+		display: block;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background-color: @theme-gris3;
+		text-align: center;
+		line-height: 18px;
+		.texta(0.9em);
+		color: #fff;
+		text-transform: none;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		margin: -9px 0 0 0;
+	}
+}
+
+.noselect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* @end */

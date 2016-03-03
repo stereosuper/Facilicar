@@ -22,6 +22,8 @@
     <script type="text/javascript" async="" src="js/linkid.js"></script><script src="js/bat.js" async=""></script><script async="" src="js/b06dddbb63077805a62ea33d4026138b.js"></script><script type="text/javascript" async="" src="js/conversion_async.js"></script><script type="text/javascript" async="" src="js/analytics.js"></script><script async="" src="js/fbevents.js"></script><script async="" src="js/gtm.js"></script><script type="text/javascript" language="javascript">
 		var webpath_http = 'http://autopink.3wnet2.fr/'; 
 	</script><style type="text/css"></style>
+
+    <link rel="stylesheet" href="css/style-facilicar.css">
     
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script> 
@@ -54,302 +56,201 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </section>
       
          <header>
-            <div class="container">
-               <div id="logo">
-                  <h1><img src="img/logo.png" alt="AutoPink Vous allez voir l&#39;occasion en rose !"></h1>
-               </div>
-               <div id="baseline">
-                  <h2>
-                     Nous achetons tout véhicule en 24h <br>
-                     <span>sans limite d'âge, de kilométrage et d'état</span>
-                  </h2>
-               </div>
+            <div class="container clearfix relative-position">
+                <a href="#" class="logo-facilicar hide-text">Facilicar</a>
+                <ul class="steps">
+                    <li>
+                        <div class="is-active">Votre véhicule</div>
+                    </li><!--
+                    --><li>
+                        <div>Vos coordonnées</div>
+                    </li><!--
+                    --><li>
+                        <div>Votre estimation</div>
+                    </li>
+                </ul>
             </div>
          </header>
-         <section class="section-1" id="visuel_1a">
-            <div class="container">
-               <div id="cadre-formulaire-accueil">
-                  <i class="p1"></i>
-                  <div class="intro-formulaire">
-                     <h3 class="desktop">Estimez votre véhicule en quelques clics</h3>
-                     <h3 class="mobile">Estimez votre véhicule</h3>
-                  </div> 
+         <section>
+             <div class="container small">
+                <h1>La façon la plus simple de vendre votre voiture</h1>
+                <div class="wrapper-align-top container-pricer">
+                    <div class="content-align-top wrapper-pricer">
+                        <h3>Votre voiture vendue et payée en 24h</h3>
+                        <p>Estimez gratuitement votre voiture en 1 minute</p>
 
-                <!-- **** FORMULAIRE **** -->                        
-                <div class="formulaire">
-                     <form class="" method="post" id="pricer_step_1" action="http://autopink.3wnet2.fr/vehicule" name="formCt"> 
-                        
-                        <!-- **** MESSAGE D'ERREUR **** -->                 
-                        <div class="mess-error hide"></div>
-                        
-                        <div>
-                           <select name="s_year" id="s_year" class="" onchange="javascript:load_search_fields(&#39;s_model&#39;); javascript:load_valid_form(&#39;s_year&#39;); javascript:push_select_data(&#39;s_year&#39;)">
-                              <option value="0">Année de mise en circulation</option>
-                              <option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option> 
-                           </select>
+                        <!-- **** FORMULAIRE **** -->                        
+                        <div class="formulaire">
+                            <form class="" method="post" id="pricer_step_1" action="http://autopink.3wnet2.fr/vehicule" name="formCt"> 
+                                <!-- **** MESSAGE D'ERREUR **** -->                 
+                                <div class="mess-error hide"></div>
+                                <div>
+                                    <select name="s_year" id="s_year" class="" onchange="javascript:load_search_fields(&#39;s_model&#39;); javascript:load_valid_form(&#39;s_year&#39;); javascript:push_select_data(&#39;s_year&#39;)">
+                                    <option value="0">Année de mise en circulation</option>
+                                    <option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option> 
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="s_brand" id="s_brand" class="" onchange="javascript:load_search_fields(&#39;s_model&#39;); javascript:load_valid_form(&#39;s_brand&#39;); javascript:push_select_data(&#39;s_brand&#39;)"> 
+                                        <option selected="selected" value="0">Sélectionner la marque</option>
+                                        <optgroup label="Principales marques">
+                                            <option value="1">RENAULT</option>
+                                            <option value="2">PEUGEOT</option>
+                                            <option value="3">CITROEN</option>
+                                            <option value="7">VOLKSWAGEN</option>
+                                            <option value="21">MERCEDES</option>
+                                            <option value="4">BMW</option>
+                                            <option value="6">FORD</option>
+                                            <option value="9">AUDI</option>
+                                            <option value="24">OPEL</option>
+                                            <option value="29">TOYOTA</option>
+                                            <option value="23">NISSAN</option>
+                                        </optgroup>
+                                        <optgroup label="Autres marques">
+                                            <option value="79">ABARTH</option>
+                                            <option value="12">ALFA ROMEO</option>
+                                            <option value="124">ASTON MARTIN</option>
+                                            <option value="9">AUDI</option>
+                                            <option value="34">BENTLEY</option>
+                                            <option value="4">BMW</option>
+                                            <option value="38">CHEVROLET</option>
+                                            <option value="11">CHRYSLER</option>
+                                            <option value="3">CITROEN</option>
+                                            <option value="73">DACIA</option>
+                                            <option value="68">DAEWOO</option>
+                                            <option value="39">DAIHATSU</option>
+                                            <option value="71">DODGE</option>
+                                            <option value="43">FERRARI</option>
+                                            <option value="5">FIAT</option>
+                                            <option value="6">FORD</option>
+                                            <option value="13">HONDA</option>
+                                            <option value="15">HYUNDAI</option>
+                                            <option value="60">INFINITI</option>
+                                            <option value="70">ISUZU</option>
+                                            <option value="87">IVECO</option>
+                                            <option value="16">JAGUAR</option>
+                                            <option value="125">JEEP</option>
+                                            <option value="63">KIA</option>
+                                            <option value="17">LADA</option>
+                                            <option value="45">LAMBORGHINI</option>
+                                            <option value="18">LANCIA</option>
+                                            <option value="19">LAND ROVER</option>
+                                            <option value="46">LEXUS</option>
+                                            <option value="47">LOTUS</option>
+                                            <option value="49">MASERATI</option>
+                                            <option value="20">MAZDA</option>
+                                            <option value="21">MERCEDES</option>
+                                            <option value="130">MINI</option>
+                                            <option value="22">MITSUBISHI</option>
+                                            <option value="23">NISSAN</option>
+                                            <option value="24">OPEL</option>
+                                            <option value="2">PEUGEOT</option>
+                                            <option value="812">PIAGGIO</option>
+                                            <option value="53">PORSCHE</option>
+                                            <option value="1">RENAULT</option>
+                                            <option value="122">RENAULT TRUCKS</option>
+                                            <option value="54">ROLLS-ROYCE</option>
+                                            <option value="26">SAAB</option>
+                                            <option value="27">SEAT</option>
+                                            <option value="28">SKODA</option>
+                                            <option value="69">SMART</option>
+                                            <option value="65">SSANGYONG</option>
+                                            <option value="56">SUBARU</option>
+                                            <option value="66">SUZUKI</option>
+                                            <option value="29">TOYOTA</option>
+                                            <option value="7">VOLKSWAGEN</option>
+                                            <option value="8">VOLVO</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div>
+                                    <select name="s_model" id="s_model" class="" onchange="javascript:load_search_results(&#39;0&#39;); javascript:load_valid_form(&#39;s_model&#39;); javascript:push_select_data(&#39;s_model&#39;)" disabled="disabled">
+                                    <option value="0">Sélectionner le modèle</option>
+                                    </select>
+                                </div>
+                                <button class="button-arrow button-primary bg-primary submit-base big" type="submit">
+                                    <span class="arrow-button">›</span><span class="txt-button">J'estime ma voiture</span><span class="txt-hover-button" data-hover="J'estime ma voiture"></span>
+                                </button>
+
+                                <input type="hidden" name="s_provenance" id="s_provenance" value="/">
+                                <input type="hidden" name="s_landing" id="s_landing" value="visuel_1a">
+                                <input type="hidden" name="pricer_id" id="pricer_id" value="">
+                            </form>
+                            <p>Rapide, gratuit et sans engagement</p>
                         </div>
-                        <div>
-                            
-                           <select name="s_brand" id="s_brand" class="" onchange="javascript:load_search_fields(&#39;s_model&#39;); javascript:load_valid_form(&#39;s_brand&#39;); javascript:push_select_data(&#39;s_brand&#39;)"> 
-                              <option selected="selected" value="0">Sélectionner la marque</option>
-                                <optgroup label="Principales marques">
-                                                                            <option value="1">
-                                            RENAULT                                        </option>
-                                                                            <option value="2">
-                                            PEUGEOT                                        </option>
-                                                                            <option value="3">
-                                            CITROEN                                        </option>
-                                                                            <option value="7">
-                                            VOLKSWAGEN                                        </option>
-                                                                            <option value="21">
-                                            MERCEDES                                        </option>
-                                                                            <option value="4">
-                                            BMW                                        </option>
-                                                                            <option value="6">
-                                            FORD                                        </option>
-                                                                            <option value="9">
-                                            AUDI                                        </option>
-                                                                            <option value="24">
-                                            OPEL                                        </option>
-                                                                            <option value="29">
-                                            TOYOTA                                        </option>
-                                                                            <option value="23">
-                                            NISSAN                                        </option>
-                                                                    </optgroup>
-                                <optgroup label="Autres marques">
-                                                                            <option value="79">
-                                            ABARTH                                        </option>
-                                                                            <option value="12">
-                                            ALFA ROMEO                                        </option>
-                                                                            <option value="124">
-                                            ASTON MARTIN                                        </option>
-                                                                            <option value="9">
-                                            AUDI                                        </option>
-                                                                            <option value="34">
-                                            BENTLEY                                        </option>
-                                                                            <option value="4">
-                                            BMW                                        </option>
-                                                                            <option value="38">
-                                            CHEVROLET                                        </option>
-                                                                            <option value="11">
-                                            CHRYSLER                                        </option>
-                                                                            <option value="3">
-                                            CITROEN                                        </option>
-                                                                            <option value="73">
-                                            DACIA                                        </option>
-                                                                            <option value="68">
-                                            DAEWOO                                        </option>
-                                                                            <option value="39">
-                                            DAIHATSU                                        </option>
-                                                                            <option value="71">
-                                            DODGE                                        </option>
-                                                                            <option value="43">
-                                            FERRARI                                        </option>
-                                                                            <option value="5">
-                                            FIAT                                        </option>
-                                                                            <option value="6">
-                                            FORD                                        </option>
-                                                                            <option value="13">
-                                            HONDA                                        </option>
-                                                                            <option value="15">
-                                            HYUNDAI                                        </option>
-                                                                            <option value="60">
-                                            INFINITI                                        </option>
-                                                                            <option value="70">
-                                            ISUZU                                        </option>
-                                                                            <option value="87">
-                                            IVECO                                        </option>
-                                                                            <option value="16">
-                                            JAGUAR                                        </option>
-                                                                            <option value="125">
-                                            JEEP                                        </option>
-                                                                            <option value="63">
-                                            KIA                                        </option>
-                                                                            <option value="17">
-                                            LADA                                        </option>
-                                                                            <option value="45">
-                                            LAMBORGHINI                                        </option>
-                                                                            <option value="18">
-                                            LANCIA                                        </option>
-                                                                            <option value="19">
-                                            LAND ROVER                                        </option>
-                                                                            <option value="46">
-                                            LEXUS                                        </option>
-                                                                            <option value="47">
-                                            LOTUS                                        </option>
-                                                                            <option value="49">
-                                            MASERATI                                        </option>
-                                                                            <option value="20">
-                                            MAZDA                                        </option>
-                                                                            <option value="21">
-                                            MERCEDES                                        </option>
-                                                                            <option value="130">
-                                            MINI                                        </option>
-                                                                            <option value="22">
-                                            MITSUBISHI                                        </option>
-                                                                            <option value="23">
-                                            NISSAN                                        </option>
-                                                                            <option value="24">
-                                            OPEL                                        </option>
-                                                                            <option value="2">
-                                            PEUGEOT                                        </option>
-                                                                            <option value="812">
-                                            PIAGGIO                                        </option>
-                                                                            <option value="53">
-                                            PORSCHE                                        </option>
-                                                                            <option value="1">
-                                            RENAULT                                        </option>
-                                                                            <option value="122">
-                                            RENAULT TRUCKS                                        </option>
-                                                                            <option value="54">
-                                            ROLLS-ROYCE                                        </option>
-                                                                            <option value="26">
-                                            SAAB                                        </option>
-                                                                            <option value="27">
-                                            SEAT                                        </option>
-                                                                            <option value="28">
-                                            SKODA                                        </option>
-                                                                            <option value="69">
-                                            SMART                                        </option>
-                                                                            <option value="65">
-                                            SSANGYONG                                        </option>
-                                                                            <option value="56">
-                                            SUBARU                                        </option>
-                                                                            <option value="66">
-                                            SUZUKI                                        </option>
-                                                                            <option value="29">
-                                            TOYOTA                                        </option>
-                                                                            <option value="7">
-                                            VOLKSWAGEN                                        </option>
-                                                                            <option value="8">
-                                            VOLVO                                        </option>
-                                                                    </optgroup>
-                             
-                             <!--
-                             <optgroup label="Autres marques">
-                                 <option value="Audi">AUDI</option>
-                                 <option value="BMW">BMW</option>
-                             </optgroup>
-                             -->
-                           </select>
-                        </div>
-                        <div>
-                           <select name="s_model" id="s_model" class="" onchange="javascript:load_search_results(&#39;0&#39;); javascript:load_valid_form(&#39;s_model&#39;); javascript:push_select_data(&#39;s_model&#39;)" disabled="disabled">
-                              <option value="0">Sélectionner le modèle</option>
-                              <!--<optgroup label="Golf">
-                                 <option value="Golf 3">Golf 3</option>
-                                 <option value="Golf 4">Golf 4</option>
-                                 <option value="Golf 5">Golf 5</option>
-                              </optgroup>
-                              <optgroup label="Clio">
-                                 <option value="Clio 2">Clio 2</option>
-                                 <option value="Clio 3">Clio 3</option>
-                                 <option value="Clio sport">Clio sport</option>
-                              </optgroup>-->
-                           </select>
-                        </div>
-                        <button class="btn" id="valid" type="submit">J'estime ma voiture</button>
-                        
-                                                <input type="hidden" name="s_provenance" id="s_provenance" value="/">
-                        <input type="hidden" name="s_landing" id="s_landing" value="visuel_1a">
-                        <input type="hidden" name="pricer_id" id="pricer_id" value="">
-                     </form>
-                     <p>gratuit &amp; sans engagement</p>
-                  </div>
-               </div>
-            </div>
-            
-            <section class="avantages center">
-                <div class="container">
-                   <div>
-                      <img src="img/picto_1.png">
-                      <p>
-                         <span>Plus sûr</span>
-                         Paiement sécurisé<br>
-                         en 24h
-                      </p>
-                   </div>
-                   <div>
-                      <img src="img/picto_2.png">
-                      <p>
-                         <span>Plus simple</span>
-                         Aucune démarche<br>
-                         à réaliser
-                      </p>
-                   </div>
-                   <div>
-                      <img src="img/picto_3.png">
-                      <p>
-                         <span>Plus rapide</span>
-                         Reprise en 1h sans<br>
-                         obligation d’achat
-                      </p>
-                   </div>
+
+                    </div><!--
+                    --><div class="content-align-top wrapper-avantages">
+                        <ul class="list-avantages">
+                            <li>
+                                <div class="wrapper-img-avantage">
+                                    <img src="img/sur.png" srcset="img/sur.png 1x, img/sur@2x.png 2x, img/sur@3x.png 3x" alt="Plus sûr">
+                                </div><!--
+                                --><div class="wrapper-txt-avantage">
+                                    <p>
+                                        <strong>Plus sûr</strong>
+                                        Paiement sécurisé en 24H
+                                    </p>
+                                </div>
+                            </li><!--
+                            --><li>
+                                <div class="wrapper-img-avantage">
+                                    <img src="img/simple.png" srcset="img/simple.png 1x, img/simple@2x.png 2x, img/simple@3x.png 3x" alt="Plus simple">
+                                </div><!--
+                                --><div class="wrapper-txt-avantage">
+                                    <p>
+                                        <strong>Plus simple</strong>
+                                        Aucune démarche à réaliser
+                                    </p>
+                                </div>
+                            </li><!--
+                            --><li>
+                                <div class="wrapper-img-avantage">
+                                    <img src="img/rapide.png" srcset="img/rapide.png 1x, img/rapide@2x.png 2x, img/rapide@3x.png 3x" alt="Plus rapide">
+                                </div><!--
+                                --><div class="wrapper-txt-avantage">
+                                    <p>
+                                        <strong>Plus rapide</strong>
+                                        Reprise en 1h sans obligation d’achat
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="btn-underline btn-arrow color-secondary" id="btn-pourquoi" href="#">Pourquoi vendre chez facilicar?</a>
+                    </div>
                 </div>
-             </section>
-            
-         </section>
-         
-         <section id="section-contact">
-            <div class="container">
-               <i class="picto p3"></i>
-               <div>
-                  <p>
-                     Contactez-nous au <span>01 76 45 42 78</span>
-                     <!--<span>Pour toutes questions concernant une prise de rendez-vous dans nos agences en région Parisienne, Lyon, Lille ou Nantes</span>-->
-                  </p>
-               </div>
-            </div>
-         </section>  
-         <section class="section-2" id="visuel_2b">
-            <div class="container">
-               <h3><span>AUTOPINK,</span> le meilleur service pour vendre votre voiture</h3>
-               <p>
-                  Vous n'avez pas le temps de vous occuper de la vente de votre voiture ? <span>AUTOPINK</span> vous propose un service unique sur le marché : une estimation en ligne en moins de 1 minute, une expertise en agence pour obtenir une offre ferme et définitive et un paiement en 24h dès acceptation de l'offre. <span>Un service gratuit et sans engagement !</span>
-               </p>
-               <div class="clearfix">
-                  <h4><span>Nous</span> rachetons<br> <i>votre voiture</i></h4>
-                  <img src="img/24h.png" alt="En 24h chrono">
-                  <p>sans obligation d'en acheter<br> une nouvelle !</p>
-                  <div class="bouton">
-                     <a class="scrollTop" href="">J'estime ma voiture</a>
-                  </div>
-               </div>
             </div>
          </section>
-         <section id="carrousel">
-            <div class="container">
-               <h3>Rejoignez les 6 000 clients<br>
-               qui nous ont déjà fait confiance !</h3>
-               <div>
-                  <img src="img/temoignage_1.png" alt="Client N°1">
-                  <p class="temoin"><span>Patrick</span> (75) - Fiat Scudo</p>
-                  <p class="temoignage">J'avais besoin de vendre mon véhicule rapidement dû à un départ à l'étranger, avec Autopink ce fut le cas, en 30 minutes l'affaire était conclue....</p>
-               </div>
-               <div>
-                  <img src="img/temoignage_2.png" alt="Client N°2">
-                  <p class="temoin"><span>Samir</span> (93) - Renault Mégane</p>
-                  <p class="temoignage">Autopink s'est chargé de toutes les formalités administratives, de plus en vendant à un pro je repars l'esprit tranquille, ce qui n'aurait pas été le cas si j'avais vendu ma voiture à un particulier !</p>
-               </div>
-               <div>
-                  <img src="img/temoignage_3.png" alt="Client N°3">
-                  <p class="temoin"><span>Bruno et Agnès</span> (91) - Picasso</p>
-                  <p class="temoignage">Nous avons pu vendre notre Picasso à Autopink en seulement 2 rendez-vous et à un prix très correct.</p>
-               </div>
-            </div>
+         <section id="fonctionnement">
+             <div class="container">
+                <h2>Comment ça marche?</h2>
+                <h4>Vendez votre voiture en 24h</h4>
+                <ul class="fonctionnement-list">
+                    <li>
+                        <p>En moins d’1 minute</p>
+                    </li><!--
+                    --><li>
+                        <p>En 30 minutes</p>
+                    </li><!--
+                    --><li>
+                        <p>En 24 heures</p>
+                    </li>
+                </ul>
+             </div>
          </section>
          <footer>
-            <div class="container clearfix">
-               <div id="chaines">
-                  <p> On parle de nous :</p>
-                  <img src="img/chaine_1.png" alt="LCI">
-                  <img src="img/chaine_2.png" alt="Challenges">
-                  <img src="img/chaine_3.png" alt="LaCentrale">
-               </div>
-               <div id="mentions">
-                  <p> © 2015 Autopink.com<!-- - <a href="">Informatique et libertés</a> - <a href="">Mentions légales</a>--></p>
-               </div>
-               <a class="scrollTop" href=""><img src="img/scroll_top.png"></a>
+            <div class="container">
+               <ul>
+                   <li>
+                       Facilicar 2016 ©
+                   </li><!--
+                   --><li>
+                      <a href="#">Informatique et libertés</a>
+                   </li><!--
+                   --><li>
+                       <a href="#">Mentions légales</a>
+                   </li>
+               </ul>
             </div>
          </footer>
       </div>
