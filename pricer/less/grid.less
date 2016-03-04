@@ -22,6 +22,7 @@ body{
 h1{
 	.texta-black(3em);
 	margin: 30px 0 60px 0;
+	position: relative;
 }
 h2{
 	text-align: center;
@@ -185,6 +186,21 @@ a.logo-facilicar{
 /* @end */
 
 /* @group Pricer */
+#illus-pricer{
+	display: block;
+	background: url("../layoutImg/illus-pricer.png") no-repeat 0 0;
+	width: 364px;
+	height: 784px;
+	position: absolute;
+	top: 0;
+	left: -335px;
+}
+#pricer{
+	overflow: hidden;
+	.container{
+		position: relative;
+	}
+}
 .wrapper-pricer{
 	width: auto;
 	box-sizing: border-box;
@@ -246,6 +262,7 @@ a.logo-facilicar{
 }
 .container-pricer{
 	padding-bottom: 52px;
+	position: relative;
 }
 .formulaire{
 	background: none;
@@ -411,13 +428,37 @@ a.logo-facilicar{
 		color: @theme-gris3;
 		&:first-child{
 			padding-right: 34px;
+			.wrapper-img-fonctionnement{
+				&:before{
+					display: none;
+				}
+				&:after{
+					left: calc(~"50% + 74px");
+				}
+			}
 		}
 		&:nth-child(2){
 			padding-left: 17px;
 			padding-right: 17px;
+			.wrapper-img-fonctionnement{
+				&:before{
+					right: calc(~"50% + 60px");
+				}
+				&:after{
+					left: calc(~"50% + 60px");
+				}
+			}
 		}
 		&:last-child{
 			padding-left: 34px;
+			.wrapper-img-fonctionnement{
+				&:before{
+					right: calc(~"50% + 104px");
+				}
+				&:after{
+					display: none;
+				}
+			}
 		}
 		.wrapper-img-fonctionnement{
 			height: 85px;
@@ -433,6 +474,30 @@ a.logo-facilicar{
 				//right: -75px;
 				right: -46px;
 				margin: -19px 0 0 0;
+			}
+			&:before{
+				content: "";
+				display: block;
+				width: auto;
+				height: 6px;
+				position: absolute;
+				top: 50%;
+				right: 50%;
+				left: 10px;
+				margin: -3px 0 0 0;
+				background: url("../layoutImg/dashed-separator.png") repeat-x 0 0;
+			}
+			&:after{
+				content: "";
+				display: block;
+				width: auto;
+				height: 6px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				right: 10px;
+				margin: -3px 0 0 0;
+				background: url("../layoutImg/dashed-separator.png") repeat-x 0 0;
 			}
 			img{
 				display: block;

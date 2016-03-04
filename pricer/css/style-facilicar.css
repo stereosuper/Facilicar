@@ -1855,6 +1855,7 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 30px 0 60px 0;
+  position: relative;
 }
 h2 {
   text-align: center;
@@ -2030,6 +2031,21 @@ a.logo-facilicar {
 }
 /* @end */
 /* @group Pricer */
+#illus-pricer {
+  display: block;
+  background: url("../layoutImg/illus-pricer.png") no-repeat 0 0;
+  width: 364px;
+  height: 784px;
+  position: absolute;
+  top: 0;
+  left: -335px;
+}
+#pricer {
+  overflow: hidden;
+}
+#pricer .container {
+  position: relative;
+}
 .wrapper-pricer {
   width: auto;
   box-sizing: border-box;
@@ -2098,6 +2114,7 @@ a.logo-facilicar {
 }
 .container-pricer {
   padding-bottom: 52px;
+  position: relative;
 }
 .formulaire {
   background: none;
@@ -2277,12 +2294,30 @@ a.logo-facilicar {
 .fonctionnement-list > li:first-child {
   padding-right: 34px;
 }
+.fonctionnement-list > li:first-child .wrapper-img-fonctionnement:before {
+  display: none;
+}
+.fonctionnement-list > li:first-child .wrapper-img-fonctionnement:after {
+  left: calc(50% + 74px);
+}
 .fonctionnement-list > li:nth-child(2) {
   padding-left: 17px;
   padding-right: 17px;
 }
+.fonctionnement-list > li:nth-child(2) .wrapper-img-fonctionnement:before {
+  right: calc(50% + 60px);
+}
+.fonctionnement-list > li:nth-child(2) .wrapper-img-fonctionnement:after {
+  left: calc(50% + 60px);
+}
 .fonctionnement-list > li:last-child {
   padding-left: 34px;
+}
+.fonctionnement-list > li:last-child .wrapper-img-fonctionnement:before {
+  right: calc(50% + 104px);
+}
+.fonctionnement-list > li:last-child .wrapper-img-fonctionnement:after {
+  display: none;
 }
 .fonctionnement-list > li .wrapper-img-fonctionnement {
   height: 85px;
@@ -2298,6 +2333,30 @@ a.logo-facilicar {
   top: 50%;
   right: -46px;
   margin: -19px 0 0 0;
+}
+.fonctionnement-list > li .wrapper-img-fonctionnement:before {
+  content: "";
+  display: block;
+  width: auto;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  left: 10px;
+  margin: -3px 0 0 0;
+  background: url("../layoutImg/dashed-separator.png") repeat-x 0 0;
+}
+.fonctionnement-list > li .wrapper-img-fonctionnement:after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 10px;
+  margin: -3px 0 0 0;
+  background: url("../layoutImg/dashed-separator.png") repeat-x 0 0;
 }
 .fonctionnement-list > li .wrapper-img-fonctionnement img {
   display: block;
