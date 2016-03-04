@@ -2515,6 +2515,11 @@ footer ul > li:last-child:before {
     padding: 0;
     text-align: center;
     margin: 30px 0 0 0;
+    padding-bottom: 30px;
+  }
+  .wrapper-avantages #btn-pourquoi {
+    display: block;
+    margin: 0;
   }
   .steps > li {
     font-family: 'Texta-Light', sans-serif;
@@ -2558,6 +2563,7 @@ footer ul > li:last-child:before {
     text-align: left;
     border: 1px solid #b0b0a8;
     padding: 20px;
+    margin: 0 0 20px 0;
     box-sizing: border-box;
   }
   .list-avantages > li .wrapper-txt-avantage {
