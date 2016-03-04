@@ -2268,6 +2268,78 @@ a.logo-facilicar {
   text-align: center;
   width: 33.33%;
   box-sizing: border-box;
+  padding: 0;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1.429em;
+  text-rendering: optimizeLegibility;
+  color: #6d6d67;
+}
+.fonctionnement-list > li:first-child {
+  padding-right: 34px;
+}
+.fonctionnement-list > li:nth-child(2) {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+.fonctionnement-list > li:last-child {
+  padding-left: 34px;
+}
+.fonctionnement-list > li .wrapper-img-fonctionnement {
+  height: 85px;
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.fonctionnement-list > li .wrapper-img-fonctionnement .arrow-separator {
+  display: block;
+  width: 47px;
+  height: 38px;
+  background: url("../layoutImg/arrow-separator.png") no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  right: -46px;
+  margin: -19px 0 0 0;
+}
+.fonctionnement-list > li .wrapper-img-fonctionnement img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.fonctionnement-list > li .content-etape-fonctionnement {
+  display: block;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  margin: 28px 0 0 0;
+  padding: 20px 10px 35px 10px;
+}
+.fonctionnement-list > li .content-etape-fonctionnement:before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 16px;
+  background: url("../layoutImg/arrow-block.png") no-repeat 0 0;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  margin: 0 0 0 -15px;
+}
+.fonctionnement-list > li .content-etape-fonctionnement strong {
+  display: block;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #e38c00;
+  margin: 0 0 10px 0;
+}
+.fonctionnement-list > li .content-etape-fonctionnement p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  color: #333333;
 }
 /* @end */
 /* @group Footer */

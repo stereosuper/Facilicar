@@ -406,6 +406,70 @@ a.logo-facilicar{
 		text-align: center;
 		width: 33.33%;
 		box-sizing: border-box;
+		padding: 0;
+		.texta-bold(1.429em);
+		color: @theme-gris3;
+		&:first-child{
+			padding-right: 34px;
+		}
+		&:nth-child(2){
+			padding-left: 17px;
+			padding-right: 17px;
+		}
+		&:last-child{
+			padding-left: 34px;
+		}
+		.wrapper-img-fonctionnement{
+			height: 85px;
+			margin: 20px 0 0 0;
+			position: relative;
+			.arrow-separator{
+				display: block;
+				width: 47px;
+				height: 38px;
+				background: url("../layoutImg/arrow-separator.png") no-repeat 0 0;
+				position: absolute;
+				top: 50%;
+				//right: -75px;
+				right: -46px;
+				margin: -19px 0 0 0;
+			}
+			img{
+				display: block;
+				max-width: 100%;
+				height: auto;
+				margin: 0 auto;
+			}
+		}
+		.content-etape-fonctionnement{
+			display: block;
+			position: relative;
+			background: #fff;
+			box-sizing: border-box;
+			margin: 28px 0 0 0;
+			padding: 20px 10px 35px 10px;
+			&:before{
+				content: "";
+				display: block;
+				width: 31px;
+				height: 16px;
+				background: url("../layoutImg/arrow-block.png") no-repeat 0 0;
+				position: absolute;
+				top: -16px;
+				left: 50%;
+				margin: 0 0 0 -15px;
+			}
+			strong{
+				display: block;
+				.texta-black(1em);
+				color: @theme-secondary;
+				margin: 0 0 10px 0;
+			}
+			p{
+				.texta-light(1em);
+				color: @theme-noir;
+			}
+		}
 	}
 }
 /* @end */
