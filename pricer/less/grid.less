@@ -2,6 +2,10 @@
 body{
 	background: #fff;
 	color: @theme-noir;
+	.texta(14px);
+}
+b, strong{
+	font-weight: normal;
 }
 .wrap{
 	background: #fff;
@@ -36,6 +40,9 @@ h3{
 h4{
 	.texta-bold(1.429em);
 	text-align: center;
+}
+p{
+	.texta-light(1.286em);
 }
 .wrapper-align-middle, .wrapper-align-top{
 	display: table;
@@ -212,7 +219,7 @@ a.logo-facilicar{
 	padding: 30px;
 	border: 1px solid @theme-gris2;
 	#btn-pourquoi{
-		font-size: 1.2em;
+		font-size: 1.429em;
 		margin-left: -8px;
 	}
 }
@@ -272,6 +279,9 @@ a.logo-facilicar{
 	text-align: left;
 	input, select{
 		margin: 4px 0;
+	}
+	> p{
+		.texta-light(1.286em);
 	}
 	button{
 		-webkit-appearance: none;
@@ -426,6 +436,9 @@ a.logo-facilicar{
 		padding: 0;
 		.texta-bold(1.429em);
 		color: @theme-gris3;
+		p{
+			font-size: 1em;
+		}
 		&:first-child{
 			padding-right: 34px;
 			.wrapper-img-fonctionnement{

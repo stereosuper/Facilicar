@@ -1830,6 +1830,13 @@ a:focus {
 body {
   background: #fff;
   color: #333333;
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+}
+b,
+strong {
+  font-weight: normal;
 }
 .wrap {
   background: #fff;
@@ -1881,6 +1888,11 @@ h4 {
   font-size: 1.429em;
   text-rendering: optimizeLegibility;
   text-align: center;
+}
+p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.286em;
+  text-rendering: optimizeLegibility;
 }
 .wrapper-align-middle,
 .wrapper-align-top {
@@ -2058,7 +2070,7 @@ a.logo-facilicar {
   border: 1px solid #b0b0a8;
 }
 .wrapper-avantages #btn-pourquoi {
-  font-size: 1.2em;
+  font-size: 1.429em;
   margin-left: -8px;
 }
 .list-avantages {
@@ -2126,6 +2138,11 @@ a.logo-facilicar {
 .formulaire input,
 .formulaire select {
   margin: 4px 0;
+}
+.formulaire > p {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.286em;
+  text-rendering: optimizeLegibility;
 }
 .formulaire button {
   -webkit-appearance: none;
@@ -2290,6 +2307,9 @@ a.logo-facilicar {
   font-size: 1.429em;
   text-rendering: optimizeLegibility;
   color: #6d6d67;
+}
+.fonctionnement-list > li p {
+  font-size: 1em;
 }
 .fonctionnement-list > li:first-child {
   padding-right: 34px;
