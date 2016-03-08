@@ -1861,7 +1861,7 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  margin: 30px 0 60px 0;
+  margin: 0 0 60px 0;
   position: relative;
 }
 h2 {
@@ -1873,6 +1873,11 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   margin: 0 0 5px 0;
+  line-height: 1em;
+}
+h2.big {
+  font-size: 2.571em;
+  line-height: 0.9em;
 }
 h3 {
   font-family: 'Texta-Black', sans-serif;
@@ -1889,10 +1894,20 @@ h4 {
   text-rendering: optimizeLegibility;
   text-align: center;
 }
+h4.big {
+  font-size: 1.714em;
+  margin: 8px 0;
+}
 p {
   font-family: 'Texta-Light', sans-serif;
   font-size: 1.286em;
   text-rendering: optimizeLegibility;
+}
+p.big {
+  font-size: 1.429em;
+}
+.txt-centered {
+  text-align: center;
 }
 .wrapper-align-middle,
 .wrapper-align-top {
@@ -2054,6 +2069,7 @@ a.logo-facilicar {
 }
 #pricer {
   overflow: hidden;
+  padding: 45px 0 52px 0;
 }
 #pricer .container {
   position: relative;
@@ -2073,6 +2089,15 @@ a.logo-facilicar {
   font-size: 1.429em;
   margin-left: -8px;
 }
+.wrapper-avantages-inline {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #b0b0a8;
+  box-sizing: border-box;
+  padding: 36px;
+  margin: 30px 0 0 0;
+}
 .list-avantages {
   display: block;
   width: 100%;
@@ -2080,6 +2105,33 @@ a.logo-facilicar {
   list-style-type: none;
   margin: 0 0 45px 0;
   padding: 0;
+}
+.wrapper-avantages-inline .list-avantages {
+  margin: 0;
+}
+.wrapper-avantages-inline .list-avantages > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+.wrapper-avantages-inline .list-avantages > li .wrapper-img-avantage {
+  left: 30px;
+}
+.wrapper-avantages-inline .list-avantages > li:first-child {
+  margin: 0;
+  padding-left: 0;
+}
+.wrapper-avantages-inline .list-avantages > li:first-child .wrapper-img-avantage {
+  left: 0;
+}
+.wrapper-avantages-inline .list-avantages > li:last-child {
+  padding-right: 0;
+}
+.wrapper-avantages-inline .list-avantages > li .wrapper-txt-avantage {
+  padding: 0 0 0 60px;
 }
 .list-avantages > li {
   display: block;
@@ -2125,7 +2177,6 @@ a.logo-facilicar {
   margin: 0 0 6px 0;
 }
 .container-pricer {
-  padding-bottom: 52px;
   position: relative;
 }
 .formulaire {
@@ -2420,6 +2471,16 @@ a.logo-facilicar {
   text-rendering: optimizeLegibility;
   color: #333333;
 }
+.trustedshops {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0 0 0;
+}
+.small-car {
+  display: inline-block;
+  vertical-align: top;
+  margin: 2px 8px 0 0;
+}
 /* @end */
 /* @group Footer */
 footer {
@@ -2506,12 +2567,15 @@ footer ul > li:last-child:before {
 }
 @media (max-width: 767px) {
   h1 {
-    margin: 20px 0 30px 0;
+    margin: 0 0 30px 0;
     font-size: 2.2em;
     line-height: 1em;
   }
   h2 {
     font-size: 1.8em;
+  }
+  h2.big {
+    font-size: 2em;
   }
   h3 {
     font-size: 1.6em;
@@ -2520,9 +2584,14 @@ footer ul > li:last-child:before {
   h4 {
     font-size: 1.2em;
   }
+  h4.big {
+    font-size: 1.3em;
+  }
+  p.big {
+    font-size: 1.286em;
+  }
   .container-pricer {
     display: block;
-    padding-bottom: 0;
   }
   .wrapper-pricer {
     display: block;
@@ -2535,11 +2604,28 @@ footer ul > li:last-child:before {
     padding: 0;
     text-align: center;
     margin: 30px 0 0 0;
-    padding-bottom: 30px;
   }
   .wrapper-avantages #btn-pourquoi {
     display: block;
     margin: 0;
+  }
+  .wrapper-avantages-inline {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 0;
+    text-align: center;
+    margin: 30px 0 0 0;
+  }
+  .wrapper-avantages-inline .list-avantages > li {
+    display: block;
+    margin: 24px 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  .wrapper-avantages-inline .list-avantages > li .wrapper-img-avantage {
+    left: 0;
   }
   .steps > li {
     font-family: 'Texta-Light', sans-serif;
@@ -2576,7 +2662,8 @@ footer ul > li:last-child:before {
     font-size: 1em;
     text-rendering: optimizeLegibility;
   }
-  .list-avantages {
+  .list-avantages,
+  .wrapper-avantages-inline .list-avantages {
     display: inline-block;
     vertical-align: top;
     width: auto;
@@ -2586,13 +2673,16 @@ footer ul > li:last-child:before {
     margin: 0 0 20px 0;
     box-sizing: border-box;
   }
-  .list-avantages > li .wrapper-txt-avantage {
+  .list-avantages > li .wrapper-txt-avantage,
+  .wrapper-avantages-inline .list-avantages > li .wrapper-txt-avantage {
     padding: 0 0 0 60px;
   }
-  .list-avantages > li .wrapper-txt-avantage p {
+  .list-avantages > li .wrapper-txt-avantage p,
+  .wrapper-avantages-inline .list-avantages > li .wrapper-txt-avantage p {
     font-size: 1.3em;
   }
-  .list-avantages > li .wrapper-txt-avantage p strong {
+  .list-avantages > li .wrapper-txt-avantage p strong,
+  .wrapper-avantages-inline .list-avantages > li .wrapper-txt-avantage p strong {
     font-size: 1.2em;
   }
   .fonctionnement-list {
