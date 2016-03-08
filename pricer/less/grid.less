@@ -56,6 +56,33 @@ p{
 		font-size: 1.429em;
 	}
 }
+blockquote{
+	display: block;
+	width: 100%;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 14px;
+	margin: 0;
+	text-align: center;
+	.texta-light-italic(1.143em);
+	line-height: 1.2em;
+	&:before{
+		content: "«";
+		.texta-black(1.857em);
+		color: @theme-secondary;
+		position: absolute;
+		top: -6px;
+		left: 0;
+	}
+	&:after{
+		content: "»";
+		.texta-black(1.857em);
+		color: @theme-secondary;
+		position: absolute;
+		bottom: 2px;
+		right: 0;
+	}
+}
 .txt-centered{
     text-align: center;
 }
@@ -242,10 +269,20 @@ a.logo-facilicar{
 	box-sizing: border-box;
 	padding: 30px;
 	border: 1px solid @theme-gris2;
+	img{
+		max-width: 100%;
+	}
 	#btn-pourquoi{
 		font-size: 1.429em;
 		margin-left: -8px;
 	}
+	&.no-padding{
+		padding: 0;
+	}
+}
+.wrapper-txt-avantages{
+	box-sizing: border-box;
+	padding: 20px;
 }
 .wrapper-avantages-inline{
 	display: block;
@@ -617,7 +654,22 @@ a.logo-facilicar{
 .small-car{
 	display: inline-block;
 	vertical-align: top;
-	margin: 2px 8px 0 0;
+	margin: 2px 6px 0 0;
+}
+.info{
+	display: inline-block;
+	vertical-align: top;
+	margin: -2px 6px 0 0;
+}
+.desc-citation{
+	.texta-light(1.429em);
+	text-transform: uppercase;
+	margin: 0 0 12px 0;
+	text-align: left;
+	strong{
+		text-transform: none;
+		.texta-bold(1em);
+	}
 }
 /* @end */
 
@@ -762,6 +814,11 @@ footer{
 		#btn-pourquoi{
 			display: block;
 			margin: 0;
+		}
+		&.no-padding{
+			border: 1px solid #b0b0a8;
+			max-width: 307px;
+			margin: 30px auto 0 auto;
 		}
 	}
 	.wrapper-avantages-inline{
