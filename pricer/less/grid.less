@@ -55,6 +55,9 @@ p{
 	&.big{
 		font-size: 1.429em;
 	}
+	&.small{
+		font-size: 0.857em;
+	}
 }
 blockquote{
 	display: block;
@@ -278,6 +281,21 @@ a.logo-facilicar{
 	}
 	&.no-padding{
 		padding: 0;
+	}
+	&.no-border{
+		border: none;
+	}
+}
+.content-wrapper-avantages{
+	display: block;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding: 20px;
+	border: 1px solid @theme-gris2;
+	margin: 0 0 22px 0;
+	&:last-child{
+		margin-bottom: 0;
 	}
 }
 .wrapper-txt-avantages{
@@ -659,7 +677,12 @@ a.logo-facilicar{
 .info{
 	display: inline-block;
 	vertical-align: top;
-	margin: -2px 6px 0 0;
+	margin: -2px 4px 0 0;
+}
+.rdv{
+	display: inline-block;
+	vertical-align: top;
+	margin: 7px 4px 0 0;
 }
 .desc-citation{
 	.texta-light(1.429em);
