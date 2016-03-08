@@ -2056,6 +2056,22 @@ a.logo-facilicar {
 .steps > li a.is-active:before {
   border-color: #e38c00;
 }
+.steps > li > div.is-closed:before,
+.steps > li a.is-closed:before {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e922";
+  font-size: 12px;
+  line-height: 28px;
+}
 /* @end */
 /* @group Pricer */
 #illus-pricer {
