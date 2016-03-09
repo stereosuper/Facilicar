@@ -84,56 +84,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                         <!-- **** FORMULAIRE **** -->                        
                         <div class="formulaire">
-                             <form action="coordonnees" method="post" id="pricer_step_2" role="form" class="">          
-                                <input type="hidden" id="s_year" name="s_year" value="2015">
-                                <input type="hidden" id="s_brand" name="s_brand" value="1">
-                                <input type="hidden" id="s_model" name="s_model" value="5280">
-                                <input type="hidden" id="pricer_id" name="pricer_id" value="165845">
-                                                    
-                                <!-- **** MESSAGE D'ERREUR **** -->                 
-                                <div class="mess-error hide"></div>
-                                
-                                <div class="form-100">
-                                   <div class="first">
-                                        <select name="s_engine" id="s_engine" class="form-select" onchange="javascript:load_search_fields('s_motorisation'); javascript:load_valid_form('s_engine'); javascript:push_select_data('s_engine');" required="required"><option value="0">1- Sélectionner l'énergie</option><option value="00100003" title="DIESEL">Diesel</option></select>  
-                                   </div>
-                                   <div>
-                                        <select name="s_motorisation" id="s_motorisation" class="form-select" onchange="javascript:load_search_fields('s_finition'); javascript:load_valid_form('s_motorisation'); javascript:push_select_data('s_motorisation');" required="required" disabled="disabled">
-                                            <option value="0">2- Sélectionner la version</option>
-                                        </select>
-                                   </div>
-                                </div>
-                                <div class="form-100">
-                                   <div>
-                                        <select name="s_finition" id="s_finition" class="form-select" onchange="javascript:load_search_results('0'); javascript:load_valid_form('s_finition'); javascript:push_select_data('s_finition');" required="required" disabled="disabled">
-                                            <option value="0">3- Sélectionner la finition</option>
-                                        </select>
-                                   </div>
-                                   <div>
-                                      <select name="s_km" id="s_km" class="form-select" required="required" onchange="javascript:load_valid_form('s_km'); javascript:push_select_data('s_km');" disabled="disabled">
-                                            <option value="0">4- Sélectionner le kilométrage</option>
-                                            <option value="2500">0 à 5 000 km</option>
-                                            <option value="7500">5 000 à 10 000 km</option>
-                                            <option value="15000">10 000 à 20 000 km</option>
-                                            <option value="25000">20 000 à 30 000 km</option>
-                                            <option value="40000">30 000 à 50 000 km</option>
-                                            <option value="60000">50 000 à 70 000 km</option>
-                                            <option value="80000">70 000 à 90 000 km</option>
-                                            <option value="100000">90 000 à 110 000 km</option>
-                                            <option value="120000">110 000 à 130 000 km</option>
-                                            <option value="140000">130 000 à 150 000 km</option>
-                                            <option value="175000">150 000 à 200 000 km</option>
-                                            <option value="200000">+ 200 000 km</option>
-                                      </select>
-                                   </div>
-                                </div>
-                                <button class="button-arrow button-primary bg-primary submit-base big" type="submit" id="valid">
-                                    <span class="arrow-button">›</span><span class="txt-button">J'estime ma voiture</span><span class="txt-hover-button" data-hover="J'estime ma voiture"></span>
-                                </button>
-                                <div id="results" style="display: none;"></div>
-                             </form>
-                          </div>
+                           <form action="estimation" method="post" id="pricer_step_3" role="form" class="">         
+                              <input type="hidden" id="s_year" name="s_year" value="2015">
+                              <input type="hidden" id="s_brand" name="s_brand" value="21">
+                              <input type="hidden" id="s_model" name="s_model" value="5868">
+                              <input type="hidden" id="pricer_id" name="pricer_id" value="167249"> 
+                              <input type="hidden" id="s_km" name="s_km" value="15000"> 
+                              <input type="hidden" id="s_natcode" name="s_natcode" value="167466"> 
+                           
+                           
+                              <!-- **** MESSAGE D'ERREUR **** -->                        
+                              <div class="mess-error hide">
+                                 <p>Message d'erreur</p>
+                              </div>
 
+                              <div class="form-100">
+                                 <div>
+                                    <input type="text" name="s_email" id="s_email" class="" placeholder="Votre e-mail" maxlength="100" onchange="javascript:load_valid_form_input('s_email');">
+                                 <span style="opacity: 1; left: 616px; top: 17.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAECSURBVHjapNK9K8UBFIfxD12im8LEYLgZjcpgUFgUCUlZTJRkMpqUxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqdvvpvnim0+mcZ/ieU9U6tySBNEbQjBpMoANZnGIdl4VLKcm8YCPqbgzhAT1ox1mSrFpxjtCHLdygH5tJgymlMYhhtKH+r6FishYsYBpN0dvFHu5wi9okWToC/0AmcpqM+pd7PKMRDajDNb5xlS97Qyem0BsL8IT9uOAhXpGLvL/wGXO5fFkOO7FwHvJtLOOilGALM8vE1d6xiFVlkP8aXTjAI8bKFeXLBuJ3shjFiQpIYR6zWMFaXFOlsnHM4Ng/+RkAdVE2mEeC7WYAAAAASUVORK5CYII=&quot;); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
+                                 <div>
+                                 <!-- pattern="([A-Z]+[A-Z]?\-)?[0-9]{1,2} ?[0-9]{3}" --> 
+                                 <!--maxlength="5" -->
+                                    <input type="tel" name="s_cp" id="s_cp" class="" placeholder="Votre code postal" onkeyup="javascript:verif(this);" onchange="javascript:load_valid_form_input('s_cp');" maxlength="5">
+                                 <span style="opacity: 1; left: 616px; top: 17.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAECSURBVHjapNK9K8UBFIfxD12im8LEYLgZjcpgUFgUCUlZTJRkMpqUxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqdvvpvnim0+mcZ/ieU9U6tySBNEbQjBpMoANZnGIdl4VLKcm8YCPqbgzhAT1ox1mSrFpxjtCHLdygH5tJgymlMYhhtKH+r6FishYsYBpN0dvFHu5wi9okWToC/0AmcpqM+pd7PKMRDajDNb5xlS97Qyem0BsL8IT9uOAhXpGLvL/wGXO5fFkOO7FwHvJtLOOilGALM8vE1d6xiFVlkP8aXTjAI8bKFeXLBuJ3shjFiQpIYR6zWMFaXFOlsnHM4Ng/+RkAdVE2mEeC7WYAAAAASUVORK5CYII=&quot;); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
+                              </div>
+                              <div class="form-100">
+                                 <div id="form-tel">
+                                    <input type="tel" name="s_telephone" id="s_telephone" class="" onkeyup="javascript:verif(this);" placeholder="Votre numéro de portable" maxlength="10" onchange="javascript:load_valid_form_input('s_telephone');">
+                                 <span style="opacity: 1; left: 616px; top: 17.5px; width: 19px; min-width: 19px; height: 13px; position: absolute; border: none; display: inline; visibility: visible; z-index: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAANCAYAAABLjFUnAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarZG9SsNQGIaf04qCQxAJbsLBQVzEn61j0pYiONQokmRrkkMVbXI4Of508ia8CAcXR0HvoOIgOHkJboI4ODgECU4i+EzP9w4vL3zQWPE6frcxB6PcmqDnyzCK5cwj0zQBYJCW2uv3twHyIlf8RMD7MwLgadXr+F3+xmyqjQU+gc1MlSmIdSA7s9qCuATc5EhbEFeAa/aCNog7wBlWPgGcpPIXwDFhFIN4BdxhGMXQAHCTyl3AtercArQLPTaHwwMrN1qtlvSyIlFyd1xaNSrlVp4WRhdmYFUGVPuq3Z7Wx0oGPZ//JYxiWdnbDgIQC5M6q0lPzOn3D8TD73fdMb4HL4Cp2zrb/4DrNVhs1tnyEsxfwI3+AvOlUD7FY+VVAAAAIGNIUk0AAHolAACAgwAA9CUAAITRAABtXwAA6GwAADyLAAAbWIPnB3gAAAECSURBVHjapNK9K8UBFIfxD12im8LEYLgZjcpgUFgUCUlZTJRkMpqUxR+hDFIGhWwGwy0MFiUxSCbZ5DXiYjnqdvvpvnim0+mcZ/ieU9U6tySBNEbQjBpMoANZnGIdl4VLKcm8YCPqbgzhAT1ox1mSrFpxjtCHLdygH5tJgymlMYhhtKH+r6FishYsYBpN0dvFHu5wi9okWToC/0AmcpqM+pd7PKMRDajDNb5xlS97Qyem0BsL8IT9uOAhXpGLvL/wGXO5fFkOO7FwHvJtLOOilGALM8vE1d6xiFVlkP8aXTjAI8bKFeXLBuJ3shjFiQpIYR6zWMFaXFOlsnHM4Ng/+RkAdVE2mEeC7WYAAAAASUVORK5CYII=&quot;); background-position: 0px 0px; background-repeat: no-repeat;"></span></div>
+                              </div>
+                              <button class="button-arrow button-primary bg-primary submit-base big" type="submit" id="valid">
+                                  <span class="arrow-button">›</span><span class="txt-button">J'estime ma voiture</span><span class="txt-hover-button" data-hover="J'estime ma voiture"></span>
+                              </button>
+                           <input type="hidden" id="client-id" name="client-id" value="934585192.1456931157"></form>
+                        </div>
                     </div><!--
                     --><div class="content-align-top wrapper-avantages txt-centered no-padding border-responsive">
                         <img src="img/experience-1.jpg">
