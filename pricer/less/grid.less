@@ -58,6 +58,9 @@ p{
 	&.small{
 		font-size: 0.857em;
 	}
+	&.padding-top{
+		padding-top: 30px;
+	}
 }
 blockquote{
 	display: block;
@@ -297,6 +300,9 @@ a.logo-facilicar{
 	&:last-child{
 		margin-bottom: 0;
 	}
+	h3{
+		color: @theme-noir;
+	}
 }
 .wrapper-txt-avantages{
 	box-sizing: border-box;
@@ -528,6 +534,59 @@ a.logo-facilicar{
 	    &:focus{
 	    	outline: none;
 	    }
+	}
+}
+table.estimation{
+	.texta-light(1em);
+	text-transform: uppercase;
+	margin: 10px 0 10px 0;
+	tr{
+		td{
+			vertical-align: bottom;
+			padding: 4px 16px 4px 0;
+			&:last-child{
+				padding-right: 0;
+			}
+		}
+	}
+	strong{
+		.texta-black(1.857em);
+		color: @theme-primary;
+		line-height: 0.6em;
+	}
+}
+ul.detail-estimation{
+	> li{
+		.texta-light(1em);
+		margin: 2px 0;
+		strong{
+			.texta-bold(1em);
+		}
+	}
+}
+p{
+	&.validite{
+		.texta-black(1em);
+		color: @theme-secondary;
+	}
+}
+a.btn-conseiller{
+	.texta-light(1.143em);
+	strong{
+		display: block;
+		.texta-bold(1em);
+		margin: 0 0 5px 0;
+	}
+	.tel-btn{
+		display: block;
+		.texta-black(2em);
+		margin: 2px 0 0 0;
+		&:before{
+			.icon-font;
+			content: "\e804";
+			font-size: 20px;
+			margin: 0 10px 0 0;
+		}
 	}
 }
 /* @end */
@@ -839,9 +898,17 @@ footer{
 			margin: 0;
 		}
 		&.no-padding{
-			border: 1px solid #b0b0a8;
 			max-width: 307px;
 			margin: 30px auto 0 auto;
+		}
+		&.border-responsive{
+			border: 1px solid #b0b0a8;
+		}
+		.content-wrapper-avantages{
+			text-align: left;
+			&.txt-centered{
+				text-align: center;
+			}
 		}
 	}
 	.wrapper-avantages-inline{

@@ -1909,6 +1909,9 @@ p.big {
 p.small {
   font-size: 0.857em;
 }
+p.padding-top {
+  padding-top: 30px;
+}
 blockquote {
   display: block;
   width: 100%;
@@ -2168,6 +2171,9 @@ a.logo-facilicar {
 .content-wrapper-avantages:last-child {
   margin-bottom: 0;
 }
+.content-wrapper-avantages h3 {
+  color: #333333;
+}
 .wrapper-txt-avantages {
   box-sizing: border-box;
   padding: 20px;
@@ -2418,6 +2424,87 @@ a.logo-facilicar {
 }
 .formulaire button:focus {
   outline: none;
+}
+table.estimation {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+  margin: 10px 0 10px 0;
+}
+table.estimation tr td {
+  vertical-align: bottom;
+  padding: 4px 16px 4px 0;
+}
+table.estimation tr td:last-child {
+  padding-right: 0;
+}
+table.estimation strong {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1.857em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #009cc4;
+  line-height: 0.6em;
+}
+ul.detail-estimation > li {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  margin: 2px 0;
+}
+ul.detail-estimation > li strong {
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+}
+p.validite {
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 1em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #e38c00;
+}
+a.btn-conseiller {
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.143em;
+  text-rendering: optimizeLegibility;
+}
+a.btn-conseiller strong {
+  display: block;
+  font-family: 'Texta-Bold', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  margin: 0 0 5px 0;
+}
+a.btn-conseiller .tel-btn {
+  display: block;
+  font-family: 'Texta-Black', sans-serif;
+  font-size: 2em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 2px 0 0 0;
+}
+a.btn-conseiller .tel-btn:before {
+  font-family: 'facilicar';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\e804";
+  font-size: 20px;
+  margin: 0 10px 0 0;
 }
 /* @end */
 /* @group Fonctionnement */
@@ -2717,9 +2804,17 @@ footer ul > li:last-child:before {
     margin: 0;
   }
   .wrapper-avantages.no-padding {
-    border: 1px solid #b0b0a8;
     max-width: 307px;
     margin: 30px auto 0 auto;
+  }
+  .wrapper-avantages.border-responsive {
+    border: 1px solid #b0b0a8;
+  }
+  .wrapper-avantages .content-wrapper-avantages {
+    text-align: left;
+  }
+  .wrapper-avantages .content-wrapper-avantages.txt-centered {
+    text-align: center;
   }
   .wrapper-avantages-inline {
     display: block;
