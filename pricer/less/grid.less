@@ -27,6 +27,9 @@ h1{
 	.texta-black(3em);
 	margin: 0 0 60px 0;
 	position: relative;
+	&.small{
+		.texta-black(1.857em);
+	}
 }
 h2{
 	text-align: center;
@@ -753,6 +756,44 @@ a.btn-conseiller{
 		.texta-bold(1em);
 	}
 }
+.bloc-simple{
+	display: block;
+	position: relative;
+	width: 100%;
+	max-width: 630px;
+	box-sizing: border-box;
+	margin: 0 0 0 70px;
+	padding: 40px 100px;
+	border: 1px solid @theme-gris2;
+	h1{
+		text-align: left;
+		margin: 0 0 25px 0;
+		&.has-smiley{
+			box-sizing: border-box;
+			padding-left: 50px;
+			position: relative;
+			img{
+				position: absolute;
+				top: 50%;
+				left: 0;
+				margin-top: -16px;
+			}
+		}
+	}
+	p{
+		margin: 20px 0;
+		.texta-light(1.143em);
+		line-height: 1.3em;
+		strong{
+			.texta-bold(1em);
+		}
+	}
+	address{
+		.texta-bold(1.143em);
+		font-style: normal;
+		line-height: 1.3em;
+	}
+}
 /* @end */
 
 /* @group Footer */
@@ -819,6 +860,9 @@ footer{
 	#illus-pricer{
 		display: none;
 	}
+	.bloc-simple{
+		margin-left: 0;
+	}
 }
 
 @media (max-width: 1150px) {
@@ -857,6 +901,9 @@ footer{
 		margin: 0 0 30px 0;
 		font-size: 2.2em;
 		line-height: 1em;
+		&.small{
+			font-size: 1.5em;
+		}
 	}
 	h2{
 		font-size: 1.8em;
@@ -1025,6 +1072,14 @@ footer{
 				strong{
 					margin: 0;
 				}
+			}
+		}
+	}
+	.bloc-simple{
+		padding: 20px;
+		h1{
+			&.has-smiley{
+				padding-left: 45px;
 			}
 		}
 	}
