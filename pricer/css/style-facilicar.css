@@ -2279,6 +2279,34 @@ a.logo-facilicar {
 #s_date_rdv {
   background: url(../img/calendrier.png) 95% / 20px no-repeat #F5F5F5 !important;
 }
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  color: #333333;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  color: #333333;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  color: #333333;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1em;
+  text-rendering: optimizeLegibility;
+  color: #333333;
+}
 .formulaire {
   background: none;
   padding: 0;
@@ -2291,6 +2319,10 @@ a.logo-facilicar {
   margin: 4px 0;
   border-radius: 4px;
   padding-right: 10px;
+  color: #272727;
+  font-family: 'Texta-Light', sans-serif;
+  font-size: 1.143em;
+  text-rendering: optimizeLegibility;
 }
 .formulaire > p {
   font-family: 'Texta-Light', sans-serif;
@@ -2807,10 +2839,6 @@ footer ul > li:last-child:before {
   select {
     background: url(../img/form-arrow.png) 95% / 14px no-repeat #fff !important;
     background-size: 20px 20px;
-    color: #272727;
-    font-family: 'Texta-Light', sans-serif;
-    font-size: 1.143em;
-    text-rendering: optimizeLegibility;
     appearance: none !important;
   }
   select:disabled {

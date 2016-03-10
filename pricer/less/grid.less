@@ -397,6 +397,22 @@ a.logo-facilicar{
 #s_date_rdv{
 	background: ~"url(../img/calendrier.png) 95% / 20px no-repeat #F5F5F5 !important";
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  .texta-light(1em);
+  color: @theme-noir;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  .texta-light(1em);
+  color: @theme-noir;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  .texta-light(1em);
+  color: @theme-noir;
+}
+:-moz-placeholder { /* Firefox 18- */
+  .texta-light(1em);
+  color: @theme-noir;
+}
 .formulaire{
 	background: none;
 	padding: 0;
@@ -407,6 +423,8 @@ a.logo-facilicar{
 		margin: 4px 0;
 		border-radius: 4px;
 		padding-right: 10px;
+		color: #272727; 
+		.texta-light(1.143em);
 	}
 	> p{
 		.texta-light(1.286em);
@@ -875,9 +893,7 @@ footer{
 @media screen and (min-width: 1330px) {
 	select{
 		background: ~"url(../img/form-arrow.png) 95% / 14px no-repeat #fff !important";
-		background-size: 20px 20px; 
-		color: #272727; 
-		.texta-light(1.143em);
+		background-size: 20px 20px;
 		appearance: none !important;
 		&:disabled{
 			background: ~"url(../img/form-arrow.png) 95% / 14px no-repeat #D8D8D4 !important";
