@@ -1914,6 +1914,10 @@ p {
 p.big {
   font-size: 1.429em;
 }
+p.medium {
+  font-size: 1.143em;
+  line-height: 1.3em;
+}
 p.small {
   font-size: 0.857em;
 }
@@ -2867,7 +2871,11 @@ footer ul > li:last-child:before {
     display: none;
   }
   .bloc-simple {
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .centered-responsive {
+    text-align: center;
   }
 }
 @media (max-width: 979px) {
@@ -2946,6 +2954,36 @@ footer ul > li:last-child:before {
     text-align: left;
   }
   .wrapper-avantages .content-wrapper-avantages.txt-centered {
+    text-align: center;
+  }
+  .wrapper-avantages#wrapper-avantages-rdv {
+    max-width: none;
+  }
+  .wrapper-avantages#wrapper-avantages-rdv .content-wrapper-avantages {
+    display: inline-block;
+    vertical-align: middle;
+    width: 49%;
+  }
+  .wrapper-avantages#wrapper-avantages-rdv .content-wrapper-avantages:first-child {
+    margin-right: 1%;
+  }
+  .wrapper-avantages#wrapper-avantages-rdv .content-wrapper-avantages:last-child {
+    margin-left: 1%;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage {
+    max-width: none;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage .wrapper-txt-avantages {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage .desc-citation {
     text-align: center;
   }
   .wrapper-avantages-inline {
@@ -3061,7 +3099,7 @@ footer ul > li:last-child:before {
   .fonctionnement-list > li .content-etape-fonctionnement {
     padding: 20px 10px;
     max-width: 400px;
-    margin: 18px auto 0 auto;
+    margin: 23px auto 0 auto;
   }
   .fonctionnement-list > li .content-etape-fonctionnement strong {
     margin: 0;
@@ -3091,6 +3129,35 @@ footer ul > li:last-child:before {
   .size-40-60 > li:last-child {
     padding-left: 0;
     width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .wrapper-avantages#wrapper-avantages-rdv {
+    max-width: 307px;
+  }
+  .wrapper-avantages#wrapper-avantages-rdv .content-wrapper-avantages {
+    display: block;
+    width: 100%;
+  }
+  .wrapper-avantages#wrapper-avantages-rdv .content-wrapper-avantages:first-child {
+    margin-right: 0;
+  }
+  .wrapper-avantages#wrapper-avantages-rdv .content-wrapper-avantages:last-child {
+    margin-left: 0;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage {
+    max-width: 307px;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage img {
+    display: block;
+    width: 100%;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage .wrapper-txt-avantages {
+    display: block;
+    width: 100%;
+  }
+  .wrapper-avantages#wrapper-avantages-temoignage .desc-citation {
+    text-align: center;
   }
 }
 /* retina */

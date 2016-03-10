@@ -58,6 +58,10 @@ p{
 	&.big{
 		font-size: 1.429em;
 	}
+	&.medium{
+		font-size: 1.143em;
+		line-height: 1.3em;
+	}
 	&.small{
 		font-size: 0.857em;
 	}
@@ -922,7 +926,11 @@ footer{
 		display: none;
 	}
 	.bloc-simple{
-		margin-left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.centered-responsive{
+		text-align: center;
 	}
 }
 
@@ -1015,6 +1023,36 @@ footer{
 		.content-wrapper-avantages{
 			text-align: left;
 			&.txt-centered{
+				text-align: center;
+			}
+		}
+		&#wrapper-avantages-rdv{
+			max-width: none;
+			.content-wrapper-avantages{
+				display: inline-block;
+				vertical-align: middle;
+				width: 49%;
+				&:first-child{
+					margin-right: 1%;
+				}
+				&:last-child{
+					margin-left: 1%;
+				}
+			}
+		}
+		&#wrapper-avantages-temoignage{
+			max-width: none;
+			img{
+				display: inline-block;
+				vertical-align: middle;
+				width: 50%;
+			}
+			.wrapper-txt-avantages{
+				display: inline-block;
+				vertical-align: middle;
+				width: 50%;
+			}
+			.desc-citation{
 				text-align: center;
 			}
 		}
@@ -1129,7 +1167,7 @@ footer{
 			.content-etape-fonctionnement{
 				padding: 20px 10px;
 				max-width: 400px;
-				margin: 18px auto 0 auto;
+				margin: 23px auto 0 auto;
 				strong{
 					margin: 0;
 				}
@@ -1164,6 +1202,35 @@ footer{
 			}
 			&:last-child{
 				padding-left: 0;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.wrapper-avantages{
+		&#wrapper-avantages-rdv{
+			max-width: 307px;
+			.content-wrapper-avantages{
+				display: block;
+				width: 100%;
+				&:first-child{
+					margin-right: 0;
+				}
+				&:last-child{
+					margin-left: 0;
+				}
+			}
+		}
+		&#wrapper-avantages-temoignage{
+			max-width: 307px;
+			img{
+				display: block;
+				width: 100%;
+			}
+			.wrapper-txt-avantages{
+				display: block;
 				width: 100%;
 			}
 		}
