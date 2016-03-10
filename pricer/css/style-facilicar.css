@@ -2276,6 +2276,9 @@ a.logo-facilicar {
 .container-pricer {
   position: relative;
 }
+#s_date_rdv {
+  background: url(../img/calendrier.png) 95% / 20px no-repeat #F5F5F5 !important;
+}
 .formulaire {
   background: none;
   padding: 0;
@@ -2286,6 +2289,8 @@ a.logo-facilicar {
 .formulaire input,
 .formulaire select {
   margin: 4px 0;
+  border-radius: 4px;
+  padding-right: 10px;
 }
 .formulaire > p {
   font-family: 'Texta-Light', sans-serif;
@@ -2727,6 +2732,36 @@ a.btn-conseiller .tel-btn:before {
   font-style: normal;
   line-height: 1.3em;
 }
+.size-50 {
+  display: block;
+}
+.size-50 > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.size-50 > li:first-child {
+  padding-right: 5px;
+}
+.size-50 > li:last-child {
+  padding-left: 5px;
+}
+.size-40-60 {
+  display: block;
+}
+.size-40-60 > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+.size-40-60 > li:first-child {
+  padding-right: 5px;
+  width: 40%;
+}
+.size-40-60 > li:last-child {
+  padding-left: 5px;
+  width: 60%;
+}
 /* @end */
 /* @group Footer */
 footer {
@@ -2782,10 +2817,16 @@ footer ul > li:last-child:before {
     background: url(../img/form-arrow.png) 95% / 14px no-repeat #D8D8D4 !important;
     background-size: 20px 20px;
   }
+  .formulaire input,
   .formulaire select {
     border: 1px solid #A6A6A6;
-    border-radius: 4px;
     padding-left: 20px;
+  }
+  .formulaire input {
+    background-color: #fff;
+  }
+  #s_date_rdv {
+    background: url(../img/calendrier.png) 95% / 20px no-repeat #fff !important;
   }
 }
 @media (max-width: 1200px) {
@@ -2997,6 +3038,26 @@ footer ul > li:last-child:before {
   }
   .bloc-simple h1.has-smiley {
     padding-left: 45px;
+  }
+  .size-50 > li {
+    width: 100%;
+  }
+  .size-50 > li:first-child {
+    padding-right: 0;
+  }
+  .size-50 > li:last-child {
+    padding-left: 0;
+  }
+  .size-40-60 > li {
+    width: 100%;
+  }
+  .size-40-60 > li:first-child {
+    padding-right: 0;
+    width: 100%;
+  }
+  .size-40-60 > li:last-child {
+    padding-left: 0;
+    width: 100%;
   }
 }
 /* retina */
