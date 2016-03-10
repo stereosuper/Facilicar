@@ -2307,6 +2307,11 @@ a.logo-facilicar {
   text-rendering: optimizeLegibility;
   color: #333333;
 }
+.mess-error {
+  font-family: 'Texta-Regular', sans-serif;
+  font-size: 1.143em;
+  text-rendering: optimizeLegibility;
+}
 .formulaire {
   background: none;
   padding: 0;
