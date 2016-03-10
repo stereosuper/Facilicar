@@ -2878,6 +2878,11 @@ footer ul > li:last-child:before {
     text-align: center;
   }
 }
+@media screen and (max-width: 1160px) {
+  .container {
+    padding: 0 10px;
+  }
+}
 @media (max-width: 979px) {
   h1 {
     font-size: 2.5em;
@@ -3155,9 +3160,6 @@ footer ul > li:last-child:before {
   .wrapper-avantages#wrapper-avantages-temoignage .wrapper-txt-avantages {
     display: block;
     width: 100%;
-  }
-  .wrapper-avantages#wrapper-avantages-temoignage .desc-citation {
-    text-align: center;
   }
 }
 /* retina */
