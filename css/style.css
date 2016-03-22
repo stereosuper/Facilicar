@@ -1968,6 +1968,7 @@ a.btn-menu-responsive .rect:before {
 #wrapper-map .wrapper-map-search input {
   width: 100%;
   border-color: #AEACA1;
+  padding-right: 35px;
 }
 #wrapper-map .wrapper-map-search button {
   font-size: 18px;
@@ -5286,6 +5287,22 @@ select:focus {
 .cycle-achat-form label.label-checkbox {
   width: auto;
 }
+.cycle-achat-form input[type="text"],
+.cycle-achat-form input[type="email"],
+.cycle-achat-form input[type="tel"],
+.cycle-achat-form input[type="password"],
+.cycle-achat-form input[type="date"],
+.cycle-achat-form textarea {
+  max-width: 200px;
+}
+.cycle-achat-form input[type="text"].size3,
+.cycle-achat-form input[type="email"].size3,
+.cycle-achat-form input[type="tel"].size3,
+.cycle-achat-form input[type="password"].size3,
+.cycle-achat-form input[type="date"].size3,
+.cycle-achat-form textarea.size3 {
+  max-width: 500px;
+}
 .line-fieldset fieldset {
   margin: 0 30px 35px 0;
 }
@@ -5555,6 +5572,10 @@ select:focus {
   display: block;
   box-sizing: border-box;
   padding-bottom: 30px;
+}
+.blog.jobs #main .content-with-navbar .text-width-full ul.list-desc-article {
+  box-sizing: border-box;
+  padding-left: 80px;
 }
 .blog #main {
   margin-bottom: 0px;
@@ -12247,6 +12268,9 @@ a.btn-slider-citation.btn-right span {
   #main .articles-presse > li {
     padding: 0;
   }
+  .blog.jobs #main .content-with-navbar .text-width-full ul.list-desc-article {
+    padding-left: 0;
+  }
   /* @end */
   /* @group Détail véhicule */
   .wrapper-slider-car-detail {
@@ -13648,7 +13672,7 @@ a.btn-slider-citation.btn-right span {
     height: 150px;
   }
   #wrapper-map #map {
-    height: 235px;
+    height: 150px;
     position: relative;
   }
   #wrapper-map .wrapper-map-search {
@@ -13926,35 +13950,10 @@ a.btn-slider-citation.btn-right span {
     margin: 20px 0 0 0;
   }
   .list-block.list-btn-detail-localisation {
-    margin: 0;
+    margin: 15px 0 10px 0;
   }
   .list-block.list-btn-detail-localisation > li {
-    margin: 0;
-  }
-  .list-block.list-btn-detail-localisation > li a {
-    font-family: 'Texta-Black', sans-serif;
-    font-size: 1em;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    text-transform: uppercase;
-    padding: 10px 10px 10px 0;
-    color: #333333;
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    box-sizing: border-box;
-    border-bottom: 1px solid #AEACA1;
-    text-decoration: none;
-    text-transform: none;
-  }
-  .list-block.list-btn-detail-localisation > li a:before {
-    display: none;
-  }
-  .list-block.list-btn-detail-localisation > li a:hover {
-    opacity: 1;
+    margin: 5px 0;
   }
   .comform textarea {
     width: 323px;
@@ -14012,7 +14011,18 @@ a.btn-slider-citation.btn-right span {
 }
 @media (max-width: 979px) and (max-height: 360px) {
   #wrapper-map #map {
-    height: 210px;
+    height: 150px;
+  }
+}
+@media (max-width: 979px) and (max-height: 360px) {
+  .cycle-achat #wrapper-map .map-search-content.map-search {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+@media (max-width: 979px) and (max-height: 360px) {
+  .cycle-achat #wrapper-map #map {
+    display: none;
   }
 }
 @media (max-width: 830px) {
@@ -15838,7 +15848,8 @@ a.btn-slider-citation.btn-right span {
     right: 19px;
   }
   #btn-photos-localisation:after {
-    display: none;
+    left: 0;
+    right: 0;
   }
   /* @end */
   /* @group Détail véhicule */

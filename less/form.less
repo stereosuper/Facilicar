@@ -569,6 +569,12 @@ select{
             width: auto;
         }
     }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"], textarea{
+        max-width: 200px;
+        &.size3{
+            max-width: 500px;
+        }
+    }
 }
 
 .line-fieldset{

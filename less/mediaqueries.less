@@ -652,6 +652,9 @@
             padding: 0;
         }
     }
+    .blog.jobs #main .content-with-navbar .text-width-full ul.list-desc-article{
+        padding-left: 0;
+    }
     /* @end */
 
     /* @group Détail véhicule */
@@ -2113,10 +2116,27 @@
             }
         }
         #map{
-            height: 235px;
+            //height: 235px;
+            height: 150px;
             position: relative;
             @media (max-height: 360px){
-                height: 210px;
+                //height: 210px;
+                height: 150px;
+            }
+        }
+        .map-search-content.map-search{
+            .cycle-achat &{
+                @media (max-height: 360px){
+                    padding-top: 0;
+                    margin-top: 0;
+                }
+            }
+        }
+        .cycle-achat &{
+            #map{
+                @media (max-height: 360px){
+                    display: none;
+                }
             }
         }
         .wrapper-map-search{
@@ -2426,29 +2446,9 @@
         margin: 20px 0 0 0;
     }
     .list-block.list-btn-detail-localisation{
-        margin: 0;
+        margin: 15px 0 10px 0;
         > li{
-            margin: 0;
-            a{
-                .texta-black(1em);
-                text-transform: uppercase;
-                padding: 10px 10px 10px 0;
-                color: @theme-noir;
-                position: relative;
-                width: 100%;
-                height: auto;
-                display: block;
-                box-sizing: border-box;
-                border-bottom: 1px solid #AEACA1;
-                text-decoration: none;
-                text-transform: none;
-                &:before{
-                    display: none;
-                }
-                &:hover{
-                    opacity: 1;
-                }
-            }
+            margin: 5px 0;
         }
     }
     .comform{
@@ -4330,7 +4330,9 @@
             right: 19px;
         }
         &:after{
-            display: none;
+            //display: none;
+            left: 0;
+            right: 0;
         }
     }
     /* @end */
