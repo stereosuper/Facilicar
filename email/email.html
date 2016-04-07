@@ -12,7 +12,7 @@
           #backgroundTable {margin:0; padding:0; width:100% !important; line-height: 100% !important;}
           img {outline:none; text-decoration:none; -ms-interpolation-mode: bicubic;}
           a img {border:none;}
-          .image_fix {display:block;}
+          .image_fix, .img-gap-qualite {display:block;}
           p {margin: 1em 0;}
           h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #E38C00 !important;}
           h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active {color: red !important;}
@@ -37,12 +37,11 @@
           h1 {
             font-size: 32px;
             font-weight: 700;
+            line-height: 34px;
           }
           h2 {
             font-size: 16px;
             font-weight: 700;
-            margin-top: 6px;
-            margin-bottom: 6px;
           }
           h3 {
             font-size: 22px;
@@ -121,179 +120,125 @@
 
 
           /* Media queries */
-          
-          /* Tablet */
-          /*@media only screen and (max-width: 768px) {
-              tr[class="marge-top-zone-telecharger"]{
-                background: none!important;
-              }
-              td[class="icone-appli"]{
-                display: block!important;
-                width: 100%!important;
-                -moz-box-sizing: border-box!important;
-                -webkit-box-sizing: border-box!important;
-                box-sizing: border-box!important;
-                margin-top: -20px!important;
-                padding: 0 0 6px 0!important;
-              }
-              td[class="telecharger-app"]{
-                display: block!important;
-                width: 100%!important;
-                -moz-box-sizing: border-box!important;
-                -webkit-box-sizing: border-box!important;
-                box-sizing: border-box!important;
-                padding: 10px 0!important;
-              }
-              td[class="icones-app-store-google-play"]{
-                display: block!important;
-                width: 100%!important;
-                -moz-box-sizing: border-box!important;
-                -webkit-box-sizing: border-box!important;
-                box-sizing: border-box!important;
-              }
-              h3[class="h3-telecharger-app"]{
-                text-align: center!important;
-              }
-              td[class="second-col-zone-q-c-s"] {
-                display: table-cell!important;
-                width: 50%!important;
-                -moz-box-sizing: border-box!important;
-                -webkit-box-sizing: border-box!important;
-                box-sizing: border-box!important;
-                padding-right: 6px!important;
-              }
-              td[class="third-col-zone-q-c-s"] {
-                display: table-cell!important;
-                width: 50%!important;
-                -moz-box-sizing: border-box!important;
-                -webkit-box-sizing: border-box!important;
-                box-sizing: border-box!important;
-                padding-left: 6px!important;
-              }
-          }*/
-
           @media only screen and (max-width: 600px) {
-            /*tr[class="full-tablet"], td[class="full-tablet"],tr[class="full-tablet-container"], td[class="full-tablet-container"], td[class="full-tablet-container-appli"] {
+            tr[class="full-width-responsive"], td[class="full-width-responsive"]{
               display: block!important;
               width: 100%!important;
               -moz-box-sizing: border-box!important;
               -webkit-box-sizing: border-box!important;
               box-sizing: border-box!important;
             }
-            table[class="full-tablet"], table[class="full-tablet-container"], table[class="full-tablet-container-appli"] {
+            table[class="full-width-responsive"]{
               width: 100%!important;
             }
-            h1 {
+            td[class="padding-responsive"]{
+              padding: 0 25px!important;
+            }
+            td[class="desc-car-responsive"]{
+              display: block!important;
+              width: 100%!important;
+              -moz-box-sizing: border-box!important;
+              -webkit-box-sizing: border-box!important;
+              box-sizing: border-box!important;
+              padding: 10px 0 0 0!important;
+            }
+            td[class="container-img-responsive"]{
+              display: block!important;
+              width: 100%!important;
+              -moz-box-sizing: border-box!important;
+              -webkit-box-sizing: border-box!important;
+              box-sizing: border-box!important;
+              padding: 0 0 5px 0!important;
+            }
+            td[class="align-center-responsive"], h2[class="align-center-responsive"], h3[class="align-center-responsive"], p[class="align-center-responsive"]{
+              text-align: center!important;
+            }
+            td[class="gap-responsive"]{
+              display: block!important;
+              width: 100%!important;
+              height: 20px!important;
+              -moz-box-sizing: border-box!important;
+              -webkit-box-sizing: border-box!important;
+              box-sizing: border-box!important;
+            }
+            td[class="container-h1-responsive"]{
+              display: block!important;
+              width: 100%!important;
+              -moz-box-sizing: border-box!important;
+              -webkit-box-sizing: border-box!important;
+              box-sizing: border-box!important;
+              padding: 0 40px!important;
+            }
+            h1{
               font-size: 24px!important;
-              line-height: 24px!important;
-              letter-spacing: 0px!important;
-              -moz-box-sizing: border-box!important;
-              -webkit-box-sizing: border-box!important;
-              box-sizing: border-box!important;
-              padding: 0 25px!important;
+              line-height: 26px!important;
             }
-            h2 {
-              font-size: 18px!important;
-            }
-            p { 
-              font-size: 14px!important;
-            }
-            td[class="zone-txt"]{
-              padding: 0 25px!important;
-            }
-            td[class="icone-appli"]{
+            table[class="container-car-responsive"]{
               display: block!important;
               width: 100%!important;
+              max-width: 300px!important;
               -moz-box-sizing: border-box!important;
               -webkit-box-sizing: border-box!important;
               box-sizing: border-box!important;
             }
-            table[class="zone-questions-social"]{
-              width: 470px!important;
+          }
+
+          @media only screen and (max-width: 480px) {
+            h1{
+              font-size: 20px!important;
+              line-height: 22px!important;
             }
-            table[class="zone-questions"]{
-              width: 100%!important;
-              padding-bottom: 0!important;
+            td[class="padding-responsive"] {
+                padding: 0 15px!important;
             }
-            td[class="bloc-questions"]{
-              border-top: none!important;
-              border-left: none!important;
-              border-right: none!important;
+            td[class="container-h1-responsive"] {
+              padding: 0 20px!important;
             }
-            td[class="service-client-bloc-questions"]{
-              border-bottom: none!important;
-              border-left: none!important;
-              border-right: none!important;
+            table[class="container-qualite"]{
+              width: 284px!important;
+              /*308*/
             }
-            table[class="zone-credits"]{
-              padding-bottom: 0!important;
+            td[class="gap-qualite"]{
+              width: 24px!important;
+              /*36*/
             }
-            td[class="bloc-credits"]{
-              border-top: none!important;
-              border-left: none!important;
-              border-right: none!important;
+            img[class="img-gap-qualite"]{
+              width: 24px!important;
             }
-            table[class="zone-social"]{
-              width: 100%!important;
-            }
-            td[class="bloc-social"]{
-              border: none!important;
-            }
-            table[class="footer"]{
-              width: 95%!important;
-              -moz-box-sizing: border-box!important;
-              -webkit-box-sizing: border-box!important;
-              box-sizing: border-box!important;
-            }
-            span[class="ligne-footer-mobile"]{
-              display: block!important;
-            }
-            span[class="no-footer-mobile"]{
-              display: none!important;
-            }
-            td[class="second-col-zone-q-c-s"] {
-              display: block!important;
-              width: 100%!important;
-              -moz-box-sizing: border-box!important;
-              -webkit-box-sizing: border-box!important;
-              box-sizing: border-box!important;
-              padding: 0!important;
-            }
-            td[class="third-col-zone-q-c-s"] {
-              display: block!important;
-              width: 100%!important;
-              -moz-box-sizing: border-box!important;
-              -webkit-box-sizing: border-box!important;
-              box-sizing: border-box!important;
-              padding: 0!important;
-            }
-            table[class="border-title"] {
-              width: 60%!important;
-            }
-            table[class="zone-questions-credit-social"] {
-              width: 100%!important;
-              padding: 0!important;
-            }*/
           }
       </style>
   </head>
   <body style="background-color: #F3F3F3;margin:0;padding:0;">
     <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable">
       <!-- HEADER -->
-      <tr height="70" style="background-color: #029EC8;">
-        <td height="70">
+      <tr style="background-color: #029EC8;">
+        <td>
           <table  cellpadding="0" cellspacing="0" border="0" align="center">
             <tr height="19">
               <td height="19" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="19"  border="0" style="border:0;"></td>
             </tr>
-            <tr height="31">
-              <td height="31" align="center">
-                <table cellpadding="0" cellspacing="0" border="0" align="center" width="560">
-                  <tr width="560" height="31">
-                    <td width="160" height="31" valign="top"><a href="http://www.facilicar.com/"><img class="image_fix" src="img/logo-facilicar.png" valign="top" alt="Facilicar - Achat et vente de voitures d'occasion" width="160" height="31" border="0" style="border:0;" target="_blank"></a></td>
-                    <td width="259" height="31" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="31"  border="0" style="border:0;"></td>
-                    <td width="141" height="31" valign="top">
-                      <a href="http://www.facilicar.com/"><img class="image_fix" src="img/tel.png" alt="" width="141" height="31"  border="0" style="border:0;"></a>
+            <tr>
+              <td class="padding-responsive" align="center">
+                <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560">
+                  <tr class="full-width-responsive" width="560">
+                    <td class="full-width-responsive" width="160" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center"width="160">
+                        <tr width="160">
+                          <td width="160" valign="top">
+                            <a href="http://www.facilicar.com/"><img class="image_fix" src="img/logo-facilicar.png" valign="top" alt="Facilicar - Achat et vente de voitures d'occasion" width="160" border="0" style="border:0;" target="_blank"></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="full-width-responsive" width="259" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="10"  border="0" style="border:0;"></td>
+                    <td class="full-width-responsive" width="141" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="141" height="31">
+                        <tr width="141">
+                          <td width="141" valign="top">
+                            <a href="http://www.facilicar.com/"><img class="image_fix" src="img/tel.png" alt="" width="141" border="0" style="border:0;"></a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -311,39 +256,39 @@
       </tr>
       <!-- BLOC TOP -->
       <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
+        <td class="padding-responsive">
+          <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
             <tr height="36">
-              <td width="560" height="36" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="36"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="36" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="36"  border="0" style="border:0;"></td>
             </tr>
-            <tr height="77">
-              <td width="560" height="77" valign="top" style="padding: 0 80px;">
+            <tr>
+              <td class="container-h1-responsive" width="560" valign="top" style="padding: 0 80px;">
                 <h1 style="text-align: center;">Nous avons bien pris en compte votre commande</h1>
               </td>
             </tr>
             <tr height="36">
-              <td width="560" height="36" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="36"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="36" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="36"  border="0" style="border:0;"></td>
             </tr>
             <tr>
-              <td width="560" valign="top" style="padding: 0 40px;">
+              <td class="full-width-responsive" width="560" valign="top" style="padding: 0 40px;">
                 <p>Nous vous remercions pour la confiance accordé à notre service. Voici le véhicule que vous souhaitez acheter :</p>
               </td>
             </tr>
             <tr height="14">
-              <td width="560" height="14" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="14"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="14" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="14"  border="0" style="border:0;"></td>
             </tr>
             <!-- DETAIL VOITURE -->
             <tr>
-              <td width="560" valign="top" style="padding:0 40px;">
-                <table cellpadding="0" cellspacing="0" border="0" align="center" width="480">
+              <td class="full-width-responsive" width="560" valign="top" style="padding:0 40px;">
+                <table class="container-car-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="450">
                   <tr>
                     <td valign="top" style="border:1px solid #B0B0A8;padding:15px;">
-                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="480">
+                      <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="450">
                         <tr>
-                          <td width="123" height="83" valign="top">
+                          <td class="full-width-responsive" width="123" height="83" valign="top">
                             <img class="image_fix" src="img/car.jpg" alt="" width="123" height="83"  border="0" style="border:0;">
                           </td>
-                          <td valign="top" style="padding-left:22px;">
+                          <td class="desc-car-responsive" valign="top" style="padding-left:22px;">
                             <p style="color:#029EC8;font-weight:700;">RENAULT ESPACE 4<br />
                             année 2012 - 103 000 km<br />
                             1.6 E-HDI110 Airdream execut. BMP6<br />
@@ -358,10 +303,10 @@
             </tr>
             <!-- FIN DETAIL VOITURE -->
             <tr height="14">
-              <td width="560" height="14" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="14"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="14" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="14"  border="0" style="border:0;"></td>
             </tr>
             <tr height="44">
-              <td width="560" height="44" valign="top">
+              <td class="full-width-responsive" width="560" height="44" valign="top">
                 <table cellpadding="0" cellspacing="0" border="0" align="center" width="262">
                   <tr height="44">
                     <td width="262" height="44" valign="top">
@@ -372,23 +317,23 @@
               </td>
             </tr>
             <tr height="26">
-              <td width="560" height="26" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="26"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="26" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="26"  border="0" style="border:0;"></td>
             </tr>
             <tr>
-              <td width="560" valign="top" style="padding: 0 40px;">
+              <td class="full-width-responsive" width="560" valign="top" style="padding: 0 40px;">
                 <p>Un conseiller vous rappelera sous 48 heures pour règler les détail de cette commande. Si vous souhaiter nous poser une question d’ici là, utilisez le formulaire prévu à cet effet :</p>
               </td>
             </tr>
             <tr height="30">
-              <td width="560" height="30" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="30"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="30" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="30"  border="0" style="border:0;"></td>
             </tr>
             <tr>
-              <td width="560" valign="top" style="padding:0 40px;text-align:center;">
+              <td class="full-width-responsive" width="560" valign="top" style="padding:0 40px;text-align:center;">
                 <a href="#" title="Poser une question" style="text-decoration:underline;">› Poser une question</a>
               </td>
             </tr>
             <tr height="37">
-              <td width="560" height="37" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="37"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="37" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="37"  border="0" style="border:0;"></td>
             </tr>
           </table>
         </td>
@@ -399,29 +344,55 @@
       </tr>
       <!-- AVANTAGE 1 -->
       <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
+        <td class="padding-responsive">
+          <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
             <tr height="12">
-              <td width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
             </tr>
             <tr>
-              <td width="560" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0" align="center" width="560">
+              <td class="full-width-responsive" width="560" valign="top">
+                <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560">
                   <tr>
-                    <td valign="middle" width="95" style="padding: 0 0 0 53px;">
-                      <img class="image_fix" src="img/financement.png" alt="" width="95" height="92"  border="0" style="border:0;">
+                    <td class="container-img-responsive" valign="middle" width="95" style="padding: 0 0 0 53px;">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="95" height="92">
+                        <tr width="95" height="92">
+                          <td valign="middle" width="95">
+                            <img class="image_fix" src="img/financement.png" alt="" width="95" height="92"  border="0" style="border:0;">
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td valign="middle" style="padding: 0 40px 0 50px;">
-                      <p style="color:#AEACA1;">Un accord de principe en 5 mn</p>
-                      <h2>Nos solutions de financement</h2>
-                      <a href="#" title="En savoir plus" style="text-decoration:underline;font-size:16px;">› En savoir plus</a>
+                    <td class="full-width-responsive" valign="middle" style="padding: 0 40px 0 50px;">
+                      <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="322">
+                        <tr>
+                          <td valign="top">
+                            <p class="align-center-responsive" style="color:#AEACA1;">Un accord de principe en 5 mn</p>
+                          </td>
+                        </tr>
+                        <tr height="8">
+                          <td height="8" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="8"  border="0" style="border:0;"></td>
+                        </tr>
+                        <tr>
+                          <td valign="top">
+                            <h2 class="align-center-responsive"2>Nos solutions de financement</h2>
+                          </td>
+                        </tr>
+                        <tr height="8">
+                          <td height="8" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="8"  border="0" style="border:0;"></td>
+                        </tr>
+                        <tr>
+                          <td class="align-center-responsive" valign="top">
+                            <a href="#" title="En savoir plus" style="text-decoration:underline;font-size:16px;">› En savoir plus</a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr height="12">
-              <td width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
             </tr>
           </table>
         </td>
@@ -432,29 +403,55 @@
       </tr>
       <!-- AVANTAGE 2 -->
       <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
+        <td class="padding-responsive">
+          <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
             <tr height="12">
-              <td width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
             </tr>
             <tr>
-              <td width="560" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0" align="center" width="560">
+              <td class="full-width-responsive" width="560" valign="top">
+                <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560">
                   <tr>
-                    <td valign="middle" width="95" style="padding: 0 0 0 53px;">
-                      <img class="image_fix" src="img/achat.png" alt="" width="95" height="92"  border="0" style="border:0;">
+                    <td class="container-img-responsive" valign="middle" width="95" style="padding: 0 0 0 53px;">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="95" height="92">
+                        <tr width="95" height="92">
+                          <td valign="middle" width="95">
+                          <img class="image_fix" src="img/achat.png" alt="" width="95" height="92"  border="0" style="border:0;">
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td valign="middle" style="padding: 0 40px 0 50px;">
-                      <h2> Facilicar achète votre<br /> véhicule au meilleur prix</h2>
-                      <p style="color:#AEACA1;">( sans obligation d'achat )</p>
-                      <a href="#" title="Estimez en 1 min votre véhicule" style="text-decoration:underline;font-size:16px;">› Estimez en 1 min votre véhicule</a>
+                    <td class="full-width-responsive" valign="middle" style="padding: 0 40px 0 50px;">
+                      <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="322">
+                        <tr>
+                          <td valign="top">
+                            <h2 class="align-center-responsive"> Facilicar achète votre<br /> véhicule au meilleur prix</h2>
+                          </td>
+                        </tr>
+                        <tr height="8">
+                          <td height="8" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="8"  border="0" style="border:0;"></td>
+                        </tr>
+                        <tr>
+                          <td valign="top">
+                            <p class="align-center-responsive" style="color:#AEACA1;">( sans obligation d'achat )</p>
+                          </td>
+                        </tr>
+                        <tr height="8">
+                          <td height="8" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="8"  border="0" style="border:0;"></td>
+                        </tr>
+                        <tr>
+                          <td class="align-center-responsive" valign="top">
+                            <a href="#" title="Estimez en 1 min votre véhicule" style="text-decoration:underline;font-size:16px;">› Estimez en 1 min votre véhicule</a>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr height="12">
-              <td width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
             </tr>
           </table>
         </td>
@@ -465,87 +462,108 @@
       </tr>
       <!-- BLOC ET APRES -->
       <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
+        <td class="padding-responsive">
+          <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560" style="background-color: #ffffff;">
             <tr height="22">
-              <td width="560" height="22" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="22" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
             </tr>
             <tr>
-              <td width="560" height="26" valign="top" style="padding:0 40px;">
-                <h3>Et après ?</h3>
+              <td class="full-width-responsive align-center-responsive" width="560" height="26" valign="top" style="padding:0 20px;">
+                <h3 class="align-center-responsive">Et après ?</h3>
               </td>
             </tr>
             <tr height="22">
-              <td width="560" height="22" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="22"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="22" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="22"  border="0" style="border:0;"></td>
             </tr>
-            <tr>
-              <td width="560" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0" align="center" width="560">
+            <tr height="128">
+              <td class="full-width-responsive" width="560" valign="top">
+                <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560">
                   <tr>
-                    <td width="24" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
-                    <td width="170" valign="top" style="border:1px solid #76A626;">
-                      <img class="image_fix" src="img/vous-commandez.png" alt="" width="" height="128"  border="0" style="border:0;">
+                    <td class="gap-responsive" width="20" valign="top"><img class="image_fix" src="img/empty.gif" width="20" alt=""  border="0" style="border:0;"></td>
+                    <td class="full-width-responsive" width="170" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
+                        <tr>
+                          <td width="168" height="128" valign="top" style="border:1px solid #76A626;">
+                            <img class="image_fix" src="img/vous-commandez.png" alt="" width="" height="128"  border="0" style="border:0;">
+                          </td>
+                        </tr>
+                        <tr height="12">
+                          <td width="168" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+                        </tr>
+                        <tr>
+                          <td width="170" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
+                              <tr>
+                                <td width="23" height="23" valign="top"><img width="23" height="23" class="image_fix" src="img/valid.png" alt=""  border="0" style="border:0;"></td>
+                                <td valign="top" style="font-weight:700;color:#76A626;padding:2px 6px 0 6px;">
+                                  Vous commandez
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td width="5" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
-                    <td width="170" valign="top" style="border:1px solid #D8D8D4;">
-                      <img class="image_fix" src="img/rappel.png" alt="" width="" height="128"  border="0" style="border:0;">
+                    <td class="gap-responsive" width="5" valign="top"><img class="image_fix" src="img/empty.gif" width="5" height="128" alt=""  border="0" style="border:0;"></td>
+                    <td class="full-width-responsive" width="170" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
+                        <tr>
+                          <td width="168" height="128" valign="top" style="border:1px solid #D8D8D4;">
+                            <img class="image_fix" src="img/rappel.png" alt="" width="" height="127"  border="0" style="border:0;">
+                          </td>
+                        </tr>
+                        <tr height="12">
+                          <td width="168" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+                        </tr>
+                        <tr>
+                          <td width="170" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
+                              <tr>
+                                <td width="23" height="23" valign="top"><img width="23" height="23" class="image_fix" src="img/deux.png" alt=""  border="0" style="border:0;"></td>
+                                <td valign="top" style="font-weight:700;padding:2px 6px 0 6px;line-height:14px;">
+                                  On vous rappelle <span style="font-weight:500;font-size:10px;">(pour organiser la livraison)</span>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td width="5" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
-                    <td width="170" valign="top" style="border:1px solid #D8D8D4;">
-                      <img class="image_fix" src="img/livraison.png" alt="" width="" height="128"  border="0" style="border:0;">
+                    <td class="gap-responsive" width="5" valign="top"><img class="image_fix" src="img/empty.gif" width="5" height="128" alt=""  border="0" style="border:0;"></td>
+                    <td class="full-width-responsive" width="170" valign="top">
+                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
+                        <tr>
+                          <td width="168" height="128" valign="top" style="border:1px solid #D8D8D4;">
+                            <img class="image_fix" src="img/livraison.png" alt="" width="" height="127"  border="0" style="border:0;">
+                          </td>
+                        </tr>
+                        <tr height="12">
+                          <td width="168" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
+                        </tr>
+                        <tr>
+                          <td width="170" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
+                              <tr>
+                                <td width="23" height="23" valign="top"><img width="23" height="23" class="image_fix" src="img/trois.png" alt=""  border="0" style="border:0;"></td>
+                                <td valign="top" style="font-weight:700;padding:2px 6px 0 6px;line-height:14px;">
+                                  On vous livre la voiture
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td width="24" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
+                    <td class="gap-responsive" width="20" valign="top"><img class="image_fix" src="img/empty.gif" width="20" height="128" alt=""  border="0" style="border:0;"></td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr height="12">
-              <td width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
-            </tr>
-            <tr>
-              <td width="560" valign="top">
-                <table cellpadding="0" cellspacing="0" border="0" align="center" width="560">
-                  <tr>
-                    <td width="24" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
-                    <td width="170" valign="top">
-                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
-                        <tr>
-                          <td width="23" height="23" valign="top"><img width="23" height="23" class="image_fix" src="img/valid.png" alt=""  border="0" style="border:0;"></td>
-                          <td valign="top" style="font-weight:700;color:#76A626;padding:2px 6px 0 6px;">
-                            Vous commandez
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="5" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
-                    <td width="170" valign="top">
-                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
-                        <tr>
-                          <td width="23" height="23" valign="top"><img width="23" height="23" class="image_fix" src="img/deux.png" alt=""  border="0" style="border:0;"></td>
-                          <td valign="top" style="font-weight:700;padding:2px 6px 0 6px;line-height:14px;">
-                            On vous rappelle <span style="font-weight:500;font-size:10px;">(pour organiser la livraison)</span>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="5" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
-                    <td width="170" valign="top">
-                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="170">
-                        <tr>
-                          <td width="23" height="23" valign="top"><img width="23" height="23" class="image_fix" src="img/trois.png" alt=""  border="0" style="border:0;"></td>
-                          <td valign="top" style="font-weight:700;padding:2px 6px 0 6px;line-height:14px;">
-                            On vous livre la voiture
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td width="24" valign="top"><img class="image_fix" src="img/empty.gif" alt=""  border="0" style="border:0;"></td>
-                  </tr>
-                </table>
-              </td>
+              <td class="full-width-responsive" width="560" height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12"  border="0" style="border:0;"></td>
             </tr>
             <tr height="40">
-              <td width="560" height="40" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="40"  border="0" style="border:0;"></td>
+              <td class="full-width-responsive" width="560" height="40" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="40"  border="0" style="border:0;"></td>
             </tr>
           </table>
         </td>
@@ -557,16 +575,16 @@
       <!-- QUALITES -->
       <tr>
         <td>
-          <table cellpadding="0" cellspacing="0" border="0" align="center" width="309" height="104">
+          <table class="container-qualite" cellpadding="0" cellspacing="0" border="0" align="center" width="309" height="104">
             <tr height="104">
               <td valign="top" width="85" height="100">
                 <img class="image_fix" src="img/garantie.png" alt="Garantie 12 mois satisfait ou remboursé" width="85" height="100"  border="0" style="border:0;">
               </td>
-              <td width="37" height="104" valign="top"><img class="image_fix" src="img/empty.gif" alt="" width="37" height="104"  border="0" style="border:0;"></td>
+              <td class="gap-qualite" width="37" height="104" valign="top"><img class="img-gap-qualite" src="img/empty.gif" alt="" width="37" height="104"  border="0" style="border:0;"></td>
               <td valign="top" width="76" height="104">
                 <img class="image_fix" src="img/paiement-securise.png" alt="Garantie 12 mois satisfait ou remboursé" width="76" height="104"  border="0" style="border:0;">
               </td>
-              <td width="36" height="104" valign="top"><img class="image_fix" src="img/empty.gif" alt="" width="36" height="104"  border="0" style="border:0;"></td>
+              <td class="gap-qualite" width="36" height="104" valign="top"><img class="img-gap-qualite" src="img/empty.gif" alt="" width="36" height="104"  border="0" style="border:0;"></td>
               <td valign="top" width="75" height="101">
                 <img class="image_fix" src="img/clients-contents.png" alt="Garantie 12 mois satisfait ou remboursé" width="75" height="101"  border="0" style="border:0;">
               </td>
@@ -579,242 +597,20 @@
         <td height="54" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="54"  border="0" style="border:0;"></td>
       </tr>
       <!-- FOOTER -->
-      
-      <!-- FIN FOOTER -->
-      <!--
       <tr>
-        <td>
-          <table class="full-tablet-container" cellpadding="0" cellspacing="0" border="0" align="center" width="580">
-            <tr height="50" width="580" class="full-tablet">
-              <td height="50" width="580" valign="top" class="full-tablet"><img class="image_fix" src="img/empty.gif" alt="" height="50" border="0" style="border:0;"></td>
-            </tr>
+        <td valign="top">
+          <table class="full-width-responsive" cellpadding="0" cellspacing="0" border="0" align="center" width="560">
             <tr>
-              <td valign="top" class="full-tablet">
-                <h1 style="text-align: center;">De nouvelles perspectives en&nbsp;vue&nbsp;!</h1>
-              </td>
-            </tr>
-            <tr height="20">
-              <td height="20" width="580" valign="top" class="full-tablet"><img class="image_fix" src="img/empty.gif" alt="" height="20" border="0" style="border:0;"></td>
-            </tr>
-            <tr height="2">
-              <td height="2" valign="top" class="full-tablet">
-                <table cellpadding="0" cellspacing="0" border="0" align="center" width="580" class="full-tablet">
-                  <tr height="2" class="full-tablet">
-                    <td align="center" class="full-tablet">
-                      <table class="border-title" cellpadding="0" cellspacing="0" border="0" align="center" width="510" height="2">
-                        <tr height="2">
-                          <td width="510" height="2" valign="top" style="background-color: #ae2d2b; width: 100%;"></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr height="40">
-              <td height="40" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="40" border="0" style="border:0;"></td>
-            </tr>
-            <tr>
-              <td valign="top"><a href="#"><img class="image_fix img-full" src="img/visuel.jpg" valign="top" alt="" border="0" style="border:0;" target="_blank"></a></td>
-            </tr>
-            <tr height="14">
-              <td height="14" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="14" border="0" style="border:0;"></td>
-            </tr>
-            <tr>
-              <td valign="top" class="zone-txt">
-                <h2>Merci</h2>
-
-                <p>Bien évidemment, merci pour votre confiance, votre fidélité et vos commentaires qui nous permettent de nous améliorer chaque jour. Vous êtes plus de 300 000 clients et 300 entreprises à nous avoir choisi, ce qui est remarquable en si peu de temps. <br/>Nous mesurons chaque jour à quel point la confiance que nous vous nous portez est le fondement même de notre succès. Nous ferons tout pour maintenir et accroître ce capital confiance.</p>
-
-                <h2>Que cela change-t-il?</h2>
-
-                <p>Ce qui ne changera pas c’est notre détermination absolue à vous proposer le meilleur service que vous connaissiez. Tous secteurs confondus. Nous ferons des erreurs, mais nous les reconnaîtrons et nous les réparerons. <br />Nous restons une boite 100% Française. Les équipes, la technologie développée, et maintenant les capitaux. Nous voulons montrer qu’un service développé en France peut être innovant et reconnu comme tel.</p>
-                <p>Ce qui va changer à présent ce sont les moyens dont nous disposons pour tenir nos promesses et nos engagements, et donc vous servir.</p>
-              </td>
-            </tr>
-            <tr height="75">
-              <td height="75" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="75" border="0" style="border:0;"></td>
-            </tr>
-          </table>
-          <table class="zone-telecharger-appli" cellpadding="0" cellspacing="0" border="0" align="center">
-            <tr height="12" style="background-color: #23262b;" class="marge-top-zone-telecharger">
-              <td height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12" border="0" style="border:0;"></td>
-            </tr>
-            <tr style="background-color: #23262b;">
-              <td>
-                <table class="full-tablet-container-appli" cellpadding="0" cellspacing="0" border="0" align="center" width="580" style="table-layout: fixed;">
-                  <tr class="full-tablet" width="580">
-                    <td class="icone-appli" valign="middle" align="center" style="text-align: center;" width="70">
-                      <table cellpadding="0" cellspacing="0" border="0" align="center" width="45" height="45">
-                        <tr>
-                          <td>
-                            <a href="#"><img class="image_fix" src="img/icon-appli.png" valign="top" alt="" border="0" style="border:0;" target="_blank"></a>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="telecharger-app" valign="middle" align="center" style="text-align: center;" width="220">
-                      <h3 class="h3-telecharger-app" style="color: #ffffff;">Télécharger l'application</h3>
-                    </td>
-                    <td class="icones-app-store-google-play" valign="middle" align="center" style="text-align: center;">
-                      <table class="table-icones-app-store-google-play" cellpadding="0" cellspacing="0" border="0" align="center" width="280" height="41">
-                        <tr>
-                          <td class="app-store" align="center">
-                            <table cellpadding="0" cellspacing="0" border="0" align="center" width="119" height="39">
-                              <tr>
-                                <td>
-                                  <a href="#"><img class="image_fix" src="img/app-store.png" valign="top" alt="" border="0" style="border:0;" target="_blank"></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td class="google-play" align="center">
-                            <table cellpadding="0" cellspacing="0" border="0" align="center" width="119" height="39">
-                              <tr>
-                                <td>
-                                  <a href="#"><img class="image_fix" src="img/google-play.png" valign="top" alt="" border="0" style="border:0;" target="_blank"></a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-            <tr height="12" style="background-color: #23262b;">
-              <td height="12" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="12" border="0" style="border:0;"></td>
-            </tr>
-          </table>
-
-          <table class="zone-questions-credit-social" cellpadding="0" cellspacing="0" border="0" align="center" width="580" style="padding: 50px 0;">
-            <tr>
-              <td class="first-col-zone-q-c-s" style="display: block; width: 100%;">
-                <table class="zone-questions" cellpadding="0" cellspacing="0" border="0" align="left" style="padding-bottom: 13px; width: 100%;">
-                  <tr>
-                    <td class="bloc-questions" style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0 0 0 25px; border-top: 1px solid #E2E2E2; border-left: 1px solid #E2E2E2; border-right: 1px solid #E2E2E2; display: block; background-color: #ffffff;">
-                      <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%;">
-                        <tr>
-                          <td class="txt-bloc-questions-social" style="padding: 20px 0;">
-                            <strong style="font-size: 20px; color: #23262B;">Des questions ?</strong><br />
-                            <span class="ligne-mobile">Contactez notre service client </span>
-                          </td>
-                          <td class="illus-bloc-questions-social" style="width: 85px;" valign="bottom">
-                            <table cellpadding="0" cellspacing="0" border="0" align="center">
-                              <tr>
-                                <td class="img-question">
-                                  <img class="image_fix" src="img/illus-service-client.png" valign="top" alt="" border="0" style="border:0;" target="_blank">
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="service-client-bloc-questions" style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px 0; border-bottom: 1px solid #E2E2E2; border-left: 1px solid #E2E2E2; border-right: 1px solid #E2E2E2; display: block; text-align: center; background-color: #23262B">
-                      <a href="mailto:serviceclient@chauffeur-prive.com" style="color: #fff; text-decoration: underline;">serviceclient@chauffeur-prive.com</a>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-              <td class="second-third-cols-zone-q-c-s" style="display: block; width: 100%; vertical-align: top;" >
-                <table cellpadding="0" cellspacing="0" border="0" align="center" style="table-layout: fixed;">
-                  <tr>
-                    <td class="second-col-zone-q-c-s" style="display: block; width: 100%;">
-                      <table class="zone-credits" cellpadding="0" cellspacing="0" border="0" align="left" style="padding-bottom: 13px; table-layout: fixed;">
-                        <tr>
-                          <td class="bloc-credits" style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 14px 0 14px 25px; border: 1px solid #E2E2E2; display: block; background-color: #ffffff;">
-                            <table cellpadding="0" cellspacing="0" border="0" align="center">
-                              <tr>
-                                <td class="txt-bloc-questions-social" style="width: 482px;">
-                                  <strong style="font-size: 20px; color: #23262B;">10€ offerts !</strong><br />
-                                  <span class="ligne-mobile">Parrainez vos amis, ils recevront 10€ de crédits. Et vous aussi !</span>
-                                </td>
-                                <td class="illus-bloc-questions-social" style="width: 71px;">
-                                  <table cellpadding="0" cellspacing="0" border="0" align="center">
-                                    <tr>
-                                      <td class="img-question" style="">
-                                        <img class="image_fix" src="img/credit-small.png" valign="top" alt="" border="0" style="border:0;" target="_blank">
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="third-col-zone-q-c-s" style="display: block; width: 100%; vertical-align: top;">
-                      <table class="zone-social" cellpadding="0" cellspacing="0" border="0" align="right" style="table-layout: fixed;">
-                        <tr>
-                          <td class="bloc-social" style="-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 19px 25px 18px 25px; border: 1px solid #E2E2E2; display: block; background-color: #ffffff;">
-                            <table cellpadding="0" cellspacing="0" border="0" align="center">
-                              <tr>
-                                <td class="txt-bloc-social" style="width: 485px;">
-                                  <strong style="font-size: 20px; color: #23262B;">Restons connectés !</strong><br />
-                                  <span class="ligne-mobile">Suivez-nous sur <a href="https://www.facebook.com/ChauffeurPrive" style="color: #515F6E!important; text-decoration: underline;">Facebook</a> </span>
-                                  <span class="ligne-mobile">Suivez-nous sur <a href="https://twitter.com/ChauffeurPrive" style="color: #515F6E!important; text-decoration: underline;">Twitter</a></span>
-                                </td>
-                                <td class="illus-bloc-social" style="width: 35px;">
-                                  <table cellpadding="0" cellspacing="0" border="0" align="center">
-                                    <tr>
-                                      <td style="">
-                                        <a href="https://www.facebook.com/ChauffeurPrive"><img class="image_fix" src="img/facebook.png" valign="top" alt="Facebook de Chauffeur-Privé" border="0" style="border:0;" target="_blank"></a>
-                                      </td>
-                                    </tr>
-                                    <tr height="8">
-                                      <td height="8" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="8" border="0" style="border:0;"></td>
-                                    </tr>
-                                    <tr>
-                                      <td class="twitter" style="">
-                                        <a href="https://twitter.com/ChauffeurPrive"><img class="image_fix" src="img/twitter.png" valign="top" alt="Twitter de Chauffeur-Privé" border="0" style="border:0;" target="_blank"></a>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
+              <td valign="top" style="padding:0 60px;">
+                <p style="font-size:13px;color:#6D6D67;text-align:center;">Ceci est un texte de mentions légales, pour parler par exemple des données personnelles ou de la <a href="#" style="color:#6D6D67;text-decoration:underline;">désinscription newsletter</a></p>
               </td>
             </tr>
           </table>
-          -->
-
-          <!-- Footer -->
-          <!--<table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%;">
-            <tr height="22">
-              <td height="22" valign="top" style="border-top: 1px solid #f0f0f0; background-color: #ffffff;"><img class="image_fix" src="img/empty.gif" alt="" height="22" border="0" style="border:0;"></td>
-            </tr>
-          </table>
-          <table class="footer" cellpadding="0" cellspacing="0" border="0" align="center" width="580" style="width: 100%; background-color: #ffffff;">
-            <tr align="center">
-              <td style="text-align: center; font-size: 11px; line-height: 18px;">
-                <span class="ligne-footer-mobile"><i>©2015</i>  Chauffeur-Privé, 12 rue Vivienne 75002, Paris</span><span class="no-footer-mobile">   |   </span><span class="ligne-footer-mobile"><img src="img/drapeau-fr.jpg"> Roulez pour la France :)</span><span class="no-footer-mobile">   |   </span><span class="ligne-footer-mobile"><a href="#" style="color: #285287; text-decoration: underline;">Préférences</a>    |    <a href="#" style="color: #285287; text-decoration: underline;">Désinscription</a></span>
-              </td>
-            </tr>
-            <tr align="center">
-              <td style="text-align: center; font-size: 11px; line-height: 18px;">
-                Vous recevez ce message car vous êtes client de Chauffeur-Privé.
-              </td>
-            </tr>
-          </table>
-          <table cellpadding="0" cellspacing="0" border="0" align="center" style="width: 100%; background-color: #ffffff;">
-            <tr height="45">
-              <td height="45" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="45" border="0" style="border:0;"></td>
-            </tr>
-          </table>-->
-          <!-- Fin Footer -->
         </td>
+      </tr>
+      <!-- FIN FOOTER -->
+      <tr height="50">
+        <td height="50" valign="top"><img class="image_fix" src="img/empty.gif" alt="" height="50"  border="0" style="border:0;"></td>
       </tr>
     </table>
   </body>
