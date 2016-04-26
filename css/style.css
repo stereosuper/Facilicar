@@ -4665,6 +4665,48 @@ a:focus {
 .steps > li a.is-active:before {
   border-color: #e38c00;
 }
+.list-quali,
+#main .list-quali {
+  margin: 0;
+  padding: 0;
+}
+.list-quali > li,
+#main .list-quali > li {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 0 12px;
+  width: 33.3333%;
+  text-align: center;
+}
+.list-quali > li:before,
+#main .list-quali > li:before {
+  display: none;
+}
+.list-quali > li.wrapper-btn,
+#main .list-quali > li.wrapper-btn {
+  padding-top: 63px;
+}
+.list-quali h4,
+#main .list-quali h4 {
+  color: #e38c00;
+  margin: 5px 0 0 0;
+}
+.list-quali p,
+#main .list-quali p {
+  margin: 0;
+}
+.list-quali .zone-img,
+#main .list-quali .zone-img {
+  height: 108px;
+  line-height: 108px;
+}
+.list-quali img,
+#main .list-quali img {
+  display: inline-block;
+  vertical-align: middle;
+}
 /* @end */
 /* @group Form */
 form {
