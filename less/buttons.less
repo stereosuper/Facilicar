@@ -33,6 +33,126 @@ a, div, span{
 			}
 		}
 	}
+	&.btn-toggle-b-s{
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 50px 10px 0;
+		color: @theme-noir;
+		position: relative;
+		width: 100%;
+		height: auto;
+		display: block;
+		box-sizing: border-box;
+		.texta-light(1em);
+		line-height: 1.3em;
+		padding: 4px 0;
+		color: @theme-noir;
+		strong{
+			display: block;
+			.texta-black(1.375em);
+		}
+		.border{
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			left: 0;
+			overflow: hidden;
+			&:before{
+				content: "";
+				display: block;
+				box-sizing: border-box;
+				width: 100%;
+				height: 1px;
+				background-color: #D8D8D4;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+		.content-txt-title{
+			display: inline-block;
+			vertical-align: middle;
+			&.left{
+				padding-left: 12px;
+			}
+			&.right{
+				padding-right: 12px;
+			}
+		}
+		.arrow-toggle-one{
+			display: inline-block;
+			vertical-align: middle;
+			margin: -2px 0 0 0;
+			color: @theme-primary;
+			.texta-black(1.5em);
+			&.left{
+				margin: -6px 0 0 6px;
+			}
+			&.right{
+				margin: -6px 6px 0 0;
+			}
+		}
+		&.open{
+			border-bottom: none;
+			color: @theme-primary;
+			.arrow-toggle-one{
+				opacity: 0;
+				color: @theme-noir;
+			}
+			.border{
+				&:before{
+					content: "";
+					display: block;
+					box-sizing: border-box;
+					width: 50%;
+					height: 1px;
+					background-color: @theme-primary;
+					position: absolute;
+					bottom: 0;
+					left: -6px;
+				}
+				&:after{
+					content: "";
+					display: block;
+					box-sizing: border-box;
+					width: 50%;
+					height: 1px;
+					background-color: @theme-primary;
+					position: absolute;
+					bottom: 0;
+					right: -6px;
+				}
+			}
+			&:before{
+				content: "";
+				display: block;
+				width: 9px;
+				height: 1px;
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				margin: 0 0 0 -6px;
+				background-color: @theme-primary;
+				transform: rotate(45deg);
+				transform-origin: 0 0;
+			}
+			&:after{
+				content: "";
+				display: block;
+				width: 9px;
+				height: 1px;
+				position: absolute;
+				right: 50%;
+				bottom: 0;
+				margin: 0 -6px 0 0;
+				background-color: @theme-primary;
+				transform: rotate(-45deg);
+				transform-origin: 100% 0;
+			}
+		}
+	}
 	&.btn-toggle-one{
 		text-decoration: none;
 		text-transform: uppercase;

@@ -934,6 +934,27 @@ $(function(){
 		return false;
 	});
 
+	$(".btn-toggle-b-s").click(function(){
+		if($(this).parents(".list-toggle-b-s").hasClass("left-choose")){
+			$(this).parents(".list-toggle-b-s").removeClass("left-choose").addClass("right-choose");
+		}else if($(this).parents(".list-toggle-b-s").hasClass("right-choose")){
+			$(this).parents(".list-toggle-b-s").removeClass("right-choose").addClass("left-choose");
+		}
+		$(".btn-toggle-b-s.open").removeClass("open");
+		$(this).addClass("open");
+
+		var indexClique = $(".btn-toggle-b-s").index(this);
+		var parentToggleOne = $(this).parents(".container-toggle-one");
+		
+		$(".content-toggle-one.open").slideToggle(100, function() {
+			$(this).toggleClass("open");
+			$(".content-toggle-one").eq(indexClique).slideToggle(200, function() {
+				$(this).toggleClass("open");
+			});
+		});
+		return false;
+	});
+
 	// Clic sur les fleches du slider de citations
 	$(".btn-slider-citation").click(function(){
 		var idWrapperSliderCitation = $(this).parents(".wrapper-slider-citation");
