@@ -1221,6 +1221,14 @@ a.btn-menu-responsive .rect:before {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
+.navbar.multiple .list-block,
+#main .navbar.multiple .list-block {
+  display: none;
+}
+.navbar.multiple .list-block.open,
+#main .navbar.multiple .list-block.open {
+  display: block;
+}
 .navbar .list-block,
 #main .navbar .list-block {
   display: block;
