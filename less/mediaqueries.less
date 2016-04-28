@@ -245,6 +245,14 @@
         }
     }
     /* @end */
+
+    .list-quali, #main .list-quali{
+        max-width: 600px;
+        margin: 0 auto;
+        > li{
+            width: 50%;
+        }
+    }
 }
 
 @media (max-width: 1150px) {
@@ -1926,7 +1934,8 @@
         }
     }
     .content-with-navbar{
-        padding: 18px 0 0 296px;
+        //padding: 18px 0 0 296px;
+        padding: 18px 0 0 260px;
         &.has-navbar-left{
             padding-left: 296px;
         }
@@ -2514,6 +2523,26 @@
                         p{
                             font-size:0.750em;
                             line-height:30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .list-quali, #main .list-quali{
+        > li{
+            &.wrapper-btn{
+                padding-left: 0;
+                padding-right: 0;
+                a, div, span{
+                    &.btn-block{
+                        .txt-btn-block-arrow, .txt-hover-btn-block-arrow{
+                            padding: 17px 17px 17px 28px;
+                        }
+                        &.btn-block-arrow{
+                            .arrow-btn-block-arrow{
+                                left: 14px;
+                            }
                         }
                     }
                 }
@@ -5513,6 +5542,32 @@
                     padding:0 10px;
                 }
             }
+        }
+    }
+    .list-quali, #main .list-quali{
+        max-width: 280px;
+        > li{
+            display: block;
+            width: 100%;
+            padding: 0;
+            &.wrapper-btn{
+                padding: 0;
+                a, div, span{
+                    &.btn-block{
+                        .txt-btn-block-arrow, .txt-hover-btn-block-arrow{
+                            padding: 17px 28px 17px 45px;
+                        }
+                        &.btn-block-arrow{
+                            .arrow-btn-block-arrow{
+                                left: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        h4{
+            margin: 0;
         }
     }
 }

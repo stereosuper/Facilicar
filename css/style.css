@@ -12430,6 +12430,15 @@ a.btn-slider-citation.btn-right span {
     width: 350px;
   }
   /* @end */
+  .list-quali,
+  #main .list-quali {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .list-quali > li,
+  #main .list-quali > li {
+    width: 50%;
+  }
 }
 @media (max-width: 1150px) {
   .wrapper-img .container {
@@ -14023,7 +14032,7 @@ a.btn-slider-citation.btn-right span {
     width: 180px;
   }
   .content-with-navbar {
-    padding: 18px 0 0 296px;
+    padding: 18px 0 0 260px;
   }
   .content-with-navbar.has-navbar-left {
     padding-left: 296px;
@@ -14506,6 +14515,33 @@ a.btn-slider-citation.btn-right span {
   .blog #main .content-with-navbar .text-width-full blockquote p {
     font-size: 0.750em;
     line-height: 30px;
+  }
+  .list-quali > li.wrapper-btn,
+  #main .list-quali > li.wrapper-btn {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .list-quali > li.wrapper-btn a.btn-block .txt-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn a.btn-block .txt-btn-block-arrow,
+  .list-quali > li.wrapper-btn div.btn-block .txt-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn div.btn-block .txt-btn-block-arrow,
+  .list-quali > li.wrapper-btn span.btn-block .txt-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn span.btn-block .txt-btn-block-arrow,
+  .list-quali > li.wrapper-btn a.btn-block .txt-hover-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn a.btn-block .txt-hover-btn-block-arrow,
+  .list-quali > li.wrapper-btn div.btn-block .txt-hover-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn div.btn-block .txt-hover-btn-block-arrow,
+  .list-quali > li.wrapper-btn span.btn-block .txt-hover-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn span.btn-block .txt-hover-btn-block-arrow {
+    padding: 17px 17px 17px 28px;
+  }
+  .list-quali > li.wrapper-btn a.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn a.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  .list-quali > li.wrapper-btn div.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn div.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  .list-quali > li.wrapper-btn span.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn span.btn-block.btn-block-arrow .arrow-btn-block-arrow {
+    left: 14px;
   }
 }
 @media (max-width: 979px) and (max-height: 360px) {
@@ -17424,6 +17460,46 @@ a.btn-slider-citation.btn-right span {
   }
   .blog #main .list-social-blog li {
     padding: 0 10px;
+  }
+  .list-quali,
+  #main .list-quali {
+    max-width: 280px;
+  }
+  .list-quali > li,
+  #main .list-quali > li {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  .list-quali > li.wrapper-btn,
+  #main .list-quali > li.wrapper-btn {
+    padding: 0;
+  }
+  .list-quali > li.wrapper-btn a.btn-block .txt-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn a.btn-block .txt-btn-block-arrow,
+  .list-quali > li.wrapper-btn div.btn-block .txt-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn div.btn-block .txt-btn-block-arrow,
+  .list-quali > li.wrapper-btn span.btn-block .txt-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn span.btn-block .txt-btn-block-arrow,
+  .list-quali > li.wrapper-btn a.btn-block .txt-hover-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn a.btn-block .txt-hover-btn-block-arrow,
+  .list-quali > li.wrapper-btn div.btn-block .txt-hover-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn div.btn-block .txt-hover-btn-block-arrow,
+  .list-quali > li.wrapper-btn span.btn-block .txt-hover-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn span.btn-block .txt-hover-btn-block-arrow {
+    padding: 17px 28px 17px 45px;
+  }
+  .list-quali > li.wrapper-btn a.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn a.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  .list-quali > li.wrapper-btn div.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn div.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  .list-quali > li.wrapper-btn span.btn-block.btn-block-arrow .arrow-btn-block-arrow,
+  #main .list-quali > li.wrapper-btn span.btn-block.btn-block-arrow .arrow-btn-block-arrow {
+    left: 24px;
+  }
+  .list-quali h4,
+  #main .list-quali h4 {
+    margin: 0;
   }
 }
 @media (max-height: 800px) {
