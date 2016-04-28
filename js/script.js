@@ -2182,6 +2182,13 @@ $(window).resize(function(){
 
 		$(".content-toggle-one.open", this).removeClass("open");
 		$(".content-toggle-one", this).first().addClass("open");
+
+		$(".list-toggle-b-s.right-choose", this).removeClass("right-choose").addClass("left-choose");
+		$(".btn-toggle-b-s.open", this).removeClass("open");
+		$(".btn-toggle-b-s", this).first().addClass("open");
+		$(".navbar.multiple .list-block").attr("style", "");
+		$(".navbar.multiple .list-block.open").removeClass("open");
+		$(".navbar.multiple .list-block").first().addClass("open");
 	});
 	$("#menu-bottom-header a.open").removeClass("open");
 	$("#menu-bottom-header .list-inline").attr("style", "");
