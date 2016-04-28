@@ -523,9 +523,6 @@
 			counter-increment: counter-li;
 			margin: 50px 0;
 		    &:nth-child(odd){
-		    	&:before{
-		    		left: 0;
-		    	}
     	    	.visu{
     				right: 0;
     				left: inherit;
@@ -535,9 +532,6 @@
     			}
 		    }
 		    &:nth-child(even){
-		    	&:before{
-		    		left: 322px;
-		    	}
 		    	.visu{
 					left: 0;
 					right: inherit;
@@ -546,19 +540,27 @@
 					padding: 0 0 0 372px;
 				}
 		    }
-		    &:before{
-		    	content: counter(counter-li);
-		    	display: block;
-		    	width: 32px;
-		    	height: 32px;
-		    	position: absolute;
-		    	top: -2px;
-		    	text-align: center;
-		    	line-height: 32px;
-		    	.texta-black(1em);
-		    	background-color: @theme-primary;
-		    	border-radius: 50%;
-		    	color: #fff;
+		    .txt{
+		    	
+		    }
+		    .title-numbered{
+		    	position: relative;
+		    	&:before{
+		    		content: counter(counter-li);
+		    		display: block;
+		    		width: 32px;
+		    		height: 32px;
+		    		position: absolute;
+		    		top: 50%;
+		    		margin-top: -16px;
+		    		left: -50px;
+		    		text-align: center;
+		    		line-height: 32px;
+		    		.texta-black(16px);
+		    		background-color: @theme-primary;
+		    		border-radius: 50%;
+		    		color: #fff;
+		    	}
 		    }
 		}
 	}

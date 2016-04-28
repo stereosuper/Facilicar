@@ -595,6 +595,23 @@
             padding: 18px 0 0 230px;
         }
     }
+    .list-bloc-survol, #main .list-bloc-survol{
+        margin: 0 auto;
+        text-align: center;
+        > li{
+            width: 50%;
+            margin: 10px 0;
+            &:nth-child(1){
+                padding: 0 10px 0 0;
+            }
+            &:nth-child(2){
+                padding: 0 0 0 10px;
+            }
+            &:nth-child(3){
+                padding: 0 10px 0 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -838,6 +855,9 @@
     }
     h1{
         font-size: 4.375em;
+        &.small-title{
+            font-size: 3em;
+        }
         &.very-small-title{
             font-size: 2.3em;
         }
@@ -1980,6 +2000,32 @@
 
     /* @group list-visu-txt */
     .list-visu-txt, #main .list-visu-txt{
+        &.numbered{
+            >li{
+                &:nth-child(odd){
+                    .txt{
+                        padding: 0;
+                    }
+                }
+                &:nth-child(even){
+                    .txt{
+                        padding: 0;
+                    }
+                }
+                .title-numbered{
+                    &:before{
+                        //top: 2px;
+                        top: inherit;
+                        left: inherit;
+                        margin: 0 5px 0 0;
+                        position: relative;
+                        display: inline-block;
+                        vertical-align: middle;
+                        transform: translateY(-.1em);
+                    }
+                }
+            }
+        }
         > li{
             .visu{
                 display: block;
@@ -2571,6 +2617,35 @@
             }
         }
     }
+    .list-bloc-survol, #main .list-bloc-survol{
+        //max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        > li{
+            width: 50%;
+            margin: 10px 0;
+            &:nth-child(1){
+                padding: 0 10px 0 0;
+            }
+            &:nth-child(2){
+                padding: 0 0 0 10px;
+            }
+            &:nth-child(3){
+                padding: 0 10px 0 0;
+            }
+        }
+        .bloc-survol{
+            display: block;
+            .zone-picto-bloc-survol, .zone-img-bloc-survol{
+                transform: translateY(-130px);
+                opacity: 0;
+            }
+            h3{
+                transform: translateY(0px);
+                margin: 0 0 10px 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 830px) {
@@ -2715,6 +2790,9 @@
     }
     h1{
         font-size: 2.5em;
+        &.small-title{
+            font-size: 2.5em;
+        }
         &.very-small-title{
             font-size: 2em;
         }
@@ -4938,6 +5016,57 @@
         display: none;
     }
     /* @end */
+
+    .list-bloc-survol, #main .list-bloc-survol{
+        max-width: 300px;
+        >li{
+            display: block;
+            width: 100%;
+            &:nth-child(1){
+                padding: 0;
+            }
+            &:nth-child(2){
+                padding: 0;
+            }
+            &:nth-child(3){
+                padding: 0;
+            }
+        }
+    }
+
+    .list-toggle-b-s, #main .list-toggle-b-s{
+        &.left-choose{
+            >li{
+                &:last-child{
+                    transform: translateX(0%);
+                    .txt-title{
+                        transform: translateX(0%);
+                    }
+                }
+            }
+        }
+        &.right-choose{
+            >li{
+                &:first-child{
+                    transform: translateX(0%);
+                    .txt-title{
+                        transform: translateX(0%);
+                    }
+                }
+            }
+        }
+        > li{
+            width: 50%;
+        }
+    }
+    a, div, span{
+        &.btn-toggle-b-s{
+            font-size: 0.9em;
+            strong{
+                font-size: 1.2em;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -4968,6 +5097,9 @@
     }
     h1{
         font-size: 2.2em;
+        &.small-title{
+            font-size: 2.2em;
+        }
     }
     .wrapper-img{
         height: 150px;
@@ -5591,6 +5723,14 @@
         h4{
             margin: 0;
         }
+    }
+    a, div, span{
+        &.btn-toggle-b-s{
+            font-size: 0.8em;
+        }
+    }
+    .list-toggle-b-s, #main .list-toggle-b-s{
+        min-height: 50px;
     }
 }
 
