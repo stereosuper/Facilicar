@@ -5074,6 +5074,24 @@
             }
         }
     }
+
+    .list-inline.list-third.list-third-visu-txt, #main .list-inline.list-third.list-third-visu-txt{
+        > li{
+            display: block;
+            margin: 40px auto;
+            width: 100%;
+            max-width: 400px;
+            &:first-of-type{
+                padding: 0;
+            }
+            &:nth-child(2){
+                padding: 0;
+            }
+            &:last-of-type{
+                padding: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
